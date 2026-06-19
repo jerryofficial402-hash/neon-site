@@ -336,6 +336,6 @@
     { "source": "/motorcycle-shipping/", "destination": "/services/motorcycle-shipping/", "permanent": true },
     { "source": "/snow-bird-car-shipping/", "destination": "/services/snow-bird-car-shipping/", "permanent": true },
     { "source": "/truck-shipping-services/", "destination": "/services/truck-shipping-services/", "permanent": true },
-    { "source": "/cost-calculator/", "destination": "/cost-calculator/", "permanent": true }
+    { "source": "/quote/", "destination": "/cost-calculator/", "permanent": true }
   ]
 }
