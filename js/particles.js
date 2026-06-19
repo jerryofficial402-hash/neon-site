@@ -159,6 +159,9 @@ function initParticles() {
     observer.observe(canvas);
         
 }
-if(document.readyState !== 'loading') initParticles();
-else document.addEventListener("DOMContentLoaded", initParticles);
+if (document.readyState === 'complete') {
+    initParticles();
+} else {
+    window.addEventListener('load', initParticles);
+}
 })();

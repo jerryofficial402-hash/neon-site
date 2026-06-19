@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO -->
@@ -843,25 +844,38 @@ footer .pt-8.border-t {
         </section>
     </main>
 
+    
     <!-- Global Footer -->
     <footer class="bg-white text-[#425466] pt-20 pb-10">
         <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
-            <div class="grid md:grid-cols-4 gap-12 mb-16">
+            <div class="grid md:grid-cols-5 gap-8 mb-16">
                 <div class="md:col-span-2">
                     <a href="/" class="text-xl font-black tracking-tight flex items-center gap-1 text-[#0a2540] mb-4">
                         NEON <span class="text-[#0066cc]">AUTO TRANSPORT</span>
                     </a>
                     <p class="text-[#425466] text-sm max-w-xs leading-relaxed mb-6 font-medium">
-                        Fast & reliable nationwide auto transport company. FMCSA & US Dot Approved. Your Journey, Our Priority!
+                        Fast & reliable nationwide auto transport company. <a href="https://www.fmcsa.dot.gov/" target="_blank" rel="noopener noreferrer" class="hover:underline">FMCSA</a> & <a href="https://www.transportation.gov/" target="_blank" rel="noopener noreferrer" class="hover:underline">US DOT</a> Approved. Your Journey, Our Priority!
                     </p>
                 </div>
                 <div>
                     <h3 class="text-[#0a2540] font-bold mb-4 text-sm">Quick Links</h3>
                     <ul class="space-y-3 text-[#425466] text-sm font-medium">
                         <li><a href="/" class="hover:text-[#635bff] transition">Home</a></li>
-                        <li><a href="/#how-it-works" class="hover:text-[#635bff] transition">How it works</a></li>
+                        <li><a href="/locations/" class="hover:text-[#635bff] transition">Locations</a></li>
                         <li><a href="/services/" class="hover:text-[#635bff] transition">Transport Options</a></li>
+                        <li><a href="/reviews/" class="hover:text-[#635bff] transition">Reviews</a></li>
+                        <li><a href="/blog/" class="hover:text-[#635bff] transition">Blog</a></li>
                         <li><a href="/#faqs" class="hover:text-[#635bff] transition">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[#0a2540] font-bold mb-4 text-sm">Top Routes</h3>
+                    <ul class="space-y-3 text-[#425466] text-sm font-medium">
+                        <li><a href="/texas-car-shipping/" class="hover:text-[#635bff] transition">Texas Car Shipping</a></li>
+                        <li><a href="/florida-car-shipping/" class="hover:text-[#635bff] transition">Florida Car Shipping</a></li>
+                        <li><a href="/california-car-shipping/" class="hover:text-[#635bff] transition">California Car Shipping</a></li>
+                        <li><a href="/new-york-car-shipping/" class="hover:text-[#635bff] transition">New York Car Shipping</a></li>
+                        <li><a href="/illinois-car-shipping/" class="hover:text-[#635bff] transition">Illinois Car Shipping</a></li>
                     </ul>
                 </div>
                 <div>
@@ -871,7 +885,6 @@ footer .pt-8.border-t {
                         <li><a href="mailto:info@neonautotransport.com" class="hover:text-[#635bff] transition">info@neonautotransport.com</a></li>
                         <li class="pt-2 text-xs">2709 Neabsco Common Pl suite 101, Woodbridge, VA 22191, United States</li>
                         <li class="text-xs">DOT: 4355879 | MC: 1703787</li>
-                        
                     </ul>
                 </div>
             </div>
@@ -903,51 +916,5 @@ footer .pt-8.border-t {
         </div>
     </footer>
 
-    <!-- Header Scroll logic & particles -->
-    <script src="/js/main.js?v=4" defer></script>
-    <script src="/js/particles.js?v=8" defer></script>
-    <script>
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('global-header');
-            const logo = document.getElementById('logo-text');
-            const nav = document.getElementById('desktop-nav');
-            const menuBtn = document.getElementById('mobile-menu-btn');
-            
-            if (window.scrollY > 50) {
-                header.classList.add('header-scrolled');
-                logo.classList.remove('text-white');
-                logo.classList.add('text-[#0a2540]');
-                nav.classList.remove('text-white');
-                nav.classList.add('text-[#425466]');
-                menuBtn.classList.remove('text-white');
-                menuBtn.classList.add('text-[#0a2540]');
-            } else {
-                header.classList.remove('header-scrolled');
-                logo.classList.remove('text-[#0a2540]');
-                logo.classList.add('text-white');
-                nav.classList.remove('text-[#425466]');
-                nav.classList.add('text-white');
-                menuBtn.classList.remove('text-[#0a2540]');
-                menuBtn.classList.add('text-white');
-            }
-        });
-    </script>
-
-<!-- Neon AI Chat Widget -->
-    <link rel="stylesheet" href="/css/chatbot.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/chatbot.css?v=2"></noscript>
-    <script src="/js/chatbot.js?v=4" defer></script>
-    <script>
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('global-header');
-            if (window.scrollY > 50) {
-                header.style.backgroundColor = '#0a2540';
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-            } else {
-                header.style.backgroundColor = '';
-                header.style.boxShadow = 'none';
-            }
-        });
-    </script>
-</body>
+    </body>
 </html>
