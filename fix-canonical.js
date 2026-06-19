@@ -1,49 +1,43 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
-function walkDir(dir) {
-  let results = [];
-  const list = fs.readdirSync(dir);
-  for (const file of list) {
-    if (file === 'node_modules') continue;
-    const filePath = path.join(dir, file);
-    const stat = fs.statSync(filePath);
-    if (stat.isDirectory()) {
-      results = results.concat(walkDir(filePath));
-    } else if (file.endsWith('.html')) {
-      results.push(filePath);
+function fixCanonical(filePath, baseUrl) {
+    if (!filePath.endsWith('.html')) return;
+    let content = fs.readFileSync(filePath, 'utf8');
+    
+    const slug = path.basename(filePath, '.html');
+    let canonicalUrl = '';
+    
+    if (slug === 'index') {
+        canonicalUrl = `${baseUrl}/`;
+    } else {
+        canonicalUrl = `${baseUrl}/${slug}/`;
     }
-  }
-  return results;
+
+    const wrongCanonical = /<link rel="canonical" href="https:\/\/neonautotransport\.com\/about\/" \/>/;
+    if (wrongCanonical.test(content)) {
+        content = content.replace(wrongCanonical, `<link rel="canonical" href="${canonicalUrl}" />`);
+        fs.writeFileSync(filePath, content);
+        console.log(`Fixed canonical in ${filePath}`);
+    }
 }
 
-// 1. Update all canonical URLs to use www
-const allHtml = walkDir(__dirname);
-let canonCount = 0;
-for (const filePath of allHtml) {
-  let content = fs.readFileSync(filePath, 'utf8');
-  if (content.includes('href="https://neonautotransport.com/')) {
-    content = content.replace(
-      /href="https:\/\/neonautotransport\.com\//g,
-      'href="https://www.neonautotransport.com/'
-    );
-    fs.writeFileSync(filePath, content, 'utf8');
-    canonCount++;
-  }
+// Fix Compare Pages
+const compareDir = path.join(__dirname, 'compare');
+if (fs.existsSync(compareDir)) {
+    const files = fs.readdirSync(compareDir);
+    for (const file of files) {
+        fixCanonical(path.join(compareDir, file), 'https://neonautotransport.com/compare');
+    }
 }
-console.log('Updated canonicals in ' + canonCount + ' files');
 
-// Also update og:url and og:image and other meta URLs
-let ogCount = 0;
-for (const filePath of allHtml) {
-  let content = fs.readFileSync(filePath, 'utf8');
-  if (content.includes('content="https://neonautotransport.com/')) {
-    content = content.replace(
-      /content="https:\/\/neonautotransport\.com\//g,
-      'content="https://www.neonautotransport.com/'
-    );
-    fs.writeFileSync(filePath, content, 'utf8');
-    ogCount++;
-  }
+// Fix FAQs
+const faqsDir = path.join(__dirname, 'faqs');
+if (fs.existsSync(faqsDir)) {
+    const files = fs.readdirSync(faqsDir);
+    for (const file of files) {
+        fixCanonical(path.join(faqsDir, file), 'https://neonautotransport.com/faqs');
+    }
 }
-console.log('Updated og: URLs in ' + ogCount + ' files');
+
+console.log('Canonical fix complete.');

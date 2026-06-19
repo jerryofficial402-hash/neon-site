@@ -1,10 +1,44 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
-const indexPath = path.join(__dirname, 'index.html');
-let html = fs.readFileSync(indexPath, 'utf8');
 
-const reviews = '\n<!-- Reviews & Testimonials -->\n<section id="reviews" class="py-24 bg-gradient-to-br from-[#0a2540] to-[#1a385a] relative overflow-hidden">\n    <div class="absolute inset-0 opacity-10"><div class="absolute top-10 left-10 w-72 h-72 bg-[#39FF14] rounded-full filter blur-3xl"></div><div class="absolute bottom-10 right-10 w-96 h-96 bg-[#635bff] rounded-full filter blur-3xl"></div></div>\n    <div class="container mx-auto px-4 max-w-6xl relative z-10">\n        <div class="text-center mb-16 reveal">\n            <span class="inline-block text-[#39FF14] text-xs font-bold uppercase tracking-widest mb-3 bg-[#39FF14]/10 px-4 py-1.5 rounded-full">Customer Reviews</span>\n            <h2 class="text-3xl md:text-4xl font-black text-white mb-4">What Our Customers Say</h2>\n            <p class="text-[#a3b8cc] text-lg max-w-2xl mx-auto">Trusted by thousands of vehicle owners across the nation.</p>\n            <div class="flex items-center justify-center gap-2 mt-6"><div class="flex text-yellow-400 text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</div><span class="text-white font-bold text-lg">4.9/5</span><span class="text-[#a3b8cc] text-sm">1,247+ reviews</span></div>\n        </div>\n        <div class="grid md:grid-cols-3 gap-8">\n            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-[#39FF14]/30 transition-all duration-300 reveal" style="transition-delay:100ms"><div class="flex text-yellow-400 text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-[#c8d6e5] text-sm leading-relaxed mb-6 italic">"Shipped my BMW from Virginia to California - zero stress, constant communication, and the car arrived in perfect condition 5 days later."</p><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#635bff] to-[#00d4ff] flex items-center justify-center text-white font-bold text-sm">MR</div><div><p class="text-white font-bold text-sm">Michael R.</p><p class="text-[#a3b8cc] text-xs">VA to CA - BMW 540i</p></div></div></div>\n            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-[#00d4ff]/30 transition-all duration-300 reveal" style="transition-delay:200ms"><div class="flex text-yellow-400 text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-[#c8d6e5] text-sm leading-relaxed mb-6 italic">"I was nervous about shipping my classic Mustang cross-country, but Neon made it seamless. Enclosed transport was worth every penny."</p><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#39FF14] to-[#00d4ff] flex items-center justify-center text-white font-bold text-sm">ST</div><div><p class="text-white font-bold text-sm">Sarah T.</p><p class="text-[#a3b8cc] text-xs">TX to FL - 1967 Ford Mustang</p></div></div></div>\n            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-[#635bff]/30 transition-all duration-300 reveal" style="transition-delay:300ms"><div class="flex text-yellow-400 text-lg mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="text-[#c8d6e5] text-sm leading-relaxed mb-6 italic">"Military PCS move - needed my truck shipped from San Diego to Virginia on short notice. Neon handled everything. Highly recommend!"</p><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#635bff] to-[#39FF14] flex items-center justify-center text-white font-bold text-sm">JW</div><div><p class="text-white font-bold text-sm">James W.</p><p class="text-[#a3b8cc] text-xs">CA to VA - Ford F-150</p></div></div></div>\n        </div>\n        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 reveal" style="transition-delay:400ms"><div class="text-center"><p class="text-3xl font-black text-white">150K+</p><p class="text-[#a3b8cc] text-xs font-medium mt-1">Vehicles Shipped</p></div><div class="text-center"><p class="text-3xl font-black text-white">9+</p><p class="text-[#a3b8cc] text-xs font-medium mt-1">Years Experience</p></div><div class="text-center"><p class="text-3xl font-black text-white">4.9</p><p class="text-[#a3b8cc] text-xs font-medium mt-1">Average Rating</p></div><div class="text-center"><p class="text-3xl font-black text-white">50</p><p class="text-[#a3b8cc] text-xs font-medium mt-1">States Covered</p></div></div>\n        <div class="mt-12 flex flex-wrap justify-center gap-6 reveal" style="transition-delay:500ms"><a href="https://www.google.com/maps/place/Neon+Auto+Transport" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-medium transition">Google Reviews</a><a href="https://www.trustpilot.com/review/neonautotransport.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-medium transition">Trustpilot</a><a href="https://www.bbb.org/us/va/woodbridge/profile/auto-transporters/neon-auto-transport-0241-236024907" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-medium transition">BBB Accredited</a></div>\n    </div>\n</section>\n';
+const filePath = path.join(__dirname, 'reviews.html');
+let content = fs.readFileSync(filePath, 'utf8');
 
-html = html.replace('</main>', reviews + '</main>');
-fs.writeFileSync(indexPath, html, 'utf8');
-console.log('Done: reviews section added');
+// Replace Trustpilot with Transport Reviews
+content = content.replace(/Trustpilot/g, 'Transport Reviews');
+content = content.replace(/trustpilot/g, 'transportreviews');
+content = content.replace(/https:\/\/www\.transportreviews\.com\/review\/neonautotransport\.com/g, 'https://www.transportreviews.com/Company/Neon-Auto-Transport');
+content = content.replace(/46 reviews/g, '146 reviews');
+
+// Inject AggregateRating Schema
+const schemaBlock = `
+  <!-- Schema: AggregateRating + Review -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Neon Auto Transport LLC",
+    "url": "https://neonautotransport.com",
+    "image": "https://neonautotransport.com/images/logo.jpg",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1247",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>`;
+
+// Replace existing partial schema
+const oldSchemaRegex = /<!-- Schema: AggregateRating \+ Review -->\s*<script type="application\/ld\+json">\s*{\s*"@context": "https:\/\/schema\.org",\s*"@type": "AutoDealer",\s*"name": "Neon Auto Transport LLC",\s*"url": "https:\/\/neonautotransport\.com",[\s\S]*?<\/script>/;
+
+if (oldSchemaRegex.test(content)) {
+    content = content.replace(oldSchemaRegex, schemaBlock);
+} else {
+    // If not found, insert before </head>
+    content = content.replace('</head>', schemaBlock + '\n</head>');
+}
+
+fs.writeFileSync(filePath, content);
+console.log('Reviews page fixed!');
