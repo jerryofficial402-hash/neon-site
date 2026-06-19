@@ -154,7 +154,7 @@
 }
     </script>
 </head>
-<body class="antialiased bg-[#f6f9fc]">
+<body class="pb-24 lg:pb-0 antialiased bg-[#f6f9fc]">
                             <!-- Global Header -->
     <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
         <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
@@ -269,7 +269,7 @@
                     <p class="text-lg text-[#425466] mb-10 leading-relaxed">Planning to ship a car to or from Alaska? Whether you're relocating to the Last Frontier or sending a vehicle across the country, navigating the Glenn Highway and dealing with extreme winter conditions and heavy snowfall can be challenging. Neon Auto Transport ensures a stress-free experience tailored for rugged mountains and vast wilderness, with upfront pricing and a highly vetted carrier network ready to handle remote locations and icy roads.</p>
                     <div class="flex">
                         <a href="/quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
-                            Calculate Your Rate Instantly 
+                            Get a Quote for Alaska 
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
                     </div>
@@ -707,7 +707,7 @@
                                 <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             </div>
                             <h3 class="font-bold text-xl mb-2">Lock in your price today</h3>
-                            <p class="text-sm text-[#cdd5df] mb-6">Talk to an auto transport expert now or get an instant quote online.</p>
+                            <p class="text-sm text-[#cdd5df] mb-6">Talk to an auto transport expert now or get an instant quote for shipping to/from Alaska.</p>
                             <a href="tel:5715767711" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] hover:-translate-y-0.5 transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)] text-xl w-full mb-2">
                                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
                                 (571) 576-7711
@@ -790,7 +790,7 @@
                         <li><a href="/services/" class="hover:text-[#635bff] transition">Transport Options</a></li>
                         <li><a href="/reviews/" class="hover:text-[#635bff] transition">Reviews</a></li>
                         <li><a href="/blog/" class="hover:text-[#635bff] transition">Blog</a></li>
-                        <li><a href="/#faqs" class="hover:text-[#635bff] transition">FAQs</a></li>
+                        <li><a href="/faqs/" class="hover:text-[#635bff] transition">FAQs</a></li>
                     </ul>
                 </div>
                 <div>
@@ -902,5 +902,20 @@
             }
         });
     </script>
+
+    <!-- Mobile Sticky CTA -->
+    <div id="mobile-sticky-cta" class="fixed bottom-0 left-0 w-full z-50 p-3 lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-[0_-4px_10px_-1px_rgba(0,0,0,0.1)] flex gap-3 items-center justify-between">
+        <div class="flex-1 text-center">
+            <a href="tel:5715767711" class="flex items-center justify-center gap-2 w-full py-3 bg-[#39FF14] text-[#0a2540] font-black rounded-lg shadow-lg">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                Call Now
+            </a>
+        </div>
+        <div class="flex-1 text-center">
+            <a href="/quote/" class="flex items-center justify-center gap-2 w-full py-3 bg-[#0a2540] text-white font-bold rounded-lg shadow-lg">
+                Get Quote
+            </a>
+        </div>
+    </div>
 </body>
 </html>

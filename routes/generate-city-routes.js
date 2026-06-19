@@ -85,6 +85,10 @@ topRoutes.forEach(route => {
     content = content.replace(/<!-- Popular Routes Section -->[\s\S]*?<!-- End Popular Routes -->/i, '');
 
     // Write file
+    // Contextual CTAs
+    content = content.replace(/Calculate Your Rate Instantly/g, \`Get a Quote for \${originCity} to \${destCity}\`);
+    content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, \`Talk to an auto transport expert now or get an instant quote for shipping from \${originCity} to \${destCity}.\`);
+
     fs.writeFileSync(outputPath, content);
     console.log(`Generated routes/city/${slug}.html`);
 });

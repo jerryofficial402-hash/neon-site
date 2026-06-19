@@ -120,6 +120,10 @@ statesData.forEach(state => {
         const flagRegex = /<img src="https:\/\/flagcdn\.com\/w320\/us-va\.png"[^>]*>/;
         content = content.replace(flagRegex, `<img src="https://flagcdn.com/w320/us-${state.abbr.toLowerCase()}.png" alt="${state.name} State Flag for ${city}" class="w-full h-full object-cover border-4 border-white shadow-lg rounded-xl transform rotate-3 hover:rotate-0 transition duration-500">`);
 
+        // Contextual CTAs
+        content = content.replace(/Calculate Your Rate Instantly/g, \`Get a Quote for \${city}\`);
+        content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, \`Talk to an auto transport expert now or get an instant quote for shipping to/from \${city}.\`);
+
         fs.writeFileSync(outputPath, content);
         count++;
     });

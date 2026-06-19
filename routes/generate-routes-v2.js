@@ -248,12 +248,206 @@ function generatePopularRoutesHTML(sourceState) {
                         <tbody class="text-[15px]">
                             ${tableRowsHTML}
                         </tbody>
+];
+
+const templatePath = path.join(__dirname, 'virginia-car-shipping.html');
+const template = fs.readFileSync(templatePath, 'utf-8');
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const stateCoords = {
+  "Alabama": { lat: 33.5186, lng: -86.8104 },
+  "Alaska": { lat: 61.2181, lng: -149.9003 },
+  "Arizona": { lat: 33.4484, lng: -112.0740 },
+  "Arkansas": { lat: 34.7465, lng: -92.2896 },
+  "California": { lat: 34.0522, lng: -118.2437 },
+  "Colorado": { lat: 39.7392, lng: -104.9903 },
+  "Connecticut": { lat: 41.7637, lng: -72.6851 },
+  "Delaware": { lat: 39.7447, lng: -75.5484 },
+  "Florida": { lat: 25.7617, lng: -80.1918 },
+  "Georgia": { lat: 33.7490, lng: -84.3880 },
+  "Hawaii": { lat: 21.3069, lng: -157.8583 },
+  "Idaho": { lat: 43.6150, lng: -116.2023 },
+  "Illinois": { lat: 41.8781, lng: -87.6298 },
+  "Indiana": { lat: 39.7684, lng: -86.1581 },
+  "Iowa": { lat: 41.5868, lng: -93.6250 },
+  "Kansas": { lat: 37.6872, lng: -97.3301 },
+  "Kentucky": { lat: 38.2527, lng: -85.7585 },
+  "Louisiana": { lat: 29.9511, lng: -90.0715 },
+  "Maine": { lat: 43.6591, lng: -70.2568 },
+  "Maryland": { lat: 39.2904, lng: -76.6122 },
+  "Massachusetts": { lat: 42.3601, lng: -71.0589 },
+  "Michigan": { lat: 42.3314, lng: -83.0458 },
+  "Minnesota": { lat: 44.9778, lng: -93.2650 },
+  "Mississippi": { lat: 32.2988, lng: -90.1848 },
+  "Missouri": { lat: 38.6270, lng: -90.1994 },
+  "Montana": { lat: 45.7833, lng: -108.5007 },
+  "Nebraska": { lat: 41.2565, lng: -95.9345 },
+  "Nevada": { lat: 36.1716, lng: -115.1398 },
+  "New Hampshire": { lat: 42.9956, lng: -71.4548 },
+  "New Jersey": { lat: 40.7357, lng: -74.1724 },
+  "New Mexico": { lat: 35.0844, lng: -106.6504 },
+  "New York": { lat: 40.7128, lng: -74.0060 },
+  "North Carolina": { lat: 35.2271, lng: -80.8431 },
+  "North Dakota": { lat: 46.8772, lng: -96.7898 },
+  "Ohio": { lat: 39.9612, lng: -82.9988 },
+  "Oklahoma": { lat: 35.4676, lng: -97.5164 },
+  "Oregon": { lat: 45.5152, lng: -122.6784 },
+  "Pennsylvania": { lat: 39.9526, lng: -75.1652 },
+  "Rhode Island": { lat: 41.8240, lng: -71.4128 },
+  "South Carolina": { lat: 32.7765, lng: -79.9311 },
+  "South Dakota": { lat: 43.5460, lng: -96.7313 },
+  "Tennessee": { lat: 36.1627, lng: -86.7816 },
+  "Texas": { lat: 29.7604, lng: -95.3698 },
+  "Utah": { lat: 40.7608, lng: -111.8910 },
+  "Vermont": { lat: 44.4759, lng: -73.2121 },
+  "Virginia": { lat: 37.5407, lng: -77.4360 },
+  "Washington": { lat: 47.6062, lng: -122.3321 },
+  "Washington D.C.": { lat: 38.9072, lng: -77.0369 },
+  "West Virginia": { lat: 38.3498, lng: -81.6326 },
+  "Wisconsin": { lat: 43.0389, lng: -87.9065 },
+  "Wyoming": { lat: 41.1400, lng: -104.8203 }
+};
+
+function getHaversineDistance(coords1, coords2) {
+    if (!coords1 || !coords2) return 1000;
+    const R = 3958.8; // Radius of Earth in miles
+    const lat1 = coords1.lat * Math.PI / 180;
+    const lat2 = coords2.lat * Math.PI / 180;
+    const deltaLat = (coords2.lat - coords1.lat) * Math.PI / 180;
+    const deltaLng = (coords2.lng - coords1.lng) * Math.PI / 180;
+
+    const a = Math.sin(deltaLat/2) * Math.sin(deltaLat/2) +
+              Math.cos(lat1) * Math.cos(lat2) *
+              Math.sin(deltaLng/2) * Math.sin(deltaLng/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    const d = R * c;
+    return Math.round(d * 1.18); // Convert to road miles roughly
+}
+
+function estimateCost(distance) {
+    let perMile;
+    if (distance < 500) {
+        perMile = 1.40;
+    } else if (distance < 1000) {
+        perMile = 1.10;
+    } else if (distance < 1800) {
+        perMile = 0.78;
+    } else {
+        perMile = 0.52;
+    }
+    let mid = Math.round(distance * perMile);
+    if (mid < 450) mid = 450;
+    
+    let lower = Math.round(mid * 0.85 / 25) * 25;
+    let upper = Math.round(mid * 1.15 / 25) * 25;
+    return `$${lower} - $${upper}`;
+}
+
+function estimateTransit(distance) {
+    if (distance < 400) return "1 to 3 days";
+    if (distance < 800) return "2 to 4 days";
+    if (distance < 1500) return "3 to 6 days";
+    if (distance < 2000) return "4 to 7 days";
+    if (distance < 2500) return "5 to 8 days";
+    return "6 to 10 days";
+}
+
+function generatePopularRoutesHTML(sourceState) {
+    const popularTargets = ["California", "Texas", "Florida", "Washington", "Arizona", "New York", "Illinois", "Georgia", "North Carolina", "Ohio"];
+    const targets = popularTargets.filter(t => t !== sourceState).slice(0, 5);
+
+    const sourceCoords = stateCoords[sourceState];
+    
+    let routesCardsHTML = '';
+    let tableRowsHTML = '';
+
+    targets.forEach((target, index) => {
+        const targetCoords = stateCoords[target];
+        const dist = getHaversineDistance(sourceCoords, targetCoords);
+        const cost = estimateCost(dist);
+        const transit = estimateTransit(dist);
+
+        const cardNum = index + 1;
+
+        if (cardNum <= 3) {
+            routesCardsHTML += `
+                    <!-- Route ${cardNum} -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
+                        <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">${cardNum}</div>
+                        <div class="flex-1 text-center md:text-left min-w-[150px]">
+                            <h4 class="font-bold text-[#0a2540] text-xl">${sourceState}</h4>
+                            <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">${target}</span></p>
+                        </div>
+                        <div class="flex-1 text-center px-4 hidden md:block">
+                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> DISTANCE</div>
+                            <div class="font-bold text-[#0a2540] text-sm">${dist.toLocaleString()} mi</div>
+                        </div>
+                        <div class="flex-1 text-center px-4 hidden md:block">
+                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> EST. COST</div>
+                            <div class="font-bold text-[#0a2540] text-sm">${cost}</div>
+                        </div>
+                        <div class="flex-1 text-center px-4 hidden md:block">
+                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> TRANSIT</div>
+                            <div class="font-bold text-[#0a2540] text-sm">${transit}</div>
+                        </div>
+                        <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
+                            <a href="/quote/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+                        </div>
+                    </div>`;
+        }
+
+        const borderClass = index === targets.length - 1 ? '' : 'border-b border-[#e6e6e6]';
+        tableRowsHTML += `
+                            <tr class="${borderClass} hover:bg-[#f8fafc] transition">
+                                <td class="py-6 px-6">
+                                    <div class="font-bold text-[#0a2540] text-lg">${sourceState}</div>
+                                    <div class="text-[#468de6] italic font-medium">to ${target}</div>
+                                </td>
+                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${dist.toLocaleString()} mi</td>
+                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${cost}</td>
+                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${transit}</td>
+                                <td class="py-6 px-6 text-center"><a href="/quote/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                            </tr>`;
+    });
+
+    return `<!-- Popular Routes Section -->
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-6 text-[#0a2540] tracking-tight">Popular Routes from ${sourceState}</h2>
+                
+                <!-- Top 3 Routes -->
+                <h3 class="font-bold text-[#0a2540] flex items-center gap-2 mb-6 uppercase tracking-wider text-sm">
+                    <svg class="w-4 h-4 text-[#468de6]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    TOP 3 ROUTES
+                </h3>
+                
+                <div class="space-y-4 mb-8">
+                    ${routesCardsHTML}
+                </div>
+
+                <!-- Full Table -->
+                <div class="overflow-x-auto bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#e6e6e6]">
+                    <table class="w-full text-left border-collapse min-w-[700px]">
+                        <thead>
+                            <tr class="bg-[#468de6] text-white text-[12px] font-bold uppercase tracking-wider">
+                                <th class="py-5 px-6">ROUTE</th>
+                                <th class="py-5 px-6 text-center">DISTANCE</th>
+                                <th class="py-5 px-6 text-center">AVG COST</th>
+                                <th class="py-5 px-6 text-center">TRANSIT TIME</th>
+                                <th class="py-5 px-6 text-center">QUOTE</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-[15px]">
+                            ${tableRowsHTML}
+                        </tbody>
                     </table>
                 </div>
             </div>`;
 }
 
-// Extract cities section and replace it with a dynamically generated one
+// Extract cities section and replace it
 function generateCitiesHTML(state) {
     let citiesLinks = state.cities.map(city => '<a href="#" class="hover:text-[#0a2540] transition">' + city + '</a>').join('\n                            ');
     
@@ -511,6 +705,10 @@ statesData.forEach(state => {
     content = content.replace(routesRegex, popularRoutesHTML);
 
     // (Cities replacement moved before component shuffle above)
+
+    // Contextual CTAs
+    content = content.replace(/Calculate Your Rate Instantly/g, \`Get a Quote for \${state.name}\`);
+    content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, \`Talk to an auto transport expert now or get an instant quote for shipping to/from \${state.name}.\`);
 
     fs.writeFileSync(outputPath, content);
     console.log(`Generated ${slug}-car-shipping.html`);
