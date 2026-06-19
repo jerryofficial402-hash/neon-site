@@ -88,35 +88,27 @@ function generateCityRoutesHTML(city, state) {
         let price = getRandomInt(750, 1600, city + targetState + "price");
         
         toRows += `
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">${targetState}</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">${city}</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">${distance} miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">${minDays}-${maxDays} days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$${price}</div>
-                </div>
-            </div>`;
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">${targetState}</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">${city}</td>
+                <td class="p-4 text-[#425466] font-medium">${distance} miles</td>
+                <td class="p-4 text-[#425466] font-medium">${minDays}-${maxDays} days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$${price}</div>
+                </td>
+            </tr>`;
             
         let priceFrom = getRandomInt(750, 1600, city + targetState + "priceFrom");
         fromRows += `
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">${city}</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">${targetState}</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">${distance + getRandomInt(-50, 50, city+"vary")} miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">${minDays}-${maxDays} days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$${priceFrom}</div>
-                </div>
-            </div>`;
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">${city}</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">${targetState}</td>
+                <td class="p-4 text-[#425466] font-medium">${distance + getRandomInt(-50, 50, city+"vary")} miles</td>
+                <td class="p-4 text-[#425466] font-medium">${minDays}-${maxDays} days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$${priceFrom}</div>
+                </td>
+            </tr>`;
     });
 
     return `
@@ -130,29 +122,41 @@ function generateCityRoutesHTML(city, state) {
 
                 <div class="mb-16">
                     <h3 class="text-2xl font-bold mb-6 text-[#0a2540]">Top 5 Routes for Car Shipping TO ${city}</h3>
-                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm">
-                        <div class="grid grid-cols-5 gap-4 p-4 bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
-                            <div class="col-span-1">Shipping From</div>
-                            <div class="col-span-1">Shipping To</div>
-                            <div class="col-span-1">Average Distance</div>
-                            <div class="col-span-1">Time Estimate</div>
-                            <div class="col-span-1 text-right">Price Estimate</div>
-                        </div>
-                        ${toRows}
+                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
+                                    <th class="p-4">Shipping From</th>
+                                    <th class="p-4">Shipping To</th>
+                                    <th class="p-4">Average Distance</th>
+                                    <th class="p-4">Time Estimate</th>
+                                    <th class="p-4 text-right">Price Estimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${toRows}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
                 <div>
                     <h3 class="text-2xl font-bold mb-6 text-[#0a2540]">Top 5 Routes for Car Shipping FROM ${city}</h3>
-                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm">
-                        <div class="grid grid-cols-5 gap-4 p-4 bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
-                            <div class="col-span-1">Shipping From</div>
-                            <div class="col-span-1">Shipping To</div>
-                            <div class="col-span-1">Average Distance</div>
-                            <div class="col-span-1">Time Estimate</div>
-                            <div class="col-span-1 text-right">Price Estimate</div>
-                        </div>
-                        ${fromRows}
+                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
+                                    <th class="p-4">Shipping From</th>
+                                    <th class="p-4">Shipping To</th>
+                                    <th class="p-4">Average Distance</th>
+                                    <th class="p-4">Time Estimate</th>
+                                    <th class="p-4 text-right">Price Estimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${fromRows}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

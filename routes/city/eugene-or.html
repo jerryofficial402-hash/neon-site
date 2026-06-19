@@ -294,159 +294,131 @@
 
                 <div class="mb-16">
                     <h3 class="text-2xl font-bold mb-6 text-[#0a2540]">Top 5 Routes for Car Shipping TO Eugene</h3>
-                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm">
-                        <div class="grid grid-cols-5 gap-4 p-4 bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
-                            <div class="col-span-1">Shipping From</div>
-                            <div class="col-span-1">Shipping To</div>
-                            <div class="col-span-1">Average Distance</div>
-                            <div class="col-span-1">Time Estimate</div>
-                            <div class="col-span-1 text-right">Price Estimate</div>
-                        </div>
-                        
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">California</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2306 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">5-7 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1067</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Florida</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">908 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">2-4 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1408</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Washington</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">1809 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">4-6 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$892</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New Jersey</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2560 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">6-8 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1200</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New York</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">845 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">2-4 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1596</div>
-                </div>
-            </div>
+                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
+                                    <th class="p-4">Shipping From</th>
+                                    <th class="p-4">Shipping To</th>
+                                    <th class="p-4">Average Distance</th>
+                                    <th class="p-4">Time Estimate</th>
+                                    <th class="p-4 text-right">Price Estimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">California</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 text-[#425466] font-medium">2306 miles</td>
+                <td class="p-4 text-[#425466] font-medium">5-7 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1067</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Florida</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 text-[#425466] font-medium">908 miles</td>
+                <td class="p-4 text-[#425466] font-medium">2-4 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1408</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Washington</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 text-[#425466] font-medium">1809 miles</td>
+                <td class="p-4 text-[#425466] font-medium">4-6 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$892</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New Jersey</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 text-[#425466] font-medium">2560 miles</td>
+                <td class="p-4 text-[#425466] font-medium">6-8 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1200</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New York</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 text-[#425466] font-medium">845 miles</td>
+                <td class="p-4 text-[#425466] font-medium">2-4 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1596</div>
+                </td>
+            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
                 <div>
                     <h3 class="text-2xl font-bold mb-6 text-[#0a2540]">Top 5 Routes for Car Shipping FROM Eugene</h3>
-                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm">
-                        <div class="grid grid-cols-5 gap-4 p-4 bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
-                            <div class="col-span-1">Shipping From</div>
-                            <div class="col-span-1">Shipping To</div>
-                            <div class="col-span-1">Average Distance</div>
-                            <div class="col-span-1">Time Estimate</div>
-                            <div class="col-span-1 text-right">Price Estimate</div>
-                        </div>
-                        
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">California</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2264 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">5-7 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1526</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Florida</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">866 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">2-4 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1034</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Washington</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">1767 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">4-6 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1031</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New Jersey</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2518 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">6-8 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$765</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Eugene</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New York</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">803 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">2-4 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1152</div>
-                </div>
-            </div>
+                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
+                                    <th class="p-4">Shipping From</th>
+                                    <th class="p-4">Shipping To</th>
+                                    <th class="p-4">Average Distance</th>
+                                    <th class="p-4">Time Estimate</th>
+                                    <th class="p-4 text-right">Price Estimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">California</td>
+                <td class="p-4 text-[#425466] font-medium">2264 miles</td>
+                <td class="p-4 text-[#425466] font-medium">5-7 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1526</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Florida</td>
+                <td class="p-4 text-[#425466] font-medium">866 miles</td>
+                <td class="p-4 text-[#425466] font-medium">2-4 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1034</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Washington</td>
+                <td class="p-4 text-[#425466] font-medium">1767 miles</td>
+                <td class="p-4 text-[#425466] font-medium">4-6 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1031</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New Jersey</td>
+                <td class="p-4 text-[#425466] font-medium">2518 miles</td>
+                <td class="p-4 text-[#425466] font-medium">6-8 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$765</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Eugene</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New York</td>
+                <td class="p-4 text-[#425466] font-medium">803 miles</td>
+                <td class="p-4 text-[#425466] font-medium">2-4 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1152</div>
+                </td>
+            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

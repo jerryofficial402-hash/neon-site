@@ -294,159 +294,131 @@
 
                 <div class="mb-16">
                     <h3 class="text-2xl font-bold mb-6 text-[#0a2540]">Top 5 Routes for Car Shipping TO Manchester</h3>
-                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm">
-                        <div class="grid grid-cols-5 gap-4 p-4 bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
-                            <div class="col-span-1">Shipping From</div>
-                            <div class="col-span-1">Shipping To</div>
-                            <div class="col-span-1">Average Distance</div>
-                            <div class="col-span-1">Time Estimate</div>
-                            <div class="col-span-1 text-right">Price Estimate</div>
-                        </div>
-                        
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">California</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2455 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">6-8 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1530</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Florida</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">1993 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">4-6 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1553</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Washington</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">1718 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">4-6 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1504</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New Jersey</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2055 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">5-7 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1103</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New York</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">815 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">2-4 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$824</div>
-                </div>
-            </div>
+                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
+                                    <th class="p-4">Shipping From</th>
+                                    <th class="p-4">Shipping To</th>
+                                    <th class="p-4">Average Distance</th>
+                                    <th class="p-4">Time Estimate</th>
+                                    <th class="p-4 text-right">Price Estimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">California</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 text-[#425466] font-medium">2455 miles</td>
+                <td class="p-4 text-[#425466] font-medium">6-8 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1530</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Florida</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 text-[#425466] font-medium">1993 miles</td>
+                <td class="p-4 text-[#425466] font-medium">4-6 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1553</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Washington</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 text-[#425466] font-medium">1718 miles</td>
+                <td class="p-4 text-[#425466] font-medium">4-6 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1504</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New Jersey</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 text-[#425466] font-medium">2055 miles</td>
+                <td class="p-4 text-[#425466] font-medium">5-7 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1103</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New York</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 text-[#425466] font-medium">815 miles</td>
+                <td class="p-4 text-[#425466] font-medium">2-4 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$824</div>
+                </td>
+            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
                 <div>
                     <h3 class="text-2xl font-bold mb-6 text-[#0a2540]">Top 5 Routes for Car Shipping FROM Manchester</h3>
-                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm">
-                        <div class="grid grid-cols-5 gap-4 p-4 bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
-                            <div class="col-span-1">Shipping From</div>
-                            <div class="col-span-1">Shipping To</div>
-                            <div class="col-span-1">Average Distance</div>
-                            <div class="col-span-1">Time Estimate</div>
-                            <div class="col-span-1 text-right">Price Estimate</div>
-                        </div>
-                        
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">California</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2498 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">6-8 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1370</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Florida</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2036 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">4-6 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1376</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Washington</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">1761 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">4-6 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$756</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New Jersey</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">2098 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">5-7 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$834</div>
-                </div>
-            </div>
-            <div class="grid grid-cols-5 gap-4 p-4 items-center bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">Manchester</div>
-                </div>
-                <div class="col-span-1">
-                    <div class="font-bold text-[#0a2540] text-lg">New York</div>
-                </div>
-                <div class="col-span-1 text-[#425466] font-medium">858 miles</div>
-                <div class="col-span-1 text-[#425466] font-medium">2-4 days</div>
-                <div class="col-span-1 text-right">
-                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform">~$1167</div>
-                </div>
-            </div>
+                    <div class="stripe-card rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-[#f8fafc] border-b border-[#e6e6e6] text-[#425466] font-semibold text-sm uppercase tracking-wider">
+                                    <th class="p-4">Shipping From</th>
+                                    <th class="p-4">Shipping To</th>
+                                    <th class="p-4">Average Distance</th>
+                                    <th class="p-4">Time Estimate</th>
+                                    <th class="p-4 text-right">Price Estimate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">California</td>
+                <td class="p-4 text-[#425466] font-medium">2498 miles</td>
+                <td class="p-4 text-[#425466] font-medium">6-8 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1370</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Florida</td>
+                <td class="p-4 text-[#425466] font-medium">2036 miles</td>
+                <td class="p-4 text-[#425466] font-medium">4-6 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1376</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Washington</td>
+                <td class="p-4 text-[#425466] font-medium">1761 miles</td>
+                <td class="p-4 text-[#425466] font-medium">4-6 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$756</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New Jersey</td>
+                <td class="p-4 text-[#425466] font-medium">2098 miles</td>
+                <td class="p-4 text-[#425466] font-medium">5-7 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$834</div>
+                </td>
+            </tr>
+            <tr class="bg-white border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition-colors group">
+                <td class="p-4 font-bold text-[#0a2540] text-lg">Manchester</td>
+                <td class="p-4 font-bold text-[#0a2540] text-lg">New York</td>
+                <td class="p-4 text-[#425466] font-medium">858 miles</td>
+                <td class="p-4 text-[#425466] font-medium">2-4 days</td>
+                <td class="p-4 text-right">
+                    <div class="font-black text-[#00d4ff] text-xl group-hover:scale-105 transition-transform inline-block">~$1167</div>
+                </td>
+            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
