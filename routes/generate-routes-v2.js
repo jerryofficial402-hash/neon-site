@@ -3,57 +3,57 @@ const path = require('path');
 const stateDataMap = require('./state-data.json');
 
 const statesData = [
-    { name: "Alabama", abbr: "AL", cities: ["Birmingham", "Montgomery", "Huntsville", "Mobile"] },
-    { name: "Alaska", abbr: "AK", cities: ["Anchorage", "Fairbanks", "Juneau", "Sitka"] },
-    { name: "Arizona", abbr: "AZ", cities: ["Phoenix", "Tucson", "Mesa", "Chandler"] },
-    { name: "Arkansas", abbr: "AR", cities: ["Little Rock", "Fort Smith", "Fayetteville", "Springdale"] },
-    { name: "California", abbr: "CA", cities: ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Fresno", "Sacramento", "Long Beach", "Oakland", "Bakersfield", "Anaheim"] },
-    { name: "Colorado", abbr: "CO", cities: ["Denver", "Colorado Springs", "Aurora", "Fort Collins"] },
-    { name: "Connecticut", abbr: "CT", cities: ["Bridgeport", "New Haven", "Stamford", "Hartford"] },
-    { name: "Delaware", abbr: "DE", cities: ["Wilmington", "Dover", "Newark", "Middletown"] },
-    { name: "Florida", abbr: "FL", cities: ["Jacksonville", "Miami", "Tampa", "Orlando", "St. Petersburg", "Hialeah", "Port St. Lucie", "Tallahassee"] },
-    { name: "Georgia", abbr: "GA", cities: ["Atlanta", "Augusta", "Columbus", "Macon"] },
-    { name: "Hawaii", abbr: "HI", cities: ["Honolulu", "Pearl City", "Hilo", "Kailua"] },
-    { name: "Idaho", abbr: "ID", cities: ["Boise", "Meridian", "Nampa", "Idaho Falls"] },
-    { name: "Illinois", abbr: "IL", cities: ["Chicago", "Aurora", "Naperville", "Joliet"] },
-    { name: "Indiana", abbr: "IN", cities: ["Indianapolis", "Fort Wayne", "Evansville", "South Bend"] },
-    { name: "Iowa", abbr: "IA", cities: ["Des Moines", "Cedar Rapids", "Davenport", "Sioux City"] },
-    { name: "Kansas", abbr: "KS", cities: ["Wichita", "Overland Park", "Kansas City", "Olathe"] },
-    { name: "Kentucky", abbr: "KY", cities: ["Louisville", "Lexington", "Bowling Green", "Owensboro"] },
-    { name: "Louisiana", abbr: "LA", cities: ["New Orleans", "Baton Rouge", "Shreveport", "Lafayette"] },
-    { name: "Maine", abbr: "ME", cities: ["Portland", "Lewiston", "Bangor", "South Portland"] },
-    { name: "Maryland", abbr: "MD", cities: ["Baltimore", "Columbia", "Germantown", "Silver Spring"] },
-    { name: "Massachusetts", abbr: "MA", cities: ["Boston", "Worcester", "Springfield", "Cambridge"] },
-    { name: "Michigan", abbr: "MI", cities: ["Detroit", "Grand Rapids", "Warren", "Sterling Heights"] },
-    { name: "Minnesota", abbr: "MN", cities: ["Minneapolis", "St. Paul", "Rochester", "Duluth"] },
-    { name: "Mississippi", abbr: "MS", cities: ["Jackson", "Gulfport", "Southaven", "Biloxi"] },
-    { name: "Missouri", abbr: "MO", cities: ["Kansas City", "St. Louis", "Springfield", "Columbia"] },
-    { name: "Montana", abbr: "MT", cities: ["Billings", "Missoula", "Great Falls", "Bozeman"] },
-    { name: "Nebraska", abbr: "NE", cities: ["Omaha", "Lincoln", "Bellevue", "Grand Island"] },
-    { name: "Nevada", abbr: "NV", cities: ["Las Vegas", "Henderson", "Reno", "North Las Vegas"] },
-    { name: "New Hampshire", abbr: "NH", cities: ["Manchester", "Nashua", "Concord", "Derry"] },
-    { name: "New Jersey", abbr: "NJ", cities: ["Newark", "Jersey City", "Paterson", "Elizabeth"] },
-    { name: "New Mexico", abbr: "NM", cities: ["Albuquerque", "Las Cruces", "Rio Rancho", "Santa Fe"] },
-    { name: "New York", abbr: "NY", cities: ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse", "Albany"] },
-    { name: "North Carolina", abbr: "NC", cities: ["Charlotte", "Raleigh", "Greensboro", "Durham"] },
-    { name: "North Dakota", abbr: "ND", cities: ["Fargo", "Bismarck", "Grand Forks", "Minot"] },
-    { name: "Ohio", abbr: "OH", cities: ["Columbus", "Cleveland", "Cincinnati", "Toledo"] },
-    { name: "Oklahoma", abbr: "OK", cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow"] },
-    { name: "Oregon", abbr: "OR", cities: ["Portland", "Salem", "Eugene", "Gresham"] },
-    { name: "Pennsylvania", abbr: "PA", cities: ["Philadelphia", "Pittsburgh", "Allentown", "Erie"] },
-    { name: "Rhode Island", abbr: "RI", cities: ["Providence", "Cranston", "Warwick", "Pawtucket"] },
-    { name: "South Carolina", abbr: "SC", cities: ["Charleston", "Columbia", "North Charleston", "Mount Pleasant"] },
-    { name: "South Dakota", abbr: "SD", cities: ["Sioux Falls", "Rapid City", "Aberdeen", "Brookings"] },
-    { name: "Tennessee", abbr: "TN", cities: ["Nashville", "Memphis", "Knoxville", "Chattanooga"] },
-    { name: "Texas", abbr: "TX", cities: ["Houston", "San Antonio", "Dallas", "Austin", "Fort Worth", "El Paso", "Arlington", "Corpus Christi"] },
-    { name: "Utah", abbr: "UT", cities: ["Salt Lake City", "West Valley City", "Provo", "West Jordan"] },
-    { name: "Vermont", abbr: "VT", cities: ["Burlington", "South Burlington", "Rutland", "Barre"] },
-    { name: "Virginia", abbr: "VA", cities: ["Virginia Beach", "Norfolk", "Chesapeake", "Richmond", "Newport News", "Alexandria", "Hampton", "Roanoke"] },
-    { name: "Washington", abbr: "WA", cities: ["Seattle", "Spokane", "Tacoma", "Vancouver"] },
-    { name: "Washington D.C.", abbr: "DC", cities: ["Washington"] },
-    { name: "West Virginia", abbr: "WV", cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg"] },
-    { name: "Wisconsin", abbr: "WI", cities: ["Milwaukee", "Madison", "Green Bay", "Kenosha"] },
-    { name: "Wyoming", abbr: "WY", cities: ["Cheyenne", "Casper", "Laramie", "Gillette"] }
+    { name: "Alabama", abbr: "AL", cities: ["Birmingham", "Montgomery", "Huntsville", "Mobile"], highways: "I-65, I-20, I-85", weather: "humid subtropical conditions", type: "southern logistics hub" },
+    { name: "Alaska", abbr: "AK", cities: ["Anchorage", "Fairbanks", "Juneau", "Sitka"], highways: "Alaska Route 1 (Glenn Highway)", weather: "extreme winter conditions and icy roads", type: "specialized remote shipping route" },
+    { name: "Arizona", abbr: "AZ", cities: ["Phoenix", "Tucson", "Mesa", "Chandler"], highways: "I-10, I-40, I-17", weather: "extreme summer heat requiring fast transit", type: "major southwestern desert corridor" },
+    { name: "Arkansas", abbr: "AR", cities: ["Little Rock", "Fort Smith", "Fayetteville", "Springdale"], highways: "I-40, I-30", weather: "variable midwestern seasonal weather", type: "crucial cross-country transit state" },
+    { name: "California", abbr: "CA", cities: ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Fresno"], highways: "I-5, I-10, US-101, I-80", weather: "diverse microclimates from coastal fog to desert heat", type: "premium coastal auto transport hub" },
+    { name: "Colorado", abbr: "CO", cities: ["Denver", "Colorado Springs", "Aurora", "Fort Collins"], highways: "I-70, I-25", weather: "mountainous terrain and unpredictable snowstorms", type: "high-elevation Rocky Mountain route" },
+    { name: "Connecticut", abbr: "CT", cities: ["Bridgeport", "New Haven", "Stamford", "Hartford"], highways: "I-95, I-84, I-91", weather: "harsh northeastern winters", type: "busy New England transit corridor" },
+    { name: "Delaware", abbr: "DE", cities: ["Wilmington", "Dover", "Newark", "Middletown"], highways: "I-95", weather: "coastal mid-atlantic weather", type: "key eastern seaboard logistics point" },
+    { name: "Florida", abbr: "FL", cities: ["Jacksonville", "Miami", "Tampa", "Orlando", "St. Petersburg"], highways: "I-95, I-75, I-4", weather: "heavy rain and peak snowbird seasonal demand", type: "massive southern snowbird destination" },
+    { name: "Georgia", abbr: "GA", cities: ["Atlanta", "Augusta", "Columbus", "Macon"], highways: "I-75, I-85, I-20", weather: "hot, humid summers", type: "central southeastern freight hub" },
+    { name: "Hawaii", abbr: "HI", cities: ["Honolulu", "Pearl City", "Hilo", "Kailua"], highways: "H-1, H-2", weather: "tropical maritime climate", type: "specialized overseas port destination" },
+    { name: "Idaho", abbr: "ID", cities: ["Boise", "Meridian", "Nampa", "Idaho Falls"], highways: "I-84, I-15", weather: "winter snow and mountainous passes", type: "northern rocky mountain transit state" },
+    { name: "Illinois", abbr: "IL", cities: ["Chicago", "Aurora", "Naperville", "Joliet"], highways: "I-90, I-55, I-80", weather: "severe lake-effect snow and icy winters", type: "primary midwestern transport crossroads" },
+    { name: "Indiana", abbr: "IN", cities: ["Indianapolis", "Fort Wayne", "Evansville", "South Bend"], highways: "I-65, I-70, I-69", weather: "midwestern winter conditions", type: "the crossroads of America" },
+    { name: "Iowa", abbr: "IA", cities: ["Des Moines", "Cedar Rapids", "Davenport", "Sioux City"], highways: "I-80, I-35", weather: "heavy snow and open plains winds", type: "central agricultural transit route" },
+    { name: "Kansas", abbr: "KS", cities: ["Wichita", "Overland Park", "Kansas City", "Olathe"], highways: "I-70, I-35", weather: "tornado alley winds and severe storms", type: "dead-center cross-country route" },
+    { name: "Kentucky", abbr: "KY", cities: ["Louisville", "Lexington", "Bowling Green", "Owensboro"], highways: "I-65, I-75, I-64", weather: "variable seasonal transitions", type: "mid-south auto manufacturing hub" },
+    { name: "Louisiana", abbr: "LA", cities: ["New Orleans", "Baton Rouge", "Shreveport", "Lafayette"], highways: "I-10, I-49, I-20", weather: "tropical storms and high humidity", type: "major gulf coast port state" },
+    { name: "Maine", abbr: "ME", cities: ["Portland", "Lewiston", "Bangor", "South Portland"], highways: "I-95", weather: "extreme northern winter snowfalls", type: "northernmost eastern seaboard destination" },
+    { name: "Maryland", abbr: "MD", cities: ["Baltimore", "Columbia", "Germantown", "Silver Spring"], highways: "I-95, I-70", weather: "variable mid-atlantic conditions", type: "busy capital-region transit corridor" },
+    { name: "Massachusetts", abbr: "MA", cities: ["Boston", "Worcester", "Springfield", "Cambridge"], highways: "I-90 (Mass Pike), I-95", weather: "severe nor'easter snowstorms", type: "dense New England commercial hub" },
+    { name: "Michigan", abbr: "MI", cities: ["Detroit", "Grand Rapids", "Warren", "Sterling Heights"], highways: "I-75, I-94, I-96", weather: "intense lake-effect snow and ice", type: "historic heart of the US auto industry" },
+    { name: "Minnesota", abbr: "MN", cities: ["Minneapolis", "St. Paul", "Rochester", "Duluth"], highways: "I-35, I-94", weather: "sub-zero winter temperatures", type: "upper midwest shipping terminus" },
+    { name: "Mississippi", abbr: "MS", cities: ["Jackson", "Gulfport", "Southaven", "Biloxi"], highways: "I-55, I-20", weather: "humid southern climate with storm risks", type: "crucial mid-south transit state" },
+    { name: "Missouri", abbr: "MO", cities: ["Kansas City", "St. Louis", "Springfield", "Columbia"], highways: "I-70, I-44, I-55", weather: "central US variable weather patterns", type: "gateway to the western auto routes" },
+    { name: "Montana", abbr: "MT", cities: ["Billings", "Missoula", "Great Falls", "Bozeman"], highways: "I-90, I-15", weather: "extreme mountain winter conditions", type: "vast northern mountain transit route" },
+    { name: "Nebraska", abbr: "NE", cities: ["Omaha", "Lincoln", "Bellevue", "Grand Island"], highways: "I-80", weather: "high plains winds and winter snow", type: "major straight-line western transit corridor" },
+    { name: "Nevada", abbr: "NV", cities: ["Las Vegas", "Henderson", "Reno", "North Las Vegas"], highways: "I-15, I-80", weather: "extreme desert heat and mountain passes", type: "essential western casino and resort hub" },
+    { name: "New Hampshire", abbr: "NH", cities: ["Manchester", "Nashua", "Concord", "Derry"], highways: "I-93, I-89", weather: "heavy New England snows", type: "northern eastern seaboard route" },
+    { name: "New Jersey", abbr: "NJ", cities: ["Newark", "Jersey City", "Paterson", "Elizabeth"], highways: "I-95 (NJ Turnpike), I-80", weather: "variable coastal and winter weather", type: "extremely dense logistics and port hub" },
+    { name: "New Mexico", abbr: "NM", cities: ["Albuquerque", "Las Cruces", "Rio Rancho", "Santa Fe"], highways: "I-40, I-25", weather: "desert heat and high-altitude cold", type: "scenic southwestern transit route" },
+    { name: "New York", abbr: "NY", cities: ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"], highways: "I-87, I-90", weather: "upstate snow and dense city traffic", type: "massive northeastern commercial destination" },
+    { name: "North Carolina", abbr: "NC", cities: ["Charlotte", "Raleigh", "Greensboro", "Durham"], highways: "I-85, I-40, I-95", weather: "variable coastal to mountain conditions", type: "rapidly growing mid-atlantic tech and finance hub" },
+    { name: "North Dakota", abbr: "ND", cities: ["Fargo", "Bismarck", "Grand Forks", "Minot"], highways: "I-94, I-29", weather: "bitterly cold and snowy winters", type: "northern border plains route" },
+    { name: "Ohio", abbr: "OH", cities: ["Columbus", "Cleveland", "Cincinnati", "Toledo"], highways: "I-71, I-75, I-70, I-80", weather: "lake-effect snow in northern regions", type: "vital midwestern manufacturing crossroads" },
+    { name: "Oklahoma", abbr: "OK", cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow"], highways: "I-40, I-35, I-44", weather: "tornado alley severe weather risks", type: "south-central transit crossroads" },
+    { name: "Oregon", abbr: "OR", cities: ["Portland", "Salem", "Eugene", "Gresham"], highways: "I-5, I-84", weather: "heavy coastal rain and mountain snow", type: "pacific northwest logistics corridor" },
+    { name: "Pennsylvania", abbr: "PA", cities: ["Philadelphia", "Pittsburgh", "Allentown", "Erie"], highways: "I-76 (PA Turnpike), I-80", weather: "variable winter snow and mountain ice", type: "major eastern industrial and port state" },
+    { name: "Rhode Island", abbr: "RI", cities: ["Providence", "Cranston", "Warwick", "Pawtucket"], highways: "I-95", weather: "coastal New England storms", type: "dense coastal transit point" },
+    { name: "South Carolina", abbr: "SC", cities: ["Charleston", "Columbia", "North Charleston", "Mount Pleasant"], highways: "I-26, I-95", weather: "humid coastal summers", type: "growing southeastern port and manufacturing hub" },
+    { name: "South Dakota", abbr: "SD", cities: ["Sioux Falls", "Rapid City", "Aberdeen", "Brookings"], highways: "I-90, I-29", weather: "severe winter plains weather", type: "central northern transit route" },
+    { name: "Tennessee", abbr: "TN", cities: ["Nashville", "Memphis", "Knoxville", "Chattanooga"], highways: "I-40, I-24, I-65", weather: "variable mid-south weather", type: "crucial cross-country shipping crossroads" },
+    { name: "Texas", abbr: "TX", cities: ["Houston", "San Antonio", "Dallas", "Austin", "Fort Worth"], highways: "I-10, I-35, I-20, I-45", weather: "extreme summer heat and vast distances", type: "massive southern logistics and port hub" },
+    { name: "Utah", abbr: "UT", cities: ["Salt Lake City", "West Valley City", "Provo", "West Jordan"], highways: "I-15, I-80", weather: "mountain snow and desert heat", type: "high-altitude western transit center" },
+    { name: "Vermont", abbr: "VT", cities: ["Burlington", "South Burlington", "Rutland", "Barre"], highways: "I-89, I-91", weather: "severe New England winter snows", type: "scenic northern border route" },
+    { name: "Virginia", abbr: "VA", cities: ["Virginia Beach", "Norfolk", "Chesapeake", "Richmond"], highways: "I-95, I-81, I-64", weather: "variable mid-atlantic conditions", type: "major eastern seaboard naval and commercial hub" },
+    { name: "Washington", abbr: "WA", cities: ["Seattle", "Spokane", "Tacoma", "Vancouver"], highways: "I-5, I-90", weather: "heavy rain and Cascade mountain snow", type: "key pacific northwest port destination" },
+    { name: "Washington D.C.", abbr: "DC", cities: ["Washington"], highways: "I-495 (Capital Beltway)", weather: "mid-atlantic seasonal weather", type: "dense capital city destination" },
+    { name: "West Virginia", abbr: "WV", cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg"], highways: "I-79, I-64, I-77", weather: "mountainous terrain and winter snow", type: "Appalachian transit corridor" },
+    { name: "Wisconsin", abbr: "WI", cities: ["Milwaukee", "Madison", "Green Bay", "Kenosha"], highways: "I-94, I-39, I-43", weather: "severe freezing temperatures and snow", type: "northern midwestern dairy and manufacturing state" },
+    { name: "Wyoming", abbr: "WY", cities: ["Cheyenne", "Casper", "Laramie", "Gillette"], highways: "I-80, I-25", weather: "high winds and extreme mountain snow", type: "vast high-plains western transit route" }
 ];
 
 const templatePath = path.join(__dirname, 'virginia-car-shipping.html');
@@ -254,18 +254,30 @@ function generatePopularRoutesHTML(sourceState) {
 }
 
 // Extract cities section and replace it with a dynamically generated one
-function generateCitiesHTML(stateName, cities) {
-    let citiesLinks = cities.map(city => `<a href="#" class="hover:text-[#0a2540] transition">${city}</a>`).join('\n                            ');
+function generateCitiesHTML(state) {
+    let citiesLinks = state.cities.map(city => '<a href="#" class="hover:text-[#0a2540] transition">' + city + '</a>').join('\n                            ');
     
-    return `<div class="stripe-card p-8 lg:p-10 bg-white">
-                        <h2 class="text-3xl font-bold mb-4 text-[#0a2540] tracking-tight">Cities We Serve in ${stateName}</h2>
-                        <p class="text-[#425466] mb-8 leading-relaxed">Neon Auto Transport provides car shipping services to cities throughout ${stateName}. Click on any city below to learn more about auto transport options in that area.</p>
-                        
-                        <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">${cities.length} cities served in ${stateName}</div>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-2 text-sm text-[#468de6] font-semibold">
-                            ${citiesLinks}
-                        </div>
-                    </div>`;
+    return '<!-- Unique Local Content Section to satisfy E-E-A-T and eliminate thin content -->\n' +
+           '<div class="stripe-card p-8 lg:p-10 bg-[#f8fafc] border border-[#e6e6e6] rounded-2xl mb-12">\n' +
+           '    <h2 class="text-2xl font-bold mb-4 text-[#0a2540]">Local Auto Transport Insights for ' + state.name + '</h2>\n' +
+           '    <p class="text-[#425466] mb-4 leading-relaxed">\n' +
+           '        Shipping a car in or out of <strong>' + state.name + '</strong> requires specialized knowledge of the region\'s logistics infrastructure. \n' +
+           '        As a ' + state.type + ', ' + state.name + ' features major transport corridors including <strong>' + state.highways + '</strong>. \n' +
+           '    </p>\n' +
+           '    <p class="text-[#425466] mb-6 leading-relaxed">\n' +
+           '        Our network of 10,000+ verified carriers is highly experienced with ' + state.name + '\'s ' + state.weather + '. \n' +
+           '        Whether you\'re moving to ' + state.cities[0] + ' for corporate relocation, buying a car from an auction in ' + (state.cities[1] || 'a major metro') + ', or needing seasonal transport, we ensure compliance with all local Department of Transportation regulations.\n' +
+           '    </p>\n' +
+           '</div>\n\n' +
+           '<div class="stripe-card p-8 lg:p-10 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-2xl">\n' +
+           '    <h2 class="text-3xl font-bold mb-4 text-[#0a2540] tracking-tight">Cities We Serve in ' + state.name + '</h2>\n' +
+           '    <p class="text-[#425466] mb-8 leading-relaxed">Neon Auto Transport provides car shipping services to cities throughout ' + state.name + '. Click on any major metro area below to learn more about auto transport options in that region.</p>\n' +
+           '    \n' +
+           '    <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">' + state.cities.length + ' major cities served in ' + state.name + '</div>\n' +
+           '    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-2 text-sm text-[#468de6] font-semibold">\n' +
+           '        ' + citiesLinks + '\n' +
+           '    </div>\n' +
+           '</div>';
 }
 
 statesData.forEach(state => {
@@ -455,7 +467,7 @@ statesData.forEach(state => {
 
         // 5. Replace cities section BEFORE component shuffling (shuffle breaks the regex order)
         const originalCitiesRegex = /<div class="stripe-card p-8 lg:p-10 bg-white">[\s\S]*?<!-- FAQs -->/m;
-        const newCitiesHTML = generateCitiesHTML(state.name, state.cities) + "\n\n                    <!-- FAQs -->";
+        const newCitiesHTML = generateCitiesHTML(state) + "\n\n                    <!-- FAQs -->";
         content = content.replace(originalCitiesRegex, newCitiesHTML);
 
         // Component Shuffling
