@@ -235,7 +235,7 @@ statesData.forEach(state => {
         content = content.replace(/<title>Virginia Car Shipping.*?<\/title>/, `<title>${title} | Auto Transport Company</title>`);
         
         // 2. Replace H1
-        content = content.replace(/<h1[^>]*>.*?<\/h1>/, `<h1 class="text-4xl md:text-6xl font-black mb-6 text-[#0a2540] tracking-tight leading-[1.1]"><span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff] mb-2">Ship Your Car</span>To or From ${city}, ${state.abbr}</h1>`);
+        content = content.replace(/<h1[^>]*>.*?<\/h1>/, `<h1 class="text-4xl md:text-6xl font-black mb-6 text-[#0a2540] tracking-tight leading-[1.1]"><span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff] mb-2">${city} Car Shipping</span>Trusted Auto Transport Services</h1>`);
 
         // 3. Replace Description Meta
         const metaDescRegex = /<meta name="description" content="[^"]*">/;
