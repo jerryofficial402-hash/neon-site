@@ -68,7 +68,7 @@ function initUsMap() {
             "nm": "NM", "ny": "NY", "nc": "NC", "nd": "ND", "oh": "OH",
             "ok": "OK", "or": "OR", "pa": "PA", "ri": "RI", "sc": "SC",
             "sd": "SD", "tn": "TN", "tx": "TX", "ut": "UT", "vt": "VT",
-            "va": "VA", "wa": "WA", "wv": "WV", "wi": "WI", "wy": "WY"
+            "va": "VA", "wa": "WA", "wv": "WV", "wi": "WI", "wy": "WY", "dc": "DC"
         };
         
         // Manual adjustments for tricky states
@@ -86,7 +86,7 @@ function initUsMap() {
             "nj": { hide: true }, // too small
             "de": { hide: true }, // too small
             "md": { hide: true }, // too small
-            "dc": { hide: true }
+            "dc": { x: 15, y: 10 }
         };
 
         // Skip label generation on mobile — too small to read, expensive getBBox calls
