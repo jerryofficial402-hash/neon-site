@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const aboutPath = path.join(__dirname, 'about.html');
-const template = fs.readFileSync(aboutPath, 'utf8');
+const whyNeonPath = path.join(__dirname, 'why-neon.html');
+const template = fs.readFileSync(whyNeonPath, 'utf8');
 
 const pages = [
     {

@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const aboutPath = path.join(__dirname, 'about.html');
-const template = fs.readFileSync(aboutPath, 'utf8');
+const whyNeonPath = path.join(__dirname, 'why-neon.html');
+const template = fs.readFileSync(whyNeonPath, 'utf8');
 
 const title = 'Frequently Asked Questions | Neon Auto Transport';
 const desc = 'Find answers to your auto transport questions. Learn about pricing, insurance, vehicle prep, and the car shipping process.';
