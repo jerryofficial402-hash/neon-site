@@ -10,6 +10,7 @@ const pages = [
         title: 'Neon Auto Transport vs Montway | Comparison',
         desc: 'Comparing Neon Auto Transport vs Montway Auto Transport. See why Neon offers better price locks, zero upfront deposits, and direct driver contact.',
         h1: 'Neon Auto Transport <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff]">vs Montway</span>',
+        breadcrumb: 'Neon vs Montway',
         content: `
             <section class="py-20 lg:py-32 bg-[#f0f5fa] relative overflow-hidden">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -60,6 +61,7 @@ const pages = [
         title: 'Auto Transport Broker vs Carrier | What\'s the Difference?',
         desc: 'Understand the difference between an auto transport broker and a carrier. Learn why using a trusted broker network provides better coverage and insurance.',
         h1: 'Auto Transport Broker <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff]">vs Carrier</span>',
+        breadcrumb: 'Broker vs Carrier',
         content: `
             <section class="py-20 lg:py-32 bg-[#f0f5fa] relative overflow-hidden">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -97,6 +99,7 @@ const pages = [
         title: 'Open vs Enclosed Auto Transport | Which is Right for You?',
         desc: 'Compare open carrier vs enclosed auto transport. We breakdown the cost, safety, and speed differences for shipping your car.',
         h1: 'Open <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff]">vs Enclosed</span> Transport',
+        breadcrumb: 'Open vs Enclosed',
         content: `
             <section class="py-20 lg:py-32 bg-[#f0f5fa] relative overflow-hidden">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -156,20 +159,32 @@ pages.forEach(page => {
     // Replace Canonical
     content = content.replace(/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="https://neonautotransport.com/compare/${page.filename}">`);
 
-    // Replace H1
-    content = content.replace(/<h1[^>]*>.*?<\/h1>/, `<h1 class="text-4xl md:text-6xl font-black mb-6 text-[#0a2540] tracking-tight leading-[1.1]">${page.h1}</h1>`);
+    // Replace H1 and Hero Block
+    const heroContent = `
+    <section class="relative bg-[#0a2540] pt-32 pb-16">
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px); background-size: 50px 50px;"></div>
+        <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
+            <nav class="mb-6 text-sm text-white/50">
+                <a href="/" class="hover:text-white/80 transition">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-[#00d4ff]">${page.breadcrumb}</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4" style="text-shadow: 0 0 30px rgba(0,212,255,0.3);">
+                ${page.h1}
+            </h1>
+        </div>
+    </section>
 
-    // Replace Main Content (between Hero and Footer)
-    // We'll replace the entire sections below the hero.
-    // The hero in about.html ends before <!-- Stats Section --> or <!-- Why Choose Us -->
-    const mainBodyRegex = /(<section class="py-20 lg:py-32 bg-white relative overflow-hidden" id="about-us">)[\s\S]*?(<!-- CTA Section -->)/;
-    
-    // Replace it
-    content = content.replace(mainBodyRegex, page.content + '\n\n$2');
+    <!-- Main Content -->
+    <main class="bg-[#f6f9fc] py-16">
+        ${page.content}
+    </main>
+    `;
 
-    // Fix up relative paths for /compare/ directory if needed
-    // Since /compare/ is one level deep, same as /services/ and /routes/, CSS and image paths that are absolute '/' work.
-    // Ensure all links like 'href="css/styles.css"' are absolute or relative correctly. The template should be fine if it uses '/css/'.
+    const bodyRegex = /<section class="relative bg-\[#0a2540\] pt-32 pb-16">[\s\S]*?<\/main>/;
+    content = content.replace(bodyRegex, heroContent);
+
+    // Fix up relative paths
     content = content.replace(/href="css\//g, 'href="/css/');
     content = content.replace(/src="images\//g, 'src="/images/');
     
