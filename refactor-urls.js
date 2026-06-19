@@ -51,7 +51,7 @@ for (const file of htmlFiles) {
     content = content.replace(/href="(?:\.\.\/)*why-neon\.html(#.*?)?"/g, 'href="/why-neon/$1"');
     content = content.replace(/href="(?:\.\.\/)*contact\.html(#.*?)?"/g, 'href="/contact/$1"');
     content = content.replace(/href="(?:\.\.\/)*privacy\.html(#.*?)?"/g, 'href="/privacy/$1"');
-    content = content.replace(/href="(?:\.\.\/)*quote\/index\.html(#.*?)?"/g, 'href="/quote/$1"');
+    content = content.replace(/href="(?:\.\.\/)*quote\/index\.html(#.*?)?"/g, 'href="/cost-calculator/$1"');
 
     // Mapped renamed services
     content = content.replace(/href="(?:\.\.\/)*services\/open-transport\.html(#.*?)?"/g, 'href="/open-auto-transport/$1"');

@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 createdAt: new Date().toISOString(),
                 status: 'New Lead',
                 leadScore: '🔥 Hot',
-                source: '/quote/',
+                source: '/cost-calculator/',
                 dispatcherNotes: '',
                 aiNotes: `Lead captured via Quote Calculator form. ${vehicles.length} vehicle(s).`,
                 fields: crmPayload.fields

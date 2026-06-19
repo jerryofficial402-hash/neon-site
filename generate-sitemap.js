@@ -13,7 +13,7 @@ const coreUrls = [
     '/blog/',
     '/faqs/',
     '/locations/',
-    '/quote/',
+    '/cost-calculator/',
     '/terms/'
 ];
 

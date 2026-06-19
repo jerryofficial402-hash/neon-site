@@ -200,7 +200,7 @@ function generatePopularRoutesHTML(sourceState) {
                             <div class="font-bold text-[#0a2540] text-sm">${transit}</div>
                         </div>
                         <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-                            <a href="/quote/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+                            <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
                         </div>
                     </div>`;
         }
@@ -215,7 +215,7 @@ function generatePopularRoutesHTML(sourceState) {
                                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${dist.toLocaleString()} mi</td>
                                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${cost}</td>
                                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${transit}</td>
-                                <td class="py-6 px-6 text-center"><a href="/quote/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
                             </tr>`;
     });
 
@@ -394,7 +394,7 @@ function generatePopularRoutesHTML(sourceState) {
                             <div class="font-bold text-[#0a2540] text-sm">${transit}</div>
                         </div>
                         <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-                            <a href="/quote/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+                            <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
                         </div>
                     </div>`;
         }
@@ -409,7 +409,7 @@ function generatePopularRoutesHTML(sourceState) {
                                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${dist.toLocaleString()} mi</td>
                                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${cost}</td>
                                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">${transit}</td>
-                                <td class="py-6 px-6 text-center"><a href="/quote/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
                             </tr>`;
     });
 
@@ -590,7 +590,7 @@ statesData.forEach(state => {
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight">${state.name} Car Shipping</h1>
                 <p class="text-lg text-[#cdd5df] mb-10 max-w-3xl mx-auto leading-relaxed">${heroDesc}</p>
                 <div class="flex justify-center gap-4">
-                    <a href="/quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-lg flex items-center gap-2">
+                    <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-lg flex items-center gap-2">
                         Calculate Your Rate Instantly 
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
@@ -612,7 +612,7 @@ statesData.forEach(state => {
                 <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">${state.name} Car Shipping</h1>
                 <p class="text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-md">${heroDesc}</p>
                 <div class="flex justify-center gap-4">
-                    <a href="/quote/" class="bg-[#39FF14] text-[#0a2540] px-10 py-5 rounded-full font-black text-xl hover:bg-[#32e011] transition hover:-translate-y-1 shadow-[0_10px_30px_rgba(57,255,20,0.3)] flex items-center gap-2">
+                    <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-10 py-5 rounded-full font-black text-xl hover:bg-[#32e011] transition hover:-translate-y-1 shadow-[0_10px_30px_rgba(57,255,20,0.3)] flex items-center gap-2">
                         Get an Instant Quote 
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
@@ -631,7 +631,7 @@ statesData.forEach(state => {
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">${state.name} Car Shipping</h1>
                     <p class="text-lg text-[#425466] mb-10 leading-relaxed">${heroDesc}</p>
                     <div class="flex">
-                        <a href="/quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
+                        <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
                             Calculate Your Rate Instantly 
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>

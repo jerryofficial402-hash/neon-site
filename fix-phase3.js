@@ -50,7 +50,7 @@ for (const file of htmlFiles) {
   
   // Fix Mega Menu links: /xxx-shipping/ to /services/xxx-shipping/
   // The mega menu had links like href="/snow-bird-car-shipping/"
-  // We should be careful not to replace root links like /quote/, /why-neon/, /contact/
+  // We should be careful not to replace root links like /cost-calculator/, /why-neon/, /contact/
   const servicesList = [
     'snow-bird-car-shipping', 'military-car-shipping', 'college-car-shipping',
     'luxury-car-shipping', 'car-shipping-to-another-state', 'truck-shipping-services',

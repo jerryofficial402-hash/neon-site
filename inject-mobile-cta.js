@@ -19,7 +19,7 @@ function processFile(filePath) {
             </a>
         </div>
         <div class="flex-1 text-center">
-            <a href="/quote/" class="flex items-center justify-center gap-2 w-full py-3 bg-[#0a2540] text-white font-bold rounded-lg shadow-lg">
+            <a href="/cost-calculator/" class="flex items-center justify-center gap-2 w-full py-3 bg-[#0a2540] text-white font-bold rounded-lg shadow-lg">
                 Get Quote
             </a>
         </div>

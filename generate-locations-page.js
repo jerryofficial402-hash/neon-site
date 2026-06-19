@@ -59,7 +59,7 @@ const htmlContent = `<!DOCTYPE html>
             </a>
             <div class="hidden lg:flex items-center gap-4">
                 <a href="tel:5715767711" class="text-white font-bold hover:opacity-80">(571) 576-7711</a>
-                <a href="/quote/" class="bg-[#635bff] text-white px-5 py-2 rounded-full font-bold hover:bg-[#524be3] transition">Cost Calculator</a>
+                <a href="/cost-calculator/" class="bg-[#635bff] text-white px-5 py-2 rounded-full font-bold hover:bg-[#524be3] transition">Cost Calculator</a>
             </div>
         </div>
     </header>

@@ -5,7 +5,7 @@ module.exports = {
     "./dashboard/**/*.html",
     "./routes/**/*.html",
     "./services/**/*.html",
-    "./quote/**/*.html"
+    "./cost-calculator/**/*.html"
   ],
   theme: {
     extend: {},
