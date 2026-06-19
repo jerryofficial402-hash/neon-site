@@ -154,7 +154,7 @@ function initUsMap() {
                 });
 
                 path.addEventListener("click", () => {
-                    const slug = stateName.toLowerCase().replace(/\s+/g, '-');
+                    const slug = stateName.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '');
                     window.location.href = `/${slug}-car-shipping/`;
                 });
             }
