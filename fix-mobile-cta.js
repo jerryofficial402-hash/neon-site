@@ -1,32 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-    <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8" />
-<meta name="viewport" content="width=1200">
-<title>Enclosed Auto Transport — Neon Auto Transport</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { width: 1200px; height: 630px; overflow: hidden; font-family: Inter, system-ui, -apple-system, sans-serif; background: #050d1a; position: relative; }
-  .logo { position: absolute; top: 40px; left: 40px; z-index: 10; font-size: 22px; font-weight: 900; letter-spacing: 1px; color: white; }
-  .logo span { color: #00d4ff; }
-  .content { position: absolute; bottom: 60px; left: 40px; z-index: 10; }
-  .headline { font-size: 64px; font-weight: 900; color: white; line-height: 1.1; margin-bottom: 8px; }
-  .underline { width: 120px; height: 4px; background: #e2e8f0; margin-bottom: 16px; border-radius: 2px; }
-  .subtext { font-size: 20px; color: rgba(255,255,255,0.7); font-weight: 500; }
-  .url { position: absolute; bottom: 30px; right: 40px; font-size: 14px; color: rgba(255,255,255,0.4); z-index: 10; }
-</style>
-</head>
-<body>
-  <div class="logo">NEON <span>AUTO TRANSPORT</span></div>
-  <div class="content">
-    <h1 class="headline">Enclosed Auto Transport</h1>
-    <div class="underline"></div>
-    <p class="subtext">White-glove protection for luxury & exotic vehicles</p>
-  </div>
-  <div class="url">neonautotransport.com</div>
+const fs = require('fs');
+const path = require('path');
 
+function processFile(filePath) {
+    if (!filePath.endsWith('.html')) return;
     
+    let content = fs.readFileSync(filePath, 'utf8');
+    
+    const newCtaBlock = `
     <!-- Mobile Sticky CTA -->
     <style>
       #mobile-sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 50; padding: 12px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid #e6e6e6; box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.1); display: flex; gap: 12px; align-items: center; justify-content: space-between; box-sizing: border-box; }
@@ -45,5 +25,31 @@
             Get Quote
         </a>
     </div>
-</body>
-</html>
+</body>`;
+
+    // Regex to find the old block.
+    // It starts with <!-- Mobile Sticky CTA --> and ends right before </body>
+    const oldBlockRegex = /<!-- Mobile Sticky CTA -->[\s\S]*?<\/body>/;
+    
+    if (oldBlockRegex.test(content)) {
+        content = content.replace(oldBlockRegex, newCtaBlock);
+        fs.writeFileSync(filePath, content);
+    }
+}
+
+function processDirectory(dir) {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            if (file !== 'node_modules' && file !== '.git') {
+                processDirectory(fullPath);
+            }
+        } else {
+            processFile(fullPath);
+        }
+    }
+}
+
+processDirectory(__dirname);
+console.log('Mobile CTA fixed globally!');
