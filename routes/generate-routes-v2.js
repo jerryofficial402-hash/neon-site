@@ -449,7 +449,11 @@ function generatePopularRoutesHTML(sourceState) {
 
 // Extract cities section and replace it
 function generateCitiesHTML(state) {
-    let citiesLinks = state.cities.map(city => '<a href="#" class="hover:text-[#0a2540] transition">' + city + '</a>').join('\n                            ');
+    let citiesLinks = state.cities.map(city => {
+        const citySlug = city.toLowerCase().replace(/\s+/g, '-');
+        const stateAbbr = state.abbr.toLowerCase();
+        return `<a href="/routes/city/${citySlug}-${stateAbbr}/" class="hover:text-[#0a2540] transition">${city}</a>`;
+    }).join('\n                            ');
     
     return '<!-- Unique Local Content Section to satisfy E-E-A-T and eliminate thin content -->\n' +
            '<div class="stripe-card p-8 lg:p-10 bg-[#f8fafc] border border-[#e6e6e6] rounded-2xl mb-12">\n' +
