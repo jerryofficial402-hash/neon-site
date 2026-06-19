@@ -80,10 +80,11 @@ statesData.forEach(state => {
         const metaDescRegex = /<meta name="description" content="[^"]*">/;
         content = content.replace(metaDescRegex, `<meta name="description" content="Get an instant quote for car shipping in ${city}, ${state.abbr}. Fully insured door-to-door auto transport. Reliable carrier network.">`);
 
-        // 4. Update Schema
+        // 4. Update Schema & Canonical
         content = content.replace(/"name": "Virginia Car Shipping"/, `"name": "${title}"`);
         content = content.replace(/"description": "[^"]*"/, `"description": "Door-to-door auto transport to and from ${city}, ${state.name}."`);
-        content = content.replace(/https:\/\/neonautotransport\.com\/virginia-car-shipping\.html/g, `https://neonautotransport.com/routes/city/${slug}.html`);
+        content = content.replace(/https:\/\/neonautotransport\.com\/virginia-car-shipping\.html/g, `https://neonautotransport.com/routes/city/${slug}/`);
+        content = content.replace(/https:\/\/neonautotransport\.com\/virginia-car-shipping\//g, `https://neonautotransport.com/routes/city/${slug}/`);
         content = content.replace(/"Virginia Car Shipping"/g, `"${title}"`);
         
         // Restore Address Region
@@ -121,8 +122,18 @@ statesData.forEach(state => {
         content = content.replace(flagRegex, `<img src="https://flagcdn.com/w320/us-${state.abbr.toLowerCase()}.png" alt="${state.name} State Flag for ${city}" class="w-full h-full object-cover border-4 border-white shadow-lg rounded-xl transform rotate-3 hover:rotate-0 transition duration-500">`);
 
         // Contextual CTAs
-        content = content.replace(/Calculate Your Rate Instantly/g, \`Get a Quote for \${city}\`);
-        content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, \`Talk to an auto transport expert now or get an instant quote for shipping to/from \${city}.\`);
+        content = content.replace(/Calculate Your Rate Instantly/g, `Get a Quote for ${city}`);
+        content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, `Talk to an auto transport expert now or get an instant quote for shipping to/from ${city}.`);
+
+        // MASSIVE GLOBAL REPLACEMENTS TO FIX THE BUG
+        // The master template is virginia-car-shipping.html, so we must aggressively replace its baseline text.
+        content = content.replace(/Virginia/g, state.name);
+        content = content.replace(/Richmond/g, city);
+        // We only want to replace standalone "VA" to avoid replacing letters in words
+        content = content.replace(/\\bVA\\b/g, state.abbr);
+        
+        // Restore Address Region (since it was just globally replaced if it matched VA)
+        content = content.replace(/"addressRegion":\\s*"[^"]*"/, '"addressRegion": "VA"');
 
         fs.writeFileSync(outputPath, content);
         count++;
