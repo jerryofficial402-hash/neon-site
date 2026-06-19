@@ -167,25 +167,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Post to custom CRM database
         try {
-            await fetch('/api/leads', {
+            fetch('/api/leads', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(crmPayload)
-            });
-            console.log('Calculator lead sent to Neon CRM database');
+            }).then(() => console.log('Calculator lead sent to Neon CRM database')).catch(err => console.error(err));
         } catch (err) {
             console.error('Calculator CRM database submission failed:', err);
         }
 
         // Send Web3Forms email via AJAX (no redirect)
         try {
-            const response = await fetch('https://api.web3forms.com/submit', {
+            fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(web3Payload)
-            });
-            const result = await response.json();
-            console.log('Web3Forms response:', result);
+            }).then(r => r.json()).then(result => console.log('Web3Forms response:', result)).catch(err => console.error(err));
         } catch (err) {
             console.error('Web3Forms submission failed:', err);
         }
