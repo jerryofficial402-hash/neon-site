@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const indexPath = path.join(__dirname, 'index.html');
+const indexPath = path.join(__dirname, '../index.html');
 let content = fs.readFileSync(indexPath, 'utf8');
 
 const navigationSchema = `
