@@ -283,7 +283,9 @@ function generateCitiesHTML(state) {
 statesData.forEach(state => {
     // Generate safe slug
     let slug = state.name.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '');
-    const outputPath = path.join(__dirname, `${slug}-car-shipping.html`);
+    const dirPath = path.join(__dirname, '..', `${slug}-car-shipping`);
+    if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath, { recursive: true });
+    const outputPath = path.join(dirPath, 'index.html');
 
     // Skip virginia since it's the template
     if (state.name === "Virginia") return;
@@ -307,6 +309,8 @@ statesData.forEach(state => {
     content = content.replace(/virginia-car-shipping\.html/g, `${slug}-car-shipping/`);
     content = content.replace(/virginia-car-shipping/g, `${slug}-car-shipping`);
     content = content.replace(/<link rel="canonical" href="([^"]+)\.html"/g, '<link rel="canonical" href="$1/"');
+    // Fix Related States links to point to the root
+    content = content.replace(/href="\/routes\/([a-z-]+-car-shipping)\/"/g, 'href="/$1/"');
     content = content.replace(/<meta property="og:url" content="([^"]+)\.html"/g, '<meta property="og:url" content="$1/"');
     content = content.replace(/href="\/compare\/([^"]+)\.html"/g, 'href="/compare/$1/"');
     
@@ -325,7 +329,7 @@ statesData.forEach(state => {
     
     popRouteTargets.forEach(target => {
         const targetSlug = target.toLowerCase().replace(/\s+/g, '-');
-        footerRoutesHTML += `                              <a href="/routes/${slug}-to-${targetSlug}-car-shipping/" class="hover:text-[#0a2540] transition">${state.name} to ${target}</a>\n`;
+        footerRoutesHTML += `                              <a href="/${slug}-to-${targetSlug}-car-shipping/" class="hover:text-[#0a2540] transition">${state.name} to ${target}</a>\n`;
     });
     footerRoutesHTML += '                          </div>\n                      </div>';
     
