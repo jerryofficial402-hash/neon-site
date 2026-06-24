@@ -313,16 +313,23 @@ statesData.forEach(state => {
     // Marcus Reid strip
     content = content.replace(/<div class="flex items-center gap-4 mt-8 pt-8 border-t border-gray-100">[\s\S]*?<\/div>\s*<\/div>/, '');
 
-    // Fix Footer Popular Cities
-    const footerCitiesRegex = /<div class="font-bold text-\[#635bff\] mb-4 text-sm uppercase tracking-wider">Popular Cities in [A-Za-z\s]+<\/div>\s*<div class="flex flex-col gap-2 text-sm text-\[#468de6\] font-semibold">[\s\S]*?<\/div>/;
-    let footerCitiesHTML = '<div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">Popular Cities in ' + state.name + '</div>\n                          <div class="flex flex-col gap-2 text-sm text-[#468de6] font-semibold">\n                              ';
-    state.cities.forEach(city => {
-        const citySlug = city.toLowerCase().replace(/\s+/g, '-');
-        const stateAbbr = state.abbr.toLowerCase();
-        footerCitiesHTML += `<a href="/routes/city/${citySlug}-${stateAbbr}/" class="hover:text-[#0a2540] transition">${city}</a>`;
+    // Footer Popular Cities temporarily removed to prevent 404s
+    const footerCitiesRegex = /<div>\s*<div class="font-bold text-\[#635bff\] mb-4 text-sm uppercase tracking-wider">Popular Cities in [\s\S]*?<\/div>\s*<\/div>/;
+    content = content.replace(footerCitiesRegex, '<!-- Footer Cities Removed -->');
+
+    // Fix Footer Popular Routes
+    const footerRoutesRegex = /<div>\s*<div class="font-bold text-\[#635bff\] mb-4 text-sm uppercase tracking-wider">Popular Routes<\/div>\s*<div class="flex flex-col gap-2 text-sm text-\[#468de6\] font-semibold">[\s\S]*?<\/div>\s*<\/div>/;
+    
+    const popRouteTargets = ["California", "Texas", "Florida", "New York", "Illinois", "Washington"].filter(t => t !== state.name).slice(0, 4);
+    let footerRoutesHTML = '<div>\n                          <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">Popular Routes</div>\n                          <div class="flex flex-col gap-2 text-sm text-[#468de6] font-semibold">\n';
+    
+    popRouteTargets.forEach(target => {
+        const targetSlug = target.toLowerCase().replace(/\s+/g, '-');
+        footerRoutesHTML += `                              <a href="/routes/${slug}-to-${targetSlug}-car-shipping/" class="hover:text-[#0a2540] transition">${state.name} to ${target}</a>\n`;
     });
-    footerCitiesHTML += '\n                          </div>';
-    content = content.replace(footerCitiesRegex, footerCitiesHTML);
+    footerRoutesHTML += '                          </div>\n                      </div>';
+    
+    content = content.replace(footerRoutesRegex, footerRoutesHTML);
 
     // 3.2 Rebuild meta description with state-specific data
     const metaDescRegex = /<meta name="description" content="[^"]*">/;
