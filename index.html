@@ -1168,7 +1168,18 @@ footer .pt-8.border-t {
         </section>
 
         <script>
-            // Simple logic for the horizontal sliders
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if(mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // Simple logic for the horizontal sliders
             document.addEventListener('DOMContentLoaded', () => {
                 // Services slider logic
                 const servicesSlider = document.getElementById('servicesSlider');
@@ -1194,7 +1205,7 @@ footer .pt-8.border-t {
         <!-- Cinematic Sticky Scroll "Poster" Section                      -->
         <!-- Inspired by trucknroll.com — adapted for Neon Auto Transport  -->
         <!-- ═══════════════════════════════════════════════════════════════ -->
-        <section id="poster-scroll" style="position: relative; height: 350vh; background-color: #0a0a0a;">
+        <section id="poster-scroll" style="position: relative; height: 400vh; background-color: #0a0a0a;">
             <!-- Sticky viewport lock -->
             <div id="poster-sticky" style="position: sticky; top: 0; height: 100vh; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center;">
 
