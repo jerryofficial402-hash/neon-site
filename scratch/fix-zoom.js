@@ -7,9 +7,9 @@ function processDir(dirPath) {
         const fullPath = path.join(dirPath, file);
         const stat = fs.statSync(fullPath);
         
-        if (stat.isDirectory() && !fullPath.includes('node_modules') && !fullPath.includes('.git')) {
+        if (stat.isDirectory() && !fullPath.includes('node_modules') && !fullPath.includes('.git') && !fullPath.includes('scratch')) {
             processDir(fullPath);
-        } else if (file.endsWith('.html')) {
+        } else if (file.endsWith('.html') && !fullPath.includes('scratch')) {
             let content = fs.readFileSync(fullPath, 'utf8');
             if (!content.includes('font-size: 110%;')) {
                 // Insert the style block right before </head>
@@ -20,5 +20,6 @@ function processDir(dirPath) {
     }
 }
 
-processDir(__dirname);
+// Pass process.cwd() to target the root directory instead of __dirname
+processDir(process.cwd());
 console.log('Successfully injected 110% zoom scale on desktop for all HTML files!');
