@@ -32,7 +32,7 @@ topRoutes.forEach(route => {
     const slugOrigin = route.origin.toLowerCase().replace(/, /g, '-').replace(/\s+/g, '-');
     const slugDest = route.destination.toLowerCase().replace(/, /g, '-').replace(/\s+/g, '-');
     const slug = `${slugOrigin}-to-${slugDest}`;
-    const outputPath = path.join(__dirname, 'city', `${slug}.html`);
+    const outputPath = path.join(__dirname, 'city', `${slug}/`);
 
     let content = template;
 
@@ -52,7 +52,7 @@ topRoutes.forEach(route => {
     // 4. Update Schema
     content = content.replace(/"name": "Virginia Car Shipping"/, `"name": "${title}"`);
     content = content.replace(/"description": "[^"]*"/, `"description": "Door-to-door auto transport from ${route.origin} to ${route.destination}."`);
-    content = content.replace(/https:\/\/neonautotransport\.com\/virginia-car-shipping\.html/g, `https://neonautotransport.com/routes/city/${slug}.html`);
+    content = content.replace(/https:\/\/neonautotransport\.com\/virginia-car-shipping\.html/g, `https://neonautotransport.com/routes/city/${slug}/`);
     content = content.replace(/"Virginia Car Shipping"/g, `"${title}"`);
 
     // 5. Replace unique route content block
@@ -90,7 +90,7 @@ topRoutes.forEach(route => {
     content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, \`Talk to an auto transport expert now or get an instant quote for shipping from \${originCity} to \${destCity}.\`);
 
     fs.writeFileSync(outputPath, content);
-    console.log(`Generated routes/city/${slug}.html`);
+    console.log(`Generated routes/city/${slug}/`);
 });
 
 console.log("All 20 city-to-city route pages generated successfully!");

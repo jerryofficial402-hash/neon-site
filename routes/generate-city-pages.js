@@ -225,7 +225,7 @@ statesData.forEach(state => {
     state.cities.forEach(city => {
         const slugCity = city.toLowerCase().replace(/, /g, '-').replace(/\s+/g, '-').replace(/\./g, '');
         const slug = `${slugCity}-${state.abbr.toLowerCase()}`;
-        const outputPath = path.join(__dirname, 'city', `${slug}.html`);
+        const outputPath = path.join(__dirname, 'city', `${slug}/`);
 
         let content = template;
 
@@ -292,7 +292,7 @@ statesData.forEach(state => {
         content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, `Talk to an auto transport expert now or get an instant quote for shipping to/from ${city}.`);
 
         // MASSIVE GLOBAL REPLACEMENTS TO FIX THE BUG
-        // The master template is virginia-car-shipping.html, so we must aggressively replace its baseline text.
+        // The master template is virginia-car-shipping/, so we must aggressively replace its baseline text.
         content = content.replace(/Virginia/g, state.name);
         content = content.replace(/Richmond/g, city);
         // We only want to replace standalone "VA" to avoid replacing letters in words

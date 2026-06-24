@@ -343,7 +343,7 @@ function estimateCost(distance) {
     
     let lower = Math.round(mid * 0.85 / 25) * 25;
     let upper = Math.round(mid * 1.15 / 25) * 25;
-    return `$${lower} - $${upper}`;
+    return "$" + lower + " - $" + upper;
 }
 
 function estimateTransit(distance) {
