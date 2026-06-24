@@ -612,6 +612,11 @@ footer .pt-8.border-t {
             justify-content: center !important;
             text-align: center !important;
         }
+
+        /* 6. Fix poster scroll length on mobile (2.5 screen heights instead of 3.5) */
+        #poster-scroll {
+            height: 250vh !important;
+        }
     }
     </style>
 </head>
@@ -1256,7 +1261,7 @@ footer .pt-8.border-t {
                 header.style.transition = 'transform 0.5s cubic-bezier(0.16,1,0.3,1), opacity 0.4s ease';
             }
 
-            var cachedSectionHeight = 3.5 * window.innerHeight;
+            var cachedSectionHeight = section.getBoundingClientRect().height;
             var cachedWinHeight = window.innerHeight;
             var sectionTop = 0;
             requestAnimationFrame(function() {
@@ -1265,7 +1270,7 @@ footer .pt-8.border-t {
                 onScroll();
             });
             window.addEventListener('resize', function() {
-                cachedSectionHeight = 3.5 * window.innerHeight;
+                cachedSectionHeight = section.getBoundingClientRect().height;
                 cachedWinHeight = window.innerHeight;
                 requestAnimationFrame(function() { sectionTop = section.offsetTop; });
             }, { passive: true });
