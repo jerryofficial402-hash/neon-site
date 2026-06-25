@@ -74,9 +74,9 @@ h1, h2, h3, h4, h5, h6 {
 .stripe-gradient-bg::before {
  content: '';
  position: absolute;
- inset: -10%;
-   background: linear-gradient(-45deg, #0a2540, #00D1FF, #635bff, #0a2540);
-   background-size: 200% 200%;
+ inset: 0;
+   background: linear-gradient(-45deg, #0a2540, #00D1FF, #0a2540, #635bff);
+   background-size: 400% 400%;
  animation: gradientMesh 15s ease infinite;
  z-index: 0;
 }
@@ -86,10 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes gradientMesh {
- 0% { transform: translate(0, 0); }
- 50% { transform: translate(-25%, -25%); }
- 100% { transform: translate(0, 0); }
-}
+   0% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+   100% { background-position: 0% 50%; }
+  }
 
 @media (max-width: 768px) {
  .stripe-gradient-bg::before { animation: none !important; }
