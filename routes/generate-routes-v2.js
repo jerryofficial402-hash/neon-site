@@ -255,8 +255,6 @@ function generatePopularRoutesHTML(sourceState) {
 
 // Extract cities section and replace it with a dynamically generated one
 function generateCitiesHTML(state) {
-    let citiesLinks = state.cities.map(city => '<a href="#" class="hover:text-[#0a2540] transition">' + city + '</a>').join('\n                            ');
-    
     return '<!-- Unique Local Content Section to satisfy E-E-A-T and eliminate thin content -->\n' +
            '<div class="stripe-card p-8 lg:p-10 bg-[#f8fafc] border border-[#e6e6e6] rounded-2xl mb-12">\n' +
            '    <h2 class="text-2xl font-bold mb-4 text-[#0a2540]">Local Auto Transport Insights for ' + state.name + '</h2>\n' +
@@ -268,15 +266,6 @@ function generateCitiesHTML(state) {
            '        Our network of 10,000+ verified carriers is highly experienced with ' + state.name + '\'s ' + state.weather + '. \n' +
            '        Whether you\'re moving to ' + state.cities[0] + ' for corporate relocation, buying a car from an auction in ' + (state.cities[1] || 'a major metro') + ', or needing seasonal transport, we ensure compliance with all local Department of Transportation regulations.\n' +
            '    </p>\n' +
-           '</div>\n\n' +
-           '<div class="stripe-card p-8 lg:p-10 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-2xl">\n' +
-           '    <h2 class="text-3xl font-bold mb-4 text-[#0a2540] tracking-tight">Cities We Serve in ' + state.name + '</h2>\n' +
-           '    <p class="text-[#425466] mb-8 leading-relaxed">Neon Auto Transport provides car shipping services to cities throughout ' + state.name + '. Click on any major metro area below to learn more about auto transport options in that region.</p>\n' +
-           '    \n' +
-           '    <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">' + state.cities.length + ' major cities served in ' + state.name + '</div>\n' +
-           '    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-2 text-sm text-[#468de6] font-semibold">\n' +
-           '        ' + citiesLinks + '\n' +
-           '    </div>\n' +
            '</div>';
 }
 
@@ -500,8 +489,8 @@ statesData.forEach(state => {
         );
 
         // 5. Replace cities section BEFORE component shuffling (shuffle breaks the regex order)
-        const originalCitiesRegex = /<div class="stripe-card p-8 lg:p-10 bg-white">[\s\S]*?<!-- FAQs -->/m;
-        const newCitiesHTML = generateCitiesHTML(state) + "\n\n                    <!-- FAQs -->";
+        const originalCitiesRegex = /<!-- Cities We Serve -->[\s\S]*?<!-- FAQs -->/m;
+        const newCitiesHTML = "<!-- Cities We Serve -->\n" + generateCitiesHTML(state) + "\n\n                    <!-- FAQs -->";
         content = content.replace(originalCitiesRegex, newCitiesHTML);
 
         // Component Shuffling
