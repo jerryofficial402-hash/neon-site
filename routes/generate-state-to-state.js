@@ -74,6 +74,14 @@ template = template.split('hover:te')[0] + ctaSection + '\n' + footerHTML + '\n'
 // Inject header
 template = template.replace('[EXISTING NAV COMPONENT]', headerHTML + '\n  ' + mobileMenuHTML);
 
+// Inject correct CSS
+const correctCSS = `
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/styles.css">
+`;
+template = template.replace('<link rel="stylesheet" href="/styles/main.css" />', correctCSS.trim());
+
 // ==========================================
 // 4. GENERATE PAGES
 // ==========================================
