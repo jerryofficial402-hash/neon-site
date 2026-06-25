@@ -69,9 +69,9 @@ const ctaSection = `xt-[#0a2540] transition text-lg">
 `;
 
 // Splice the end of the file safely
-template = template.split('<truncated')[0] + ctaSection + '\n' + footerHTML + '\n' + scriptHTML + '\n</body>\n</html>';
+template = template.split('<truncated')[0] + ctaSection + '\n</main>\n' + footerHTML + '\n' + scriptHTML + '\n</body>\n</html>';
 // Inject header
-template = template.replace('[EXISTING NAV COMPONENT]', headerHTML + '\n  ' + mobileMenuHTML);
+template = template.replace('[EXISTING NAV COMPONENT]', headerHTML + '\n  ' + mobileMenuHTML + '\n<main class="pt-28">');
 
 // Inject correct CSS
 const correctCSS = `
