@@ -60,8 +60,7 @@ let template = fs.readFileSync(path.join(__dirname, '..', 'user_template.md'), '
 template = template.split('## FULL HTML PAGE TEMPLATE')[1];
 template = template.replace(/```html/, '').replace(/```.*/s, '');
 // Since the template was truncated around "hover:te", let's safely recreate the end
-const ctaSection = `
-        <a href="tel:5715767711" class="border-2 border-white text-white font-bold px-10 py-4 rounded-xl hover:bg-white hover:text-[#0a2540] transition text-lg">
+const ctaSection = `xt-[#0a2540] transition text-lg">
           Call (571) 576-7711
         </a>
       </div>
@@ -70,7 +69,7 @@ const ctaSection = `
 `;
 
 // Splice the end of the file safely
-template = template.split('hover:te')[0] + ctaSection + '\n' + footerHTML + '\n' + scriptHTML + '\n</body>\n</html>';
+template = template.split('<truncated')[0] + ctaSection + '\n' + footerHTML + '\n' + scriptHTML + '\n</body>\n</html>';
 // Inject header
 template = template.replace('[EXISTING NAV COMPONENT]', headerHTML + '\n  ' + mobileMenuHTML);
 
