@@ -632,7 +632,7 @@ footer .pt-8.border-t {
   }
  </style>
  </head>
-<body class="pb-24 lg:pb-0 antialiased">
+<body class="pb-24 lg:pb-0 antialiased overflow-x-hidden w-full">
 
  <!-- Global Header -->
  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header">
@@ -1174,15 +1174,13 @@ footer .pt-8.border-t {
 
   <script>
   // Mobile Menu Toggle
-  document.addEventListener('DOMContentLoaded', () => {
-   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-   const mobileMenu = document.getElementById('mobile-menu');
-   if(mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-     mobileMenu.classList.toggle('hidden');
-    });
-   }
-  });
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if(mobileMenuBtn && mobileMenu) {
+   mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+   });
+  }
 
   // Simple logic for the horizontal sliders
    document.addEventListener('DOMContentLoaded', () => {
