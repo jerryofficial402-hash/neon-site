@@ -757,25 +757,39 @@ footer .pt-8.border-t {
   <main>
     <!-- Hero Section -->
     
-  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6]">
-    <div class="flex flex-col lg:flex-row">
-      <div class="lg:w-1/2 px-8 py-20 lg:py-32 lg:px-16 flex flex-col justify-center">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-          <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
-          FMCSA &amp; US Dot Approved
+  <!-- Slanted Hero Header (Why Neon Style) -->
+  <section class="relative stripe-gradient-bg overflow-hidden" style="padding-top:140px;padding-bottom:120px;clip-path:polygon(0 0,100% 0,100% 90%,0 100%)">
+    <div class="container mx-auto px-4 lg:px-8 z-10 relative max-w-7xl">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        
+        <!-- Left Side: Text -->
+        <div class="lg:w-1/2 text-white">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.3)] bg-[rgba(255,255,255,0.1)] text-xs font-bold mb-6">
+            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+            FMCSA &amp; US Dot Approved
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none mb-6 tracking-tighter">
+            Open Auto Transport <br><span style="color: #00D1FF">Nationwide</span>
+          </h1>
+          <p class="text-lg text-[rgba(255,255,255,0.9)] leading-relaxed mb-10 max-w-xl">
+            Open auto transport is the most popular and cost-effective method for shipping a vehicle in the United States. Your car is securely loaded onto an open multi-car trailer alongside other vehicles and delivered door-to-door anywhere in the country.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)] flex items-center gap-2">
+              Calculate Your Rate Instantly 
+              <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
         </div>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">Open Auto Transport — Affordable Open Carrier Car Shipping Nationwide</h1>
-        <p class="text-lg text-[#425466] mb-10 leading-relaxed">Open auto transport is the most popular and cost-effective method for shipping a vehicle in the United States. Your car is securely loaded onto an open multi-car trailer alongside other vehicles and delivered door-to-door anywhere in the country. Over 90% of all vehicles shipped nationwide travel via open carrier — the same method used by auto manufacturers and dealerships to move new cars from factories to showrooms. Neon Auto Transport connects you with FMCSA-licensed open carriers with zero upfront deposit and a price-lock guarantee.</p>
-        <div class="flex">
-          <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
-            Calculate Your Rate Instantly 
-            <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </a>
+
+        <!-- Right Side: Image -->
+        <div class="lg:w-1/2 relative z-10 mt-12 lg:mt-0 w-full">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 transform hover:scale-[1.02] transition duration-500">
+            <img loading="lazy" src="/images/open-auto-transport-hero.png" alt="Open carrier auto transport service shipping vehicles on multi-car trailer across the country" class="w-full h-auto object-cover" width="1200" height="800" style="max-height: 400px;">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a2540]/50 to-transparent pointer-events-none"></div>
+          </div>
         </div>
-      </div>
-      <div class="lg:w-1/2 relative min-h-[400px]">
-        <img loading="lazy" src="/images/open-auto-transport-hero.png" alt="Open carrier auto transport service shipping vehicles on multi-car trailer across the country" class="absolute inset-0 w-full h-full object-cover object-center" width="1200" height="800">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#f6f9fc] to-transparent w-32"></div>
+
       </div>
     </div>
   </section>
