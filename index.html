@@ -631,7 +631,10 @@ footer .pt-8.border-t {
   html { font-size: 110%; }
   }
  </style>
- </head>
+ <style>
+  html, body { overflow-x: hidden !important; width: 100vw !important; position: relative !important; margin: 0 !important; padding: 0 !important; }
+</style>
+</head>
 <body class="pb-24 lg:pb-0 antialiased overflow-x-hidden w-full">
 
  <!-- Global Header -->
@@ -1177,9 +1180,7 @@ footer .pt-8.border-t {
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   if(mobileMenuBtn && mobileMenu) {
-   mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-   });
+   mobileMenuBtn.addEventListener('click', () => { if(mobileMenu.style.display === 'none' || mobileMenu.classList.contains('hidden')) { mobileMenu.classList.remove('hidden'); mobileMenu.style.display = 'flex'; } else { mobileMenu.style.display = 'none'; } });
   }
 
   // Simple logic for the horizontal sliders

@@ -428,6 +428,9 @@ footer .pt-8.border-t {
   ]
 }
 </script>
+<style>
+  html, body { overflow-x: hidden !important; width: 100vw !important; position: relative !important; margin: 0 !important; padding: 0 !important; }
+</style>
 </head>
 <body class="pb-24 lg:pb-0 antialiased bg-[#f6f9fc] overflow-x-hidden w-full">
               <!-- Global Header -->
@@ -1217,7 +1220,7 @@ footer .pt-8.border-t {
     document.addEventListener('DOMContentLoaded', function() {
       var btn = document.getElementById('mobile-menu-btn');
       var menu = document.getElementById('mobile-menu');
-      if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+      if (btn && menu) btn.addEventListener('click', function() { if(menu.style.display === 'none' || menu.classList.contains('hidden')) { menu.classList.remove('hidden'); menu.style.display = 'flex'; } else { menu.style.display = 'none'; } });
     });
   </script>
   <script>
