@@ -112,9 +112,7 @@ allRoutes.forEach(route => {
     '\\[DEST_CITY_3\\]': destCities[2],
   };
 
-  for (const [key, val] of Object.entries(replacements)) {
-    content = content.replace(new RegExp(key, 'g'), val);
-  }
+
 
   // Section 9 Linking Logic
   const moreOriginRoutes = allRoutes.filter(r => r.originSlug === route.originSlug && r.destSlug !== route.destSlug);
@@ -147,6 +145,10 @@ allRoutes.forEach(route => {
   content = content.replace(/<li><a href="\/\[DEST2_SLUG\]-to-\[DEST_SLUG\]-car-shipping.*<\/li>\s*/, '');
   content = content.replace(/<li><a href="\/\[DEST3_SLUG\]-to-\[DEST_SLUG\]-car-shipping.*<\/li>\s*/, '');
 
+    for (const [key, val] of Object.entries(replacements)) {
+    content = content.replace(new RegExp(key, 'g'), val);
+  }
+
   // Ensure output is in the ROOT dir
   const dirPath = path.join(__dirname, '..', `${route.originSlug}-to-${route.destSlug}-car-shipping`);
   if (!fs.existsSync(dirPath)) {
@@ -159,7 +161,7 @@ allRoutes.forEach(route => {
 // 5. VERIFICATION STEP
 // ==========================================
 let allPassed = true;
-const checkStrings = ['[ORIGIN_STATE]', '[DEST_STATE]', '[OPEN_LOW]', '[TRANSIT_LOW]', 'virginia-to-', '/routes/', 'href="#"'];
+const checkStrings = ['[ORIGIN_STATE]', '[DEST_STATE]', '[OPEN_LOW]', '[TRANSIT_LOW]', '[DEST2_SLUG]', 'virginia-to-', '/routes/', 'href="#"'];
 
 allRoutes.forEach(route => {
   const filePath = path.join(__dirname, '..', `${route.originSlug}-to-${route.destSlug}-car-shipping`, 'index.html');

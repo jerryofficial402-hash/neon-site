@@ -490,7 +490,7 @@ statesData.forEach(state => {
 
         // 5. Replace cities section BEFORE component shuffling (shuffle breaks the regex order)
         const originalCitiesRegex = /<!-- Cities We Serve -->[\s\S]*?<!-- FAQs -->/m;
-        const newCitiesHTML = "<!-- Cities We Serve -->\n" + generateCitiesHTML(state) + "\n\n                    <!-- FAQs -->";
+        const newCitiesHTML = "<!-- Cities We Serve -->\n<!-- FAQs -->";
         content = content.replace(originalCitiesRegex, newCitiesHTML);
 
         // Component Shuffling
