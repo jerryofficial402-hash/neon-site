@@ -167,24 +167,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Post to custom CRM database
         try {
-            fetch('/api/leads', {
+            await fetch('/api/leads', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(crmPayload)
-            }).then(() => console.log('Calculator lead sent to Neon CRM database')).catch(err => console.error(err));
+            });
+            console.log('Calculator lead sent to Neon CRM database');
         } catch (err) {
             console.error('Calculator CRM database submission failed:', err);
         }
 
         // Send Web3Forms email via AJAX (no redirect)
         try {
-            fetch('https://api.web3forms.com/submit', {
+            const web3Response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify(web3Payload)
-            }).then(r => r.json()).then(result => console.log('Web3Forms response:', result)).catch(err => console.error(err));
+            });
+            const web3Result = await web3Response.json();
+            console.log('Web3Forms response:', web3Result);
+            if (!web3Result.success) {
+                console.error('Web3Forms error:', web3Result);
+            }
         } catch (err) {
             console.error('Web3Forms submission failed:', err);
+        }
+
+        // Re-enable submit button in case of error
+        if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
         }
 
         // Show inline success message
