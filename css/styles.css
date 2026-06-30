@@ -300,3 +300,14 @@ input:focus, select:focus {
 footer .pt-8.border-t {
   padding-right: 80px;
 }
+
+
+/* --- Hotfix for missing Tailwind classes in author images --- */
+.w-12 { width: 3rem !important; }
+.h-12 { height: 3rem !important; }
+.w-16 { width: 4rem !important; }
+.h-16 { height: 4rem !important; }
+.w-32 { width: 8rem !important; }
+.h-32 { height: 8rem !important; }
+.rounded-full { border-radius: 9999px !important; }
+.object-cover { object-fit: cover !important; }
