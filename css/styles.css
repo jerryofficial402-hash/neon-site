@@ -311,3 +311,11 @@ footer .pt-8.border-t {
 .h-32 { height: 8rem !important; }
 .rounded-full { border-radius: 9999px !important; }
 .object-cover { object-fit: cover !important; }
+
+
+/* --- Hotfix: Add padding to footer instead of body on mobile to prevent white space below footer --- */
+@media (max-width: 1024px) {
+  footer {
+    padding-bottom: 80px !important;
+  }
+}
