@@ -240,6 +240,11 @@
       "source": "/routes/:state-car-shipping/",
       "destination": "/:state-car-shipping/",
       "permanent": true
+    },
+    {
+      "source": "/detail/:path*",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
