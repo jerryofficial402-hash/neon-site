@@ -34,42 +34,47 @@
 
   <!-- JSON-LD: Service -->
   <script type="application/ld+json">
-  {
-   "@context": "https://schema.org",
-   "@type": "Service",
-   "name": "Car Buyer Auto Transport",
-   "description": "Just bought a car online or out of state? Neon Auto Transport delivers your new purchase right to your door. FMCSA approved, fully insured, nationwide delivery.",
-   "serviceType": "Car Buyer Auto Transport",
-   "provider": {
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Car Buyer Auto Transport",
+  "description": "Just bought a car online or out of state? Neon Auto Transport delivers your new purchase right to your door. FMCSA approved, fully insured, nationwide delivery.",
+  "serviceType": "Car Buyer Auto Transport",
+  "provider": {
     "@type": "MovingCompany",
     "name": "Neon Auto Transport",
     "telephone": "+15715767711",
     "url": "https://neonautotransport.com",
     "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "2700 Neabsco Common Pl Suite 101",
-     "addressLocality": "Woodbridge",
-     "addressRegion": "VA",
-     "postalCode": "22191",
-     "addressCountry": "US"
+      "@type": "PostalAddress",
+      "streetAddress": "2700 Neabsco Common Pl Suite 101",
+      "addressLocality": "Woodbridge",
+      "addressRegion": "VA",
+      "postalCode": "22191",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1247",
+      "bestRating": "5",
+      "worstRating": "1"
     }
-   },
-   "areaServed": { "@type": "Country", "name": "United States" },
-   "url": "https://neonautotransport.com/services/car-buyer-auto-transport/",
-   "offers": {
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": "https://neonautotransport.com/services/car-buyer-auto-transport/",
+  "offers": {
     "@type": "Offer",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "seller": { "@type": "Organization", "name": "Neon Auto Transport" }
-   }
-  ,
- "aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "4.9",
-  "reviewCount": "1247",
-  "bestRating": "5",
-  "worstRating": "1"
- }
+    "seller": {
+      "@type": "Organization",
+      "name": "Neon Auto Transport"
+    }
+  }
 }
   </script>
   <script type="application/ld+json">

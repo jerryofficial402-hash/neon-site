@@ -34,42 +34,47 @@
 
   <!-- JSON-LD: Service -->
   <script type="application/ld+json">
-  {
-   "@context": "https://schema.org",
-   "@type": "Service",
-   "name": "International Car Shipping",
-   "description": "Ship your vehicle internationally with Neon Auto Transport. We handle customs, ocean freight, and overseas logistics for car shipping to 150+ countries. Get a free international quote.",
-   "serviceType": "International Car Shipping",
-   "provider": {
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "International Car Shipping",
+  "description": "Ship your vehicle internationally with Neon Auto Transport. We handle customs, ocean freight, and overseas logistics for car shipping to 150+ countries. Get a free international quote.",
+  "serviceType": "International Car Shipping",
+  "provider": {
     "@type": "MovingCompany",
     "name": "Neon Auto Transport",
     "telephone": "+15715767711",
     "url": "https://neonautotransport.com",
     "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "2700 Neabsco Common Pl Suite 101",
-     "addressLocality": "Woodbridge",
-     "addressRegion": "VA",
-     "postalCode": "22191",
-     "addressCountry": "US"
+      "@type": "PostalAddress",
+      "streetAddress": "2700 Neabsco Common Pl Suite 101",
+      "addressLocality": "Woodbridge",
+      "addressRegion": "VA",
+      "postalCode": "22191",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1247",
+      "bestRating": "5",
+      "worstRating": "1"
     }
-   },
-   "areaServed": { "@type": "Country", "name": "United States" },
-   "url": "https://neonautotransport.com/services/international-overseas-car-shipping-services/",
-   "offers": {
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "url": "https://neonautotransport.com/services/international-overseas-car-shipping-services/",
+  "offers": {
     "@type": "Offer",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "seller": { "@type": "Organization", "name": "Neon Auto Transport" }
-   }
-  ,
- "aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "4.9",
-  "reviewCount": "1247",
-  "bestRating": "5",
-  "worstRating": "1"
- }
+    "seller": {
+      "@type": "Organization",
+      "name": "Neon Auto Transport"
+    }
+  }
 }
   </script>
   <script type="application/ld+json">
