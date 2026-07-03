@@ -245,6 +245,16 @@
       "source": "/detail/:path*",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/products/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
     }
   ]
 }

@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /detail/
+Disallow: /products/
+Disallow: /sitemap_index.xml
 
 Sitemap: https://neonautotransport.com/sitemap.xml
