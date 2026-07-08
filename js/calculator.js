@@ -1,8 +1,11 @@
-// js/calculator.js
-
 const coordinates = {
     pickup: null,
     delivery: null
+};
+
+const resolvedLocations = {
+    pickup: '',
+    delivery: ''
 };
 
 let vehicleCount = 1;
@@ -115,6 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'Phone': phone,
             'Pickup ZIP': pickupZip,
             'Delivery ZIP': deliveryZip,
+            'Pickup Location': resolvedLocations.pickup || pickupZip,
+            'Delivery Location': resolvedLocations.delivery || deliveryZip,
             'Distance': document.getElementById('distance').value,
             'Pickup Date': pickupDate,
             'Transport Type': transportType === 'enclosed' ? 'Enclosed' : 'Open',
@@ -138,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 vehicleCondition: primaryVehicle.condition,
                 pickupZip,
                 deliveryZip,
+                pickupLocation: resolvedLocations.pickup || pickupZip,
+                dropoffLocation: resolvedLocations.delivery || deliveryZip,
                 desiredPickupDate: pickupDate,
                 transportType: transportType === 'enclosed' ? 'Enclosed' : 'Open',
                 source: 'Quote Calculator',
@@ -332,6 +339,9 @@ function setupZipAutocomplete(inputId, dropdownId, type) {
                         
                         // Store coordinates
                         coordinates[type] = { lat, lng };
+
+                        // Store resolved city, state, zip
+                        resolvedLocations[type] = `${city}, ${state} ${zip}`;
 
                         // Try to auto-calculate distance
                         attemptDistanceCalculation();

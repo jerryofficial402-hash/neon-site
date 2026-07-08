@@ -34,7 +34,8 @@ module.exports = async function handler(req, res) {
     const {
       firstName, lastName, email, phone,
       vehicleYear, vehicleMake, vehicleModel, vehicleType, vehicleCondition,
-      pickupZip, deliveryZip, desiredPickupDate, transportType, source
+      pickupZip, deliveryZip, desiredPickupDate, transportType, source,
+      pickupLocation, dropoffLocation
     } = fields;
 
     // Build the customer name
@@ -75,8 +76,8 @@ module.exports = async function handler(req, res) {
       phone: phone || null,
       email: email || null,
       vehicle_name: vehicleName,
-      pickup_location: pickupZip ? `Zip: ${pickupZip}` : 'Unknown',
-      dropoff_location: deliveryZip ? `Zip: ${deliveryZip}` : 'Unknown',
+      pickup_location: pickupLocation || (pickupZip ? `Zip: ${pickupZip}` : 'Unknown'),
+      dropoff_location: dropoffLocation || (deliveryZip ? `Zip: ${deliveryZip}` : 'Unknown'),
       est_pickup_date: desiredPickupDate || null,
       est_delivery_date: null,
       estimated_price: 0, // No price yet — specialist will quote
