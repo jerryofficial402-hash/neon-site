@@ -17,8 +17,11 @@ const replacements = [
   { from: 'src="/js/chatbot.js" defer', to: 'src="/js/chatbot.js?v=4" defer' },
   // Normalize chatbot.css
   { from: 'href="/css/chatbot.css">', to: 'href="/css/chatbot.css?v=2" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="/css/chatbot.css?v=2"></noscript>' },
-  // Normalize three-truck.js
+  // Normalize Three-truck.js
   { from: 'src="/js/three-truck.js" defer', to: 'src="/js/three-truck.js?v=2" defer' },
+  // Normalize tailwind.css for cache busting
+  { from: 'href="/css/tailwind.css">', to: 'href="/css/tailwind.css?v=2">' },
+  { from: 'href="/css/tailwind.css?v=1">', to: 'href="/css/tailwind.css?v=2">' },
 ];
 
 let totalFiles = 0;
