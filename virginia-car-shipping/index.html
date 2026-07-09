@@ -289,7 +289,7 @@
           </div>
         </div>
         <div class="lg:w-1/2 relative min-h-[400px]">
-          <img src="/images/virginia-state-flag-car-shipping.jpg" alt="Virginia State Flag - Virginia Car Shipping" class="absolute inset-0 w-full h-full object-cover object-left" width="1200" height="800" fetchpriority="high" decoding="async" loading="eager">
+          <img src="/images/virginia-state-flag-car-shipping.jpg" alt="Virginia State Flag - Virginia Car Shipping" class="absolute inset-0 w-full h-full object-cover object-center" width="1200" height="800" fetchpriority="high" decoding="async" loading="eager">
           <div class="absolute inset-0 bg-gradient-to-r from-[#f6f9fc] to-transparent w-32"></div>
         </div>
       </div>
@@ -1053,30 +1053,5 @@
     // Trigger once on load
     reveal();
   </script>
-
-
-Btn &amp;&amp; mobileMenu) {
-      mobileMenuBtn.addEventListener('click', () =&gt; {
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
-
-    // Scroll Reveal
-    function reveal() {
-      var reveals = document.querySelectorAll('.reveal');
-      for (var i = 0; i &lt; reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 50;
-        if (elementTop &lt; windowHeight - elementVisible) {
-          reveals[i].classList.add('active');
-        }
-      }
-    }
-    window.addEventListener('scroll', reveal);
-    // Trigger once on load
-    reveal();
-  
-
-
-</body></html>
+</body>
+</html>
