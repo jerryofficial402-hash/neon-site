@@ -420,7 +420,7 @@ statesData.forEach(state => {
         </section>`;
 
         const layoutB = `
-        <section class="relative pt-32 pb-48 flex items-center justify-center border-b-[8px] border-[#39FF14]">
+        <section class="relative pt-16 pb-20 lg:pt-24 lg:pb-28 flex items-center justify-center border-b-[8px] border-[#39FF14]">
             <div class="absolute inset-0 w-full h-full">
                 <img src="${imgUrl}" alt="${state.name} Car Shipping" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-[#0a2540]/85"></div>
@@ -442,7 +442,7 @@ statesData.forEach(state => {
         </section>`;
 
         const layoutC = `
-        <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
+        <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-12 lg:py-16">
             <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     <div class="lg:w-1/2 flex flex-col justify-center">

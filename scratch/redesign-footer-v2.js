@@ -118,7 +118,7 @@ function processDirectory(dir) {
         } else if (file.endsWith('.html')) {
             let content = fs.readFileSync(fullPath, 'utf8');
             
-            // Replace existing footer. Existing footer starts with: <footer class="bg-[#0a2540] text-slate-300 py-16 lg:py-24
+            // Replace existing footer. Existing footer starts with: <footer class="bg-[#0a2540] text-slate-300 py-12 lg:py-16
             const footerStartRegex = /<footer class="bg-\[#0a2540\][^>]*>/;
             const footerEndTag = '</footer>';
             

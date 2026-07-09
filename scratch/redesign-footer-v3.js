@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const newFooter = `    <footer class="bg-[#0a2540] text-slate-300 py-16 lg:py-24 border-t border-slate-800 relative overflow-hidden" style="width: 100%;">
+const newFooter = `    <footer class="bg-[#0a2540] text-slate-300 py-12 lg:py-16 border-t border-slate-800 relative overflow-hidden" style="width: 100%;">
         <!-- Background Glows -->
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-px opacity-40" style="background: linear-gradient(to right, transparent, #00d4ff, transparent);"></div>
         
