@@ -44,7 +44,7 @@ const stateCities = {
 const samplePage = fs.readFileSync(path.join(__dirname, '..', 'california-car-shipping', 'index.html'), 'utf8');
 const headerMatch = samplePage.match(/<header[\s\S]*?<\/header>/i);
 const footerMatch = samplePage.match(/<footer[\s\S]*?<\/footer>/i);
-const scriptMatch = samplePage.match(/<script src="\/chat\.js" defer><\/script>/i) || ['<script src="/chat.js" defer></script>'];
+const scriptMatch = samplePage.match(/<script src="\/js\/chatbot\.js.*?"><\/script>/i) || ['<script src="/js/chatbot.js?v=4" defer></script>'];
 const mobileMenuMatch = samplePage.match(/<!-- Mobile Menu -->[\s\S]*?<!-- \/Mobile Menu -->/i);
 
 const headerHTML = headerMatch ? headerMatch[0] : '';
