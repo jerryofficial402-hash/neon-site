@@ -18,6 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
     setupZipAutocomplete('pickupZip', 'pickupDropdown', 'pickup');
     setupZipAutocomplete('deliveryZip', 'deliveryDropdown', 'delivery');
 
+    // Pre-select vehicle type from URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const vehicleTypeParam = urlParams.get('vehicle');
+    if (vehicleTypeParam) {
+        const firstVehicleTypeSelect = document.querySelector('.vehicle-group .vehicleType');
+        if (firstVehicleTypeSelect) {
+            firstVehicleTypeSelect.value = vehicleTypeParam;
+        }
+    }
+
     const btnNextStep = document.getElementById('btnNextStep');
     const btnBackStep = document.getElementById('btnBackStep');
     const step1 = document.getElementById('step1');
@@ -239,6 +249,8 @@ function addVehicle() {
                 <option value="sedan">Sedan</option>
                 <option value="suv">SUV</option>
                 <option value="truck">Truck</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="classic">Classic / Exotic Vehicle</option>
             </select>
             <select class="vehicleCondition w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white">
                 <option value="run">Runs & Drives</option>
@@ -416,18 +428,21 @@ function calculateQuote() {
     else if (distance < 1500) ratePerMile = 0.95;
 
     let total = 0;
+    let firstVehicleCost = 0;
 
     // Calculate cost for each vehicle
     const vehicleGroups = document.querySelectorAll('.vehicle-group');
-    vehicleGroups.forEach((group) => {
+    vehicleGroups.forEach((group, index) => {
         const vType = group.querySelector('.vehicleType')?.value || 'sedan';
         const vCondition = group.querySelector('.vehicleCondition')?.value || 'run';
 
         let base = distance * ratePerMile;
 
-        // Vehicle size adjustments
+        // Vehicle size/type adjustments
         if (vType === 'truck') base += 100;
         else if (vType === 'suv') base += 50;
+        else if (vType === 'motorcycle') base = base * 0.75;
+        else if (vType === 'classic') base += 150;
 
         // Condition adjustments
         if (vCondition === 'inop') base += 150;
@@ -435,15 +450,21 @@ function calculateQuote() {
         // Transport type
         if (transportType === 'enclosed') base += 250;
 
-        total += Math.round(base);
+        // Enforce minimum price per vehicle
+        base = Math.max(250, base);
+
+        const vehicleCost = Math.round(base);
+        if (index === 0) {
+            firstVehicleCost = vehicleCost;
+        }
+        total += vehicleCost;
     });
 
     // Multi-vehicle discount: 10% off for 2nd+ vehicles
     if (vehicleGroups.length > 1) {
-        const firstVehicleCost = Math.round(distance * ratePerMile);
-        const additionalVehiclesCost = total - (Math.round(distance * ratePerMile) + (document.querySelector('.vehicle-group .vehicleType')?.value === 'truck' ? 100 : document.querySelector('.vehicle-group .vehicleType')?.value === 'suv' ? 50 : 0) + (document.querySelector('.vehicle-group .vehicleCondition')?.value === 'inop' ? 150 : 0) + (transportType === 'enclosed' ? 250 : 0));
+        const additionalVehiclesCost = total - firstVehicleCost;
         // Apply 10% discount on additional vehicles only
-        total = Math.round(total - additionalVehiclesCost * 0.1);
+        total = Math.round(firstVehicleCost + additionalVehiclesCost * 0.9);
     }
 
     const estField = document.getElementById('estimatedPriceField');
