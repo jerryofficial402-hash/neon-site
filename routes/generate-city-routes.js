@@ -24,7 +24,7 @@ const topRoutes = [
     { origin: "Washington, DC", destination: "Miami, FL", dist: 1050, cost: "$800 - $1100", transit: "3 to 6 days" }
 ];
 
-const templatePath = path.join(__dirname, 'virginia-car-shipping.html');
+const templatePath = path.join(__dirname, '..', 'virginia-car-shipping', 'index.html');
 const template = fs.readFileSync(templatePath, 'utf-8');
 
 topRoutes.forEach(route => {
@@ -86,8 +86,8 @@ topRoutes.forEach(route => {
 
     // Write file
     // Contextual CTAs
-    content = content.replace(/Calculate Your Rate Instantly/g, \`Get a Quote for \${originCity} to \${destCity}\`);
-    content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, \`Talk to an auto transport expert now or get an instant quote for shipping from \${originCity} to \${destCity}.\`);
+    content = content.replace(/Calculate Your Rate Instantly/g, `Get a Quote for ${route.origin} to ${route.destination}`);
+    content = content.replace(/Talk to an auto transport expert now or get an instant quote online./g, `Talk to an auto transport expert now or get an instant quote for shipping from ${route.origin} to ${route.destination}.`);
 
     fs.writeFileSync(outputPath, content);
     console.log(`Generated routes/city/${slug}/`);

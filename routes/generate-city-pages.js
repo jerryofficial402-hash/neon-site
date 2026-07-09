@@ -55,7 +55,7 @@ const statesData = [
     { name: "Wyoming", abbr: "WY", cities: ["Cheyenne", "Casper", "Laramie", "Gillette"], highways: "I-80, I-25", weather: "high winds and extreme mountain snow", type: "vast high-plains western transit route", baseZip: 82001 }
 ];
 
-const templatePath = path.join(__dirname, 'virginia-car-shipping.html');
+const templatePath = path.join(__dirname, '..', 'virginia-car-shipping', 'index.html');
 const template = fs.readFileSync(templatePath, 'utf-8');
 
 // Seeded random for consistent fake data

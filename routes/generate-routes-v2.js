@@ -56,7 +56,7 @@ const statesData = [
     { name: "Wyoming", abbr: "WY", cities: ["Cheyenne", "Casper", "Laramie", "Gillette"], highways: "I-80, I-25", weather: "high winds and extreme mountain snow", type: "vast high-plains western transit route" }
 ];
 
-const templatePath = path.join(__dirname, 'virginia-car-shipping.html');
+const templatePath = path.join(__dirname, '..', 'virginia-car-shipping', 'index.html');
 const template = fs.readFileSync(templatePath, 'utf-8');
 
 function getRandomInt(min, max) {
@@ -442,25 +442,28 @@ statesData.forEach(state => {
         </section>`;
 
         const layoutC = `
-        <section class="bg-[#f6f9fc] border-b border-[#e6e6e6]">
-            <div class="flex flex-col lg:flex-row">
-                <div class="lg:w-1/2 px-8 py-20 lg:py-32 lg:px-16 flex flex-col justify-center">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-                        <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
-                        FMSCA & US Dot Approved
+        <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
+            <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                    <div class="lg:w-1/2 flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
+                            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+                            FMSCA & US Dot Approved
+                        </div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">${state.name} Car Shipping</h1>
+                        <p class="text-lg text-[#425466] mb-10 leading-relaxed">${heroDesc}</p>
+                        <div class="flex">
+                            <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
+                                Calculate Your Rate Instantly 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">${state.name} Car Shipping</h1>
-                    <p class="text-lg text-[#425466] mb-10 leading-relaxed">${heroDesc}</p>
-                    <div class="flex">
-                        <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
-                            Calculate Your Rate Instantly 
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                        </a>
+                    <div class="lg:w-1/2 relative w-full">
+                        <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
+                            <img src="${imgUrl}" alt="${state.name} Auto Transport" class="w-full h-auto rounded-2xl object-contain" style="max-height: 450px;" width="1200" height="800" fetchpriority="high" decoding="async" loading="eager">
+                        </div>
                     </div>
-                </div>
-                <div class="lg:w-1/2 relative min-h-[400px]">
-                    <img src="${imgUrl}" alt="${state.name} Auto Transport" class="absolute inset-0 w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#f6f9fc] to-transparent w-32"></div>
                 </div>
             </div>
         </section>`;
