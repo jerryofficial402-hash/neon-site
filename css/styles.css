@@ -313,9 +313,14 @@ footer .pt-8.border-t {
 .object-cover { object-fit: cover !important; }
 
 
-/* --- Hotfix: Add padding to footer instead of body on mobile to prevent white space below footer --- */
+/* --- Hotfix: Remove bottom padding on mobile now that sticky footer CTA is disabled --- */
 @media (max-width: 1024px) {
   footer {
-    padding-bottom: 80px !important;
+    padding-bottom: 0 !important;
   }
+}
+
+/* Hide mobile sticky CTA overlay globally on all pages */
+#mobile-sticky-cta {
+  display: none !important;
 }
