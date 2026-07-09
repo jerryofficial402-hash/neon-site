@@ -66,7 +66,7 @@ services.forEach(service => {
     </section>`;
 
     const layoutB = `
-    <section class="relative pt-16 pb-20 lg:pt-24 lg:pb-28 flex items-center justify-center border-b-[8px] border-[#39FF14]">
+    <section class="relative pt-32 pb-48 flex items-center justify-center border-b-[8px] border-[#39FF14]">
         <div class="absolute inset-0 w-full h-full">
             <img src="${imgUrl}" alt="${service}" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-[#0a2540]/85"></div>
