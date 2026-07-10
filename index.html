@@ -575,10 +575,11 @@ footer .pt-8.border-t {
    padding-right: 1rem !important;
   }
   #logo-text {
-   font-size: 16px !important;
-   white-space: normal !important;
+   font-size: 13px !important;
+   letter-spacing: 0.5px !important;
+   white-space: nowrap !important;
    line-height: 1.1 !important;
-   max-width: 45vw !important;
+   max-width: 160px !important;
   }
   
   #mobile-menu-btn {
@@ -586,6 +587,13 @@ footer .pt-8.border-t {
    z-index: 9999 !important;
    pointer-events: auto !important;
    display: flex !important;
+  }
+  
+  .comparison-table-wrapper {
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+   margin-bottom: 20px;
+   box-shadow: inset -10px 0 10px -10px rgba(0,0,0,0.1);
   }
   
   /* 3. Fix mobile menu z-index and display */
@@ -1186,10 +1194,58 @@ footer .pt-8.border-t {
 
   <script>
   // Mobile Menu Toggle
-  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const hamburger = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
-  if(mobileMenuBtn && mobileMenu) {
-   mobileMenuBtn.addEventListener('click', () => { if(mobileMenu.style.display === 'none' || mobileMenu.classList.contains('hidden')) { mobileMenu.classList.remove('hidden'); mobileMenu.style.display = 'flex'; } else { mobileMenu.style.display = 'none'; } });
+
+  if (hamburger && mobileMenu) {
+    // Remove any existing listeners first to prevent double-firing
+    const newHamburger = hamburger.cloneNode(true);
+    hamburger.parentNode.replaceChild(newHamburger, hamburger);
+
+    newHamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      
+      // TOGGLE
+      const isOpen = mobileMenu.classList.contains('active') || 
+                     mobileMenu.classList.contains('open') ||
+                     mobileMenu.style.display === 'flex' ||
+                     mobileMenu.style.display === 'block';
+      
+      if (isOpen) {
+        // CLOSE
+        mobileMenu.classList.remove('active', 'open', 'hidden');
+        mobileMenu.classList.add('hidden');
+        mobileMenu.style.display = 'none';
+        newHamburger.setAttribute('aria-expanded', 'false');
+      } else {
+        // OPEN
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('active', 'open');
+        mobileMenu.style.display = 'flex';
+        newHamburger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Close menu when clicking outside of it
+    document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target) && !newHamburger.contains(e.target)) {
+        mobileMenu.classList.remove('active', 'open');
+        mobileMenu.classList.add('hidden');
+        mobileMenu.style.display = 'none';
+        newHamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu when a nav link is clicked
+    const navLinks = mobileMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('active', 'open');
+        mobileMenu.classList.add('hidden');
+        mobileMenu.style.display = 'none';
+        newHamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 
   // Simple logic for the horizontal sliders
@@ -1683,7 +1739,7 @@ footer .pt-8.border-t {
      </div>
     </div>
     <div class="mt-12 text-center">
-     <a href="locations.html" class="btn-outline border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white px-10 py-3 text-lg transition-all shadow-sm flex inline-flex items-center gap-2 mx-auto">
+     <a href="/locations/" class="btn-outline border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white px-10 py-3 text-lg transition-all shadow-sm flex inline-flex items-center gap-2 mx-auto">
       View All Locations
       <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
      </a>
@@ -1895,7 +1951,7 @@ footer .pt-8.border-t {
      <h3 class="text-4xl font-black text-[#0a2540] tracking-tight mb-6">Why Neon Auto Transport Leads the Industry</h3>
      <p class="text-lg text-[#425466]">See how we stack up against Montway, Sherpa, SGT Auto Transport, and RoadRunner.</p>
     </div>
-    <div class="overflow-x-auto">
+    <div class="overflow-x-auto comparison-table-wrapper">
      <table class="w-full text-left border-collapse border border-[#e6e6e6] rounded-xl shadow-sm">
       <thead>
        <tr class="bg-[#f0f5fa] border-b-2 border-[#e6e6e6]">

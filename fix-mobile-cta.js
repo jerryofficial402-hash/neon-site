@@ -22,7 +22,7 @@ function processFile(filePath) {
             Call Now
         </a>
         <a href="/cost-calculator/" class="mobile-cta-btn quote">
-            Get Quote
+            Get Free Quote
         </a>
     </div>
 </body>`;
