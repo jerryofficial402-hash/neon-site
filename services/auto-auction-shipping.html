@@ -346,68 +346,88 @@
   </section>
 
   <!-- How It Works -->
-  <section class="relative py-28 overflow-hidden">
-    <!-- Split background: left image, right dark -->
-    <div class="absolute inset-0 flex">
-      <div class="w-1/2 hidden lg:block relative">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=1200&amp;q=70" class="w-full h-full object-cover" alt="Car being loaded onto transport carrier at auction" width="1200" height="800">
-        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#0a2540]"></div>
-      </div>
-      <div class="w-full lg:w-1/2 bg-[#0a2540]"></div>
-    </div>
-    <!-- Mobile-only full dark bg -->
-    <div class="absolute inset-0 bg-[#0a2540] lg:hidden"></div>
-
-    <div class="container mx-auto px-4 lg:px-8 max-w-6xl relative z-10">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-        <!-- Left: visible on mobile as stacked, hidden text on desktop (image takes this space) -->
-        <div class="hidden lg:block"></div>
-
-        <!-- Right: Steps content -->
-        <div class="text-white">
+  <section class="bg-[#0a2540] py-24 text-white overflow-hidden">
+    <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Left Side: Content -->
+        <div>
           <div class="mb-12">
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(57,255,20,0.3)] bg-[rgba(57,255,20,0.08)] text-xs font-bold text-[#39FF14] mb-4">
               <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
               SIMPLE 4-STEP PROCESS
             </span>
             <h2 class="text-3xl md:text-4xl font-black tracking-tight">How It Works</h2>
+            <p class="mt-4 text-[#8ba3ba] text-lg leading-relaxed">Getting your vehicle from the auction lot to your driveway has never been easier.</p>
           </div>
 
-          <!-- Step 1 -->
-          <div class="relative pl-16 pb-10 border-l-2 border-[rgba(57,255,20,0.2)] ml-5">
-            <div class="absolute left-0 top-0 -translate-x-1/2 w-10 h-10 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-lg shadow-[0_0_25px_rgba(57,255,20,0.4)]">1</div>
-            <h3 class="font-bold text-lg mb-2">Get an Instant Quote</h3>
-            <p class="text-[#8ba3ba] text-sm leading-relaxed">Enter the auction location and your delivery address for a transparent, no-obligation rate &mdash; before you even finish bidding.</p>
+          <div class="space-y-2">
+            <!-- Step 1 -->
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-xl shadow-[0_0_20px_rgba(57,255,20,0.3)] flex-shrink-0 z-10 relative">1</div>
+                <div class="w-0.5 h-full bg-[rgba(57,255,20,0.2)] mt-2 pb-6"></div>
+              </div>
+              <div class="pb-10 pt-1">
+                <h3 class="font-bold text-xl mb-2">Get an Instant Quote</h3>
+                <p class="text-[#8ba3ba] leading-relaxed">Enter the auction location and your delivery address for a transparent, no-obligation rate &mdash; before you even finish bidding.</p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-xl shadow-[0_0_20px_rgba(57,255,20,0.3)] flex-shrink-0 z-10 relative">2</div>
+                <div class="w-0.5 h-full bg-[rgba(57,255,20,0.2)] mt-2 pb-6"></div>
+              </div>
+              <div class="pb-10 pt-1">
+                <h3 class="font-bold text-xl mb-2">We Coordinate the Pickup</h3>
+                <p class="text-[#8ba3ba] leading-relaxed">Give us your buyer number, lot number, and gate release info. Our team handles the auction&rsquo;s check-in process and dispatches a vetted, licensed carrier.</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-xl shadow-[0_0_20px_rgba(57,255,20,0.3)] flex-shrink-0 z-10 relative">3</div>
+                <div class="w-0.5 h-full bg-[rgba(57,255,20,0.2)] mt-2 pb-6"></div>
+              </div>
+              <div class="pb-10 pt-1">
+                <h3 class="font-bold text-xl mb-2">Your Vehicle Ships Safely</h3>
+                <p class="text-[#8ba3ba] leading-relaxed">Choose open transport for standard vehicles or enclosed transport for luxury, exotic, or collector cars.</p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-xl shadow-[0_0_20px_rgba(57,255,20,0.3)] flex-shrink-0 z-10 relative">4</div>
+                <div class="w-0.5 h-full bg-transparent mt-2 pb-6"></div>
+              </div>
+              <div class="pb-4 pt-1">
+                <h3 class="font-bold text-xl mb-2">Delivered to Your Door</h3>
+                <p class="text-[#8ba3ba] leading-relaxed">Inspect your vehicle, sign off, and you&rsquo;re done. No trip to the auction yard required.</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="relative pl-16 pb-10 border-l-2 border-[rgba(57,255,20,0.2)] ml-5">
-            <div class="absolute left-0 top-0 -translate-x-1/2 w-10 h-10 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-lg shadow-[0_0_25px_rgba(57,255,20,0.4)]">2</div>
-            <h3 class="font-bold text-lg mb-2">We Coordinate the Pickup</h3>
-            <p class="text-[#8ba3ba] text-sm leading-relaxed">Give us your buyer number, lot number, and gate release info. Our team handles the auction&rsquo;s check-in process and dispatches a vetted, licensed carrier.</p>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="relative pl-16 pb-10 border-l-2 border-[rgba(57,255,20,0.2)] ml-5">
-            <div class="absolute left-0 top-0 -translate-x-1/2 w-10 h-10 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-lg shadow-[0_0_25px_rgba(57,255,20,0.4)]">3</div>
-            <h3 class="font-bold text-lg mb-2">Your Vehicle Ships Safely</h3>
-            <p class="text-[#8ba3ba] text-sm leading-relaxed">Choose open transport for standard vehicles or enclosed transport for luxury, exotic, or collector cars.</p>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="relative pl-16 pb-2 ml-5">
-            <div class="absolute left-0 top-0 -translate-x-[calc(50%+1px)] w-10 h-10 rounded-full bg-[#39FF14] text-[#0a2540] flex items-center justify-center font-black text-lg shadow-[0_0_25px_rgba(57,255,20,0.4)]">4</div>
-            <h3 class="font-bold text-lg mb-2">Delivered to Your Door</h3>
-            <p class="text-[#8ba3ba] text-sm leading-relaxed">Inspect your vehicle, sign off, and you&rsquo;re done. No trip to the auction yard required.</p>
-          </div>
-
-          <div class="mt-10 pl-16 ml-5">
+          <div class="mt-8">
             <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_30px_rgba(57,255,20,0.25)] inline-flex items-center gap-2">
               Start Your Quote
               <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
           </div>
         </div>
+
+        <!-- Right Side: Image -->
+        <div class="relative hidden lg:block">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0a2540] via-transparent to-transparent z-10 rounded-3xl"></div>
+          <div class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#0a2540] z-10 rounded-3xl"></div>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Car transport carrier" class="rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] w-full h-[650px] object-cover relative z-0 border border-[rgba(255,255,255,0.1)]">
+          <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-[#39FF14] rounded-full blur-[120px] opacity-20 z-0 pointer-events-none"></div>
+          <div class="absolute -top-10 -left-10 w-64 h-64 bg-[#00d4ff] rounded-full blur-[120px] opacity-20 z-0 pointer-events-none"></div>
+        </div>
+
       </div>
     </div>
   </section>
