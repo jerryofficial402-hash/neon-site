@@ -1,108 +1,53 @@
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = 'https://neonautotransport.com';
-const urls = [];
+const rootDir = __dirname;
+let htmlFiles = [];
 
-// Base manual URLs
-const coreUrls = [
-    '/',
-    '/about/',
-    '/services/',
-    '/reviews/',
-    '/blog/',
-    '/faqs/',
-    '/locations/',
-    '/cost-calculator/',
-    '/terms/'
-];
-
-urls.push(...coreUrls);
-
-// Scan a directory and return all HTML files
-function getHtmlFiles(dir) {
-    let results = [];
-    const list = fs.readdirSync(dir);
-    list.forEach(file => {
-        file = path.join(dir, file);
-        const stat = fs.statSync(file);
-        if (stat && stat.isDirectory()) { 
-            results = results.concat(getHtmlFiles(file));
-        } else { 
-            if (file.endsWith('.html') && !file.includes('template')) {
-                results.push(file);
+function findHtmlFiles(dir) {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            if (!['node_modules', '.git', '.vercel', 'og-images', 'dashboard'].includes(file)) {
+                findHtmlFiles(fullPath);
             }
+        } else if (file.endsWith('.html')) {
+            htmlFiles.push(fullPath);
         }
-    });
-    return results;
+    }
 }
 
-const baseDir = __dirname;
+findHtmlFiles(rootDir);
 
-// Directories to scan
-const dirsToScan = [
-    { dir: 'services', pathPrefix: '/services/' },
-    { dir: 'blog', pathPrefix: '/blog/' },
-    { dir: 'compare', pathPrefix: '/compare/' }
-];
+const domain = 'https://neonautotransport.com';
+const urls = [];
 
-dirsToScan.forEach(({dir, pathPrefix}) => {
-    const fullDir = path.join(baseDir, dir);
-    if (fs.existsSync(fullDir)) {
-        const files = getHtmlFiles(fullDir);
-        files.forEach(file => {
-            let relativePath = file.replace(fullDir, '').replace(/\\/g, '/');
-            if (relativePath.startsWith('/')) relativePath = relativePath.substring(1);
-            
-            // Skip index.html as it's added in core
-            if (relativePath === 'index.html') return;
-            
-            const slug = relativePath.replace('.html', '');
-            urls.push(`${pathPrefix}${slug}/`);
-        });
+htmlFiles.forEach(file => {
+    let rel = path.relative(rootDir, file).replace(/\\/g, '/');
+    
+    // Convert relative path to URL path
+    if (rel === 'index.html') {
+        urls.push(domain + '/');
+    } else if (rel.endsWith('/index.html')) {
+        urls.push(domain + '/' + rel.replace('/index.html', '/'));
+    } else {
+        urls.push(domain + '/' + rel.replace('.html', '/'));
     }
 });
 
-// Scan Routes directory (this includes state pages, city pages, and city-routes)
-const routesDir = path.join(baseDir, 'routes');
-if (fs.existsSync(routesDir)) {
-    const routeFiles = getHtmlFiles(routesDir);
-    routeFiles.forEach(file => {
-        let relativePath = file.replace(routesDir, '').replace(/\\/g, '/');
-        if (relativePath.startsWith('/')) relativePath = relativePath.substring(1);
-        
-        // Vercel rewrites:
-        // /routes/alabama-car-shipping.html -> /alabama-car-shipping/
-        // /routes/city/los-angeles-ca.html -> /routes/city/los-angeles-ca/
-        // /routes/city-routes/los-angeles-ca-to-dallas-tx.html -> /routes/city-routes/los-angeles-ca-to-dallas-tx/
-        
-        if (!relativePath.includes('/')) {
-            // It's a state page in the root of /routes/
-            const slug = relativePath.replace('.html', '');
-            urls.push(`/${slug}/`);
-        } else {
-            // It's a city or city-route page
-            const slug = relativePath.replace('.html', '');
-            urls.push(`/routes/${slug}/`);
-        }
-    });
-}
+// Sort for clean XML
+urls.sort();
 
-// Generate Sitemap XML
-let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
-// De-duplicate URLs
-const uniqueUrls = [...new Set(urls)];
-
-uniqueUrls.forEach(url => {
-    // Only map valid URLs
-    const fullUrl = url.startsWith('http') ? url : `${baseUrl}${url}`;
-    sitemapXml += `  <url>\n    <loc>${fullUrl}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+urls.forEach(url => {
+    xml += `  <url>\n    <loc>${url}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>${url === domain + '/' ? '1.0' : '0.8'}</priority>\n  </url>\n`;
 });
 
-sitemapXml += `</urlset>`;
+xml += `</urlset>`;
 
-fs.writeFileSync(path.join(baseDir, 'sitemap.xml'), sitemapXml);
-console.log(`Generated sitemap.xml with ${uniqueUrls.length} URLs!`);
+fs.writeFileSync(path.join(rootDir, 'sitemap.xml'), xml, 'utf8');
+console.log(`Successfully generated sitemap with ${urls.length} URLs.`);
