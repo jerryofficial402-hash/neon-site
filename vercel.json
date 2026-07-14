@@ -143,6 +143,10 @@
     {
       "source": "/terminal-to-terminal-car-shipping/",
       "destination": "/services/terminal-to-terminal-car-shipping/"
+    },
+    {
+      "source": "/heavy-haul-transport/",
+      "destination": "/services/heavy-haul-transport/"
     }
   ],
   "redirects": [
