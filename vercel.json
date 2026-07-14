@@ -241,16 +241,7 @@
       "destination": "/:state-car-shipping/",
       "permanent": true
     },
-    {
-      "source": "/detail/:path*",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/products/:path*",
-      "destination": "/",
-      "permanent": true
-    },
+
     {
       "source": "/sitemap_index.xml",
       "destination": "/sitemap.xml",
