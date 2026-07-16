@@ -498,13 +498,13 @@
               <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-[#e6e6e6] mb-6">
                 <table class="w-full text-left border-collapse">
                   <thead>
-                    <tr class="bg-[#f0f5fa] border-b border-[#e6e6e6]">
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Feature</th>
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Open Car Transport</th>
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Enclosed Car Transport</th>
+                    <tr class="bg-gradient-to-r from-[#0a2540] to-[#1a1f36] border-b border-[#e6e6e6]">
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Feature</th>
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Open Car Transport</th>
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Enclosed Car Transport</th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-[#e6e6e6]">
+                  <tbody class="divide-y divide-[#e6e6e6] [&>tr]:transition-colors [&>tr:hover]:bg-[#f0f5fa]">
                     <tr>
                       <td class="py-4 px-6 font-bold text-[#0a2540]">Average Cost</td>
                       <td class="py-4 px-6">Lower (industry standard)</td>
@@ -542,14 +542,14 @@
               <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-[#e6e6e6] mb-4">
                 <table class="w-full text-left border-collapse">
                   <thead>
-                    <tr class="bg-[#f0f5fa] border-b border-[#e6e6e6]">
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Route</th>
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Estimated Distance</th>
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Open Transport (Avg.)</th>
-                      <th class="py-4 px-6 font-bold text-[#0a2540]">Enclosed Transport (Avg.)</th>
+                    <tr class="bg-gradient-to-r from-[#0a2540] to-[#1a1f36] border-b border-[#e6e6e6]">
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Route</th>
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Estimated Distance</th>
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Open Transport (Avg.)</th>
+                      <th class="py-4 px-6 font-bold text-white uppercase tracking-wider text-sm">Enclosed Transport (Avg.)</th>
                     </tr>
                   </thead>
-                  <tbody class="divide-y divide-[#e6e6e6]">
+                  <tbody class="divide-y divide-[#e6e6e6] [&>tr]:transition-colors [&>tr:hover]:bg-[#f0f5fa]">
                     <tr><td class="py-4 px-6 font-bold">New Jersey ↔ Pennsylvania</td><td class="py-4 px-6">~100–150 mi</td><td class="py-4 px-6">$150–$300</td><td class="py-4 px-6">$300–$500</td></tr>
                     <tr><td class="py-4 px-6 font-bold">New Jersey ↔ Virginia/NC</td><td class="py-4 px-6">~350–450 mi</td><td class="py-4 px-6">$400–$650</td><td class="py-4 px-6">$700–$950</td></tr>
                     <tr><td class="py-4 px-6 font-bold">New Jersey ↔ Georgia</td><td class="py-4 px-6">~800 mi</td><td class="py-4 px-6">$650–$900</td><td class="py-4 px-6">$1,000–$1,300</td></tr>
@@ -564,11 +564,12 @@
               <a href="/cost-calculator/" class="inline-block bg-[#00D1FF] text-[#0a2540] font-bold py-3 px-6 rounded-lg hover:bg-[#00b8e6] transition shadow-md">Get Instant Pricing →</a>
             </div>
 
-            <div class="bg-[#f0f5fa] rounded-2xl p-8 border border-[#e6e6e6] mt-8">
-              <h2 class="text-2xl font-bold text-[#0a2540] mb-4">Real-World Scenario: Shipping a Car for a College Move</h2>
-              <p class="text-lg mb-4">Say a family in Cherry Hill, NJ needs to get their daughter's SUV to her new college in North Carolina before the fall semester starts. Driving it themselves means burning a weekend, covering gas and lodging, and putting extra wear on a vehicle they'd rather keep in good shape.</p>
-              <p class="text-lg mb-4">Instead, they book open car transport through a licensed carrier: the vehicle is picked up curbside in Cherry Hill, inspected and photographed, then delivered to campus housing within the agreed transport window — no one has to take time off work, and the car arrives ready to drive.</p>
-              <p class="text-lg font-bold">This is a common use case for college student car shipping New Jersey families rely on every semester.</p>
+            <div class="bg-gradient-to-br from-[#0a2540] to-[#635bff] rounded-2xl p-8 lg:p-10 text-white shadow-2xl relative overflow-hidden mt-8 group hover:scale-[1.01] transition-transform duration-300">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl group-hover:opacity-10 transition-opacity"></div>
+              <h2 class="text-3xl font-extrabold text-white mb-6">Real-World Scenario: Shipping a Car for a College Move</h2>
+              <p class="text-lg mb-4 text-[rgba(255,255,255,0.9)]">Say a family in Cherry Hill, NJ needs to get their daughter's SUV to her new college in North Carolina before the fall semester starts. Driving it themselves means burning a weekend, covering gas and lodging, and putting extra wear on a vehicle they'd rather keep in good shape.</p>
+              <p class="text-lg mb-4 text-[rgba(255,255,255,0.9)]">Instead, they book open car transport through a licensed carrier: the vehicle is picked up curbside in Cherry Hill, inspected and photographed, then delivered to campus housing within the agreed transport window — no one has to take time off work, and the car arrives ready to drive.</p>
+              <p class="text-xl font-bold text-[#00D1FF] mt-6">This is a common use case for college student car shipping New Jersey families rely on every semester.</p>
             </div>
 
             <div class="mt-8">
