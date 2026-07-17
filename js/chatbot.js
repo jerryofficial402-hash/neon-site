@@ -6,7 +6,7 @@
 
   // ---- Configuration ----
   const CONFIG = {
-    apiEndpoint: '/api/chat',
+    apiEndpoint: '/api/chat/',
     web3formsKey: 'a479d604-6159-4cdd-8eeb-394772c41436',
     phone: '(571) 576-7711',
     phoneRaw: '5715767711',
@@ -272,7 +272,7 @@
     // Submit directly to custom CRM endpoint
     try {
       const fieldsToSend = { ...extractedFields, source: 'AI Chatbot' };
-      await fetch('/api/leads', {
+      await fetch('/api/leads/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ fields: fieldsToSend })

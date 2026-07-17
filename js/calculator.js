@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Post to custom CRM database
         try {
-            await fetch('/api/leads', {
+            await fetch('/api/leads/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(crmPayload)

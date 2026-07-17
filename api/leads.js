@@ -4,7 +4,7 @@
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL || "https://waqyxjekpdbrtlohvgxs.supabase.co";
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndhcXl4amVrcGRicnRsb2h2Z3hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgxNzM4OTIsImV4cCI6MjA5Mzc0OTg5Mn0.JpgCyDtWZgJkSH8-4oDeixT4u0JZ5XoiaeXY7X9mhK4";
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
