@@ -93,6 +93,26 @@
   "trailingSlash": true,
   "rewrites": [
     {
+      "source": "/cultural-views-on-gambling(.*)",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/(.*)giocare-online(.*)",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/(.*)blackjack(.*)",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/products/(.*)",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/detail/(.*)",
+      "destination": "/api/gone"
+    },
+    {
       "source": "/alaska-auto-transport/",
       "destination": "/services/alaska-auto-transport/"
     },
@@ -150,6 +170,26 @@
     }
   ],
   "redirects": [
+    {
+      "source": "/:state-to-:state2-car-shipping",
+      "destination": "/cost-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/:state-to-:state2-car-shipping/",
+      "destination": "/cost-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/:city",
+      "destination": "/locations.html",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/:city/",
+      "destination": "/locations.html",
+      "permanent": true
+    },
     {
       "source": "/expedited-auto-transport/",
       "destination": "/services/expedited-auto-transport/",
@@ -245,7 +285,6 @@
       "destination": "/:state-car-shipping/",
       "permanent": true
     },
-
     {
       "source": "/sitemap_index.xml",
       "destination": "/sitemap.xml",
