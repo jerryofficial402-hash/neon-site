@@ -325,13 +325,29 @@ if img_tag:
     img_tag["src"] = "/images/neon-auto-transport-new-york-car-shipping-cities.jpg"
     img_tag["alt"] = "Neon Auto Transport serving New York State"
 
-# Find the main container section and clear out the old Dallas content
-content_section = soup.find("section", class_=lambda x: x and "container" in x and "mx-auto" in x and "max-w-6xl" in x)
 
-if content_section:
-    content_section.clear()
+# FIX THE OVERLAPPING LAYOUT BUG
+# We need to find the specific column for the main text, not clear the whole container.
+# In the Dallas template, the main text goes into a div with class "lg:col-span-2".
+main_col = soup.find("div", class_=lambda x: x and "lg:col-span-2" in x and "space-y-12" in x)
 
-    # Now we loop through all 8 cities and append them as blocks
+if main_col:
+    # Clear the existing text inside the column.
+    main_col.clear()
+
+    # We also need to fix the overlapping routes table which was previously in the hero.
+    # In the dallas template, there is a large div above the two column layout that contains top 3 routes and full table.
+    # It has the ID "routes" or a class with rounded-3xl and bg-white.
+    hero_routes_section = soup.find("div", class_=lambda x: x and "overlap-up" in x)
+    if hero_routes_section:
+        # Let's remove the overlapping routes completely since we will have routes tables for each city
+        # Wait, the overlap-up class is actually on the entire <section class="container mx-auto px-4 lg:px-8 max-w-6xl overlap-up mb-24">
+        # and the routes table is just the first child of that. Let's find the routes container specifically.
+        routes_container = hero_routes_section.find("div", class_=lambda x: x and "bg-white" in x and "rounded-3xl" in x and "shadow-xl" in x)
+        if routes_container:
+            routes_container.decompose()
+
+    # Now we loop through all 8 cities and append them as blocks into the MAIN COLUMN
     for city in cities:
         city_div = soup.new_tag("div", attrs={"class": "mb-20 pb-16 border-b border-[#e6e6e6] last:border-0"})
         
@@ -409,11 +425,11 @@ if content_section:
             
         city_div.append(faq_div)
         
-        content_section.append(city_div)
+        main_col.append(city_div)
 
 # Save the file
 os.makedirs(output_dir, exist_ok=True)
 with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
     f.write(str(soup))
 
-print("Mega page generated successfully.")
+print("Mega page generated successfully with fixed layout.")
