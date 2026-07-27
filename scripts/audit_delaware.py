@@ -81,7 +81,7 @@ def audit_delaware_page():
             if "@graph" in data:
                 for item in data["@graph"]:
                     types_found.append(item.get("@type"))
-            req_types = ["Service", "FAQPage", "BreadcrumbList", "HowTo", "WebPage", "Article"]
+            req_types = ["Service", "FAQPage", "BreadcrumbList", "HowTo", "WebPage", "Article", "ImageObject"]
             if all(rt in types_found for rt in req_types):
                 print(f"  [PASS] JSON-LD @graph contains schemas: {req_types}")
                 checks_passed += 1

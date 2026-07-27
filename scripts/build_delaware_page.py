@@ -421,16 +421,17 @@ def build_delaware_page():
               </table>
             </div>
 
-            <!-- SEO Image 2 -->
-            <div class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md">
-              <img src="/images/enclosed-car-carrier-coastal-highway.jpg" 
-                   alt="Enclosed car shipping carrier transporting classic and luxury vehicles near Delaware coastal highway and Dover Air Force Base" 
-                   class="w-full h-auto object-cover max-h-[420px]" 
-                   width="1200" height="675" loading="lazy">
-              <div class="bg-[#f8fafc] px-4 py-3 border-t border-[#e6e6e6] text-xs font-semibold text-[#425466] text-center">
-                Enclosed car carriers provide 100% weather and road debris protection for luxury, exotic, and classic vehicles in Delaware.
-              </div>
-            </div>
+            <!-- SEO Image 2: Multi-Car Highway Carrier with AEO/GEO/EEAT Markup -->
+            <figure class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md bg-white">
+              <img src="/images/delaware-auto-transport-carrier-i95-highway.jpg" 
+                   alt="FMCSA-licensed multi-car auto transport carrier hauling luxury sedans and SUVs along Delaware I-95 and US-13 highway corridor near Wilmington and Dover" 
+                   title="Delaware Auto Transport Carrier on I-95 Corridor - Neon Auto Transport FMCSA USDOT Licensed Carrier"
+                   class="w-full h-auto object-cover max-h-[460px]" 
+                   width="1200" height="800" loading="lazy">
+              <figcaption class="bg-[#f8fafc] px-6 py-4 border-t border-[#e6e6e6] text-xs lg:text-sm font-semibold text-[#425466] text-center leading-relaxed">
+                <span class="font-bold text-[#0a2540]">FMCSA-Licensed Carrier Logistics along Delaware's I-95 &amp; US-13 Corridor:</span> Multi-vehicle open auto transport carriers provide secure, door-to-door vehicle delivery for luxury sedans, SUVs, and commuter vehicles traveling between <a href="/delaware-car-shipping/wilmington/" class="text-[#468de6] hover:underline font-bold">Wilmington</a>, <a href="/delaware-car-shipping/dover/" class="text-[#468de6] hover:underline font-bold">Dover</a>, and East Coast logistics routes. Every carrier in our network operates with full USDOT compliance and $100,000+ in active cargo insurance coverage.
+              </figcaption>
+            </figure>
 
             <div class="grid md:grid-cols-2 gap-6 mt-8">
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
