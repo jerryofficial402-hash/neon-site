@@ -597,10 +597,11 @@ def build_dc_content():
 
             <!-- IMAGE FIGURE -->
             <figure class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm bg-white p-2" itemscope="" itemtype="https://schema.org/ImageObject">
-              <img src="/images/open-vs-enclosedcarrier-nj.jpg" alt="Neon Auto Transport enclosed luxury car shipping trailer in Washington D.C. near Embassy Row and Georgetown" title="Enclosed Auto Transport Trailer in Washington D.C." class="w-full h-auto rounded-xl object-cover" style="max-height: 420px;" width="1000" height="500" loading="lazy" decoding="async" itemprop="contentUrl">
-              <meta itemprop="name" content="Enclosed Luxury Auto Transport in Washington D.C.">
-              <meta itemprop="description" content="Enclosed car shipping carrier trailer protecting high-value luxury and diplomatic vehicles in Washington D.C.">
+              <img src="/images/washington-dc-enclosed-auto-transport-diplomatic-luxury-carrier.jpg" alt="Neon Auto Transport FMCSA licensed car shipping carrier trailer transporting diplomatic, classic, and luxury vehicles on interstate highway entering Washington D.C. near Embassy Row and Capitol Hill" title="Washington D.C. Enclosed &amp; Luxury Car Shipping Carrier Truck - Neon Auto Transport" class="w-full h-auto rounded-xl object-cover" style="max-height: 420px;" width="1000" height="500" loading="lazy" decoding="async" itemprop="contentUrl">
+              <meta itemprop="name" content="Enclosed Luxury &amp; Diplomatic Auto Transport Carrier in Washington D.C.">
+              <meta itemprop="description" content="FMCSA licensed multi-car transport carrier truck on highway hauling diplomatic, classic, and luxury vehicles along Washington D.C. routes, protecting against road salt and weather.">
               <meta itemprop="author" content="Neon Auto Transport">
+              <meta itemprop="contentLocation" content="Washington, D.C.">
               <figcaption class="p-3 text-center text-sm font-semibold text-[#425466] bg-[#f8fafc] rounded-b-xl border-t border-[#e6e6e6]">
                 Enclosed auto transport trailers shield diplomatic, classic, and luxury vehicles from road salt and weather on D.C. routes.
               </figcaption>
