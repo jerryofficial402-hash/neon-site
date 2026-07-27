@@ -1,718 +1,11 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+# -*- coding: utf-8 -*-
+import re
+import json
 
-  <!-- Primary SEO -->
-  <title>Washington D.C. Car Shipping | Neon Auto Transport</title>
-  <meta name="description" content="Ship your car to or from Washington D.C. with Neon Auto Transport. Open &amp; enclosed transport, military &amp; student moves, free quotes, fast transit.">
-  <meta name="keywords" content="Washington D.C. car shipping, Washington D.C. auto transport, ship car to Washington D.C., vehicle transport Washington D.C., car shipping from Washington D.C., Washington D.C. auto transport">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Neon Auto Transport">
-  <link rel="canonical" href="https://neonautotransport.com/washington-dc-car-shipping/">
+HTML_PATH = "washington-dc-car-shipping/index.html"
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neonautotransport.com/washington-dc-car-shipping/">
-  <meta property="og:title" content="Washington D.C. Car Shipping | Neon Auto Transport">
-  <meta property="og:description" content="Reliable, FMCSA approved car shipping to and from Washington D.C.. Serving Washington and all cities in Washington D.C.. Door-to-door auto transport. Call (571) 576-7711.">
-  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Neon Auto Transport">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Washington D.C. Car Shipping | FMCSA Approved | Neon Auto Transport">
-  <meta name="twitter:description" content="Ship your car to or from Washington D.C. with Neon Auto Transport. Door-to-door delivery serving Washington. Instant quote available.">
-  <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=3">
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <!-- JSON-LD: Service + BreadcrumbList -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "Washington D.C. Car Shipping",
-      "description": "Ship your car to or from Washington D.C. with Neon Auto Transport. Open & enclosed transport, military & student moves, free quotes, fast transit.",
-      "serviceType": "Auto Transport",
-      "provider": {
-        "@type": "MovingCompany",
-        "name": "Neon Auto Transport",
-        "telephone": "+15715767711",
-        "url": "https://neonautotransport.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2700 Neabsco Common Pl Suite 101",
-          "addressLocality": "Woodbridge",
-          "addressRegion": "VA",
-          "postalCode": "22191",
-          "addressCountry": "US"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "1247",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
-      },
-      "areaServed": {
-        "@type": "State",
-        "name": "Washington D.C.",
-        "containedInPlace": {
-          "@type": "Country",
-          "name": "United States"
-        }
-      },
-      "url": "https://neonautotransport.com/washington-dc-car-shipping/",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "Neon Auto Transport"
-        }
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does it cost to ship a car to or from Washington D.C.?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most open-transport shipments range from $300 for short regional moves (D.C. to Maryland or Virginia) up to $1,900+ for cross-country routes like D.C. to California. Exact pricing depends on distance, vehicle size, season, and carrier availability."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to ship a car from Washington D.C.?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Regional moves (D.C. to New York or Pennsylvania) typically take 1\u20132 days. Cross-country moves (D.C. to California or Washington State) typically take 6\u20139 days."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is open or enclosed transport better for Washington D.C. shipments?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open transport is best for daily drivers and standard vehicles because it's more affordable and widely available. Enclosed transport is better for luxury, classic, or exotic vehicles that need protection from weather and road debris."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can a carrier pick up directly from my home in Georgetown or Capitol Hill?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Often not directly. Large carrier trucks cannot navigate many narrow, historic D.C. streets. Dispatch typically arranges a nearby, wider street or commercial lot for pickup, usually within a few minutes of your address."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you ship cars for military PCS moves?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Neon Auto Transport regularly coordinates shipments tied to PCS orders for personnel connected to Joint Base Andrews, Joint Base Anacostia-Bolling, the Pentagon, and other regional installations, with flexible scheduling around move timelines."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer student car shipping for Georgetown, GW, Howard, or American University?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Student shipping is one of the most common seasonal services in D.C., with peak demand each May/June and August/September aligned with semester start and end dates."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you ship an electric vehicle like a Tesla?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. EV shipping requires attention to battery weight, ground clearance, and charge level (carriers typically request 40\u201360% charge, not a full charge) \u2014 all handled as part of standard EV transport procedure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you ship motorcycles?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, motorcycles can be shipped individually or alongside a vehicle shipment, with specialized tie-down equipment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is my vehicle insured during transport?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Every carrier in the Neon Auto Transport network must carry active cargo insurance, verified before your shipment is dispatched."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens if my vehicle is damaged during shipping?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Any damage must be documented on the Bill of Lading at delivery, compared against the pickup inspection, to support an insurance claim through the carrier."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to be present for pickup and delivery?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You or an authorized representative should be present, or reachable, at both pickup and delivery to complete the inspection and sign the Bill of Lading."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How far in advance should I book?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "2\u20133 weeks is ideal, especially during peak seasons (summer PCS moves, spring/fall student shipping, and snowbird months of October\u2013November and March\u2013April). Expedited booking is available for urgent timelines."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you require a deposit?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Deposit requirements vary by shipment and are disclosed clearly at booking \u2014 never added after the fact."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I cancel or reschedule my shipment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, cancellation and rescheduling policies are explained at booking, and dispatch works with customers on federal and military timeline changes whenever possible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What payment methods do you accept?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Standard payment methods are outlined at booking, typically including major credit cards and other common options."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Neon Auto Transport licensed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Neon Auto Transport works exclusively with FMCSA-licensed, insured carriers for every shipment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you ship a car that doesn't run?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Inoperable vehicles can typically be shipped but require lift-gate equipment, which may affect pricing and carrier matching."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I track my shipment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dispatch provides updates throughout transit; specific tracking capability depends on the assigned carrier."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does weather affect transit times?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Winter weather in the D.C. area and along northern routes, and hurricane season along Florida and Gulf Coast routes, can add 1\u20133 days to transit."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you ship multiple vehicles at once?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, multi-car and household shipments are common and can often be consolidated for savings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you handle dealership and auction vehicle transport?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, dealer and auction transport is available for both individual and bulk vehicle moves in the D.C. metro area."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the difference between door-to-door and terminal shipping?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Door-to-door means the carrier meets you as close as legally possible to your specified address. Terminal shipping means dropping off/picking up at a fixed facility \u2014 Neon Auto Transport primarily offers door-to-door with D.C.-appropriate meeting points."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do embassy and diplomatic staff get special handling?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, scheduling is coordinated around posting and transition timelines, with enclosed transport commonly recommended for higher-value vehicles."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the best time of year to ship a car to or from D.C.?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Shoulder seasons (April\u2013May, September\u2013October) typically offer the best combination of pricing and carrier availability, avoiding both peak student-move and peak snowbird demand."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you ship a classic or collector car?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, typically via enclosed transport with soft tie-downs and minimal handling to protect the vehicle's condition."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do luxury vehicles cost more to ship?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not because of the brand itself, but because luxury vehicles are more likely to be shipped enclosed, which does raise cost compared to open transport."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What if my delivery address has permit parking only?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Dispatch will identify a nearby legal delivery point in advance, so there are no last-minute surprises for you or the carrier."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide a Bill of Lading?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, a Bill of Lading documenting vehicle condition is completed at both pickup and delivery."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can Neon Auto Transport ship a car the same week I book?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depending on route and carrier availability, expedited shipping can often accommodate short-notice moves, though advance booking generally secures better pricing."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://neonautotransport.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Locations",
-          "item": "https://neonautotransport.com/locations/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Washington D.C. Car Shipping",
-          "item": "https://neonautotransport.com/washington-dc-car-shipping/"
-        }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "name": "How Washington D.C. Car Shipping Works",
-      "description": "Step-by-step guide to shipping a car to or from Washington D.C. with Neon Auto Transport.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Request a Quote",
-          "text": "Provide pickup and delivery locations, vehicle details, and preferred timing."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Book Your Shipment",
-          "text": "Confirm transport type (open/enclosed), pickup window, and any special handling needs."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Carrier Matching",
-          "text": "Neon Auto Transport's network is matched to your route based on availability and vehicle requirements."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Pickup & Inspection",
-          "text": "The carrier meets you at the agreed pickup point, performs a full condition inspection, and documents it on the Bill of Lading."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Transit",
-          "text": "Your vehicle travels the route with tracking updates available from dispatch."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Delivery & Final Inspection",
-          "text": "The carrier delivers your vehicle, and you compare the delivery condition against the pickup Bill of Lading before signing off."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Claims Window",
-          "text": "Any discrepancy is documented immediately at delivery to support a smooth insurance claim process."
-        }
-      ]
-    },
-    {
-      "@type": "WebPage",
-      "name": "Washington D.C. Car Shipping | Neon Auto Transport",
-      "description": "Ship your car to or from Washington D.C. with Neon Auto Transport. Open & enclosed transport, military & student moves, free quotes, fast transit.",
-      "url": "https://neonautotransport.com/washington-dc-car-shipping/"
-    }
-  ]
-}
-</script>
-  <style>
-   @media (min-width: 1024px) {
-    html { font-size: 110%; }
-   }
-  </style>
- 
-
-<style>
-  /* Hide mobile sticky CTA globally */
-  #mobile-sticky-cta {
-    display: none !important;
-  }
-</style>
-
-<style>
-  /* Hide sticky widget globally */
-  #sticky-widget {
-    display: none !important;
-  }
-</style>
-</head>
-<body class=" lg:pb-0 antialiased bg-[#f6f9fc]">
-              <!-- Global Header -->
-  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
-    <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
-      <!-- Left: Logo + Desktop Nav -->
-      <div class="flex items-center" style="gap:24px">
-        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap" id="logo-text">
-          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
-        </a>
-        <nav class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
-        <a href="/#how-it-works" class="hover:opacity-80 transition">How it works</a>
-        
-        <!-- Mega Menu Wrapper -->
-        <div class="relative group flex items-center">
-          <a href="/services/" class="hover:opacity-80 transition flex items-center gap-1 cursor-pointer">
-            Transport Services 
-            <svg aria-hidden="true" class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
-          </a>
-          
-          <!-- Mega Menu Dropdown Slide -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-[#e6e6e6] p-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-0 z-50 text-left" style="top:100%">
-            <div class="grid grid-cols-3 gap-10 text-sm">
-              
-              <!-- Individual Column -->
-              <div>
-                <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Individual</h3>
-                <ul class="space-y-4 mt-4 text-[#425466] font-medium">
-                  <li><a href="/services/snow-bird-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Snow Bird Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/military-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Military Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/college-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">College Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/luxury-car-shipping/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Luxury / Exotic Car Shipping<br>Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
-                  <li><a href="/services/car-shipping-to-another-state/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Car Shipping to Another<br>State</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
-                  <li><a href="/services/truck-shipping-services/" class="hover:text-[#635bff] flex items-center justify-between group/link">Truck Shipping Services <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/door-to-door-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Door to Door Car Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/enclosed-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Enclosed Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/open-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Open Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/car-buyer-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Car Buyer Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/expedited-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Expedited Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/car-resellers-auto-transport/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Car Resellers Auto<br>Transport</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
-                </ul>
-              </div>
-
-              <!-- Business Column -->
-              <div>
-                <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Business</h3>
-                <ul class="space-y-4 mt-4 text-[#425466] font-medium">
-                  <li><a href="/services/car-dealer-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Car Dealer Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/auto-auction-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Auto Auction Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/rental-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Rental Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/corporate-relocation/" class="hover:text-[#635bff] flex items-center justify-between group/link">Corporate Relocation <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/fleet-management-transportation-services/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Fleet Management<br>Transportation Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
-                </ul>
-              </div>
-
-              <!-- Specialized Column -->
-              <div>
-                <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Specialized</h3>
-                <ul class="space-y-4 mt-4 text-[#425466] font-medium">
-                  <li><a href="/services/heavy-haul-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Heavy Haul Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-         <li><a href="/services/motorcycle-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Motorcycle Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/alaska-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Alaska Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/hawaii-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Hawaii Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
-                  <li><a href="/services/international-overseas-car-shipping-services/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>International Overseas Car<br>Shipping Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
-                  <li><a href="/services/terminal-to-terminal-car-shipping/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Terminal-to-Terminal Car<br>Shipping</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
-                </ul>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-        <a href="/why-neon/" class="hover:opacity-80 transition">Why Neon</a>
-        <a href="/contact/" class="hover:opacity-80 transition">Contact Us</a>
-        </nav>
-      </div>
-
-      <div class="hidden lg:flex items-center gap-6">
-        <a href="tel:5715767711" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-colors shadow-[0_0_15px_rgba(57,255,20,0.4)]" id="header-phone-btn" style="white-space:nowrap">
-          <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-          (571) 576-7711
-        </a>
-        <a href="/cost-calculator/" class="btn-outline" style="white-space:nowrap">Cost Calculator</a>
-      </div>
-
-      <!-- Mobile Menu Btn -->
-      <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="lg:hidden text-white focus:outline-none">
-        <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-      </button>
-    </div>
-    
-    <!-- Mobile Nav -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 flex flex-col p-4 space-y-4 text-center font-semibold text-[#425466] shadow-xl">
-      <a href="/#how-it-works" class="hover:text-[#635bff]">How it works</a>
-      <a href="/services/" class="hover:text-[#635bff]">Transport Options</a>
-      <a href="/why-neon/" class="hover:text-[#635bff]">Why Neon</a>
-      <a href="/contact/" class="hover:text-[#635bff]">Contact Us</a>
-      <hr>
-      <a href="tel:5715767711" class="bg-[#39FF14] text-[#0a2540] py-3 rounded-xl font-black text-lg shadow-lg">(571) 576-7711</a>
-      <a href="/cost-calculator/" class="btn-primary inline-block mx-auto mt-4">Cost Calculator</a>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero Section -->
-        
-        <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
-            <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
-                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-                    <div class="lg:w-1/2 flex flex-col justify-center">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-                            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
-                            FMSCA & US Dot Approved
-                        </div>
-                        <nav aria-label="Breadcrumb" class="mb-4">
-                            <ol class="flex items-center space-x-2 text-xs font-semibold text-[#425466]">
-                                <li><a href="/" class="hover:text-[#468de6] transition">Home</a></li>
-                                <li><span class="text-slate-400">/</span></li>
-                                <li><a href="/locations/" class="hover:text-[#468de6] transition">Locations</a></li>
-                                <li><span class="text-slate-400">/</span></li>
-                                <li class="text-[#0a2540] font-bold" aria-current="page">Washington D.C. Car Shipping</li>
-                            </ol>
-                        </nav>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">Washington D.C. Car Shipping</h1>
-                        <p class="text-lg text-[#425466] mb-10 leading-relaxed">Planning to ship a car to or from Washington D.C.? Whether you're relocating to the Nation's Capital or sending a vehicle across the country, navigating the Capital Beltway and dealing with humid summers and mild winters can be challenging. Neon Auto Transport ensures a stress-free experience tailored for urban grid and historic monuments, with upfront pricing and a highly vetted carrier network ready to handle extreme traffic congestion and tight urban logistics.</p>
-                        <div class="flex">
-                            <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
-                                Calculate Your Rate Instantly 
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/2 relative w-full">
-                        <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Washington%2C_D.C.svg/1280px-Flag_of_Washington%2C_D.C.svg.png" alt="Washington D.C. Auto Transport" class="w-full h-auto rounded-2xl object-contain" style="max-height: 450px;" width="1200" height="800" fetchpriority="high" decoding="async" loading="eager">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <!-- Content Section -->
-    <section class="container mx-auto px-4 lg:px-8 max-w-6xl overlap-up mb-24">
-      
-      <!-- Popular Routes Section -->
-            <div class="mb-16">
-                <h2 class="text-4xl font-bold mb-6 text-[#0a2540] tracking-tight">Popular Routes from Washington D.C.</h2>
-                
-                <!-- Top 3 Routes -->
-                <h3 class="font-bold text-[#0a2540] flex items-center gap-2 mb-6 uppercase tracking-wider text-sm">
-                    <svg class="w-4 h-4 text-[#468de6]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                    TOP 3 ROUTES
-                </h3>
-                
-                <div class="space-y-4 mb-8">
-                    
-                    <!-- Route 1 -->
-                    <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
-                        <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">1</div>
-                        <div class="flex-1 text-center md:text-left min-w-[150px]">
-                            <h4 class="font-bold text-[#0a2540] text-xl">Washington D.C.</h4>
-                            <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">California</span></p>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> DISTANCE</div>
-                            <div class="font-bold text-[#0a2540] text-sm">2,707 mi</div>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> EST. COST</div>
-                            <div class="font-bold text-[#0a2540] text-sm">$1200 - $1625</div>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> TRANSIT</div>
-                            <div class="font-bold text-[#0a2540] text-sm">6 to 10 days</div>
-                        </div>
-                        <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-                            <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
-                        </div>
-                    </div>
-                    <!-- Route 2 -->
-                    <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
-                        <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">2</div>
-                        <div class="flex-1 text-center md:text-left min-w-[150px]">
-                            <h4 class="font-bold text-[#0a2540] text-xl">Washington D.C.</h4>
-                            <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Texas</span></p>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> DISTANCE</div>
-                            <div class="font-bold text-[#0a2540] text-sm">1,438 mi</div>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> EST. COST</div>
-                            <div class="font-bold text-[#0a2540] text-sm">$950 - $1300</div>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> TRANSIT</div>
-                            <div class="font-bold text-[#0a2540] text-sm">3 to 6 days</div>
-                        </div>
-                        <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-                            <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
-                        </div>
-                    </div>
-                    <!-- Route 3 -->
-                    <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
-                        <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">3</div>
-                        <div class="flex-1 text-center md:text-left min-w-[150px]">
-                            <h4 class="font-bold text-[#0a2540] text-xl">Washington D.C.</h4>
-                            <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Florida</span></p>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> DISTANCE</div>
-                            <div class="font-bold text-[#0a2540] text-sm">1,093 mi</div>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> EST. COST</div>
-                            <div class="font-bold text-[#0a2540] text-sm">$725 - $975</div>
-                        </div>
-                        <div class="flex-1 text-center px-4 hidden md:block">
-                            <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider flex items-center justify-center gap-1.5"><svg class="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> TRANSIT</div>
-                            <div class="font-bold text-[#0a2540] text-sm">3 to 6 days</div>
-                        </div>
-                        <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-                            <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Full Table -->
-                <div class="overflow-x-auto bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#e6e6e6]">
-                    <table class="w-full text-left border-collapse min-w-[700px]">
-                        <thead>
-                            <tr class="bg-[#468de6] text-white text-[12px] font-bold uppercase tracking-wider">
-                                <th class="py-5 px-6">ROUTE</th>
-                                <th class="py-5 px-6 text-center">DISTANCE</th>
-                                <th class="py-5 px-6 text-center">AVG COST</th>
-                                <th class="py-5 px-6 text-center">TRANSIT TIME</th>
-                                <th class="py-5 px-6 text-center">QUOTE</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-[15px]">
-                            
-                            <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
-                                <td class="py-6 px-6">
-                                    <div class="font-bold text-[#0a2540] text-lg">Washington D.C.</div>
-                                    <div class="text-[#468de6] italic font-medium">to California</div>
-                                </td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2,707 mi</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$1200 - $1625</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">6 to 10 days</td>
-                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
-                            </tr>
-                            <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
-                                <td class="py-6 px-6">
-                                    <div class="font-bold text-[#0a2540] text-lg">Washington D.C.</div>
-                                    <div class="text-[#468de6] italic font-medium">to Texas</div>
-                                </td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">1,438 mi</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$950 - $1300</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">3 to 6 days</td>
-                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
-                            </tr>
-                            <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
-                                <td class="py-6 px-6">
-                                    <div class="font-bold text-[#0a2540] text-lg">Washington D.C.</div>
-                                    <div class="text-[#468de6] italic font-medium">to Florida</div>
-                                </td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">1,093 mi</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$725 - $975</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">3 to 6 days</td>
-                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
-                            </tr>
-                            <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
-                                <td class="py-6 px-6">
-                                    <div class="font-bold text-[#0a2540] text-lg">Washington D.C.</div>
-                                    <div class="text-[#468de6] italic font-medium">to Washington</div>
-                                </td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2,740 mi</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$1200 - $1650</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">6 to 10 days</td>
-                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
-                            </tr>
-                            <tr class=" hover:bg-[#f8fafc] transition">
-                                <td class="py-6 px-6">
-                                    <div class="font-bold text-[#0a2540] text-lg">Washington D.C.</div>
-                                    <div class="text-[#468de6] italic font-medium">to Arizona</div>
-                                </td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2,334 mi</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$1025 - $1400</td>
-                                <td class="py-6 px-6 font-bold text-[#0a2540] text-center">5 to 8 days</td>
-                                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-                    <!-- Two Column Layout for the Rest -->
-      <div class="grid lg:grid-cols-3 gap-12">
-        <div class="lg:col-span-2 space-y-12 min-w-0">
-
+def build_dc_content():
+    content_html = """
           <!-- SECTION 1: INTRO BANNER GUIDE CARD -->
           <div class="stripe-card p-8 lg:p-10 bg-white shadow-[0_4px_25px_rgba(0,0,0,0.06)] rounded-3xl border border-[#e6e6e6]">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f0f5fa] border border-[#d0dbe5] text-[#0a2540] text-xs font-black uppercase tracking-wider mb-6">
@@ -1823,329 +1116,194 @@
               <a href="/washington-dc-to-california-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">D.C. to California Routes →</a>
             </div>
           </div>
+"""
 
-        </div>
+    with open(HTML_PATH, "r", encoding="utf-8") as f:
+        html = f.read()
 
-        <!-- Right Sidebar Sticky -->
-        <div class="lg:col-span-1">
-          <div class="sticky top-24 space-y-6">
-            <!-- How It Works -->
-            <div class="stripe-card p-6 border-t-4 border-[#635bff]">
-              <h3 class="font-bold text-xl mb-4 text-[#0a2540]">How Car Shipping Works in DC</h3>
-              
-              <div class="relative pl-6 border-l-2 border-[#e6e6e6] space-y-6 pb-2">
-                <div class="relative">
-                  <div class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-[#e0e7ff] border-2 border-white text-[#635bff] flex items-center justify-center text-xs font-bold shadow-sm">1</div>
-                  <h4 class="font-bold text-[#0a2540] text-sm mb-1">Get an Instant Quote</h4>
-                  <p class="text-xs text-[#425466] leading-relaxed">Use our calculator to get a transparent rate with zero hidden fees.</p>
-                </div>
-                <div class="relative">
-                  <div class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-[#e0e7ff] border-2 border-white text-[#635bff] flex items-center justify-center text-xs font-bold shadow-sm">2</div>
-                  <h4 class="font-bold text-[#0a2540] text-sm mb-1">Carrier Assignment</h4>
-                  <p class="text-xs text-[#425466] leading-relaxed">A fully vetted, licensed carrier is assigned and will pick up your vehicle typically within 1–5 business days.</p>
-                </div>
-                <div class="relative">
-                  <div class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-[#e0e7ff] border-2 border-white text-[#635bff] flex items-center justify-center text-xs font-bold shadow-sm">3</div>
-                  <h4 class="font-bold text-[#0a2540] text-sm mb-1">Safe Delivery</h4>
-                  <p class="text-xs text-[#425466] leading-relaxed">Your car arrives at its destination safely. Inspect the vehicle, sign the Bill of Lading, and you're good to go.</p>
-                </div>
-              </div>
+    # 1. Update title and meta description if not exact
+    html = re.sub(
+        r'<title>.*?</title>',
+        '<title>Washington D.C. Car Shipping | Neon Auto Transport</title>',
+        html,
+        flags=re.IGNORECASE
+    )
+    html = re.sub(
+        r'<meta\s+name="description"\s+content="[^"]*"',
+        '<meta name="description" content="Ship your car to or from Washington D.C. with Neon Auto Transport. Open &amp; enclosed transport, military &amp; student moves, free quotes, fast transit."',
+        html,
+        flags=re.IGNORECASE
+    )
 
-              <a href="/cost-calculator/" class="btn-primary w-full mt-6 py-3 block text-center">Start your quote →</a>
-            </div>
-            
-            <!-- Mini Quote CTA -->
-            <div class="bg-[#0a2540] rounded-2xl p-6 text-white text-center shadow-lg">
-              <div class="w-12 h-12 bg-[#39FF14] rounded-full mx-auto flex items-center justify-center mb-4 text-[#0a2540]">
-                <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              </div>
-              <h3 class="font-bold text-xl mb-2">Lock in your price today</h3>
-              <p class="text-sm text-[#cdd5df] mb-6">Talk to an auto transport expert now or get an instant quote for shipping to/from Washington D.C..</p>
-              <a href="tel:5715767711" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] hover:-translate-y-0.5 transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)] text-xl w-full mb-2">
-                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                (571) 576-7711
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    # 2. Add visual HTML breadcrumbs to hero section (right above H1) without altering hero layout or image
+    breadcrumb_nav = """<nav aria-label="Breadcrumb" class="mb-4">
+                            <ol class="flex items-center space-x-2 text-xs font-semibold text-[#425466]">
+                                <li><a href="/" class="hover:text-[#468de6] transition">Home</a></li>
+                                <li><span class="text-slate-400">/</span></li>
+                                <li><a href="/locations/" class="hover:text-[#468de6] transition">Locations</a></li>
+                                <li><span class="text-slate-400">/</span></li>
+                                <li class="text-[#0a2540] font-bold" aria-current="page">Washington D.C. Car Shipping</li>
+                            </ol>
+                        </nav>"""
+    if "aria-label=\"Breadcrumb\"" not in html:
+        html = html.replace(
+            '<h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">Washington D.C. Car Shipping</h1>',
+            breadcrumb_nav + '\n                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">Washington D.C. Car Shipping</h1>'
+        )
 
-      <div class="mt-16 text-center pb-12">
-        <a href="/locations/" class="text-[#635bff] font-bold hover:underline flex items-center justify-center gap-2">
-          <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-          Back to All US Locations
-        </a>
-      </div>
+    # 3. Replace the main left column (<div class="lg:col-span-2 space-y-12 min-w-0"> ... </div>)
+    # Let's find `<div class="lg:col-span-2 space-y-12 min-w-0">` and replace up to `<!-- Right Sidebar Sticky -->`
+    marker_start = '<div class="lg:col-span-2 space-y-12 min-w-0">'
+    marker_end = '<!-- Right Sidebar Sticky -->'
 
-    </section>
-  </main>
+    idx_start = html.find(marker_start)
+    idx_end = html.find(marker_end)
 
-  
-  
-  <!-- Customer Reviews -->
-  <section class="container mx-auto px-4 lg:px-8 max-w-6xl pb-12" id="customer-reviews-section">
-    <h2 class="text-3xl font-bold mb-8 text-[#0a2540] tracking-tight text-center">What Our Customers Say</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="stripe-card p-6 border-t-4 border-t-[#39FF14]">
-        <div class="flex items-center gap-1 mb-3 text-yellow-400 text-lg">★★★★★</div>
-        <p class="text-[#425466] text-sm leading-relaxed mb-4">"Neon Auto Transport shipped my vehicle across the country in just 5 days. The driver was professional, communication was excellent, and the price was exactly what was quoted. Highly recommend!"</p>
-        <div class="font-bold text-[#0a2540] text-sm">— Sarah M.</div>
-        <div class="text-xs text-[#425466]">Verified Customer · Google Reviews</div>
-      </div>
-      <div class="stripe-card p-6 border-t-4 border-t-[#39FF14]">
-        <div class="flex items-center gap-1 mb-3 text-yellow-400 text-lg">★★★★★</div>
-        <p class="text-[#425466] text-sm leading-relaxed mb-4">"As a military family doing a PCS move, we needed reliable transport. Neon gave us a military discount and handled everything seamlessly. Our car arrived in perfect condition. Will use again for our next move."</p>
-        <div class="font-bold text-[#0a2540] text-sm">— James T.</div>
-        <div class="text-xs text-[#425466]">Verified Customer · Trustpilot</div>
-      </div>
-      <div class="stripe-card p-6 border-t-4 border-t-[#39FF14]">
-        <div class="flex items-center gap-1 mb-3 text-yellow-400 text-lg">★★★★★</div>
-        <p class="text-[#425466] text-sm leading-relaxed mb-4">"I was nervous about shipping my classic Mustang but the enclosed transport option gave me peace of mind. Zero scratches, delivered on time. The no-deposit policy sealed the deal for me."</p>
-        <div class="font-bold text-[#0a2540] text-sm">— David R.</div>
-        <div class="text-xs text-[#425466]">Verified Customer · BBB</div>
-      </div>
-    </div>
-    <div class="text-center mt-6">
-      <span class="text-[#635bff] font-bold text-sm">★ 4.9 out of 5</span>
-      <span class="text-[#425466] text-sm"> based on 1,247 verified reviews</span>
-    </div>
-  </section>
+    if idx_start != -1 and idx_end != -1:
+        new_block = f'{marker_start}\n{content_html}\n        </div>\n\n        {marker_end}'
+        html = html[:idx_start] + new_block + html[idx_end + len(marker_end):]
+    else:
+        print("ERROR: Could not find layout markers!")
+        return
 
-  <!-- Author Byline -->
-  
-  <!-- Author/Reviewer Byline -->
-  <section class="container mx-auto px-4 lg:px-8 max-w-6xl pb-16" id="author-byline">
-    <div class="stripe-card p-8 flex flex-col md:flex-row items-start gap-6 border-l-4 border-l-[#39FF14]">
-      <img src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover shadow-inner flex-shrink-0 border-2 border-[#e0f2fe]" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-      <div class="flex-1">
-        <div class="flex flex-wrap items-center gap-2 mb-1">
-          <div class="font-bold text-[#0a2540] text-lg"><a href="/author/shazil-ali/" class="hover:text-[#635bff] transition hover:underline">Shazil Ali</a></div>
-          <span class="px-2 py-0.5 rounded-md bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider">Fact Checked &amp; Reviewed</span>
-        </div>
-        <div class="text-[#0a2540] text-sm font-bold mb-3">Director of Operations <span class="text-[#8ba3ba] mx-1">|</span> Neon Auto Transport</div>
-        <p class="text-[#425466] text-sm leading-relaxed mb-3">Shazil Ali serves as Director of Operations at Neon Auto Transport, overseeing vehicle shipping operations, carrier coordination, dispatch management, logistics workflows, and customer transportation solutions nationwide. He reviews transportation guides, route pages, service content, and educational resources to ensure accuracy, transparency, and alignment with current auto transport industry standards.</p>
-        <div class="flex items-center gap-4">
-          <div class="text-xs text-[#8ba3ba] font-medium">Last Updated: <span class="text-[#0a2540] font-semibold">June 2026</span></div>
-          <a href="https://www.linkedin.com/in/shazil-ali/" target="_blank" rel="noopener noreferrer" class="text-[#0a66c2] hover:text-[#004182] transition inline-flex items-center gap-1 text-xs font-bold">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
-            LinkedIn Profile
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    # 4. Generate comprehensive JSON-LD schema (@graph) with Service, FAQPage (all 28 FAQs), BreadcrumbList, Organization, HowTo, WebPage, Article
+    faqs_data = [
+        ("How much does it cost to ship a car to or from Washington D.C.?", "Most open-transport shipments range from $300 for short regional moves (D.C. to Maryland or Virginia) up to $1,900+ for cross-country routes like D.C. to California. Exact pricing depends on distance, vehicle size, season, and carrier availability."),
+        ("How long does it take to ship a car from Washington D.C.?", "Regional moves (D.C. to New York or Pennsylvania) typically take 1–2 days. Cross-country moves (D.C. to California or Washington State) typically take 6–9 days."),
+        ("Is open or enclosed transport better for Washington D.C. shipments?", "Open transport is best for daily drivers and standard vehicles because it's more affordable and widely available. Enclosed transport is better for luxury, classic, or exotic vehicles that need protection from weather and road debris."),
+        ("Can a carrier pick up directly from my home in Georgetown or Capitol Hill?", "Often not directly. Large carrier trucks cannot navigate many narrow, historic D.C. streets. Dispatch typically arranges a nearby, wider street or commercial lot for pickup, usually within a few minutes of your address."),
+        ("Do you ship cars for military PCS moves?", "Yes. Neon Auto Transport regularly coordinates shipments tied to PCS orders for personnel connected to Joint Base Andrews, Joint Base Anacostia-Bolling, the Pentagon, and other regional installations, with flexible scheduling around move timelines."),
+        ("Do you offer student car shipping for Georgetown, GW, Howard, or American University?", "Yes. Student shipping is one of the most common seasonal services in D.C., with peak demand each May/June and August/September aligned with semester start and end dates."),
+        ("Can you ship an electric vehicle like a Tesla?", "Yes. EV shipping requires attention to battery weight, ground clearance, and charge level (carriers typically request 40–60% charge, not a full charge) — all handled as part of standard EV transport procedure."),
+        ("Do you ship motorcycles?", "Yes, motorcycles can be shipped individually or alongside a vehicle shipment, with specialized tie-down equipment."),
+        ("Is my vehicle insured during transport?", "Yes. Every carrier in the Neon Auto Transport network must carry active cargo insurance, verified before your shipment is dispatched."),
+        ("What happens if my vehicle is damaged during shipping?", "Any damage must be documented on the Bill of Lading at delivery, compared against the pickup inspection, to support an insurance claim through the carrier."),
+        ("Do I need to be present for pickup and delivery?", "You or an authorized representative should be present, or reachable, at both pickup and delivery to complete the inspection and sign the Bill of Lading."),
+        ("How far in advance should I book?", "2–3 weeks is ideal, especially during peak seasons (summer PCS moves, spring/fall student shipping, and snowbird months of October–November and March–April). Expedited booking is available for urgent timelines."),
+        ("Do you require a deposit?", "Deposit requirements vary by shipment and are disclosed clearly at booking — never added after the fact."),
+        ("Can I cancel or reschedule my shipment?", "Yes, cancellation and rescheduling policies are explained at booking, and dispatch works with customers on federal and military timeline changes whenever possible."),
+        ("What payment methods do you accept?", "Standard payment methods are outlined at booking, typically including major credit cards and other common options."),
+        ("Is Neon Auto Transport licensed?", "Neon Auto Transport works exclusively with FMCSA-licensed, insured carriers for every shipment."),
+        ("Can you ship a car that doesn't run?", "Inoperable vehicles can typically be shipped but require lift-gate equipment, which may affect pricing and carrier matching."),
+        ("How do I track my shipment?", "Dispatch provides updates throughout transit; specific tracking capability depends on the assigned carrier."),
+        ("Does weather affect transit times?", "Yes. Winter weather in the D.C. area and along northern routes, and hurricane season along Florida and Gulf Coast routes, can add 1–3 days to transit."),
+        ("Can you ship multiple vehicles at once?", "Yes, multi-car and household shipments are common and can often be consolidated for savings."),
+        ("Do you handle dealership and auction vehicle transport?", "Yes, dealer and auction transport is available for both individual and bulk vehicle moves in the D.C. metro area."),
+        ("What's the difference between door-to-door and terminal shipping?", "Door-to-door means the carrier meets you as close as legally possible to your specified address. Terminal shipping means dropping off/picking up at a fixed facility — Neon Auto Transport primarily offers door-to-door with D.C.-appropriate meeting points."),
+        ("Do embassy and diplomatic staff get special handling?", "Yes, scheduling is coordinated around posting and transition timelines, with enclosed transport commonly recommended for higher-value vehicles."),
+        ("What's the best time of year to ship a car to or from D.C.?", "Shoulder seasons (April–May, September–October) typically offer the best combination of pricing and carrier availability, avoiding both peak student-move and peak snowbird demand."),
+        ("Can you ship a classic or collector car?", "Yes, typically via enclosed transport with soft tie-downs and minimal handling to protect the vehicle's condition."),
+        ("Do luxury vehicles cost more to ship?", "Not because of the brand itself, but because luxury vehicles are more likely to be shipped enclosed, which does raise cost compared to open transport."),
+        ("What if my delivery address has permit parking only?", "Dispatch will identify a nearby legal delivery point in advance, so there are no last-minute surprises for you or the carrier."),
+        ("Do you provide a Bill of Lading?", "Yes, a Bill of Lading documenting vehicle condition is completed at both pickup and delivery."),
+        ("Can Neon Auto Transport ship a car the same week I book?", "Depending on route and carrier availability, expedited shipping can often accommodate short-notice moves, though advance booking generally secures better pricing.")
+    ]
 
+    faq_schema_items = []
+    for q, a in faqs_data:
+        faq_schema_items.append({
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": a
+            }
+        })
 
-  <!-- Global Footer -->
-            <footer class="bg-[#0a2540] text-slate-300 py-16 lg:py-24 border-t border-slate-800 relative overflow-hidden" style="width: 100%;">
-  <!-- Premium Ambient Glows -->
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-px opacity-40" style="background: linear-gradient(to right, transparent, #00d4ff, transparent);"></div>
-  <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-[#00d4ff] rounded-full blur-[150px] opacity-10 pointer-events-none"></div>
-  <div class="absolute top-20 -left-20 w-72 h-72 bg-[#39FF14] rounded-full blur-[120px] opacity-[0.05] pointer-events-none"></div>
-  
-  <div class="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10" style="max-width: 1280px; margin: 0 auto;">
-   <!-- Perfect Grid Layout -->
-   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 mb-16">
-    
-    <!-- Brand Column -->
-    <div class="lg:col-span-4">
-     <a href="/" class="text-3xl font-black tracking-tight flex items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none; white-space: nowrap;">
-      NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
-     </a>
-     <p class="text-[15px] leading-relaxed mb-8" style="color: #8ba3ba; font-weight: 400; line-height: 1.7;">
-      Fast, secure, and reliable nationwide auto transport. We connect you with a highly vetted carrier network to ensure your vehicle arrives safely and on time. Your Journey, Our Priority!
-     </p>
-     <div style="display: flex; gap: 1rem; align-items: center;">
-      <a href="https://www.facebook.com/profile.php?id=61577115704216" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); color: #8ba3ba; text-decoration: none;" onmouseover="this.style.color='#00d4ff'; this.style.borderColor='rgba(0,212,255,0.3)'; this.style.boxShadow='0 0 15px rgba(0, 212, 255, 0.2)';" onmouseout="this.style.color='#8ba3ba'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.boxShadow='none';">
-       <svg style="width: 16px; height: 16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
-      </a>
-      <a href="https://www.instagram.com/neonautotransport" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); color: #8ba3ba; text-decoration: none;" onmouseover="this.style.color='#00d4ff'; this.style.borderColor='rgba(0,212,255,0.3)'; this.style.boxShadow='0 0 15px rgba(0, 212, 255, 0.2)';" onmouseout="this.style.color='#8ba3ba'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.boxShadow='none';">
-       <svg style="width: 16px; height: 16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
-      </a>
-      <a href="https://www.linkedin.com/company/neon-auto-transport" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); color: #8ba3ba; text-decoration: none;" onmouseover="this.style.color='#00d4ff'; this.style.borderColor='rgba(0,212,255,0.3)'; this.style.boxShadow='0 0 15px rgba(0, 212, 255, 0.2)';" onmouseout="this.style.color='#8ba3ba'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.boxShadow='none';">
-       <svg style="width: 16px; height: 16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
-      </a>
-      <a href="https://www.youtube.com/@neonautotransport" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); color: #8ba3ba; text-decoration: none;" onmouseover="this.style.color='#ff0000'; this.style.borderColor='rgba(255,0,0,0.3)'; this.style.boxShadow='0 0 15px rgba(255, 0, 0, 0.2)';" onmouseout="this.style.color='#8ba3ba'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.boxShadow='none';">
-       <svg style="width: 16px; height: 16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
-      </a>
-      <a href="https://www.tiktok.com/@neonautotransport" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); color: #8ba3ba; text-decoration: none;" onmouseover="this.style.color='#00f2fe'; this.style.borderColor='rgba(0,242,254,0.3)'; this.style.boxShadow='0 0 15px rgba(0, 242, 254, 0.2)';" onmouseout="this.style.color='#8ba3ba'; this.style.borderColor='rgba(255,255,255,0.05)'; this.style.boxShadow='none';">
-       <svg style="width: 16px; height: 16px;" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg>
-      </a>
-     </div>
-    </div>
+    graph_schema = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": "Washington D.C. Car Shipping",
+                "description": "Ship your car to or from Washington D.C. with Neon Auto Transport. Open & enclosed transport, military & student moves, free quotes, fast transit.",
+                "serviceType": "Auto Transport",
+                "provider": {
+                    "@type": "MovingCompany",
+                    "name": "Neon Auto Transport",
+                    "telephone": "+15715767711",
+                    "url": "https://neonautotransport.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "2700 Neabsco Common Pl Suite 101",
+                        "addressLocality": "Woodbridge",
+                        "addressRegion": "VA",
+                        "postalCode": "22191",
+                        "addressCountry": "US"
+                    },
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "1247",
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    }
+                },
+                "areaServed": {
+                    "@type": "State",
+                    "name": "Washington D.C.",
+                    "containedInPlace": { "@type": "Country", "name": "United States" }
+                },
+                "url": "https://neonautotransport.com/washington-dc-car-shipping/",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Neon Auto Transport"
+                    }
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": faq_schema_items
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonautotransport.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://neonautotransport.com/locations/" },
+                    { "@type": "ListItem", "position": 3, "name": "Washington D.C. Car Shipping", "item": "https://neonautotransport.com/washington-dc-car-shipping/" }
+                ]
+            },
+            {
+                "@type": "HowTo",
+                "name": "How Washington D.C. Car Shipping Works",
+                "description": "Step-by-step guide to shipping a car to or from Washington D.C. with Neon Auto Transport.",
+                "step": [
+                    { "@type": "HowToStep", "name": "Request a Quote", "text": "Provide pickup and delivery locations, vehicle details, and preferred timing." },
+                    { "@type": "HowToStep", "name": "Book Your Shipment", "text": "Confirm transport type (open/enclosed), pickup window, and any special handling needs." },
+                    { "@type": "HowToStep", "name": "Carrier Matching", "text": "Neon Auto Transport's network is matched to your route based on availability and vehicle requirements." },
+                    { "@type": "HowToStep", "name": "Pickup & Inspection", "text": "The carrier meets you at the agreed pickup point, performs a full condition inspection, and documents it on the Bill of Lading." },
+                    { "@type": "HowToStep", "name": "Transit", "text": "Your vehicle travels the route with tracking updates available from dispatch." },
+                    { "@type": "HowToStep", "name": "Delivery & Final Inspection", "text": "The carrier delivers your vehicle, and you compare the delivery condition against the pickup Bill of Lading before signing off." },
+                    { "@type": "HowToStep", "name": "Claims Window", "text": "Any discrepancy is documented immediately at delivery to support a smooth insurance claim process." }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "name": "Washington D.C. Car Shipping | Neon Auto Transport",
+                "description": "Ship your car to or from Washington D.C. with Neon Auto Transport. Open & enclosed transport, military & student moves, free quotes, fast transit.",
+                "url": "https://neonautotransport.com/washington-dc-car-shipping/"
+            }
+        ]
+    }
 
-    <!-- Company Quick Links -->
-    <div class="lg:col-span-2">
-     <div style="margin-bottom: 2rem;">
-      <h3 style="color: white; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; margin: 0;">Company</h3>
-      <div style="width: 32px; height: 3px; background: #00D1FF; margin-top: 10px; border-radius: 3px; box-shadow: 0 0 10px rgba(0,209,255,0.4);"></div>
-     </div>
-     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; font-size: 15px; font-weight: 500;">
-      <li><a href="/how-to-ship-a-car-to-another-state/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> How to Ship a Car</a></li>
-      <li><a href="/why-neon/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Why Neon</a></li>
-      <li><a href="/services/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Transport Options</a></li>
-      <li><a href="/reviews/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Customer Reviews</a></li>
-      <li><a href="/insurance/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Insurance Coverage</a></li>
-      <li><a href="/blog/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Shipping Blog</a></li>
-            <li><a href="/faqs/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> FAQs</a></li>
-     </ul>
-    </div>
+    schema_tag = f'<script type="application/ld+json">\n{json.dumps(graph_schema, indent=2)}\n</script>'
 
-    <!-- Top Routes -->
-    <div class="lg:col-span-2">
-     <div style="margin-bottom: 2rem;">
-      <h3 style="color: white; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; margin: 0;">Popular Routes</h3>
-      <div style="width: 32px; height: 3px; background: #00D1FF; margin-top: 10px; border-radius: 3px; box-shadow: 0 0 10px rgba(0,209,255,0.4);"></div>
-     </div>
-     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; font-size: 15px; font-weight: 500;">
-      <li><a href="/new-york-to-florida-car-shipping/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> NY to Florida</a></li>
-      <li><a href="/california-to-texas-car-shipping/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> CA to Texas</a></li>
-      <li><a href="/california-to-new-york-car-shipping/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> CA to New York</a></li>
-      <li><a href="/texas-to-california-car-shipping/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Texas to CA</a></li>
-      <li><a href="/illinois-to-florida-car-shipping/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Illinois to FL</a></li>
-      <li style="padding-top: 0.5rem;"><a href="/locations/" style="color: #39FF14; text-decoration: none; font-weight: 800; display: inline-flex; align-items: center; gap: 0.25rem; transition: all 0.3s;" onmouseover="this.style.color='#fff'; this.style.textShadow='0 0 10px rgba(57,255,20,0.5)';" onmouseout="this.style.color='#39FF14'; this.style.textShadow='none';">View All 50 States <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a></li>
-     </ul>
-    </div>
-    <div class="lg:col-span-2">
-     <div style="margin-bottom: 2rem;">
-      <h3 style="color: white; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; margin: 0;">Popular Cities</h3>
-      <div style="width: 32px; height: 3px; background: #00D1FF; margin-top: 10px; border-radius: 3px; box-shadow: 0 0 10px rgba(0,209,255,0.4);"></div>
-     </div>
-     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; font-size: 15px; font-weight: 500;">
-      <li><a href="/florida-car-shipping/miami/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Miami Car Shipping</a></li>
-      <li><a href="/florida-car-shipping/orlando/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Orlando Car Shipping</a></li>
-      <li><a href="/car-shipping-arlington-va/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Arlington, DC</a></li>
-      <li><a href="/car-shipping-woodbridge-va/" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> Woodbridge, VA</a></li>
-     </ul>
-    </div>
+    # Replace old JSON-LD script blocks in <head>
+    # Find all <script type="application/ld+json"> ... </script> blocks and replace them with a single clean block
+    html = re.sub(
+        r'<script type="application/ld\+json">.*?</script>(\s*<script type="application/ld\+json">.*?</script>)*',
+        lambda m: schema_tag,
+        html,
+        flags=re.DOTALL
+    )
 
-    <!-- Contact -->
-    <div class="lg:col-span-2">
-     <div style="margin-bottom: 2rem;">
-      <h3 style="color: white; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; margin: 0;">Contact Support</h3>
-      <div style="width: 32px; height: 3px; background: #00D1FF; margin-top: 10px; border-radius: 3px; box-shadow: 0 0 10px rgba(0,209,255,0.4);"></div>
-     </div>
-     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem; font-size: 15px; font-weight: 500;">
-      <li>
-       <a href="tel:5715767711" style="display: inline-flex; align-items: center; gap: 0.75rem; color: #0a2540; background: #39FF14; padding: 0.85rem 1.5rem; border-radius: 999px; font-weight: 900; text-decoration: none; box-shadow: 0 0 20px rgba(57,255,20,0.25); transition: all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 0 30px rgba(57,255,20,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0 20px rgba(57,255,20,0.25)';">
-        <svg aria-hidden="true" style="width: 18px; height: 18px;" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg> 
-        (571) 576-7711
-       </a>
-      </li>
-      <li>
-       <a href="mailto:info@neonautotransport.com" style="display: flex; align-items: center; gap: 0.85rem; color: #8ba3ba; text-decoration: none; transition: all 0.3s; padding: 0.5rem 0;" onmouseover="this.style.color='#00D1FF';" onmouseout="this.style.color='#8ba3ba';">
-        <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #00D1FF; box-shadow: inset 0 0 10px rgba(0,209,255,0.1);">
-         <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-        </div>
-        <span style="word-break: break-all;">info@neonautotransport.com</span>
-       </a>
-      </li>
-      <li>
-       <div style="display: flex; align-items: flex-start; gap: 0.85rem; color: #8ba3ba; line-height: 1.6; padding: 0.5rem 0;">
-        <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(26,56,90,0.4); border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #00D1FF; box-shadow: inset 0 0 10px rgba(0,209,255,0.1); margin-top: 2px;">
-         <svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-        </div>
-        <span>2709 Neabsco Common Pl<br>Suite 101<br>Woodbridge, VA 22191</span>
-       </div>
-      </li>
-     </ul>
-    </div>
-   </div>
-   
-   <!-- Footer Bottom -->
-   <div style="padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 500; gap: 1.5rem;">
-    <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; color: #8ba3ba;">
-     <span>© 2026 Neon Auto Transport. All rights reserved.</span>
-     <div style="display: flex; gap: 1rem;">
-      <span style="padding: 0.35rem 0.85rem; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); border-radius: 999px; color: #94a3b8;">DOT: 4355879</span>
-      <span style="padding: 0.35rem 0.85rem; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); border-radius: 999px; color: #94a3b8;">MC: 1703787</span>
-     </div>
-     <span style="padding: 0.35rem 0.85rem; background: rgba(57,255,20,0.1); color: #39FF14; border-radius: 999px; display: flex; align-items: center; gap: 0.375rem; border: 1px solid rgba(57,255,20,0.2); box-shadow: 0 0 15px rgba(57,255,20,0.05);">
-      <svg style="width: 14px; height: 14px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> FMCSA Approved
-     </span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 2.5rem;">
-     <a href="/privacy/" style="color: #8ba3ba; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#8ba3ba';">Privacy Policy</a>
-     <a href="/terms/" style="color: #8ba3ba; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='#8ba3ba';">Terms of Service</a>
-    </div>
-   </div>
-  </div>
- </footer>
-  <!-- Sticky Side Widget -->
-  <div id="sticky-widget" class="fixed top-1/2 right-0 transform -translate-y-1/2 flex flex-col gap-3 z-50 transition-all duration-500 opacity-0 invisible translate-x-full">
-    <!-- The GET A FREE QUOTE button with Neon Green -->
-    <a href="/cost-calculator/" class="group bg-[#39FF14] text-[#0a2540] font-black text-xs md:text-sm px-4 py-3 md:px-5 md:py-4 rounded-l-xl shadow-[0_0_20px_rgba(57,255,20,0.3)] hover:bg-[#32e612] transition-transform duration-300 flex items-center justify-center translate-x-2 hover:translate-x-0">
-      GET A FREE QUOTE
-    </a>
-    <!-- The Phone Number button with Dark Blue -->
-    <a href="tel:5715767711" class="group bg-[#0a2540] text-white font-black text-xs md:text-sm px-4 py-3 md:px-5 md:py-4 rounded-l-xl shadow-2xl border-l border-t border-b border-[rgba(255,255,255,0.1)] hover:bg-[#1a385a] transition-transform duration-300 flex items-center justify-center translate-x-2 hover:translate-x-0">
-      <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-      (571) 576-7711
-    </a>
-  </div>
+    with open(HTML_PATH, "w", encoding="utf-8") as f:
+        f.write(html)
+    print("Successfully built Washington D.C. car shipping page!")
 
-  <script>
-    // Scroll listener to toggle sticky widget visibility
-    document.addEventListener('DOMContentLoaded', () => {
-      const widget = document.getElementById('sticky-widget');
-      if(widget) {
-        window.addEventListener('scroll', () => {
-          // Show when scrolled down 400px (past hero section)
-          if (window.scrollY > 400) {
-            widget.classList.remove('opacity-0', 'invisible', 'translate-x-full');
-            widget.classList.add('opacity-100', 'visible', 'translate-x-0');
-          } else {
-            widget.classList.add('opacity-0', 'invisible', 'translate-x-full');
-            widget.classList.remove('opacity-100', 'visible', 'translate-x-0');
-          }
-        });
-      }
-    });
-  </script>
-
-<!-- Neon AI Chat Widget -->
-  <link rel="stylesheet" href="/css/chatbot.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/chatbot.css?v=2"></noscript>
-  <script src="/js/chatbot.js?v=4" defer=""></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var btn = document.getElementById('mobile-menu-btn');
-      var menu = document.getElementById('mobile-menu');
-      if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
-    });
-  </script>
-  <script>
-    window.addEventListener('scroll', () => {
-      const header = document.getElementById('global-header');
-      if (window.scrollY > 50) {
-        header.style.backgroundColor = '#0a2540';
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-      } else {
-        header.style.backgroundColor = '#0a2540';
-        header.style.boxShadow = 'none';
-      }
-    });
-  </script>
-
-  
-  
-    
-    <!-- Mobile Sticky CTA -->
-    <style>
-      #mobile-sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 50; padding: 12px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid #e6e6e6; box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.1); display: flex; gap: 12px; align-items: center; justify-content: space-between; box-sizing: border-box; }
-      @media (min-width: 1024px) { #mobile-sticky-cta { display: none !important; } }
-      .mobile-cta-btn { flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 8px; font-weight: 900; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-family: 'Inter', sans-serif; font-size: 15px; box-sizing: border-box; }
-      .mobile-cta-btn.call { background-color: #39FF14; color: #0a2540; }
-      .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
-      .mobile-cta-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
-    </style>
-    <div id="mobile-sticky-cta">
-        <a href="tel:5715767711" class="mobile-cta-btn call">
-            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-            Call Now
-        </a>
-        <a href="/cost-calculator/" class="mobile-cta-btn quote">
-            Get Free Quote
-        </a>
-    </div>
-</body>
-</html>
+if __name__ == "__main__":
+    build_dc_content()
