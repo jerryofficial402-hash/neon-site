@@ -524,16 +524,17 @@ def build_delaware_page():
               </div>
             </div>
 
-            <!-- SEO Image 3 -->
-            <div class="my-6 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md">
-              <img src="/images/open-vs-enclosed-transport.jpg" 
-                   alt="Comparison of open vs enclosed car shipping trailers for Delaware auto transport customers in New Castle, Kent, and Sussex counties" 
-                   class="w-full h-auto object-cover max-h-[420px]" 
-                   width="1200" height="675" loading="lazy">
-              <div class="bg-[#f8fafc] px-4 py-3 border-t border-[#e6e6e6] text-xs font-semibold text-[#425466] text-center">
-                Choose between open carrier transport for daily drivers and enclosed trailers for high-value collector vehicles.
-              </div>
-            </div>
+            <!-- SEO Image 3: Enclosed Luxury Car Shipping with AEO/GEO/EEAT Markup -->
+            <figure class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md bg-white">
+              <img src="/images/delaware-enclosed-car-shipping-ferrari-carrier.jpg" 
+                   alt="Hydraulic liftgate loading a navy blue Ferrari luxury vehicle into an enclosed auto transport trailer in Wilmington Delaware for 100% weather-protected shipping" 
+                   title="Delaware Enclosed Car Shipping for Luxury &amp; Collector Vehicles - Neon Auto Transport Fully Insured Carrier"
+                   class="w-full h-auto object-cover max-h-[460px]" 
+                   width="1200" height="800" loading="lazy">
+              <figcaption class="bg-[#f8fafc] px-6 py-4 border-t border-[#e6e6e6] text-xs lg:text-sm font-semibold text-[#425466] text-center leading-relaxed">
+                <span class="font-bold text-[#0a2540]">Enclosed Luxury &amp; Collector Vehicle Transport in Delaware:</span> While open transport serves 90% of daily drivers, <strong class="text-[#0a2540]">enclosed car shipping</strong> provides 100% weather and road debris protection for luxury, exotic, and classic automobiles across <a href="/delaware-car-shipping/wilmington/" class="text-[#468de6] hover:underline font-bold">Wilmington</a>, Greenville, and Coastal Delaware. Enclosed carriers utilize hydraulic liftgates to load low-clearance sports cars horizontally without scraping, backed by up to $250,000+ in specialized enclosed cargo insurance coverage.
+              </figcaption>
+            </figure>
           </div>
 
           <!-- SECTION 9: HOW DELAWARE CAR SHIPPING ACTUALLY WORKS -->
