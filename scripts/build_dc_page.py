@@ -200,52 +200,52 @@ def build_dc_content():
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/classic-car-shipping/" class="hover:text-[#468de6] transition">Classic Car Transport</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/luxury-car-shipping/" class="hover:text-[#468de6] transition">Classic Car Transport</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Enclosed shipping with soft tie-downs and minimal handling, suited to low-mileage collector vehicles.</p>
                 </div>
-                <a href="/services/classic-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Classic Transport →</a>
+                <a href="/services/luxury-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Classic Transport →</a>
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/ev-car-shipping/" class="hover:text-[#468de6] transition">Electric Vehicle (EV) Shipping</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/enclosed-auto-transport/" class="hover:text-[#468de6] transition">Electric Vehicle (EV) Shipping</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Special handling for battery weight, ground clearance, and charge-level requirements common with Teslas and other EVs.</p>
                 </div>
-                <a href="/services/ev-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">EV Shipping Guide →</a>
+                <a href="/services/enclosed-auto-transport/" class="text-xs font-bold text-[#468de6] hover:underline">EV Shipping Guide →</a>
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/heavy-equipment-shipping/" class="hover:text-[#468de6] transition">Heavy Vehicle &amp; Truck Shipping</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/heavy-haul-transport/" class="hover:text-[#468de6] transition">Heavy Vehicle &amp; Truck Shipping</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Oversized carriers for full-size trucks, vans, and heavier SUVs moving across the country.</p>
                 </div>
-                <a href="/services/heavy-equipment-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Heavy Equipment Transport →</a>
+                <a href="/services/heavy-haul-transport/" class="text-xs font-bold text-[#468de6] hover:underline">Heavy Equipment Transport →</a>
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/multi-car-shipping/" class="hover:text-[#468de6] transition">Multi-Car Shipping</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/car-dealer-shipping/" class="hover:text-[#468de6] transition">Multi-Car Shipping</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Household moves involving two or more vehicles, often combined onto the same carrier for savings.</p>
                 </div>
-                <a href="/services/multi-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Multi-Car Discounts →</a>
+                <a href="/services/car-dealer-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Multi-Car Discounts →</a>
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/corporate-relocation-car-shipping/" class="hover:text-[#468de6] transition">Corporate Relocation</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/corporate-relocation/" class="hover:text-[#468de6] transition">Corporate Relocation</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Coordinated shipping for employee relocation packages tied to consulting firms, associations, and federal contractors.</p>
                 </div>
-                <a href="/services/corporate-relocation-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Corporate Transport →</a>
+                <a href="/services/corporate-relocation/" class="text-xs font-bold text-[#468de6] hover:underline">Corporate Transport →</a>
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/dealer-auto-transport/" class="hover:text-[#468de6] transition">Dealer &amp; Auction Transport</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/car-dealer-shipping/" class="hover:text-[#468de6] transition">Dealer &amp; Auction Transport</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Vehicle transport for dealerships and auction buyers/sellers moving inventory in and out of the D.C. metro area.</p>
                 </div>
-                <a href="/services/dealer-auto-transport/" class="text-xs font-bold text-[#468de6] hover:underline">Dealer Shipping →</a>
+                <a href="/services/car-dealer-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Dealer Shipping →</a>
               </div>
               <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] hover:shadow-md transition flex flex-col justify-between">
                 <div>
-                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/snowbird-car-shipping/" class="hover:text-[#468de6] transition">Snowbird Shipping</a></h3>
+                  <h3 class="font-bold text-[#0a2540] text-lg mb-2"><a href="/services/snow-bird-car-shipping/" class="hover:text-[#468de6] transition">Snowbird Shipping</a></h3>
                   <p class="text-[#425466] text-sm leading-relaxed mb-4">Seasonal transport for D.C.-area residents relocating vehicles to Florida, Arizona, and the Carolinas each fall, and back each spring.</p>
                 </div>
-                <a href="/services/snowbird-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Snowbird Car Transport →</a>
+                <a href="/services/snow-bird-car-shipping/" class="text-xs font-bold text-[#468de6] hover:underline">Snowbird Car Transport →</a>
               </div>
             </div>
           </div>
@@ -1104,18 +1104,20 @@ def build_dc_content():
           <div class="stripe-card p-8 lg:p-10 bg-white shadow-[0_4px_25px_rgba(0,0,0,0.05)] rounded-3xl border border-[#e6e6e6]">
             <h2 class="text-2xl font-black text-[#0a2540] mb-6 tracking-tight">Internal Resources &amp; Related Transport Guides</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm font-semibold text-[#468de6]">
-              <a href="/auto-transport/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Auto Transport Services →</a>
-              <a href="/open-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Open Car Shipping →</a>
-              <a href="/enclosed-auto-transport/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Enclosed Auto Transport →</a>
-              <a href="/motorcycle-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Motorcycle Shipping →</a>
-              <a href="/military-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Military Car Shipping →</a>
-              <a href="/college-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">College Car Shipping →</a>
-              <a href="/heavy-equipment-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Heavy Equipment Shipping →</a>
-              <a href="/states/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">State Shipping Pages →</a>
-              <a href="/routes/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Route Pages →</a>
+              <a href="/services/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Auto Transport Services →</a>
+              <a href="/services/open-auto-transport/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Open Car Shipping →</a>
+              <a href="/services/enclosed-auto-transport/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Enclosed Auto Transport →</a>
+              <a href="/services/motorcycle-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Motorcycle Shipping →</a>
+              <a href="/services/military-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Military Car Shipping →</a>
+              <a href="/services/college-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">College Car Shipping →</a>
+              <a href="/services/heavy-haul-transport/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Heavy Equipment Shipping →</a>
+              <a href="/locations/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">State Shipping Pages →</a>
+              <a href="/services/car-shipping-to-another-state/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Route Pages →</a>
               <a href="/blog/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">Auto Transport Blog →</a>
               <a href="/washington-dc-to-florida-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">D.C. to Florida Routes →</a>
               <a href="/washington-dc-to-california-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">D.C. to California Routes →</a>
+              <a href="/washington-dc-to-texas-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">D.C. to Texas Routes →</a>
+              <a href="/washington-dc-to-new-york-car-shipping/" class="p-3 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] hover:border-[#468de6] transition">D.C. to New York Routes →</a>
             </div>
           </div>
 """
