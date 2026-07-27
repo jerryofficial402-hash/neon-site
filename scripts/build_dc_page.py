@@ -698,10 +698,11 @@ def build_dc_content():
 
             <!-- IMAGE FIGURE 2 -->
             <figure class="my-6 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-sm bg-white p-2" itemscope="" itemtype="https://schema.org/ImageObject">
-              <img src="/images/licensed-insuredcarrier-nj.jpg" alt="Neon Auto Transport FMCSA licensed and insured car carrier truck inspecting vehicle condition before Washington D.C. car shipping" title="FMCSA Insured Carrier Inspection in Washington D.C." class="w-full h-auto rounded-xl object-cover" style="max-height: 420px;" width="1000" height="500" loading="lazy" decoding="async" itemprop="contentUrl">
-              <meta itemprop="name" content="FMCSA Insured Vehicle Inspection in Washington D.C.">
-              <meta itemprop="description" content="Carrier driver completing Bill of Lading vehicle condition inspection prior to departure from Washington D.C.">
+              <img src="/images/washington-dc-car-shipping-bill-of-lading-vehicle-inspection.jpg" alt="Neon Auto Transport FMCSA insured carrier driver performing comprehensive Bill of Lading vehicle condition inspection before Washington D.C. car shipping departure" title="Washington D.C. Auto Transport Bill of Lading Vehicle Inspection - Neon Auto Transport" class="w-full h-auto rounded-xl object-cover" style="max-height: 420px;" width="1000" height="500" loading="lazy" decoding="async" itemprop="contentUrl">
+              <meta itemprop="name" content="Washington D.C. Car Shipping Bill of Lading Inspection Report">
+              <meta itemprop="description" content="FMCSA licensed carrier driver inspecting vehicle condition on Bill of Lading clipboard prior to auto transport departure from Washington D.C.">
               <meta itemprop="author" content="Neon Auto Transport">
+              <meta itemprop="contentLocation" content="Washington, D.C.">
               <figcaption class="p-3 text-center text-sm font-semibold text-[#425466] bg-[#f8fafc] rounded-b-xl border-t border-[#e6e6e6]">
                 Every vehicle shipment receives a verified cargo insurance check and comprehensive Bill of Lading condition report.
               </figcaption>
