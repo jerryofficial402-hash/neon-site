@@ -561,16 +561,17 @@ def build_delaware_page():
               </p>
             </div>
 
-            <!-- SEO Image 4 -->
-            <div class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md">
-              <img src="/images/licensed-insuredcarrier-nj.jpg" 
-                   alt="Delaware car shipping transport driver conducting a verified Bill of Lading vehicle condition inspection and checking cargo insurance before dispatch" 
-                   class="w-full h-auto object-cover max-h-[420px]" 
-                   width="1200" height="675" loading="lazy">
-              <div class="bg-[#f8fafc] px-4 py-3 border-t border-[#e6e6e6] text-xs font-semibold text-[#425466] text-center">
-                Every Delaware vehicle shipment includes an active cargo insurance verification and a detailed Bill of Lading inspection report.
-              </div>
-            </div>
+            <!-- SEO Image 4: Carrier Safety Inspection & Insurance Verification with AEO/GEO/EEAT Markup -->
+            <figure class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md bg-white">
+              <img src="/images/delaware-car-shipping-driver-inspection.jpg" 
+                   alt="Certified auto transport driver securing vehicle tire with heavy-duty wheel straps on a car carrier deck during Delaware Bill of Lading inspection" 
+                   title="Delaware Car Shipping Carrier Safety Inspection &amp; Cargo Insurance Verification - Neon Auto Transport"
+                   class="w-full h-auto object-cover max-h-[460px]" 
+                   width="1200" height="800" loading="lazy">
+              <figcaption class="bg-[#f8fafc] px-6 py-4 border-t border-[#e6e6e6] text-xs lg:text-sm font-semibold text-[#425466] text-center leading-relaxed">
+                <span class="font-bold text-[#0a2540]">Verified Cargo Insurance &amp; Bill of Lading Inspection:</span> Every Delaware vehicle shipment includes active <strong class="text-[#0a2540]">$100,000+ cargo insurance verification</strong> and a detailed 22-point <strong class="text-[#0a2540]">Bill of Lading inspection report</strong> at pickup and delivery. Professional carriers secure tires using soft-tie wheel straps on the transport deck—never touching the vehicle frame or paint—ensuring zero transit damage across <a href="/delaware-car-shipping/wilmington/" class="text-[#468de6] hover:underline font-bold">Wilmington</a>, <a href="/delaware-car-shipping/dover/" class="text-[#468de6] hover:underline font-bold">Dover</a>, and Newark.
+              </figcaption>
+            </figure>
 
             <h3 class="font-bold text-[#0a2540] text-xl mb-6">The Six-Step Process</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
