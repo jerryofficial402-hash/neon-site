@@ -182,16 +182,17 @@ def build_delaware_page():
               </div>
             </div>
 
-            <!-- SEO Image 1 -->
-            <div class="my-6 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md">
-              <img src="/images/open-auto-transport-hero.png" 
-                   alt="Neon Auto Transport open car shipping carrier loading a sedan along the I-95 corridor in Wilmington Delaware for door to door interstate vehicle transport" 
-                   class="w-full h-auto object-cover max-h-[420px]" 
-                   width="1200" height="675" loading="lazy">
-              <div class="bg-[#f8fafc] px-4 py-3 border-t border-[#e6e6e6] text-xs font-semibold text-[#425466] text-center">
-                FMCSA-licensed and USDOT-registered auto transport carrier operating along Delaware's I-95 and US-13 corridors.
-              </div>
-            </div>
+            <!-- SEO Image 1: Interstate Carrier along Delaware Corridors with AEO/GEO/EEAT Markup -->
+            <figure class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md bg-white">
+              <img src="/images/delaware-open-auto-transport-carrier-wilmington.jpg" 
+                   alt="FMCSA-licensed and USDOT-registered open auto transport carrier loading a vehicle along Delaware's I-95 and US-13 corridors near Wilmington and Dover" 
+                   title="Delaware Interstate Auto Transport Carrier - Neon Auto Transport FMCSA USDOT Licensed &amp; Insured"
+                   class="w-full h-auto object-cover max-h-[460px]" 
+                   width="1200" height="800" loading="lazy">
+              <figcaption class="bg-[#f8fafc] px-6 py-4 border-t border-[#e6e6e6] text-xs lg:text-sm font-semibold text-[#425466] text-center leading-relaxed">
+                <span class="font-bold text-[#0a2540]">FMCSA &amp; USDOT Certified Carrier Logistics:</span> Active auto transport carrier operating along Delaware's <strong class="text-[#0a2540]">I-95 and US-13 interstate corridors</strong>, providing door-to-door vehicle delivery across <a href="/delaware-car-shipping/wilmington/" class="text-[#468de6] hover:underline font-bold">Wilmington</a>, <a href="/delaware-car-shipping/dover/" class="text-[#468de6] hover:underline font-bold">Dover</a>, Newark, and Middletown. All shipments are backed by verified USDOT safety registration, FMCSA operating authority, and mandatory $100,000+ cargo insurance coverage.
+              </figcaption>
+            </figure>
           </div>
 
           <!-- SECTION 3: HOW MUCH DOES DELAWARE CAR SHIPPING COST? -->
