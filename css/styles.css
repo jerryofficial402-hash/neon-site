@@ -84,8 +84,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Stripe Cards */
-.stripe-card {
+.stripe-card:not([class*="bg-"]) {
   background: #ffffff;
+}
+.stripe-card.bg-\[\#0a2540\] {
+  background-color: #0a2540 !important;
+}
+.stripe-card {
   border-radius: 12px;
   box-shadow: var(--shadow-md);
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
