@@ -675,15 +675,53 @@ def get_new_content_html():
                 </table>
               </div>
 
-              <!-- SEO Image 2: Enclosed Luxury Transport in Florida -->
-              <figure class="my-8 rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-md bg-white">
-                <img src="/images/delaware-enclosed-car-shipping-ferrari-carrier.jpg" 
-                     alt="Hydraulic liftgate loading exotic Ferrari sports car into an enclosed auto transport trailer in Miami Florida for weather-protected shipping" 
-                     title="Florida Enclosed Auto Transport for Luxury &amp; Exotic Vehicles - Neon Auto Transport"
-                     class="w-full h-auto object-cover max-h-[460px]" 
-                     width="1200" height="800" loading="lazy">
-                <figcaption class="bg-[#f8fafc] px-6 py-4 border-t border-[#e6e6e6] text-xs lg:text-sm font-semibold text-[#425466] text-center leading-relaxed">
-                  <span class="font-bold text-[#0a2540]">Enclosed Luxury &amp; Collector Shipping in Florida:</span> For high-value automobiles in <strong class="text-[#0a2540]">Miami, Palm Beach, and Naples</strong>, enclosed car carriers provide 100% protection against tropical rainstorms, road debris, and coastal salt air, utilizing hydraulic liftgates for low ground-clearance vehicles.
+              <!-- High-Impact Visual: Florida Commercial Open Auto Transport Carrier (AEO/GEO/SEO/EEAT Optimized) -->
+              <figure class="my-10 rounded-3xl overflow-hidden border border-[#e6e6e6] shadow-xl hover:shadow-2xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Multi-Car Open Auto Transport Carrier" data-aeo-question="What type of car hauler trailer is used for open vehicle transport in Florida?" data-aeo-answer="High-capacity double-deck commercial open car haulers transport up to 9-10 vehicles simultaneously along Florida highway corridors, providing cost-effective door-to-door auto transport for sedans, crossovers, and SUVs." data-geo-jurisdiction="US-FL" data-geo-coverage="Miami, Orlando, Tampa, Jacksonville, Palm Beach, Naples &amp; Nationwide Routes">
+                <meta itemprop="name" content="Florida Multi-Car Open Auto Transport Carrier Highway Vehicle Hauler">
+                <meta itemprop="description" content="Commercial multi-car open auto transport carrier trailer loaded with SUVs and sedans traveling along highway corridors for nationwide and Florida door-to-door vehicle delivery.">
+                <meta itemprop="author" content="Neon Auto Transport">
+                <meta itemprop="contentLocation" content="Florida, USA">
+                <div class="relative overflow-hidden bg-[#0a2540]">
+                  <img itemprop="contentUrl" 
+                       src="/images/florida-multi-car-carrier-highway-auto-transport.jpg" 
+                       alt="FMCSA-licensed commercial multi-vehicle open auto transport truck and double-deck trailer loaded with white SUVs and sedans driving on highway corridor for Florida car shipping" 
+                       title="Florida Open Auto Transport Multi-Car Hauler Truck - Neon Auto Transport Commercial Logistics"
+                       class="w-full h-auto object-cover max-h-[520px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
+                       width="1200" height="800" loading="lazy" decoding="async">
+                  <!-- Overlay Top Badge for Premium EEAT Authority & Visual Impact -->
+                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-xs font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
+                    <span class="w-2 h-2 rounded-full bg-[#39FF14] animate-pulse"></span>
+                    <span>FMCSA Certified Multi-Car Hauler</span>
+                  </div>
+                  <!-- Overlay Bottom Stats Strip for High-Impact Visual EEAT -->
+                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md text-[#0a2540] text-xs font-bold border border-[#e6e6e6] shadow-lg">
+                    <span class="flex items-center gap-1.5 font-extrabold text-[#0369a1]">
+                      ✓ Double-Deck Capacity
+                    </span>
+                    <span class="text-[#cbd5e1]">•</span>
+                    <span class="flex items-center gap-1.5">
+                      90% Most Popular Shipping Choice
+                    </span>
+                    <span class="text-[#cbd5e1]">•</span>
+                    <span class="text-[#425466]">Fully Insured Transit</span>
+                  </div>
+                </div>
+                <!-- Comprehensive AEO, GEO, and EEAT Caption -->
+                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-6 py-5 border-t border-[#e6e6e6]" itemprop="caption">
+                  <div class="flex flex-col gap-2">
+                    <p class="text-xs lg:text-sm font-semibold text-[#425466] leading-relaxed text-center sm:text-left">
+                      <span class="font-black text-[#0a2540] tracking-tight">Multi-Car Open Carrier Transport in Florida:</span> Commercial double-deck car haulers carrying <strong class="text-[#0a2540] font-black">SUVs, sedans, and crossovers</strong> represent the most efficient, cost-effective door-to-door auto shipping method across <strong class="text-[#0a2540]">Miami, Orlando, Tampa, Jacksonville, and nationwide interstate routes</strong>.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1.5 pt-2 mt-1 border-t border-[#e6e6e6]/70 text-[11px] font-bold text-[#64748b] tracking-wide uppercase">
+                      <span class="inline-flex items-center gap-1.5 text-[#0a2540]">
+                        <span class="text-[#0369a1]">🛡️</span> Verified Commercial Fleet Operations
+                      </span>
+                      <span class="hidden md:inline text-[#cbd5e1]">•</span>
+                      <span>Capacity: Multi-Vehicle Commercial Trailer</span>
+                      <span class="hidden md:inline text-[#cbd5e1]">•</span>
+                      <span>Service: 100% Door-to-Door Nationwide Logistics</span>
+                    </div>
+                  </div>
                 </figcaption>
               </figure>
 
@@ -1108,6 +1146,32 @@ def update_page():
         "about": {{
           "@type": "Thing",
           "name": "Florida Interstate Auto Transport Corridors"
+        }}
+      }},
+      {{
+        "@type": "ImageObject",
+        "@id": "https://neonautotransport.com/florida-car-shipping/#image-hauler",
+        "url": "https://neonautotransport.com/images/florida-multi-car-carrier-highway-auto-transport.jpg",
+        "contentUrl": "https://neonautotransport.com/images/florida-multi-car-carrier-highway-auto-transport.jpg",
+        "name": "Florida Multi-Car Open Auto Transport Carrier Highway Vehicle Hauler",
+        "caption": "Multi-Car Open Carrier Transport in Florida: Commercial double-deck car haulers carrying SUVs, sedans, and crossovers represent the most efficient, cost-effective door-to-door auto shipping method across Miami, Orlando, Tampa, Jacksonville, and nationwide interstate routes.",
+        "description": "FMCSA-licensed commercial multi-vehicle open auto transport truck and double-deck trailer loaded with white SUVs and sedans driving on highway corridor for Florida car shipping.",
+        "width": 1200,
+        "height": 800,
+        "encodingFormat": "image/jpeg",
+        "inLanguage": "en-US",
+        "creator": {{
+          "@type": "Organization",
+          "name": "Neon Auto Transport",
+          "url": "https://neonautotransport.com"
+        }},
+        "author": {{
+          "@type": "Organization",
+          "name": "Neon Auto Transport"
+        }},
+        "about": {{
+          "@type": "Thing",
+          "name": "Florida Open Auto Transport Carrier Logistics"
         }}
       }},
       {{
