@@ -80,7 +80,7 @@ def build_faq_schema_items():
                 "text": a
             }
         }
-        schema_items.append(json.dumps(item, indent=10)[10:])
+        schema_items.append("        " + json.dumps(item, indent=10).replace("\n", "\n        "))
     return ",\n".join(schema_items)
 
 def build_faq_html_items():
