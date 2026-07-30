@@ -332,9 +332,9 @@ html_content = """<!DOCTYPE html>
     </div>
   </header>
 
-  <main class="pt-20">
-    <!-- HERO SECTION (PRESERVED UNTOUCHED) -->
-    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
+  <main>
+    <!-- HERO SECTION (FIXED TOP SPACING) -->
+    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16">
       <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div class="lg:w-1/2 flex flex-col justify-center">
@@ -1521,4 +1521,4 @@ html_content = """<!DOCTYPE html>
 with open(target_file, "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print(f"SUCCESS: Rebuilt Georgia page with 100% color fix, full header mega menu & brand theme!")
+print(f"SUCCESS: Reduced top padding above hero section at {target_file}!")
