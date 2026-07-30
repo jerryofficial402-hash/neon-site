@@ -228,18 +228,76 @@
 </head>
 
 <body class="antialiased bg-[#f6f9fc]">
-  <!-- Global Header -->
+  <!-- Global Header with Full Mega Menu -->
   <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
     <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+      <!-- Left: Logo + Desktop Nav -->
       <div class="flex items-center" style="gap:24px">
         <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap" id="logo-text">
           NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
         </a>
         <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
-          <a href="/#how-it-works" class="hover:opacity-80 transition">How it works</a>
-          <a href="/services/" class="hover:opacity-80 transition">Transport Services</a>
-          <a href="/why-neon/" class="hover:opacity-80 transition">Why Neon</a>
-          <a href="/contact/" class="hover:opacity-80 transition">Contact Us</a>
+          <a href="/#how-it-works" class="hover:opacity-80 transition text-white">How it works</a>
+          
+          <!-- Mega Menu Wrapper -->
+          <div class="relative group flex items-center">
+            <a href="/services/" class="hover:opacity-80 transition flex items-center gap-1 cursor-pointer text-white">
+              Transport Services 
+              <svg aria-hidden="true" class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+            
+            <!-- Mega Menu Dropdown Slide -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-[#e6e6e6] p-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-0 z-50 text-left" style="top:100%">
+              <div class="grid grid-cols-3 gap-10 text-sm">
+                <!-- Individual Column -->
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Individual</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium">
+                    <li><a href="/services/snow-bird-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Snow Bird Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/military-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Military Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/college-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">College Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/luxury-car-shipping/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Luxury / Exotic Car Shipping<br>Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                    <li><a href="/services/car-shipping-to-another-state/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Car Shipping to Another<br>State</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                    <li><a href="/services/truck-shipping-services/" class="hover:text-[#635bff] flex items-center justify-between group/link">Truck Shipping Services <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/door-to-door-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Door to Door Car Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/enclosed-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Enclosed Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/open-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Open Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/car-buyer-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Car Buyer Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/expedited-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Expedited Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/car-resellers-auto-transport/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Car Resellers Auto<br>Transport</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                  </ul>
+                </div>
+
+                <!-- Business Column -->
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Business</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium">
+                    <li><a href="/services/car-dealer-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Car Dealer Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/auto-auction-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Auto Auction Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/rental-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Rental Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/corporate-relocation/" class="hover:text-[#635bff] flex items-center justify-between group/link">Corporate Relocation <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/fleet-management-transportation-services/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Fleet Management<br>Transportation Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                  </ul>
+                </div>
+
+                <!-- Specialized Column -->
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Specialized</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium">
+                    <li><a href="/services/heavy-haul-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Heavy Haul Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/motorcycle-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Motorcycle Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/alaska-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Alaska Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/hawaii-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Hawaii Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/international-overseas-car-shipping-services/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>International Overseas Car<br>Shipping Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                    <li><a href="/services/terminal-to-terminal-car-shipping/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Terminal-to-Terminal Car<br>Shipping</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="/why-neon/" class="hover:opacity-80 transition text-white">Why Neon</a>
+          <a href="/contact/" class="hover:opacity-80 transition text-white">Contact Us</a>
         </nav>
       </div>
 
@@ -248,12 +306,24 @@
           <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
           (571) 576-7711
         </a>
-        <a href="/cost-calculator/" class="btn-outline" style="white-space:nowrap">Cost Calculator</a>
+        <a href="/cost-calculator/" class="border border-white/30 text-white hover:bg-white hover:text-[#0a2540] px-5 py-2.5 rounded-full font-bold transition-colors" style="white-space:nowrap">Cost Calculator</a>
       </div>
 
+      <!-- Mobile Menu Btn -->
       <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="lg:hidden text-white focus:outline-none">
         <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
       </button>
+    </div>
+    
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 flex flex-col p-4 space-y-4 text-center font-semibold text-[#425466] shadow-xl">
+      <a href="/#how-it-works" class="hover:text-[#635bff]">How it works</a>
+      <a href="/services/" class="hover:text-[#635bff]">Transport Options</a>
+      <a href="/why-neon/" class="hover:text-[#635bff]">Why Neon</a>
+      <a href="/contact/" class="hover:text-[#635bff]">Contact Us</a>
+      <hr>
+      <a href="tel:5715767711" class="bg-[#39FF14] text-[#0a2540] py-3 rounded-xl font-black text-lg shadow-lg">(571) 576-7711</a>
+      <a href="/cost-calculator/" class="bg-[#635bff] text-white py-3 rounded-xl font-bold inline-block mx-auto mt-4 px-8">Cost Calculator</a>
     </div>
   </header>
 
@@ -291,7 +361,7 @@
         <h2 class="text-4xl font-bold mb-6 text-[#0a2540] tracking-tight">Popular Routes from Georgia</h2>
         
         <h3 class="font-bold text-[#0a2540] flex items-center gap-2 mb-6 uppercase tracking-wider text-sm">
-          <svg class="w-4 h-4 text-[#0369a1]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg class="w-4 h-4 text-[#468de6]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
           TOP 3 ROUTES
         </h3>
         
@@ -301,22 +371,22 @@
             <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">1</div>
             <div class="flex-1 text-center md:text-left min-w-[150px]">
               <h4 class="font-bold text-[#0a2540] text-xl">Georgia</h4>
-              <p class="text-[#0369a1] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">California</span></p>
+              <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">California</span></p>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">DISTANCE</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">DISTANCE</div>
               <div class="font-bold text-[#0a2540] text-sm">2,281 mi</div>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">EST. COST</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">EST. COST</div>
               <div class="font-bold text-[#0a2540] text-sm">$1000 - $1375</div>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">TRANSIT</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">TRANSIT</div>
               <div class="font-bold text-[#0a2540] text-sm">5 to 8 days</div>
             </div>
             <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-              <a href="/cost-calculator/" class="bg-[#0369a1] hover:bg-[#0284c7] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
             </div>
           </div>
           <!-- Route 2 -->
@@ -324,22 +394,22 @@
             <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">2</div>
             <div class="flex-1 text-center md:text-left min-w-[150px]">
               <h4 class="font-bold text-[#0a2540] text-xl">Georgia</h4>
-              <p class="text-[#0369a1] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Texas</span></p>
+              <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Texas</span></p>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">DISTANCE</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">DISTANCE</div>
               <div class="font-bold text-[#0a2540] text-sm">827 mi</div>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">EST. COST</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">EST. COST</div>
               <div class="font-bold text-[#0a2540] text-sm">$775 - $1050</div>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">TRANSIT</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">TRANSIT</div>
               <div class="font-bold text-[#0a2540] text-sm">3 to 6 days</div>
             </div>
             <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-              <a href="/cost-calculator/" class="bg-[#0369a1] hover:bg-[#0284c7] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
             </div>
           </div>
           <!-- Route 3 -->
@@ -347,22 +417,22 @@
             <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">3</div>
             <div class="flex-1 text-center md:text-left min-w-[150px]">
               <h4 class="font-bold text-[#0a2540] text-xl">Georgia</h4>
-              <p class="text-[#0369a1] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Florida</span></p>
+              <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Florida</span></p>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">DISTANCE</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">DISTANCE</div>
               <div class="font-bold text-[#0a2540] text-sm">716 mi</div>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">EST. COST</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">EST. COST</div>
               <div class="font-bold text-[#0a2540] text-sm">$675 - $900</div>
             </div>
             <div class="flex-1 text-center px-4 hidden md:block">
-              <div class="text-[11px] text-[#0369a1] font-bold mb-1 uppercase tracking-wider">TRANSIT</div>
+              <div class="text-[11px] text-[#468de6] font-bold mb-1 uppercase tracking-wider">TRANSIT</div>
               <div class="font-bold text-[#0a2540] text-sm">2 to 4 days</div>
             </div>
             <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-              <a href="/cost-calculator/" class="bg-[#0369a1] hover:bg-[#0284c7] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
             </div>
           </div>
         </div>
@@ -371,7 +441,7 @@
         <div class="overflow-x-auto bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#e6e6e6]">
           <table class="w-full text-left border-collapse min-w-[700px]">
             <thead>
-              <tr class="bg-[#0369a1] text-white text-[12px] font-bold uppercase tracking-wider">
+              <tr class="bg-[#468de6] text-white text-[12px] font-bold uppercase tracking-wider">
                 <th class="py-5 px-6">ROUTE</th>
                 <th class="py-5 px-6 text-center">DISTANCE</th>
                 <th class="py-5 px-6 text-center">AVG COST</th>
@@ -383,32 +453,32 @@
               <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
                 <td class="py-6 px-6">
                   <div class="font-bold text-[#0a2540] text-lg">Georgia</div>
-                  <div class="text-[#0369a1] italic font-medium">to California</div>
+                  <div class="text-[#468de6] italic font-medium">to California</div>
                 </td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2,281 mi</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$1000 - $1375</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">5 to 8 days</td>
-                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#0369a1] hover:bg-[#0284c7] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
               </tr>
               <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
                 <td class="py-6 px-6">
                   <div class="font-bold text-[#0a2540] text-lg">Georgia</div>
-                  <div class="text-[#0369a1] italic font-medium">to Texas</div>
+                  <div class="text-[#468de6] italic font-medium">to Texas</div>
                 </td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">827 mi</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$775 - $1050</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">3 to 6 days</td>
-                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#0369a1] hover:bg-[#0284c7] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
               </tr>
               <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
                 <td class="py-6 px-6">
                   <div class="font-bold text-[#0a2540] text-lg">Georgia</div>
-                  <div class="text-[#0369a1] italic font-medium">to Florida</div>
+                  <div class="text-[#468de6] italic font-medium">to Florida</div>
                 </td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">716 mi</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$675 - $900</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2 to 4 days</td>
-                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#0369a1] hover:bg-[#0284c7] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
               </tr>
             </tbody>
           </table>
@@ -416,27 +486,27 @@
       </div>
     </section>
 
-    <!-- NEW 2026 GEORGIA CITY, ROUTE & COST GUIDE CONTENT BENEATH -->
+    <!-- 2026 GEORGIA CITY, ROUTE & COST GUIDE CONTENT BENEATH -->
     <section class="container mx-auto px-4 lg:px-8 max-w-6xl mb-24">
       
       <!-- Visual Breadcrumbs -->
       <nav aria-label="Breadcrumbs" class="flex items-center space-x-2 text-sm text-[#425466] mb-8 bg-white px-4 py-3 rounded-xl border border-[#e6e6e6] shadow-sm">
-        <a href="/" class="hover:text-[#0369a1] font-semibold">Home</a>
+        <a href="/" class="text-[#468de6] hover:underline font-semibold">Home</a>
         <span>/</span>
-        <a href="/locations/" class="hover:text-[#0369a1] font-semibold">Locations</a>
+        <a href="/locations/" class="text-[#468de6] hover:underline font-semibold">Locations</a>
         <span>/</span>
         <span class="text-[#0a2540] font-bold">Georgia Car Shipping Guide</span>
       </nav>
 
       <!-- Main Guide Article Header -->
       <div class="bg-white rounded-3xl p-8 lg:p-12 border border-[#e6e6e6] shadow-sm mb-12">
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0369a1]/10 text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#468de6]/10 text-[#468de6] text-xs font-bold uppercase tracking-wider mb-4">
           LOGISTICS GUIDE 2026
         </span>
         <h2 class="text-3xl md:text-5xl font-black text-[#0a2540] tracking-tight mb-4 leading-tight">
           Car Shipping in Georgia: The Complete 2026 City, Route &amp; Cost Guide
         </h2>
-        <p class="text-lg text-[#0369a1] font-semibold italic mb-6">
+        <p class="text-lg text-[#468de6] font-semibold italic mb-6">
           A Neon Auto Transport guide to shipping a car to or from Atlanta, Savannah, Augusta, Columbus, Macon, Athens, Marietta, Warner Robins, Albany &amp; Brunswick
         </p>
 
@@ -470,31 +540,31 @@
             </p>
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#0369a1]/10 text-[#0369a1] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
+                <span class="w-6 h-6 rounded-full bg-[#468de6]/10 text-[#468de6] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
                 <div>
                   <strong class="text-[#0a2540]">Interstate crossroads:</strong> Atlanta sits on I-75, I-85, and I-20 &mdash; the primary north-south and east-west freight corridors for the entire Southeast, giving carriers constant capacity through the state.
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#0369a1]/10 text-[#0369a1] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
+                <span class="w-6 h-6 rounded-full bg-[#468de6]/10 text-[#468de6] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
                 <div>
                   <strong class="text-[#0a2540]">Vehicle import hub:</strong> The Port of Brunswick's Colonel's Island Terminal is one of the busiest roll-on/roll-off auto-import terminals in the U.S., processing hundreds of thousands of vehicles a year for major manufacturers.
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#0369a1]/10 text-[#0369a1] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
+                <span class="w-6 h-6 rounded-full bg-[#468de6]/10 text-[#468de6] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
                 <div>
                   <strong class="text-[#0a2540]">Military relocations:</strong> Fort Moore (Columbus), Fort Eisenhower (Augusta), Robins Air Force Base (Warner Robins), and Fort Stewart (near Savannah) generate steady PCS-driven shipping demand statewide.
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#0369a1]/10 text-[#0369a1] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
+                <span class="w-6 h-6 rounded-full bg-[#468de6]/10 text-[#468de6] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
                 <div>
                   <strong class="text-[#0a2540]">Corporate and population growth:</strong> Metro Atlanta is one of the fastest-growing metro economies in the country, with major corporate relocations and a large film/production industry driving both personal and commercial vehicle shipments.
                 </div>
               </li>
               <li class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#0369a1]/10 text-[#0369a1] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
+                <span class="w-6 h-6 rounded-full bg-[#468de6]/10 text-[#468de6] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">&check;</span>
                 <div>
                   <strong class="text-[#0a2540]">College towns:</strong> Athens (University of Georgia) sees predictable seasonal shipping spikes at the start and end of each academic year.
                 </div>
@@ -503,16 +573,50 @@
           </div>
 
           <!-- How We Wrote This Guide -->
-          <div class="bg-[#f0f5fa] rounded-2xl p-6 border-l-4 border-l-[#0369a1]">
+          <div class="bg-[#f0f5fa] rounded-2xl p-6 border-l-4 border-l-[#468de6]">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <svg class="w-5 h-5 text-[#0369a1]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <svg class="w-5 h-5 text-[#468de6]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               How We Wrote This Guide
             </h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               This guide was built from Neon Auto Transport's own dispatch and lane-pricing data across our Georgia carrier network, cross-referenced with publicly available interstate mileage data. Distances listed are typical driving-route miles (not straight-line) and are meant for cost-planning purposes; your carrier's exact routing may vary by a small margin. Rates cited are ranges based on 2026 market conditions and fluctuate with fuel prices, seasonality, and carrier capacity. This page is reviewed periodically by our logistics team to keep pricing guidance current.
             </p>
-            <div class="mt-3 text-[11px] font-semibold text-[#0369a1]">
+            <div class="mt-3 text-[11px] font-semibold text-[#468de6]">
               <em>Last updated: 2026. Reviewed by the Neon Auto Transport logistics team.</em>
+            </div>
+          </div>
+
+          <!-- Cities We Serve & Hub Cards (Restored from Original Page) -->
+          <div class="p-8 lg:p-10 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] rounded-3xl border border-[#e6e6e6]">
+            <h2 class="text-3xl font-bold mb-4 text-[#0a2540] tracking-tight">Auto Transport Hub: Georgia</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">Popular Cities in Georgia</div>
+                <div class="flex flex-col gap-2 text-sm text-[#468de6] font-semibold">
+                  <a href="/routes/city/atlanta-ga/" class="hover:text-[#0a2540] transition">Atlanta</a>
+                  <a href="/routes/city/augusta-ga/" class="hover:text-[#0a2540] transition">Augusta</a>
+                  <a href="/routes/city/columbus-ga/" class="hover:text-[#0a2540] transition">Columbus</a>
+                  <a href="/routes/city/macon-ga/" class="hover:text-[#0a2540] transition">Macon</a>
+                </div>
+              </div>
+              <div>
+                <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">Related States</div>
+                <div class="flex flex-col gap-2 text-sm text-[#468de6] font-semibold">
+                  <a href="/florida-car-shipping/" class="hover:text-[#0a2540] transition">Florida</a>
+                  <a href="/south-carolina-car-shipping/" class="hover:text-[#0a2540] transition">South Carolina</a>
+                  <a href="/alabama-car-shipping/" class="hover:text-[#0a2540] transition">Alabama</a>
+                  <a href="/tennessee-car-shipping/" class="hover:text-[#0a2540] transition">Tennessee</a>
+                </div>
+              </div>
+              <div>
+                <div class="font-bold text-[#635bff] mb-4 text-sm uppercase tracking-wider">Popular Routes</div>
+                <div class="flex flex-col gap-2 text-sm text-[#468de6] font-semibold">
+                  <a href="/georgia-to-california-car-shipping/" class="hover:text-[#0a2540] transition">Georgia to California</a>
+                  <a href="/florida-car-shipping/" class="hover:text-[#0a2540] transition">Georgia to Florida</a>
+                  <a href="/texas-car-shipping/" class="hover:text-[#0a2540] transition">Georgia to Texas</a>
+                  <a href="/new-york-car-shipping/" class="hover:text-[#0a2540] transition">Georgia to New York</a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -788,7 +892,7 @@
             <!-- Military Relocation Callout Box -->
             <div class="bg-[#0a2540] text-white rounded-3xl p-8 shadow-lg">
               <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4">MILITARY PCS MOVES</span>
-              <h3 class="text-2xl font-black mb-3">Shipping a vehicle for a PCS move in Georgia?</h3>
+              <h3 class="text-2xl font-black text-white mb-3">Shipping a vehicle for a PCS move in Georgia?</h3>
               <p class="text-slate-300 text-sm leading-relaxed mb-6">Fort Moore, Fort Eisenhower, Robins AFB, Marine Corps Logistics Base Albany, and Fort Stewart all fall within this guide's coverage area. Tell your coordinator your report date and we'll build pickup timing around it.</p>
               <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#39FF14] text-[#0a2540] px-6 py-3 rounded-xl font-black text-sm hover:bg-[#32e011] transition shadow-md">
                 <span>Get a military relocation quote &rarr;</span>
@@ -810,7 +914,7 @@
             <div class="overflow-x-auto rounded-xl border border-[#e6e6e6] mb-8">
               <table class="w-full text-xs text-left border-collapse min-w-[550px]">
                 <thead>
-                  <tr class="bg-[#0369a1] text-white font-bold uppercase tracking-wider">
+                  <tr class="bg-[#468de6] text-white font-bold uppercase tracking-wider">
                     <th class="py-3 px-4">Georgia City</th>
                     <th class="py-3 px-4 text-center">To New York, NY</th>
                     <th class="py-3 px-4 text-center">To Chicago, IL</th>
@@ -875,7 +979,7 @@
             <div class="overflow-x-auto rounded-xl border border-[#e6e6e6] mb-8">
               <table class="w-full text-xs text-left border-collapse">
                 <thead>
-                  <tr class="bg-[#0369a1] text-white font-bold uppercase tracking-wider">
+                  <tr class="bg-[#468de6] text-white font-bold uppercase tracking-wider">
                     <th class="py-3 px-4">Route Type</th>
                     <th class="py-3 px-4">Example Lane</th>
                     <th class="py-3 px-4 text-center">Typical Cost Range</th>
@@ -901,9 +1005,9 @@
               <li><strong class="text-[#0a2540]">Vehicle condition</strong> &mdash; shipping non-running cars requires winch-equipped trailers and typically adds a fee.</li>
             </ol>
 
-            <div class="bg-[#f0f5fa] rounded-2xl p-6 border border-[#0369a1]/20 text-center">
+            <div class="bg-[#f0f5fa] rounded-2xl p-6 border border-[#468de6]/20 text-center">
               <p class="text-sm font-semibold text-[#0a2540] mb-3">Looking for the cheapest option? Budget transport is almost always open-carrier, terminal-to-terminal, with a flexible pickup date. For a hands-off experience, door-to-door shipping remains the most popular choice among Georgia customers.</p>
-              <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#0369a1] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#0284c7] transition shadow-sm">
+              <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#468de6] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#3273c5] transition shadow-sm">
                 Get your exact quote in under a minute &rarr;
               </a>
             </div>
@@ -924,11 +1028,11 @@
                   </tr>
                 </thead>
                 <tbody class="text-[#425466]">
-                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/open-auto-transport/" class="hover:text-[#0369a1] underline">Open Car Carrier</a></td><td class="py-3 px-4">Everyday sedans, SUVs, dealer trade-ins</td><td class="py-3 px-4">Most affordable; roughly 90%+ of all U.S. auto transport runs on open carriers.</td></tr>
-                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/enclosed-auto-transport/" class="hover:text-[#0369a1] underline">Enclosed Car Shipping</a></td><td class="py-3 px-4">Luxury, exotic, and classic car shipping</td><td class="py-3 px-4">Fully protected from weather and road debris; strong demand in Atlanta and Augusta.</td></tr>
-                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/door-to-door-car-shipping/" class="hover:text-[#0369a1] underline">Door-to-Door Car Shipping</a></td><td class="py-3 px-4">Most residential customers</td><td class="py-3 px-4">Carrier picks up and delivers as close to your addresses as legally and safely possible.</td></tr>
-                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/terminal-to-terminal-car-shipping/" class="hover:text-[#0369a1] underline">Terminal-to-Terminal Transport</a></td><td class="py-3 px-4">Budget-conscious shippers, flexible schedules</td><td class="py-3 px-4">You drop off/pick up at a secure terminal; often cheaper than door-to-door.</td></tr>
-                  <tr><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/expedited-auto-transport/" class="hover:text-[#0369a1] underline">Expedited Car Shipping</a></td><td class="py-3 px-4">Time-sensitive PCS or job relocations</td><td class="py-3 px-4">Guaranteed or near-guaranteed pickup date for a premium fee.</td></tr>
+                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/open-auto-transport/" class="text-[#468de6] hover:underline">Open Car Carrier</a></td><td class="py-3 px-4">Everyday sedans, SUVs, dealer trade-ins</td><td class="py-3 px-4">Most affordable; roughly 90%+ of all U.S. auto transport runs on open carriers.</td></tr>
+                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/enclosed-auto-transport/" class="text-[#468de6] hover:underline">Enclosed Car Shipping</a></td><td class="py-3 px-4">Luxury, exotic, and classic car shipping</td><td class="py-3 px-4">Fully protected from weather and road debris; strong demand in Atlanta and Augusta.</td></tr>
+                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/door-to-door-car-shipping/" class="text-[#468de6] hover:underline">Door-to-Door Car Shipping</a></td><td class="py-3 px-4">Most residential customers</td><td class="py-3 px-4">Carrier picks up and delivers as close to your addresses as legally and safely possible.</td></tr>
+                  <tr class="border-b border-[#e6e6e6]"><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/terminal-to-terminal-car-shipping/" class="text-[#468de6] hover:underline">Terminal-to-Terminal Transport</a></td><td class="py-3 px-4">Budget-conscious shippers, flexible schedules</td><td class="py-3 px-4">You drop off/pick up at a secure terminal; often cheaper than door-to-door.</td></tr>
+                  <tr><td class="py-3 px-4 font-bold text-[#0a2540]"><a href="/services/expedited-auto-transport/" class="text-[#468de6] hover:underline">Expedited Car Shipping</a></td><td class="py-3 px-4">Time-sensitive PCS or job relocations</td><td class="py-3 px-4">Guaranteed or near-guaranteed pickup date for a premium fee.</td></tr>
                 </tbody>
               </table>
             </div>
@@ -950,7 +1054,7 @@
                 <strong class="text-[#0a2540]">Midwest &harr; Georgia:</strong> Chicago, Cincinnati, and Nashville to Atlanta and Macon via I-75.
               </li>
               <li class="p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <strong class="text-[#0a2540]">Florida &harr; Georgia:</strong> Jacksonville, Orlando, and Miami to Savannah, Brunswick, and Atlanta &mdash; one of the busiest short-haul corridors in the Southeast. <em>(See our <a href="/florida-car-shipping/" class="text-[#0369a1] font-bold hover:underline">Florida Car Shipping Guide</a> for the reverse-direction breakdown.)</em>
+                <strong class="text-[#0a2540]">Florida &harr; Georgia:</strong> Jacksonville, Orlando, and Miami to Savannah, Brunswick, and Atlanta &mdash; one of the busiest short-haul corridors in the Southeast. <em>(See our <a href="/florida-car-shipping/" class="text-[#468de6] font-bold hover:underline">Florida Car Shipping Guide</a> for the reverse-direction breakdown.)</em>
               </li>
               <li class="p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
                 <strong class="text-[#0a2540]">Texas &harr; Georgia:</strong> Dallas and Houston to Atlanta and Columbus via I-20.
@@ -994,7 +1098,7 @@
             <div class="overflow-x-auto rounded-xl border border-[#e6e6e6]">
               <table class="w-full text-xs text-left border-collapse min-w-[500px]">
                 <thead>
-                  <tr class="bg-[#0369a1] text-white font-bold uppercase tracking-wider">
+                  <tr class="bg-[#468de6] text-white font-bold uppercase tracking-wider">
                     <th class="py-3 px-4">Vehicle Type</th>
                     <th class="py-3 px-4">Recommended Method</th>
                     <th class="py-3 px-4">Georgia-Specific Note</th>
@@ -1023,42 +1127,42 @@
             </p>
             <div class="space-y-4">
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#0369a1] text-white font-bold text-xs flex items-center justify-center shrink-0">1</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">1</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Get an instant quote</h4>
                   <p class="text-xs text-[#425466]">Enter your pickup and delivery ZIP codes, vehicle details, and preferred dates for a binding estimate.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#0369a1] text-white font-bold text-xs flex items-center justify-center shrink-0">2</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">2</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Book and confirm carrier assignment</h4>
                   <p class="text-xs text-[#425466]">Neon Auto Transport matches your shipment with a vetted, licensed, and insured carrier from our network.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#0369a1] text-white font-bold text-xs flex items-center justify-center shrink-0">3</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">3</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Prepare your car for transport</h4>
                   <p class="text-xs text-[#425466]">Wash the vehicle so scratches are visible, remove personal items, document existing damage with photos, and leave a quarter tank of gas.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#0369a1] text-white font-bold text-xs flex items-center justify-center shrink-0">4</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">4</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Pickup and Bill of Lading</h4>
                   <p class="text-xs text-[#425466]">The driver inspects and documents the vehicle's condition on the bill of lading, which you and the driver both sign.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#0369a1] text-white font-bold text-xs flex items-center justify-center shrink-0">5</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">5</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Track your shipment</h4>
                   <p class="text-xs text-[#425466]">Get progress updates as the carrier moves through its route.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#0369a1] text-white font-bold text-xs flex items-center justify-center shrink-0">6</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">6</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Delivery and final inspection</h4>
                   <p class="text-xs text-[#425466]">Compare the vehicle's condition against the original bill of lading before signing for delivery.</p>
@@ -1088,7 +1192,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   How much does it cost to ship a car to Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Average cost ranges from $150 for short in-state moves to $1,600+ for cross-country routes from the West Coast. Get an exact number with a free quote based on your specific pickup and delivery cities.
@@ -1099,7 +1203,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   What is the cheapest way to ship a car to Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Open car carrier, terminal-to-terminal transport with a flexible pickup window is typically the most budget-friendly option.
@@ -1110,7 +1214,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   How long does it take to ship a car to Atlanta or Savannah?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   From the Northeast, expect 2&ndash;4 days. From the West Coast, expect 5&ndash;7 days. In-state moves (e.g., Atlanta to Macon) usually complete within 1 day.
@@ -1121,7 +1225,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Is door-to-door or terminal-to-terminal car shipping better for Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Door-to-door is more convenient and the most popular option; terminal-to-terminal is a good cost-saving alternative if you're near a major terminal hub like Atlanta or Savannah.
@@ -1132,7 +1236,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Can I ship a car internationally through Georgia's ports?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Yes. The Port of Savannah and the Port of Brunswick's Colonel's Island Terminal both handle international vehicle import and export, making Georgia one of the best-connected states for international car shipping.
@@ -1143,7 +1247,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Which Georgia city is cheapest and fastest to ship to?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Atlanta typically has the shortest pickup windows and most competitive per-mile pricing in the state, since it sits at the junction of I-75, I-85, and I-20 and hosts the widest carrier network.
@@ -1154,7 +1258,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Does Neon Auto Transport handle military PCS moves in Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Yes &mdash; pickup and delivery windows are coordinated around PCS orders for service members near Fort Moore, Fort Eisenhower, Robins Air Force Base, Marine Corps Logistics Base Albany, and Fort Stewart.
@@ -1165,7 +1269,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   What documents do I need for car shipping?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   The bill of lading (provided by the carrier), vehicle registration or title, photo ID, and any applicable power-of-attorney if someone else is dropping off or receiving the vehicle.
@@ -1176,7 +1280,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Is my vehicle insured during transport?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Yes. Federal law requires interstate carriers to carry cargo insurance; always confirm active coverage and request a certificate of insurance before pickup.
@@ -1187,7 +1291,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   How do I know if a Georgia auto transport company is legitimate?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Verify their USDOT and MC number on the FMCSA's SAFER database, confirm active cargo insurance, and check third-party reviews on Google, BBB, or Transport Reviews rather than relying only on the company's own site.
@@ -1198,7 +1302,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   When is Georgia's busiest car shipping season?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   May through August (PCS move season) and the UGA move-in/move-out windows in August and May are the tightest capacity periods &mdash; book 2&ndash;3 weeks ahead during these times.
@@ -1209,7 +1313,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Can you ship a non-running car in Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Yes, with a winch-equipped carrier arranged in advance; disclose the vehicle's condition upfront, as it affects carrier assignment and price.
@@ -1220,7 +1324,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Do you ship RVs and motorhomes in Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   Yes &mdash; demand is especially high from the coastal markets near Savannah and Brunswick.
@@ -1231,7 +1335,7 @@
               <details class="group bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:bg-white open:shadow-md">
                 <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 marker:content-none list-none text-base">
                   Is enclosed shipping worth the extra cost in Georgia?
-                  <span class="text-[#0369a1] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+                  <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
                 </summary>
                 <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
                   For daily drivers, usually not. For vehicles valued above roughly $75,000, classic and collector cars, or Augusta's Masters Tournament-week traffic, the 40&ndash;60% premium is generally worth it.
@@ -1244,7 +1348,7 @@
           <!-- Get Your Free Georgia Car Shipping Quote -->
           <div class="bg-[#0a2540] text-white rounded-3xl p-8 lg:p-12 text-center shadow-xl">
             <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4">INSTANT RATE LOCK</span>
-            <h2 class="text-3xl md:text-4xl font-black mb-4">Get Your Free Georgia Car Shipping Quote</h2>
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Get Your Free Georgia Car Shipping Quote</h2>
             <p class="text-slate-300 text-base max-w-xl mx-auto mb-8">
               Neon Auto Transport connects you with licensed, insured, and vetted carriers on every major Georgia route &mdash; from Atlanta to Savannah and everywhere in between.
             </p>
@@ -1267,7 +1371,7 @@
             <!-- Quick Hub Navigation -->
             <div class="bg-white rounded-2xl p-6 border border-[#e6e6e6] shadow-sm">
               <h3 class="font-bold text-lg text-[#0a2540] mb-4 pb-2 border-b border-[#e6e6e6]">Georgia Hub Navigation</h3>
-              <ul class="space-y-2 text-xs font-semibold text-[#0369a1]">
+              <ul class="space-y-2 text-xs font-semibold text-[#468de6]">
                 <li><a href="/routes/city/atlanta-ga/" class="hover:underline flex items-center justify-between">Atlanta Metro <span>&rarr;</span></a></li>
                 <li><a href="/routes/city/augusta-ga/" class="hover:underline flex items-center justify-between">Augusta Region <span>&rarr;</span></a></li>
                 <li><a href="/routes/city/columbus-ga/" class="hover:underline flex items-center justify-between">Columbus / Fort Moore <span>&rarr;</span></a></li>
@@ -1281,9 +1385,9 @@
               <div class="w-10 h-10 bg-[#39FF14] text-[#0a2540] rounded-full flex items-center justify-center mx-auto mb-3 font-black text-lg">
                 &dollar;
               </div>
-              <h4 class="font-bold text-base mb-2">Need an Exact Price?</h4>
+              <h4 class="font-bold text-base text-white mb-2">Need an Exact Price?</h4>
               <p class="text-xs text-slate-300 mb-4">Calculate real-time rates for open &amp; enclosed shipping on any Georgia route.</p>
-              <a href="/cost-calculator/" class="btn-primary w-full py-3 block text-center text-xs font-bold">
+              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] hover:bg-[#32e011] w-full py-3 rounded-xl block text-center text-xs font-black transition shadow-md">
                 Calculate Rate Now &rarr;
               </a>
             </div>
@@ -1292,7 +1396,7 @@
             <div class="bg-white rounded-2xl p-6 border border-[#e6e6e6] shadow-sm text-center">
               <h4 class="font-bold text-sm text-[#0a2540] mb-1">Dispatch Support</h4>
               <p class="text-xs text-[#425466] mb-3">Speak with a Georgia transport specialist today.</p>
-              <a href="tel:5715767711" class="text-base font-black text-[#0369a1] hover:underline block">
+              <a href="tel:5715767711" class="text-base font-black text-[#468de6] hover:underline block">
                 (571) 576-7711
               </a>
             </div>
@@ -1310,7 +1414,7 @@
         <img src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover shadow-inner flex-shrink-0 border-2 border-[#e0f2fe]" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
         <div class="flex-1">
           <div class="flex flex-wrap items-center gap-2 mb-1">
-            <div class="font-bold text-[#0a2540] text-lg"><a href="/author/shazil-ali/" class="hover:text-[#0369a1] transition hover:underline">Shazil Ali</a></div>
+            <div class="font-bold text-[#0a2540] text-lg"><a href="/author/shazil-ali/" class="hover:text-[#635bff] transition hover:underline">Shazil Ali</a></div>
             <span class="px-2 py-0.5 rounded-md bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider">Fact Checked &amp; Reviewed</span>
           </div>
           <div class="text-[#0a2540] text-sm font-bold mb-3">Director of Operations <span class="text-[#8ba3ba] mx-1">|</span> Neon Auto Transport</div>
