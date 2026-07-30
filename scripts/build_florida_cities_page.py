@@ -203,869 +203,953 @@ def generate_page():
   }}
   </script>
 </head>
-<body class="bg-[#f8fafc] font-sans antialiased text-[#425466]">
+<body class="lg:pb-0 antialiased bg-[#f6f9fc]">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-[#0a2540] text-white text-xs py-2 px-4 text-center font-medium border-b border-white/10">
-    <span>🚚 Direct Door-to-Door Car Shipping Across All Florida Metros. Call <a href="tel:5715767711" class="font-bold text-[#39FF14] underline hover:text-white transition">(571) 576-7711</a> for Expedited Dispatch</span>
-  </div>
+  <!-- Global Header -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
+    <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+      <!-- Left: Logo + Desktop Nav -->
+      <div class="flex items-center" style="gap:24px">
+        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap" id="logo-text">
+          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
+        </a>
+        <nav class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
+          <a href="/#how-it-works" class="hover:opacity-80 transition">How it works</a>
+          
+          <!-- Mega Menu Wrapper -->
+          <div class="relative group flex items-center">
+            <a href="/services/" class="hover:opacity-80 transition flex items-center gap-1 cursor-pointer">
+              Transport Services 
+              <svg aria-hidden="true" class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+            
+            <!-- Mega Menu Dropdown Slide -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-[#e6e6e6] p-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-0 z-50 text-left" style="top:100%">
+              <div class="grid grid-cols-3 gap-10 text-sm">
+                
+                <!-- Individual Column -->
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Individual</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium">
+                    <li><a href="/services/snow-bird-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Snow Bird Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/military-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Military Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/college-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">College Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/luxury-car-shipping/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Luxury / Exotic Car Shipping<br>Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                    <li><a href="/services/car-shipping-to-another-state/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Car Shipping to Another<br>State</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                    <li><a href="/services/truck-shipping-services/" class="hover:text-[#635bff] flex items-center justify-between group/link">Truck Shipping Services <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/door-to-door-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Door to Door Car Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/enclosed-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Enclosed Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/open-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Open Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/car-buyer-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Car Buyer Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/expedited-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Expedited Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/car-resellers-auto-transport/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Car Resellers Auto<br>Transport</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                  </ul>
+                </div>
 
-  <!-- Header / Navigation -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#e6e6e6]">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl flex items-center justify-between h-20">
-      <a href="/" class="flex items-center gap-2">
-        <span class="text-2xl font-black text-[#0a2540] tracking-tight">NEON<span class="text-[#0369a1]">.</span></span>
-      </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-[#0a2540]">
-        <a href="/" class="hover:text-[#0369a1] transition">Home</a>
-        <a href="/locations/" class="hover:text-[#0369a1] transition">Locations</a>
-        <a href="/florida-car-shipping/" class="text-[#0369a1] font-bold">Florida Hub</a>
-        <a href="/services/" class="hover:text-[#0369a1] transition">Services</a>
-        <a href="/cost-calculator/" class="hover:text-[#0369a1] transition">Calculator</a>
-      </nav>
-      <div class="flex items-center gap-4">
-        <a href="tel:5715767711" class="hidden sm:inline-flex items-center gap-2 text-sm font-bold text-[#0a2540] hover:text-[#0369a1] transition">
-          📞 (571) 576-7711
-        </a>
-        <a href="/quote" class="px-5 py-2.5 rounded-xl bg-[#0a2540] text-white font-bold text-sm hover:bg-[#0369a1] transition shadow-md">
-          Get Quote
-        </a>
+                <!-- Business Column -->
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Business</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium">
+                    <li><a href="/services/car-dealer-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Car Dealer Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/auto-auction-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Auto Auction Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/rental-car-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Rental Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/corporate-relocation/" class="hover:text-[#635bff] flex items-center justify-between group/link">Corporate Relocation <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/fleet-management-transportation-services/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Fleet Management<br>Transportation Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                  </ul>
+                </div>
+
+                <!-- Specialized Column -->
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Specialized</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium">
+                    <li><a href="/services/heavy-haul-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Heavy Haul Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/motorcycle-shipping/" class="hover:text-[#635bff] flex items-center justify-between group/link">Motorcycle Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/alaska-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Alaska Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/hawaii-auto-transport/" class="hover:text-[#635bff] flex items-center justify-between group/link">Hawaii Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/international-overseas-car-shipping-services/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>International Overseas Car<br>Shipping Services</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                    <li><a href="/services/terminal-to-terminal-car-shipping/" class="hover:text-[#635bff] flex items-start justify-between group/link pr-2 leading-tight"><span>Terminal-to-Terminal Car<br>Shipping</span> <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity mt-1">▶</span></a></li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <a href="/why-neon/" class="hover:opacity-80 transition">Why Neon</a>
+          <a href="/contact/" class="hover:opacity-80 transition">Contact Us</a>
+        </nav>
       </div>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:5715767711" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-colors shadow-[0_0_15px_rgba(57,255,20,0.4)]" id="header-phone-btn" style="white-space:nowrap">
+          <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          (571) 576-7711
+        </a>
+        <a href="/cost-calculator/" class="btn-outline" style="white-space:nowrap">Cost Calculator</a>
+      </div>
+
+      <!-- Mobile Menu Btn -->
+      <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="lg:hidden text-white focus:outline-none">
+        <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 flex flex-col p-4 space-y-4 text-center font-semibold text-[#425466] shadow-xl">
+      <a href="/#how-it-works" class="hover:text-[#635bff]">How it works</a>
+      <a href="/services/" class="hover:text-[#635bff]">Transport Options</a>
+      <a href="/why-neon/" class="hover:text-[#635bff]">Why Neon</a>
+      <a href="/contact/" class="hover:text-[#635bff]">Contact Us</a>
+      <hr>
+      <a href="tel:5715767711" class="bg-[#39FF14] text-[#0a2540] py-3 rounded-xl font-black text-lg shadow-lg">(571) 576-7711</a>
+      <a href="/cost-calculator/" class="btn-primary inline-block mx-auto mt-4">Cost Calculator</a>
     </div>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="bg-gradient-to-b from-[#0a2540] via-[#0f345a] to-[#0a2540] text-white pt-12 pb-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
-    <div class="container mx-auto px-4 lg:px-8 max-w-5xl relative z-10 text-center sm:text-left">
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div class="lg:w-1/2 flex flex-col justify-center">
+            
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center gap-2 text-xs font-semibold text-[#425466] mb-4 flex-wrap">
+              <a href="/" class="hover:text-[#0369a1] transition">Home</a>
+              <span>/</span>
+              <a href="/locations/" class="hover:text-[#0369a1] transition">Locations</a>
+              <span>/</span>
+              <a href="/florida-car-shipping/" class="hover:text-[#0369a1] transition">Florida Hub</a>
+              <span>/</span>
+              <span class="text-[#0369a1] font-bold">Top Florida Cities</span>
+            </nav>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
+              <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+              2026 Florida City Auto Transport Guide
+            </div>
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight leading-tight">
+              Top Cities in Florida for Car Shipping
+            </h1>
+
+            <p class="text-lg text-[#425466] mb-10 leading-relaxed">
+              The Complete 2026 Route, Cost &amp; Auto Transport Guide. A Neon Auto Transport city-by-city guide to shipping a car to or from Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg, West Palm Beach, Naples, Sarasota &amp; Fort Myers.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
+                Calculate Your Rate Instantly 
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+              <a href="/florida-car-shipping/" class="px-6 py-4 rounded-full bg-white border border-[#e6e6e6] text-[#0a2540] font-bold text-base hover:bg-[#f8fafc] transition shadow-sm">
+                ← Statewide Florida Hub
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2 relative w-full">
+            <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
+              <img src="/images/florida-interstate-open-auto-transport-carrier-corridors.jpg" alt="Top Cities in Florida Car Shipping" class="w-full h-auto rounded-2xl object-cover" style="max-height: 450px;" width="1200" height="800" fetchpriority="high" decoding="async" loading="eager">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl py-12">
       
-      <!-- Breadcrumb -->
-      <nav class="flex items-center justify-center sm:justify-start gap-2 text-xs font-semibold text-slate-300 mb-6 flex-wrap">
-        <a href="/" class="hover:text-white transition">Home</a>
-        <span>/</span>
-        <a href="/locations/" class="hover:text-white transition">Locations</a>
-        <span>/</span>
-        <a href="/florida-car-shipping/" class="hover:text-white transition">Florida Hub</a>
-        <span>/</span>
-        <span class="text-[#38bdf8]">Top Florida Cities</span>
-      </nav>
-
-      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0369a1]/40 border border-[#38bdf8]/30 text-[#38bdf8] text-xs font-bold uppercase tracking-wider mb-6">
-        <span class="w-2 h-2 rounded-full bg-[#39FF14] animate-pulse"></span>
-        2026 Statewide City Guide
-      </span>
-
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight mb-6 text-white">
-        Top Cities in Florida for Car Shipping: <span class="text-[#38bdf8]">The Complete 2026 Route, Cost &amp; Auto Transport Guide</span>
-      </h1>
-
-      <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-3xl mb-8">
-        A Neon Auto Transport city-by-city guide to shipping a car to or from Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg, West Palm Beach, Naples, Sarasota &amp; Fort Myers.
-      </p>
-
-      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4">
-        <a href="/quote" class="px-8 py-4 rounded-xl bg-[#39FF14] text-[#0a2540] font-black text-base lg:text-lg hover:bg-[#32e612] transition shadow-xl">
-          Get a Free Florida Car Shipping Quote →
-        </a>
-        <a href="/florida-car-shipping/" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base transition">
-          ← Return to Statewide Florida Hub
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content Container -->
-  <main class="container mx-auto px-4 lg:px-8 max-w-5xl py-12">
-    
-    <!-- Introduction Section -->
-    <div class="bg-white rounded-3xl p-8 lg:p-10 border border-[#e6e6e6] shadow-sm mb-12">
-      <p class="text-base lg:text-lg leading-relaxed text-[#425466] mb-6">
-        Florida is one of the busiest car shipping corridors in the United States. Between snowbirds relocating each winter, military families receiving PCS orders to bases like NAS Jacksonville and MacDill AFB, retirees moving to the Gulf Coast, and dealerships moving inventory up and down I-95 and I-75, thousands of vehicles cross Florida's borders every week.
-      </p>
-      <p class="text-base lg:text-lg leading-relaxed text-[#425466] mb-6">
-        This guide breaks down the ten most-shipped-to metro areas in the state, real route distances, and exactly how Neon Auto Transport moves vehicles in and out of each one — covering the two major Florida gateway ports (Miami and Jacksonville), the I-4 corridor hub of Orlando and Tampa, and the smaller but high-demand Gulf Coast and Southwest Florida markets.
-      </p>
-
-      <!-- Interlinking Banner Box -->
-      <div class="p-6 rounded-2xl bg-[#f0f9ff] border border-[#bae6fd] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
-          <h3 class="font-extrabold text-[#0a2540] text-base">Looking for Statewide Florida Rates &amp; Regulations?</h3>
-          <p class="text-xs text-[#0369a1]">Visit our comprehensive statewide Florida Car Shipping Hub covering pricing formulas, carrier licensing, and seasonal trends.</p>
-        </div>
-        <a href="/florida-car-shipping/" class="shrink-0 px-5 py-2.5 rounded-xl bg-[#0369a1] text-white font-bold text-xs hover:bg-[#0284c7] transition">
-          View Statewide Hub →
-        </a>
-      </div>
-    </div>
-
-    <!-- SECTION: Why Is Florida a Top 5 State for Car Shipping? -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Statewide Demand Drivers
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Why Is Florida a Top 5 State for Car Shipping?
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-8">
-        Florida consistently ranks among the top five states for inbound and outbound vehicle shipments in the U.S., driven by five compounding factors: seasonal snowbird migration, heavy military relocation traffic, sustained retirement-driven population growth, two major international shipping ports, and a hurricane season that makes carrier reliability matter more here than almost anywhere else.
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-2xl">🌴</span>
-            <h3 class="font-extrabold text-[#0a2540] text-lg">Seasonal Migration</h3>
-          </div>
-          <p class="text-sm text-[#425466] leading-relaxed">
-            Snowbirds ship cars south in October–December and north again in March–April, creating predictable seasonal rate spikes.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-2xl">🎖️</span>
-            <h3 class="font-extrabold text-[#0a2540] text-lg">Military Relocations</h3>
-          </div>
-          <p class="text-sm text-[#425466] leading-relaxed">
-            Bases including NAS Jacksonville, MacDill AFB (Tampa), Naval Air Station Pensacola, and Patrick Space Force Base near Orlando generate steady PCS-driven demand.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-2xl">📈</span>
-            <h3 class="font-extrabold text-[#0a2540] text-lg">Retirement &amp; Relocation Growth</h3>
-          </div>
-          <p class="text-sm text-[#425466] leading-relaxed">
-            Florida has no state income tax and continues to see net inbound migration, especially to Tampa, Orlando, and Southwest Florida.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-2xl">🚢</span>
-            <h3 class="font-extrabold text-[#0a2540] text-lg">Ports &amp; Logistics Hubs</h3>
-          </div>
-          <p class="text-sm text-[#425466] leading-relaxed">
-            PortMiami and the Port of Jacksonville (JAXPORT) make South and Northeast Florida key points for international vehicle import/export.
-          </p>
-        </div>
-
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition md:col-span-2">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="text-2xl">⛈️</span>
-            <h3 class="font-extrabold text-[#0a2540] text-lg">Extreme Weather Exposure</h3>
-          </div>
-          <p class="text-sm text-[#425466] leading-relaxed">
-            Hurricane season (June–November) periodically disrupts routes — one reason licensed, insured carriers with real-time tracking matter more in Florida than in most states.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: How We Wrote This Guide (E-E-A-T Box) -->
-    <section class="mb-16">
-      <div class="p-6 lg:p-8 rounded-3xl bg-[#f8fafc] border-2 border-[#e6e6e6] relative">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-2xl">🛡️</span>
-          <h3 class="font-black text-[#0a2540] text-lg lg:text-xl">How We Wrote This Guide</h3>
-        </div>
-        <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-4">
-          This guide was built from Neon Auto Transport's own dispatch and lane-pricing data across our Florida carrier network, cross-referenced with publicly available interstate mileage data. Distances listed are typical driving-route miles (not straight-line) and are meant for cost-planning purposes; your carrier's exact routing may vary by a small margin. Rates cited are ranges based on 2026 market conditions and fluctuate with fuel prices, seasonality, and carrier capacity. This page is reviewed periodically by our logistics team to keep pricing guidance current.
+      <!-- Introduction Section -->
+      <div class="bg-white rounded-3xl p-8 lg:p-10 border border-[#e6e6e6] shadow-sm mb-12">
+        <p class="text-base lg:text-lg leading-relaxed text-[#425466] mb-6">
+          Florida is one of the busiest car shipping corridors in the United States. Between snowbirds relocating each winter, military families receiving PCS orders to bases like NAS Jacksonville and MacDill AFB, retirees moving to the Gulf Coast, and dealerships moving inventory up and down I-95 and I-75, thousands of vehicles cross Florida's borders every week.
         </p>
-        <div class="text-xs font-bold text-[#64748b] border-t border-[#e6e6e6] pt-3 flex items-center justify-between flex-wrap gap-2">
-          <span>Last updated: 2026</span>
-          <span>Reviewed by the Neon Auto Transport Logistics Team</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: Florida's Top 10 Cities for Car Shipping -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        City-by-City Breakdowns
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Florida's Top 10 Cities for Car Shipping
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-10">
-        Each city below is ranked by shipping volume and carrier network density across Neon Auto Transport's Florida lanes. Every profile leads with the one-line answer, then the detail.
-      </p>
-
-      <div class="space-y-10">
-        
-        <!-- City 1: Miami -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">1</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Miami — South Florida's International Shipping Gateway</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Miami is Florida's #1 car shipping market, with the deepest carrier network in the state and transit times of 3–5 days from New York and 6–8 days from Los Angeles. As the home of PortMiami, it's also a major hub for international vehicle export to the Caribbean and Latin America.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, Florida's Turnpike, I-395, US-1</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Popular for enclosed transport of exotic and luxury vehicles due to the high concentration of dealerships and collectors.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 2: Orlando -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">2</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Orlando — Central Florida's I-4 Corridor Hub</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Orlando is the easiest Florida city to reach quickly, with transit times of 3–4 days from New York, because carriers running the I-4, I-75, and I-95 corridors pass through daily. High population growth and proximity to Orlando International Airport (MCO) make it a top pick for personal moves and dealer-to-dealer transport alike.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-4, Florida's Turnpike, US-192</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–4 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">5–7 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Central location often means slightly lower per-mile rates because carriers can combine Orlando drop-offs with Tampa or Jacksonville legs.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 3: Tampa -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">3</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Tampa — Gulf Coast's Largest Metro</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Tampa Bay anchors Florida's Gulf Coast shipping lanes, with transit times of 3–5 days from New York, driven largely by MacDill AFB's steady military relocation volume and a fast-growing corporate relocation market. St. Petersburg and Clearwater are typically served on the same routes.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-4, I-75, I-275</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Strong terminal-to-terminal option availability if you want to save on door-to-door surcharges.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 4: Jacksonville -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">4</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Jacksonville — Florida's Northern Gateway Port</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Jacksonville is typically the cheapest and fastest Florida city to reach from the Northeast and Midwest, with transit times of just 2–4 days from New York, thanks to its position on I-95 and I-10 as the first major stop entering Florida from Georgia. JAXPORT also makes it a key city for international auto shipping, and NAS Jacksonville drives heavy PCS-season volume.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, I-10, I-295</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">2–4 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">5–7 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Typically the cheapest and fastest Florida city to reach from the Northeast and Midwest thanks to its I-95/I-10 position.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 5: Fort Lauderdale -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">5</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Fort Lauderdale — Broward County's Luxury &amp; Yacht Market</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Fort Lauderdale, just north of Miami, shares much of Miami-Dade's carrier density and pricing, with transit times of 3–5 days from New York. Its large luxury and exotic vehicle market ties closely to Port Everglades, and many carriers treat Miami and Fort Lauderdale as a single combined lane.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, I-595, Florida's Turnpike</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Book alongside Miami quotes — combined lane volume often means better rates and faster pickup windows.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 6: St. Petersburg -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">6</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">St. Petersburg — Tampa Bay's Coastal Twin City</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            St. Petersburg shares Tampa's carrier lanes, with transit times of 3–5 days from New York, but carries its own retiree-heavy relocation demand plus a growing downtown professional population shipping vehicles for corporate relocations.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-275, I-175, US-19</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Bundling St. Pete with a Tampa quote request often surfaces more available carriers and better pickup windows.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 7: West Palm Beach -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">7</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">West Palm Beach — Palm Beach County's Snowbird Capital</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            West Palm Beach sees some of the highest seasonal snowbird volume of any city in the state, with the fastest-filling lane in Florida every October through December from Northeast markets (NY, NJ, CT, MA). Transit from New York typically runs 3–4 days.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, Florida's Turnpike</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–4 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Book 2–3 weeks ahead during peak snowbird season (Oct–Dec) — this lane fills fastest of any in the state.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 8: Naples -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">8</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Naples — Southwest Florida's Luxury Enclave</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Naples has one of the highest concentrations of luxury and collector vehicles per capita in Florida, driving strong demand for enclosed car shipping, with transit from New York typically running 4–6 days. It sits slightly off the main interstate grid, so lead times can run a bit longer than Miami or Tampa.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-75, US-41</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">4–6 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–9 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Expect a modest rural-access surcharge on some routes; combining pickup with Fort Myers often solves this.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 9: Sarasota -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">9</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Sarasota — Gulf Coast Arts &amp; Retirement Hub</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Sarasota is a consistent mid-volume lane driven by a steady retiree relocation market, with transit from New York typically running 3–5 days, and carriers frequently combine Sarasota stops with Tampa or Fort Myers runs.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-75, US-41</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Good candidate for terminal-to-terminal pickup near I-75 to lower cost versus door-to-door.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- City 10: Fort Myers -->
-        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">10</span>
-            <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Fort Myers — Southwest Florida's Fastest-Growing Metro</h3>
-          </div>
-          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
-            Fort Myers has seen some of the fastest population growth in the state over the past decade, with shipping demand growing right alongside it and transit from New York typically running 4–6 days. It's also the natural hub for Naples, Cape Coral, and Bonita Springs shipments.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr class="bg-[#0a2540] text-white font-bold">
-                  <th class="py-3 px-4 rounded-tl-xl">Detail</th>
-                  <th class="py-3 px-4 rounded-tr-xl">Info</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-75, US-41</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">4–6 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–9 days</td></tr>
-                <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">RV and oversized vehicle transport is common here given the area's large seasonal RV community.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="p-6 rounded-2xl bg-[#0a2540] text-white mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>
-          <h4 class="font-extrabold text-lg mb-1">Comparing more than one Florida city?</h4>
-          <p class="text-xs text-slate-300">If you're flexible on which Florida metro your vehicle lands in, tell your coordinator — combined lanes (Miami/Fort Lauderdale, Tampa/St. Pete, Naples/Fort Myers) often move faster and price better.</p>
-        </div>
-        <a href="/quote" class="shrink-0 px-6 py-3 rounded-xl bg-[#39FF14] text-[#0a2540] font-black text-sm hover:bg-[#32e612] transition shadow-md">
-          Get Quote for Your Route →
-        </a>
-      </div>
-    </section>
-
-    <!-- SECTION: Florida Car Shipping Mileage Charts -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Distance &amp; Routing Matrix
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Florida Car Shipping Mileage Charts
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
-        The tables below show approximate driving-route mileage between each Florida city and the major U.S. metro hubs most frequently searched by our customers. Use these figures to estimate transit time: long-haul auto transport carriers typically average 400–500 miles per day.
-      </p>
-
-      <!-- Table 1 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm mb-10 overflow-x-auto">
-        <h3 class="text-lg font-bold text-[#0a2540] mb-4">Table 1: Interstate Distances from Florida Cities to Major US Shipping Hubs</h3>
-        <table class="w-full text-left text-sm border-collapse min-w-[600px]">
-          <thead>
-            <tr class="bg-[#0a2540] text-white font-bold">
-              <th class="py-3 px-4">Florida City</th>
-              <th class="py-3 px-4">To New York, NY</th>
-              <th class="py-3 px-4">To Chicago, IL</th>
-              <th class="py-3 px-4">To Atlanta, GA</th>
-              <th class="py-3 px-4">To Dallas, TX</th>
-              <th class="py-3 px-4">To Los Angeles, CA</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Miami</td><td class="py-3 px-4">1,280 mi</td><td class="py-3 px-4">1,380 mi</td><td class="py-3 px-4">660 mi</td><td class="py-3 px-4">1,310 mi</td><td class="py-3 px-4">2,740 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Orlando</td><td class="py-3 px-4">1,090 mi</td><td class="py-3 px-4">1,120 mi</td><td class="py-3 px-4">440 mi</td><td class="py-3 px-4">1,120 mi</td><td class="py-3 px-4">2,550 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Tampa</td><td class="py-3 px-4">1,170 mi</td><td class="py-3 px-4">1,150 mi</td><td class="py-3 px-4">460 mi</td><td class="py-3 px-4">1,050 mi</td><td class="py-3 px-4">2,490 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Jacksonville</td><td class="py-3 px-4">900 mi</td><td class="py-3 px-4">1,000 mi</td><td class="py-3 px-4">350 mi</td><td class="py-3 px-4">970 mi</td><td class="py-3 px-4">2,440 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Lauderdale</td><td class="py-3 px-4">1,250 mi</td><td class="py-3 px-4">1,360 mi</td><td class="py-3 px-4">640 mi</td><td class="py-3 px-4">1,290 mi</td><td class="py-3 px-4">2,720 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">St. Petersburg</td><td class="py-3 px-4">1,180 mi</td><td class="py-3 px-4">1,160 mi</td><td class="py-3 px-4">470 mi</td><td class="py-3 px-4">1,060 mi</td><td class="py-3 px-4">2,500 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">West Palm Beach</td><td class="py-3 px-4">1,150 mi</td><td class="py-3 px-4">1,270 mi</td><td class="py-3 px-4">570 mi</td><td class="py-3 px-4">1,220 mi</td><td class="py-3 px-4">2,650 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Naples</td><td class="py-3 px-4">1,320 mi</td><td class="py-3 px-4">1,280 mi</td><td class="py-3 px-4">590 mi</td><td class="py-3 px-4">1,180 mi</td><td class="py-3 px-4">2,620 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Sarasota</td><td class="py-3 px-4">1,230 mi</td><td class="py-3 px-4">1,180 mi</td><td class="py-3 px-4">510 mi</td><td class="py-3 px-4">1,100 mi</td><td class="py-3 px-4">2,540 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Myers</td><td class="py-3 px-4">1,290 mi</td><td class="py-3 px-4">1,250 mi</td><td class="py-3 px-4">560 mi</td><td class="py-3 px-4">1,150 mi</td><td class="py-3 px-4">2,590 mi</td></tr>
-          </tbody>
-        </table>
-        <p class="text-xs text-[#64748b] italic mt-3">*Approximate driving distance (miles) from each Florida city to five major U.S. shipping hubs. Figures rounded to the nearest 10 miles for planning purposes.</p>
-      </div>
-
-      <!-- Table 2 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm overflow-x-auto">
-        <h3 class="text-lg font-bold text-[#0a2540] mb-4">Distances Between Florida's Top 10 Cities (In-State Relocation)</h3>
-        <p class="text-sm text-[#425466] leading-relaxed mb-4">
-          Many Florida car shipping orders are actually in-state relocations — a snowbird flying into Orlando who needs a car delivered to Naples, or a dealer moving inventory from Jacksonville to Fort Myers. Here's how the state's top cities line up against the two primary in-state hubs, Miami and Orlando.
+        <p class="text-base lg:text-lg leading-relaxed text-[#425466] mb-6">
+          This guide breaks down the ten most-shipped-to metro areas in the state, real route distances, and exactly how Neon Auto Transport moves vehicles in and out of each one — covering the two major Florida gateway ports (Miami and Jacksonville), the I-4 corridor hub of Orlando and Tampa, and the smaller but high-demand Gulf Coast and Southwest Florida markets.
         </p>
-        <table class="w-full text-left text-sm border-collapse min-w-[500px]">
-          <thead>
-            <tr class="bg-[#0a2540] text-white font-bold">
-              <th class="py-3 px-4">City</th>
-              <th class="py-3 px-4">Distance to Miami</th>
-              <th class="py-3 px-4">Distance to Orlando</th>
-              <th class="py-3 px-4">Distance to Jacksonville</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Miami</td><td class="py-3 px-4">—</td><td class="py-3 px-4">235 mi</td><td class="py-3 px-4">345 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Orlando</td><td class="py-3 px-4">235 mi</td><td class="py-3 px-4">—</td><td class="py-3 px-4">140 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Tampa</td><td class="py-3 px-4">280 mi</td><td class="py-3 px-4">85 mi</td><td class="py-3 px-4">200 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Jacksonville</td><td class="py-3 px-4">345 mi</td><td class="py-3 px-4">140 mi</td><td class="py-3 px-4">—</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Lauderdale</td><td class="py-3 px-4">30 mi</td><td class="py-3 px-4">210 mi</td><td class="py-3 px-4">325 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">St. Petersburg</td><td class="py-3 px-4">275 mi</td><td class="py-3 px-4">105 mi</td><td class="py-3 px-4">215 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">West Palm Beach</td><td class="py-3 px-4">70 mi</td><td class="py-3 px-4">165 mi</td><td class="py-3 px-4">285 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Naples</td><td class="py-3 px-4">105 mi</td><td class="py-3 px-4">235 mi</td><td class="py-3 px-4">355 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Sarasota</td><td class="py-3 px-4">225 mi</td><td class="py-3 px-4">130 mi</td><td class="py-3 px-4">260 mi</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Myers</td><td class="py-3 px-4">145 mi</td><td class="py-3 px-4">165 mi</td><td class="py-3 px-4">300 mi</td></tr>
-          </tbody>
-        </table>
-        <p class="text-xs text-[#64748b] italic mt-3">*Approximate in-state driving distances (miles). Coastal cities close to each other (e.g., Miami/Fort Lauderdale, Tampa/St. Petersburg) are frequently shipped on the same carrier run.</p>
-      </div>
-    </section>
 
-    <!-- SECTION: Car Shipping Cost to Florida: What Drives the Price -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Pricing Analysis
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Car Shipping Cost to Florida: What Drives the Price
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
-        Cost to ship a car to Florida ranges from $150 for short in-state moves to $1,700+ for cross-country routes, depending on distance, vehicle type, method, and season. There's no single flat rate — auto transport quotes are built from several variables, outlined below.
-      </p>
-
-      <!-- Table 3 -->
-      <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm mb-8 overflow-x-auto">
-        <h3 class="text-lg font-bold text-[#0a2540] mb-4">Table 3: Illustrative Open-Carrier Pricing &amp; Transit Windows</h3>
-        <table class="w-full text-left text-sm border-collapse min-w-[500px]">
-          <thead>
-            <tr class="bg-[#0a2540] text-white font-bold">
-              <th class="py-3 px-4">Route Type</th>
-              <th class="py-3 px-4">Example Lane</th>
-              <th class="py-3 px-4">Typical Cost Range</th>
-              <th class="py-3 px-4">Typical Transit Time</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Short-haul (under 300 mi)</td><td class="py-3 px-4">Orlando → Tampa</td><td class="py-3 px-4 font-bold text-[#0369a1]">$150 – $300</td><td class="py-3 px-4">1 day</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Regional (300–800 mi)</td><td class="py-3 px-4">Atlanta → Miami</td><td class="py-3 px-4 font-bold text-[#0369a1]">$450 – $750</td><td class="py-3 px-4">2–3 days</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Mid-country (800–1,500 mi)</td><td class="py-3 px-4">New York → Orlando</td><td class="py-3 px-4 font-bold text-[#0369a1]">$800 – $1,200</td><td class="py-3 px-4">3–5 days</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Cross-country (1,500+ mi)</td><td class="py-3 px-4">Los Angeles → Miami</td><td class="py-3 px-4 font-bold text-[#0369a1]">$1,100 – $1,700</td><td class="py-3 px-4">6–9 days</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Factors Grid -->
-      <h3 class="text-xl font-extrabold text-[#0a2540] mb-4">6 Factors That Change Your Price</h3>
-      <div class="grid md:grid-cols-2 gap-4 mb-8">
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-sm mb-1">1. Distance &amp; Route Popularity</h4>
-          <p class="text-xs text-[#425466]">High-traffic lanes like I-95 (East Coast) are typically cheaper per mile than remote or rural drop-off points.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-sm mb-1">2. Vehicle Size &amp; Weight</h4>
-          <p class="text-xs text-[#425466]">SUVs, trucks, and oversized vehicles cost more than a standard sedan.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-sm mb-1">3. Open vs. Enclosed Shipping</h4>
-          <p class="text-xs text-[#425466]">Enclosed transport runs roughly 40–60% more than open carrier transport, but protects from weather and road debris.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-sm mb-1">4. Seasonality</h4>
-          <p class="text-xs text-[#425466]">Snowbird season (Oct–Dec southbound, Mar–Apr northbound) drives up demand and prices on Florida lanes specifically.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-sm mb-1">5. Timing Flexibility</h4>
-          <p class="text-xs text-[#425466]">Expedited shipping (guaranteed pickup dates) costs more than a flexible pickup window.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-sm mb-1">6. Vehicle Condition</h4>
-          <p class="text-xs text-[#425466]">Shipping non-running cars requires winch-equipped trailers and typically adds a fee.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: Car Shipping Methods to & From Florida -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Shipping Options
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Car Shipping Methods to &amp; From Florida
-      </h2>
-
-      <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm overflow-x-auto">
-        <table class="w-full text-left text-sm border-collapse min-w-[500px]">
-          <thead>
-            <tr class="bg-[#0a2540] text-white font-bold">
-              <th class="py-3 px-4">Method</th>
-              <th class="py-3 px-4">Best For</th>
-              <th class="py-3 px-4">Notes</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Open Car Carrier</td><td class="py-3 px-4">Everyday sedans, SUVs, dealer trade-ins</td><td class="py-3 px-4 text-[#425466]">Most affordable; roughly 90%+ of all U.S. auto transport runs on open carriers.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Enclosed Car Shipping</td><td class="py-3 px-4">Luxury, exotic, and classic car shipping</td><td class="py-3 px-4 text-[#425466]">Fully protected from weather and road debris; higher demand in Miami and Naples.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Door-to-Door Car Shipping</td><td class="py-3 px-4">Most residential customers</td><td class="py-3 px-4 text-[#425466]">Carrier picks up and delivers as close to your addresses as legally and safely possible.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Terminal-to-Terminal Transport</td><td class="py-3 px-4">Budget-conscious shippers, flexible schedules</td><td class="py-3 px-4 text-[#425466]">You drop off/pick up at a secure terminal; often cheaper than door-to-door.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Expedited Car Shipping</td><td class="py-3 px-4">Time-sensitive PCS or job relocations</td><td class="py-3 px-4 text-[#425466]">Guaranteed or near-guaranteed pickup date for a premium fee.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- SECTION: Popular Florida Auto Transport Routes -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Interstate Highway Corridors
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Popular Florida Auto Transport Routes
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
-        Neon Auto Transport runs regular carrier lanes on the following high-demand routes:
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Northeast ↔ Florida</h4>
-          <p class="text-sm text-[#425466]">New York, Boston, Philadelphia, and New Jersey to Miami, Orlando, and West Palm Beach — the busiest snowbird corridor in the country.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Midwest ↔ Florida</h4>
-          <p class="text-sm text-[#425466]">Chicago, Detroit, and Columbus to Tampa, Orlando, and Jacksonville.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">West Coast ↔ Florida</h4>
-          <p class="text-sm text-[#425466]">Los Angeles and San Francisco to Miami and Fort Lauderdale — typically the longest and priciest domestic lane.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Texas ↔ Florida</h4>
-          <p class="text-sm text-[#425466]">Dallas and Houston to Tampa, Jacksonville, and Orlando via I-10.</p>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] md:col-span-2">
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">International Shipping</h4>
-          <p class="text-sm text-[#425466]">PortMiami and JAXPORT handle vehicle export to the Caribbean, Central America, and South America.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: How to Choose a Trustworthy Florida Auto Transport Company -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Consumer Protection &amp; Safety
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        How to Choose a Trustworthy Florida Auto Transport Company
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
-        Florida's high shipping volume unfortunately also attracts scams — low-ball quotes that balloon after booking, brokers with no real carrier network, or unlicensed haulers. Verify these five things before you book with anyone:
-      </p>
-
-      <div class="space-y-4 mb-8">
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-          <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+        <!-- Interlinking Banner Box -->
+        <div class="p-6 rounded-2xl bg-[#f0f9ff] border border-[#bae6fd] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <h4 class="font-bold text-[#0a2540] text-base">FMCSA Licensing</h4>
-            <p class="text-sm text-[#425466]">Every legitimate carrier and broker must hold an active USDOT and MC number, searchable on the FMCSA's SAFER database.</p>
+            <h3 class="font-extrabold text-[#0a2540] text-base">Looking for Statewide Florida Rates &amp; Regulations?</h3>
+            <p class="text-xs text-[#0369a1]">Visit our comprehensive statewide Florida Car Shipping Hub covering pricing formulas, carrier licensing, and seasonal trends.</p>
           </div>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-          <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">2</span>
-          <div>
-            <h4 class="font-bold text-[#0a2540] text-base">Cargo Insurance Verification</h4>
-            <p class="text-sm text-[#425466]">Confirm active insured transport coverage and ask for a certificate of insurance before pickup.</p>
-          </div>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-          <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">3</span>
-          <div>
-            <h4 class="font-bold text-[#0a2540] text-base">Vetted, Background-Checked Haulers</h4>
-            <p class="text-sm text-[#425466]">Neon Auto Transport works exclusively with vetted carriers meeting minimum safety-rating and insurance thresholds.</p>
-          </div>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-          <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">4</span>
-          <div>
-            <h4 class="font-bold text-[#0a2540] text-base">Verified Third-Party Reviews</h4>
-            <p class="text-sm text-[#425466]">Check Google, BBB, and Transport Reviews, not just testimonials on the company's own site.</p>
-          </div>
-        </div>
-        <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-          <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">5</span>
-          <div>
-            <h4 class="font-bold text-[#0a2540] text-base">Transparent, Binding Quotes</h4>
-            <p class="text-sm text-[#425466]">A trustworthy quote process locks your price at booking, with no last-minute increases.</p>
-          </div>
+          <a href="/florida-car-shipping/" class="shrink-0 px-5 py-2.5 rounded-xl bg-[#0369a1] text-white font-bold text-xs hover:bg-[#0284c7] transition">
+            View Statewide Hub →
+          </a>
         </div>
       </div>
 
-      <div class="p-6 rounded-2xl bg-[#f0fdf4] border border-[#bbf7d0]">
-        <h4 class="font-black text-[#166534] text-base mb-1">What is a Bill of Lading, and why does it matter?</h4>
-        <p class="text-sm text-[#15803d]">It's the legal document that records your vehicle's condition at pickup and delivery, signed by both you and the driver. It's the single most important piece of paper if a damage dispute ever comes up, so read it before signing — both times.</p>
-      </div>
-    </section>
-
-    <!-- SECTION: Shipping Specialty & Specific Vehicle Types in Florida -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        Specialized Transport
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        Shipping Specialty &amp; Specific Vehicle Types in Florida
-      </h2>
-
-      <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm overflow-x-auto">
-        <table class="w-full text-left text-sm border-collapse min-w-[500px]">
-          <thead>
-            <tr class="bg-[#0a2540] text-white font-bold">
-              <th class="py-3 px-4">Vehicle Type</th>
-              <th class="py-3 px-4">Recommended Method</th>
-              <th class="py-3 px-4">Florida-Specific Note</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Classic &amp; Collector Cars</td><td class="py-3 px-4">Enclosed car shipping</td><td class="py-3 px-4 text-[#425466]">High demand in Naples, Sarasota, and Miami collector circles.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Electric Vehicles</td><td class="py-3 px-4">Open or enclosed</td><td class="py-3 px-4 text-[#425466]">Battery weight is factored into quotes; confirm carrier EV experience.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Motorcycles</td><td class="py-3 px-4">Motorcycle transport (crated/standing)</td><td class="py-3 px-4 text-[#425466]">Often combined with car shipments to reduce cost.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Oversized Vehicles / Trucks</td><td class="py-3 px-4">Oversized vehicle shipping</td><td class="py-3 px-4 text-[#425466]">May require flatbed or specialized trailer; common on I-75 dealer lanes.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Non-Running Vehicles</td><td class="py-3 px-4">Winch-equipped open or enclosed carrier</td><td class="py-3 px-4 text-[#425466]">Disclose condition upfront — this affects carrier assignment and price.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">RVs &amp; Motorhomes</td><td class="py-3 px-4">RV transport services</td><td class="py-3 px-4 text-[#425466]">High demand from Fort Myers and Naples seasonal RV communities.</td></tr>
-            <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Luxury &amp; Exotic Vehicles</td><td class="py-3 px-4">Enclosed, white-glove hauling</td><td class="py-3 px-4 text-[#425466]">Miami, Naples, and Fort Lauderdale see the state's highest luxury-vehicle volume.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- SECTION: How Car Shipping Works: Florida Shipping Checklist -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        6-Step Process
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
-        How Car Shipping Works: Florida Shipping Checklist
-      </h2>
-      <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-8">
-        Whether you're shipping to Miami or from Jacksonville, the process follows the same six steps:
-      </p>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
-          <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">1</div>
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Get an Instant Quote</h4>
-          <p class="text-xs text-[#425466] leading-relaxed">Enter your pickup and delivery ZIP codes, vehicle details, and preferred dates for a binding estimate.</p>
+      <!-- SECTION: Why Is Florida a Top 5 State for Car Shipping? -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Statewide Demand Drivers
         </div>
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
-          <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">2</div>
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Book &amp; Confirm Carrier</h4>
-          <p class="text-xs text-[#425466] leading-relaxed">Neon Auto Transport matches your shipment with a vetted, licensed, and insured carrier from our network.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
-          <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">3</div>
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Prepare Your Vehicle</h4>
-          <p class="text-xs text-[#425466] leading-relaxed">Wash the vehicle so scratches are visible, remove personal items, document existing damage with photos, and leave 1/4 tank of gas.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
-          <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">4</div>
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Pickup &amp; Bill of Lading</h4>
-          <p class="text-xs text-[#425466] leading-relaxed">The driver inspects and documents the vehicle's condition on the bill of lading, which you and the driver both sign.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
-          <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">5</div>
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Track Your Shipment</h4>
-          <p class="text-xs text-[#425466] leading-relaxed">Get progress updates as the carrier moves through its route.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
-          <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">6</div>
-          <h4 class="font-bold text-[#0a2540] text-base mb-1">Delivery &amp; Inspection</h4>
-          <p class="text-xs text-[#425466] leading-relaxed">Compare the vehicle's condition against the original bill of lading before signing for delivery.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION: Car Shipping Insurance Requirements -->
-    <section class="mb-16">
-      <div class="p-6 lg:p-8 rounded-3xl bg-white border border-[#e6e6e6] shadow-sm">
-        <div class="flex items-center gap-3 mb-3">
-          <span class="text-2xl">📋</span>
-          <h3 class="font-black text-[#0a2540] text-xl">Car Shipping Insurance Requirements</h3>
-        </div>
-        <p class="text-sm lg:text-base text-[#425466] leading-relaxed">
-          Federal law requires all interstate auto transport carriers to carry cargo insurance, though coverage minimums vary by carrier size. Always request proof of insured transport coverage before your vehicle is loaded, and confirm whether your own auto policy provides any supplemental coverage during transit.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION: Frequently Asked Questions (15 FAQs) -->
-    <section class="mb-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
-        15 Frequently Asked Questions
-      </div>
-      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-4 tracking-tight">
-        Frequently Asked Questions: Shipping a Car to Florida
-      </h2>
-      <p class="text-base text-[#425466] mb-8 leading-relaxed">
-        Common questions about costs, transit windows, insurance, and city-specific logistics when shipping a vehicle to or from Florida.
-      </p>
-      
-      <div class="space-y-3">
-{faq_html}
-      </div>
-    </section>
-
-    <!-- SECTION: Get Your Free Florida Car Shipping Quote -->
-    <section class="mb-16 rounded-3xl bg-gradient-to-r from-[#0a2540] to-[#0f345a] p-8 lg:p-12 text-white shadow-xl relative overflow-hidden">
-      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#39FF14]/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div class="max-w-3xl relative z-10">
-        <span class="px-3 py-1 rounded-full bg-[#39FF14]/20 text-[#39FF14] text-xs font-bold uppercase tracking-wider mb-4 inline-block">
-          Direct Carrier Network
-        </span>
-        <h2 class="text-3xl lg:text-4xl font-black mb-4 tracking-tight">
-          Get Your Free Florida Car Shipping Quote
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Why Is Florida a Top 5 State for Car Shipping?
         </h2>
-        <p class="text-base lg:text-lg text-slate-300 leading-relaxed mb-8">
-          Neon Auto Transport connects you with licensed, insured, and vetted carriers on every major Florida route — from Miami to Jacksonville and everywhere in between.
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-8">
+          Florida consistently ranks among the top five states for inbound and outbound vehicle shipments in the U.S., driven by five compounding factors: seasonal snowbird migration, heavy military relocation traffic, sustained retirement-driven population growth, two major international shipping ports, and a hurricane season that makes carrier reliability matter more here than almost anywhere else.
         </p>
-        <div class="flex flex-wrap items-center gap-4">
-          <a href="/quote" class="px-8 py-4 rounded-xl bg-[#39FF14] text-[#0a2540] font-black text-lg hover:bg-[#32e612] transition shadow-lg">
-            Get an Instant, No-Obligation Quote →
-          </a>
-          <a href="tel:5715767711" class="px-8 py-4 rounded-xl border-2 border-white/20 hover:border-white text-white font-bold text-lg transition">
-            Call (571) 576-7711
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">🌴</span>
+              <h3 class="font-extrabold text-[#0a2540] text-lg">Seasonal Migration</h3>
+            </div>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Snowbirds ship cars south in October–December and north again in March–April, creating predictable seasonal rate spikes.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">🎖️</span>
+              <h3 class="font-extrabold text-[#0a2540] text-lg">Military Relocations</h3>
+            </div>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Bases including NAS Jacksonville, MacDill AFB (Tampa), Naval Air Station Pensacola, and Patrick Space Force Base near Orlando generate steady PCS-driven demand.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">📈</span>
+              <h3 class="font-extrabold text-[#0a2540] text-lg">Retirement &amp; Relocation Growth</h3>
+            </div>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Florida has no state income tax and continues to see net inbound migration, especially to Tampa, Orlando, and Southwest Florida.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">🚢</span>
+              <h3 class="font-extrabold text-[#0a2540] text-lg">Ports &amp; Logistics Hubs</h3>
+            </div>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              PortMiami and the Port of Jacksonville (JAXPORT) make South and Northeast Florida key points for international vehicle import/export.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm hover:shadow-md transition md:col-span-2">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">⛈️</span>
+              <h3 class="font-extrabold text-[#0a2540] text-lg">Extreme Weather Exposure</h3>
+            </div>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Hurricane season (June–November) periodically disrupts routes — one reason licensed, insured carriers with real-time tracking matter more in Florida than in most states.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: How We Wrote This Guide (E-E-A-T Box) -->
+      <section class="mb-16">
+        <div class="p-6 lg:p-8 rounded-3xl bg-[#f8fafc] border-2 border-[#e6e6e6] relative">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🛡️</span>
+            <h3 class="font-black text-[#0a2540] text-lg lg:text-xl">How We Wrote This Guide</h3>
+          </div>
+          <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-4">
+            This guide was built from Neon Auto Transport's own dispatch and lane-pricing data across our Florida carrier network, cross-referenced with publicly available interstate mileage data. Distances listed are typical driving-route miles (not straight-line) and are meant for cost-planning purposes; your carrier's exact routing may vary by a small margin. Rates cited are ranges based on 2026 market conditions and fluctuate with fuel prices, seasonality, and carrier capacity. This page is reviewed periodically by our logistics team to keep pricing guidance current.
+          </p>
+          <div class="text-xs font-bold text-[#64748b] border-t border-[#e6e6e6] pt-3 flex items-center justify-between flex-wrap gap-2">
+            <span>Last updated: 2026</span>
+            <span>Reviewed by the Neon Auto Transport Logistics Team</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Florida's Top 10 Cities for Car Shipping -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          City-by-City Breakdowns
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Florida's Top 10 Cities for Car Shipping
+        </h2>
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-10">
+          Each city below is ranked by shipping volume and carrier network density across Neon Auto Transport's Florida lanes. Every profile leads with the one-line answer, then the detail.
+        </p>
+
+        <div class="space-y-10">
+          
+          <!-- City 1: Miami -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">1</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Miami — South Florida's International Shipping Gateway</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Miami is Florida's #1 car shipping market, with the deepest carrier network in the state and transit times of 3–5 days from New York and 6–8 days from Los Angeles. As the home of PortMiami, it's also a major hub for international vehicle export to the Caribbean and Latin America.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, Florida's Turnpike, I-395, US-1</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Popular for enclosed transport of exotic and luxury vehicles due to the high concentration of dealerships and collectors.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 2: Orlando -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">2</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Orlando — Central Florida's I-4 Corridor Hub</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Orlando is the easiest Florida city to reach quickly, with transit times of 3–4 days from New York, because carriers running the I-4, I-75, and I-95 corridors pass through daily. High population growth and proximity to Orlando International Airport (MCO) make it a top pick for personal moves and dealer-to-dealer transport alike.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-4, Florida's Turnpike, US-192</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–4 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">5–7 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Central location often means slightly lower per-mile rates because carriers can combine Orlando drop-offs with Tampa or Jacksonville legs.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 3: Tampa -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">3</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Tampa — Gulf Coast's Largest Metro</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Tampa Bay anchors Florida's Gulf Coast shipping lanes, with transit times of 3–5 days from New York, driven largely by MacDill AFB's steady military relocation volume and a fast-growing corporate relocation market. St. Petersburg and Clearwater are typically served on the same routes.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-4, I-75, I-275</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Strong terminal-to-terminal option availability if you want to save on door-to-door surcharges.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 4: Jacksonville -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">4</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Jacksonville — Florida's Northern Gateway Port</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Jacksonville is typically the cheapest and fastest Florida city to reach from the Northeast and Midwest, with transit times of just 2–4 days from New York, thanks to its position on I-95 and I-10 as the first major stop entering Florida from Georgia. JAXPORT also makes it a key city for international auto shipping, and NAS Jacksonville drives heavy PCS-season volume.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, I-10, I-295</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">2–4 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">5–7 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Typically the cheapest and fastest Florida city to reach from the Northeast and Midwest thanks to its I-95/I-10 position.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 5: Fort Lauderdale -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">5</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Fort Lauderdale — Broward County's Luxury &amp; Yacht Market</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Fort Lauderdale, just north of Miami, shares much of Miami-Dade's carrier density and pricing, with transit times of 3–5 days from New York. Its large luxury and exotic vehicle market ties closely to Port Everglades, and many carriers treat Miami and Fort Lauderdale as a single combined lane.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, I-595, Florida's Turnpike</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Book alongside Miami quotes — combined lane volume often means better rates and faster pickup windows.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 6: St. Petersburg -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">6</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">St. Petersburg — Tampa Bay's Coastal Twin City</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              St. Petersburg shares Tampa's carrier lanes, with transit times of 3–5 days from New York, but carries its own retiree-heavy relocation demand plus a growing downtown professional population shipping vehicles for corporate relocations.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-275, I-175, US-19</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Bundling St. Pete with a Tampa quote request often surfaces more available carriers and better pickup windows.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 7: West Palm Beach -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">7</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">West Palm Beach — Palm Beach County's Snowbird Capital</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              West Palm Beach sees some of the highest seasonal snowbird volume of any city in the state, with the fastest-filling lane in Florida every October through December from Northeast markets (NY, NJ, CT, MA). Transit from New York typically runs 3–4 days.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-95, Florida's Turnpike</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–4 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Book 2–3 weeks ahead during peak snowbird season (Oct–Dec) — this lane fills fastest of any in the state.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 8: Naples -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">8</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Naples — Southwest Florida's Luxury Enclave</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Naples has one of the highest concentrations of luxury and collector vehicles per capita in Florida, driving strong demand for enclosed car shipping, with transit from New York typically running 4–6 days. It sits slightly off the main interstate grid, so lead times can run a bit longer than Miami or Tampa.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-75, US-41</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">4–6 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–9 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Expect a modest rural-access surcharge on some routes; combining pickup with Fort Myers often solves this.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 9: Sarasota -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">9</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Sarasota — Gulf Coast Arts &amp; Retirement Hub</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Sarasota is a consistent mid-volume lane driven by a steady retiree relocation market, with transit from New York typically running 3–5 days, and carriers frequently combine Sarasota stops with Tampa or Fort Myers runs.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-75, US-41</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">3–5 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–8 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">Good candidate for terminal-to-terminal pickup near I-75 to lower cost versus door-to-door.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- City 10: Fort Myers -->
+          <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center text-sm">10</span>
+              <h3 class="text-xl lg:text-2xl font-black text-[#0a2540]">Fort Myers — Southwest Florida's Fastest-Growing Metro</h3>
+            </div>
+            <p class="text-sm lg:text-base text-[#425466] leading-relaxed mb-6">
+              Fort Myers has seen some of the fastest population growth in the state over the past decade, with shipping demand growing right alongside it and transit from New York typically running 4–6 days. It's also the natural hub for Naples, Cape Coral, and Bonita Springs shipments.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-[#0a2540] text-white font-bold">
+                    <th class="py-3 px-4 rounded-tl-xl">Detail</th>
+                    <th class="py-3 px-4 rounded-tr-xl">Info</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Major Routes</td><td class="py-3 px-4">I-75, US-41</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from New York, NY</td><td class="py-3 px-4 font-semibold text-[#0369a1]">4–6 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Avg. Transit from Los Angeles, CA</td><td class="py-3 px-4 font-semibold text-[#0369a1]">6–9 days</td></tr>
+                  <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Local Shipping Note</td><td class="py-3 px-4 text-[#425466]">RV and oversized vehicle transport is common here given the area's large seasonal RV community.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#0a2540] text-white mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h4 class="font-extrabold text-lg mb-1">Comparing more than one Florida city?</h4>
+            <p class="text-xs text-slate-300">If you're flexible on which Florida metro your vehicle lands in, tell your coordinator — combined lanes (Miami/Fort Lauderdale, Tampa/St. Pete, Naples/Fort Myers) often move faster and price better.</p>
+          </div>
+          <a href="/cost-calculator/" class="shrink-0 px-6 py-3 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-sm hover:bg-[#32e011] transition shadow-md">
+            Get Quote for Your Route →
           </a>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- SECTION: Florida Car Shipping Mileage Charts -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Distance &amp; Routing Matrix
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Florida Car Shipping Mileage Charts
+        </h2>
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
+          The tables below show approximate driving-route mileage between each Florida city and the major U.S. metro hubs most frequently searched by our customers. Use these figures to estimate transit time: long-haul auto transport carriers typically average 400–500 miles per day.
+        </p>
+
+        <!-- Table 1 -->
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm mb-10 overflow-x-auto">
+          <h3 class="text-lg font-bold text-[#0a2540] mb-4">Table 1: Interstate Distances from Florida Cities to Major US Shipping Hubs</h3>
+          <table class="w-full text-left text-sm border-collapse min-w-[600px]">
+            <thead>
+              <tr class="bg-[#0a2540] text-white font-bold">
+                <th class="py-3 px-4">Florida City</th>
+                <th class="py-3 px-4">To New York, NY</th>
+                <th class="py-3 px-4">To Chicago, IL</th>
+                <th class="py-3 px-4">To Atlanta, GA</th>
+                <th class="py-3 px-4">To Dallas, TX</th>
+                <th class="py-3 px-4">To Los Angeles, CA</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Miami</td><td class="py-3 px-4">1,280 mi</td><td class="py-3 px-4">1,380 mi</td><td class="py-3 px-4">660 mi</td><td class="py-3 px-4">1,310 mi</td><td class="py-3 px-4">2,740 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Orlando</td><td class="py-3 px-4">1,090 mi</td><td class="py-3 px-4">1,120 mi</td><td class="py-3 px-4">440 mi</td><td class="py-3 px-4">1,120 mi</td><td class="py-3 px-4">2,550 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Tampa</td><td class="py-3 px-4">1,170 mi</td><td class="py-3 px-4">1,150 mi</td><td class="py-3 px-4">460 mi</td><td class="py-3 px-4">1,050 mi</td><td class="py-3 px-4">2,490 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Jacksonville</td><td class="py-3 px-4">900 mi</td><td class="py-3 px-4">1,000 mi</td><td class="py-3 px-4">350 mi</td><td class="py-3 px-4">970 mi</td><td class="py-3 px-4">2,440 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Lauderdale</td><td class="py-3 px-4">1,250 mi</td><td class="py-3 px-4">1,360 mi</td><td class="py-3 px-4">640 mi</td><td class="py-3 px-4">1,290 mi</td><td class="py-3 px-4">2,720 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">St. Petersburg</td><td class="py-3 px-4">1,180 mi</td><td class="py-3 px-4">1,160 mi</td><td class="py-3 px-4">470 mi</td><td class="py-3 px-4">1,060 mi</td><td class="py-3 px-4">2,500 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">West Palm Beach</td><td class="py-3 px-4">1,150 mi</td><td class="py-3 px-4">1,270 mi</td><td class="py-3 px-4">570 mi</td><td class="py-3 px-4">1,220 mi</td><td class="py-3 px-4">2,650 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Naples</td><td class="py-3 px-4">1,320 mi</td><td class="py-3 px-4">1,280 mi</td><td class="py-3 px-4">590 mi</td><td class="py-3 px-4">1,180 mi</td><td class="py-3 px-4">2,620 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Sarasota</td><td class="py-3 px-4">1,230 mi</td><td class="py-3 px-4">1,180 mi</td><td class="py-3 px-4">510 mi</td><td class="py-3 px-4">1,100 mi</td><td class="py-3 px-4">2,540 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Myers</td><td class="py-3 px-4">1,290 mi</td><td class="py-3 px-4">1,250 mi</td><td class="py-3 px-4">560 mi</td><td class="py-3 px-4">1,150 mi</td><td class="py-3 px-4">2,590 mi</td></tr>
+            </tbody>
+          </table>
+          <p class="text-xs text-[#64748b] italic mt-3">*Approximate driving distance (miles) from each Florida city to five major U.S. shipping hubs. Figures rounded to the nearest 10 miles for planning purposes.</p>
+        </div>
+
+        <!-- Table 2 -->
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm overflow-x-auto">
+          <h3 class="text-lg font-bold text-[#0a2540] mb-4">Distances Between Florida's Top 10 Cities (In-State Relocation)</h3>
+          <p class="text-sm text-[#425466] leading-relaxed mb-4">
+            Many Florida car shipping orders are actually in-state relocations — a snowbird flying into Orlando who needs a car delivered to Naples, or a dealer moving inventory from Jacksonville to Fort Myers. Here's how the state's top cities line up against the two primary in-state hubs, Miami and Orlando.
+          </p>
+          <table class="w-full text-left text-sm border-collapse min-w-[500px]">
+            <thead>
+              <tr class="bg-[#0a2540] text-white font-bold">
+                <th class="py-3 px-4">City</th>
+                <th class="py-3 px-4">Distance to Miami</th>
+                <th class="py-3 px-4">Distance to Orlando</th>
+                <th class="py-3 px-4">Distance to Jacksonville</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Miami</td><td class="py-3 px-4">—</td><td class="py-3 px-4">235 mi</td><td class="py-3 px-4">345 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Orlando</td><td class="py-3 px-4">235 mi</td><td class="py-3 px-4">—</td><td class="py-3 px-4">140 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Tampa</td><td class="py-3 px-4">280 mi</td><td class="py-3 px-4">85 mi</td><td class="py-3 px-4">200 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Jacksonville</td><td class="py-3 px-4">345 mi</td><td class="py-3 px-4">140 mi</td><td class="py-3 px-4">—</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Lauderdale</td><td class="py-3 px-4">30 mi</td><td class="py-3 px-4">210 mi</td><td class="py-3 px-4">325 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">St. Petersburg</td><td class="py-3 px-4">275 mi</td><td class="py-3 px-4">105 mi</td><td class="py-3 px-4">215 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">West Palm Beach</td><td class="py-3 px-4">70 mi</td><td class="py-3 px-4">165 mi</td><td class="py-3 px-4">285 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Naples</td><td class="py-3 px-4">105 mi</td><td class="py-3 px-4">235 mi</td><td class="py-3 px-4">355 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Sarasota</td><td class="py-3 px-4">225 mi</td><td class="py-3 px-4">130 mi</td><td class="py-3 px-4">260 mi</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Fort Myers</td><td class="py-3 px-4">145 mi</td><td class="py-3 px-4">165 mi</td><td class="py-3 px-4">300 mi</td></tr>
+            </tbody>
+          </table>
+          <p class="text-xs text-[#64748b] italic mt-3">*Approximate in-state driving distances (miles). Coastal cities close to each other (e.g., Miami/Fort Lauderdale, Tampa/St. Petersburg) are frequently shipped on the same carrier run.</p>
+        </div>
+      </section>
+
+      <!-- SECTION: Car Shipping Cost to Florida: What Drives the Price -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Pricing Analysis
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Car Shipping Cost to Florida: What Drives the Price
+        </h2>
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
+          Cost to ship a car to Florida ranges from $150 for short in-state moves to $1,700+ for cross-country routes, depending on distance, vehicle type, method, and season. There's no single flat rate — auto transport quotes are built from several variables, outlined below.
+        </p>
+
+        <!-- Table 3 -->
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm mb-8 overflow-x-auto">
+          <h3 class="text-lg font-bold text-[#0a2540] mb-4">Table 3: Illustrative Open-Carrier Pricing &amp; Transit Windows</h3>
+          <table class="w-full text-left text-sm border-collapse min-w-[500px]">
+            <thead>
+              <tr class="bg-[#0a2540] text-white font-bold">
+                <th class="py-3 px-4">Route Type</th>
+                <th class="py-3 px-4">Example Lane</th>
+                <th class="py-3 px-4">Typical Cost Range</th>
+                <th class="py-3 px-4">Typical Transit Time</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Short-haul (under 300 mi)</td><td class="py-3 px-4">Orlando → Tampa</td><td class="py-3 px-4 font-bold text-[#0369a1]">$150 – $300</td><td class="py-3 px-4">1 day</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Regional (300–800 mi)</td><td class="py-3 px-4">Atlanta → Miami</td><td class="py-3 px-4 font-bold text-[#0369a1]">$450 – $750</td><td class="py-3 px-4">2–3 days</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Mid-country (800–1,500 mi)</td><td class="py-3 px-4">New York → Orlando</td><td class="py-3 px-4 font-bold text-[#0369a1]">$800 – $1,200</td><td class="py-3 px-4">3–5 days</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Cross-country (1,500+ mi)</td><td class="py-3 px-4">Los Angeles → Miami</td><td class="py-3 px-4 font-bold text-[#0369a1]">$1,100 – $1,700</td><td class="py-3 px-4">6–9 days</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Factors Grid -->
+        <h3 class="text-xl font-extrabold text-[#0a2540] mb-4">6 Factors That Change Your Price</h3>
+        <div class="grid md:grid-cols-2 gap-4 mb-8">
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">1. Distance &amp; Route Popularity</h4>
+            <p class="text-xs text-[#425466]">High-traffic lanes like I-95 (East Coast) are typically cheaper per mile than remote or rural drop-off points.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">2. Vehicle Size &amp; Weight</h4>
+            <p class="text-xs text-[#425466]">SUVs, trucks, and oversized vehicles cost more than a standard sedan.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">3. Open vs. Enclosed Shipping</h4>
+            <p class="text-xs text-[#425466]">Enclosed transport runs roughly 40–60% more than open carrier transport, but protects from weather and road debris.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">4. Seasonality</h4>
+            <p class="text-xs text-[#425466]">Snowbird season (Oct–Dec southbound, Mar–Apr northbound) drives up demand and prices on Florida lanes specifically.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">5. Timing Flexibility</h4>
+            <p class="text-xs text-[#425466]">Expedited shipping (guaranteed pickup dates) costs more than a flexible pickup window.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">6. Vehicle Condition</h4>
+            <p class="text-xs text-[#425466]">Shipping non-running cars requires winch-equipped trailers and typically adds a fee.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Car Shipping Methods to & From Florida -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Shipping Options
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Car Shipping Methods to &amp; From Florida
+        </h2>
+
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm overflow-x-auto">
+          <table class="w-full text-left text-sm border-collapse min-w-[500px]">
+            <thead>
+              <tr class="bg-[#0a2540] text-white font-bold">
+                <th class="py-3 px-4">Method</th>
+                <th class="py-3 px-4">Best For</th>
+                <th class="py-3 px-4">Notes</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Open Car Carrier</td><td class="py-3 px-4">Everyday sedans, SUVs, dealer trade-ins</td><td class="py-3 px-4 text-[#425466]">Most affordable; roughly 90%+ of all U.S. auto transport runs on open carriers.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Enclosed Car Shipping</td><td class="py-3 px-4">Luxury, exotic, and classic car shipping</td><td class="py-3 px-4 text-[#425466]">Fully protected from weather and road debris; higher demand in Miami and Naples.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Door-to-Door Car Shipping</td><td class="py-3 px-4">Most residential customers</td><td class="py-3 px-4 text-[#425466]">Carrier picks up and delivers as close to your addresses as legally and safely possible.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Terminal-to-Terminal Transport</td><td class="py-3 px-4">Budget-conscious shippers, flexible schedules</td><td class="py-3 px-4 text-[#425466]">You drop off/pick up at a secure terminal; often cheaper than door-to-door.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Expedited Car Shipping</td><td class="py-3 px-4">Time-sensitive PCS or job relocations</td><td class="py-3 px-4 text-[#425466]">Guaranteed or near-guaranteed pickup date for a premium fee.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION: Popular Florida Auto Transport Routes -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Interstate Highway Corridors
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Popular Florida Auto Transport Routes
+        </h2>
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
+          Neon Auto Transport runs regular carrier lanes on the following high-demand routes:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Northeast ↔ Florida</h4>
+            <p class="text-sm text-[#425466]">New York, Boston, Philadelphia, and New Jersey to Miami, Orlando, and West Palm Beach — the busiest snowbird corridor in the country.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Midwest ↔ Florida</h4>
+            <p class="text-sm text-[#425466]">Chicago, Detroit, and Columbus to Tampa, Orlando, and Jacksonville.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">West Coast ↔ Florida</h4>
+            <p class="text-sm text-[#425466]">Los Angeles and San Francisco to Miami and Fort Lauderdale — typically the longest and priciest domestic lane.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6]">
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Texas ↔ Florida</h4>
+            <p class="text-sm text-[#425466]">Dallas and Houston to Tampa, Jacksonville, and Orlando via I-10.</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] md:col-span-2">
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">International Shipping</h4>
+            <p class="text-sm text-[#425466]">PortMiami and JAXPORT handle vehicle export to the Caribbean, Central America, and South America.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: How to Choose a Trustworthy Florida Auto Transport Company -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Consumer Protection &amp; Safety
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          How to Choose a Trustworthy Florida Auto Transport Company
+        </h2>
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-6">
+          Florida's high shipping volume unfortunately also attracts scams — low-ball quotes that balloon after booking, brokers with no real carrier network, or unlicensed haulers. Verify these five things before you book with anyone:
+        </p>
+
+        <div class="space-y-4 mb-8">
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
+            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+            <div>
+              <h4 class="font-bold text-[#0a2540] text-base">FMCSA Licensing</h4>
+              <p class="text-sm text-[#425466]">Every legitimate carrier and broker must hold an active USDOT and MC number, searchable on the FMCSA's SAFER database.</p>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
+            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+            <div>
+              <h4 class="font-bold text-[#0a2540] text-base">Cargo Insurance Verification</h4>
+              <p class="text-sm text-[#425466]">Confirm active insured transport coverage and ask for a certificate of insurance before pickup.</p>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
+            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+            <div>
+              <h4 class="font-bold text-[#0a2540] text-base">Vetted, Background-Checked Haulers</h4>
+              <p class="text-sm text-[#425466]">Neon Auto Transport works exclusively with vetted carriers meeting minimum safety-rating and insurance thresholds.</p>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
+            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">4</span>
+            <div>
+              <h4 class="font-bold text-[#0a2540] text-base">Verified Third-Party Reviews</h4>
+              <p class="text-sm text-[#425466]">Check Google, BBB, and Transport Reviews, not just testimonials on the company's own site.</p>
+            </div>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
+            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">5</span>
+            <div>
+              <h4 class="font-bold text-[#0a2540] text-base">Transparent, Binding Quotes</h4>
+              <p class="text-sm text-[#425466]">A trustworthy quote process locks your price at booking, with no last-minute increases.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-[#f0fdf4] border border-[#bbf7d0]">
+          <h4 class="font-black text-[#166534] text-base mb-1">What is a Bill of Lading, and why does it matter?</h4>
+          <p class="text-sm text-[#15803d]">It's the legal document that records your vehicle's condition at pickup and delivery, signed by both you and the driver. It's the single most important piece of paper if a damage dispute ever comes up, so read it before signing — both times.</p>
+        </div>
+      </section>
+
+      <!-- SECTION: Shipping Specialty & Specific Vehicle Types in Florida -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          Specialized Transport
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          Shipping Specialty &amp; Specific Vehicle Types in Florida
+        </h2>
+
+        <div class="bg-white rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-sm overflow-x-auto">
+          <table class="w-full text-left text-sm border-collapse min-w-[500px]">
+            <thead>
+              <tr class="bg-[#0a2540] text-white font-bold">
+                <th class="py-3 px-4">Vehicle Type</th>
+                <th class="py-3 px-4">Recommended Method</th>
+                <th class="py-3 px-4">Florida-Specific Note</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e6e6e6] border-x border-b border-[#e6e6e6]">
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Classic &amp; Collector Cars</td><td class="py-3 px-4">Enclosed car shipping</td><td class="py-3 px-4 text-[#425466]">High demand in Naples, Sarasota, and Miami collector circles.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Electric Vehicles</td><td class="py-3 px-4">Open or enclosed</td><td class="py-3 px-4 text-[#425466]">Battery weight is factored into quotes; confirm carrier EV experience.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Motorcycles</td><td class="py-3 px-4">Motorcycle transport (crated/standing)</td><td class="py-3 px-4 text-[#425466]">Often combined with car shipments to reduce cost.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Oversized Vehicles / Trucks</td><td class="py-3 px-4">Oversized vehicle shipping</td><td class="py-3 px-4 text-[#425466]">May require flatbed or specialized trailer; common on I-75 dealer lanes.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Non-Running Vehicles</td><td class="py-3 px-4">Winch-equipped open or enclosed carrier</td><td class="py-3 px-4 text-[#425466]">Disclose condition upfront — this affects carrier assignment and price.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">RVs &amp; Motorhomes</td><td class="py-3 px-4">RV transport services</td><td class="py-3 px-4 text-[#425466]">High demand from Fort Myers and Naples seasonal RV communities.</td></tr>
+              <tr class="hover:bg-[#f8fafc]"><td class="py-3 px-4 font-bold text-[#0a2540]">Luxury &amp; Exotic Vehicles</td><td class="py-3 px-4">Enclosed, white-glove hauling</td><td class="py-3 px-4 text-[#425466]">Miami, Naples, and Fort Lauderdale see the state's highest luxury-vehicle volume.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION: How Car Shipping Works: Florida Shipping Checklist -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          6-Step Process
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-6 tracking-tight">
+          How Car Shipping Works: Florida Shipping Checklist
+        </h2>
+        <p class="text-base lg:text-lg text-[#425466] leading-relaxed mb-8">
+          Whether you're shipping to Miami or from Jacksonville, the process follows the same six steps:
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">1</div>
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Get an Instant Quote</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">Enter your pickup and delivery ZIP codes, vehicle details, and preferred dates for a binding estimate.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">2</div>
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Book &amp; Confirm Carrier</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">Neon Auto Transport matches your shipment with a vetted, licensed, and insured carrier from our network.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">3</div>
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Prepare Your Vehicle</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">Wash the vehicle so scratches are visible, remove personal items, document existing damage with photos, and leave 1/4 tank of gas.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">4</div>
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Pickup &amp; Bill of Lading</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">The driver inspects and documents the vehicle's condition on the bill of lading, which you and the driver both sign.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">5</div>
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Track Your Shipment</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">Get progress updates as the carrier moves through its route.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border border-[#e6e6e6] shadow-sm">
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-bold flex items-center justify-center text-sm mb-3">6</div>
+            <h4 class="font-bold text-[#0a2540] text-base mb-1">Delivery &amp; Inspection</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">Compare the vehicle's condition against the original bill of lading before signing for delivery.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Car Shipping Insurance Requirements -->
+      <section class="mb-16">
+        <div class="p-6 lg:p-8 rounded-3xl bg-white border border-[#e6e6e6] shadow-sm">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">📋</span>
+            <h3 class="font-black text-[#0a2540] text-xl">Car Shipping Insurance Requirements</h3>
+          </div>
+          <p class="text-sm lg:text-base text-[#425466] leading-relaxed">
+            Federal law requires all interstate auto transport carriers to carry cargo insurance, though coverage minimums vary by carrier size. Always request proof of insured transport coverage before your vehicle is loaded, and confirm whether your own auto policy provides any supplemental coverage during transit.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION: Frequently Asked Questions (15 FAQs) -->
+      <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider mb-4">
+          15 Frequently Asked Questions
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0a2540] mb-4 tracking-tight">
+          Frequently Asked Questions: Shipping a Car to Florida
+        </h2>
+        <p class="text-base text-[#425466] mb-8 leading-relaxed">
+          Common questions about costs, transit windows, insurance, and city-specific logistics when shipping a vehicle to or from Florida.
+        </p>
+        
+        <div class="space-y-3">
+{faq_html}
+        </div>
+      </section>
+
+      <!-- SECTION: Get Your Free Florida Car Shipping Quote -->
+      <section class="mb-16 rounded-3xl bg-gradient-to-r from-[#0a2540] to-[#0f345a] p-8 lg:p-12 text-white shadow-xl relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#39FF14]/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-3xl relative z-10">
+          <span class="px-3 py-1 rounded-full bg-[#39FF14]/20 text-[#39FF14] text-xs font-bold uppercase tracking-wider mb-4 inline-block">
+            Direct Carrier Network
+          </span>
+          <h2 class="text-3xl lg:text-4xl font-black mb-4 tracking-tight">
+            Get Your Free Florida Car Shipping Quote
+          </h2>
+          <p class="text-base lg:text-lg text-slate-300 leading-relaxed mb-8">
+            Neon Auto Transport connects you with licensed, insured, and vetted carriers on every major Florida route — from Miami to Jacksonville and everywhere in between.
+          </p>
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="/cost-calculator/" class="px-8 py-4 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-lg hover:bg-[#32e011] transition shadow-lg">
+              Get an Instant, No-Obligation Quote →
+            </a>
+            <a href="tel:5715767711" class="px-8 py-4 rounded-full border-2 border-white/20 hover:border-white text-white font-bold text-lg transition">
+              Call (571) 576-7711
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <!-- Footer -->
@@ -1073,7 +1157,7 @@ def generate_page():
     <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div>
-          <span class="text-2xl font-black tracking-tight mb-4 block">NEON<span class="text-[#38bdf8]">.</span></span>
+          <span class="text-2xl font-black tracking-tight mb-4 block">NEON<span class="text-[#00D1FF]"> AUTO TRANSPORT</span></span>
           <p class="text-xs text-slate-400 leading-relaxed mb-4">
             Licensed &amp; insured FMCSA auto transport broker providing door-to-door vehicle shipping across Florida and nationwide.
           </p>
@@ -1086,23 +1170,23 @@ def generate_page():
           <h4 class="font-bold text-sm uppercase text-slate-300 mb-4 tracking-wider">Florida Hubs</h4>
           <ul class="space-y-2 text-xs text-slate-400">
             <li><a href="/florida-car-shipping/" class="hover:text-white transition">Florida Statewide Guide</a></li>
-            <li><a href="/florida-car-shipping-cities/" class="text-[#38bdf8] font-bold">Top 10 Florida Cities</a></li>
+            <li><a href="/florida-car-shipping-cities/" class="text-[#00d4ff] font-bold">Top 10 Florida Cities</a></li>
             <li><a href="/locations/" class="hover:text-white transition">All Nationwide Locations</a></li>
           </ul>
         </div>
         <div>
           <h4 class="font-bold text-sm uppercase text-slate-300 mb-4 tracking-wider">Services</h4>
           <ul class="space-y-2 text-xs text-slate-400">
-            <li><a href="/services/" class="hover:text-white transition">Open Car Transport</a></li>
-            <li><a href="/services/" class="hover:text-white transition">Enclosed Car Transport</a></li>
-            <li><a href="/services/" class="hover:text-white transition">Door-to-Door Shipping</a></li>
+            <li><a href="/services/open-auto-transport/" class="hover:text-white transition">Open Car Transport</a></li>
+            <li><a href="/services/enclosed-auto-transport/" class="hover:text-white transition">Enclosed Car Transport</a></li>
+            <li><a href="/services/door-to-door-car-shipping/" class="hover:text-white transition">Door-to-Door Shipping</a></li>
           </ul>
         </div>
         <div>
           <h4 class="font-bold text-sm uppercase text-slate-300 mb-4 tracking-wider">Contact Us</h4>
           <p class="text-xs text-slate-400 mb-2">Speak with a Florida Logistics Specialist:</p>
           <a href="tel:5715767711" class="text-lg font-bold text-[#39FF14] block mb-4 hover:underline">(571) 576-7711</a>
-          <a href="/quote" class="inline-block px-4 py-2 rounded-lg bg-[#0369a1] text-white font-bold text-xs hover:bg-[#0284c7] transition">
+          <a href="/cost-calculator/" class="inline-block px-4 py-2 rounded-lg bg-[#0369a1] text-white font-bold text-xs hover:bg-[#0284c7] transition">
             Request Quote Online
           </a>
         </div>
@@ -1113,6 +1197,16 @@ def generate_page():
     </div>
   </footer>
 
+  <script>
+    // Mobile Menu Toggle JS
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuBtn && mobileMenu) {{
+      mobileMenuBtn.addEventListener('click', () => {{
+        mobileMenu.classList.toggle('hidden');
+      }});
+    }}
+  </script>
 </body>
 </html>
 """
@@ -1120,7 +1214,7 @@ def generate_page():
     with open(TARGET_FILE, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("Successfully built florida-car-shipping-cities/index.html!")
+    print("Successfully built florida-car-shipping-cities/index.html with matching site design!")
 
 if __name__ == "__main__":
     generate_page()
