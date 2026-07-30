@@ -34,47 +34,53 @@
 
   <!-- JSON-LD: Service + BreadcrumbList -->
   <script type="application/ld+json">
-  {
-   "@context": "https://schema.org",
-   "@type": "Service",
-   "name": "Car Shipping in Portland, ME",
-   "description": "Door-to-door auto transport to and from Portland, Maine.",
-   "serviceType": "Auto Transport",
-   "provider": {
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Car Shipping in Portland, ME",
+  "description": "Door-to-door auto transport to and from Portland, Maine.",
+  "serviceType": "Auto Transport",
+  "provider": {
     "@type": "MovingCompany",
     "name": "Neon Auto Transport",
     "telephone": "+15715767711",
     "url": "https://neonautotransport.com",
     "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "2700 Neabsco Common Pl Suite 101",
-     "addressLocality": "Woodbridge",
-     "addressRegion": "VA",
-     "postalCode": "22191",
-     "addressCountry": "US"
-    },
-    "aggregateRating": {
-     "@type": "AggregateRating",
-     "ratingValue": "4.9",
-     "reviewCount": "1247",
-     "bestRating": "5",
-     "worstRating": "1"
+      "@type": "PostalAddress",
+      "streetAddress": "2700 Neabsco Common Pl Suite 101",
+      "addressLocality": "Woodbridge",
+      "addressRegion": "VA",
+      "postalCode": "22191",
+      "addressCountry": "US"
     }
-   },
-   "areaServed": {
+  },
+  "areaServed": {
     "@type": "State",
     "name": "Maine",
-    "containedInPlace": { "@type": "Country", "name": "United States" }
-   },
-   "url": "https://neonautotransport.com/routes/city/portland-me/",
-   "offers": {
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "United States"
+    }
+  },
+  "url": "https://neonautotransport.com/routes/city/portland-me/",
+  "offers": {
     "@type": "Offer",
     "price": "500.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "seller": { "@type": "Organization", "name": "Neon Auto Transport" }
-   }
+    "seller": {
+      "@type": "Organization",
+      "name": "Neon Auto Transport"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "1247",
+    "bestRating": "5",
+    "worstRating": "1"
   }
+}
   </script>
   <script type="application/ld+json">
   {
