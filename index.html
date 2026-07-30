@@ -515,50 +515,78 @@ footer .pt-8.border-t {
  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
- <!-- JSON-LD: SiteNavigationElement (Encourage Sitelinks) -->
- <script type="application/ld+json">
- {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "itemListElement": [
+   <!-- JSON-LD: WebSite Sitelinks Searchbox & SiteNavigationElement -->
+  <script type="application/ld+json">
   {
-   "@type": "SiteNavigationElement",
-   "position": 1,
-   "name": "Contact Us",
-   "description": "Call us at (571) 576-7711 or email info@neonautotransport.com",
-   "url": "https://neonautotransport.com/contact/"
-  },
-  {
-   "@type": "SiteNavigationElement",
-   "position": 2,
-   "name": "Customer Reviews",
-   "description": "Read what our customers are saying about Neon Auto Transport.",
-   "url": "https://neonautotransport.com/reviews/"
-  },
-  {
-   "@type": "SiteNavigationElement",
-   "position": 3,
-   "name": "Transport Services",
-   "description": "Explore our door-to-door, open, and enclosed auto transport services.",
-   "url": "https://neonautotransport.com/services/"
-  },
-  {
-   "@type": "SiteNavigationElement",
-   "position": 4,
-   "name": "Auto Transport Cost Guide",
-   "description": "Learn the true cost to ship a car and use our instant calculator.",
-   "url": "https://neonautotransport.com/blog/true-cost-of-car-shipping-2026/"
-  },
-  {
-   "@type": "SiteNavigationElement",
-   "position": 5,
-   "name": "FAQs",
-   "description": "Answers to the most common car shipping questions.",
-   "url": "https://neonautotransport.com/faqs/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://neonautotransport.com/#website",
+        "url": "https://neonautotransport.com/",
+        "name": "Neon Auto Transport",
+        "description": "Nationwide Door-to-Door Auto Transport Services",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://neonautotransport.com/cost-calculator/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://neonautotransport.com/#sitelinks",
+        "name": "Primary Site Navigation Links",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Instant Quote Calculator",
+            "description": "Calculate auto shipping rates instantly with zero upfront deposit.",
+            "url": "https://neonautotransport.com/cost-calculator/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Auto Transport Services",
+            "description": "Explore open, enclosed, luxury, and door-to-door car shipping options.",
+            "url": "https://neonautotransport.com/services/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Why Choose Neon",
+            "description": "Discover why thousands trust our FMCSA & USDOT licensed carriers.",
+            "url": "https://neonautotransport.com/why-neon/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Customer Reviews",
+            "description": "Read verified 5-star customer reviews and transport experiences.",
+            "url": "https://neonautotransport.com/reviews/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Florida Car Shipping Hub",
+            "description": "Complete guide to shipping vehicles to and from top Florida cities.",
+            "url": "https://neonautotransport.com/florida-car-shipping/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 6,
+            "name": "Contact Support",
+            "description": "Get in touch with our dispatch team at (571) 576-7711.",
+            "url": "https://neonautotransport.com/contact/"
+          }
+        ]
+      }
+    ]
   }
-  ]
- }
- </script>
+  </script>
  <link rel="stylesheet" href="/css/tailwind.css?v=3">
  <!-- Mobile Bugs Fixes -->
  <style id="mobile-fixes">
@@ -662,7 +690,7 @@ footer .pt-8.border-t {
     <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap" id="logo-text">
      NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
     </a>
-    <nav class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
+    <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
     <a href="/#how-it-works" class="hover:opacity-80 transition">How it works</a>
     
     <!-- Mega Menu Wrapper -->
