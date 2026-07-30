@@ -1170,6 +1170,10 @@ def update_page():
         "encodingFormat": "image/jpeg",
         "representativeOfPage": true,
         "inLanguage": "en-US",
+        "creditText": "Neon Auto Transport",
+        "copyrightNotice": "© 2026 Neon Auto Transport. All rights reserved.",
+        "license": "https://neonautotransport.com/terms/",
+        "acquireLicensePage": "https://neonautotransport.com/contact/",
         "creator": {{
           "@type": "Organization",
           "name": "Neon Auto Transport",
@@ -1196,6 +1200,10 @@ def update_page():
         "height": 800,
         "encodingFormat": "image/jpeg",
         "inLanguage": "en-US",
+        "creditText": "Neon Auto Transport",
+        "copyrightNotice": "© 2026 Neon Auto Transport. All rights reserved.",
+        "license": "https://neonautotransport.com/terms/",
+        "acquireLicensePage": "https://neonautotransport.com/contact/",
         "creator": {{
           "@type": "Organization",
           "name": "Neon Auto Transport",
@@ -1222,6 +1230,10 @@ def update_page():
         "height": 800,
         "encodingFormat": "image/jpeg",
         "inLanguage": "en-US",
+        "creditText": "Neon Auto Transport",
+        "copyrightNotice": "© 2026 Neon Auto Transport. All rights reserved.",
+        "license": "https://neonautotransport.com/terms/",
+        "acquireLicensePage": "https://neonautotransport.com/contact/",
         "creator": {{
           "@type": "Organization",
           "name": "Neon Auto Transport",
