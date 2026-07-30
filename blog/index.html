@@ -445,6 +445,27 @@ footer .pt-8.border-t {
     display: none !important;
   }
 </style>
+
+  <script type="application/ld+json">
+  {
+      "@type": "BreadcrumbList",
+      "@id": "https://neonautotransport.com/blog/#breadcrumb",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://neonautotransport.com/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://neonautotransport.com/blog/"
+            }
+      ]
+}
+  </script>
 </head>
 <body class=" lg:pb-0 antialiased bg-[#f6f9fc]">
               <!-- Global Header -->
@@ -551,7 +572,12 @@ footer .pt-8.border-t {
   <main>
     <section class="bg-[#0a2540] text-white pt-20 pb-32 slant-bottom relative overflow-hidden">
       <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight">Auto Transport Blog</h1>
+        
+      <!-- Breadcrumb Navigation -->
+      <nav class="flex items-center gap-2 text-xs font-semibold mb-4 flex-wrap">
+        <a href="https://neonautotransport.com/" class="text-[#425466] hover:text-[#0369a1] transition">Home</a><span>/</span> <span class="text-[#0369a1] font-bold">Blog</span>
+      </nav>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight">Auto Transport Blog</h1>
         <p class="text-lg text-[#cdd5df] max-w-2xl mx-auto leading-relaxed">Expert guides, cost breakdowns, and insider tips from our logistics team to help you ship your vehicle with confidence.</p>
       </div>
     </section>

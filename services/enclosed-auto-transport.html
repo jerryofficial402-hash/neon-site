@@ -346,6 +346,30 @@ footer .pt-8.border-t {
 {
   "@context": "https://schema.org",
   "@graph": [
+      {
+      "@type": "BreadcrumbList",
+      "@id": "https://neonautotransport.com/services/enclosed-auto-transport.html#breadcrumb",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://neonautotransport.com/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Services",
+                  "item": "https://neonautotransport.com/services/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Enclosed Auto Transport",
+                  "item": "https://neonautotransport.com/services/enclosed-auto-transport.html"
+            }
+      ]
+},
     {
       "@type": ["Service", "Product"],
       "name": "Enclosed Auto Transport",
@@ -612,7 +636,12 @@ footer .pt-8.border-t {
               <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
               Premium Enclosed Carrier Service
             </div>
-            <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none mb-6 tracking-tighter">
+            
+      <!-- Breadcrumb Navigation -->
+      <nav class="flex items-center gap-2 text-xs font-semibold mb-4 flex-wrap">
+        <a href="https://neonautotransport.com/" class="text-[#425466] hover:text-[#0369a1] transition">Home</a><span>/</span> <a href="https://neonautotransport.com/services/" class="text-[#425466] hover:text-[#0369a1] transition">Services</a><span>/</span> <span class="text-[#0369a1] font-bold">Enclosed Auto Transport</span>
+      </nav>
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none mb-6 tracking-tighter">
               Enclosed Auto Transport — Premium Enclosed Car Shipping for Luxury, Classic &amp; Exotic Vehicles
             </h1>
             <p class="text-lg text-[rgba(255,255,255,0.9)] leading-relaxed mb-10 max-w-xl">

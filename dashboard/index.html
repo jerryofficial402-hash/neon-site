@@ -551,13 +551,45 @@
     display: none !important;
   }
 </style>
+
+  <script type="application/ld+json">
+  {
+      "@type": "BreadcrumbList",
+      "@id": "https://neonautotransport.com/dashboard/#breadcrumb",
+      "itemListElement": [
+            {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://neonautotransport.com/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Locations",
+                  "item": "https://neonautotransport.com/locations/"
+            },
+            {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Dashboard",
+                  "item": "https://neonautotransport.com/dashboard/"
+            }
+      ]
+}
+  </script>
 </head>
 <body>
 
   <!-- Login Gate -->
   <div id="login-gate">
     <div class="login-card">
-      <h1>NEON <span>DISPATCH</span></h1>
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="flex items-center gap-2 text-xs font-semibold mb-4 flex-wrap">
+        <a href="https://neonautotransport.com/" class="text-[#425466] hover:text-[#0369a1] transition">Home</a><span>/</span> <a href="https://neonautotransport.com/locations/" class="text-[#425466] hover:text-[#0369a1] transition">Locations</a><span>/</span> <span class="text-[#0369a1] font-bold">Dashboard</span>
+      </nav>
+<h1>NEON <span>DISPATCH</span></h1>
       <p>Enter dispatcher password to access the lead dashboard</p>
       <input type="password" id="login-password" placeholder="Password" autofocus="">
       <button id="login-btn" onclick="attemptLogin()">Access Dashboard</button>
