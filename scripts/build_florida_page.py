@@ -209,7 +209,7 @@ def get_new_content_html():
               </div>
 
               <!-- High-Impact Visual: Florida Interstate Auto Transport Corridors (AEO/GEO/SEO/EEAT Optimized) -->
-              <figure class="my-10 rounded-3xl overflow-hidden border border-[#e6e6e6] shadow-xl hover:shadow-2xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Interstate Auto Transport Corridors" data-aeo-question="How are vehicles transported to and from Florida along interstate highway corridors?" data-aeo-answer="High-volume multi-car open transport carriers operating along I-95, I-4, I-75, and I-10 provide fast, door-to-door vehicle delivery between Florida and major cities across the Northeast, Midwest, and West Coast." data-geo-jurisdiction="US-FL" data-geo-coverage="Northeast, Midwest, West Coast, Florida (I-95, I-4, I-75, I-10)">
+              <figure class="my-8 max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-lg hover:shadow-xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Interstate Auto Transport Corridors" data-aeo-question="How are vehicles transported to and from Florida along interstate highway corridors?" data-aeo-answer="High-volume multi-car open transport carriers operating along I-95, I-4, I-75, and I-10 provide fast, door-to-door vehicle delivery between Florida and major cities across the Northeast, Midwest, and West Coast." data-geo-jurisdiction="US-FL" data-geo-coverage="Northeast, Midwest, West Coast, Florida (I-95, I-4, I-75, I-10)">
                 <meta itemprop="name" content="Florida Interstate Auto Transport Corridors Multi-Car Open Carrier along I-95, I-4, I-75, and I-10">
                 <meta itemprop="description" content="High-volume multi-car carriers operating along I-95, I-4, I-75, and I-10 provide fast, door-to-door vehicle delivery between Florida and major cities across the Northeast, Midwest, and West Coast.">
                 <meta itemprop="author" content="Neon Auto Transport">
@@ -219,40 +219,38 @@ def get_new_content_html():
                        src="/images/florida-interstate-open-auto-transport-carrier-corridors.jpg" 
                        alt="FMCSA-licensed multi-vehicle commercial open auto transport carrier loaded with SUVs and sedans operating along Florida interstate highway corridors I-95, I-4, I-75, and I-10 for door-to-door car shipping" 
                        title="Florida Interstate Auto Transport Corridors (I-95, I-4, I-75, I-10) - Neon Auto Transport FMCSA Carrier Network"
-                       class="w-full h-auto object-cover max-h-[520px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
+                       class="w-full h-auto object-cover max-h-[340px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
                        width="1200" height="800" loading="lazy" decoding="async">
                   <!-- Overlay Top Badge for Premium EEAT Authority & Visual Impact -->
-                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-xs font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
+                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-[11px] font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
                     <span class="w-2 h-2 rounded-full bg-[#39FF14] animate-pulse"></span>
                     <span>Verified Florida Corridor Route</span>
                   </div>
                   <!-- Overlay Bottom Stats Strip for High-Impact Visual EEAT -->
-                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md text-[#0a2540] text-xs font-bold border border-[#e6e6e6] shadow-lg">
-                    <span class="flex items-center gap-1.5 font-extrabold text-[#0369a1]">
+                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-white/95 backdrop-blur-md text-[#0a2540] text-[11px] font-bold border border-[#e6e6e6] shadow-lg">
+                    <span class="flex items-center gap-1 font-extrabold text-[#0369a1]">
                       ✓ FMCSA Licensed
                     </span>
                     <span class="text-[#cbd5e1]">•</span>
-                    <span class="flex items-center gap-1.5">
-                      100% Door-to-Door Delivery
+                    <span class="flex items-center gap-1">
+                      100% Door-to-Door
                     </span>
                     <span class="text-[#cbd5e1]">•</span>
-                    <span class="text-[#425466]">$100k+ Active Cargo Insurance</span>
+                    <span class="text-[#425466]">$100k+ Insurance</span>
                   </div>
                 </div>
                 <!-- Comprehensive AEO, GEO, and EEAT Caption -->
-                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-6 py-5 border-t border-[#e6e6e6]" itemprop="caption">
-                  <div class="flex flex-col gap-2">
+                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-5 py-4 border-t border-[#e6e6e6]" itemprop="caption">
+                  <div class="flex flex-col gap-1.5">
                     <p class="text-xs lg:text-sm font-semibold text-[#425466] leading-relaxed text-center sm:text-left">
                       <span class="font-black text-[#0a2540] tracking-tight">Florida Interstate Auto Transport Corridors:</span> High-volume multi-car carriers operating along <strong class="text-[#0a2540] font-black">I-95, I-4, I-75, and I-10</strong> provide fast, door-to-door vehicle delivery between Florida and major cities across the Northeast, Midwest, and West Coast.
                     </p>
-                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1.5 pt-2 mt-1 border-t border-[#e6e6e6]/70 text-[11px] font-bold text-[#64748b] tracking-wide uppercase">
-                      <span class="inline-flex items-center gap-1.5 text-[#0a2540]">
+                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1 pt-1.5 mt-0.5 border-t border-[#e6e6e6]/70 text-[10px] font-bold text-[#64748b] tracking-wide uppercase">
+                      <span class="inline-flex items-center gap-1 text-[#0a2540]">
                         <span class="text-[#0369a1]">🛡️</span> EEAT Verified Carrier Logistics
                       </span>
                       <span class="hidden md:inline text-[#cbd5e1]">•</span>
-                      <span>Primary Florida Arteries: I-95 • I-4 • I-75 • I-10</span>
-                      <span class="hidden md:inline text-[#cbd5e1]">•</span>
-                      <span>Coverage: Miami, Orlando, Tampa, Jacksonville &amp; Nationwide</span>
+                      <span>Primary Arteries: I-95 • I-4 • I-75 • I-10</span>
                     </div>
                   </div>
                 </figcaption>
@@ -676,7 +674,7 @@ def get_new_content_html():
               </div>
 
               <!-- High-Impact Visual: Florida Commercial Open Auto Transport Carrier (AEO/GEO/SEO/EEAT Optimized) -->
-              <figure class="my-10 rounded-3xl overflow-hidden border border-[#e6e6e6] shadow-xl hover:shadow-2xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Multi-Car Open Auto Transport Carrier" data-aeo-question="What type of car hauler trailer is used for open vehicle transport in Florida?" data-aeo-answer="High-capacity double-deck commercial open car haulers transport up to 9-10 vehicles simultaneously along Florida highway corridors, providing cost-effective door-to-door auto transport for sedans, crossovers, and SUVs." data-geo-jurisdiction="US-FL" data-geo-coverage="Miami, Orlando, Tampa, Jacksonville, Palm Beach, Naples &amp; Nationwide Routes">
+              <figure class="my-8 max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-lg hover:shadow-xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Multi-Car Open Auto Transport Carrier" data-aeo-question="What type of car hauler trailer is used for open vehicle transport in Florida?" data-aeo-answer="High-capacity double-deck commercial open car haulers transport up to 9-10 vehicles simultaneously along Florida highway corridors, providing cost-effective door-to-door auto transport for sedans, crossovers, and SUVs." data-geo-jurisdiction="US-FL" data-geo-coverage="Miami, Orlando, Tampa, Jacksonville, Palm Beach, Naples &amp; Nationwide Routes">
                 <meta itemprop="name" content="Florida Multi-Car Open Auto Transport Carrier Highway Vehicle Hauler">
                 <meta itemprop="description" content="Commercial multi-car open auto transport carrier trailer loaded with SUVs and sedans traveling along highway corridors for nationwide and Florida door-to-door vehicle delivery.">
                 <meta itemprop="author" content="Neon Auto Transport">
@@ -686,40 +684,38 @@ def get_new_content_html():
                        src="/images/florida-multi-car-carrier-highway-auto-transport.jpg" 
                        alt="FMCSA-licensed commercial multi-vehicle open auto transport truck and double-deck trailer loaded with white SUVs and sedans driving on highway corridor for Florida car shipping" 
                        title="Florida Open Auto Transport Multi-Car Hauler Truck - Neon Auto Transport Commercial Logistics"
-                       class="w-full h-auto object-cover max-h-[520px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
+                       class="w-full h-auto object-cover max-h-[340px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
                        width="1200" height="800" loading="lazy" decoding="async">
                   <!-- Overlay Top Badge for Premium EEAT Authority & Visual Impact -->
-                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-xs font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
+                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-[11px] font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
                     <span class="w-2 h-2 rounded-full bg-[#39FF14] animate-pulse"></span>
                     <span>FMCSA Certified Multi-Car Hauler</span>
                   </div>
                   <!-- Overlay Bottom Stats Strip for High-Impact Visual EEAT -->
-                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md text-[#0a2540] text-xs font-bold border border-[#e6e6e6] shadow-lg">
-                    <span class="flex items-center gap-1.5 font-extrabold text-[#0369a1]">
+                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-white/95 backdrop-blur-md text-[#0a2540] text-[11px] font-bold border border-[#e6e6e6] shadow-lg">
+                    <span class="flex items-center gap-1 font-extrabold text-[#0369a1]">
                       ✓ Double-Deck Capacity
                     </span>
                     <span class="text-[#cbd5e1]">•</span>
-                    <span class="flex items-center gap-1.5">
-                      90% Most Popular Shipping Choice
+                    <span class="flex items-center gap-1">
+                      90% Popular Choice
                     </span>
                     <span class="text-[#cbd5e1]">•</span>
-                    <span class="text-[#425466]">Fully Insured Transit</span>
+                    <span class="text-[#425466]">Fully Insured</span>
                   </div>
                 </div>
                 <!-- Comprehensive AEO, GEO, and EEAT Caption -->
-                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-6 py-5 border-t border-[#e6e6e6]" itemprop="caption">
-                  <div class="flex flex-col gap-2">
+                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-5 py-4 border-t border-[#e6e6e6]" itemprop="caption">
+                  <div class="flex flex-col gap-1.5">
                     <p class="text-xs lg:text-sm font-semibold text-[#425466] leading-relaxed text-center sm:text-left">
                       <span class="font-black text-[#0a2540] tracking-tight">Multi-Car Open Carrier Transport in Florida:</span> Commercial double-deck car haulers carrying <strong class="text-[#0a2540] font-black">SUVs, sedans, and crossovers</strong> represent the most efficient, cost-effective door-to-door auto shipping method across <strong class="text-[#0a2540]">Miami, Orlando, Tampa, Jacksonville, and nationwide interstate routes</strong>.
                     </p>
-                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1.5 pt-2 mt-1 border-t border-[#e6e6e6]/70 text-[11px] font-bold text-[#64748b] tracking-wide uppercase">
-                      <span class="inline-flex items-center gap-1.5 text-[#0a2540]">
+                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1 pt-1.5 mt-0.5 border-t border-[#e6e6e6]/70 text-[10px] font-bold text-[#64748b] tracking-wide uppercase">
+                      <span class="inline-flex items-center gap-1 text-[#0a2540]">
                         <span class="text-[#0369a1]">🛡️</span> Verified Commercial Fleet Operations
                       </span>
                       <span class="hidden md:inline text-[#cbd5e1]">•</span>
-                      <span>Capacity: Multi-Vehicle Commercial Trailer</span>
-                      <span class="hidden md:inline text-[#cbd5e1]">•</span>
-                      <span>Service: 100% Door-to-Door Nationwide Logistics</span>
+                      <span>Capacity: Multi-Vehicle Trailer</span>
                     </div>
                   </div>
                 </figcaption>
@@ -858,7 +854,7 @@ def get_new_content_html():
               </div>
 
               <!-- High-Impact Visual: Florida Auto Transport Driver Inspection & Wheel-Strap Safety (AEO/GEO/SEO/EEAT Optimized) -->
-              <figure class="my-10 rounded-3xl overflow-hidden border border-[#e6e6e6] shadow-xl hover:shadow-2xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Auto Transport Driver Inspection &amp; Safety Protocol" data-aeo-question="How do professional car shipping drivers secure vehicles on carrier trailers in Florida?" data-aeo-answer="Professional transport drivers perform a 22-point Bill of Lading (BOL) condition inspection alongside the vehicle owner and secure tires to the transport deck using over-the-tire soft-tie ratchet straps, ensuring zero frame or paint contact." data-geo-jurisdiction="US-FL" data-geo-coverage="Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg &amp; All Florida Hubs">
+              <figure class="my-8 max-w-2xl mx-auto rounded-2xl overflow-hidden border border-[#e6e6e6] shadow-lg hover:shadow-xl transition-all duration-300 bg-white group" itemscope itemtype="https://schema.org/ImageObject" data-aeo-entity="Florida Auto Transport Driver Inspection &amp; Safety Protocol" data-aeo-question="How do professional car shipping drivers secure vehicles on carrier trailers in Florida?" data-aeo-answer="Professional transport drivers perform a 22-point Bill of Lading (BOL) condition inspection alongside the vehicle owner and secure tires to the transport deck using over-the-tire soft-tie ratchet straps, ensuring zero frame or paint contact." data-geo-jurisdiction="US-FL" data-geo-coverage="Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg &amp; All Florida Hubs">
                 <meta itemprop="name" content="Florida Auto Transport Driver Bill of Lading Inspection &amp; Soft-Tie Wheel Securing">
                 <meta itemprop="description" content="Professional car shipping driver securing vehicle tires with soft-tie ratchet straps on carrier deck while conducting joint Bill of Lading vehicle condition inspection in Florida.">
                 <meta itemprop="author" content="Neon Auto Transport">
@@ -868,40 +864,38 @@ def get_new_content_html():
                        src="/images/florida-auto-transport-driver-inspection-wheel-strap-safety.jpg" 
                        alt="Professional auto transport driver performing Bill of Lading vehicle inspection and securing car tires with soft-tie ratchet wheel straps on carrier deck in Florida" 
                        title="Florida Car Shipping Driver Inspection &amp; Soft-Tie Wheel Strapping Safety - Neon Auto Transport"
-                       class="w-full h-auto object-cover max-h-[520px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
+                       class="w-full h-auto object-cover max-h-[340px] group-hover:scale-[1.01] transition-transform duration-500 ease-out" 
                        width="1200" height="800" loading="lazy" decoding="async">
                   <!-- Overlay Top Badge for Premium EEAT Authority & Visual Impact -->
-                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-xs font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
+                  <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0a2540]/90 backdrop-blur-md text-white text-[11px] font-extrabold uppercase tracking-wider border border-white/15 shadow-lg">
                     <span class="w-2 h-2 rounded-full bg-[#39FF14] animate-pulse"></span>
                     <span>22-Point Bill of Lading Verified</span>
                   </div>
                   <!-- Overlay Bottom Stats Strip for High-Impact Visual EEAT -->
-                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-white/95 backdrop-blur-md text-[#0a2540] text-xs font-bold border border-[#e6e6e6] shadow-lg">
-                    <span class="flex items-center gap-1.5 font-extrabold text-[#0369a1]">
+                  <div class="absolute bottom-4 right-4 hidden sm:inline-flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-white/95 backdrop-blur-md text-[#0a2540] text-[11px] font-bold border border-[#e6e6e6] shadow-lg">
+                    <span class="flex items-center gap-1 font-extrabold text-[#0369a1]">
                       ✓ Soft-Tie Over-Rim Straps
                     </span>
                     <span class="text-[#cbd5e1]">•</span>
-                    <span class="flex items-center gap-1.5">
-                      Zero Frame/Paint Contact
+                    <span class="flex items-center gap-1">
+                      Zero Frame Contact
                     </span>
                     <span class="text-[#cbd5e1]">•</span>
                     <span class="text-[#425466]">Owner Pre-Pickup Sign-Off</span>
                   </div>
                 </div>
                 <!-- Comprehensive AEO, GEO, and EEAT Caption -->
-                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-6 py-5 border-t border-[#e6e6e6]" itemprop="caption">
-                  <div class="flex flex-col gap-2">
+                <figcaption class="bg-gradient-to-b from-[#f8fafc] to-white px-5 py-4 border-t border-[#e6e6e6]" itemprop="caption">
+                  <div class="flex flex-col gap-1.5">
                     <p class="text-xs lg:text-sm font-semibold text-[#425466] leading-relaxed text-center sm:text-left">
                       <span class="font-black text-[#0a2540] tracking-tight">Verified Cargo Insurance &amp; 22-Point Safety Inspection:</span> Before dispatch across <strong class="text-[#0a2540] font-black">Miami, Orlando, Tampa, or Jacksonville</strong>, professional drivers conduct a detailed Bill of Lading condition inspection and fasten wheels using <strong class="text-[#0a2540]">soft-tie ratchet straps</strong> that never touch the vehicle frame or paint.
                     </p>
-                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1.5 pt-2 mt-1 border-t border-[#e6e6e6]/70 text-[11px] font-bold text-[#64748b] tracking-wide uppercase">
-                      <span class="inline-flex items-center gap-1.5 text-[#0a2540]">
+                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1 pt-1.5 mt-0.5 border-t border-[#e6e6e6]/70 text-[10px] font-bold text-[#64748b] tracking-wide uppercase">
+                      <span class="inline-flex items-center gap-1 text-[#0a2540]">
                         <span class="text-[#0369a1]">🛡️</span> EEAT Inspection &amp; Insurance Protocol
                       </span>
                       <span class="hidden md:inline text-[#cbd5e1]">•</span>
-                      <span>Coverage: $100k–$250k Active Cargo Insurance</span>
-                      <span class="hidden md:inline text-[#cbd5e1]">•</span>
-                      <span>Verification: Digital Bill of Lading (BOL) Report</span>
+                      <span>Coverage: $100k–$250k Cargo Insurance</span>
                     </div>
                   </div>
                 </figcaption>
@@ -1156,7 +1150,11 @@ def update_page():
           "name": "Florida",
           "containedInPlace": {{ "@type": "Country", "name": "United States" }}
         }},
-        "image": "https://neonautotransport.com/florida-car-shipping/#image-corridors",
+        "image": [
+          "https://neonautotransport.com/images/florida-interstate-open-auto-transport-carrier-corridors.jpg",
+          "https://neonautotransport.com/images/florida-multi-car-carrier-highway-auto-transport.jpg",
+          "https://neonautotransport.com/images/florida-auto-transport-driver-inspection-wheel-strap-safety.jpg"
+        ],
         "url": "https://neonautotransport.com/florida-car-shipping/"
       }},
       {{
@@ -1280,9 +1278,9 @@ def update_page():
         "@id": "https://neonautotransport.com/florida-car-shipping/#webpage",
         "url": "https://neonautotransport.com/florida-car-shipping/",
         "name": "Florida Car Shipping: Costs, Routes & Auto Transport Guide (2026)",
-        "description": "Florida car shipping typically costs between $500 and $1,700. Connect with FMCSA-licensed carriers for door-to-door auto transport across Miami, Orlando, Tampa, and Jacksonville.",
+        "description": "Florida car shipping costs range from $500–$1,700. Connect with FMCSA-licensed carriers for door-to-door auto transport across Miami, Orlando, Tampa, Jacksonville & nationwide.",
         "primaryImageOfPage": {{ "@id": "https://neonautotransport.com/florida-car-shipping/#image-corridors" }},
-        "image": "https://neonautotransport.com/florida-car-shipping/#image-corridors"
+        "image": "https://neonautotransport.com/images/florida-interstate-open-auto-transport-carrier-corridors.jpg"
       }},
       {{
         "@type": "HowTo",
@@ -1346,6 +1344,14 @@ def update_page():
    }}
   </style>
 </head>"""
+
+    # Update head meta tags in html as well
+    html = html.replace('<title>Florida Car Shipping | Neon Auto Transport</title>', '<title>Florida Car Shipping: Costs, Routes &amp; Auto Transport Guide (2026) | Neon Auto Transport</title>')
+    html = html.replace('<meta name="description" content="Ship your car to or from Florida with Neon Auto Transport. Fully insured door-to-door vehicle transport serving Jacksonville and all of Florida. FMCSA approved. Get a free instant quote.">', '<meta name="description" content="Florida car shipping costs range from $500–$1,700. Connect with FMCSA-licensed carriers for door-to-door auto transport across Miami, Orlando, Tampa, Jacksonville &amp; nationwide. Free instant quote.">')
+    html = html.replace('<meta property="og:title" content="Florida Car Shipping | Neon Auto Transport">', '<meta property="og:title" content="Florida Car Shipping: Costs, Routes &amp; Auto Transport Guide (2026) | Neon Auto Transport">')
+    html = html.replace('<meta property="og:description" content="Reliable, FMCSA approved car shipping to and from Florida. Serving Jacksonville and all cities in Florida. Door-to-door auto transport. Call (571) 576-7711.">', '<meta property="og:description" content="Florida car shipping costs range from $500–$1,700. Connect with FMCSA-licensed carriers for door-to-door auto transport across Miami, Orlando, Tampa, Jacksonville &amp; nationwide.">')
+    html = html.replace('<meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">', '<meta property="og:image" content="https://neonautotransport.com/images/florida-interstate-open-auto-transport-carrier-corridors.jpg">')
+    html = html.replace('<meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">', '<meta name="twitter:image" content="https://neonautotransport.com/images/florida-interstate-open-auto-transport-carrier-corridors.jpg">')
 
     # Replace old schema and head end with new schema block
     # We find the start of the JSON-LD schema block
