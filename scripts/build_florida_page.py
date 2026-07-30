@@ -774,8 +774,26 @@ def get_new_content_html():
               </p>
             </div>
 
-            <!-- SECTION 10: SPECIALIZED VEHICLE SHIPPING IN FLORIDA -->
-            <div class="mb-16">
+            <!-- Interlinking Banner: Top Florida Cities Guide -->
+              <div class="mb-16 p-8 rounded-3xl bg-gradient-to-r from-[#0a2540] to-[#0369a1] text-white shadow-lg relative overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div class="max-w-2xl">
+                  <span class="px-3 py-1 rounded-full bg-[#39FF14]/20 text-[#39FF14] text-xs font-bold uppercase tracking-wider mb-3 inline-block">
+                    City-by-City Breakdown
+                  </span>
+                  <h3 class="text-2xl font-black mb-2 tracking-tight">
+                    Top Cities in Florida for Car Shipping (2026 Guide)
+                  </h3>
+                  <p class="text-sm text-slate-200 leading-relaxed">
+                    Compare route distances, transit windows, and city-specific auto transport guidelines for Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg, West Palm Beach, Naples, Sarasota, and Fort Myers.
+                  </p>
+                </div>
+                <a href="/florida-car-shipping-cities/" class="shrink-0 px-6 py-3.5 rounded-xl bg-[#39FF14] text-[#0a2540] font-black text-sm hover:bg-[#32e612] transition shadow-md">
+                  Explore Top 10 Florida Cities →
+                </a>
+              </div>
+
+              <!-- SECTION 10: SPECIALIZED VEHICLE SHIPPING IN FLORIDA -->
+              <div class="mb-16">
               <h2 class="text-3xl font-black text-[#0a2540] mb-8 tracking-tight">
                 Specialized Vehicle Shipping in Florida
               </h2>
