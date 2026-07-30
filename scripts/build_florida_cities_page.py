@@ -1009,36 +1009,36 @@ def generate_page():
         </p>
 
         <div class="space-y-4 mb-8">
-          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">1</span>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4 shadow-sm hover:shadow-md transition">
+            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center shrink-0 text-sm shadow-sm">1</span>
             <div>
               <h4 class="font-bold text-[#0a2540] text-base">FMCSA Licensing</h4>
               <p class="text-sm text-[#425466]">Every legitimate carrier and broker must hold an active USDOT and MC number, searchable on the FMCSA's SAFER database.</p>
             </div>
           </div>
-          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">2</span>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4 shadow-sm hover:shadow-md transition">
+            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center shrink-0 text-sm shadow-sm">2</span>
             <div>
               <h4 class="font-bold text-[#0a2540] text-base">Cargo Insurance Verification</h4>
               <p class="text-sm text-[#425466]">Confirm active insured transport coverage and ask for a certificate of insurance before pickup.</p>
             </div>
           </div>
-          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">3</span>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4 shadow-sm hover:shadow-md transition">
+            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center shrink-0 text-sm shadow-sm">3</span>
             <div>
               <h4 class="font-bold text-[#0a2540] text-base">Vetted, Background-Checked Haulers</h4>
               <p class="text-sm text-[#425466]">Neon Auto Transport works exclusively with vetted carriers meeting minimum safety-rating and insurance thresholds.</p>
             </div>
           </div>
-          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">4</span>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4 shadow-sm hover:shadow-md transition">
+            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center shrink-0 text-sm shadow-sm">4</span>
             <div>
               <h4 class="font-bold text-[#0a2540] text-base">Verified Third-Party Reviews</h4>
               <p class="text-sm text-[#425466]">Check Google, BBB, and Transport Reviews, not just testimonials on the company's own site.</p>
             </div>
           </div>
-          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4">
-            <span class="w-7 h-7 rounded-full bg-[#0369a1] text-white font-bold flex items-center justify-center shrink-0 text-sm">5</span>
+          <div class="p-5 rounded-2xl bg-white border border-[#e6e6e6] flex items-start gap-4 shadow-sm hover:shadow-md transition">
+            <span class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black flex items-center justify-center shrink-0 text-sm shadow-sm">5</span>
             <div>
               <h4 class="font-bold text-[#0a2540] text-base">Transparent, Binding Quotes</h4>
               <p class="text-sm text-[#425466]">A trustworthy quote process locks your price at booking, with no last-minute increases.</p>
