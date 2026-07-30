@@ -30,6 +30,9 @@
   <meta name="twitter:description" content="Compare car shipping costs and transit times across Atlanta, Savannah, Augusta, Columbus & 6 more Georgia cities.">
   <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
 
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/tailwind.css?v=3">
   <link rel="stylesheet" href="/css/styles.css">
@@ -223,7 +226,13 @@
     @media (min-width: 1024px) {
       html { font-size: 110%; }
     }
-    #mobile-sticky-cta, #sticky-widget { display: none !important; }
+    #sticky-widget { display: none !important; }
+    #mobile-sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 50; padding: 12px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid #e6e6e6; box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.1); display: flex; gap: 12px; align-items: center; justify-content: space-between; box-sizing: border-box; }
+    @media (min-width: 1024px) { #mobile-sticky-cta { display: none !important; } }
+    .mobile-cta-btn { flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 8px; font-weight: 900; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-family: 'Inter', sans-serif; font-size: 15px; box-sizing: border-box; }
+    .mobile-cta-btn.call { background-color: #39FF14; color: #0a2540; }
+    .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
+    .mobile-cta-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
   </style>
 </head>
 
@@ -1509,5 +1518,41 @@
       </div>
     </div>
   </footer>
+
+  <!-- Neon AI Chat Widget -->
+  <link rel="stylesheet" href="/css/chatbot.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/chatbot.css?v=2"></noscript>
+  <script src="/js/chatbot.js?v=4" defer=""></script>
+
+  <!-- Mobile Menu Toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var btn = document.getElementById('mobile-menu-btn');
+      var menu = document.getElementById('mobile-menu');
+      if (btn && menu) btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+    });
+  </script>
+
+  <!-- Header Scroll Shadow -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('global-header');
+      if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+      } else {
+        header.style.boxShadow = 'none';
+      }
+    });
+  </script>
+
+  <!-- Mobile Sticky CTA -->
+  <div id="mobile-sticky-cta">
+    <a href="tel:5715767711" class="mobile-cta-btn call">
+      <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+      Call Now
+    </a>
+    <a href="/cost-calculator/" class="mobile-cta-btn quote">
+      Get Free Quote
+    </a>
+  </div>
 </body>
 </html>
