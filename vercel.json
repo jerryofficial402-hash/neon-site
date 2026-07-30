@@ -171,26 +171,6 @@
   ],
   "redirects": [
     {
-      "source": "/:state-to-:state2-car-shipping",
-      "destination": "/cost-calculator/",
-      "permanent": true
-    },
-    {
-      "source": "/:state-to-:state2-car-shipping/",
-      "destination": "/cost-calculator/",
-      "permanent": true
-    },
-    {
-      "source": "/routes/city/:city",
-      "destination": "/locations.html",
-      "permanent": true
-    },
-    {
-      "source": "/routes/city/:city/",
-      "destination": "/locations.html",
-      "permanent": true
-    },
-    {
       "source": "/expedited-auto-transport/",
       "destination": "/services/expedited-auto-transport/",
       "permanent": true
