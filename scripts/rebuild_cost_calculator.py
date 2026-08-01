@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+target_file = os.path.join(SITE_DIR, "cost-calculator", "index.html")
+
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -646,3 +651,9 @@
   </div>
 </body>
 </html>
+"""
+
+with open(target_file, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Redesigned cost calculator page at {target_file}")
