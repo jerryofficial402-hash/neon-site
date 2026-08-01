@@ -1,0 +1,155 @@
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+calc_dir = os.path.join(SITE_DIR, "es", "cotizador-envio-de-autos")
+os.makedirs(calc_dir, exist_ok=True)
+target_file = os.path.join(calc_dir, "index.html")
+
+html_content = """<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Spanish -->
+  <title>Cotizador de Envío de Autos | Neon Auto Transport</title>
+  <meta name="description" content="Calcule el costo de enviar su vehículo a cualquier estado de EE. UU. Cotizaciones al instante, transporte abierto y cerrado, sin depósito inicial.">
+  <meta name="keywords" content="cotizador envio de autos, calcular costo envio vehiculo, transporte de autos tarifa, cuanto cuesta enviar un auto">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Neon Auto Transport">
+  <link rel="canonical" href="https://neonautotransport.com/es/cotizador-envio-de-autos/">
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en-us" href="https://neonautotransport.com/cost-calculator/">
+  <link rel="alternate" hreflang="es-us" href="https://neonautotransport.com/es/cotizador-envio-de-autos/">
+  <link rel="alternate" hreflang="x-default" href="https://neonautotransport.com/cost-calculator/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neonautotransport.com/es/cotizador-envio-de-autos/">
+  <meta property="og:title" content="Cotizador de Envío de Autos | Neon Auto Transport">
+  <meta property="og:description" content="Calcule al instante el precio garantizado para enviar su carro dentro de Estados Unidos.">
+  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    #sticky-widget { display: none !important; }
+    #mobile-sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 50; padding: 12px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid #e6e6e6; box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.1); display: flex; gap: 12px; align-items: center; justify-content: space-between; box-sizing: border-box; }
+    @media (min-width: 1024px) { #mobile-sticky-cta { display: none !important; } }
+    .mobile-cta-btn { flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 8px; font-weight: 900; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-family: 'Inter', sans-serif; font-size: 15px; box-sizing: border-box; }
+    .mobile-cta-btn.call { background-color: #39FF14; color: #0a2540; }
+    .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
+  </style>
+</head>
+
+<body class="antialiased bg-[#f6f9fc]">
+  <!-- Global Header -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
+    <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+      <div class="flex items-center" style="gap:24px">
+        <a href="/es/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" id="logo-text">
+          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
+        </a>
+        <nav class="hidden lg:flex items-center font-semibold text-[15px] text-white" style="gap:24px">
+          <a href="/es/#como-funciona" class="hover:opacity-80 transition text-white">Cómo Funciona</a>
+          <a href="/es/envio-de-autos-florida/" class="hover:opacity-80 transition text-white">Florida</a>
+          <a href="/es/envio-de-autos-georgia/" class="hover:opacity-80 transition text-white">Georgia</a>
+          <a href="/contact/" class="hover:opacity-80 transition text-white">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="/cost-calculator/" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition">
+          <span>🇺🇸</span> English
+        </a>
+        <a href="tel:5715767711" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-colors">
+          (571) 576-7711
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      
+      <div class="text-center mb-10">
+        <span class="inline-block px-3 py-1 rounded-full bg-[#468de6]/10 text-[#468de6] text-xs font-bold uppercase tracking-wider mb-3">COTIZACIÓN AL INSTANTE</span>
+        <h1 class="text-3xl md:text-5xl font-black text-[#0a2540] mb-4">Cotizador de Envío de Autos</h1>
+        <p class="text-base text-[#425466] max-w-2xl mx-auto">Complete el formulario a continuación para calcular la tarifa exacta de transporte de su vehículo a cualquier estado de EE. UU.</p>
+      </div>
+
+      <!-- Quote Calculator Card -->
+      <div class="bg-white rounded-3xl p-8 lg:p-12 border border-[#e6e6e6] shadow-xl">
+        <form action="/thank-you/" method="GET" class="space-y-6">
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-[#0a2540] uppercase tracking-wider mb-2">Origen (Ciudad o Código Postal)</label>
+              <input type="text" placeholder="Ej. Miami, FL o 33101" required class="w-full px-4 py-3.5 rounded-xl border border-[#e6e6e6] focus:border-[#468de6] focus:outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-[#0a2540] uppercase tracking-wider mb-2">Destino (Ciudad o Código Postal)</label>
+              <input type="text" placeholder="Ej. Los Ángeles, CA o 90001" required class="w-full px-4 py-3.5 rounded-xl border border-[#e6e6e6] focus:border-[#468de6] focus:outline-none text-sm font-medium">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-[#0a2540] uppercase tracking-wider mb-2">Año, Marca y Modelo del Vehículo</label>
+              <input type="text" placeholder="Ej. 2022 Toyota Camry" required class="w-full px-4 py-3.5 rounded-xl border border-[#e6e6e6] focus:border-[#468de6] focus:outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-[#0a2540] uppercase tracking-wider mb-2">Tipo de Camión</label>
+              <select class="w-full px-4 py-3.5 rounded-xl border border-[#e6e6e6] focus:border-[#468de6] focus:outline-none text-sm font-medium bg-white">
+                <option value="open">Camión Abierto (Más económico y popular)</option>
+                <option value="enclosed">Camión Cerrado (Para autos de lujo o clásicos)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-[#0a2540] uppercase tracking-wider mb-2">Nombre Completo</label>
+              <input type="text" placeholder="Su nombre" required class="w-full px-4 py-3.5 rounded-xl border border-[#e6e6e6] focus:border-[#468de6] focus:outline-none text-sm font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-[#0a2540] uppercase tracking-wider mb-2">Teléfono de Contacto</label>
+              <input type="tel" placeholder="(555) 000-0000" required class="w-full px-4 py-3.5 rounded-xl border border-[#e6e6e6] focus:border-[#468de6] focus:outline-none text-sm font-medium">
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <button type="submit" class="w-full bg-[#39FF14] text-[#0a2540] py-4 rounded-xl font-black text-lg hover:bg-[#32e011] transition shadow-lg">
+              Obtener Mi Tarifa Garantizada &rarr;
+            </button>
+          </div>
+
+          <p class="text-xs text-center text-[#425466] pt-2">
+            🔒 Sus datos están 100% protegidos. Sin depósitos iniciales ni cargos ocultos.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0a2540] text-slate-300 py-12 border-t border-slate-800 text-center text-xs">
+    <p>&copy; 2026 Neon Auto Transport LLC. Todos los derechos reservados. | <a href="/es/" class="text-[#39FF14]">Página Principal en Español</a></p>
+  </footer>
+</body>
+</html>
+"""
+
+with open(target_file, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Created Spanish calculator page at {target_file}")
