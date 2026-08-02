@@ -29,7 +29,7 @@ html_content = """<!DOCTYPE html>
   <meta property="og:url" content="https://neonautotransport.com/cheapest-way-to-ship-a-car/">
   <meta property="og:title" content="Cheapest Way to Ship a Car: Costs, Companies &amp; How to Save">
   <meta property="og:description" content="Discover how auto transport pricing really works, why there is no single cheapest company, and 5 actionable ways to lower your car shipping rate.">
-  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta property="og:image" content="https://neonautotransport.com/images/cheapest-way-to-ship-hero.jpg">
   <meta property="og:site_name" content="Neon Auto Transport">
   <meta property="og:locale" content="en_US">
 
@@ -37,7 +37,7 @@ html_content = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cheapest Way to Ship a Car: Costs, Companies &amp; How to Save">
   <meta name="twitter:description" content="Real car shipping cost breakdown, towing vs shipping comparison, and proven savings strategies.">
-  <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta name="twitter:image" content="https://neonautotransport.com/images/cheapest-way-to-ship-hero.jpg">
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
