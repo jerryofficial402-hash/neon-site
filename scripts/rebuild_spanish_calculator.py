@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+calc_dir = os.path.join(SITE_DIR, "es", "cotizador-envio-de-autos")
+os.makedirs(calc_dir, exist_ok=True)
+target_file = os.path.join(calc_dir, "index.html")
+
+html_content = """<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -225,3 +232,9 @@
   <script src="/js/calculator.js?v=2" defer=""></script>
 </body>
 </html>
+"""
+
+with open(target_file, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Built interactive Spanish calculator page at {target_file}")
