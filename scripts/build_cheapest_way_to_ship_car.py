@@ -1,0 +1,732 @@
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+pillar_dir = os.path.join(SITE_DIR, "cheapest-way-to-ship-a-car")
+os.makedirs(pillar_dir, exist_ok=True)
+target_file = os.path.join(pillar_dir, "index.html")
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Cheapest Way to Ship a Car: Costs, Companies &amp; How to Save</title>
+  <meta name="description" content="Is there really a &quot;cheapest&quot; car shipping company? Here's what actually drives your price, and how to lower it. Licensed broker, DOT 4355879.">
+  <meta name="keywords" content="cheapest way to ship a car, cheapest company to ship a car, save money on car shipping, Florida to California car shipping cost, towing vs shipping a car, dealership car shipping cost">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Neon Auto Transport LLC">
+  <link rel="canonical" href="https://neonautotransport.com/cheapest-way-to-ship-a-car/">
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en-us" href="https://neonautotransport.com/cheapest-way-to-ship-a-car/">
+  <link rel="alternate" hreflang="x-default" href="https://neonautotransport.com/cheapest-way-to-ship-a-car/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neonautotransport.com/cheapest-way-to-ship-a-car/">
+  <meta property="og:title" content="Cheapest Way to Ship a Car: Costs, Companies &amp; How to Save">
+  <meta property="og:description" content="Discover how auto transport pricing really works, why there is no single cheapest company, and 5 actionable ways to lower your car shipping rate.">
+  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta property="og:site_name" content="Neon Auto Transport">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cheapest Way to Ship a Car: Costs, Companies &amp; How to Save">
+  <meta name="twitter:description" content="Real car shipping cost breakdown, towing vs shipping comparison, and proven savings strategies.">
+  <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P5K57THT');</script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://neonautotransport.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Resources",
+        "item": "https://neonautotransport.com/cost-calculator/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cheapest Way to Ship a Car",
+        "item": "https://neonautotransport.com/cheapest-way-to-ship-a-car/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the cheapest company to ship a car?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no single fixed cheapest company — pricing is set per-shipment by whichever licensed carrier bids on your specific route and date, so the same company can be cheapest on one route and expensive on another."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I save money on car shipping?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choose open transport, book 2-4 weeks ahead with a flexible pickup window, ship in shoulder season, and compare multiple real quotes rather than a single cheapest ranking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do car dealers offer shipping?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most dealerships offer free local delivery within a set radius. Long-distance delivery of a car bought out-of-state is usually arranged through a separate auto transport broker, priced the same as any other shipping route."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is car shipping so expensive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing reflects real, verifiable costs including distance, vehicle size, transport method, seasonal demand, fuel, and driver wages, not arbitrary markup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to ship a car from Florida to California?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically $900-$1,800 on open transport for the roughly 2,700-mile route, with delivery in 5-10 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it cheaper to tow a car or ship it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A DIY tow dolly or trailer rental is cheapest for short distances if you already have a suitable tow vehicle. Hiring a professional tow truck company for long distances is usually more expensive than standard car shipping."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Article & Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cheapest Way to Ship a Car: What Actually Drives the Price (and How to Lower It)",
+    "description": "Exposes how auto transport bidding works, why no single cheapest company exists, and 5 concrete ways to lower your car transport quote.",
+    "author": {
+      "@type": "Organization",
+      "name": "Neon Auto Transport LLC",
+      "url": "https://neonautotransport.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Neon Auto Transport LLC",
+      "logo": "https://neonautotransport.com/images/logo.jpg",
+      "url": "https://neonautotransport.com"
+    },
+    "about": {
+      "@type": "Service",
+      "serviceType": "Car Transport & Vehicle Shipping",
+      "provider": {
+        "@type": "MovingCompany",
+        "name": "Neon Auto Transport LLC",
+        "telephone": "+1-571-576-7711",
+        "url": "https://neonautotransport.com"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    #sticky-widget { display: none !important; }
+    #mobile-sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 50; padding: 12px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid #e6e6e6; box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.1); display: flex; gap: 12px; align-items: center; justify-content: space-between; box-sizing: border-box; }
+    @media (min-width: 1024px) { #mobile-sticky-cta { display: none !important; } }
+    .mobile-cta-btn { flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 8px; font-weight: 900; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-family: 'Inter', sans-serif; font-size: 15px; box-sizing: border-box; }
+    .mobile-cta-btn.call { background-color: #39FF14; color: #0a2540; }
+    .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
+  </style>
+</head>
+
+<body class="antialiased bg-[#f6f9fc]">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5K57THT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Global Header -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
+    <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+      <div class="flex items-center" style="gap:24px">
+        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" id="logo-text">
+          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
+        </a>
+        <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="gap:24px">
+          <a href="/#how-it-works" class="hover:opacity-80 transition text-white">How it works</a>
+          <a href="/services/" class="hover:opacity-80 transition text-white">Transport Services</a>
+          <a href="/car-transport-cost-guide/" class="hover:opacity-80 transition text-white">Cost Guide</a>
+          <a href="/cost-calculator/" class="hover:opacity-80 transition text-white">Cost Calculator</a>
+          <a href="/reviews/" class="hover:opacity-80 transition text-white">Reviews</a>
+        </nav>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:5715767711" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-colors shadow-[0_0_15px_rgba(57,255,20,0.4)]">
+          <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          (571) 576-7711
+        </a>
+        <a href="#calculator" class="border border-white/30 text-white hover:bg-white hover:text-[#0a2540] px-5 py-2.5 rounded-full font-bold transition-colors">Get Quote</a>
+      </div>
+
+      <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="lg:hidden text-white focus:outline-none">
+        <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 flex flex-col p-4 space-y-4 text-center font-semibold text-[#425466] shadow-xl">
+      <a href="/#how-it-works" class="hover:text-[#635bff]">How it works</a>
+      <a href="/car-transport-cost-guide/" class="hover:text-[#635bff]">Cost Guide</a>
+      <a href="/cost-calculator/" class="hover:text-[#635bff]">Cost Calculator</a>
+      <a href="tel:5715767711" class="bg-[#39FF14] text-[#0a2540] py-3 rounded-xl font-black text-lg shadow-lg">Call (571) 576-7711</a>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-16">
+    
+    <!-- Hero Article Banner -->
+    <section class="bg-white border-b border-[#e6e6e6] py-12 lg:py-16">
+      <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold mb-6 flex-wrap">
+          <a href="/" class="text-[#468de6] hover:underline">Home</a>
+          <span class="text-[#8ba3ba]">/</span>
+          <a href="/cost-calculator/" class="text-[#468de6] hover:underline">Resources</a>
+          <span class="text-[#8ba3ba]">/</span>
+          <span class="text-[#0a2540] font-bold">Cheapest Way to Ship a Car</span>
+        </nav>
+
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#468de6]/10 text-[#468de6] text-xs font-extrabold uppercase tracking-wider mb-4">
+          SAVINGS &amp; COST ANALYSIS &bull; 2026 PILLAR
+        </div>
+
+        <h1 class="text-3xl md:text-5xl font-black text-[#0a2540] mb-6 tracking-tight leading-tight">
+          Cheapest Way to Ship a Car: What Actually Drives the Price (and How to Lower It)
+        </h1>
+
+        <!-- Front-Loaded Featured Snippet / AI Overview Quick Answer Block -->
+        <div class="p-6 bg-[#f6f9fc] rounded-2xl border-l-4 border-[#39FF14] mb-8 text-[#0a2540] leading-relaxed">
+          <p class="font-semibold text-base md:text-lg mb-3">
+            <strong>Quick Answer:</strong> There is no single "cheapest car shipping company" — the lowest price on any given route depends on which licensed carrier happens to be running that specific route that week, not on a fixed company rate card.
+          </p>
+          <p class="text-sm text-[#425466]">
+            What you <em>can</em> control is the method (open transport is cheapest), the timing (2-4 weeks' notice with a flexible pickup window), and getting multiple real quotes rather than trusting a single "best of 2026" list. Neon Auto Transport is a licensed, insured broker (USDOT 4355879, MC 1703787) based in Woodbridge, Virginia.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 text-xs text-[#425466] border-t border-b border-[#e6e6e6] py-3">
+          <span>By <strong>Neon Operations Desk</strong></span>
+          <span>&bull;</span>
+          <span>Updated August 2026</span>
+          <span>&bull;</span>
+          <span>FMCSA License USDOT #4355879</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Pillar Body -->
+    <section class="py-12 bg-[#f6f9fc]">
+      <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-[#e6e6e6] shadow-sm space-y-10 text-[#425466] leading-relaxed font-normal text-base">
+
+          <!-- Section 1 -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
+              Is There a Single "Cheapest" Car Shipping Company?
+            </h2>
+            <p class="mb-4 text-sm">
+              Not really — and it's worth being direct about why. Auto transport pricing works like a live marketplace: a broker posts your shipment, and available independent carriers already running your route bid on it.
+            </p>
+            <p class="mb-4 text-sm">
+              The "cheapest company" on any affiliate list is really just whichever company happened to get a good quote on the specific route and date that reviewer tested. Ask five brokers for a quote on the same route today and you'll likely get five different numbers, and the ranking could flip completely next month.
+            </p>
+            <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] text-sm text-[#0a2540] font-medium">
+              💡 <strong>What matters far more than brand lists:</strong> Is the company licensed (verifiable on FMCSA's SAFER site), is the quote binding or a lowball bait-and-switch, and does pricing stay consistent from booking to delivery?
+            </div>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 2: How to Save Money -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
+              How to Actually Save Money on Car Shipping
+            </h2>
+            <p class="mb-6 text-sm">
+              If you want to secure the lowest possible rate for shipping a vehicle, these five concrete levers make the biggest difference:
+            </p>
+
+            <div class="space-y-4">
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center text-xs flex-shrink-0 mt-0.5">1</span>
+                <div class="text-sm leading-relaxed text-[#425466]">
+                  <strong class="text-[#0a2540]">Choose Open Transport Over Enclosed:</strong> Open transport is the industry-standard, most affordable method for daily drivers, saving 30–60% compared to enclosed trailers.
+                </div>
+              </div>
+
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center text-xs flex-shrink-0 mt-0.5">2</span>
+                <div class="text-sm leading-relaxed text-[#425466]">
+                  <strong class="text-[#0a2540]">Book 2 to 4 Weeks Ahead With a Flexible Window:</strong> Giving carriers a 3 to 5 day pickup window is the single biggest lever, letting a broker slot your car onto a truck passing through your area.
+                </div>
+              </div>
+
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center text-xs flex-shrink-0 mt-0.5">3</span>
+                <div class="text-sm leading-relaxed text-[#425466]">
+                  <strong class="text-[#0a2540]">Ship in Shoulder Season:</strong> Shipping in spring or autumn avoids peak summer relocation surges and winter snowbird demand spikes.
+                </div>
+              </div>
+
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center text-xs flex-shrink-0 mt-0.5">4</span>
+                <div class="text-sm leading-relaxed text-[#425466]">
+                  <strong class="text-[#0a2540]">Beware Lowball Bait-and-Switch Quotes:</strong> Be cautious of any quote significantly below every other estimate — lowballers often fail to assign a carrier or hike the price right before pickup.
+                </div>
+              </div>
+
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center text-xs flex-shrink-0 mt-0.5">5</span>
+                <div class="text-sm leading-relaxed text-[#425466]">
+                  <strong class="text-[#0a2540]">Consider Terminal-to-Terminal:</strong> If you live near a major auto transport terminal, dropping off or picking up at the terminal can shave cost by avoiding tight residential navigation.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 3: Dealership Shipping -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
+              Dealership Car Shipping — Two Very Different Costs
+            </h2>
+            <p class="mb-4 text-sm">
+              Dealership shipping costs get confused constantly because searchers blur two completely separate transactions:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+                <h4 class="font-bold text-[#0a2540] mb-2">1. Manufacturer "Destination Fee"</h4>
+                <p class="text-xs text-[#425466] leading-relaxed">
+                  Fixed $1,000–$2,300 fee itemized on every new car's MSRP window sticker. Covers factory-to-dealership transit. Non-negotiable and set by the auto manufacturer — not something a broker controls.
+                </p>
+              </div>
+
+              <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+                <h4 class="font-bold text-[#0a2540] mb-2">2. Out-of-State Dealer Purchase Shipping</h4>
+                <p class="text-xs text-[#425466] leading-relaxed">
+                  Shipping a car you bought out-of-state directly to your driveway. Arranged via auto transport brokers like Neon, priced by distance, vehicle size, and transport type.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 4: Why Car Shipping Costs What It Does -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
+              Why Car Shipping Costs What It Does
+            </h2>
+            <p class="text-sm leading-relaxed mb-4">
+              Auto transport pricing reflects concrete operational costs: <strong>distance</strong> (longer routes cost more in total but less per mile), <strong>vehicle size and weight</strong> (SUVs and trucks use more trailer capacity), <strong>transport method</strong> (open vs enclosed), <strong>seasonality</strong>, and <strong>route corridor demand</strong>.
+            </p>
+            <p class="text-sm leading-relaxed">
+              Fuel costs, toll fees, and driver labor are real operating expenses baked into every legitimate carrier quote — not hidden surcharges.
+            </p>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 5: Florida to California Worked Example -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
+              Florida to California Shipping Cost (Worked Example)
+            </h2>
+            <p class="mb-4 text-sm">
+              Cross-country shipments from <a href="/florida-car-shipping/" class="text-[#468de6] font-bold hover:underline">Florida</a> to California (~2,700 miles) typically cost between <strong>$900 and $1,800</strong> on open transport for a standard sedan, with delivery in 5 to 10 days.
+            </p>
+            <p class="mb-4 text-sm">
+              The wide range quoted across the internet ($600 to $2,700+) mostly reflects vehicle size differences, seasonal surges, and lowball initial quotes that get adjusted later — not random pricing swings.
+            </p>
+
+            <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+              <h4 class="font-bold text-[#0a2540] text-base mb-2">Florida to California Route Breakdown</h4>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs font-semibold text-[#0a2540]">
+                <div class="p-3 bg-white rounded-xl border border-[#e6e6e6]">
+                  <div class="text-[#468de6] font-black text-sm mb-1">~2,700 Mi</div>
+                  Cross-Country
+                </div>
+                <div class="p-3 bg-white rounded-xl border border-[#e6e6e6]">
+                  <div class="text-[#468de6] font-black text-sm mb-1">$900 – $1,800</div>
+                  Open Rate
+                </div>
+                <div class="p-3 bg-white rounded-xl border border-[#e6e6e6]">
+                  <div class="text-[#468de6] font-black text-sm mb-1">5 – 10 Days</div>
+                  Transit Time
+                </div>
+                <div class="p-3 bg-white rounded-xl border border-[#e6e6e6]">
+                  <div class="text-[#468de6] font-black text-sm mb-1">High Corridor</div>
+                  Carrier Density
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 6: Towing vs Shipping -->
+          <div>
+            <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
+              Towing vs. Shipping — Which Is Actually Cheaper?
+            </h2>
+            <p class="mb-4 text-sm">
+              Towing costs get conflated constantly because searchers confuse three separate options:
+            </p>
+
+            <div class="space-y-4">
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+                <strong class="text-[#0a2540] text-base block mb-1">1. Renting a Tow Dolly / Trailer (DIY):</strong>
+                <p class="text-xs text-[#425466]">Cheapest option for short local moves if you already own a tow-capable truck or SUV. Adds driving stress, wear-and-tear, and fuel costs.</p>
+              </div>
+
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+                <strong class="text-[#0a2540] text-base block mb-1">2. Hiring a Professional Tow Truck Company:</strong>
+                <p class="text-xs text-[#425466]">Usually <strong>more expensive</strong> than auto transport for long distances because tow trucks operate per-mile local dispatch, not efficient multi-car long hauls.</p>
+              </div>
+
+              <div class="p-5 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+                <strong class="text-[#0a2540] text-base block mb-1">3. Auto Transport Brokerage (Car Carrier):</strong>
+                <p class="text-xs text-[#425466]">Most cost-effective and safest option for interstate moves over 200 miles because your vehicle shares trailer space with other cars.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 7: Older Cars & Train Shipping Cross-Link -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+              <h3 class="font-bold text-[#0a2540] mb-2">Is It Worth Shipping an Older Car?</h3>
+              <p class="text-xs text-[#425466] leading-relaxed">
+                If shipping costs equal or exceed the car's market value, driving it (if roadworthy) or selling locally may make more sense. Shipping makes sense for older cars with sentimental value or non-running status.
+              </p>
+            </div>
+
+            <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
+              <h3 class="font-bold text-[#0a2540] mb-2">Can You Ship a Car on a Train?</h3>
+              <p class="text-xs text-[#425466] leading-relaxed mb-3">
+                Only on Amtrak's Auto Train (Lorton, VA to Sanford, FL). Train shipping does not exist for cross-country routes like FL to CA.
+              </p>
+              <a href="/car-transport-cost-guide/" class="text-xs font-bold text-[#468de6] hover:underline">Read Full Train Shipping Breakdown &rarr;</a>
+            </div>
+          </div>
+
+          <hr class="border-[#e6e6e6]">
+
+          <!-- Section 8: Disambiguation Ocean Vessel -->
+          <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <h4 class="font-bold text-[#0a2540] text-sm mb-1">A Note on International Car Carrier Ships (Ocean RoRo)</h4>
+            <p class="text-xs text-[#425466] leading-relaxed">
+              If you are searching for overseas vehicle shipping via ocean vessel (Roll-on/Roll-off container ships), that is a separate maritime freight forwarding service. Neon Auto Transport specializes in <strong>domestic door-to-door interstate vehicle shipping by truck carrier across all 50 US states</strong>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR FORM SECTION -->
+    <section class="py-16 bg-white border-t border-b border-[#e6e6e6]" id="calculator">
+      <div class="container mx-auto px-4 lg:px-8 max-w-3xl">
+        <div class="text-center mb-8">
+          <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14]/20 text-[#0a2540] text-xs font-black uppercase tracking-wider mb-2">COMPARE REAL CARRIER RATES</span>
+          <h2 class="text-3xl font-black text-[#0a2540]">Calculate Your Lowest Shipping Quote</h2>
+          <p class="text-sm text-[#425466] mt-2">Zero upfront deposit &bull; Live market carrier bidding &bull; 100% insured</p>
+        </div>
+
+        <div class="bg-[#f6f9fc] rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-xl">
+          <form id="advancedCalcForm" class="space-y-3" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="5e86dea9-8ed6-476f-b4db-1ab24c5de766">
+            <input type="hidden" name="subject" value="New Lead: Cheapest Way to Ship a Car Guide">
+            
+            <div id="step1">
+              <div class="grid grid-cols-2 gap-3 mb-3">
+                <div class="relative">
+                  <label class="block text-[11px] font-bold text-[#425466] mb-1">Pickup ZIP or City</label>
+                  <input type="text" id="pickupZip" name="Pickup ZIP" required="" maxlength="5" autocomplete="off" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl focus:border-[#468de6] focus:outline-none" placeholder="e.g. 33101 (Miami)">
+                  <ul id="pickupDropdown" class="absolute w-full mt-1 bg-white border border-[#e6e6e6] rounded-xl shadow-lg z-50 hidden max-h-40 overflow-y-auto text-xs"></ul>
+                </div>
+                <div class="relative">
+                  <label class="block text-[11px] font-bold text-[#425466] mb-1">Delivery ZIP or City</label>
+                  <input type="text" id="deliveryZip" name="Delivery ZIP" required="" maxlength="5" autocomplete="off" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl focus:border-[#468de6] focus:outline-none" placeholder="e.g. 90001 (Los Angeles)">
+                  <ul id="deliveryDropdown" class="absolute w-full mt-1 bg-white border border-[#e6e6e6] rounded-xl shadow-lg z-50 hidden max-h-40 overflow-y-auto text-xs"></ul>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label class="block text-[11px] font-bold text-[#425466] mb-1">Calculated Route Distance (Miles)</label>
+                <input type="number" id="distance" name="Distance" required="" min="10" readonly="" class="w-full px-3.5 py-2.5 text-sm bg-white cursor-not-allowed border border-[#e6e6e6] rounded-xl text-[#0a2540] font-bold" placeholder="Auto-calculated from ZIPs">
+              </div>
+
+              <div class="mb-3">
+                <label class="block text-[11px] font-bold text-[#425466] mb-1" for="pickupDate">Estimated Pickup Date</label>
+                <input type="date" id="pickupDate" name="Pickup Date" required="" onclick="this.showPicker && this.showPicker()" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl focus:border-[#468de6] focus:outline-none bg-white">
+              </div>
+
+              <div id="vehicleGroupsContainer">
+                <div class="vehicle-group border border-[#e6e6e6] rounded-2xl p-3.5 mb-2 bg-white">
+                  <span id="vehicle1Label" class="block text-[11px] font-bold text-[#468de6] uppercase tracking-wide mb-2">Vehicle 1</span>
+                  <div class="grid grid-cols-3 gap-2 mb-2">
+                    <input type="text" class="vehicleYear w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-xl" placeholder="Year e.g. 2023" required="">
+                    <input type="text" class="vehicleMake w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-xl" placeholder="Make e.g. Honda" required="">
+                    <input type="text" class="vehicleModel w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-xl" placeholder="Model e.g. Civic" required="">
+                  </div>
+                  <div class="grid grid-cols-2 gap-2">
+                    <select class="vehicleType w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-xl bg-white">
+                      <option value="sedan">Sedan</option>
+                      <option value="suv">SUV</option>
+                      <option value="truck">Truck / Pickup</option>
+                      <option value="motorcycle">Motorcycle</option>
+                      <option value="classic">Classic / Exotic</option>
+                    </select>
+                    <select class="vehicleCondition w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-xl bg-white">
+                      <option value="run">Runs &amp; Drives</option>
+                      <option value="inop">Inoperable</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-xl border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#468de6] hover:text-[#468de6] transition-colors flex items-center justify-center gap-1 bg-white">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                Add Another Vehicle
+              </button>
+
+              <div class="mb-3">
+                <label class="block text-[11px] font-bold text-[#425466] mb-1" for="transportType">Carrier Type</label>
+                <select id="transportType" name="Transport Type" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl bg-white">
+                  <option value="open">Open Carrier (Most Popular &amp; Affordable)</option>
+                  <option value="enclosed">Enclosed Carrier (For Luxury / Exotic Cars)</option>
+                </select>
+              </div>
+
+              <button type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition-colors shadow-lg text-base">
+                Continue to View Rate &rarr;
+              </button>
+            </div>
+
+            <div id="step2" class="hidden">
+              <button type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded-lg shadow-sm hover:bg-[#c41530] transition-colors">
+                ← Back to Route Details
+              </button>
+              
+              <h3 class="text-lg font-bold text-[#0a2540] mb-3 flex items-center gap-2">
+                Where Should We Send Your Instant Quote?
+              </h3>
+
+              <div class="grid grid-cols-2 gap-3 mb-3">
+                <div>
+                  <input type="text" name="First Name" id="firstName" autocomplete="given-name" required="" class="w-full px-3.5 py-2.5 text-sm bg-white border border-[#e6e6e6] rounded-xl focus:outline-none" placeholder="First Name">
+                </div>
+                <div>
+                  <input type="text" name="Last Name" id="lastName" autocomplete="family-name" required="" class="w-full px-3.5 py-2.5 text-sm bg-white border border-[#e6e6e6] rounded-xl focus:outline-none" placeholder="Last Name">
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <input type="email" name="Email" id="email" autocomplete="email" required="" class="w-full px-3.5 py-2.5 text-sm bg-white border border-[#e6e6e6] rounded-xl focus:outline-none" placeholder="Email Address">
+              </div>
+
+              <div class="mb-3">
+                <input type="tel" name="Phone" id="phone" autocomplete="tel" required="" class="w-full px-3.5 py-2.5 text-sm bg-white border border-[#e6e6e6] rounded-xl focus:outline-none" placeholder="Phone Number">
+              </div>
+
+              <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
+
+              <button type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition-all shadow-lg text-base">
+                Submit &amp; View Guaranteed Rate &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+    <section class="py-16 bg-[#f6f9fc]">
+      <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+        <h2 class="text-3xl font-black text-[#0a2540] mb-8 text-center">Frequently Asked Questions</h2>
+        
+        <div class="space-y-4">
+          <details class="group bg-white rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:shadow-md">
+            <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 list-none text-base">
+              What is the cheapest company to ship a car?
+              <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+            </summary>
+            <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
+              There is no single fixed cheapest company — pricing is set per-shipment by whichever licensed carrier bids on your specific route and date, so the same company can be cheapest on one route and expensive on another.
+            </div>
+          </details>
+
+          <details class="group bg-white rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:shadow-md">
+            <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 list-none text-base">
+              How can I save money on car shipping?
+              <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+            </summary>
+            <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
+              Choose open transport, book 2-4 weeks ahead with a flexible pickup window, ship in shoulder season, and compare multiple real quotes rather than a single cheapest ranking.
+            </div>
+          </details>
+
+          <details class="group bg-white rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:shadow-md">
+            <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 list-none text-base">
+              Do car dealers offer shipping?
+              <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+            </summary>
+            <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
+              Most dealerships offer free local delivery within a set radius. Long-distance delivery of a car bought out-of-state is usually arranged through a separate auto transport broker, priced the same as any other shipping route.
+            </div>
+          </details>
+
+          <details class="group bg-white rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:shadow-md">
+            <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 list-none text-base">
+              Why is car shipping so expensive?
+              <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+            </summary>
+            <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
+              Pricing reflects real, verifiable costs including distance, vehicle size, transport method, seasonal demand, fuel, and driver wages, not arbitrary markup.
+            </div>
+          </details>
+
+          <details class="group bg-white rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:shadow-md">
+            <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 list-none text-base">
+              How much does it cost to ship a car from Florida to California?
+              <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+            </summary>
+            <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
+              Typically $900-$1,800 on open transport for the roughly 2,700-mile route, with delivery in 5-10 days.
+            </div>
+          </details>
+
+          <details class="group bg-white rounded-2xl border border-[#e6e6e6] transition cursor-pointer open:shadow-md">
+            <summary class="flex items-center justify-between font-bold text-[#0a2540] p-6 list-none text-base">
+              Is it cheaper to tow a car or ship it?
+              <span class="text-[#468de6] group-open:rotate-45 transition-transform text-2xl font-normal">+</span>
+            </summary>
+            <div class="px-6 pb-6 text-[#425466] text-sm leading-relaxed border-t border-[#e6e6e6] pt-4">
+              A DIY tow dolly or trailer rental is cheapest for short distances if you already have a suitable tow vehicle. Hiring a professional tow truck company for long distances is usually more expensive than standard car shipping.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#0a2540] text-slate-300 py-16 border-t border-slate-800">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+        <div class="lg:col-span-4">
+          <a href="/" class="text-3xl font-black tracking-tight flex items-center gap-2 text-white mb-4 inline-block">
+            NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
+          </a>
+          <p class="text-sm leading-relaxed mb-6 text-[#8ba3ba]">
+            Fast, secure, and reliable nationwide auto transport. We connect you with a highly vetted carrier network to ensure your vehicle arrives safely and on time.
+          </p>
+        </div>
+
+        <div class="lg:col-span-3">
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-widest mb-4">Pillar Resources</h3>
+          <ul class="space-y-3 text-sm text-[#8ba3ba]">
+            <li><a href="/cheapest-way-to-ship-a-car/" class="hover:text-white transition font-bold text-[#39FF14]">Cheapest Way to Ship Guide</a></li>
+            <li><a href="/car-transport-cost-guide/" class="hover:text-white transition">Car Transport Cost Guide</a></li>
+            <li><a href="/cost-calculator/" class="hover:text-white transition">Cost Calculator</a></li>
+            <li><a href="/florida-car-shipping/" class="hover:text-white transition">Florida Car Shipping</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-5">
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-widest mb-4">Contact Operations</h3>
+          <p class="text-sm text-[#8ba3ba] mb-2">24/7 Support Desk</p>
+          <a href="tel:5715767711" class="text-xl font-black text-[#39FF14] hover:underline inline-block mb-4">(571) 576-7711</a>
+          <p class="text-xs text-slate-400">USDOT #4355879 &bull; MC #1703787</p>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#8ba3ba]">
+        <p>&copy; 2026 Neon Auto Transport LLC. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="/privacy/" class="hover:text-white">Privacy Policy</a>
+          <a href="/terms/" class="hover:text-white">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js?v=5" defer=""></script>
+  <script src="/js/calculator.js?v=2" defer=""></script>
+
+  <!-- Neon AI Chat Widget -->
+  <link rel="stylesheet" href="/css/chatbot.css?v=2" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/css/chatbot.css?v=2"></noscript>
+  <script src="/js/chatbot.js?v=4" defer=""></script>
+
+  <!-- Mobile Sticky CTA -->
+  <div id="mobile-sticky-cta">
+    <a href="tel:5715767711" class="mobile-cta-btn call">
+      <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+      Call Now
+    </a>
+    <a href="#calculator" class="mobile-cta-btn quote">
+      Get Free Quote
+    </a>
+  </div>
+</body>
+</html>
+"""
+
+with open(target_file, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Built Cheapest Way to Ship a Car pillar page at {target_file}")
