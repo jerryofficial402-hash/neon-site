@@ -66,6 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
             // Calculate and show quote
             calculateQuote();
 
+            // Fire GTM DataLayer Event: Step 1 Complete
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'quote_step1_complete',
+                event_category: 'Quote Calculator',
+                event_action: 'Step 1 Complete',
+                pickup_zip: pickup.value,
+                delivery_zip: delivery.value,
+                distance_miles: distance.value
+            });
+
             // Transition to step 2
             step1.classList.add('hidden');
             step2.classList.remove('hidden');
@@ -215,6 +226,16 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
         }
+
+        // Fire GTM DataLayer Event: Lead Conversion
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'generate_lead',
+            event_category: 'Quote Calculator',
+            event_action: 'Form Submitted',
+            lead_source: 'Website Quote Calculator',
+            estimated_price: estimatedPrice
+        });
 
         // Show inline success message
         showSuccessMessage(calcForm);
