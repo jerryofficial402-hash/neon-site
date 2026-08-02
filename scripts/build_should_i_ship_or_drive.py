@@ -29,7 +29,7 @@ html_content = """<!DOCTYPE html>
   <meta property="og:url" content="https://neonautotransport.com/should-i-ship-or-drive-my-car/">
   <meta property="og:title" content="Should You Ship or Drive Your Car? Real Cost Breakeven">
   <meta property="og:description" content="Discover the actual mileage breakeven for driving vs shipping your car. Real cost calculations, lodging/wear factors, and fleet discounts.">
-  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta property="og:image" content="https://neonautotransport.com/images/should-i-ship-or-drive-hero.jpg">
   <meta property="og:site_name" content="Neon Auto Transport">
   <meta property="og:locale" content="en_US">
 
@@ -37,7 +37,7 @@ html_content = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Should You Ship or Drive Your Car? Real Cost Breakeven">
   <meta name="twitter:description" content="Detailed ship vs drive cost breakeven framework, per-mile rates, and fleet relocation discounts.">
-  <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta name="twitter:image" content="https://neonautotransport.com/images/should-i-ship-or-drive-hero.jpg">
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
