@@ -4,6 +4,7 @@ import re
 SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
 
 real_reviews_section = """  <!-- Customer Reviews -->
+  <!-- Customer Reviews -->
   <section class="container mx-auto px-4 lg:px-8 max-w-6xl pb-12" id="customer-reviews-section">
     <h2 class="text-3xl font-bold mb-4 text-[#0a2540] tracking-tight text-center">What Our Customers Say</h2>
     <p class="text-[#425466] text-sm max-w-2xl mx-auto text-center mb-8">Authentic 5.0-star reviews from verified customers on Google Maps.</p>
@@ -80,23 +81,23 @@ for root, dirs, files in os.walk(SITE_DIR):
             modified = False
 
             # Replace rating strings
-            if "1,247" in content or "1247" in content or "from 1,247 Reviews" in content:
-                content = content.replace("from 1,247 Reviews", "on Google Reviews")
-                content = content.replace("based on 1,247 verified reviews", "based on verified Google Reviews")
-                content = content.replace("based on 1,247 verified reviews across Google, Trustpilot, and BBB", "based on verified Google Reviews")
-                content = content.replace("4.9 out of 5 based on 1,247 verified reviews", "5.0 out of 5 based on verified Google Reviews")
-                content = content.replace("4.9/5 from 1,247 Reviews", "5.0/5 on Google Reviews")
-                content = content.replace("4.9/5 rating from 1,247+ verified customer reviews.", "5.0/5 rating based on verified Google customer reviews.")
-                content = content.replace("1,247+ verified customer reviews", "verified Google customer reviews")
-                content = content.replace("1,247+ verified reviews", "verified Google reviews")
-                content = content.replace("1,247+ reviews", "verified Google reviews")
-                content = content.replace("1,247+", "Verified Google Reviews")
-                content = content.replace("1,247", "verified")
+            if "verified" in content or "1247" in content or "on Google Reviews" in content:
+                content = content.replace("on Google Reviews", "on Google Reviews")
+                content = content.replace("based on verified Google Reviews", "based on verified Google Reviews")
+                content = content.replace("based on verified Google Reviews across Google, Trustpilot, and BBB", "based on verified Google Reviews")
+                content = content.replace("4.9 out of 5 based on verified Google Reviews", "5.0 out of 5 based on verified Google Reviews")
+                content = content.replace("4.9/5 on Google Reviews", "5.0/5 on Google Reviews")
+                content = content.replace("5.0/5 rating based on verified Google customer reviews.", "5.0/5 rating based on verified Google customer reviews.")
+                content = content.replace("verified Google customer reviews", "verified Google customer reviews")
+                content = content.replace("verified Google reviews", "verified Google reviews")
+                content = content.replace("verified Google reviews", "verified Google reviews")
+                content = content.replace("Verified Google Reviews", "Verified Google Reviews")
+                content = content.replace("verified", "verified")
                 modified = True
 
             # Replace 4.9/5 hero line in index.html specifically
-            if "4.9/5" in content and "from 1,247 Reviews" in content:
-                content = content.replace("4.9/5 <span class=\"font-normal text-white/70\">from 1,247 Reviews</span>", "5.0/5 <span class=\"font-normal text-white/70\">on Google Reviews</span>")
+            if "4.9/5" in content and "on Google Reviews" in content:
+                content = content.replace("4.9/5 <span class=\"font-normal text-white/70\">on Google Reviews</span>", "5.0/5 <span class=\"font-normal text-white/70\">on Google Reviews</span>")
                 modified = True
 
             # Replace Sarah M. / James T. / David R. generic review block
@@ -112,10 +113,10 @@ for root, dirs, files in os.walk(SITE_DIR):
                         modified = True
 
             # Schema aggregateRating corrections
-            if '"ratingValue": "4.9"' in content or '"reviewCount": "1247"' in content:
-                content = content.replace('"ratingValue": "4.9"', '"ratingValue": "5.0"')
-                content = content.replace('"reviewCount": "1247"', '"reviewCount": "25"')
-                content = content.replace('"reviewCount": 1247', '"reviewCount": 25')
+            if '"ratingValue": "5.0"' in content or '"reviewCount": "25"' in content:
+                content = content.replace('"ratingValue": "5.0"', '"ratingValue": "5.0"')
+                content = content.replace('"reviewCount": "25"', '"reviewCount": "25"')
+                content = content.replace('"reviewCount": 25', '"reviewCount": 25')
                 modified = True
 
             if modified:

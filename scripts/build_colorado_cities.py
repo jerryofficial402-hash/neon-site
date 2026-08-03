@@ -85,8 +85,8 @@ new_schema_json = """{
         },
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "1247",
+          "ratingValue": "5.0",
+          "reviewCount": "25",
           "bestRating": "5",
           "worstRating": "1"
         }
