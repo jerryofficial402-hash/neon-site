@@ -46,8 +46,8 @@ $(scripts[0]).html(`
   "areaServed": {"@type": "State", "name": "New York"},
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1247"
+    "ratingValue": "5.0",
+    "reviewCount": "25"
   }
 }`);
 // FAQPage
@@ -90,7 +90,7 @@ leftCol.html(`
 <ul class="list-disc pl-5 mt-4 space-y-2 text-[#425466]">
   <li><strong>Transparent, upfront pricing</strong> — the quote you receive is the price you pay, with no hidden fees added later.</li>
   <li><strong>Insurance up to $500,000</strong> per vehicle on both open and enclosed transport.</li>
-  <li><strong>4.9/5 rating from 1,247+ verified customer reviews.</strong></li>
+  <li><strong>5.0/5 rating based on verified Google customer reviews.</strong></li>
   <li><strong>FMCSA and USDOT approved</strong>, fully licensed and insured.</li>
   <li><strong>Nationwide carrier network</strong> with direct service to any residential or business address in New York.</li>
   <li><strong>Price-match guarantee</strong> — if you find a lower legitimate quote, we'll match it.</li>
