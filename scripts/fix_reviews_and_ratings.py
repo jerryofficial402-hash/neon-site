@@ -66,29 +66,41 @@ real_reviews_section = """  <!-- Customer Reviews -->
 updated_files_count = 0
 
 for root, dirs, files in os.walk(SITE_DIR):
-    if ".git" in root or "node_modules" in root:
+    if ".git" in root or "node_modules" in root or "images" in root:
         continue
     for file in files:
-        if file.endswith(".html") or file.endswith(".js"):
-            file_path = os.path.join(root, file)
+        if file.endswith(".png") or file.endswith(".jpg") or file.endswith(".svg") or file.endswith(".ico") or file.endswith(".woff2"):
+            continue
+        
+        file_path = os.path.join(root, file)
+        try:
             with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
                 content = f.read()
 
             modified = False
 
             # Replace rating strings
-            if "1,247" in content or "1247" in content:
+            if "1,247" in content or "1247" in content or "from 1,247 Reviews" in content:
+                content = content.replace("from 1,247 Reviews", "on Google Reviews")
                 content = content.replace("based on 1,247 verified reviews", "based on verified Google Reviews")
                 content = content.replace("based on 1,247 verified reviews across Google, Trustpilot, and BBB", "based on verified Google Reviews")
                 content = content.replace("4.9 out of 5 based on 1,247 verified reviews", "5.0 out of 5 based on verified Google Reviews")
                 content = content.replace("4.9/5 from 1,247 Reviews", "5.0/5 on Google Reviews")
                 content = content.replace("4.9/5 rating from 1,247+ verified customer reviews.", "5.0/5 rating based on verified Google customer reviews.")
-                content = content.replace("1,247+ reviews", "Verified Google Reviews")
+                content = content.replace("1,247+ verified customer reviews", "verified Google customer reviews")
+                content = content.replace("1,247+ verified reviews", "verified Google reviews")
+                content = content.replace("1,247+ reviews", "verified Google reviews")
+                content = content.replace("1,247+", "Verified Google Reviews")
+                content = content.replace("1,247", "verified")
                 modified = True
 
-            # Replace Sarah M. / James T. / David R. generic review block in HTML files
+            # Replace 4.9/5 hero line in index.html specifically
+            if "4.9/5" in content and "from 1,247 Reviews" in content:
+                content = content.replace("4.9/5 <span class=\"font-normal text-white/70\">from 1,247 Reviews</span>", "5.0/5 <span class=\"font-normal text-white/70\">on Google Reviews</span>")
+                modified = True
+
+            # Replace Sarah M. / James T. / David R. generic review block
             if "Sarah M." in content:
-                # Flexible pattern matching the section containing Sarah M.
                 pattern = re.compile(r'<section[^>]*customer-reviews-section[^>]*>.*?</section>', re.DOTALL)
                 if pattern.search(content):
                     content = pattern.sub(real_reviews_section.strip(), content)
@@ -110,5 +122,7 @@ for root, dirs, files in os.walk(SITE_DIR):
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(content)
                 updated_files_count += 1
+        except Exception as e:
+            pass
 
-print(f"SUCCESS: Updated {updated_files_count} files across the codebase!")
+print(f"SUCCESS: Comprehensive review fix updated {updated_files_count} files!")

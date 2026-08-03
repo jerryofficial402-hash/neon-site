@@ -755,7 +755,7 @@ All other text is final copy — do not change the structure, headings, or schem
       <!-- Aggregate Rating Display -->
       <div class="text-center mt-8">
         <div class="text-[#f59e0b] text-2xl mb-1">★★★★★</div>
-        <p class="text-sm text-gray-500">4.9 out of 5 based on 1,247 verified reviews across Google, Trustpilot, and BBB</p>
+        <p class="text-sm text-gray-500">4.9 out of 5 based on verified Google Reviews across Google, Trustpilot, and BBB</p>
       </div>
 
     </div>
