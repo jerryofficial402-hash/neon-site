@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+guide_file = os.path.join(SITE_DIR, "how-to-ship-a-car-to-another-state", "index.html")
+
+master_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -456,3 +461,8 @@
   <script src="/js/calculator.js?v=2" defer=""></script>
 </body>
 </html>
+"""
+
+with open(guide_file, "w", encoding="utf-8") as f:
+    f.write(master_html)
+print(f"SUCCESS: Upgraded master guide at {guide_file}")
