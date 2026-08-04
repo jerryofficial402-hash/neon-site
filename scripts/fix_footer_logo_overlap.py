@@ -4,10 +4,10 @@ SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
 
 updated_files_count = 0
 
-old_snippet_1 = 'class="text-3xl font-black tracking-tight flex items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none; white-space: nowrap;"'
+old_snippet_1 = 'class="text-2xl lg:text-3xl font-black tracking-tight flex flex-wrap items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none;"'
 new_snippet_1 = 'class="text-2xl lg:text-3xl font-black tracking-tight flex items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none;"'
 
-old_snippet_2 = 'style="text-decoration: none; white-space: nowrap;"'
+old_snippet_2 = 'style="text-decoration: none;"'
 new_snippet_2 = 'style="text-decoration: none;"'
 
 for root, dirs, files in os.walk(SITE_DIR):
@@ -25,16 +25,16 @@ for root, dirs, files in os.walk(SITE_DIR):
             if "white-space: nowrap;" in content and "NEON" in content and "AUTO TRANSPORT" in content:
                 # Replace whitespace: nowrap; in footer logo links
                 new_content = content.replace(
-                    'class="text-3xl font-black tracking-tight flex items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none; white-space: nowrap;"',
+                    'class="text-2xl lg:text-3xl font-black tracking-tight flex flex-wrap items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none;"',
                     'class="text-2xl lg:text-3xl font-black tracking-tight flex flex-wrap items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none;"'
                 )
                 new_content = new_content.replace(
-                    'class="text-3xl font-black tracking-tight flex items-center gap-2 text-white mb-6 inline-block transition-opacity hover:object-cover" style="text-decoration: none; white-space: nowrap;"',
+                    'class="text-2xl lg:text-3xl font-black tracking-tight flex flex-wrap items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none;"',
                     'class="text-2xl lg:text-3xl font-black tracking-tight flex flex-wrap items-center gap-2 text-white mb-6 inline-block transition-opacity hover:opacity-90" style="text-decoration: none;"'
                 )
                 # Catch any remaining white-space: nowrap; on footer logo
                 new_content = new_content.replace(
-                    'style="text-decoration: none; white-space: nowrap;"',
+                    'style="text-decoration: none;"',
                     'style="text-decoration: none;"'
                 )
 
