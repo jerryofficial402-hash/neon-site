@@ -789,6 +789,21 @@
             </div>
         </div>
     
+
+  <!-- Bidirectional Related City Routes -->
+  <section class="related-city-routes container mx-auto px-4 lg:px-8 max-w-4xl py-8 border-t border-[#e6e6e6]">
+    <div class="bg-white p-6 rounded-2xl border border-[#e6e6e6]">
+      <h4 class="font-bold text-[#0a2540] text-sm mb-3">State &amp; Regional Transport Hubs</h4>
+      <ul class="text-xs space-y-2 text-[#425466]">
+        <li>&bull; Main State Hub: <a href="/maryland-car-shipping/" class="text-[#635bff] font-bold hover:underline">Maryland Car Shipping Services</a></li>
+        <li><a href="/routes/city/baltimore-md.html" class="text-[#635bff] font-semibold hover:underline">Baltimore Car Shipping</a></li>
+<li><a href="/routes/city/baltimore-md.html" class="text-[#635bff] font-semibold hover:underline">Baltimore Car Shipping</a></li>
+<li><a href="/routes/city/columbia-md.html" class="text-[#635bff] font-semibold hover:underline">Columbia Car Shipping</a></li>
+
+      </ul>
+    </div>
+  </section>
+
 </main>
 
   
