@@ -1,0 +1,8 @@
+# Google Search Console Disavow File for Neon Auto Transport (neonautotransport.com)
+# Purpose: Disavow toxic low-quality directory scrapers and automated link network domains.
+# Instructions: Replace or append spammy domains exported from GSC Links -> External Links, then upload to Google Search Console Disavow Tool.
+
+# Example spammy directory and scraper TLD domains to block:
+# domain:spammy-directory-example.xyz
+# domain:auto-transport-scraper-junk.top
+# domain:free-moving-quotes-spam.site
