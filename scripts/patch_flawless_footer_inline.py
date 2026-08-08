@@ -1,93 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-P5K57THT');</script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florida to Maryland Car Shipping | Neon Auto Transport</title>
-  <meta name="description" content="Ship a car from Florida to Maryland for $750–$1,200. 2–4 day transit, $500K insurance, no deposit. Get an instant quote from Neon Auto Transport.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://neonautotransport.com/florida-to-maryland-car-shipping/">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=3">
-  <link rel="stylesheet" href="/css/styles.css">
+import os
+import glob
+import re
 
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonautotransport.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Florida to Maryland Car Shipping", "item": "https://neonautotransport.com/florida-to-maryland-car-shipping/" }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Florida to Maryland Car Shipping",
-      "provider": {
-        "@type": "MovingCompany",
-        "name": "Neon Auto Transport LLC",
-        "telephone": "+1-571-576-7711",
-        "license": "USDOT #4355879 | MC #1703787"
-      }
-    }
-  ]
-  </script>
-</head>
-<body class="antialiased bg-[#f6f9fc] text-[#0a2540]">
-  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
-    <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
-      <a href="/" class="text-2xl font-black text-white">NEON <span style="color: #00D1FF">AUTO TRANSPORT</span></a>
-      <a href="tel:5715767711" class="text-white font-bold text-sm hover:text-[#00d4ff]">(571) 576-7711</a>
-    </div>
-  </header>
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
 
-  <main class="pt-24">
-    <section class="bg-[#0a2540] text-white py-12 md:py-16">
-      <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center space-y-4">
-        <h1 class="text-3xl md:text-5xl font-black">Florida to Maryland Car Shipping</h1>
-        <p class="text-base text-[#8ba3ba] max-w-2xl mx-auto">
-          Ship your vehicle north from Florida to Maryland for <strong>$750–$1,200</strong> with 2–4 day transit, $500K cargo insurance, and $0 upfront deposit.
-        </p>
-      </div>
-    </section>
-
-    <section class="container mx-auto px-4 lg:px-8 max-w-4xl py-12">
-      <div class="bg-white p-6 md:p-8 rounded-3xl border border-[#e6e6e6] space-y-6 text-sm text-[#425466]">
-        <h2 class="text-2xl font-black text-[#0a2540]">Northbound Florida to Maryland Car Shipping</h2>
-        <p>Spring return migration (April–June) sees heavy northbound demand as seasonal residents return from Miami, Tampa, and Orlando to Baltimore, Annapolis, and Bethesda.</p>
-        
-        <div class="p-4 bg-[#f6f9fc] rounded-2xl border-l-4 border-l-[#635bff]">
-          <h3 class="font-bold text-[#0a2540] mb-1">Looking for Southbound Shipping?</h3>
-          <p class="text-xs">
-            View our master guide for <a href="/maryland-to-florida-car-shipping/" class="text-[#4338ca] font-bold underline hover:no-underline">Maryland to Florida Car Shipping (Southbound) &rarr;</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Author Byline -->
-    <section class="container mx-auto px-4 lg:px-8 max-w-4xl py-6" id="author-byline">
-      <div class="bg-white p-6 rounded-3xl border border-[#e6e6e6] shadow-sm flex items-center gap-4">
-        <img src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-12 h-12 rounded-full object-cover">
-        <div>
-          <div class="font-bold text-[#0a2540]"><a href="/author/shazil-ali/">Shazil Ali</a> &bull; <span class="text-xs text-[#0369a1] font-normal">Director of Operations</span></div>
-          <div class="text-xs text-[#425466]">Reviewed for compliance with FMCSA regulations and verified carrier network standards.</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-[#0a2540] text-slate-300 py-12 lg:py-16 border-t border-slate-800 relative overflow-hidden" style="width: 100%; background-color: #0a2540;">
+FLAWLESS_FOOTER_HTML = """<footer class="bg-[#0a2540] text-slate-300 py-12 lg:py-16 border-t border-slate-800 relative overflow-hidden" style="width: 100%; background-color: #0a2540;">
   <div class="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10" style="max-width: 1280px; margin: 0 auto;">
    <!-- 4-Column Layout -->
    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12 items-start" style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 2rem;">
@@ -206,7 +123,23 @@
     </div>
    </div>
   </div>
-</footer>
-  <script src="/js/main.js?v=5" defer></script>
-</body>
-</html>
+</footer>"""
+
+html_files = glob.glob(os.path.join(SITE_DIR, "*.html")) + glob.glob(os.path.join(SITE_DIR, "*", "*.html"))
+
+patched = 0
+for filepath in html_files:
+    try:
+        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.read()
+    except Exception:
+        continue
+
+    if '<footer' in content and '</footer>' in content:
+        new_content = re.sub(r'<footer[^>]*>.*?</footer>', FLAWLESS_FOOTER_HTML, content, flags=re.DOTALL)
+        if new_content != content:
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(new_content)
+            patched += 1
+
+print(f"SUCCESS: Applied 100% visible, solid gold phone button & flawless footer across {patched} HTML files!")
