@@ -1,5 +1,4 @@
 import os
-import re
 
 SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
 
@@ -60,31 +59,29 @@ VIDEO_SCHEMA_JSON = """
   </script>
 """
 
-# HTML Section for Video Reviews
-VIDEO_SECTION_HTML = """
-    <!-- Verified Video Reviews Section -->
-    <section id="video-reviews" class="py-12 md:py-16 bg-[#0a2540] text-white relative overflow-hidden my-8 rounded-3xl border border-[#ffffff15] shadow-2xl">
-      <div class="container mx-auto px-4 max-w-6xl relative z-10">
-        <div class="text-center mb-12">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#00d4ff20] border border-[#00d4ff40] text-[#00d4ff] text-xs font-bold uppercase tracking-wider mb-3">
-            <span>🎥 Authentic Customer Stories</span> &bull; <span>Verified Video Proof</span>
+# New Ultra-Compact, Sleek 1-Frame Horizontal Video Section HTML
+VIDEO_SECTION_COMPACT_HTML = """
+    <!-- Verified Video Reviews Section (Compact 1-Frame Layout) -->
+    <section id="video-reviews" class="py-8 px-4 bg-[#0a2540] text-white relative overflow-hidden my-8 rounded-2xl border border-[#ffffff15] shadow-xl">
+      <div class="container mx-auto max-w-5xl relative z-10">
+        
+        <div class="text-center mb-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00d4ff15] border border-[#00d4ff30] text-[#00d4ff] text-[11px] font-bold uppercase tracking-wider mb-2">
+            <span>🎥 Verified Customer Videos</span> &bull; <span>5.0★ Verified Proof</span>
           </div>
-          <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-3">
-            Watch Real Customers Review Neon Auto Transport
+          <h2 class="text-2xl md:text-3xl font-black text-white tracking-tight">
+            Watch Real Customer Reviews
           </h2>
-          <p class="text-[#8ba3ba] text-sm md:text-base max-w-2xl mx-auto">
-            See real video testimonials from customers who shipped their vehicles across the country with $0 deposit and 5-star service.
-          </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
           
-          <!-- Video 1: Jennifer (Ohio to California) -->
-          <div class="bg-[#113054] rounded-3xl p-5 border border-[#ffffff15] shadow-xl flex flex-col items-center hover:border-[#00d4ff] transition duration-300">
-            <div class="w-full mb-4 relative rounded-2xl overflow-hidden shadow-inner bg-black" style="aspect-ratio: 9/16; max-height: 480px;">
+          <!-- Video Card 1: Jennifer (Ohio to California) -->
+          <div class="bg-[#113054] rounded-xl p-3.5 border border-[#ffffff15] shadow-md flex flex-row items-center gap-3.5 hover:border-[#00d4ff] transition duration-300">
+            <div class="w-[120px] sm:w-[135px] h-[220px] rounded-lg overflow-hidden bg-black flex-shrink-0 relative shadow">
               <iframe 
                 src="https://www.youtube.com/embed/L0np-zBOnXE" 
-                title="Jennifer's Review - Ohio to California Car Shipping" 
+                title="Jennifer's Review - Ohio to California" 
                 class="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
@@ -92,27 +89,27 @@ VIDEO_SECTION_HTML = """
               </iframe>
             </div>
             
-            <div class="w-full space-y-2 text-left pt-2">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold uppercase tracking-wider text-[#00d4ff] bg-[#00d4ff15] px-3 py-1 rounded-md">Ohio &rarr; California</span>
-                <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <div class="flex-1 space-y-1.5 text-left">
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#00d4ff] bg-[#00d4ff15] px-2 py-0.5 rounded">OH &rarr; CA</span>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
-              <h3 class="text-lg font-black text-white">Jennifer &bull; <span class="text-xs font-semibold text-[#8ba3ba]">Verified Customer</span></h3>
-              <p class="text-xs text-[#8ba3ba] leading-relaxed italic">
-                "Jennifer sharing her real car shipping experience moving her vehicle safely from Ohio to California."
+              <h3 class="text-base font-bold text-white">Jennifer</h3>
+              <p class="text-xs text-[#8ba3ba] leading-snug italic">
+                "Relocating from Ohio to California — seamless car shipping experience with zero deposit."
               </p>
               <a href="https://youtube.com/shorts/L0np-zBOnXE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-[#00d4ff] hover:underline pt-1">
-                Watch on YouTube &rarr;
+                Watch Full Video &rarr;
               </a>
             </div>
           </div>
 
-          <!-- Video 2: Sam (Florida to California) -->
-          <div class="bg-[#113054] rounded-3xl p-5 border border-[#ffffff15] shadow-xl flex flex-col items-center hover:border-[#00d4ff] transition duration-300">
-            <div class="w-full mb-4 relative rounded-2xl overflow-hidden shadow-inner bg-black" style="aspect-ratio: 9/16; max-height: 480px;">
+          <!-- Video Card 2: Sam (Florida to California) -->
+          <div class="bg-[#113054] rounded-xl p-3.5 border border-[#ffffff15] shadow-md flex flex-row items-center gap-3.5 hover:border-[#00d4ff] transition duration-300">
+            <div class="w-[120px] sm:w-[135px] h-[220px] rounded-lg overflow-hidden bg-black flex-shrink-0 relative shadow">
               <iframe 
                 src="https://www.youtube.com/embed/muV1OxXCXUU" 
-                title="Sam's Review - Florida to California Car Shipping" 
+                title="Sam's Review - Florida to California" 
                 class="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
@@ -120,17 +117,17 @@ VIDEO_SECTION_HTML = """
               </iframe>
             </div>
             
-            <div class="w-full space-y-2 text-left pt-2">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold uppercase tracking-wider text-[#00d4ff] bg-[#00d4ff15] px-3 py-1 rounded-md">Florida &rarr; California</span>
-                <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <div class="flex-1 space-y-1.5 text-left">
+              <div class="flex items-center justify-between flex-wrap gap-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-[#00d4ff] bg-[#00d4ff15] px-2 py-0.5 rounded">FL &rarr; CA</span>
+                <div class="flex text-amber-400 text-xs">★★★★★</div>
               </div>
-              <h3 class="text-lg font-black text-white">Sam &bull; <span class="text-xs font-semibold text-[#8ba3ba]">Verified Customer</span></h3>
-              <p class="text-xs text-[#8ba3ba] leading-relaxed italic">
-                "Sam reviewing his 5-star door-to-door car transport experience shipping from Florida to California."
+              <h3 class="text-base font-bold text-white">Sam</h3>
+              <p class="text-xs text-[#8ba3ba] leading-snug italic">
+                "5-star door-to-door car transport moving my vehicle safely from Florida to California."
               </p>
               <a href="https://www.youtube.com/shorts/muV1OxXCXUU" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-[#00d4ff] hover:underline pt-1">
-                Watch on YouTube &rarr;
+                Watch Full Video &rarr;
               </a>
             </div>
           </div>
@@ -140,7 +137,6 @@ VIDEO_SECTION_HTML = """
     </section>
 """
 
-# Pages to inject into
 TARGET_PAGES = [
     "index.html",
     "reviews.html",
@@ -161,29 +157,23 @@ for rel_path in TARGET_PAGES:
     with open(full_path, "r", encoding="utf-8") as f:
         html = f.read()
         
-    # Check if already injected
-    if "L0np-zBOnXE" in html:
-        print(f"Already contains video reviews: {rel_path}")
-        continue
-        
-    # 1. Inject JSON-LD Schema before </head>
-    if "</head>" in html:
-        html = html.replace("</head>", f"{VIDEO_SCHEMA_JSON}\n</head>")
-        
-    # 2. Inject Video Section HTML into main body or above reviews
-    if 'id="reviews"' in html:
-        html = html.replace('<section id="reviews"', f'{VIDEO_SECTION_HTML}\n<section id="reviews"')
-    elif 'id="author-byline"' in html:
-        html = html.replace('<section class="container mx-auto px-4 lg:px-8 max-w-4xl py-6" id="author-byline">', f'{VIDEO_SECTION_HTML}\n<section class="container mx-auto px-4 lg:px-8 max-w-4xl py-6" id="author-byline">')
-    elif '</main>' in html:
-        html = html.replace('</main>', f'{VIDEO_SECTION_HTML}\n</main>')
+    # Replace existing video section if present
+    if '<section id="video-reviews"' in html:
+        # Match from <section id="video-reviews" down to </section>
+        import re
+        html = re.sub(r'<section id="video-reviews".*?</section>', VIDEO_SECTION_COMPACT_HTML.strip(), html, flags=re.DOTALL)
+        print(f"REPLACED WITH COMPACT 1-FRAME UI: {rel_path}")
     else:
-        print(f"Could not find anchor for HTML insertion in {rel_path}")
-        continue
+        # Inject if missing
+        if "</head>" in html and "L0np-zBOnXE" not in html:
+            html = html.replace("</head>", f"{VIDEO_SCHEMA_JSON}\n</head>")
+        if 'id="reviews"' in html:
+            html = html.replace('<section id="reviews"', f'{VIDEO_SECTION_COMPACT_HTML}\n<section id="reviews"')
+        elif '</main>' in html:
+            html = html.replace('</main>', f'{VIDEO_SECTION_COMPACT_HTML}\n</main>')
+        print(f"INJECTED NEW COMPACT UI: {rel_path}")
         
     with open(full_path, "w", encoding="utf-8") as f:
         f.write(html)
-        
-    print(f"SUCCESS: Injected Video Reviews & Schema into {rel_path}")
 
-print("\nFINISHED INJECTING VIDEO REVIEWS ACROSS SITE!")
+print("\nFINISHED UPDATING VIDEO REVIEWS TO COMPACT 1-FRAME BEAUTIFUL UI!")
