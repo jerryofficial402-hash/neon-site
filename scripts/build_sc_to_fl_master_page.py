@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+TARGET_FILE = os.path.join(SITE_DIR, "south-carolina-to-florida-car-shipping", "index.html")
+
+sc_to_fl_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -685,3 +690,10 @@
   <script src="/js/calculator.js?v=2" defer></script>
 </body>
 </html>
+"""
+
+os.makedirs(os.path.dirname(TARGET_FILE), exist_ok=True)
+with open(TARGET_FILE, "w", encoding="utf-8") as f:
+    f.write(sc_to_fl_html)
+
+print("SUCCESS: Built Master 1,200+ Word SEO Guide for South Carolina to Florida Car Shipping!")
