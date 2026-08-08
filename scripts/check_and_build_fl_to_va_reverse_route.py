@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+REVERSE_TARGET = os.path.join(SITE_DIR, "florida-to-virginia-car-shipping", "index.html")
+
+fl_to_va_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -93,3 +98,10 @@
   <script src="/js/main.js?v=5" defer></script>
 </body>
 </html>
+"""
+
+os.makedirs(os.path.dirname(REVERSE_TARGET), exist_ok=True)
+with open(REVERSE_TARGET, "w", encoding="utf-8") as f:
+    f.write(fl_to_va_html)
+
+print("SUCCESS: Built Reverse Route Page for Florida to Virginia Car Shipping!")
