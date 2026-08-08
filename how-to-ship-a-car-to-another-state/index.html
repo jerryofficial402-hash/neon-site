@@ -167,7 +167,7 @@
           <span class="text-[#0a2540] font-bold">How to Ship a Car to Another State</span>
         </nav>
 
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#635bff]/10 text-[#635bff] text-xs font-extrabold uppercase tracking-wider mb-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#635bff]/10 text-[#4338ca] text-xs font-extrabold uppercase tracking-wider mb-4">
           MASTER EDUCATIONAL GUIDE &bull; 2026 EDITION
         </div>
 
@@ -181,7 +181,7 @@
             <strong>Quick Answer:</strong> To ship a car to another state: 1) Get quotes from licensed brokers (USDOT #4355879), 2) Select open vs. enclosed transport, 3) Schedule a flexible 3-5 day pickup window, 4) Complete the Bill of Lading condition inspection at pickup, and 5) Verify vehicle condition upon delivery. Interstate shipping typically costs <strong>$0.60 to $1.00 per mile</strong> and takes 2 to 7 days depending on total distance.
           </p>
           <p class="text-sm text-[#425466]">
-            Ready to arrange your shipment? Visit our dedicated <a href="/services/car-shipping-to-another-state/" class="text-[#635bff] font-bold hover:underline">Interstate Car Shipping Service Page</a> for instant booking.
+            Ready to arrange your shipment? Visit our dedicated <a href="/services/car-shipping-to-another-state/" class="text-[#4338ca] font-bold underline hover:no-underline">Interstate Car Shipping Service Page</a> for instant booking.
           </p>
         </div>
 
@@ -262,17 +262,17 @@
             <p class="text-sm mb-4">Transit times vary based on mileage and highway traffic corridors:</p>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
               <div class="p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <div class="text-[#635bff] font-black text-lg">1 – 3 Days</div>
+                <div class="text-[#4338ca] font-black text-lg">1 – 3 Days</div>
                 <div class="text-xs text-[#0a2540] font-bold mt-1">Regional Moves</div>
                 <div class="text-[11px] text-[#425466]">(Under 500 Miles)</div>
               </div>
               <div class="p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <div class="text-[#635bff] font-black text-lg">3 – 5 Days</div>
+                <div class="text-[#4338ca] font-black text-lg">3 – 5 Days</div>
                 <div class="text-xs text-[#0a2540] font-bold mt-1">Mid-Distance</div>
                 <div class="text-[11px] text-[#425466]">(500 – 1,500 Miles)</div>
               </div>
               <div class="p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <div class="text-[#635bff] font-black text-lg">5 – 8 Days</div>
+                <div class="text-[#4338ca] font-black text-lg">5 – 8 Days</div>
                 <div class="text-xs text-[#0a2540] font-bold mt-1">Cross-Country</div>
                 <div class="text-[11px] text-[#425466]">(1,500 – 3,000 Miles)</div>
               </div>
@@ -349,17 +349,17 @@
                   </div>
                 </div>
               </div>
-              <button type="button" id="btnAddVehicle" class="hidden"></button>
+              <button aria-label="Interactive Button" type="button" id="btnAddVehicle" class="hidden"></button>
               <select id="transportType" name="Transport Type" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl mb-3 bg-white">
                 <option value="open">Open Carrier</option>
                 <option value="enclosed">Enclosed Carrier</option>
               </select>
-              <button type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition text-base">
+              <button aria-label="Next" type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition text-base">
                 Continue to Rate &rarr;
               </button>
             </div>
             <div id="step2" class="hidden">
-              <button type="button" id="btnBackStep" class="mb-3 text-xs font-bold text-red-600">← Back</button>
+              <button aria-label="Interactive Button" type="button" id="btnBackStep" class="mb-3 text-xs font-bold text-red-600">← Back</button>
               <div class="grid grid-cols-2 gap-3 mb-3">
                 <input type="text" name="First Name" id="firstName" required="" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl" placeholder="First Name">
                 <input type="text" name="Last Name" id="lastName" required="" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl" placeholder="Last Name">
@@ -367,7 +367,7 @@
               <input type="email" name="Email" id="email" required="" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl mb-3" placeholder="Email Address">
               <input type="tel" name="Phone" id="phone" required="" class="w-full px-3.5 py-2.5 text-sm border border-[#e6e6e6] rounded-xl mb-3" placeholder="Phone Number">
               <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
-              <button type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition text-base">
+              <button aria-label="Interactive Button" type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition text-base">
                 Submit &amp; View Guaranteed Rate &rarr;
               </button>
             </div>

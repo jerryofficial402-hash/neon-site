@@ -205,15 +205,15 @@
             <div class="grid grid-cols-3 gap-4 py-4 border-y border-[#ffffff15] text-center sm:text-left">
               <div>
                 <div class="text-2xl font-black text-[#00d4ff]">$0</div>
-                <div class="text-xs text-[#8ba3ba] font-medium">Upfront Deposit</div>
+                <div class="text-xs text-[#475569] font-medium">Upfront Deposit</div>
               </div>
               <div>
                 <div class="text-2xl font-black text-white">2–4 Days</div>
-                <div class="text-xs text-[#8ba3ba] font-medium">Direct Transit</div>
+                <div class="text-xs text-[#475569] font-medium">Direct Transit</div>
               </div>
               <div>
                 <div class="text-2xl font-black text-[#00d4ff]">$500K</div>
-                <div class="text-xs text-[#8ba3ba] font-medium">Cargo Insurance</div>
+                <div class="text-xs text-[#475569] font-medium">Cargo Insurance</div>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
                   </div>
                 </div>
 
-                <button type="button" id="btnNextStep" class="w-full py-3.5 bg-[#635bff] text-white font-black rounded-xl hover:bg-[#0a2540] transition text-sm shadow-lg">
+                <button aria-label="Next" type="button" id="btnNextStep" class="w-full py-3.5 bg-[#635bff] text-white font-black rounded-xl hover:bg-[#0a2540] transition text-sm shadow-lg">
                   Calculate Instant Rate &rarr;
                 </button>
               </div>
@@ -278,8 +278,8 @@
                 </div>
 
                 <div class="flex gap-2">
-                  <button type="button" id="btnBackStep" class="w-1/3 py-3 bg-[#f6f9fc] text-[#0a2540] font-bold rounded-xl text-xs border border-[#e6e6e6]">Back</button>
-                  <button type="submit" class="w-2/3 py-3 bg-[#39FF14] text-[#0a2540] font-black rounded-xl hover:bg-black hover:text-white transition text-xs">Lock In Price &rarr;</button>
+                  <button aria-label="Interactive Button" type="button" id="btnBackStep" class="w-1/3 py-3 bg-[#f6f9fc] text-[#0a2540] font-bold rounded-xl text-xs border border-[#e6e6e6]">Back</button>
+                  <button aria-label="Interactive Button" type="submit" class="w-2/3 py-3 bg-[#39FF14] text-[#0a2540] font-black rounded-xl hover:bg-black hover:text-white transition text-xs">Lock In Price &rarr;</button>
                 </div>
               </div>
             </form>
@@ -294,7 +294,7 @@
       <div class="bg-white p-6 md:p-8 rounded-3xl border border-[#e6e6e6] shadow-xl border-l-4 border-l-[#00d4ff]">
         <div class="flex items-center gap-2 mb-3">
           <span class="px-3 py-1 bg-[#00d4ff20] text-[#0a2540] text-xs font-black uppercase tracking-wider rounded-md">Quick Answer</span>
-          <span class="text-xs text-[#8ba3ba] font-bold">&bull; Route Snapshot</span>
+          <span class="text-xs text-[#334155] font-bold">&bull; Route Snapshot</span>
         </div>
         <p class="text-sm md:text-base text-[#425466] leading-relaxed font-medium">
           Shipping a standard sedan from Maryland to Florida (car transport MD to FL) typically costs <strong>$700 to $1,150</strong> on open transport, covering <strong>900–1,050 miles</strong> depending on your exact pickup and delivery cities. Transit takes <strong>2–4 days</strong> after pickup, plus a 1–2 day pickup window — so plan on <strong>3–6 days from booking to delivery</strong>. Shipping <strong>from Florida back to Maryland</strong> runs a comparable range, generally <strong>$750 to $1,200</strong>, with the exact number depending on season and current carrier capacity in each direction. If you're asking more generally how much it costs to ship <em>any</em> car to Florida, most East Coast origin states fall in the <strong>$400–$1,300</strong> range depending on distance — Maryland sits toward the higher end of that range because of the roughly 1,000-mile distance involved.
@@ -360,37 +360,37 @@
               <tr class="hover:bg-[#f6f9fc]">
                 <td class="py-3 px-4 font-bold text-[#0a2540]">Baltimore, MD &rarr; Jacksonville, FL</td>
                 <td class="py-3 px-4">~850 mi</td>
-                <td class="py-3 px-4 text-[#635bff] font-bold">$700 – $980</td>
+                <td class="py-3 px-4 text-[#4338ca] font-bold">$700 – $980</td>
                 <td class="py-3 px-4">2–3 days</td>
               </tr>
               <tr class="hover:bg-[#f6f9fc]">
                 <td class="py-3 px-4 font-bold text-[#0a2540]">Rockville/Bethesda, MD &rarr; Orlando, FL</td>
                 <td class="py-3 px-4">~950 mi</td>
-                <td class="py-3 px-4 text-[#635bff] font-bold">$800 – $1,100</td>
+                <td class="py-3 px-4 text-[#4338ca] font-bold">$800 – $1,100</td>
                 <td class="py-3 px-4">2–4 days</td>
               </tr>
               <tr class="hover:bg-[#f6f9fc]">
                 <td class="py-3 px-4 font-bold text-[#0a2540]">Annapolis, MD &rarr; Tampa, FL</td>
                 <td class="py-3 px-4">~1,000 mi</td>
-                <td class="py-3 px-4 text-[#635bff] font-bold">$820 – $1,140</td>
+                <td class="py-3 px-4 text-[#4338ca] font-bold">$820 – $1,140</td>
                 <td class="py-3 px-4">2–4 days</td>
               </tr>
               <tr class="hover:bg-[#f6f9fc]">
                 <td class="py-3 px-4 font-bold text-[#0a2540]">Silver Spring, MD &rarr; Miami, FL</td>
                 <td class="py-3 px-4">~1,050 mi</td>
-                <td class="py-3 px-4 text-[#635bff] font-bold">$850 – $1,180</td>
+                <td class="py-3 px-4 text-[#4338ca] font-bold">$850 – $1,180</td>
                 <td class="py-3 px-4">2–4 days</td>
               </tr>
               <tr class="hover:bg-[#f6f9fc]">
                 <td class="py-3 px-4 font-bold text-[#0a2540]">Frederick, MD &rarr; Fort Myers, FL</td>
                 <td class="py-3 px-4">~1,020 mi</td>
-                <td class="py-3 px-4 text-[#635bff] font-bold">$830 – $1,150</td>
+                <td class="py-3 px-4 text-[#4338ca] font-bold">$830 – $1,150</td>
                 <td class="py-3 px-4">2–4 days</td>
               </tr>
               <tr class="hover:bg-[#f6f9fc]">
                 <td class="py-3 px-4 font-bold text-[#0a2540]">Columbia, MD &rarr; Fort Lauderdale, FL</td>
                 <td class="py-3 px-4">~1,030 mi</td>
-                <td class="py-3 px-4 text-[#635bff] font-bold">$840 – $1,160</td>
+                <td class="py-3 px-4 text-[#4338ca] font-bold">$840 – $1,160</td>
                 <td class="py-3 px-4">2–4 days</td>
               </tr>
             </tbody>
@@ -417,7 +417,7 @@
         </ol>
 
         <p class="text-xs text-[#425466] leading-relaxed pt-2">
-          If your delivery address is a Florida location the carrier can't physically reach — a gated community, a downtown area with truck restrictions — your driver will coordinate a nearby meeting point in advance rather than surprise you with it on delivery day. For a complete deep-dive into interstate shipping preparation, read our master guide on <a href="/how-to-ship-a-car-to-another-state/" class="text-[#635bff] font-bold hover:underline">How to Ship a Car to Another State &rarr;</a>
+          If your delivery address is a Florida location the carrier can't physically reach — a gated community, a downtown area with truck restrictions — your driver will coordinate a nearby meeting point in advance rather than surprise you with it on delivery day. For a complete deep-dive into interstate shipping preparation, read our master guide on <a href="/how-to-ship-a-car-to-another-state/" class="text-[#4338ca] font-bold underline hover:no-underline">How to Ship a Car to Another State &rarr;</a>
         </p>
       </div>
     </section>
@@ -430,7 +430,7 @@
           <p class="text-xs text-[#425466] leading-relaxed mb-4">
             Open transport is the standard, most economical choice for this corridor and what the majority of Maryland-to-Florida shipments use — daily drivers, SUVs, and trucks all ship this way without issue.
           </p>
-          <a href="/services/open-auto-transport/" class="text-xs font-bold text-[#635bff] hover:underline">Learn About Open Transport &rarr;</a>
+          <a href="/services/open-auto-transport/" class="text-xs font-bold text-[#4338ca] hover:underline">Learn About Open Transport &rarr;</a>
         </div>
 
         <div class="bg-white p-6 rounded-3xl border border-[#e6e6e6]">
@@ -438,7 +438,7 @@
           <p class="text-xs text-[#425466] leading-relaxed mb-4">
             Enclosed transport is worth the added 30–50% cost for classic cars, exotics, or any vehicle you want fully shielded from road debris and weather over a 900+ mile haul. Fewer enclosed carriers run this specific lane, so book slightly further ahead.
           </p>
-          <a href="/services/enclosed-auto-transport/" class="text-xs font-bold text-[#635bff] hover:underline">Learn About Enclosed Transport &rarr;</a>
+          <a href="/services/enclosed-auto-transport/" class="text-xs font-bold text-[#4338ca] hover:underline">Learn About Enclosed Transport &rarr;</a>
         </div>
       </div>
     </section>
@@ -471,7 +471,7 @@
           </div>
           <div>
             <h3 class="font-bold text-[#0a2540] mb-1">How much to ship a car from Florida to Maryland?</h3>
-            <p class="text-xs text-[#425466]">The reverse route generally runs $750 to $1,200 on open transport — a similar range to Maryland-to-Florida, with the exact figure depending on season and which direction has more available carrier capacity at the time you book. See our <a href="/florida-to-maryland-car-shipping/" class="text-[#635bff] font-bold hover:underline">Florida to Maryland car shipping guide</a> for details.</p>
+            <p class="text-xs text-[#425466]">The reverse route generally runs $750 to $1,200 on open transport — a similar range to Maryland-to-Florida, with the exact figure depending on season and which direction has more available carrier capacity at the time you book. See our <a href="/florida-to-maryland-car-shipping/" class="text-[#4338ca] font-bold underline hover:no-underline">Florida to Maryland car shipping guide</a> for details.</p>
           </div>
           <div>
             <h3 class="font-bold text-[#0a2540] mb-1">How to ship a car to Florida?</h3>
@@ -479,7 +479,7 @@
           </div>
           <div>
             <h3 class="font-bold text-[#0a2540] mb-1">How much does it cost to ship a car to Florida?</h3>
-            <p class="text-xs text-[#425466]">It depends heavily on your origin state and distance. Most East Coast routes to Florida run $400 to $1,300. From Maryland specifically, expect $700 to $1,150 for the roughly 1,000-mile trip. Use our instant calculator above for an exact quote from your ZIP code, or check our <a href="/florida-car-shipping/" class="text-[#635bff] font-bold hover:underline">Florida Car Shipping Hub</a>.</p>
+            <p class="text-xs text-[#425466]">It depends heavily on your origin state and distance. Most East Coast routes to Florida run $400 to $1,300. From Maryland specifically, expect $700 to $1,150 for the roughly 1,000-mile trip. Use our instant calculator above for an exact quote from your ZIP code, or check our <a href="/florida-car-shipping/" class="text-[#4338ca] font-bold underline hover:no-underline">Florida Car Shipping Hub</a>.</p>
           </div>
           <div>
             <h3 class="font-bold text-[#0a2540] mb-1">How long does it take to ship a car from Maryland to Florida?</h3>
@@ -538,7 +538,7 @@
         <img src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover flex-shrink-0" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover;">
         <div class="flex-1">
           <div class="flex flex-wrap items-center gap-2 mb-1">
-            <div class="font-bold text-[#0a2540] text-lg"><a href="/author/shazil-ali/" class="hover:text-[#635bff] transition hover:underline">Shazil Ali</a></div>
+            <div class="font-bold text-[#0a2540] text-lg"><a href="/author/shazil-ali/" class="hover:text-[#4338ca] transition hover:underline">Shazil Ali</a></div>
             <span class="px-2 py-0.5 rounded-md bg-[#e0f2fe] text-[#0369a1] text-xs font-bold uppercase tracking-wider">Fact Checked &amp; Reviewed</span>
           </div>
           <div class="text-[#0a2540] text-sm font-bold mb-2">Director of Operations <span class="text-[#8ba3ba] mx-1">|</span> Neon Auto Transport</div>
@@ -558,19 +558,19 @@
           <div>
             <h4 class="font-bold text-[#0a2540] mb-2">State Hubs &amp; Reverse Route:</h4>
             <ul class="space-y-1 text-[#425466]">
-              <li>&bull; <a href="/florida-to-maryland-car-shipping/" class="text-[#635bff] font-semibold hover:underline">Florida to Maryland Car Shipping (Reverse Route)</a></li>
-              <li>&bull; <a href="/maryland-car-shipping/" class="text-[#635bff] font-semibold hover:underline">Maryland Car Shipping Services</a></li>
-              <li>&bull; <a href="/florida-car-shipping/" class="text-[#635bff] font-semibold hover:underline">Florida Car Shipping Services</a></li>
+              <li>&bull; <a href="/florida-to-maryland-car-shipping/" class="text-[#4338ca] font-semibold hover:underline">Florida to Maryland Car Shipping (Reverse Route)</a></li>
+              <li>&bull; <a href="/maryland-car-shipping/" class="text-[#4338ca] font-semibold hover:underline">Maryland Car Shipping Services</a></li>
+              <li>&bull; <a href="/florida-car-shipping/" class="text-[#4338ca] font-semibold hover:underline">Florida Car Shipping Services</a></li>
             </ul>
           </div>
           <div>
             <h4 class="font-bold text-[#0a2540] mb-2">Specialized Transport &amp; Sibling Corridors:</h4>
             <ul class="space-y-1 text-[#425466]">
-              <li>&bull; <a href="/virginia-to-florida-car-shipping/" class="text-[#635bff] font-semibold hover:underline">Virginia to Florida Car Delivery (Sibling Corridor)</a></li>
-              <li>&bull; <a href="/how-to-ship-a-car-to-another-state/" class="text-[#635bff] font-semibold hover:underline">How to Ship a Car Master Guide</a></li>
-              <li>&bull; <a href="/services/military-car-shipping/" class="text-[#635bff] font-semibold hover:underline">Military Car Shipping Services (Fort Meade &amp; Andrews)</a></li>
-              <li>&bull; <a href="/services/open-auto-transport/" class="text-[#635bff] font-semibold hover:underline">Open Auto Transport Services</a></li>
-              <li>&bull; <a href="/services/enclosed-auto-transport/" class="text-[#635bff] font-semibold hover:underline">Enclosed Transport Services</a></li>
+              <li>&bull; <a href="/virginia-to-florida-car-shipping/" class="text-[#4338ca] font-semibold hover:underline">Virginia to Florida Car Delivery (Sibling Corridor)</a></li>
+              <li>&bull; <a href="/how-to-ship-a-car-to-another-state/" class="text-[#4338ca] font-semibold hover:underline">How to Ship a Car Master Guide</a></li>
+              <li>&bull; <a href="/services/military-car-shipping/" class="text-[#4338ca] font-semibold hover:underline">Military Car Shipping Services (Fort Meade &amp; Andrews)</a></li>
+              <li>&bull; <a href="/services/open-auto-transport/" class="text-[#4338ca] font-semibold hover:underline">Open Auto Transport Services</a></li>
+              <li>&bull; <a href="/services/enclosed-auto-transport/" class="text-[#4338ca] font-semibold hover:underline">Enclosed Transport Services</a></li>
             </ul>
           </div>
         </div>

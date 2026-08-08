@@ -604,7 +604,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h1>NEON <span>DISPATCH</span></h1>
       <p>Enter dispatcher password to access the lead dashboard</p>
       <input type="password" id="login-password" placeholder="Password" autofocus="">
-      <button id="login-btn" onclick="attemptLogin()">Access Dashboard</button>
+      <button aria-label="Interactive Button" id="login-btn" onclick="attemptLogin()">Access Dashboard</button>
       <p class="login-error" id="login-error">Incorrect password. Try again.</p>
     </div>
   </div>
@@ -618,9 +618,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1>NEON <span>DISPATCH</span></h1>
       </div>
       <div class="dash-header-right">
-        <button class="dash-btn" onclick="refreshLeads()">↻ Refresh</button>
-        <button class="dash-btn" onclick="exportCSV()">↓ Export CSV</button>
-        <button class="dash-btn danger" onclick="logout()">Logout</button>
+        <button aria-label="Interactive Button" class="dash-btn" onclick="refreshLeads()">↻ Refresh</button>
+        <button aria-label="Interactive Button" class="dash-btn" onclick="exportCSV()">↓ Export CSV</button>
+        <button aria-label="Interactive Button" class="dash-btn danger" onclick="logout()">Logout</button>
       </div>
     </div>
 
@@ -646,12 +646,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Filters -->
     <div class="filters-row" id="filters-row">
-      <button class="filter-btn active" data-filter="all" onclick="filterLeads('all', this)">All</button>
-      <button class="filter-btn" data-filter="new" onclick="filterLeads('New Lead', this)">New</button>
-      <button class="filter-btn" data-filter="contacted" onclick="filterLeads('Contacted', this)">Contacted</button>
-      <button class="filter-btn" data-filter="quoted" onclick="filterLeads('Quoted', this)">Quoted</button>
-      <button class="filter-btn" data-filter="booked" onclick="filterLeads('Booked', this)">Booked</button>
-      <button class="filter-btn" data-filter="delivered" onclick="filterLeads('Delivered', this)">Delivered</button>
+      <button aria-label="Interactive Button" class="filter-btn active" data-filter="all" onclick="filterLeads('all', this)">All</button>
+      <button aria-label="Interactive Button" class="filter-btn" data-filter="new" onclick="filterLeads('New Lead', this)">New</button>
+      <button aria-label="Interactive Button" class="filter-btn" data-filter="contacted" onclick="filterLeads('Contacted', this)">Contacted</button>
+      <button aria-label="Interactive Button" class="filter-btn" data-filter="quoted" onclick="filterLeads('Quoted', this)">Quoted</button>
+      <button aria-label="Interactive Button" class="filter-btn" data-filter="booked" onclick="filterLeads('Booked', this)">Booked</button>
+      <button aria-label="Interactive Button" class="filter-btn" data-filter="delivered" onclick="filterLeads('Delivered', this)">Delivered</button>
     </div>
 
     <!-- Table -->
@@ -681,7 +681,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="modal-card" onclick="event.stopPropagation()">
       <div class="modal-header">
         <h2 id="modal-title">Lead Details</h2>
-        <button class="modal-close" onclick="closeModal()">×</button>
+        <button aria-label="Interactive Button" class="modal-close" onclick="closeModal()">×</button>
       </div>
       <div class="modal-body" id="modal-body">
         <!-- Dynamically populated -->
@@ -885,12 +885,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           '</select>' +
         '</div>' +
 
-        '<button class="modal-save-btn" onclick="saveLead(\'' + lead.id + '\')">Save Changes</button>';
+        '<button aria-label="Interactive Button" class="modal-save-btn" onclick="saveLead(\'' + lead.id + '\')">Save Changes</button>';
 
       if (lead.syncedWithCRM) {
         document.getElementById('modal-body').innerHTML += '<div class="modal-synced-badge">✓ Synced with Neon CRM</div>';
       } else {
-        document.getElementById('modal-body').innerHTML += '<button class="modal-crm-btn" id="modal-crm-btn" onclick="sendToCRM(\'' + lead.id + '\')">📤 Send to Neon CRM</button>';
+        document.getElementById('modal-body').innerHTML += '<button aria-label="Interactive Button" class="modal-crm-btn" id="modal-crm-btn" onclick="sendToCRM(\'' + lead.id + '\')">📤 Send to Neon CRM</button>';
       }
 
       document.getElementById('modal-overlay').classList.add('active');
