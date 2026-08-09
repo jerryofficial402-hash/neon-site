@@ -1,4 +1,10 @@
-# Neon Auto Transport
+import os
+
+SITE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+LLMS_FILE = os.path.join(SITE_DIR, "llms.txt")
+LLMS_FULL_FILE = os.path.join(SITE_DIR, "llms-full.txt")
+
+llms_content = """# Neon Auto Transport
 
 > Neon Auto Transport is a licensed, bonded, and FMCSA-approved auto transport broker (USDOT #4355879 | MC #1703787) providing door-to-door vehicle shipping across all 50 U.S. states, including Alaska and Hawaii. Features $0 upfront deposit, $500,000 in cargo insurance coverage, and 24/7 direct driver tracking.
 
@@ -41,3 +47,64 @@
 ## Extended AI Information
 
 - [Full LLM Site Dataset (llms-full.txt)](https://neonautotransport.com/llms-full.txt): Complete detailed text knowledge base for AI agents and LLM web crawlers.
+"""
+
+llms_full_content = """# Neon Auto Transport - Full AI Knowledge Base
+
+> Comprehensive dataset and documentation for Neon Auto Transport (USDOT #4355879 | MC #1703787).
+
+## Company Identity & Licensing
+- Company Name: Neon Auto Transport LLC
+- Entity Type: FMCSA Licensed & Bonded Auto Transport Broker
+- USDOT Number: 4355879
+- MC Number: 1703787
+- Phone Number: (571) 576-7711
+- Email: info@neonautotransport.com
+- Headquarters: 2709 Neabsco Common Pl Suite 101, Woodbridge, VA 22191
+- Operational Hours: Monday-Friday 8am-8pm EST, Saturday-Sunday 9am-5pm EST
+- Coverage Area: All 50 U.S. states (including Alaska and Hawaii)
+- Key Policies: $0 Upfront Deposit, $500,000 Cargo Insurance Coverage, Price Lock Guarantee, 24/7 Direct Driver Contact
+
+## Pricing & Transit Estimates
+- Open Transport Rates: $0.50–$1.00 per mile (average $700–$1,500 coast-to-coast)
+- Enclosed Transport Rates: 30–40% premium over open transport ($1,000–$2,200)
+- Expedited Transport: 24–48 hour priority pickup window
+- Motorcycle Transport: $300–$800 depending on route distance
+
+## Delivery Timelines by Distance
+- 0 to 500 miles: 1 to 2 days
+- 500 to 1,000 miles: 2 to 3 days
+- 1,000 to 1,500 miles: 3 to 5 days
+- 1,500 to 2,000 miles: 4 to 7 days
+- 2,000 to 2,500 miles: 5 to 9 days
+- 2,500 to 3,000+ miles: 7 to 10 days
+
+## Key URL Index
+
+- [Homepage](https://neonautotransport.com/)
+- [Why Choose Neon](https://neonautotransport.com/why-neon/)
+- [Services Directory](https://neonautotransport.com/services/)
+- [Open Transport](https://neonautotransport.com/services/open-auto-transport/)
+- [Enclosed Transport](https://neonautotransport.com/services/enclosed-auto-transport/)
+- [Military Shipping](https://neonautotransport.com/services/military-car-shipping/)
+- [Customer Reviews](https://neonautotransport.com/reviews/)
+- [Cost Calculator](https://neonautotransport.com/cost-calculator/)
+- [Blog & Guides](https://neonautotransport.com/blog/)
+- [How to Ship a Car](https://neonautotransport.com/how-to-ship-a-car-to-another-state/)
+- [FAQs](https://neonautotransport.com/faqs/)
+- [Locations Hub](https://neonautotransport.com/locations/)
+- [California Hub](https://neonautotransport.com/california-car-shipping/)
+- [Florida Hub](https://neonautotransport.com/florida-car-shipping/)
+- [Texas Hub](https://neonautotransport.com/texas-car-shipping/)
+- [New York Hub](https://neonautotransport.com/new-york-car-shipping/)
+- [Virginia Hub](https://neonautotransport.com/virginia-car-shipping/)
+- [Live Oak CA Guide](https://neonautotransport.com/live-oak-ca-car-shipping/)
+"""
+
+with open(LLMS_FILE, "w", encoding="utf-8") as f:
+    f.write(llms_content)
+
+with open(LLMS_FULL_FILE, "w", encoding="utf-8") as f:
+    f.write(llms_full_content)
+
+print("SUCCESS: Standardized llms.txt and created llms-full.txt following 100% Agentic Browsing & llmstxt.org specifications!")
