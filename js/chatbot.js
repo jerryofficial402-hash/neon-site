@@ -41,10 +41,10 @@
     chatBubble.id = 'neon-chat-bubble';
     chatBubble.setAttribute('aria-label', 'Open AI chat assistant');
     chatBubble.innerHTML = `
-      <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" style="width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important;">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
       </svg>
-      <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+      <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28" style="display:none;width:28px!important;height:28px!important;max-width:28px!important;max-height:28px!important;">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
@@ -60,7 +60,7 @@
     chatWindow.innerHTML = `
       <div class="neon-chat-header">
         <div class="neon-chat-header-avatar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
           </svg>
         </div>
@@ -69,7 +69,7 @@
           <p><span class="status-dot"></span>Online — Responds instantly</p>
         </div>
         <button class="neon-chat-header-close" id="neon-chat-close" aria-label="Close chat">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
@@ -81,7 +81,7 @@
       <div class="neon-chat-input-area" id="neon-chat-input-area">
         <textarea id="neon-chat-input" class="neon-chat-input" placeholder="${CONFIG.placeholderText}" rows="1"></textarea>
         <button id="neon-chat-send" class="neon-chat-send" aria-label="Send message">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;">
             <line x1="22" y1="2" x2="11" y2="13"></line>
             <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
           </svg>

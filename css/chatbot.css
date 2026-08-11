@@ -636,3 +636,21 @@
   line-height: 1.5;
   font-weight: 500;
 }
+
+
+/* ---- Strict SVG Sizing Guard (Prevents SVG explosion) ---- */
+#neon-chat-bubble svg {
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+}
+#neon-chat-window svg,
+.neon-chat-header-avatar svg,
+.neon-chat-header-close svg,
+.neon-chat-send svg {
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+}
