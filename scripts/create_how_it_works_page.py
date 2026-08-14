@@ -1,0 +1,191 @@
+import os
+
+HOW_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\how-it-works"
+os.makedirs(HOW_DIR, exist_ok=True)
+HOW_FILE = os.path.join(HOW_DIR, "index.html")
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P5K57THT');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>How Car Shipping Works | Step-by-Step Auto Transport Guide</title>
+  <meta name="description" content="Learn how car shipping works with Neon Auto Transport. Step-by-step guide from getting a quote and carrier dispatch to vehicle inspection and door-to-door delivery.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Neon Auto Transport">
+  <link rel="canonical" href="https://neonautotransport.com/how-it-works/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neonautotransport.com/how-it-works/">
+  <meta property="og:title" content="How Car Shipping Works | Step-by-Step Auto Transport Guide">
+  <meta property="og:description" content="Step-by-step auto transport guide: instant quote, carrier assignment, pickup inspection, and safe door-to-door delivery with Neon Auto Transport.">
+  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta property="og:site_name" content="Neon Auto Transport">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="/css/tailwind.css?v=3">
+</head>
+<body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased">
+  <!-- Header Navigation -->
+  <header class="bg-[#0a2540] text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-black text-xl text-[#38bdf8] tracking-tight">
+        <span>NEON</span><span class="text-white text-xs font-normal">AUTO TRANSPORT</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-[#cdd5df]">
+        <a href="/" class="hover:text-white transition">Home</a>
+        <a href="/services/" class="hover:text-white transition">Services</a>
+        <a href="/locations/" class="hover:text-white transition">Locations</a>
+        <a href="/cost-calculator/" class="hover:text-white transition">Cost Calculator</a>
+        <a href="/how-it-works/" class="text-white font-bold underline">How It Works</a>
+        <a href="/why-neon/" class="hover:text-white transition">Why Neon</a>
+        <a href="/contact.html" class="hover:text-white transition">Contact</a>
+      </nav>
+      <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-6 py-2.5 rounded-full font-black text-sm hover:bg-[#32e011] transition shadow-md">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-[#0a2540] to-[#103056] text-white py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+      <span class="bg-white/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider inline-block mb-4">Educational Guide</span>
+      <h1 class="text-3xl lg:text-5xl font-black text-white mb-6 tracking-tight">How Car Shipping Works</h1>
+      <p class="text-lg text-[#cdd5df] leading-relaxed max-w-2xl mx-auto font-normal mb-6">
+        Shipping a vehicle doesn't have to be complicated. Learn step-by-step how door-to-door auto transport works from getting an instant quote to vehicle delivery and inspection.
+      </p>
+      <p class="text-xs text-slate-300 font-medium">
+        Neon Auto Transport LLC is a licensed auto transport broker operating under MC #1703787 and USDOT #4355879.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Step-by-Step Guide -->
+  <main class="container mx-auto px-4 lg:px-8 max-w-4xl py-16">
+    <div class="space-y-12">
+
+      <!-- Step 1 -->
+      <div class="bg-white p-8 rounded-2xl border border-[#e6e6e6] shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-10 h-10 bg-[#0a2540] text-[#39FF14] font-black text-xl rounded-full flex items-center justify-center">1</span>
+          <h2 class="text-2xl font-bold text-[#0a2540]">Request a Quote & Select Transport Type</h2>
+        </div>
+        <p class="text-[#425466] mb-4 leading-relaxed font-normal">
+          First, submit your pickup and delivery ZIP codes, vehicle make and model, and preferred shipping timeframe. You can select between <a href="/services/open-auto-transport/" class="text-[#2563eb] font-bold hover:underline">Open Auto Transport</a> (the most cost-effective method) or <a href="/services/enclosed-auto-transport/" class="text-[#2563eb] font-bold hover:underline">Enclosed Car Shipping</a> (ideal for luxury, classic, or exotic vehicles).
+        </p>
+        <p class="text-sm text-[#425466] font-normal">
+          Use our <a href="/cost-calculator/" class="text-[#2563eb] font-bold hover:underline">Car Shipping Cost Calculator</a> to estimate pricing for your route before requesting your personalized binding quote.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-white p-8 rounded-2xl border border-[#e6e6e6] shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-10 h-10 bg-[#0a2540] text-[#39FF14] font-black text-xl rounded-full flex items-center justify-center">2</span>
+          <h2 class="text-2xl font-bold text-[#0a2540]">Carrier Dispatch & Pickup Scheduling</h2>
+        </div>
+        <p class="text-[#425466] mb-4 leading-relaxed font-normal">
+          Once your quote is accepted, Neon Auto Transport dispatches your shipment to a 100% vetted motor carrier operating on your route. All carriers in our network undergo USDOT safety rating verification and carry active cargo insurance ($100,000–$250,000+).
+        </p>
+        <p class="text-sm text-[#425466] font-normal">
+          Your assigned driver contacts you 24 hours prior to pickup to confirm your pickup window and arrange accessible door-to-door loading points.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-white p-8 rounded-2xl border border-[#e6e6e6] shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-10 h-10 bg-[#0a2540] text-[#39FF14] font-black text-xl rounded-full flex items-center justify-center">3</span>
+          <h2 class="text-2xl font-bold text-[#0a2540]">Inspection, Transit & Safe Handoff</h2>
+        </div>
+        <p class="text-[#425466] mb-4 leading-relaxed font-normal">
+          At pickup, you and the driver complete a detailed visual inspection recorded on the <strong>Bill of Lading (BOL)</strong>. Upon arrival at your destination, perform a final walk-around inspection, verify vehicle condition, sign the BOL, and receive your keys.
+        </p>
+      </div>
+
+      <!-- Preparation Checklist -->
+      <div class="bg-[#f8fafc] p-8 rounded-2xl border border-[#e6e6e6]">
+        <h3 class="text-xl font-bold text-[#0a2540] mb-4">How to Prepare Your Vehicle for Transport</h3>
+        <ul class="space-y-3 text-sm font-medium text-[#425466] list-disc pl-5">
+          <li>Clean your vehicle inside and out for an accurate inspection.</li>
+          <li>Remove all personal items (up to 100 lbs permitted in the trunk).</li>
+          <li>Ensure gas tank is around 1/4 full to reduce transport weight.</li>
+          <li>Disable automatic alarm systems and note any existing cosmetic blemishes.</li>
+        </ul>
+      </div>
+
+      <!-- Dual Call to Action -->
+      <div class="p-8 bg-[#0a2540] rounded-2xl text-center text-white shadow-xl">
+        <h3 class="text-2xl font-bold mb-3 text-white">Ready to Ship Your Vehicle?</h3>
+        <p class="text-[#cdd5df] mb-6 text-sm max-w-xl mx-auto">Get a transparent auto transport quote or estimate pricing tailored to your exact route.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-md w-full sm:w-auto">Get My Free Quote</a>
+          <a href="/cost-calculator/" class="bg-white/10 text-white border border-white/20 px-8 py-3.5 rounded-full font-bold text-base hover:bg-white/20 transition w-full sm:w-auto">Use Cost Calculator</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Navigation -->
+  <footer class="bg-[#0a2540] text-[#cdd5df] py-12 border-t border-white/10">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8 text-xs">
+      <div>
+        <h4 class="font-bold text-white mb-3 uppercase tracking-wider">Services</h4>
+        <ul class="space-y-2">
+          <li><a href="/services/open-auto-transport/" class="hover:text-white transition">Open Auto Transport</a></li>
+          <li><a href="/services/enclosed-auto-transport/" class="hover:text-white transition">Enclosed Car Shipping</a></li>
+          <li><a href="/services/door-to-door-car-shipping.html" class="hover:text-white transition">Door-to-Door</a></li>
+          <li><a href="/services/expedited-auto-transport.html" class="hover:text-white transition">Expedited Transport</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3 uppercase tracking-wider">Locations</h4>
+        <ul class="space-y-2">
+          <li><a href="/locations/" class="hover:text-white transition">All Locations</a></li>
+          <li><a href="/california-car-shipping/" class="hover:text-white transition">California</a></li>
+          <li><a href="/texas-car-shipping/" class="hover:text-white transition">Texas</a></li>
+          <li><a href="/florida-car-shipping/" class="hover:text-white transition">Florida</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-2">
+          <li><a href="/cost-calculator/" class="hover:text-white transition">Cost Calculator</a></li>
+          <li><a href="/car-shipping-quote/" class="hover:text-white transition">Free Quote</a></li>
+          <li><a href="/how-it-works/" class="hover:text-white transition">How It Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-3 uppercase tracking-wider">Company</h4>
+        <ul class="space-y-2">
+          <li><a href="/why-neon/" class="hover:text-white transition">Why Neon</a></li>
+          <li><a href="/reviews.html" class="hover:text-white transition">Reviews</a></li>
+          <li><a href="/contact.html" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl pt-8 mt-8 border-t border-white/10 text-center text-[11px] text-slate-400">
+      <p>© 2026 Neon Auto Transport LLC. All rights reserved. MC #1703787 • USDOT #4355879</p>
+    </div>
+  </footer>
+</body>
+</html>"""
+
+with open(HOW_FILE, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Created {HOW_FILE}")

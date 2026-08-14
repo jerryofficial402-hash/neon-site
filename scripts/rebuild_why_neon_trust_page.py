@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+WHY_FILE_1 = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\why-neon.html"
+WHY_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\why-neon"
+os.makedirs(WHY_DIR, exist_ok=True)
+WHY_FILE_2 = os.path.join(WHY_DIR, "index.html")
+
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -166,4 +174,12 @@
     </div>
   </footer>
 </body>
-</html>
+</html>"""
+
+with open(WHY_FILE_1, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+with open(WHY_FILE_2, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Rebuilt {WHY_FILE_1} and {WHY_FILE_2} into modern Trust / EEAT pages!")
