@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+import os
+
+SERVICES_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\services\index.html"
+
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -369,4 +373,9 @@
     </div>
   </footer>
 </body>
-</html>
+</html>"""
+
+with open(SERVICES_FILE, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Successfully deployed focused Services Hub with 8 core cards and specialized requests section to {SERVICES_FILE}")
