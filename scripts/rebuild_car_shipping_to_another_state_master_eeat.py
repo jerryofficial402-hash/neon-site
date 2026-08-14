@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+SERVICES_DIR = os.path.join(BASE_DIR, "services")
+STATE_FILE_1 = os.path.join(SERVICES_DIR, "car-shipping-to-another-state.html")
+STATE_DIR = os.path.join(SERVICES_DIR, "car-shipping-to-another-state")
+STATE_FILE_2 = os.path.join(STATE_DIR, "index.html")
+
+os.makedirs(STATE_DIR, exist_ok=True)
+
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -634,4 +644,10 @@
     </div>
   </footer>
 </body>
-</html>
+</html>"""
+
+for target in [STATE_FILE_1, STATE_FILE_2]:
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+print(f"SUCCESS: Successfully deployed master EEAT Ship a Car to Another State content to {STATE_FILE_1} and {STATE_FILE_2}")
