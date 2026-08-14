@@ -1,15 +1,24 @@
 <!DOCTYPE html><html lang="en"><head>
-  <!-- Google Tag Manager (Deferred for Mobile Performance) -->
+  <!-- Google Tag Manager (Interaction Deferred for Mobile) -->
 <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
+  (function() {
+    var gtmLoaded = false;
+    function loadGTM() {
+      if (gtmLoaded) return;
+      gtmLoaded = true;
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-P5K57THT');
-    }, 2000);
-  });
+    }
+    ['touchstart', 'scroll', 'pointermove', 'click'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { passive: true, once: true });
+    });
+    window.addEventListener('load', function() {
+      setTimeout(loadGTM, 3500);
+    });
+  })();
 </script>
 <!-- End Google Tag Manager -->
  <meta charset="UTF-8">
@@ -583,7 +592,8 @@ footer .pt-8.border-t {
     ]
   }
   </script>
- <link rel="stylesheet" href="/css/tailwind.css?v=3">
+ <link rel="preload" href="/css/tailwind.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=3"></noscript>
  <!-- Mobile Bugs Fixes -->
  <style id="mobile-fixes">
   /* Mobile Header & Layout Fixes */
@@ -636,7 +646,7 @@ footer .pt-8.border-t {
    }
 
    #mobile-menu a:hover {
-    color: #00e0ff; font-weight: 800 !important;
+    color: #38bdf8; font-weight: 800 !important;
    }
 
    #mobile-menu a.mobile-phone-btn {
@@ -730,7 +740,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <!-- Left: Logo + Desktop Nav -->
    <div class="flex items-center" style="gap:24px">
     <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap" id="logo-text">
-     NEON <span style="color: #00e0ff; font-weight: 800">AUTO TRANSPORT</span>
+     NEON <span style="color: #38bdf8; font-weight: 800">AUTO TRANSPORT</span>
     </a>
     <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
     <a href="/#how-it-works" class="hover:opacity-80 transition">How it works</a>
@@ -2029,7 +2039,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Section heading -->
     <div style="text-align: center; margin-bottom: 2.5rem; position: relative; z-index: 1;">
-     <p style="color: #00d4ff; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; margin: 0 0 0.5rem 0;">Simple 4-Step Process</p>
+     <p style="color: #38bdf8; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; margin: 0 0 0.5rem 0;">Simple 4-Step Process</p>
      <h2 style="color: #fff; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin: 0; text-shadow: 0 0 25px rgba(0,212,255,0.3);">How Neon Auto Transport Works</h2>
     </div>
 
@@ -2547,7 +2557,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="lg:col-span-4 space-y-4">
      <div>
       <a href="/" class="text-2xl font-black tracking-tight text-white uppercase block leading-tight hover:opacity-90 transition" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;">
-       NEON <span style="color: #00e0ff; font-weight: 800;">AUTO TRANSPORT</span>
+       NEON <span style="color: #38bdf8; font-weight: 800;">AUTO TRANSPORT</span>
       </a>
      </div>
      <p class="text-xs leading-relaxed text-slate-300 max-w-sm" style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">

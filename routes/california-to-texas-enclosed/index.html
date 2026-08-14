@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager (Deferred for Mobile Performance) -->
+  <!-- Google Tag Manager (Interaction Deferred for Mobile) -->
 <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
+  (function() {
+    var gtmLoaded = false;
+    function loadGTM() {
+      if (gtmLoaded) return;
+      gtmLoaded = true;
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-P5K57THT');
-    }, 2000);
-  });
+    }
+    ['touchstart', 'scroll', 'pointermove', 'click'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { passive: true, once: true });
+    });
+    window.addEventListener('load', function() {
+      setTimeout(loadGTM, 3500);
+    });
+  })();
 </script>
 <!-- End Google Tag Manager -->
 
@@ -52,7 +61,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/css/tailwind.css?v=3">
+<link rel="preload" href="/css/tailwind.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=3"></noscript>
   <style>
     @media (min-width: 1024px) {
       html { font-size: 110%; }
@@ -794,7 +804,7 @@
         <div class="lg:col-span-4 space-y-4">
           <div>
             <a href="/" class="text-2xl font-black tracking-tight text-white uppercase block leading-tight hover:opacity-90 transition" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;">
-              NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
+              NEON <span style="color: #38bdf8;">AUTO TRANSPORT</span>
             </a>
           </div>
           <p class="text-xs leading-relaxed text-slate-300 max-w-sm" style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">

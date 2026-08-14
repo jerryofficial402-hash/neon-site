@@ -1,15 +1,24 @@
 <!DOCTYPE html><html lang="en"><head>
-  <!-- Google Tag Manager (Deferred for Mobile Performance) -->
+  <!-- Google Tag Manager (Interaction Deferred for Mobile) -->
 <script>
-  window.addEventListener('load', function() {
-    setTimeout(function() {
+  (function() {
+    var gtmLoaded = false;
+    function loadGTM() {
+      if (gtmLoaded) return;
+      gtmLoaded = true;
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-P5K57THT');
-    }, 2000);
-  });
+    }
+    ['touchstart', 'scroll', 'pointermove', 'click'].forEach(function(e) {
+      window.addEventListener(e, loadGTM, { passive: true, once: true });
+    });
+    window.addEventListener('load', function() {
+      setTimeout(loadGTM, 3500);
+    });
+  })();
 </script>
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
@@ -346,7 +355,8 @@ footer .pt-8.border-t {
   <!-- JSON-LD: Service -->
   
 
- <link rel="stylesheet" href="/css/tailwind.css?v=3">
+ <link rel="preload" href="/css/tailwind.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=3"></noscript>
   <style>
    @media (min-width: 1024px) {
     html { font-size: 110%; }
@@ -521,7 +531,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Left: Logo + Desktop Nav -->
       <div class="flex items-center" style="gap:24px">
         <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap" id="logo-text">
-          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
+          NEON <span style="color: #38bdf8">AUTO TRANSPORT</span>
         </a>
         <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
         <a href="/#how-it-works" class="hover:opacity-80 transition">How it works</a>
@@ -911,8 +921,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li><a href="/california-to-texas-car-shipping/" class="text-[#4338ca] font-medium hover:underline flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg> Most Popular Route: California to Texas</a></li>
                 <li><a href="/routes/california-to-texas-enclosed/" class="text-[#4338ca] font-medium hover:underline flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg> California to Texas Enclosed Car Shipping Guide</a></li>
                 <li><a href="/faqs/" class="text-[#4338ca] font-medium hover:underline flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg> Full Auto Transport FAQ</a></li>
-            <li style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><span style="display:block; color:#39FF14; font-weight:bold; font-size:0.875rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;">Local to Woodbridge VA?</span><a href="/car-shipping-woodbridge-va/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> View Local Services</a></li>
-            <li style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><span style="display:block; color:#39FF14; font-weight:bold; font-size:0.875rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;">Local to Arlington VA?</span><a href="/car-shipping-arlington-va/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #00D1FF;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> View Arlington Services</a></li>
+            <li style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><span style="display:block; color:#39FF14; font-weight:bold; font-size:0.875rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;">Local to Woodbridge VA?</span><a href="/car-shipping-woodbridge-va/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #38bdf8;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> View Local Services</a></li>
+            <li style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);"><span style="display:block; color:#39FF14; font-weight:bold; font-size:0.875rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem;">Local to Arlington VA?</span><a href="/car-shipping-arlington-va/" class="group" style="color: #8ba3ba; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s;" onmouseover="this.style.color='#ffffff'; this.style.transform='translateX(4px)';" onmouseout="this.style.color='#8ba3ba'; this.style.transform='translateX(0)';"><svg style="width: 14px; height: 14px; color: #38bdf8;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg> View Arlington Services</a></li>
               </ul>
             </div>
 
@@ -1073,7 +1083,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="lg:col-span-4 space-y-4">
      <div>
       <a href="/" class="text-2xl font-black tracking-tight text-white uppercase block leading-tight hover:opacity-90 transition" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;">
-       NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
+       NEON <span style="color: #38bdf8;">AUTO TRANSPORT</span>
       </a>
      </div>
      <p class="text-xs leading-relaxed text-slate-300 max-w-sm" style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">
