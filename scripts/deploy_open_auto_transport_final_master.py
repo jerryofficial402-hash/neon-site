@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+SERVICES_DIR = os.path.join(BASE_DIR, "services")
+OPEN_FILE_1 = os.path.join(SERVICES_DIR, "open-auto-transport.html")
+OPEN_DIR = os.path.join(SERVICES_DIR, "open-auto-transport")
+OPEN_FILE_2 = os.path.join(OPEN_DIR, "index.html")
+
+os.makedirs(OPEN_DIR, exist_ok=True)
+
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -526,4 +536,10 @@
     </div>
   </footer>
 </body>
-</html>
+</html>"""
+
+for target in [OPEN_FILE_1, OPEN_FILE_2]:
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(html_content)
+
+print(f"SUCCESS: Successfully deployed final master Open Auto Transport enhancements to {OPEN_FILE_1} and {OPEN_FILE_2}")
