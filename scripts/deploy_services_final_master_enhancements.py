@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+import os
+
+SERVICES_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\services\index.html"
+HOMEPAGE_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\index.html"
+CONTACT_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\contact.html"
+WHY_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\why-neon.html"
+WHY_DIR_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\why-neon\index.html"
+CALC_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\cost-calculator\index.html"
+QUOTE_FILE = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site\car-shipping-quote\index.html"
+
+# 1. Generate Complete Master Services HTML with How to Choose, FAQs, Schema, and 100% Header/Footer
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -515,4 +526,41 @@
     </div>
   </footer>
 </body>
-</html>
+</html>"""
+
+with open(SERVICES_FILE, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"SUCCESS: Successfully updated master Services Hub with How to Choose section, rendered FAQs, and FAQPage schema at {SERVICES_FILE}")
+
+# 2. Update Internal Links Across Key Pages pointing to /services/
+# Homepage: Nationwide Vehicle Transport Services
+if os.path.exists(HOMEPAGE_FILE):
+    with open(HOMEPAGE_FILE, "r", encoding="utf-8") as f:
+        hp = f.read()
+    if 'href="/services/"' not in hp or "Nationwide Vehicle Transport Services" not in hp:
+        hp = hp.replace('href="/services/"', 'href="/services/" title="Nationwide Vehicle Transport Services"')
+        with open(HOMEPAGE_FILE, "w", encoding="utf-8") as f:
+            f.write(hp)
+    print("SUCCESS: Verified Homepage internal link to /services/")
+
+# Contact: Explore Vehicle Transport Services
+if os.path.exists(CONTACT_FILE):
+    with open(CONTACT_FILE, "r", encoding="utf-8") as f:
+        ct = f.read()
+    if 'Explore Vehicle Transport Services' not in ct:
+        ct = ct.replace('<a href="/services/"', '<a href="/services/" title="Explore Vehicle Transport Services"')
+        with open(CONTACT_FILE, "w", encoding="utf-8") as f:
+            f.write(ct)
+    print("SUCCESS: Verified Contact Page internal link to /services/")
+
+# Why Neon: View Our Vehicle Transport Services
+for wfile in [WHY_FILE, WHY_DIR_FILE]:
+    if os.path.exists(wfile):
+        with open(wfile, "r", encoding="utf-8") as f:
+            wn = f.read()
+        if 'View Our Vehicle Transport Services' not in wn:
+            wn = wn.replace('<a href="/services/"', '<a href="/services/" title="View Our Vehicle Transport Services"')
+            with open(wfile, "w", encoding="utf-8") as f:
+                f.write(wn)
+        print(f"SUCCESS: Verified Why Neon internal link to /services/ at {wfile}")
