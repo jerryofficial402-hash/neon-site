@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+YUBA_CITY_FILE = os.path.join(BASE_DIR, "yuba-city-ca-car-shipping", "index.html")
+
+yuba_city_html = """<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <!-- Google Tag Manager -->
@@ -554,3 +559,9 @@
   </footer>
 </body>
 </html>
+"""
+
+with open(YUBA_CITY_FILE, "w", encoding="utf-8") as f:
+    f.write(yuba_city_html)
+
+print("SUCCESS: Deployed refined Yuba City, CA Car Shipping page draft to /yuba-city-ca-car-shipping/index.html!")
