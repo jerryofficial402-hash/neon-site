@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+LIVE_OAK_FILE = os.path.join(BASE_DIR, "live-oak-ca-car-shipping", "index.html")
+
+live_oak_complete_page = """<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <!-- Google Tag Manager -->
@@ -464,3 +469,9 @@
 
 </body>
 </html>
+"""
+
+with open(LIVE_OAK_FILE, "w", encoding="utf-8") as f:
+    f.write(live_oak_complete_page)
+
+print("SUCCESS: Deployed complete Live Oak SEO/AEO/GEO package to /live-oak-ca-car-shipping/index.html!")

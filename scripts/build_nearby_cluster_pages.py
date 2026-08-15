@@ -1,0 +1,100 @@
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+
+cities = [
+    ("Yuba City", "yuba-city-ca-car-shipping", "10 miles", "Sutter County"),
+    ("Marysville", "marysville-ca-car-shipping", "14 miles", "Yuba County"),
+    ("Gridley", "gridley-ca-car-shipping", "15 miles", "Butte County"),
+    ("Oroville", "oroville-ca-car-shipping", "25 miles", "Butte County"),
+    ("Chico", "chico-ca-car-shipping", "40 miles", "Butte County"),
+    ("Sacramento", "sacramento-ca-car-shipping", "45 miles", "Sacramento County")
+]
+
+for city_name, slug, dist, county in cities:
+    dir_path = os.path.join(BASE_DIR, slug)
+    os.makedirs(dir_path, exist_ok=True)
+    file_path = os.path.join(dir_path, "index.html")
+
+    html_code = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Shipping {city_name}, CA | Neon Auto Transport</title>
+  <meta name="description" content="Car shipping in {city_name}, California ({county}). Get a free auto transport quote from Neon Auto Transport. Licensed broker (MC #1703787).">
+  <link rel="canonical" href="https://neonautotransport.com/{slug}/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>body {{ font-family: 'Inter', sans-serif; }}</style>
+
+  <script type="application/ld+json">
+  {{
+    "@context": "https://schema.org",
+    "@graph": [
+      {{
+        "@type": "Service",
+        "name": "Car Shipping in {city_name}, CA",
+        "provider": {{ "@id": "https://neonautotransport.com/#organization" }},
+        "areaServed": {{ "@type": "City", "name": "{city_name}, CA" }}
+      }},
+      {{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://neonautotransport.com/" }},
+          {{ "@type": "ListItem", "position": 2, "name": "California", "item": "https://neonautotransport.com/california-car-shipping/" }},
+          {{ "@type": "ListItem", "position": 3, "name": "{city_name}, CA", "item": "https://neonautotransport.com/{slug}/" }}
+        ]
+      }}
+    ]
+  }}
+  </script>
+</head>
+<body class="bg-white text-[#0a2540] antialiased">
+  <header class="bg-[#0a2540] text-white py-4 px-6 border-b border-slate-800 flex items-center justify-between">
+    <a href="/" class="text-xl font-black uppercase">NEON <span class="text-[#00d4ff]">AUTO TRANSPORT</span></a>
+    <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-4 py-2 rounded-full font-black text-xs">Get Quote</a>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-8">
+    <div class="bg-[#f6f9fc] p-8 rounded-3xl border border-[#e6e6e6]">
+      <span class="text-xs font-bold text-[#0891b2] uppercase tracking-wide">California Service Area</span>
+      <h1 class="text-3xl md:text-4xl font-black text-[#0a2540] mt-2 mb-4">Car Shipping in {city_name}, CA</h1>
+      <p class="text-sm text-[#425466] leading-relaxed mb-6">
+        Neon Auto Transport provides reliable nationwide auto transport services for vehicles shipping to or from {city_name}, California ({county}). Served directly through our regional Northern California logistics hub along the Highway 99 corridor.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-6 py-3 rounded-full font-black text-xs shadow-md">Get Free Quote →</a>
+        <a href="/live-oak-ca-car-shipping/" class="bg-[#f0f5fa] text-[#0a2540] px-6 py-3 rounded-full font-bold text-xs">Live Oak Office Page →</a>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="p-6 bg-white border border-[#e6e6e6] rounded-2xl">
+        <h3 class="font-bold text-lg mb-2">Open Auto Transport</h3>
+        <p class="text-xs text-[#425466] leading-relaxed">Cost-effective multi-car carrier transport serving {city_name} and surrounding routes.</p>
+        <a href="/services/open-auto-transport/" class="text-xs font-bold text-[#4338ca] hover:underline mt-3 inline-block">Explore Open Shipping →</a>
+      </div>
+      <div class="p-6 bg-white border border-[#e6e6e6] rounded-2xl">
+        <h3 class="font-bold text-lg mb-2">Enclosed Car Shipping</h3>
+        <p class="text-xs text-[#425466] leading-relaxed">Protected transport in covered trailers for classic, luxury, or exotic vehicles.</p>
+        <a href="/services/enclosed-auto-transport/" class="text-xs font-bold text-[#0891b2] hover:underline mt-3 inline-block">Explore Enclosed Shipping →</a>
+      </div>
+    </div>
+
+    <div class="p-6 bg-[#f8fafc] border border-[#e6e6e6] rounded-2xl text-xs text-[#425466]">
+      <strong>Broker Disclosure:</strong> Neon Auto Transport LLC is a licensed auto transport broker (MC #1703787, USDOT #4355879). We arrange vehicle transport through independently owned, FMCSA-registered motor carriers.
+    </div>
+  </main>
+
+  <footer class="bg-[#0a2540] text-slate-300 py-8 px-6 text-xs text-center border-t border-slate-800">
+    © 2026 Neon Auto Transport LLC | DOT: 4355879 | MC: 1703787
+  </footer>
+</body>
+</html>
+"""
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(html_code)
+
+print("SUCCESS: Built cluster landing pages for Yuba City, Marysville, Gridley, Oroville, Chico, and Sacramento!")
