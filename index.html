@@ -56,18 +56,19 @@
  <meta name="ICBM" content="38.6582, -77.2497">
 
  <!-- Open Graph / Facebook -->
- <meta property="og:type" content="website">
- <meta property="og:url" content="https://neonautotransport.com/">
- <meta property="og:title" content="Neon Auto Transport | Nationwide Car Shipping Company">
- <meta property="og:description" content="Ship your car nationwide with Neon Auto Transport. Instant quotes, door-to-door open or enclosed transport, $500K insurance coverage, no deposit required.">
- <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
- <meta property="og:image:width" content="1200">
- <meta property="og:image:height" content="630">
- <meta property="og:site_name" content="Neon Auto Transport">
- <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neonautotransport.com/">
+  <meta property="og:title" content="Car Shipping Company | Nationwide Auto Transport Quotes | Neon">
+  <meta property="og:description" content="Compare open and enclosed car shipping options, request a free quote, or estimate transport costs for your route.">
+  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta property="og:site_name" content="Neon Auto Transport">
+  <meta property="og:locale" content="en_US">
 
- <!-- Twitter Card -->
- <meta name="twitter:card" content="summary_large_image">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Car Shipping Company | Nationwide Auto Transport Quotes | Neon">
+  <meta name="twitter:description" content="Get a free nationwide car shipping quote and compare open or enclosed auto transport options.">
+  <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
  <meta name="twitter:title" content="Neon Auto Transport | Nationwide Car Shipping Company">
  <meta name="twitter:description" content="Ship your car nationwide with Neon Auto Transport. Instant quotes, door-to-door open or enclosed transport, $500K insurance coverage, no deposit required.">
  <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
@@ -526,66 +527,57 @@ footer .pt-8.border-t {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": "https://neonautotransport.com/#organization",
+        "name": "Neon Auto Transport LLC",
+        "url": "https://neonautotransport.com/",
+        "telephone": "+1-571-576-7711",
+        "email": "info@neonautotransport.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2709 Neabsco Common Pl, Suite 101",
+          "addressLocality": "Woodbridge",
+          "addressRegion": "VA",
+          "postalCode": "22191",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://neonautotransport.com/#website",
         "url": "https://neonautotransport.com/",
         "name": "Neon Auto Transport",
-        "description": "Nationwide Door-to-Door Auto Transport Services",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://neonautotransport.com/cost-calculator/?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
+        "publisher": {
+          "@id": "https://neonautotransport.com/#organization"
         }
       },
       {
-        "@type": "ItemList",
-        "@id": "https://neonautotransport.com/#sitelinks",
-        "name": "Primary Site Navigation Links",
+        "@type": "WebPage",
+        "@id": "https://neonautotransport.com/#webpage",
+        "url": "https://neonautotransport.com/",
+        "name": "Car Shipping Company | Nationwide Auto Transport Quotes | Neon",
+        "description": "Get a free nationwide car shipping quote from Neon Auto Transport. Compare open and enclosed auto transport, door-to-door delivery, and estimated pricing for your route.",
+        "isPartOf": {
+          "@id": "https://neonautotransport.com/#website"
+        },
+        "about": {
+          "@type": "Service",
+          "name": "Nationwide Auto Transport"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://neonautotransport.com/#breadcrumb",
         "itemListElement": [
           {
-            "@type": "SiteNavigationElement",
+            "@type": "ListItem",
             "position": 1,
-            "name": "Instant Quote Calculator",
-            "description": "Calculate auto shipping rates instantly with zero upfront deposit.",
-            "url": "https://neonautotransport.com/cost-calculator/"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 2,
-            "name": "Auto Transport Services",
-            "description": "Explore open, enclosed, luxury, and door-to-door car shipping options.",
-            "url": "https://neonautotransport.com/services/"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 3,
-            "name": "Why Choose Neon",
-            "description": "Discover why thousands trust our FMCSA & USDOT licensed carriers.",
-            "url": "https://neonautotransport.com/why-neon/"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 4,
-            "name": "Customer Reviews",
-            "description": "Read verified 5-star customer reviews and transport experiences.",
-            "url": "https://neonautotransport.com/reviews/"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 5,
-            "name": "Florida Car Shipping Hub",
-            "description": "Complete guide to shipping vehicles to and from top Florida cities.",
-            "url": "https://neonautotransport.com/florida-car-shipping/"
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "position": 6,
-            "name": "Contact Support",
-            "description": "Get in touch with our dispatch team at (571) 576-7711.",
-            "url": "https://neonautotransport.com/contact/"
+            "name": "Home",
+            "item": "https://neonautotransport.com/"
           }
         ]
       }
@@ -1142,6 +1134,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    </div>
   </section>
 
+  <!-- Practical Customer Guidance Section -->
+  <section class="py-16 bg-[#f0f5fa] border-t border-b border-[#e6e6e6] relative z-10" id="practical-guidance">
+   <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+    <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] tracking-tight mb-4">What to Review Before Booking</h2>
+    <p class="text-base text-[#425466] leading-relaxed mb-6 max-w-2xl mx-auto">
+     Before confirming a shipment, review whether you are working with a broker or carrier, understand the pickup window, ask about payment and cancellation terms, and review the Bill of Lading inspection process.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-4 font-semibold">
+     <a href="/how-it-works/" class="bg-[#0a2540] text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-[#4338ca] transition shadow-sm" style="text-decoration: none;">How Car Shipping Works →</a>
+     <a href="/why-neon/" class="px-6 py-3 rounded-full font-bold text-sm border-2 border-[#0a2540] text-[#0a2540] hover:bg-[#0a2540] hover:text-white transition" style="text-decoration: none;">Why Choose Neon Auto Transport →</a>
+    </div>
+   </div>
+  </section>
+
   <script>
   // Mobile Menu Toggle
   const hamburger = document.getElementById('mobile-menu-btn');
@@ -1262,13 +1268,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
      <!-- Bottom caption -->
      <div id="poster-caption" style="margin-top: 3rem; opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;">
-      <p style="font-family: 'Inter', sans-serif; font-size: 0.95rem; color: rgba(255,255,255,0.6); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">FMCSA Approved · Door-to-Door · All 50 States</p>
+      <p style="font-family: 'Inter', sans-serif; font-size: 0.95rem; color: rgba(255,255,255,0.6); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;">Licensed Auto Transport Broker • Door-to-Door Coordination • Nationwide Service</p>
      </div>
     </div>
 
     <!-- Side accent text -->
     <div id="poster-side" style="position: absolute; bottom: 3rem; left: 3rem; z-index: 3; opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease;">
-     <p style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; writing-mode: vertical-lr;">ESTD. 2025 · Woodbridge, VA · ©NAT</p>
+     <p style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; writing-mode: vertical-lr;">Woodbridge, VA · Licensed Broker · ©NAT</p>
     </div>
 
     <!-- Scroll Progress Bar -->
@@ -1961,76 +1967,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="text-3xl font-black text-center mb-12 text-[#0a2540] tracking-tight reveal">Frequently asked questions</h2>
     
     <div class="space-y-4 reveal" style="transition-delay: 100ms;">
-     <!-- FAQ Item -->
+     
+     <!-- FAQ Item 1 -->
      <div class="stripe-card overflow-hidden border border-transparent hover:border-[#635bff] transition duration-300">
       <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">Is my vehicle insured during transit?</h3>
+       <h3 class="font-bold text-[#0a2540] text-base text-left">How much does it cost to ship a car?</h3>
        <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
       </button>
-      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">Yes. Every carrier in our network is thoroughly vetted and carries active cargo insurance. Your vehicle is fully covered from the moment it is loaded until delivered — see our <a href="/insurance/" class="text-[#4338ca] hover:underline font-bold">full insurance coverage details</a>.</div>
+      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
+       Car shipping costs vary by total distance, vehicle size, transport type (open or enclosed), fuel prices, and seasonal carrier demand. You can estimate pricing for your route using our <a href="/cost-calculator/" class="text-[#4338ca] hover:underline font-bold">Estimate My Car Shipping Cost</a> calculator or request a customized quote on our <a href="/car-shipping-quote/" class="text-[#4338ca] hover:underline font-bold">Free Car Shipping Quote</a> page.
+      </div>
      </div>
-     
-     <!-- FAQ Item -->
+
+     <!-- FAQ Item 2 -->
      <div class="stripe-card overflow-hidden border border-transparent hover:border-[#00d4ff] transition duration-300">
       <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">How Much Does It Cost to Ship a Car 300 Miles?</h3>
+       <h3 class="font-bold text-[#0a2540] text-base text-left">How long does car shipping take?</h3>
        <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
       </button>
       <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
-       Shipping a car 300 miles typically costs between $250 and $450 on open transport, depending on vehicle type and carrier availability. Short-haul routes like this usually see faster pickup — often 1-2 days — since there's less competition for space compared to cross-country hauls. Regional moves under 500 miles are one of Neon Auto Transport's most requested service distances.
+       Transit timing begins after pickup and depends on route mileage, weather, traffic, and federal Hours-of-Service rules. Regional moves often take several days, while long cross-country routes take approximately 1 to 2 weeks. Learn more on our <a href="/how-it-works/" class="text-[#4338ca] hover:underline font-bold">How Car Shipping Works</a> guide.
       </div>
      </div>
 
-     <!-- FAQ Item -->
+     <!-- FAQ Item 3 -->
      <div class="stripe-card overflow-hidden border border-transparent hover:border-[#39FF14] transition duration-300">
       <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">Can I track my shipment?</h3>
+       <h3 class="font-bold text-[#0a2540] text-base text-left">Is Neon Auto Transport a broker or carrier?</h3>
        <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
       </button>
       <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
-       Yes. Your assigned coordinator provides updates throughout shipment and coordinates directly with the motor carrier for timing updates.
-      </div>
-     </div>
-     
-     <!-- FAQ Item -->
-     <div class="stripe-card overflow-hidden border border-transparent hover:border-[#39FF14] transition duration-300">
-      <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">How do I prepare my car for shipping?</h3>
-       <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
-      </button>
-      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
-       Wash the car to document any existing damage, remove toll tags and personal items, ensure the tires are inflated, and leave the gas tank at about 1/4 full.
+       Neon Auto Transport LLC is a licensed auto transport broker operating under MC #1703787 and USDOT #4355879. We coordinate vehicle shipments through independently owned motor carriers that physically transport your vehicle. Review our brokerage model on our <a href="/why-neon/" class="text-[#4338ca] hover:underline font-bold">Why Choose Neon Auto Transport</a> page.
       </div>
      </div>
 
-     <!-- FAQ Item -->
+     <!-- FAQ Item 4 -->
+     <div class="stripe-card overflow-hidden border border-transparent hover:border-[#39FF14] transition duration-300">
+      <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+       <h3 class="font-bold text-[#0a2540] text-base text-left">Is open or enclosed transport right for my vehicle?</h3>
+       <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
+      </button>
+      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
+       <a href="/services/open-auto-transport/" class="text-[#4338ca] hover:underline font-bold">Open Auto Transport</a> is the most popular and economical option for everyday cars, trucks, and SUVs. <a href="/services/enclosed-auto-transport/" class="text-[#4338ca] hover:underline font-bold">Enclosed Car Shipping</a> offers covered protection from weather and highway debris for classic, luxury, exotic, or collector vehicles.
+      </div>
+     </div>
+
+     <!-- FAQ Item 5 -->
      <div class="stripe-card overflow-hidden border border-transparent hover:border-[#635bff] transition duration-300">
       <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">Do you offer Door to Door Service?</h3>
-       <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
-      </button>
-      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">Yes. Neon Auto Transport ships your car right to your door — see our full <a href="/services/door-to-door-car-shipping/" class="text-[#4338ca] hover:underline font-bold">Door to Door Car Transport</a> service details.</div>
-     </div>
-
-     <!-- FAQ Item -->
-     <div class="stripe-card overflow-hidden border border-transparent hover:border-[#00d4ff] transition duration-300">
-      <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">Can you ship non-running vehicles?</h3>
-       <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
-      </button>
-      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">Yes. Neon Auto Transport can move cars that don't work using specialized equipment like a winch or lift gate. Learn more about <a href="/services/enclosed-auto-transport/" class="text-[#4338ca] hover:underline font-bold">enclosed transport options</a> for vehicles needing extra care during a non-running shipment.</div>
-     </div>
-
-     <!-- FAQ Item -->
-     <div class="stripe-card overflow-hidden border border-transparent hover:border-[#39FF14] transition duration-300">
-      <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
-       <h3 class="font-bold text-[#0a2540] text-base text-left">Can I ship multiple vehicles?</h3>
+       <h3 class="font-bold text-[#0a2540] text-base text-left">Will the carrier pick up from my exact address?</h3>
        <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
       </button>
       <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
-       Yes, car transport companies offer multi-car transport services like Neon Auto Transport using large trailers that hold several cars securely. This option is often more cost-effective per vehicle than booking separate shipments.
+       The assigned motor carrier aims to pick up and deliver as close to your specified addresses as safe and legal truck access allows. Narrow residential streets or low-hanging trees may require meeting at a nearby parking lot. Read full details on our <a href="/services/door-to-door-car-shipping/" class="text-[#4338ca] hover:underline font-bold">Door-to-Door Car Shipping</a> page.
       </div>
      </div>
+
+     <!-- FAQ Item 6 -->
+     <div class="stripe-card overflow-hidden border border-transparent hover:border-[#00d4ff] transition duration-300">
+      <button aria-label="Interactive Button" class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+       <h3 class="font-bold text-[#0a2540] text-base text-left">How do I get a car shipping quote?</h3>
+       <span class="faq-icon text-[#4338ca] text-xl font-bold transition-colors">+</span>
+      </button>
+      <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-[#425466] text-sm leading-relaxed bg-[#f6f9fc]">
+       You can request a free shipping estimate anytime through our <a href="/car-shipping-quote/" class="text-[#4338ca] hover:underline font-bold">Get a Free Car Shipping Quote</a> page or use our <a href="/cost-calculator/" class="text-[#4338ca] hover:underline font-bold">Cost Calculator</a> with your pickup ZIP, delivery ZIP, and vehicle details.
+      </div>
+     </div>
+
     </div>
    </div>
   </section>
