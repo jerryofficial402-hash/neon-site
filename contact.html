@@ -78,6 +78,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    ]
  }
  </script>
+
+  <style>
+    .card-hover-indigo {
+      border: 2px solid #e6e6e6 !important;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    .card-hover-indigo:hover {
+      border-color: #635bff !important;
+      transform: translateY(-6px) !important;
+      box-shadow: 0 14px 30px rgba(99, 91, 255, 0.18) !important;
+    }
+
+    .card-hover-cyan {
+      border: 2px solid #e6e6e6 !important;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    .card-hover-cyan:hover {
+      border-color: #00D1FF !important;
+      transform: translateY(-6px) !important;
+      box-shadow: 0 14px 30px rgba(0, 209, 255, 0.2) !important;
+    }
+
+    .card-hover-green {
+      border: 2px solid #e6e6e6 !important;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    .card-hover-green:hover {
+      border-color: #39FF14 !important;
+      transform: translateY(-6px) !important;
+      box-shadow: 0 14px 30px rgba(57, 255, 20, 0.2) !important;
+    }
+  </style>
 </head>
 <body class="bg-white text-[#0a2540] antialiased">
  <!-- Google Tag Manager (noscript) -->
@@ -185,7 +217,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </p>
 
      <!-- Phone Card -->
-     <a href="tel:5715767711" class="stripe-card p-6 flex items-start gap-5 hover:border-[#635bff] hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 transform block" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem; text-decoration:none;">
+     <a href="tel:5715767711" class="p-6 flex items-start gap-5 card-hover-indigo rounded-2xl block" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem; text-decoration:none;">
       <div class="w-12 h-12 rounded-xl bg-[#e0e7ff] text-[#4338ca] flex items-center justify-center shrink-0 text-xl font-bold">📞</div>
       <div>
        <h3 class="font-bold text-lg text-[#0a2540]">Call Us</h3>
@@ -195,7 +227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </a>
 
      <!-- Email Card -->
-     <a href="mailto:info@neonautotransport.com" class="stripe-card p-6 flex items-start gap-5 hover:border-[#39FF14] hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 transform block" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem; text-decoration:none;">
+     <a href="mailto:info@neonautotransport.com" class="p-6 flex items-start gap-5 card-hover-green rounded-2xl block" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem; text-decoration:none;">
       <div class="w-12 h-12 rounded-xl bg-[#dcfce7] flex items-center justify-center shrink-0 text-xl font-bold" style="color:#15803d">✉️</div>
       <div>
        <h3 class="font-bold text-lg text-[#0a2540]">Email Us</h3>
@@ -205,13 +237,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </a>
 
      <!-- Embedded Google Map -->
-     <div class="stripe-card p-2 hover:border-[#00D4FF] hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 transform overflow-hidden mt-6" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
+     <div class="p-2 card-hover-cyan rounded-2xl overflow-hidden mt-6" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.065540883385!2d-77.29432292460815!3d38.62437326276855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b6f9ab69f4b0eb%3A0xc3135b0d9bb3632f!2sNeon%20Auto%20Transport%20LLC!5e0!3m2!1sen!2s!4v1783069651441!5m2!1sen!2s" width="100%" height="220" style="border:0; border-radius: 12px; display: block;" allowfullscreen="" loading="lazy"></iframe>
      </div>
     </div>
 
     <!-- Right: Message Submission Form -->
-    <div class="lg:col-span-7 bg-white rounded-3xl stripe-card p-8 md:p-10 hover:shadow-2xl hover:border-[#635bff] transition-all duration-300 transform" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+    <div class="lg:col-span-7 bg-white rounded-3xl card-hover-indigo p-8 md:p-10" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
      <h3 class="text-2xl font-black text-[#0a2540] tracking-tight mb-2">Send Us a Message</h3>
      <p class="text-xs text-[#425466] mb-8">Share your route, vehicle details, preferred pickup dates, or question. A member of our team will review your request and respond as soon as possible.</p>
      
@@ -276,7 +308,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
      <div class="grid md:grid-cols-2 gap-8">
        <!-- Woodbridge Card -->
-       <div class="bg-white p-8 border border-[#e6e6e6] rounded-3xl shadow-md hover:border-[#635bff] hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 transform flex flex-col justify-between" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+       <div class="bg-white p-8 rounded-3xl card-hover-indigo flex flex-col justify-between" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
          <div>
            <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#e0e7ff] text-[#4338ca] text-xs font-bold rounded-full mb-4">
              📍 Virginia Location
@@ -305,7 +337,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        </div>
 
        <!-- Live Oak Card -->
-       <div class="bg-white p-8 border border-[#e6e6e6] rounded-3xl shadow-md hover:border-[#00D4FF] hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 transform flex flex-col justify-between" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+       <div class="bg-white p-8 rounded-3xl card-hover-cyan flex flex-col justify-between" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
          <div>
            <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#ecfeff] text-[#0891b2] text-xs font-bold rounded-full mb-4">
              📍 California Location
