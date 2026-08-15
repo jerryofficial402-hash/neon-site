@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+MARYSVILLE_FILE = os.path.join(BASE_DIR, "marysville-ca-car-shipping", "index.html")
+
+marysville_html = """<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <!-- Google Tag Manager -->
@@ -640,3 +645,9 @@
   </footer>
 </body>
 </html>
+"""
+
+with open(MARYSVILLE_FILE, "w", encoding="utf-8") as f:
+    f.write(marysville_html)
+
+print("SUCCESS: Deployed refined Marysville, CA Car Shipping page draft to /marysville-ca-car-shipping/index.html!")
