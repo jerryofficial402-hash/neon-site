@@ -1,4 +1,85 @@
-<!DOCTYPE html>
+import os
+import re
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+CONTACT_FILE = os.path.join(BASE_DIR, "contact.html")
+LIVE_OAK_FILE = os.path.join(BASE_DIR, "live-oak-ca-car-shipping", "index.html")
+
+# -------------------------------------------------------------
+# 1. Update contact.html with "Our Locations" Block
+# -------------------------------------------------------------
+with open(CONTACT_FILE, "r", encoding="utf-8") as f:
+    contact_html = f.read()
+
+locations_block = '''
+      <!-- Our Locations Section -->
+      <div class="mt-12 pt-8 border-t border-[#e6e6e6]">
+        <h3 class="text-2xl font-black text-[#0a2540] tracking-tight mb-6">
+          Our Locations
+        </h3>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Location 1: Woodbridge, VA (Headquarters) -->
+          <div class="stripe-card p-6 border border-[#e6e6e6] rounded-2xl hover:border-[#635bff] transition duration-300">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#4338ca] mb-2">
+              📍 Headquarters
+            </div>
+            <h4 class="font-extrabold text-lg text-[#0a2540] mb-2">Woodbridge, Virginia</h4>
+            <p class="text-sm text-[#425466] leading-relaxed mb-3">
+              2709 Neabsco Common Pl, Suite 101<br>Woodbridge, VA 22191
+            </p>
+            <p class="text-sm font-bold text-[#0a2540] mb-4">
+              Call: <a href="tel:5715767711" class="text-[#4338ca] hover:underline">(571) 576-7711</a>
+            </p>
+            <div class="flex flex-wrap items-center gap-2">
+              <a href="https://maps.google.com/?q=2709+Neabsco+Common+Pl+Suite+101+Woodbridge+VA+22191" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#f0f5fa] hover:bg-[#0a2540] hover:text-white text-[#0a2540] font-bold text-xs rounded-lg transition">
+                Get Directions
+              </a>
+              <a href="https://www.google.com/maps/place/Neon+Auto+Transport+LLC/@38.6243733,-77.2943229,17z" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#ffc72c] hover:bg-[#e0b020] text-[#0a2540] font-bold text-xs rounded-lg transition">
+                View Google Reviews
+              </a>
+            </div>
+          </div>
+
+          <!-- Location 2: Live Oak, CA -->
+          <div class="stripe-card p-6 border border-[#e6e6e6] rounded-2xl hover:border-[#00D4FF] transition duration-300">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0284c7] mb-2">
+              📍 California Office
+            </div>
+            <h4 class="font-extrabold text-lg text-[#0a2540] mb-2">Live Oak, California</h4>
+            <p class="text-sm text-[#425466] leading-relaxed mb-3">
+              8333 CA-99, Office 101<br>Live Oak, CA 95953
+            </p>
+            <p class="text-sm font-bold text-[#0a2540] mb-4">
+              Call: <a href="tel:5715767711" class="text-[#0284c7] hover:underline">(571) 576-7711</a>
+            </p>
+            <div class="flex flex-wrap items-center gap-2">
+              <a href="https://maps.google.com/?q=8333+CA-99+Office+101+Live+Oak+CA+95953" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#f0f5fa] hover:bg-[#0a2540] hover:text-white text-[#0a2540] font-bold text-xs rounded-lg transition">
+                Get Directions
+              </a>
+              <a href="/live-oak-ca-car-shipping/" class="px-4 py-2 bg-[#39FF14] hover:bg-[#32e011] text-[#0a2540] font-bold text-xs rounded-lg transition">
+                View Live Oak Location Page
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+'''
+
+# Inject Our Locations before </form> or main section end
+if 'Our Locations' not in contact_html:
+    contact_html = contact_html.replace('<!-- Embedded Google Map -->', locations_block + '\n\n     <!-- Embedded Google Map -->')
+    with open(CONTACT_FILE, "w", encoding="utf-8") as f:
+        f.write(contact_html)
+    print("SUCCESS: Injected Our Locations block into contact.html")
+else:
+    print("INFO: Our Locations block already present in contact.html")
+
+
+# -------------------------------------------------------------
+# 2. Update /live-oak-ca-car-shipping/index.html Landing Page
+# -------------------------------------------------------------
+live_oak_page_code = """<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -302,3 +383,9 @@
 
 </body>
 </html>
+"""
+
+with open(LIVE_OAK_FILE, "w", encoding="utf-8") as f:
+    f.write(live_oak_page_code)
+
+print("SUCCESS: Updated /live-oak-ca-car-shipping/index.html with SEO title, meta, canonical, H1, visible address block, LocalBusiness schema graph, and internal links matrix!")
