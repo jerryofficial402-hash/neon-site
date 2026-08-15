@@ -15,8 +15,8 @@ for root, dirs, files in os.walk(SITE_DIR):
                 with open(file_path, "r", encoding="utf-8") as file:
                     content = file.read()
                 
-                if '"uploadDate": "2026-08-01"' in content:
-                    new_content = content.replace('"uploadDate": "2026-08-01"', '"uploadDate": "2026-08-01T08:00:00+00:00"')
+                if '"uploadDate": "2026-08-01T08:00:00+00:00"' in content:
+                    new_content = content.replace('"uploadDate": "2026-08-01T08:00:00+00:00"', '"uploadDate": "2026-08-01T08:00:00+00:00"')
                     if new_content != content:
                         with open(file_path, "w", encoding="utf-8") as file:
                             file.write(new_content)
