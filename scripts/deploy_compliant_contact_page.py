@@ -1,4 +1,9 @@
-<!DOCTYPE html><html lang="en"><head>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+CONTACT_FILE = os.path.join(BASE_DIR, "contact.html")
+
+compliant_contact_html = """<!DOCTYPE html><html lang="en"><head>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -466,3 +471,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  </footer>
 </body>
 </html>
+"""
+
+with open(CONTACT_FILE, "w", encoding="utf-8") as f:
+    f.write(compliant_contact_html)
+
+print("SUCCESS: Deployed compliant wording, schema, and layout to contact.html!")
