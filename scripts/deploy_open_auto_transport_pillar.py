@@ -43,6 +43,9 @@ open_transport_html = """<!DOCTYPE html>
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
+    @media (min-width: 1024px) {
+      html { font-size: 110%; }
+    }
     body { font-family: 'Inter', sans-serif; }
     .card-hover-cyan {
       border: 2px solid #e6e6e6 !important;
@@ -281,60 +284,55 @@ open_transport_html = """<!DOCTYPE html>
     </div>
   </header>
 
-  <!-- Clean Split 2-Column Hero Header -->
-  <section class="relative stripe-gradient-bg overflow-hidden bg-[#0a2540] text-white" style="padding-top:140px;padding-bottom:120px;clip-path:polygon(0 0,100% 0,100% 90%,0 100%)">
-    <div class="container mx-auto px-4 lg:px-8 z-10 relative max-w-6xl">
-      <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+  <!-- Clean Off-White Hero Section (Matches State/Arkansas Design Architecture) -->
+  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 pb-16 lg:pt-36 lg:pb-24">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         
-        <!-- Left Column: Content & CTAs -->
-        <div class="lg:col-span-7 text-left space-y-4">
-          <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-slate-300 mb-2">
-            <a href="/" class="hover:underline text-slate-300" style="text-decoration:none;">Home</a><span>/</span>
-            <a href="/services/" class="hover:underline text-slate-300" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
-            <span class="text-white font-bold">Open Auto Transport</span>
+        <!-- Left Column: Copy & Action CTAs -->
+        <div class="lg:w-1/2 flex flex-col justify-center text-left">
+          <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
+            <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
+            <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
+            <span class="text-[#0a2540] font-bold">Open Auto Transport</span>
           </nav>
 
-          <div>
-            <span class="inline-flex items-center gap-2 bg-[#39FF14]/10 text-[#39FF14] border border-[#39FF14]/30 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
-              Authorized Broker &bull; USDOT #4355879 &bull; MC #1703787
-            </span>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
+            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+            Authorized Broker • USDOT #4355879 • MC #1703787
           </div>
 
-          <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tighter pt-1" style="color: #ffffff !important;">
-            Open Auto Transport: <span style="color: #00D1FF">Nationwide Car Shipping</span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight leading-tight">
+            Open Auto Transport: <span class="text-[#00D1FF]">Nationwide Car Shipping</span>
           </h1>
 
-          <p class="text-base text-slate-200 leading-relaxed font-normal">
+          <p class="text-lg text-[#425466] mb-6 leading-relaxed">
             Open auto transport is a common way to ship standard cars, SUVs, trucks, and other eligible vehicles across the United States. A motor carrier transports your vehicle on an open multi-car trailer and aims to pick up and deliver as close to your addresses as truck access safely allows.
           </p>
 
-          <p class="text-xs text-slate-300 font-medium leading-relaxed">
+          <p class="text-xs text-[#425466] mb-8 leading-relaxed font-medium">
             Neon Auto Transport LLC is an authorized auto transport broker. We arrange transportation through independently owned motor carriers. Request a free quote to compare available open-carrier options for your route, vehicle, dates, and pickup or delivery access.
           </p>
 
-          <div class="flex flex-wrap items-center gap-4 pt-3">
-            <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-7 py-3.5 rounded-full font-black text-sm hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.3)]" style="text-decoration: none;">
-              Get Your Free Open Auto Transport Quote →
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2" style="text-decoration: none;">
+              Get Your Free Open Auto Transport Quote 
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
             </a>
-            <a href="tel:5715767711" class="px-6 py-3.5 rounded-full font-extrabold text-sm bg-white/10 text-white hover:bg-white hover:text-[#0a2540] border border-white/20 transition flex items-center gap-2" style="text-decoration: none;">
-              <svg class="w-4 h-4 text-[#39FF14]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-              Call (571) 576-7711
+            <a href="tel:5715767711" class="px-6 py-4 rounded-full font-extrabold text-base bg-white text-[#0a2540] border border-[#e6e6e6] shadow-sm hover:bg-[#f8fafc] transition flex items-center gap-2" style="text-decoration: none;">
+              <svg class="w-4 h-4 text-[#00D1FF]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+              (571) 576-7711
             </a>
           </div>
         </div>
 
-        <!-- Right Column: Clean Hero Image Showcase Card -->
-        <div class="lg:col-span-5 relative mt-6 lg:mt-0">
-          <div class="relative rounded-3xl overflow-hidden border-2 border-white/20 shadow-[0_25px_60px_rgba(0,0,0,0.5)] card-hover-cyan">
-            <img src="/images/open-auto-transport-hero.jpg" alt="Modern open multi-car auto transport truck shipping cars on nationwide highway" class="w-full h-auto object-cover transform hover:scale-105 transition duration-500" loading="eager" width="1200" height="675">
-            
-            <div class="p-4 bg-[#0a2540]/95 backdrop-blur-md border-t border-white/10 text-xs text-white">
-              <div class="font-black text-[#39FF14] uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                <span>🚛</span> Open Multi-Car Transport Carrier
-              </div>
-              <div class="text-slate-300 leading-normal">
-                Standard, cost-effective nationwide car shipping for daily drivers, SUVs &amp; trucks.
-              </div>
+        <!-- Right Column: Elevated Hero Image Showcase Card -->
+        <div class="lg:w-1/2 relative w-full">
+          <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2 card-hover-cyan">
+            <img src="/images/open-auto-transport-hero.jpg" alt="Modern open multi-car auto transport truck shipping cars on nationwide highway" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="675" loading="eager" width="1200" style="max-height: 450px;">
+            <div class="p-4 bg-[#f8fafc] rounded-xl border border-[#e6e6e6] mt-2 text-xs text-[#0a2540] font-semibold flex items-center justify-between">
+              <span>🚛 Standard Open Multi-Car Carrier</span>
+              <span class="text-[#635bff]">Nationwide Door-to-Door</span>
             </div>
           </div>
         </div>
@@ -345,7 +343,7 @@ open_transport_html = """<!DOCTYPE html>
 
   <!-- Main Body Container -->
   <main class="pb-24">
-    <div class="container mx-auto px-4 lg:px-8 max-w-5xl relative z-20" style="margin-top:-60px">
+    <div class="container mx-auto px-4 lg:px-8 max-w-5xl relative z-20 pt-12">
 
       <!-- At a Glance Card Container -->
       <div class="p-8 bg-white rounded-3xl border border-[#e6e6e6] shadow-xl mb-12 card-hover-cyan">
@@ -785,4 +783,4 @@ if os.path.exists(FLAT_FILE):
     with open(FLAT_FILE, "w", encoding="utf-8") as f:
         f.write(open_transport_html)
 
-print("SUCCESS: Deployed professional visual polish & color border hover effects to Open Auto Transport page!")
+print("SUCCESS: Adopted state page Hero design architecture & 100% zoom scaling for Open Auto Transport!")
