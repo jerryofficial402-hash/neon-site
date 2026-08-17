@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+LIVE_OAK_FILE = os.path.join(BASE_DIR, "live-oak-ca-car-shipping", "index.html")
+
+live_oak_v2_html = """<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <!-- Google Tag Manager -->
@@ -689,3 +694,9 @@
 
 </body>
 </html>
+"""
+
+with open(LIVE_OAK_FILE, "w", encoding="utf-8") as f:
+    f.write(live_oak_v2_html)
+
+print("SUCCESS: Deployed refined Live Oak CA Car Shipping page (v2) with all requested content updates!")
