@@ -67,7 +67,7 @@ open_transport_html = """<!DOCTYPE html>
     }
   </style>
 
-  <!-- Structured Data Schema Graph (Organization, WebSite, WebPage, Service, BreadcrumbList, FAQPage) -->
+  <!-- Structured Data Schema Graph (Organization, WebSite, Person, WebPage, Service, BreadcrumbList, FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,11 +89,24 @@ open_transport_html = """<!DOCTYPE html>
         }
       },
       {
+        "@type": "Person",
+        "@id": "https://neonautotransport.com/author/shazil-ali.html#person",
+        "name": "Shazil Ali",
+        "jobTitle": "Auto Transport Specialist",
+        "worksFor": {
+          "@id": "https://neonautotransport.com/#organization"
+        },
+        "url": "https://neonautotransport.com/author/shazil-ali.html"
+      },
+      {
         "@type": "WebPage",
         "@id": "https://neonautotransport.com/services/open-auto-transport/#webpage",
         "url": "https://neonautotransport.com/services/open-auto-transport/",
         "name": "Open Auto Transport: Nationwide Car Shipping Services",
         "description": "Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.",
+        "reviewedBy": {
+          "@id": "https://neonautotransport.com/author/shazil-ali.html#person"
+        },
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
@@ -153,6 +166,22 @@ open_transport_html = """<!DOCTYPE html>
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Open auto transport is a vehicle shipping method where cars are loaded onto an uncovered, multi-car carrier trailer. It is one of the most common ways to move eligible vehicles nationwide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between an auto transport broker and a motor carrier?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neon Auto Transport LLC is a licensed auto transport broker (MC #1703787, USDOT #4355879). Brokers coordinate shipping logistics, verify carrier credentials, and match your shipment with qualified motor carriers. The motor carrier owns and operates the multi-car truck that physically transports your vehicle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I verify if my assigned carrier is legitimate and insured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can verify any carrier's active operating authority, safety records, and cargo insurance status directly through the FMCSA SAFER System (Safety and Fitness Electronic Records). Neon verifies active carrier insurance and FMCSA registration prior to dispatch."
             }
           },
           {
@@ -284,7 +313,7 @@ open_transport_html = """<!DOCTYPE html>
     </div>
   </header>
 
-  <!-- Hero Section (Arkansas Layout Clone + Commercially Targeted H1 & Breadcrumbs) -->
+  <!-- Hero Section (Arkansas Layout Clone + Commercially Targeted H1 & Natural Keyword Integration) -->
   <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
     <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -309,8 +338,9 @@ open_transport_html = """<!DOCTYPE html>
             Open Auto Transport: Nationwide Car Shipping Services
           </h1>
           
+          <!-- Opening Paragraph with Natural Keyword Integration -->
           <p class="text-lg text-[#425466] mb-10 leading-relaxed">
-            Open auto transport is a common way to ship standard cars, SUVs, trucks, and other eligible vehicles across the United States. A motor carrier transports your vehicle on an open multi-car trailer and aims to pick up and deliver as close to your addresses as truck access safely allows.
+            When you ship your car with open auto transport, an FMCSA-registered motor carrier transports your vehicle on an uncovered multi-car trailer. It is the standard, cost-effective choice to move cars, SUVs, and pickup trucks nationwide, picking up and delivering as close to your addresses as truck access safely permits.
           </p>
           
           <div class="flex">
@@ -382,7 +412,7 @@ open_transport_html = """<!DOCTYPE html>
           Exposure to normal weather and road conditions does not mean the vehicle is expected to experience damage; carriers use standard loading and securement procedures to transport vehicles safely.
         </p>
         <p class="text-sm text-[#425466]">
-          Learn more about our full range of <a href="/services/" class="text-[#635bff] font-bold hover:underline">Auto Transport Services</a> or explore <a href="/services/door-to-door-car-shipping/" class="text-[#635bff] font-bold hover:underline">Door-to-Door Car Shipping</a> options.
+          Explore our full range of <a href="/services/" class="text-[#635bff] font-bold hover:underline">Vehicle Transport Services</a> or compare <a href="/services/door-to-door-car-shipping/" class="text-[#635bff] font-bold hover:underline">Door-to-Door Car Shipping</a> options.
         </p>
       </div>
 
@@ -399,6 +429,22 @@ open_transport_html = """<!DOCTYPE html>
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-cyan">✅ Door-to-Door Coordination — Pickup and delivery as close to your location as access permits</div>
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-indigo">✅ Bill of Lading Support — Vehicle condition inspection guidance at pickup & delivery</div>
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-cyan">✅ Shipment Support — Customer assistance throughout the transport process</div>
+        </div>
+      </div>
+
+      <!-- NEW: Specialist Tip Attributed to Shazil Ali -->
+      <div class="p-6 md:p-8 bg-[#f0f7ff] border-2 border-[#00D1FF]/40 rounded-3xl shadow-sm mb-12 card-hover-cyan">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl shrink-0">💡</div>
+          <div>
+            <h3 class="text-lg font-black text-[#0a2540] mb-1">
+              Specialist Operational Tip from <a href="/author/shazil-ali.html" class="text-[#635bff] hover:underline">Shazil Ali</a>
+            </h3>
+            <p class="text-xs font-bold text-[#635bff] mb-3">Auto Transport Specialist, Neon Auto Transport</p>
+            <p class="text-sm text-[#0a2540] italic leading-relaxed">
+              &ldquo;The most common cause of pickup delays we encounter isn&rsquo;t truck availability—it&rsquo;s narrow residential streets or low-hanging trees. Confirming a spacious nearby meeting location (like a retail parking lot) upfront keeps your driver on schedule and prevents last-minute dispatch changes.&rdquo;
+            </p>
+          </div>
         </div>
       </div>
 
@@ -431,7 +477,6 @@ open_transport_html = """<!DOCTYPE html>
           <li><strong>Distance and route demand:</strong> Mileage between pickup and delivery locations along major travel corridors.</li>
           <li><strong>Vehicle size and weight:</strong> Larger SUVs, trucks, and vans occupy more space and weight capacity on the trailer.</li>
           <li><strong>Vehicle condition:</strong> Operable vehicles versus inoperable vehicles requiring winch loading.</li>
-          <li><strong>Pickup/delivery accessibility:</strong> Restricted-access locations, narrow residential streets, or low trees requiring a meeting spot.</li>
           <li><strong>Transport type:</strong> Open multi-car carrier versus enclosed trailer selection.</li>
           <li><strong>Pickup-date flexibility:</strong> Flexible scheduling window vs. tight timeline requirements.</li>
           <li><strong>Seasonality:</strong> Snowbird seasonal shifts and peak summer moving volume.</li>
@@ -605,6 +650,18 @@ open_transport_html = """<!DOCTYPE html>
             </p>
           </div>
           <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What is the difference between an auto transport broker and a motor carrier?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Neon Auto Transport LLC is an authorized auto transport broker (MC #1703787, USDOT #4355879). Brokers coordinate shipping logistics, verify carrier credentials, and match your shipment with qualified motor carriers. The motor carrier owns and operates the multi-car truck that physically transports your vehicle.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">How do I verify if my assigned carrier is legitimate and insured?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              You can verify any carrier&rsquo;s active operating authority, safety records, and cargo insurance status directly through the FMCSA SAFER System (Safety and Fitness Electronic Records). Neon verifies active carrier insurance and FMCSA registration prior to dispatch.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2">Is open auto transport safe?</h3>
             <p class="text-sm text-[#425466] leading-relaxed">
               Open auto transport is widely used for everyday vehicle shipments. Exposure to normal weather and road conditions does not mean the vehicle is expected to experience damage; carriers use standard loading and securement procedures to transport vehicles safely. Document vehicle condition at pickup and delivery on the Bill of Lading.
@@ -671,19 +728,19 @@ open_transport_html = """<!DOCTYPE html>
               <td class="p-3"><a href="/california-to-texas-car-shipping/" class="text-[#635bff] font-bold hover:underline">CA to TX Shipping →</a></td>
             </tr>
             <tr>
-              <td class="p-3 font-bold text-[#0a2540]">California ↔ New York</td>
+              <td class="p-3 font-bold text-[#0a2540]">California ↔ Florida</td>
               <td class="p-3">Open Auto Transport</td>
-              <td class="p-3"><a href="/california-to-new-york-car-shipping/" class="text-[#635bff] font-bold hover:underline">CA to NY Shipping →</a></td>
+              <td class="p-3"><a href="/california-to-florida-car-shipping/" class="text-[#635bff] font-bold hover:underline">CA to FL Shipping →</a></td>
             </tr>
             <tr>
-              <td class="p-3 font-bold text-[#0a2540]">Texas ↔ California</td>
+              <td class="p-3 font-bold text-[#0a2540]">New York ↔ Florida</td>
               <td class="p-3">Open Auto Transport</td>
-              <td class="p-3"><a href="/texas-to-california-car-shipping/" class="text-[#635bff] font-bold hover:underline">TX to CA Shipping →</a></td>
+              <td class="p-3"><a href="/new-york-to-florida-car-shipping/" class="text-[#635bff] font-bold hover:underline">NY to FL Shipping →</a></td>
             </tr>
             <tr>
-              <td class="p-3 font-bold text-[#0a2540]">California State Hub</td>
-              <td class="p-3">Open & Enclosed Auto Transport</td>
-              <td class="p-3"><a href="/california-car-shipping/" class="text-[#635bff] font-bold hover:underline">California Car Shipping →</a></td>
+              <td class="p-3 font-bold text-[#0a2540]">Texas ↔ Florida</td>
+              <td class="p-3">Open Auto Transport</td>
+              <td class="p-3"><a href="/texas-to-florida-car-shipping/" class="text-[#635bff] font-bold hover:underline">TX to FL Shipping →</a></td>
             </tr>
           </tbody>
         </table>
@@ -774,4 +831,4 @@ if os.path.exists(FLAT_FILE):
     with open(FLAT_FILE, "w", encoding="utf-8") as f:
         f.write(open_transport_html)
 
-print("SUCCESS: Deployed commercially targeted H1 & breadcrumb enhancements to Open Auto Transport!")
+print("SUCCESS: Deployed comprehensive E-E-A-T, Person schema, expert tip, broker FAQs, and route table optimizations!")
