@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+TARGET_FILE = os.path.join(BASE_DIR, "services", "open-auto-transport", "index.html")
+FLAT_FILE = os.path.join(BASE_DIR, "services", "open-auto-transport.html")
+
+open_transport_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -625,3 +631,14 @@
   </footer>
 </body>
 </html>
+"""
+
+# Write to both target locations to ensure 100% route sync
+with open(TARGET_FILE, "w", encoding="utf-8") as f:
+    f.write(open_transport_html)
+
+if os.path.exists(FLAT_FILE):
+    with open(FLAT_FILE, "w", encoding="utf-8") as f:
+        f.write(open_transport_html)
+
+print("SUCCESS: Deployed Open Auto Transport pillar page refinements to /services/open-auto-transport/!")
