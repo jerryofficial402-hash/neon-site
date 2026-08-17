@@ -19,7 +19,7 @@ open_transport_html = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Open Auto Transport | Nationwide Car Shipping | Neon</title>
+  <title>Open Auto Transport: Nationwide Car Shipping Services | Neon</title>
   <meta name="description" content="Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Neon Auto Transport">
@@ -28,7 +28,7 @@ open_transport_html = """<!DOCTYPE html>
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neonautotransport.com/services/open-auto-transport/">
-  <meta property="og:title" content="Open Auto Transport | Nationwide Car Shipping | Neon">
+  <meta property="og:title" content="Open Auto Transport: Nationwide Car Shipping Services | Neon">
   <meta property="og:description" content="Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.">
   <meta property="og:image" content="https://neonautotransport.com/images/open-auto-transport-hero.jpg">
   <meta property="og:image:width" content="1200">
@@ -92,7 +92,7 @@ open_transport_html = """<!DOCTYPE html>
         "@type": "WebPage",
         "@id": "https://neonautotransport.com/services/open-auto-transport/#webpage",
         "url": "https://neonautotransport.com/services/open-auto-transport/",
-        "name": "Open Auto Transport: Nationwide Car Shipping",
+        "name": "Open Auto Transport: Nationwide Car Shipping Services",
         "description": "Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.",
         "primaryImageOfPage": {
           "@type": "ImageObject",
@@ -108,7 +108,7 @@ open_transport_html = """<!DOCTYPE html>
       {
         "@type": "Service",
         "@id": "https://neonautotransport.com/services/open-auto-transport/#service",
-        "name": "Open Auto Transport",
+        "name": "Open Auto Transport: Nationwide Car Shipping Services",
         "serviceType": "Open carrier vehicle transportation",
         "provider": {
           "@id": "https://neonautotransport.com/#organization"
@@ -284,20 +284,29 @@ open_transport_html = """<!DOCTYPE html>
     </div>
   </header>
 
-  <!-- Hero Section (EXACT Arkansas Layout Clone) -->
+  <!-- Hero Section (Arkansas Layout Clone + Commercially Targeted H1 & Breadcrumbs) -->
   <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
     <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         
         <!-- Left Column (50% Width) -->
         <div class="lg:w-1/2 flex flex-col justify-center">
+          <!-- Breadcrumbs -->
+          <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
+            <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
+            <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
+            <span class="text-[#0a2540] font-bold">Open Auto Transport</span>
+          </nav>
+
+          <!-- License Badge -->
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
             <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
-            FMSCA &amp; US Dot Approved
+            FMCSA Registered • USDOT #4355879 • MC #1703787
           </div>
           
+          <!-- Commercially Targeted H1 Heading -->
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">
-            Open Auto Transport
+            Open Auto Transport: Nationwide Car Shipping Services
           </h1>
           
           <p class="text-lg text-[#425466] mb-10 leading-relaxed">
@@ -315,7 +324,7 @@ open_transport_html = """<!DOCTYPE html>
         <!-- Right Column (50% Width) -->
         <div class="lg:w-1/2 relative w-full">
           <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
-            <img alt="Open Auto Transport" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="800" loading="eager" src="/images/open-auto-transport-hero.jpg" style="max-height: 450px;" width="1200"/>
+            <img alt="Open Auto Transport Nationwide Car Shipping Services" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="800" loading="eager" src="/images/open-auto-transport-hero.jpg" style="max-height: 450px;" width="1200"/>
           </div>
         </div>
 
@@ -765,4 +774,4 @@ if os.path.exists(FLAT_FILE):
     with open(FLAT_FILE, "w", encoding="utf-8") as f:
         f.write(open_transport_html)
 
-print("SUCCESS: Deployed exact Arkansas Hero Section layout clone to /services/open-auto-transport/!")
+print("SUCCESS: Deployed commercially targeted H1 & breadcrumb enhancements to Open Auto Transport!")
