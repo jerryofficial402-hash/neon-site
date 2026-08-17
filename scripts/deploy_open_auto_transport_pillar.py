@@ -28,9 +28,11 @@ open_transport_html = """<!DOCTYPE html>
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neonautotransport.com/services/open-auto-transport/">
-  <meta property="og:title" content="Open Auto Transport | Nationwide Car Shipping">
+  <meta property="og:title" content="Open Auto Transport | Nationwide Car Shipping | Neon">
   <meta property="og:description" content="Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.">
-  <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
+  <meta property="og:image" content="https://neonautotransport.com/images/open-auto-transport-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta property="og:site_name" content="Neon Auto Transport">
 
   <!-- Structured Data Schema Graph (Organization, WebSite, WebPage, Service, BreadcrumbList, FAQPage) -->
@@ -43,7 +45,7 @@ open_transport_html = """<!DOCTYPE html>
         "@id": "https://neonautotransport.com/#organization",
         "name": "Neon Auto Transport",
         "url": "https://neonautotransport.com",
-        "logo": "https://neonautotransport.com/images/og-cover.jpg"
+        "logo": "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
       },
       {
         "@type": "WebSite",
@@ -60,6 +62,10 @@ open_transport_html = """<!DOCTYPE html>
         "url": "https://neonautotransport.com/services/open-auto-transport/",
         "name": "Open Auto Transport: Nationwide Car Shipping",
         "description": "Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
+        },
         "isPartOf": {
           "@id": "https://neonautotransport.com/#website"
         },
@@ -253,33 +259,57 @@ open_transport_html = """<!DOCTYPE html>
     </div>
   </header>
 
-  <!-- Slanted Hero Header -->
-  <section class="relative stripe-gradient-bg overflow-hidden bg-[#0a2540] text-white" style="padding-top:140px;padding-bottom:120px;clip-path:polygon(0 0,100% 0,100% 88%,0 100%)">
-    <div class="container mx-auto px-4 lg:px-8 z-10 relative text-center max-w-4xl">
-      <nav aria-label="Breadcrumbs" class="flex justify-center items-center gap-2 text-xs font-semibold mb-4 flex-wrap text-slate-300">
-        <a href="/" class="hover:underline text-slate-300" style="text-decoration:none;">Home</a><span>/</span>
-        <a href="/services/" class="hover:underline text-slate-300" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
-        <span class="text-white font-bold">Open Auto Transport</span>
-      </nav>
-      <div class="inline-block bg-[#39FF14]/10 text-[#39FF14] border border-[#39FF14]/20 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
-        FMCSA Registered • USDOT #4355879 • MC #1703787
-      </div>
-      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none mb-6 tracking-tighter" style="color: #ffffff !important;">
-        Open Auto Transport: <span style="color: #00D1FF">Nationwide Car Shipping</span>
-      </h1>
-      <p class="text-base md:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed mb-6 font-normal">
-        Open auto transport is a common way to ship standard cars, SUVs, trucks, and other eligible vehicles across the United States. A motor carrier transports your vehicle on an open multi-car trailer and aims to pick up and deliver as close to your addresses as truck access safely allows.
-      </p>
-      <p class="text-xs md:text-sm text-slate-300 max-w-2xl mx-auto font-medium mb-8">
-        Neon Auto Transport LLC is an authorized auto transport broker. We arrange transportation through independently owned motor carriers. Request a free quote to compare available open-carrier options for your route, vehicle, dates, and pickup or delivery access.
-      </p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)]" style="text-decoration: none;">
-          Get Your Free Open Auto Transport Quote →
-        </a>
-        <a href="tel:5715767711" class="px-8 py-3.5 rounded-full font-black text-base border-2 border-[#39FF14] text-[#39FF14] hover:bg-[#39FF14] hover:text-[#0a2540] transition" style="text-decoration: none;">
-          📞 Call (571) 576-7711
-        </a>
+  <!-- Split 2-Column Slanted Hero Header -->
+  <section class="relative stripe-gradient-bg overflow-hidden bg-[#0a2540] text-white" style="padding-top:140px;padding-bottom:120px;clip-path:polygon(0 0,100% 0,100% 90%,0 100%)">
+    <div class="container mx-auto px-4 lg:px-8 z-10 relative max-w-6xl">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left Column: Copy & CTAs -->
+        <div class="lg:col-span-7 text-left space-y-5">
+          <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-slate-300">
+            <a href="/" class="hover:underline text-slate-300" style="text-decoration:none;">Home</a><span>/</span>
+            <a href="/services/" class="hover:underline text-slate-300" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
+            <span class="text-white font-bold">Open Auto Transport</span>
+          </nav>
+
+          <div class="inline-block bg-[#39FF14]/10 text-[#39FF14] border border-[#39FF14]/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Authorized Broker • USDOT #4355879 • MC #1703787
+          </div>
+
+          <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tighter" style="color: #ffffff !important;">
+            Open Auto Transport: <span style="color: #00D1FF">Nationwide Car Shipping</span>
+          </h1>
+
+          <p class="text-base text-slate-200 leading-relaxed font-normal">
+            Open auto transport is a common way to ship standard cars, SUVs, trucks, and other eligible vehicles across the United States. A motor carrier transports your vehicle on an open multi-car trailer and aims to pick up and deliver as close to your addresses as truck access safely allows.
+          </p>
+
+          <p class="text-xs text-slate-300 font-medium">
+            Neon Auto Transport LLC is an authorized auto transport broker. We arrange transportation through independently owned motor carriers. Request a free quote to compare available open-carrier options for your route, vehicle, dates, and pickup or delivery access.
+          </p>
+
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-7 py-3.5 rounded-full font-black text-sm hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)]" style="text-decoration: none;">
+              Get Your Free Open Auto Transport Quote →
+            </a>
+            <a href="tel:5715767711" class="px-7 py-3.5 rounded-full font-black text-sm border-2 border-[#39FF14] text-[#39FF14] hover:bg-[#39FF14] hover:text-[#0a2540] transition" style="text-decoration: none;">
+              📞 Call (571) 576-7711
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Image Showcase Card -->
+        <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+          <div class="relative rounded-3xl overflow-hidden border-2 border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.5)] group">
+            <img src="/images/open-auto-transport-hero.jpg" alt="Modern open multi-car auto transport truck shipping cars on nationwide highway" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500" loading="eager" width="1200" height="675">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a2540]/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 bg-[#0a2540]/90 backdrop-blur-md rounded-2xl border border-white/10 text-xs text-white">
+              <div class="font-bold text-[#39FF14] uppercase tracking-wider mb-1">🚛 Open Multi-Car Carrier</div>
+              <div>Standard, cost-effective nationwide car shipping for daily drivers, SUVs &amp; trucks.</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -646,7 +676,7 @@ open_transport_html = """<!DOCTYPE html>
         <div>
           <strong>Reviewed by:</strong> <a href="/author/shazil-ali.html" class="text-[#635bff] font-bold hover:underline">Shazil Ali — Auto Transport Specialist</a>, Neon Auto Transport &nbsp;|&nbsp; <strong>Last updated:</strong> August 2026
         </div>
-        <p class="text-slate-500 italic max-w-2xl mx-auto">
+        <p class="text-slate-[#425466] italic max-w-2xl mx-auto">
           Shazil reviews Neon Auto Transport's educational content for accuracy, carrier terminology, shipping processes, and customer-facing claims. Information on this page is for general planning. Pricing, pickup windows, carrier availability, and applicable insurance details vary by shipment and are confirmed during booking.
         </p>
       </div>
@@ -726,4 +756,4 @@ if os.path.exists(FLAT_FILE):
     with open(FLAT_FILE, "w", encoding="utf-8") as f:
         f.write(open_transport_html)
 
-print("SUCCESS: Deployed final Open Auto Transport pillar page refinements (v3)!")
+print("SUCCESS: Deployed split 2-column Hero Image layout to /services/open-auto-transport/!")
