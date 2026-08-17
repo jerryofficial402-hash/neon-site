@@ -19,8 +19,8 @@ open_transport_html = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Open Auto Transport | Nationwide Vehicle Shipping</title>
-  <meta name="description" content="Learn how open auto transport works for nationwide vehicle shipping. Compare open vs enclosed trailer options, cost factors, vehicle prep, and carrier logistics.">
+  <title>Open Auto Transport | Nationwide Car Shipping | Neon</title>
+  <meta name="description" content="Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Neon Auto Transport">
   <link rel="canonical" href="https://neonautotransport.com/services/open-auto-transport/">
@@ -28,8 +28,8 @@ open_transport_html = """<!DOCTYPE html>
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://neonautotransport.com/services/open-auto-transport/">
-  <meta property="og:title" content="Open Auto Transport | Nationwide Vehicle Shipping">
-  <meta property="og:description" content="Learn how open auto transport works for nationwide vehicle shipping. Compare open vs enclosed trailer options, cost factors, vehicle prep, and carrier logistics.">
+  <meta property="og:title" content="Open Auto Transport | Nationwide Car Shipping">
+  <meta property="og:description" content="Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.">
   <meta property="og:image" content="https://neonautotransport.com/images/og-cover.jpg">
   <meta property="og:site_name" content="Neon Auto Transport">
 
@@ -59,7 +59,7 @@ open_transport_html = """<!DOCTYPE html>
         "@id": "https://neonautotransport.com/services/open-auto-transport/#webpage",
         "url": "https://neonautotransport.com/services/open-auto-transport/",
         "name": "Open Auto Transport: Nationwide Car Shipping",
-        "description": "Learn how open auto transport works for nationwide car shipping. Compare pricing factors, pickup and delivery steps, and enclosed transport options.",
+        "description": "Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport.",
         "isPartOf": {
           "@id": "https://neonautotransport.com/#website"
         },
@@ -138,7 +138,7 @@ open_transport_html = """<!DOCTYPE html>
             "name": "How long does open transport take?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cross-country shipments commonly take several days (typically 5 to 9 days), while regional shipments may be completed more quickly (1 to 4 days). Actual transit depends on route, carrier scheduling, driver hours-of-service, traffic, weather, and other factors."
+              "text": "Cross-country shipments commonly take several days, while regional shipments may be completed more quickly. Actual transit depends on route, carrier scheduling, driver hours-of-service, traffic, weather, and other factors."
             }
           },
           {
@@ -146,7 +146,7 @@ open_transport_html = """<!DOCTYPE html>
             "name": "Can an inoperable vehicle ship on an open carrier?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Inoperable vehicles can often be shipped if they roll, steer, and brake, but special loading equipment may be required. Inform your transport specialist before booking so suitable carrier options can be reviewed."
+              "text": "Yes, in many cases. Inoperable vehicles can often be shipped if they roll, steer, and brake, but special loading equipment may be required. Inform your transport specialist before booking so suitable carrier options can be reviewed."
             }
           },
           {
@@ -269,8 +269,8 @@ open_transport_html = """<!DOCTYPE html>
         <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)]" style="text-decoration: none;">
           Get Your Open Auto Transport Quote →
         </a>
-        <a href="/cost-calculator/" class="px-8 py-3.5 rounded-full font-black text-base border-2 border-white text-white hover:bg-white hover:text-[#0a2540] transition" style="text-decoration: none;">
-          Calculate Car Shipping Cost
+        <a href="tel:5715767711" class="px-8 py-3.5 rounded-full font-black text-base border-2 border-[#39FF14] text-[#39FF14] hover:bg-[#39FF14] hover:text-[#0a2540] transition" style="text-decoration: none;">
+          📞 Call (571) 576-7711
         </a>
       </div>
     </div>
@@ -330,6 +330,22 @@ open_transport_html = """<!DOCTYPE html>
         </p>
       </div>
 
+      <!-- NEW: Why Choose Neon for Open Auto Transport? Section -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Why Choose Neon for Open Auto Transport?</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          We operate as an authorized auto transport broker, providing clear customer guidance and carrier coordination:
+        </p>
+        <div class="grid md:grid-cols-2 gap-4 text-xs font-semibold text-[#0a2540] mb-6">
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">✅ Licensed & Bonded Broker — MC #1703787, USDOT #4355879</div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">✅ Carrier Matching — Vetted, FMCSA-registered motor carriers</div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">✅ Route-Specific Quoting — Clear upfront pricing with no hidden fees</div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">✅ Door-to-Door Coordination — Pickup/delivery near your location</div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">✅ Bill of Lading Support — Full condition inspection at pickup & delivery</div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">✅ Dedicated Support — Responsive customer service throughout transit</div>
+        </div>
+      </div>
+
       <!-- Section: Who Should Choose Open Auto Transport? (AEO Decision Module) -->
       <div class="p-8 md:p-10 bg-[#f8fafc] rounded-3xl border border-[#e6e6e6] shadow-sm mb-12">
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Who Is Open Transport Best For?</h2>
@@ -374,8 +390,8 @@ open_transport_html = """<!DOCTYPE html>
       <!-- Section: Open vs. Enclosed Auto Transport Comparison Table -->
       <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 overflow-x-auto">
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Open vs. Enclosed Auto Transport: Which Should You Choose?</h2>
-        <p class="text-base text-[#425466] leading-relaxed mb-6">
-          Compare key operational differences between open and enclosed auto transport:
+        <p class="text-base text-[#425466] leading-relaxed mb-4">
+          Open transport is generally the practical option for standard daily-driver vehicles. Enclosed transport generally costs more because covered carriers have less capacity and operate as a more specialized service.
         </p>
         
         <table class="w-full text-left text-sm border-collapse mb-6 min-w-[500px]">
@@ -410,7 +426,7 @@ open_transport_html = """<!DOCTYPE html>
             <tr>
               <td class="p-4 font-bold text-[#0a2540]">Pricing</td>
               <td class="p-4">Typically lower / most cost-effective</td>
-              <td class="p-4">Typically 30–50% higher</td>
+              <td class="p-4">Typically higher (specialized capacity)</td>
             </tr>
           </tbody>
         </table>
@@ -457,11 +473,11 @@ open_transport_html = """<!DOCTYPE html>
         </div>
       </div>
 
-      <!-- NEW: What Can Affect Pickup & Delivery on an Open Carrier? (Real Operational Knowledge) -->
+      <!-- NEW: What Can Affect Pickup & Delivery on an Open Carrier? -->
       <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12">
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">What Can Affect Pickup & Delivery on an Open Carrier?</h2>
         <p class="text-base text-[#425466] leading-relaxed mb-6">
-          Open car haulers are large commercial vehicles measuring up to 80 feet in length. Certain neighborhood conditions can restrict direct door-to-door access:
+          Open car carriers are large commercial vehicles that require significantly more space to maneuver than a normal passenger vehicle. Certain neighborhood conditions can restrict direct door-to-door access:
         </p>
         <div class="grid sm:grid-cols-2 gap-4 text-xs font-semibold text-[#0a2540]">
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl">📍 Narrow residential streets or tight corners</div>
@@ -476,6 +492,28 @@ open_transport_html = """<!DOCTYPE html>
         </p>
       </div>
 
+      <!-- NEW: What If My Carrier Is Delayed or My Pickup Changes? (Operational Support) -->
+      <div class="p-8 md:p-10 bg-[#f8fafc] rounded-3xl border border-[#e6e6e6] shadow-sm mb-12">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">What If My Carrier Is Delayed or My Pickup Changes?</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          Commercial vehicle transport involves real-world variables like highway traffic, weather delays, and DOT driver rest requirements. Here is how Neon handles operational scenarios:
+        </p>
+        <div class="space-y-4 text-xs text-[#425466] leading-relaxed">
+          <div class="p-4 bg-white border border-[#e6e6e6] rounded-xl">
+            <strong class="text-[#0a2540] block mb-1">Carrier Delays:</strong> If a truck is delayed by weather or traffic, your coordinator updates you with revised ETA windows.
+          </div>
+          <div class="p-4 bg-white border border-[#e6e6e6] rounded-xl">
+            <strong class="text-[#0a2540] block mb-1">Schedule / Location Changes:</strong> If your availability changes, inform us promptly so we can adjust pickup or delivery coordination with the carrier.
+          </div>
+          <div class="p-4 bg-white border border-[#e6e6e6] rounded-xl">
+            <strong class="text-[#0a2540] block mb-1">Unavoidable Carrier Cancellation:</strong> If a scheduled carrier experiences a breakdown, Neon works to re-match your shipment with a qualified replacement carrier.
+          </div>
+          <div class="p-4 bg-white border border-[#e6e6e6] rounded-xl">
+            <strong class="text-[#0a2540] block mb-1">Condition Issues at Delivery:</strong> Any damage or discrepancy must be explicitly noted on the final Bill of Lading before signing. Neon assists with carrier insurance documentation.
+          </div>
+        </div>
+      </div>
+
       <!-- Section: Prepare Your Vehicle for Open Transport -->
       <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12">
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">Prepare Your Vehicle for Open Transport</h2>
@@ -487,7 +525,7 @@ open_transport_html = """<!DOCTYPE html>
           <li>Remove valuables and personal belongings; carrier policies on personal items vary.</li>
           <li>Remove or deactivate toll transponders and parking tags.</li>
           <li>Disable alarms or provide required disarm instructions to the carrier.</li>
-          <li>Keep the fuel level at the amount requested by your coordinator (typically around 1/4 tank); avoid carrying unnecessary fuel weight.</li>
+          <li>Keep the fuel level at the amount requested by your carrier or transport coordinator (typically around 1/4 tank); avoid carrying unnecessary fuel weight.</li>
           <li>Be present at pickup and delivery or authorize a representative to inspect and sign the Bill of Lading.</li>
         </ul>
 
@@ -523,13 +561,13 @@ open_transport_html = """<!DOCTYPE html>
           <div class="border-b border-[#e6e6e6] pb-6">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2">How long does open transport take?</h3>
             <p class="text-sm text-[#425466] leading-relaxed">
-              Cross-country shipments commonly take several days (typically 5 to 9 days), while regional shipments may be completed more quickly (1 to 4 days). Actual transit depends on route, carrier scheduling, driver hours-of-service, traffic, weather, and other factors.
+              Cross-country shipments commonly take several days, while regional shipments may be completed more quickly. Actual transit depends on route, carrier scheduling, driver hours-of-service, traffic, weather, and other factors.
             </p>
           </div>
           <div class="border-b border-[#e6e6e6] pb-6">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2">Can an inoperable vehicle ship on an open carrier?</h3>
             <p class="text-sm text-[#425466] leading-relaxed">
-              Inoperable vehicles can often be shipped if they roll, steer, and brake, but special loading equipment may be required. Inform your transport specialist before booking so suitable carrier options can be reviewed.
+              Yes, in many cases. Inoperable vehicles can often be shipped if they roll, steer, and brake, but special loading equipment may be required. Inform your transport specialist before booking so suitable carrier options can be reviewed.
             </p>
           </div>
           <div class="border-b border-[#e6e6e6] pb-6">
@@ -571,14 +609,14 @@ open_transport_html = """<!DOCTYPE html>
           Ready to Ship Your Vehicle on an Open Carrier?
         </h3>
         <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
-          Get a free open auto transport quote tailored to your route and vehicle, or use our cost calculator to review estimated pricing.
+          Get a free open auto transport quote tailored to your route and vehicle, or call our team for direct route assistance.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="/car-shipping-quote/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e011] transition shadow-md text-base w-full sm:w-auto" style="text-decoration: none;">
             Get Your Open Auto Transport Quote
           </a>
-          <a href="/cost-calculator/" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none;">
-            Calculate Car Shipping Cost
+          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none;">
+            📞 Call (571) 576-7711
           </a>
         </div>
       </div>
@@ -633,7 +671,6 @@ open_transport_html = """<!DOCTYPE html>
 </html>
 """
 
-# Write to both target locations to ensure 100% route sync
 with open(TARGET_FILE, "w", encoding="utf-8") as f:
     f.write(open_transport_html)
 
@@ -641,4 +678,4 @@ if os.path.exists(FLAT_FILE):
     with open(FLAT_FILE, "w", encoding="utf-8") as f:
         f.write(open_transport_html)
 
-print("SUCCESS: Deployed Open Auto Transport pillar page refinements to /services/open-auto-transport/!")
+print("SUCCESS: Deployed complete v2 Open Auto Transport pillar page refinements to /services/open-auto-transport/!")
