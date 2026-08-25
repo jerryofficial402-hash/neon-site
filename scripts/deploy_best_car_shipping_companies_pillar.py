@@ -23,7 +23,7 @@ page_html = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Best Car Shipping Companies: Compare Auto Transport | Neon</title>
+  <title>Best Car Shipping Companies: How to Compare Auto Transport Providers | Neon</title>
   <meta name="description" content="Compare reliable car shipping companies by cost, services, carrier verification, insurance, and delivery options. Learn how to choose an auto transport broker or carrier.">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Neon Auto Transport">
@@ -32,7 +32,7 @@ page_html = """<!DOCTYPE html>
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://neonautotransport.com/best-car-shipping-companies/">
-  <meta property="og:title" content="Best Car Shipping Companies: Compare Auto Transport | Neon">
+  <meta property="og:title" content="Best Car Shipping Companies: How to Compare Auto Transport Providers | Neon">
   <meta property="og:description" content="Compare reliable car shipping companies by cost, services, carrier verification, insurance, and delivery options. Learn how to choose an auto transport broker or carrier.">
   <meta property="og:image" content="https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg">
   <meta property="og:image:width" content="1200">
@@ -41,7 +41,7 @@ page_html = """<!DOCTYPE html>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Best Car Shipping Companies: Compare Auto Transport | Neon">
+  <meta name="twitter:title" content="Best Car Shipping Companies: How to Compare Auto Transport Providers | Neon">
   <meta name="twitter:description" content="Compare reliable car shipping companies by cost, services, carrier verification, insurance, and delivery options. Learn how to choose an auto transport broker or carrier.">
   <meta name="twitter:image" content="https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg">
 
@@ -90,7 +90,8 @@ page_html = """<!DOCTYPE html>
         "logo": "https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg",
         "sameAs": [
           "https://safer.fmcsa.dot.gov/CompanySnapshot.aspx",
-          "https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist"
+          "https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist",
+          "https://www.fmcsa.dot.gov/protect-your-move/resources/consumer-advisory-automobile-transporters"
         ]
       },
       {
@@ -161,7 +162,7 @@ page_html = """<!DOCTYPE html>
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Resources",
+            "name": "Services",
             "item": "https://neonautotransport.com/services/"
           },
           {
@@ -245,7 +246,7 @@ page_html = """<!DOCTYPE html>
             "name": "Can I ship an inoperable vehicle?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Often, yes, but you must disclose that the vehicle cannot be driven. The carrier may need a winch or other equipment, and pickup and delivery locations must allow safe loading."
+              "text": "Often, yes, but you must disclose that the vehicle cannot be driven before booking because the vehicle may require a winch, special loading equipment, or additional labor, and pickup and delivery locations must allow safe loading."
             }
           },
           {
@@ -253,7 +254,7 @@ page_html = """<!DOCTYPE html>
             "name": "Can I put personal items in my car?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Policies vary by provider and carrier. Ask for written permission before placing anything in the vehicle, keep items limited, and do not assume personal property is covered by the vehicle carrier's cargo insurance."
+              "text": "Policies vary by provider and carrier. Ask for written permission before placing anything in the vehicle, keep items limited, and do not assume personal property is covered by the vehicle carrier's cargo insurance. Items may also be excluded from cargo coverage, and some carriers may refuse the shipment if belongings are not disclosed."
             }
           },
           {
@@ -270,6 +271,22 @@ page_html = """<!DOCTYPE html>
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Door-to-door shipping usually means delivery as close as safely and legally possible to the requested address. Large carriers may need to use a nearby meeting point because of road restrictions, low branches, narrow streets, or local access rules."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if my car is damaged during transport?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Photograph the vehicle at pickup and delivery, compare its condition with the bill of lading, and document any apparent damage before signing delivery paperwork. Then follow the claims instructions provided by the carrier or broker."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a pickup window and transit time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The pickup window is the period during which a carrier is expected to collect the vehicle. Transit time begins after pickup and refers to the time needed to reach the delivery area. They are separate estimates."
             }
           }
         ]
@@ -353,17 +370,17 @@ page_html = """<!DOCTYPE html>
         
         <!-- Left Column (50% Width) -->
         <div class="lg:w-1/2 flex flex-col justify-center">
-          <!-- Breadcrumbs -->
+          <!-- Breadcrumbs (Matching /services/ destination) -->
           <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
             <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
-            <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Resources</a><span>/</span>
+            <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Services</a><span>/</span>
             <span class="text-[#0a2540] font-bold">Best Car Shipping Companies</span>
           </nav>
 
           <!-- FMCSA Verified Registration Badge -->
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
             <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
-            FMCSA-Registered Broker • USDOT No. 4355879 | MC No. 1703787
+            FMCSA-Registered Broker • MC No. 1703787 | USDOT No. 4355879
           </div>
           
           <!-- H1 Heading -->
@@ -406,10 +423,14 @@ page_html = """<!DOCTYPE html>
           A standard sedan may be well suited to open transport, while a classic car may justify enclosed shipping. Military relocations, auction purchases, dealership inventory, inoperable vehicles, and urgent shipments require additional questions about timing, access, equipment, and documentation.
         </p>
         
-        <div class="p-6 bg-[#f0f7ff] border border-[#00D1FF]/40 rounded-2xl text-sm text-[#0a2540] leading-relaxed">
+        <div class="p-6 bg-[#f0f7ff] border border-[#00D1FF]/40 rounded-2xl text-sm text-[#0a2540] leading-relaxed mb-4">
           <strong class="block mb-2 font-bold text-base text-[#0a2540]">📋 Neon Auto Transport Brokerage Disclosure:</strong>
-          Neon Auto Transport LLC is an FMCSA-registered auto transport brokerage serving nationwide customers, including the Woodbridge, Northern Virginia, and Washington, DC, areas (USDOT No. 4355879 | MC No. 1703787). Neon coordinates shipments through independently owned motor carriers; the assigned carrier physically loads, transports, and delivers the vehicle. Always verify the assigned carrier and shipment terms before pickup via the official <a href="https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist" target="_blank" rel="noopener" class="text-[#635bff] font-bold hover:underline">FMCSA Licensing &amp; Insurance System</a>.
+          Neon Auto Transport LLC is an FMCSA-registered auto transport broker serving customers nationwide, including the Woodbridge, Northern Virginia, and Washington, DC, areas (MC No. 1703787 | USDOT No. 4355879). Neon arranges transportation through independently owned motor carriers; the assigned carrier physically loads, transports, and delivers the vehicle. Before pickup, confirm the assigned carrier&rsquo;s identity, operating authority, applicable insurance information, and shipment terms through official FMCSA systems.
         </div>
+
+        <p class="text-xs text-[#425466] leading-relaxed">
+          The <a href="https://www.fmcsa.dot.gov/protect-your-move/resources/consumer-advisory-automobile-transporters" target="_blank" rel="noopener" class="text-[#635bff] font-bold hover:underline">FMCSA consumer advisory about automobile transporters</a> advises consumers to distinguish between an auto transport broker and an auto transporter before booking and recommends checking company credentials in official FMCSA databases.
+        </p>
       </div>
 
       <!-- Section 2: Methodology Note & Best Car Shipping Companies Comparison Table -->
@@ -424,49 +445,49 @@ page_html = """<!DOCTYPE html>
         <table class="w-full text-left text-sm border-collapse mb-6 min-w-[650px]">
           <thead>
             <tr class="bg-[#0a2540] text-white">
-              <th class="p-4 rounded-tl-xl font-bold">Provider or Provider Type</th>
-              <th class="p-4 font-bold">May Suit Customers Who Need</th>
-              <th class="p-4 rounded-tr-xl font-bold">What to Verify</th>
+              <th class="p-4 rounded-tl-xl font-bold">Provider type</th>
+              <th class="p-4 font-bold">May suit customers who need</th>
+              <th class="p-4 rounded-tr-xl font-bold">What to verify</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-[#e6e6e6] bg-[#f8fafc]">
             <tr>
-              <td class="p-4 font-bold text-[#0a2540]">Auto Transport Broker</td>
-              <td class="p-4">Route comparison and carrier coordination across multiple states</td>
-              <td class="p-4">Broker authority, assigned carrier, price terms, and cancellation policy</td>
+              <td class="p-4 font-bold text-[#0a2540]">Auto transport broker</td>
+              <td class="p-4">Route comparison and carrier coordination</td>
+              <td class="p-4">Broker authority, assigned carrier, price terms, cancellation policy</td>
             </tr>
             <tr>
-              <td class="p-4 font-bold text-[#0a2540]">Direct Motor Carrier</td>
-              <td class="p-4">Direct communication with the hauling company and driver</td>
-              <td class="p-4">Carrier authority, active insurance filing, and route availability</td>
+              <td class="p-4 font-bold text-[#0a2540]">Direct motor carrier</td>
+              <td class="p-4">Direct communication with the hauling company</td>
+              <td class="p-4">Carrier authority, insurance information, route availability</td>
             </tr>
             <tr>
-              <td class="p-4 font-bold text-[#0a2540]">Online Vehicle Marketplace</td>
-              <td class="p-4">Multiple bids on an open bidding platform</td>
-              <td class="p-4">Identity, credentials, and safety records of the specific carrier bidding</td>
+              <td class="p-4 font-bold text-[#0a2540]">Online vehicle marketplace</td>
+              <td class="p-4">Multiple offers or carrier choices</td>
+              <td class="p-4">Identity, credentials, safety information, and terms of the specific carrier</td>
             </tr>
             <tr class="bg-[#f0f7ff]">
               <td class="p-4 font-bold text-[#635bff]">Neon Auto Transport LLC</td>
               <td class="p-4">Nationwide brokerage coordination, open or enclosed transport, and specialty support</td>
-              <td class="p-4">Neon&rsquo;s broker authority (MC #1703787) and the assigned carrier&rsquo;s insurance details</td>
+              <td class="p-4">Neon&rsquo;s broker authority and the assigned carrier&rsquo;s authority and insurance information</td>
             </tr>
             <tr>
-              <td class="p-4 font-bold text-[#0a2540]">Specialist Enclosed-Transport Provider</td>
-              <td class="p-4">Classic, luxury, exotic, or customized vehicles needing extra protection</td>
-              <td class="p-4">Trailer equipment type, loading process, cargo insurance limits, and availability</td>
+              <td class="p-4 font-bold text-[#0a2540]">Specialist enclosed-transport provider</td>
+              <td class="p-4">Classic, luxury, exotic, or customized vehicles</td>
+              <td class="p-4">Equipment, loading process, cargo coverage, exclusions, and availability</td>
             </tr>
             <tr>
-              <td class="p-4 font-bold text-[#0a2540]">Broker or Carrier Serving Dealerships &amp; Auctions</td>
+              <td class="p-4 font-bold text-[#0a2540]">Broker or carrier serving dealerships and auctions</td>
               <td class="p-4">Inventory moves, auction purchases, or recurring commercial shipments</td>
-              <td class="p-4">Release rules, lot hours, keys, gate access, and condition report requirements</td>
+              <td class="p-4">Release rules, lot hours, keys, gate access, fees, and condition-report requirements</td>
             </tr>
           </tbody>
         </table>
 
-        <!-- Methodology Note -->
+        <!-- Editorial Methodology Note -->
         <div class="p-4 bg-[#f6f9fc] border border-[#e6e6e6] rounded-xl text-xs text-[#425466] leading-relaxed">
-          <strong class="text-[#0a2540] block mb-1">🔍 Editorial Methodology Note:</strong>
-          This guide evaluates provider categories and company information using publicly available service pages, FMCSA registration resources, published policies, and customer-facing booking information reviewed in August 2026. We do not assign universal rankings because availability, pricing, carrier assignment, and service suitability vary by shipment.
+          <strong class="text-[#0a2540] block mb-1">🔍 Editorial Scope Note:</strong>
+          This guide evaluates common auto transport provider types and explains the information consumers should verify before booking. It does not assign a universal ranking to individual companies because prices, carrier availability, equipment, and service suitability vary by shipment.
         </div>
       </div>
 
@@ -504,11 +525,11 @@ page_html = """<!DOCTYPE html>
           </div>
           <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
             <strong class="text-[#0a2540] text-base block mb-2">💵 Pricing Transparency</strong>
-            A useful quote identifies the vehicle, route, transport method, timing assumptions, and potential conditions that could change the price. Check our <a href="/cost-calculator/" class="text-[#635bff] font-bold hover:underline">car shipping cost guide</a>.
+            A useful quote identifies the vehicle, route, transport method, timing assumptions, and potential conditions that could change the price. Check our <a href="/cost-calculator/" class="text-[#635bff] font-bold hover:underline">car shipping cost calculator</a>.
           </div>
           <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
             <strong class="text-[#0a2540] text-base block mb-2">🛡️ Carrier &amp; Insurance Verification</strong>
-            If a broker arranges the shipment, ask when the carrier will be assigned and confirm the assigned carrier and verify the applicable insurance filing and coverage terms via the official <a href="https://safer.fmcsa.dot.gov/CompanySnapshot.aspx" target="_blank" rel="noopener" class="text-[#635bff] font-bold hover:underline">FMCSA SAFER System</a>.
+            If a broker arranges the shipment, ask when the carrier will be assigned. After assignment, confirm the carrier&rsquo;s identity and review the applicable authority, insurance filing, and coverage terms through FMCSA&rsquo;s public systems. Ask the carrier or broker for any policy limits, exclusions, and claims instructions that apply to your shipment via the official <a href="https://safer.fmcsa.dot.gov/CompanySnapshot.aspx" target="_blank" rel="noopener" class="text-[#635bff] font-bold hover:underline">FMCSA SAFER System</a>.
           </div>
         </div>
       </div>
@@ -530,7 +551,7 @@ page_html = """<!DOCTYPE html>
           <li><strong>Expedited service:</strong> A short pickup window or urgent dispatch generally increases the cost.</li>
         </ul>
         <p class="text-base text-[#425466] leading-relaxed">
-          Learn more on our <a href="/car-shipping-quote/" class="text-[#635bff] font-bold hover:underline">get a route-specific auto transport quote</a> page or calculate an instant estimate.
+          Learn more on our <a href="/car-shipping-quote/" class="text-[#635bff] font-bold hover:underline">get a route-specific car shipping estimate</a> page or calculate an instant estimate.
         </p>
       </div>
 
@@ -575,7 +596,7 @@ page_html = """<!DOCTYPE html>
         </div>
       </div>
 
-      <!-- Section 7: Broker vs. Carrier Explainer -->
+      <!-- Section 7: Broker vs. Carrier Explainer & Surety Bond Compliance Note -->
       <div class="p-8 md:p-10 bg-[#f8fafc] rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-cyan">
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Broker vs. Carrier: What You Need to Know</h2>
         <p class="text-base text-[#425466] leading-relaxed mb-6">
@@ -591,33 +612,61 @@ page_html = """<!DOCTYPE html>
             Company operating commercial trucks. The carrier driver performs the inspection, loads and delivers the vehicle, and completes the bill of lading at pickup and delivery.
           </div>
         </div>
+
+        <div class="p-4 bg-white border border-[#e6e6e6] rounded-xl text-xs text-[#425466] leading-relaxed">
+          <strong class="text-[#0a2540] block mb-1">🔒 Broker Financial Security Note:</strong>
+          Interstate property brokers are required to maintain financial security through a surety bond or trust fund. FMCSA identifies the required amount as $75,000 for brokers of property. Consumers should verify a company&rsquo;s current authority and filings through official FMCSA systems rather than relying only on website claims.
+        </div>
       </div>
 
-      <!-- Section 8: Best Provider by Situation -->
+      <!-- Section 8: How to Choose a Reliable Car Shipping Company Checklist -->
       <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-indigo">
-        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">Best Provider by Situation</h2>
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">How to Choose a Reliable Car Shipping Company</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          Before booking auto transport, use this essential consumer verification checklist:
+        </p>
+        <ul class="space-y-3 text-sm text-[#425466] pl-5 list-disc mb-6">
+          <li>Confirm whether the company is a broker, carrier, or marketplace.</li>
+          <li>Verify the company&rsquo;s MC or USDOT information through FMCSA.</li>
+          <li>If using a broker, identify the assigned carrier before pickup.</li>
+          <li>Review the carrier&rsquo;s applicable insurance information and exclusions.</li>
+          <li>Compare equivalent quotes rather than choosing the lowest number.</li>
+          <li>Ask whether the quote is estimated or binding.</li>
+          <li>Confirm the pickup window and expected transit time separately.</li>
+          <li>Review deposit, balance, cancellation, and payment policies.</li>
+          <li>Disclose oversized, modified, lowered, damaged, or inoperable vehicles.</li>
+          <li>Ask where the vehicle will be delivered if the address is inaccessible to a large truck.</li>
+          <li>Photograph the vehicle and record existing damage at pickup.</li>
+          <li>Review the bill of lading at pickup and delivery.</li>
+          <li>Document any new damage before signing delivery paperwork.</li>
+        </ul>
+      </div>
+
+      <!-- Section 9: Best Transport Option by Situation -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-cyan">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">Best Transport Option by Situation</h2>
         <div class="grid sm:grid-cols-2 gap-4 text-xs font-semibold text-[#0a2540]">
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-cyan">
             <strong class="text-sm block mb-1 text-[#0a2540]">🚗 Standard Daily Drivers</strong>
-            <a href="/services/open-auto-transport/" class="text-[#635bff] hover:underline">Open auto transport</a> is the practical choice for standard sedans, crossovers, and trucks.
+            <a href="/services/open-auto-transport/" class="text-[#635bff] hover:underline">Open auto transport</a> is often the practical option for standard sedans, crossovers, and trucks.
           </div>
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-indigo">
             <strong class="text-sm block mb-1 text-[#0a2540]">🏎️ Luxury &amp; Classic Cars</strong>
-            Enclosed transport provides additional protection from weather and road debris and may suit high-value vehicles. See <a href="/services/luxury-car-shipping/" class="text-[#635bff] hover:underline">luxury car shipping</a>.
+            <a href="/services/luxury-car-shipping/" class="text-[#635bff] hover:underline">Enclosed transport</a> may provide additional protection from weather and road debris and may suit high-value vehicles.
           </div>
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-cyan">
             <strong class="text-sm block mb-1 text-[#0a2540]">🎖️ Military Relocations</strong>
-            <a href="/services/military-car-shipping/" class="text-[#635bff] hover:underline">Military vehicle shipping</a> offers timing flexibility for base moves and PCS orders.
+            <a href="/services/military-car-shipping/" class="text-[#635bff] hover:underline">Military vehicle shipping</a> may help coordinate timing around PCS orders and base-access requirements.
           </div>
           <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-indigo">
-            <strong class="text-sm block mb-1 text-[#0a2540]">🏢 Dealership &amp; Auction</strong>
-            <a href="/services/car-dealer-shipping/" class="text-[#635bff] hover:underline">Dealership vehicle transport</a> and <a href="/services/car-buyer-auto-transport/" class="text-[#635bff] hover:underline">auction vehicle transport</a> provide multi-vehicle scheduling and lot release coordination.
+            <strong class="text-sm block mb-1 text-[#0a2540]">🏢 Dealership &amp; Auction Shipments</strong>
+            Specialized <a href="/services/car-dealer-shipping/" class="text-[#635bff] hover:underline">dealership vehicle transport</a> or <a href="/services/car-buyer-auto-transport/" class="text-[#635bff] hover:underline">auction vehicle transport</a> coordination may help with release procedures, lot hours, keys, and condition documentation.
           </div>
         </div>
       </div>
 
-      <!-- Section 9: Complete FAQ Accordion -->
-      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-cyan">
+      <!-- Section 10: Complete FAQ Accordion -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-indigo">
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-8 tracking-tight text-center">Frequently Asked Questions</h2>
         <div class="space-y-6 max-w-3xl mx-auto">
           <div class="border-b border-[#e6e6e6] pb-6">
@@ -671,13 +720,13 @@ page_html = """<!DOCTYPE html>
           <div class="border-b border-[#e6e6e6] pb-6">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2">Can I ship an inoperable vehicle?</h3>
             <p class="text-sm text-[#425466] leading-relaxed">
-              Often, yes, but you must disclose that the vehicle cannot be driven. The carrier may need a winch or other equipment, and pickup and delivery locations must allow safe loading.
+              Often, yes, but you must disclose that the vehicle cannot be driven before booking because the vehicle may require a winch, special loading equipment, or additional labor, and pickup and delivery locations must allow safe loading.
             </p>
           </div>
           <div class="border-b border-[#e6e6e6] pb-6">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2">Can I put personal items in my car?</h3>
             <p class="text-sm text-[#425466] leading-relaxed">
-              Policies vary by provider and carrier. Ask for written permission before placing anything in the vehicle, keep items limited, and do not assume personal property is covered by the vehicle carrier's cargo insurance.
+              Policies vary by provider and carrier. Ask for written permission before placing anything in the vehicle, keep items limited, and do not assume personal property is covered by the vehicle carrier's cargo insurance. Items may also be excluded from cargo coverage, and some carriers may refuse the shipment if belongings are not disclosed.
             </p>
           </div>
           <div class="border-b border-[#e6e6e6] pb-6">
@@ -686,10 +735,22 @@ page_html = """<!DOCTYPE html>
               A bill of lading is the shipment document that records the vehicle, transport terms, mileage, and condition noted at pickup and delivery. Review it carefully and document any new damage before signing at delivery.
             </p>
           </div>
-          <div>
+          <div class="border-b border-[#e6e6e6] pb-6">
             <h3 class="text-lg font-bold text-[#0a2540] mb-2">Is door-to-door car shipping guaranteed?</h3>
             <p class="text-sm text-[#425466] leading-relaxed">
               Door-to-door shipping usually means delivery as close as safely and legally possible to the requested address. Large carriers may need to use a nearby meeting point because of road restrictions, low branches, narrow streets, or local access rules.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What happens if my car is damaged during transport?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Photograph the vehicle at pickup and delivery, compare its condition with the bill of lading, and document any apparent damage before signing delivery paperwork. Then follow the claims instructions provided by the carrier or broker.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What is the difference between a pickup window and transit time?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              The pickup window is the period during which a carrier is expected to collect the vehicle. Transit time begins after pickup and refers to the time needed to reach the delivery area. They are separate estimates.
             </p>
           </div>
         </div>
@@ -779,4 +840,4 @@ with open(TARGET_FILE, "w", encoding="utf-8") as f:
 with open(FLAT_FILE, "w", encoding="utf-8") as f:
     f.write(page_html)
 
-print("SUCCESS: Deployed complete FMCSA compliance, factual tone, methodology note, real link anchors, and expanded FAQs!")
+print("SUCCESS: Deployed complete FMCSA compliance, exact link text, 13-point checklist, and 14 commercial FAQs!")
