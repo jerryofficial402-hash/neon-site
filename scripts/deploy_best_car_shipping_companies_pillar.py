@@ -1,0 +1,723 @@
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+TARGET_DIR = os.path.join(BASE_DIR, "best-car-shipping-companies")
+TARGET_FILE = os.path.join(TARGET_DIR, "index.html")
+FLAT_FILE = os.path.join(BASE_DIR, "best-car-shipping-companies.html")
+
+if not os.path.exists(TARGET_DIR):
+    os.makedirs(TARGET_DIR)
+
+page_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P5K57THT');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="k1EGgbZH804OPpZC7lIPBJPs2nji6M3U25pigd6MVK8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Best Car Shipping Companies: Compare Auto Transport | Neon</title>
+  <meta name="description" content="Compare the best car shipping companies by services, pricing, insurance, reliability, and transport type. Learn how to choose the right auto transport provider.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Neon Auto Transport">
+  <link rel="canonical" href="https://neonautotransport.com/best-car-shipping-companies/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://neonautotransport.com/best-car-shipping-companies/">
+  <meta property="og:title" content="Best Car Shipping Companies: Compare Auto Transport | Neon">
+  <meta property="og:description" content="Compare the best car shipping companies by services, pricing, insurance, reliability, and transport type. Learn how to choose the right auto transport provider.">
+  <meta property="og:image" content="https://neonautotransport.com/images/open-auto-transport-hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:site_name" content="Neon Auto Transport">
+
+  <!-- Fonts & Tailwind CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="/css/tailwind.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    @media (min-width: 1024px) {
+      html { font-size: 110%; }
+    }
+    body { font-family: 'Inter', sans-serif; }
+    .card-hover-cyan {
+      border: 2px solid #e6e6e6 !important;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    .card-hover-cyan:hover {
+      border-color: #00D1FF !important;
+      transform: translateY(-6px) !important;
+      box-shadow: 0 14px 30px rgba(0, 209, 255, 0.2) !important;
+    }
+    .card-hover-indigo {
+      border: 2px solid #e6e6e6 !important;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+    .card-hover-indigo:hover {
+      border-color: #635bff !important;
+      transform: translateY(-6px) !important;
+      box-shadow: 0 14px 30px rgba(99, 91, 255, 0.18) !important;
+    }
+  </style>
+
+  <!-- Structured Data Schema Graph (Organization, WebSite, Person, Article, BreadcrumbList, FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://neonautotransport.com/#organization",
+        "name": "Neon Auto Transport",
+        "url": "https://neonautotransport.com",
+        "logo": "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://neonautotransport.com/#website",
+        "url": "https://neonautotransport.com/",
+        "name": "Neon Auto Transport",
+        "publisher": {
+          "@id": "https://neonautotransport.com/#organization"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://neonautotransport.com/author/shazil-ali.html#person",
+        "name": "Shazil Ali",
+        "jobTitle": "Auto Transport Specialist",
+        "worksFor": {
+          "@id": "https://neonautotransport.com/#organization"
+        },
+        "url": "https://neonautotransport.com/author/shazil-ali.html"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://neonautotransport.com/best-car-shipping-companies/#article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://neonautotransport.com/best-car-shipping-companies/"
+        },
+        "headline": "Best Car Shipping Companies: How to Compare Auto Transport Providers",
+        "description": "Compare car shipping companies by services, pricing, insurance, reliability, and transport type. Learn how to choose the right auto transport provider.",
+        "image": [
+          "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
+        ],
+        "author": {
+          "@id": "https://neonautotransport.com/author/shazil-ali.html#person"
+        },
+        "publisher": {
+          "@id": "https://neonautotransport.com/#organization"
+        },
+        "datePublished": "2026-08-25",
+        "dateModified": "2026-08-25",
+        "articleSection": "Car Shipping Guides",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://neonautotransport.com/best-car-shipping-companies/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://neonautotransport.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://neonautotransport.com/resources/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Car Shipping Guides",
+            "item": "https://neonautotransport.com/resources/car-shipping-guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best Car Shipping Companies",
+            "item": "https://neonautotransport.com/best-car-shipping-companies/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://neonautotransport.com/best-car-shipping-companies/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best car shipping company?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best car shipping company depends on your vehicle, route, budget, timing, and transport method. Compare brokers, carriers, and marketplaces using registration, insurance, pricing clarity, service availability, and communication—not only a universal ranking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best auto transport company?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best auto transport company is the one that can provide appropriate equipment, a realistic pickup and delivery plan, verifiable carrier information, suitable insurance, and clear written terms for your specific shipment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I choose a car shipping company?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Verify the company in FMCSA systems, identify whether it is a broker or carrier, compare multiple equivalent quotes, review insurance and cancellation terms, document the vehicle, and confirm the pickup and delivery process."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does it cost to ship a car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cost depends on distance, vehicle size, operability, open or enclosed transport, route demand, season, location, fuel costs, and urgency. A route-specific quote is more reliable than a generic national average."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it better to use a broker or carrier?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Neither is automatically better. A broker may provide broader carrier access and coordination, while a direct carrier may offer direct communication with the truck operator. The important issue is clear disclosure and verification."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is open or enclosed transport better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open transport is usually appropriate for ordinary vehicles and is generally more available. Enclosed transport provides additional protection and may be preferable for classic, luxury, exotic, or highly customized vehicles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does car shipping take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Transit time depends on distance, route, weather, traffic, carrier schedule, and the number of stops. Cross-country shipments commonly require several days to two weeks, but the provider should give a route-specific estimate rather than a guarantee unless the terms expressly provide one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are car shipping companies insured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The actual carrier should provide applicable insurance information. Do not assume that a brokerage's registration means the carrier's cargo coverage is sufficient for your vehicle. Ask for the carrier's legal name, insurance details, exclusions, and claims procedure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far in advance should I book?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Earlier booking generally provides more flexibility, especially during summer, holidays, military relocation periods, and other high-demand seasons. Ask the provider how much lead time is appropriate for your route and whether your dates are flexible."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I ship an inoperable vehicle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often, yes, but the shipment must be disclosed in advance. An inoperable vehicle may require a winch, special equipment, additional labor, and a location accessible to the carrier."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I ship a car door-to-door?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Door-to-door service usually means pickup and delivery as close as legally and safely possible to the requested addresses. Large carriers may not be able to enter narrow streets, private roads, restricted communities, or auction facilities, so a nearby meeting point may be necessary."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased">
+  <!-- Global Header -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300" id="global-header" style="background-color:#0a2540">
+    <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+      <div class="flex items-center" style="gap:24px">
+        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap; text-decoration:none;" id="logo-text">
+          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
+        </a>
+        <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" id="desktop-nav" style="white-space:nowrap;gap:24px">
+          <a href="/#how-it-works" class="hover:opacity-80 transition" style="text-decoration:none;">How it works</a>
+          
+          <!-- Mega Menu Wrapper -->
+          <div class="relative group flex items-center">
+            <a href="/services/" class="hover:opacity-80 transition flex items-center gap-1 cursor-pointer" style="text-decoration:none;">
+              Transport Services 
+              <svg aria-hidden="true" class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+            </a>
+            
+            <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-[#e6e6e6] p-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-4 group-hover:translate-y-0 z-50 text-left" style="top:100%">
+              <div class="grid grid-cols-3 gap-10 text-sm">
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Individual</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium" style="list-style:none; padding:0;">
+                    <li><a href="/services/open-auto-transport/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Open Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/enclosed-auto-transport/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Enclosed Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/door-to-door-car-shipping/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Door to Door Car Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/expedited-auto-transport/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Expedited Auto Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/motorcycle-shipping/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Motorcycle Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/military-car-shipping/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Military Car Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Business</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium" style="list-style:none; padding:0;">
+                    <li><a href="/services/car-dealer-shipping/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Car Dealer &amp; Fleet Shipping <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                    <li><a href="/services/luxury-car-shipping/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Classic &amp; Luxury Transport <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-[#0a2540] mb-2 border-b border-[#e6e6e6] pb-2">Specialized</h3>
+                  <ul class="space-y-4 mt-4 text-[#425466] font-medium" style="list-style:none; padding:0;">
+                    <li><a href="/best-car-shipping-companies/" class="hover:text-[#4338ca] flex items-center justify-between group/link font-bold text-[#4338ca]">Best Car Shipping Guide <span class="text-[#00d4ff] text-[10px]">▶</span></a></li>
+                    <li><a href="/car-shipping-quote/" class="hover:text-[#4338ca] flex items-center justify-between group/link">Specialized Shipping Quote <span class="text-[#00d4ff] text-[10px] opacity-0 group-hover/link:opacity-100 transition-opacity">▶</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="/why-neon/" class="hover:opacity-80 transition" style="text-decoration:none;">Why Neon</a>
+          <a href="/contact.html" class="hover:opacity-80 transition" style="text-decoration:none;">Contact Us</a>
+        </nav>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:5715767711" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-colors shadow-[0_0_15px_rgba(57,255,20,0.4)]" id="header-phone-btn" style="white-space:nowrap; text-decoration:none;">
+          <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          (571) 576-7711
+        </a>
+        <a href="/cost-calculator/" class="btn-outline" style="white-space:nowrap; color: #ffffff !important; border: 1px solid rgba(255,255,255,0.3) !important; padding: 0.5rem 1.25rem; border-radius: 9999px; font-weight: 600; text-decoration: none;">Cost Calculator</a>
+      </div>
+
+      <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="lg:hidden text-white focus:outline-none">
+        <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section (Arkansas Layout Clone + Neutral Comparison H1) -->
+  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        
+        <!-- Left Column (50% Width) -->
+        <div class="lg:w-1/2 flex flex-col justify-center">
+          <!-- Breadcrumbs -->
+          <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
+            <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
+            <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Resources</a><span>/</span>
+            <span class="text-[#0a2540] font-bold">Best Car Shipping Companies</span>
+          </nav>
+
+          <!-- License Badge -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
+            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+            FMCSA Registered Broker • USDOT #4355879 • MC #1703787
+          </div>
+          
+          <!-- H1 Heading -->
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">
+            Best Car Shipping Companies: How to Compare Auto Transport Providers
+          </h1>
+          
+          <!-- Opening Subtitle -->
+          <p class="text-lg text-[#425466] mb-10 leading-relaxed">
+            The best car shipping companies are not necessarily the ones with the lowest advertised price or the most confident &ldquo;number one&rdquo; claim. The right provider depends on your route, vehicle, preferred transport method, pickup flexibility, insurance requirements, and need for services such as door-to-door, enclosed, expedited, military, dealership, or auction transport.
+          </p>
+          
+          <div class="flex">
+            <a class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2" href="/car-shipping-quote/" style="text-decoration:none;">
+              Calculate Your Rate Instantly 
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column (50% Width) -->
+        <div class="lg:w-1/2 relative w-full">
+          <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
+            <img alt="Best Car Shipping Companies Auto Transport Provider Comparison" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="800" loading="eager" src="/images/open-auto-transport-hero.jpg" style="max-height: 450px;" width="1200"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Body Container -->
+  <main class="pb-24">
+    <div class="container mx-auto px-4 lg:px-8 max-w-6xl overlap-up mb-24 pt-12">
+
+      <!-- Section 1: Intro Overview & Transparency Statement -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-xl mb-12 card-hover-cyan">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Understanding Provider Comparison</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-4">
+          When comparing auto transport companies, look for clear broker or carrier disclosure, verifiable registration, transparent pricing, appropriate carrier insurance, realistic pickup and delivery expectations, and a written process for documenting vehicle condition. You should also compare several quotes using the same vehicle and route information.
+        </p>
+        <p class="text-base text-[#425466] leading-relaxed mb-6 font-semibold text-[#0a2540]">
+          Neon Auto Transport LLC is an authorized auto transport brokerage serving customers nationwide, including customers in Woodbridge, Northern Virginia, and the Washington, DC, metropolitan area. As a broker, Neon arranges transportation through independently owned motor carriers rather than claiming to operate its own fleet. That distinction matters because the carrier assigned to your shipment is the company that physically loads, hauls, and delivers the vehicle.
+        </p>
+      </div>
+
+      <!-- Section 2: Best Car Shipping Companies at a Glance Table -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 overflow-x-auto card-hover-indigo">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Best Car Shipping Companies at a Glance</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          There is no universally best car shipping company for every vehicle or route. A more useful approach is to compare providers by the job they are equipped to handle and the terms they can verify for your shipment:
+        </p>
+
+        <table class="w-full text-left text-sm border-collapse mb-6 min-w-[600px]">
+          <thead>
+            <tr class="bg-[#0a2540] text-white">
+              <th class="p-4 rounded-tl-xl font-bold">Provider or Provider Type</th>
+              <th class="p-4 font-bold">May Suit Customers Who Need</th>
+              <th class="p-4 rounded-tr-xl font-bold">Important Consideration</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#e6e6e6] bg-[#f8fafc]">
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Nationwide Auto Transport Broker</td>
+              <td class="p-4">Route comparison and carrier coordination across multiple states</td>
+              <td class="p-4">Confirm the assigned carrier and its active insurance policy</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Direct Auto Transport Carrier</td>
+              <td class="p-4">A direct relationship with the hauling company</td>
+              <td class="p-4">Availability may be limited by route density and carrier schedule</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Online Vehicle Marketplace</td>
+              <td class="p-4">Multiple bids or carrier choices on an open bidding platform</td>
+              <td class="p-4">Review the specific carrier's safety records, not only the marketplace rating</td>
+            </tr>
+            <tr class="bg-[#f0f7ff]">
+              <td class="p-4 font-bold text-[#635bff]">Neon Auto Transport LLC</td>
+              <td class="p-4">Nationwide brokerage coordination, open or enclosed transport, and specialty support</td>
+              <td class="p-4">Neon arranges transportation through independently owned, FMCSA-registered carriers</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Enclosed Transport Specialist</td>
+              <td class="p-4">Luxury, classic, exotic, or highly customized vehicles needing complete protection</td>
+              <td class="p-4">Higher cost and more limited carrier availability</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Dealership or Auction Provider</td>
+              <td class="p-4">Vehicle inventory, auction purchases, or recurring commercial shipments</td>
+              <td class="p-4">Confirm release authorization, lot hours, gate fees, and condition documentation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section 3: Specialist Operational Tip Attributed to Shazil Ali -->
+      <div class="p-6 md:p-8 bg-[#f0f7ff] border-2 border-[#00D1FF]/40 rounded-3xl shadow-sm mb-12 card-hover-cyan">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl shrink-0">💡</div>
+          <div>
+            <h3 class="text-lg font-black text-[#0a2540] mb-1">
+              Specialist Evaluation Tip from <a href="/author/shazil-ali.html" class="text-[#635bff] hover:underline">Shazil Ali</a>
+            </h3>
+            <p class="text-xs font-bold text-[#635bff] mb-3">Auto Transport Specialist, Neon Auto Transport</p>
+            <p class="text-sm text-[#0a2540] italic leading-relaxed">
+              &ldquo;The most common mistake we see customers make when evaluating companies is focusing solely on the initial quote price. A quote that is 30% lower than the market average often means the provider cannot attract a reliable carrier for that route. Always verify carrier registration on FMCSA SAFER and confirm whether your rate is a realistic dispatch price.&rdquo;
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: How We Evaluated Providers -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-indigo">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">How We Evaluated Providers</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          A credible comparison should evaluate more than brand recognition or a single review score. The following criteria are essential when comparing vehicle shipping options:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 text-sm text-[#425466]">
+          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
+            <strong class="text-[#0a2540] text-base block mb-2">📍 Service Availability</strong>
+            A company should be able to explain whether it serves your origin and destination, including rural areas, Alaska or Hawaii where applicable, and locations with local truck access restrictions.
+          </div>
+          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
+            <strong class="text-[#0a2540] text-base block mb-2">🚚 Transport Options</strong>
+            Compare <a href="/services/open-auto-transport/" class="text-[#635bff] font-bold hover:underline">Open Auto Transport</a>, <a href="/services/enclosed-auto-transport/" class="text-[#635bff] font-bold hover:underline">Enclosed Car Shipping</a>, flatbed, <a href="/expedited-auto-transport/" class="text-[#635bff] font-bold hover:underline">Expedited Transport</a>, and <a href="/services/door-to-door-car-shipping/" class="text-[#635bff] font-bold hover:underline">Door-to-Door Shipping</a> options.
+          </div>
+          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
+            <strong class="text-[#0a2540] text-base block mb-2">💵 Pricing Transparency</strong>
+            A useful quote identifies the vehicle, route, transport method, timing assumptions, and potential conditions that could change the price. Check our <a href="/cost-calculator/" class="text-[#635bff] font-bold hover:underline">Car Shipping Cost Calculator</a>.
+          </div>
+          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
+            <strong class="text-[#0a2540] text-base block mb-2">🛡️ Carrier & Insurance Verification</strong>
+            If a broker arranges the shipment, ask when the carrier will be assigned and how you can verify registration and cargo insurance via the official <a href="https://safer.fmcsa.dot.gov/CompanySnapshot.aspx" target="_blank" rel="noopener" class="text-[#635bff] font-bold hover:underline">FMCSA SAFER System</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: How Much Does Car Shipping Cost? -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-cyan">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">How Much Does Car Shipping Cost?</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          Car shipping prices vary by route and shipment conditions. Distance, vehicle size, transport type, operability, route demand, seasonality, pickup location, delivery location, fuel costs, and urgency can all affect the quote.
+        </p>
+        <ul class="space-y-3 text-base text-[#425466] mb-8 pl-5 list-disc">
+          <li><strong>Distance:</strong> Longer moves generally cost more overall, although the per-mile rate may decline on long routes.</li>
+          <li><strong>Vehicle size:</strong> SUVs, trucks, vans, and oversized vehicles occupy more trailer space and weight capacity.</li>
+          <li><strong>Vehicle condition:</strong> An inoperable vehicle may require a winch, special loading equipment, or extra labor.</li>
+          <li><strong>Transport type:</strong> Open transport is usually more widely available and less expensive than enclosed transport.</li>
+          <li><strong>Route density:</strong> Major interstate corridors attract more carriers than rural pickup or delivery locations.</li>
+          <li><strong>Seasonality:</strong> Demand increases during summer, holidays, military relocation periods, and snowbird travel seasons.</li>
+          <li><strong>Pickup flexibility:</strong> A flexible date range provides more carrier options than a rigid appointment.</li>
+          <li><strong>Expedited service:</strong> A short pickup window or urgent dispatch generally increases the cost.</li>
+        </ul>
+        <p class="text-base text-[#425466] leading-relaxed">
+          Learn more on our <a href="/car-shipping-quote/" class="text-[#635bff] font-bold hover:underline">Car Shipping Quote Page</a> or calculate an instant estimate.
+        </p>
+      </div>
+
+      <!-- Section 6: Open vs. Enclosed Transport Table -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 overflow-x-auto card-hover-indigo">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Open vs. Enclosed Car Shipping</h2>
+        <table class="w-full text-left text-sm border-collapse mb-6 min-w-[500px]">
+          <thead>
+            <tr class="bg-[#0a2540] text-white">
+              <th class="p-4 rounded-tl-xl font-bold">Feature</th>
+              <th class="p-4 font-bold">Open Auto Transport</th>
+              <th class="p-4 rounded-tr-xl font-bold">Enclosed Car Shipping</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#e6e6e6] bg-[#f8fafc]">
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Trailer Type</td>
+              <td class="p-4">Uncovered multi-car carrier</td>
+              <td class="p-4">Covered box trailer</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Weather Protection</td>
+              <td class="p-4">Exposed to normal weather & road conditions</td>
+              <td class="p-4">Complete protection from weather & road debris</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Carrier Availability</td>
+              <td class="p-4">Broad availability / most common method</td>
+              <td class="p-4">More limited (specialized carriers)</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-bold text-[#0a2540]">Best Fit For</td>
+              <td class="p-4">Daily drivers, sedans, SUVs, trucks</td>
+              <td class="p-4">Classic, luxury, exotic, collector vehicles</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <a href="/services/enclosed-auto-transport/" class="inline-flex items-center gap-2 font-bold text-[#635bff] hover:text-[#0a2540] transition text-base underline">
+            Compare Enclosed Transport Options →
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 7: Broker vs. Carrier Explainer -->
+      <div class="p-8 md:p-10 bg-[#f8fafc] rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-cyan">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">Broker vs. Carrier: What You Need to Know</h2>
+        <p class="text-base text-[#425466] leading-relaxed mb-6">
+          Understanding the difference between an auto transport broker and a motor carrier is crucial for setting expectations:
+        </p>
+        <div class="grid md:grid-cols-2 gap-6 text-sm text-[#425466] mb-6">
+          <div class="p-5 bg-white rounded-2xl border border-[#e6e6e6]">
+            <strong class="text-[#0a2540] text-base block mb-2">🏢 Auto Transport Broker</strong>
+            Intermediary authorized by FMCSA to arrange transportation between shippers and carriers. Collects details, searches carrier networks, coordinates scheduling, and supports logistics.
+          </div>
+          <div class="p-5 bg-white rounded-2xl border border-[#e6e6e6]">
+            <strong class="text-[#0a2540] text-base block mb-2">🚛 Motor Carrier</strong>
+            Company operating commercial trucks. The carrier driver inspects, loads, hauls, and delivers the vehicle, completing the final Bill of Lading.
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 8: Best Provider by Situation -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-indigo">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">Best Provider by Situation</h2>
+        <div class="grid sm:grid-cols-2 gap-4 text-xs font-semibold text-[#0a2540]">
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-cyan">
+            <strong class="text-sm block mb-1 text-[#0a2540]">🚗 Standard Daily Drivers</strong>
+            <a href="/services/open-auto-transport/" class="text-[#635bff] hover:underline">Open Auto Transport</a> is the practical choice for standard sedans, crossovers, and trucks.
+          </div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-indigo">
+            <strong class="text-sm block mb-1 text-[#0a2540]">🏎️ Luxury & Classic Cars</strong>
+            <a href="/services/luxury-car-shipping/" class="text-[#635bff] hover:underline">Enclosed Transport</a> provides covered protection for high-value vehicles.
+          </div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-cyan">
+            <strong class="text-sm block mb-1 text-[#0a2540]">🎖️ Military Relocations</strong>
+            <a href="/services/military-car-shipping/" class="text-[#635bff] hover:underline">Military Car Shipping</a> offers timing flexibility for base moves and PCS orders.
+          </div>
+          <div class="p-4 bg-[#f8fafc] border border-[#e6e6e6] rounded-xl card-hover-indigo">
+            <strong class="text-sm block mb-1 text-[#0a2540]">🏢 Dealership & Auction</strong>
+            <a href="/services/car-dealer-shipping/" class="text-[#635bff] hover:underline">Dealership & Fleet Shipping</a> provides multi-vehicle scheduling and lot release coordination.
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 9: FAQ Accordion -->
+      <div class="p-8 md:p-10 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12 card-hover-cyan">
+        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-8 tracking-tight text-center">Frequently Asked Questions</h2>
+        <div class="space-y-6 max-w-3xl mx-auto">
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What is the best car shipping company?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              The best car shipping company depends on your vehicle, route, budget, timing, and transport method. Compare brokers, carriers, and marketplaces using registration, insurance, pricing clarity, service availability, and communication—not only a universal ranking.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What is the best auto transport company?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              The best auto transport company is the one that can provide appropriate equipment, a realistic pickup and delivery plan, verifiable carrier information, suitable insurance, and clear written terms for your specific shipment.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">How do I choose a car shipping company?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Verify the company in FMCSA systems, identify whether it is a broker or carrier, compare multiple equivalent quotes, review insurance and cancellation terms, document the vehicle, and confirm the pickup and delivery process.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">How much does it cost to ship a car?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              The cost depends on distance, vehicle size, operability, open or enclosed transport, route demand, season, location, fuel costs, and urgency. A route-specific quote is more reliable than a generic national average.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Is it better to use a broker or carrier?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Neither is automatically better. A broker may provide broader carrier access and coordination, while a direct carrier may offer direct communication with the truck operator. The important issue is clear disclosure and verification.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Is open or enclosed transport better?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Open transport is usually appropriate for ordinary vehicles and is generally more available. Enclosed transport provides additional protection and may be preferable for classic, luxury, exotic, or highly customized vehicles.
+            </p>
+          </div>
+          <div class="border-b border-[#e6e6e6] pb-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Are car shipping companies insured?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              The actual carrier should provide applicable insurance information. Do not assume that a brokerage's registration means the carrier's cargo coverage is sufficient for your vehicle. Ask for the carrier's legal name, insurance details, exclusions, and claims procedure.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Can I ship a car door-to-door?</h3>
+            <p class="text-sm text-[#425466] leading-relaxed">
+              Door-to-door service usually means pickup and delivery as close as legally and safely possible to the requested addresses. Large carriers may not be able to enter narrow streets, private roads, restricted communities, or auction facilities, so a nearby meeting point may be necessary.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reviewed by & E-E-A-T Author Profile Box -->
+      <div class="p-6 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6] text-center text-xs text-[#425466] space-y-2 mb-12 card-hover-cyan">
+        <div>
+          <strong>Reviewed by:</strong> <a href="/author/shazil-ali.html" class="text-[#635bff] font-bold hover:underline">Shazil Ali — Auto Transport Specialist</a>, Neon Auto Transport &nbsp;|&nbsp; <strong>Last updated:</strong> August 2026
+        </div>
+        <p class="text-slate-[#425466] italic max-w-2xl mx-auto">
+          Shazil reviews Neon Auto Transport's educational content for accuracy, carrier terminology, shipping processes, and customer-facing claims. Information on this page is for general planning. Pricing, pickup windows, carrier availability, and applicable insurance details vary by shipment and are confirmed during booking.
+        </p>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white">
+        <h3 class="text-2xl md:text-3xl font-black mb-4 text-white" style="color: #ffffff !important;">
+          Ready to Compare Quotes for Your Specific Route?
+        </h3>
+        <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm md:text-base leading-relaxed">
+          Get a free auto transport quote tailored to your vehicle, pickup, delivery, and timing details.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/car-shipping-quote/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e011] transition shadow-md text-base w-full sm:w-auto" style="text-decoration: none;">
+            Calculate Your Rate Instantly
+          </a>
+          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none;">
+            📞 Call (571) 576-7711
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-[#0a2540] text-slate-300 py-12 lg:py-16 border-t border-slate-800 relative overflow-hidden" style="width: 100%; background-color: #0a2540;">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10" style="max-width: 1280px; margin: 0 auto;">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 mb-12 items-start">
+        <div class="lg:col-span-4 space-y-4">
+          <div>
+            <a href="/" class="text-2xl font-black tracking-tight text-white uppercase block leading-tight hover:opacity-90 transition" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;">
+              NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
+            </a>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-300 max-w-sm" style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">
+            Fast, secure, and reliable nationwide auto transport. We connect you with a highly vetted carrier network to ensure your vehicle arrives safely and on time. Your Journey, Our Priority!
+          </p>
+        </div>
+        <div class="lg:col-span-2 space-y-3">
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-1" style="color: #ffffff; font-weight: 800; font-size: 0.75rem;">QUICK LINKS</h3>
+          <ul class="space-y-2 text-xs font-medium" style="list-style: none; padding: 0;">
+            <li><a href="/#how-it-works" style="color: #cbd5e1; text-decoration: none;">How it Works</a></li>
+            <li><a href="/cost-calculator/" style="color: #cbd5e1; text-decoration: none;">Cost Calculator</a></li>
+            <li><a href="/why-neon/" style="color: #cbd5e1; text-decoration: none;">Why Neon</a></li>
+            <li><a href="/contact.html" style="color: #cbd5e1; text-decoration: none;">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 space-y-3">
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-1" style="color: #ffffff; font-weight: 800; font-size: 0.75rem;">POPULAR ROUTES</h3>
+          <ul class="space-y-2 text-xs font-medium" style="list-style: none; padding: 0;">
+            <li><a href="/california-car-shipping/" style="color: #cbd5e1; text-decoration: none;">California Car Shipping</a></li>
+            <li><a href="/texas-car-shipping/" style="color: #cbd5e1; text-decoration: none;">Texas Car Shipping</a></li>
+            <li><a href="/florida-car-shipping/" style="color: #cbd5e1; text-decoration: none;">Florida Car Shipping</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-1" style="color: #ffffff; font-weight: 800; font-size: 0.75rem;">CONTACT SUPPORT</h3>
+          <a href="tel:5715767711" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; background-color: #ffc72c; color: #0a2540; font-weight: 900; font-size: 0.95rem; padding: 0.85rem 1rem; border-radius: 0.75rem; text-decoration: none;">
+            (571) 576-7711
+          </a>
+        </div>
+      </div>
+      <div style="padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; font-size: 0.8rem; color: #94a3b8; gap: 1rem;">
+        <div>© 2026 Neon Auto Transport LLC. All rights reserved. MC #1703787 • USDOT #4355879</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+"""
+
+with open(TARGET_FILE, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+with open(FLAT_FILE, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+print("SUCCESS: Generated /best-car-shipping-companies/ pillar page!")
