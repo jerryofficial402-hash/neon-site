@@ -34,7 +34,7 @@ page_html = """<!DOCTYPE html>
   <meta property="og:url" content="https://neonautotransport.com/how-to-ship-a-car-to-another-state/">
   <meta property="og:title" content="How to Ship a Car to Another State: Complete Guide">
   <meta property="og:description" content="Moving to another state? Learn how to ship your car, compare quotes, choose open or enclosed transport, prepare your vehicle, and avoid common mistakes.">
-  <meta property="og:image" content="https://neonautotransport.com/images/open-auto-transport-hero.jpg">
+  <meta property="og:image" content="https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
   <meta property="og:site_name" content="Neon Auto Transport">
@@ -43,7 +43,7 @@ page_html = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Ship a Car to Another State: Complete Guide">
   <meta name="twitter:description" content="Moving to another state? Learn how to ship your car, compare quotes, choose open or enclosed transport, prepare your vehicle, and avoid common mistakes.">
-  <meta name="twitter:image" content="https://neonautotransport.com/images/open-auto-transport-hero.jpg">
+  <meta name="twitter:image" content="https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg">
 
   <!-- Fonts & Tailwind CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +89,7 @@ page_html = """<!DOCTYPE html>
         "url": "https://neonautotransport.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
+          "url": "https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg"
         },
         "sameAs": [
           "https://safer.fmcsa.dot.gov/CompanySnapshot.aspx",
@@ -118,12 +118,12 @@ page_html = """<!DOCTYPE html>
       },
       {
         "@type": "ImageObject",
-        "@id": "https://neonautotransport.com/images/open-auto-transport-hero.jpg#primaryimage",
-        "url": "https://neonautotransport.com/images/open-auto-transport-hero.jpg",
-        "contentUrl": "https://neonautotransport.com/images/open-auto-transport-hero.jpg",
+        "@id": "https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg#primaryimage",
+        "url": "https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg",
+        "contentUrl": "https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg",
         "width": "1200",
         "height": "675",
-        "caption": "How to Ship a Car to Another State Interstate Auto Transport Carrier Illustration",
+        "caption": "Neon Auto Transport professional carrier operator loading a vehicle onto a flatbed carrier for interstate auto transport",
         "creditText": "Neon Auto Transport Research Team",
         "copyrightNotice": "© 2026 Neon Auto Transport LLC. All rights reserved.",
         "acquireLicensePage": "https://neonautotransport.com/contact.html",
@@ -147,7 +147,7 @@ page_html = """<!DOCTYPE html>
         "headline": "How to Ship a Car to Another State: A Complete Interstate Auto Transport Guide",
         "description": "Learn how to ship a car to another state, compare quotes, choose transport equipment, prepare your vehicle, and complete pickup and delivery.",
         "image": [
-          "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
+          "https://neonautotransport.com/images/how-to-ship-a-car-to-another-state-hero.jpg"
         ],
         "author": {
           "@id": "https://neonautotransport.com/author/shazil-ali.html#person"
@@ -179,7 +179,7 @@ page_html = """<!DOCTYPE html>
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Resources",
+            "name": "Services",
             "item": "https://neonautotransport.com/services/"
           },
           {
@@ -410,10 +410,10 @@ page_html = """<!DOCTYPE html>
           </div>
         </div>
 
-        <!-- Right Column (50% Width) Showcase Image -->
+        <!-- Right Column (50% Width) High-Impact Showcase Image -->
         <div class="lg:w-1/2 relative w-full">
           <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
-            <img alt="How to Ship a Car to Another State Interstate Auto Transport Carrier Illustration" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="675" loading="eager" src="/images/open-auto-transport-hero.jpg" style="max-height: 480px;" width="1200"/>
+            <img alt="Neon Auto Transport professional carrier operator loading a vehicle onto a flatbed carrier for interstate auto transport" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="675" loading="eager" src="/images/how-to-ship-a-car-to-another-state-hero.jpg" style="max-height: 480px;" width="1200"/>
           </div>
         </div>
 
@@ -930,4 +930,4 @@ with open(TARGET_FILE, "w", encoding="utf-8") as f:
 with open(FLAT_FILE, "w", encoding="utf-8") as f:
     f.write(page_html)
 
-print("SUCCESS: Generated How to Ship a Car to Another State guide page!")
+print("SUCCESS: Deployed custom high-impact hero image to How to Ship a Car to Another State guide!")
