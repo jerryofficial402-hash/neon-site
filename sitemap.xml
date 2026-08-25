@@ -1165,6 +1165,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://neonautotransport.com/resources.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neonautotransport.com/resources//</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://neonautotransport.com/reviews.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
