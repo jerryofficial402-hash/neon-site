@@ -34,10 +34,16 @@ page_html = """<!DOCTYPE html>
   <meta property="og:url" content="https://neonautotransport.com/best-car-shipping-companies/">
   <meta property="og:title" content="Best Car Shipping Companies: Compare Auto Transport | Neon">
   <meta property="og:description" content="Compare the best car shipping companies by services, pricing, insurance, reliability, and transport type. Learn how to choose the right auto transport provider.">
-  <meta property="og:image" content="https://neonautotransport.com/images/open-auto-transport-hero.jpg">
+  <meta property="og:image" content="https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
   <meta property="og:site_name" content="Neon Auto Transport">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best Car Shipping Companies: Compare Auto Transport | Neon">
+  <meta name="twitter:description" content="Compare the best car shipping companies by services, pricing, insurance, reliability, and transport type. Learn how to choose the right auto transport provider.">
+  <meta name="twitter:image" content="https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg">
 
   <!-- Fonts & Tailwind CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +77,7 @@ page_html = """<!DOCTYPE html>
     }
   </style>
 
-  <!-- Structured Data Schema Graph (Organization, WebSite, Person, Article, BreadcrumbList, FAQPage) -->
+  <!-- Comprehensive AEO, GEO, SEO, EEAT, and JSON-LD Schema Graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -81,7 +87,10 @@ page_html = """<!DOCTYPE html>
         "@id": "https://neonautotransport.com/#organization",
         "name": "Neon Auto Transport",
         "url": "https://neonautotransport.com",
-        "logo": "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
+        "logo": "https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg",
+        "sameAs": [
+          "https://safer.fmcsa.dot.gov/CompanySnapshot.aspx"
+        ]
       },
       {
         "@type": "WebSite",
@@ -103,6 +112,19 @@ page_html = """<!DOCTYPE html>
         "url": "https://neonautotransport.com/author/shazil-ali.html"
       },
       {
+        "@type": "ImageObject",
+        "@id": "https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg#primaryimage",
+        "url": "https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg",
+        "contentUrl": "https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg",
+        "width": "1200",
+        "height": "675",
+        "caption": "Top 10 Most Reliable Auto Transport Shipping Companies in the USA Infographic comparing Neon Auto Transport, Montway, Navi, AmeriFreight, and A-1 Auto Transport",
+        "creditText": "Neon Auto Transport Research Team",
+        "author": {
+          "@id": "https://neonautotransport.com/author/shazil-ali.html#person"
+        }
+      },
+      {
         "@type": "Article",
         "@id": "https://neonautotransport.com/best-car-shipping-companies/#article",
         "mainEntityOfPage": {
@@ -111,9 +133,9 @@ page_html = """<!DOCTYPE html>
         },
         "headline": "Best Car Shipping Companies: How to Compare Auto Transport Providers",
         "description": "Compare car shipping companies by services, pricing, insurance, reliability, and transport type. Learn how to choose the right auto transport provider.",
-        "image": [
-          "https://neonautotransport.com/images/open-auto-transport-hero.jpg"
-        ],
+        "image": {
+          "@id": "https://neonautotransport.com/images/best-car-shipping-companies-hero.jpg#primaryimage"
+        },
         "author": {
           "@id": "https://neonautotransport.com/author/shazil-ali.html#person"
         },
@@ -321,7 +343,7 @@ page_html = """<!DOCTYPE html>
     </div>
   </header>
 
-  <!-- Hero Section (Arkansas Layout Clone + Neutral Comparison H1) -->
+  <!-- Hero Section (Arkansas Layout Clone + Custom High-Impact Infographic Visual) -->
   <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
     <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -359,10 +381,10 @@ page_html = """<!DOCTYPE html>
           </div>
         </div>
 
-        <!-- Right Column (50% Width) -->
+        <!-- Right Column (50% Width) with Custom Infographic Graphic -->
         <div class="lg:w-1/2 relative w-full">
           <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-black/5 transform hover:scale-[1.02] transition duration-500 bg-white p-2">
-            <img alt="Best Car Shipping Companies Auto Transport Provider Comparison" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="800" loading="eager" src="/images/open-auto-transport-hero.jpg" style="max-height: 450px;" width="1200"/>
+            <img alt="Top 10 Most Reliable Auto Transport Shipping Companies in the USA featuring Neon Auto Transport, Montway, Navi, AmeriFreight, and A-1 Auto Transport" class="w-full h-auto rounded-2xl object-cover" decoding="async" fetchpriority="high" height="675" loading="eager" src="/images/best-car-shipping-companies-hero.jpg" style="max-height: 480px;" width="1200"/>
           </div>
         </div>
 
@@ -720,4 +742,4 @@ with open(TARGET_FILE, "w", encoding="utf-8") as f:
 with open(FLAT_FILE, "w", encoding="utf-8") as f:
     f.write(page_html)
 
-print("SUCCESS: Generated /best-car-shipping-companies/ pillar page!")
+print("SUCCESS: Deployed high-impact custom infographic hero image to Best Car Shipping Companies page!")
