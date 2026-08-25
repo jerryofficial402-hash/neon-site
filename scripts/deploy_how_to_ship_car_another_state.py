@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+import os
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+TARGET_DIR = os.path.join(BASE_DIR, "how-to-ship-a-car-to-another-state")
+TARGET_FILE = os.path.join(TARGET_DIR, "index.html")
+FLAT_FILE = os.path.join(BASE_DIR, "how-to-ship-a-car-to-another-state.html")
+
+if not os.path.exists(TARGET_DIR):
+    os.makedirs(TARGET_DIR)
+
+page_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
@@ -912,3 +922,12 @@
   </footer>
 </body>
 </html>
+"""
+
+with open(TARGET_FILE, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+with open(FLAT_FILE, "w", encoding="utf-8") as f:
+    f.write(page_html)
+
+print("SUCCESS: Generated How to Ship a Car to Another State guide page!")
