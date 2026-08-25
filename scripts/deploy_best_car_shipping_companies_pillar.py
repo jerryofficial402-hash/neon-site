@@ -125,6 +125,14 @@ page_html = """<!DOCTYPE html>
         "height": "675",
         "caption": "How to Compare Auto Transport Shipping Companies in the USA Infographic comparing auto transport brokers, motor carriers, and vehicle marketplaces",
         "creditText": "Neon Auto Transport Research Team",
+        "copyrightNotice": "© 2026 Neon Auto Transport LLC. All rights reserved.",
+        "acquireLicensePage": "https://neonautotransport.com/contact.html",
+        "license": "https://neonautotransport.com/contact.html",
+        "creator": {
+          "@type": "Organization",
+          "name": "Neon Auto Transport",
+          "url": "https://neonautotransport.com/"
+        },
         "author": {
           "@id": "https://neonautotransport.com/author/shazil-ali.html#person"
         }
@@ -975,4 +983,4 @@ with open(TARGET_FILE, "w", encoding="utf-8") as f:
 with open(FLAT_FILE, "w", encoding="utf-8") as f:
     f.write(page_html)
 
-print("SUCCESS: Deployed complete master blueprint for Best Car Shipping Companies page!")
+print("SUCCESS: Resolved all 4 ImageObject licensable image schema warnings!")
