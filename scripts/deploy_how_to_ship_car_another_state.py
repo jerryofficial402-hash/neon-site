@@ -179,8 +179,8 @@ page_html = """<!DOCTYPE html>
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Services",
-            "item": "https://neonautotransport.com/services/"
+            "name": "Car Shipping Guides",
+            "item": "https://neonautotransport.com/best-car-shipping-companies/"
           },
           {
             "@type": "ListItem",
@@ -382,7 +382,7 @@ page_html = """<!DOCTYPE html>
           <!-- Breadcrumbs -->
           <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
             <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
-            <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Services</a><span>/</span>
+            <a href="/best-car-shipping-companies/" class="hover:underline text-[#425466]" style="text-decoration:none;">Car Shipping Guides</a><span>/</span>
             <span class="text-[#0a2540] font-bold">Ship a Car to Another State</span>
           </nav>
 
@@ -930,4 +930,4 @@ with open(TARGET_FILE, "w", encoding="utf-8") as f:
 with open(FLAT_FILE, "w", encoding="utf-8") as f:
     f.write(page_html)
 
-print("SUCCESS: Deployed custom high-impact hero image to How to Ship a Car to Another State guide!")
+print("SUCCESS: Updated breadcrumbs to Option A (Home -> Car Shipping Guides -> Ship a Car to Another State)!")
