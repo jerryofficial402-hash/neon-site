@@ -9,12 +9,14 @@ if not os.path.exists(RESOURCES_DIR):
     os.makedirs(RESOURCES_DIR)
 
 # Helper function to generate a blog card matching the reference screenshot exactly
-def render_blog_card(title, url, img_src, date_str, read_time, category, summary=""):
+def render_blog_card(title, url, img_src, date_str, read_time, category, alt_text=""):
+    if not alt_text:
+        alt_text = title
     return f"""
     <div class="bg-white rounded-3xl border border-[#e6e6e6] shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group card-hover-cyan">
       <!-- Thumbnail Image with Date Overlay -->
       <div class="relative w-full aspect-[16/9] overflow-hidden bg-slate-100">
-        <img src="{img_src}" alt="{title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+        <img src="{img_src}" alt="{alt_text}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
         
         <!-- Date Badge Overlay (Bottom Right) -->
         <div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-black text-[#0a2540] shadow-md border border-[#e6e6e6] flex items-center gap-1.5">
@@ -38,7 +40,7 @@ def render_blog_card(title, url, img_src, date_str, read_time, category, summary
               <span>{read_time}</span>
             </div>
             <div class="flex items-center gap-1.5 text-[#00D1FF]">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
               <span class="font-bold">{category}</span>
             </div>
           </div>
@@ -63,7 +65,7 @@ resources_html = f"""<!DOCTYPE html>
   <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
   new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  'https://www.googletagmanager.com/googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   }})(window,document,'script','dataLayer','GTM-P5K57THT');</script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
@@ -185,7 +187,8 @@ resources_html = f"""<!DOCTYPE html>
           "/images/how-to-ship-a-car-to-another-state-hero.jpg",
           "AUG 25, 2026",
           "12 min read",
-          "Car Shipping Guides"
+          "Car Shipping Guides",
+          "Neon Auto Transport professional carrier operator loading a vehicle onto a flatbed carrier for interstate auto transport"
         )}
         {render_blog_card(
           "Best Car Shipping Companies: Compare Reliable Auto Transport Providers",
@@ -193,7 +196,35 @@ resources_html = f"""<!DOCTYPE html>
           "/images/best-car-shipping-companies-hero.jpg",
           "AUG 25, 2026",
           "15 min read",
-          "Industry Benchmarks"
+          "Industry Benchmarks",
+          "How to Compare Auto Transport Shipping Companies in the USA Infographic"
+        )}
+        {render_blog_card(
+          "Enclosed Auto Transport: Protection for Luxury & Classic Cars",
+          "/services/enclosed-auto-transport/",
+          "/images/enclosed-auto-transport-guide-hero.jpg",
+          "AUG 25, 2026",
+          "10 min read",
+          "Specialty Transport",
+          "Classic luxury car loaded inside a premium Neon Auto Transport enclosed carrier trailer with hydraulic lift gate"
+        )}
+        {render_blog_card(
+          "Expedited Auto Transport: Priority Vehicle Delivery Options",
+          "/expedited-auto-transport/",
+          "/images/expedited-auto-transport-guide-hero.jpg",
+          "AUG 25, 2026",
+          "6 min read",
+          "Expedited Service",
+          "Neon Auto Transport commercial Kenworth car carrier truck driving smoothly along US highway at golden hour"
+        )}
+        {render_blog_card(
+          "Door-to-Door Car Shipping: Complete Relocation & Delivery Guide",
+          "/services/door-to-door-car-shipping/",
+          "/images/door-to-door-car-shipping-guide-hero.jpg",
+          "AUG 25, 2026",
+          "7 min read",
+          "Relocation Tips",
+          "Neon Auto Transport professional driver handing over luxury vehicle keys to homeowner on suburban driveway"
         )}
         {render_blog_card(
           "Open vs. Enclosed Car Shipping: Which Is Right for Your Vehicle?",
@@ -201,31 +232,8 @@ resources_html = f"""<!DOCTYPE html>
           "/images/open-auto-transport-hero.jpg",
           "AUG 25, 2026",
           "8 min read",
-          "Transport Types"
-        )}
-        {render_blog_card(
-          "Door-to-Door Car Shipping: Complete Relocation & Delivery Guide",
-          "/services/door-to-door-car-shipping/",
-          "/images/open-auto-transport-hero.jpg",
-          "AUG 25, 2026",
-          "7 min read",
-          "Relocation Tips"
-        )}
-        {render_blog_card(
-          "Enclosed Auto Transport: Protection for Luxury & Classic Cars",
-          "/services/enclosed-auto-transport/",
-          "/images/best-car-shipping-companies-hero.jpg",
-          "AUG 25, 2026",
-          "10 min read",
-          "Specialty Transport"
-        )}
-        {render_blog_card(
-          "Expedited Auto Transport: Priority Vehicle Delivery Options",
-          "/expedited-auto-transport/",
-          "/images/how-to-ship-a-car-to-another-state-hero.jpg",
-          "AUG 25, 2026",
-          "6 min read",
-          "Expedited Service"
+          "Transport Types",
+          "Open multi-vehicle car transport carrier hauling sedans and SUVs across country"
         )}
       </div>
     </div>
@@ -247,4 +255,4 @@ with open(RESOURCES_FILE, "w", encoding="utf-8") as f:
 with open(RESOURCES_FLAT, "w", encoding="utf-8") as f:
     f.write(resources_html)
 
-print("SUCCESS: Generated Resources Hub (/resources/) with modern Blog Card design!")
+print("SUCCESS: Assigned custom SEO-optimized cover images to Enclosed, Expedited, and Door-to-Door guides on /resources/!")
