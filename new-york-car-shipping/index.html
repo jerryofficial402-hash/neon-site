@@ -40,21 +40,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Service", "Product", "LocalBusiness", "MovingCompany"],
-  "name": "New York Car Shipping",
+  "@type": "Service",
   "serviceType": "Auto Transport / Car Shipping",
   "provider": {
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     "name": "Neon Auto Transport",
-    "url": "https://neonautotransport.com/"
+    "url": "https://neonautotransport.com/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "25"
+    }
   },
-  "areaServed": {"@type": "State", "name": "New York"},
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "25"
+  "areaServed": {
+    "@type": "State",
+    "name": "New York"
+  },
+  "description": "Open and enclosed auto transport to and from New York, including New York City, Long Island, the Hudson Valley, Western New York, and every region statewide. FMCSA and USDOT approved, with insurance up to $500,000 per vehicle.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "300",
+    "highPrice": "1600"
   }
-}</script>
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,7 +75,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {"@type": "ListItem", "position": 3, "name": "New York", "item": "https://neonautotransport.com/new-york-car-shipping/"}
   ]
 }</script>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -74,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "How much does it cost to ship a car from NYC?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ship a car from NYC pricing typically runs $300\u2013$470 for regional Northeast and Mid-Atlantic routes, $500\u2013$900 for the Southeast, Midwest, and Florida, and $1,150\u2013$1,600 for cross-country West Coast routes on an open carrier."
+        "text": "Shipping a car from NYC typically costs $300–$470 for regional Northeast and Mid-Atlantic routes, $500–$900 for the Southeast, Midwest, and Florida, and $1,150–$1,600 for cross-country West Coast routes on an open carrier."
       }
     },
     {
@@ -82,31 +93,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Is affordable vehicle shipping in NYC realistic given how dense the city is?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 density affects where you meet your driver, not necessarily the price. Terminal or staging-area pickup in New Jersey, Long Island, or an outer borough is still standard, affordable open-carrier service; it\u2019s true door-to-door delivery to a Manhattan curb that gets harder and occasionally pricier."
+        "text": "Yes — density affects where you meet your driver, not necessarily the price. Terminal or staging-area pickup in New Jersey, Long Island, or an outer borough is still standard, affordable open-carrier service. It's true door-to-door delivery to a Manhattan curb that gets harder and occasionally pricier."
       }
     },
     {
       "@type": "Question",
-      "name": "Why can\u2019t my car be picked up directly at my Manhattan address?",
+      "name": "Why can't my car be picked up directly at my Manhattan address?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "New York\u2019s parkway system bans commercial trucks outright, and most residential streets are too narrow for an 80-foot carrier rig to navigate or turn around on safely. Drivers typically arrange a nearby staging point instead \u2014 commonly in New Jersey, Long Island, or a wider commercial street in Queens or Brooklyn."
+        "text": "New York's parkway system bans commercial trucks outright, and most residential streets are too narrow for an 80-foot carrier rig to navigate or turn around on safely. Drivers typically arrange a nearby staging point instead, commonly in New Jersey, Long Island, or a wider commercial street in Queens or Brooklyn."
       }
     },
     {
       "@type": "Question",
-      "name": "What\u2019s the cost to ship a car from NYC to Florida?",
+      "name": "What's the cost to ship a car from NYC to Florida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The New York-to-Florida corridor typically runs $650\u2013$900 on an open carrier and takes 3\u20135 days, making it one of the more affordable and well-traveled long-distance routes out of the city, especially during snowbird season in fall and spring."
+        "text": "The New York-to-Florida corridor typically runs $650–$900 on an open carrier and takes 3–5 days, making it one of the more affordable and well-traveled long-distance routes out of the city, especially during snowbird season in fall and spring."
       }
     },
     {
       "@type": "Question",
-      "name": "What\u2019s the difference between open and enclosed car transport in New York?",
+      "name": "What's the difference between open and enclosed car transport in New York?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Open car carrier service is the standard, most affordable option and what the vast majority of vehicles ship on. Enclosed auto transport costs roughly 30\u201350% more and is the better choice for luxury or classic vehicles, given the added protection from road salt and winter grime."
+        "text": "Open car carrier service is the standard, most affordable option and what the vast majority of vehicles ship on. Enclosed auto transport costs roughly 30–50% more and is the better choice for luxury or classic vehicles, given the added protection from road salt and winter grime."
       }
     },
     {
@@ -114,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Do I need to be present for pickup and delivery in New York?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes \u2014 you or an authorized representative needs to be present to sign the Bill of Lading at both pickup and delivery. In New York specifically, confirm your staging location in advance so you know exactly where to meet your driver."
+        "text": "Yes, you or an authorized representative needs to be present to sign the Bill of Lading at both pickup and delivery. In New York specifically, confirm your staging location in advance so you know exactly where to meet your driver."
       }
     },
     {
@@ -122,11 +133,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Can I ship a car from New York to Canada?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Cross-border shipments to cities like Toronto or Montreal typically run north via I-87, and you\u2019ll need to have your title, registration, and proof of ownership documents ready in advance for customs."
+        "text": "Yes. Cross-border shipments to cities like Toronto or Montreal typically run north via I-87, and you'll need your title, registration, and proof of ownership documents ready in advance for customs."
       }
     }
   ]
-}</script></head><body class="lg:pb-0 antialiased bg-[#f6f9fc]">
+}
+</script></head><body class="lg:pb-0 antialiased bg-[#f6f9fc]">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5K57THT"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -583,7 +595,7 @@ New York is a major inbound and outbound market for corporate relocation, driven
 <div class="mt-6" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
 <h3 class="text-xl font-bold text-[#0a2540]" itemprop="name">How much does it cost to ship a car from NYC?</h3>
 <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
-<p class="mt-2 text-[#425466] leading-relaxed" itemprop="text">Ship a car from NYC pricing typically runs $300–$470 for regional Northeast and Mid-Atlantic routes, $500–$900 for the Southeast, Midwest, and Florida, and $1,150–$1,600 for cross-country West Coast routes on an open carrier.</p>
+<p class="mt-2 text-[#425466] leading-relaxed" itemprop="text">Shipping a car from NYC typically costs $300–$470 for regional Northeast and Mid-Atlantic routes, $500–$900 for the Southeast, Midwest, and Florida, and $1,150–$1,600 for cross-country West Coast routes on an open carrier.</p>
 </div>
 </div>
 <div class="mt-6" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
