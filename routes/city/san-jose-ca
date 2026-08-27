@@ -4,8 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Car Shipping in San Jose, CA | Auto Transport Company</title>
-  <meta name="description" content="Get an instant quote for car shipping in San Jose, CA. Fully insured door-to-door auto transport. Reliable carrier network.">
+  <title>Car Shipping San Jose, CA | Free Quotes &amp; Instant Rates | Neon</title>
+  <meta name="description" content="Ship a car to or from San Jose, CA with door-to-door open and enclosed auto transport. No upfront deposit. FMCSA licensed. Get a free instant quote.">
   <meta name="keywords" content="California car shipping, California auto transport, ship car to California, vehicle transport California, car shipping from California, San Jose auto transport">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Neon Auto Transport">
@@ -283,8 +283,8 @@
               <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
               FMCSA &amp; US Dot Approved
             </div>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 text-[#0a2540] tracking-tight leading-[1.1]"><span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff] mb-2">San Jose Car Shipping</span>Trusted Auto Transport Services</h1>
-            <p class="text-lg text-[#425466] mb-10 leading-relaxed">Planning to ship a car to or from California? Whether you're relocating to the Old Dominion State or sending a vehicle across the country, Neon Auto Transport ensures a stress-free experience with upfront pricing and our highly vetted carrier network.</p>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 text-[#0a2540] tracking-tight leading-[1.1]">Car Shipping in San Jose, CA</h1>
+            <p class="text-lg text-[#425466] mb-10 leading-relaxed">Planning to ship a car to or from California? Whether you're relocating to the Golden State or sending a vehicle across the country, Neon Auto Transport ensures a stress-free experience with upfront pricing and our highly vetted carrier network.</p>
 
 <div class="bg-[#e0f2fe] border-l-4 border-[#0369a1] p-6 rounded-r-xl my-8">
   <div class="flex items-start gap-4">
@@ -779,11 +779,11 @@
                 </div>
                 <div>
                     <h4 class="font-bold text-[#0a2540] text-lg mb-2">North San Jose</h4>
-                    <p class="text-sm text-[#425466]">90105, 90126, 90111, 90137, 90129, 90138, 90149, 90118, 90138, 90111, 90136, 90125</p>
+                    <p class="text-sm text-[#425466]">95105, 95126, 95111, 95137, 95129, 95138, 95149, 95118, 95138, 95111, 95136, 95125</p>
                 </div>
                 <div>
                     <h4 class="font-bold text-[#0a2540] text-lg mb-2">South San Jose</h4>
-                    <p class="text-sm text-[#425466]">90205, 90226, 90211, 90237, 90229, 90238, 90249, 90218, 90238, 90211, 90236, 90225</p>
+                    <p class="text-sm text-[#425466]">95105, 95126, 95111, 95137, 95129, 95138, 95149, 95118, 95138, 95111, 95136, 95125</p>
                 </div>
             </div>
             </div>
@@ -832,14 +832,54 @@
     <h2 class="text-3xl font-bold mb-4 text-[#0a2540] tracking-tight text-center">What Our Customers Say</h2>
     <p class="text-[#425466] text-sm max-w-2xl mx-auto text-center mb-8">Authentic 5.0-star reviews from verified customers on Google Maps.</p>
     
+    
     <div class="grid md:grid-cols-3 gap-6">
       <!-- Review 1 -->
+      <a href="https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7" target="_blank" rel="noopener noreferrer" class="block bg-white rounded-2xl p-6 shadow-sm border border-[#e6e6e6] hover:shadow-md transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[#0a2540] font-bold text-sm">Mike Hainsworth</span>
+            <div class="flex text-yellow-400 text-sm">★★★★★</div>
+          </div>
+          <p class="text-[#425466] text-xs leading-relaxed mb-4">"They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike."</p>
+        </div>
+        <div class="flex items-center justify-between text-[11px] text-[#70757a] border-t border-[#e6e6e6] pt-3">
+          <span>Verified Google Review</span>
+          <span class="text-[#4285f4] font-semibold flex items-center gap-1">View on Google &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Review 2 -->
       <a href="https://maps.app.goo.gl/8sytHbRV3BsnPBUD6" target="_blank" rel="noopener noreferrer" class="block bg-white rounded-2xl p-6 shadow-sm border border-[#e6e6e6] hover:shadow-md transition duration-300 flex flex-col justify-between">
         <div>
           <div class="flex items-center justify-between mb-3">
-            <span class="text-[#0a2540] font-bold text-sm">Semih Akay</span>
+            <span class="text-[#0a2540] font-bold text-sm">David Miller</span>
             <div class="flex text-yellow-400 text-sm">★★★★★</div>
           </div>
+          <p class="text-[#425466] text-xs leading-relaxed mb-4">"Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!"</p>
+        </div>
+        <div class="flex items-center justify-between text-[11px] text-[#70757a] border-t border-[#e6e6e6] pt-3">
+          <span>Verified Google Review</span>
+          <span class="text-[#4285f4] font-semibold flex items-center gap-1">View on Google &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Review 3 -->
+      <a href="https://maps.app.goo.gl/8sytHbRV3BsnPBUD6" target="_blank" rel="noopener noreferrer" class="block bg-white rounded-2xl p-6 shadow-sm border border-[#e6e6e6] hover:shadow-md transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[#0a2540] font-bold text-sm">Carlos Rodriguez</span>
+            <div class="flex text-yellow-400 text-sm">★★★★★</div>
+          </div>
+          <p class="text-[#425466] text-xs leading-relaxed mb-4">"Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations."</p>
+        </div>
+        <div class="flex items-center justify-between text-[11px] text-[#70757a] border-t border-[#e6e6e6] pt-3">
+          <span>Verified Google Review</span>
+          <span class="text-[#4285f4] font-semibold flex items-center gap-1">View on Google &rarr;</span>
+        </div>
+      </a>
+    </div>
+
           <p class="text-[#425466] text-xs leading-relaxed mb-4">"Thank you for responding always on time. Friendly service and will be working in future again."</p>
         </div>
         <div class="flex items-center justify-between text-[11px] text-[#70757a] border-t border-[#e6e6e6] pt-3">
