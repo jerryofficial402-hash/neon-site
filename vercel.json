@@ -269,6 +269,56 @@
       "source": "/sitemap_index.xml",
       "destination": "/sitemap.xml",
       "permanent": true
+    },
+    {
+      "source": "/routes/city/miami-fl/",
+      "destination": "/routes/city/miami-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/orlando-fl/",
+      "destination": "/routes/city/orlando-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/arlington-tx/",
+      "destination": "/routes/city/arlington-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/austin-tx/",
+      "destination": "/routes/city/austin-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/corpus-christi-tx/",
+      "destination": "/routes/city/corpus-christi-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/dallas-tx/",
+      "destination": "/routes/city/dallas-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/el-paso-tx/",
+      "destination": "/routes/city/el-paso-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/fort-worth-tx/",
+      "destination": "/routes/city/fort-worth-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/houston-tx/",
+      "destination": "/routes/city/houston-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/san-antonio-tx/",
+      "destination": "/routes/city/san-antonio-tx/",
+      "permanent": true
     }
   ]
 }
