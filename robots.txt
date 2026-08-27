@@ -1,5 +1,36 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neonautotransport.com/sitemap.xml
+# Explicit AI crawler access
+User-agent: GPTBot
+Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Block junk / non-indexable templates / author archives
+Disallow: /routes/route-template.html
+Disallow: /author/
+
+Sitemap: https://neonautotransport.com/sitemap.xml
