@@ -795,12 +795,10 @@
     <div class="bg-white p-6 rounded-2xl border border-[#e6e6e6]">
       <h4 class="font-bold text-[#0a2540] text-sm mb-3">State &amp; Regional Transport Hubs</h4>
       <ul class="text-xs space-y-2 text-[#425466]">
-        <li>&bull; Main State Hub: <a href="/hawaii-car-shipping/" class="text-[#635bff] font-bold hover:underline">Hawaii Car Shipping Services</a></li>
-        <li><a href="/routes/city/hilo-hi.html" class="text-[#635bff] font-semibold hover:underline">Hilo Car Shipping</a></li>
+<li>&bull; Main State Hub: <a href="/hawaii-car-shipping/" class="text-[#635bff] font-bold hover:underline">Hawaii Car Shipping Services</a></li>
 <li><a href="/routes/city/hilo-hi.html" class="text-[#635bff] font-semibold hover:underline">Hilo Car Shipping</a></li>
 <li><a href="/routes/city/honolulu-hi.html" class="text-[#635bff] font-semibold hover:underline">Honolulu Car Shipping</a></li>
-
-      </ul>
+</ul>
     </div>
   </section>
 
