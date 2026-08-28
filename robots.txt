@@ -34,3 +34,5 @@ Disallow: /routes/route-template.html
 Disallow: /author/
 
 Sitemap: https://neonautotransport.com/sitemap.xml
+
+Sitemap: https://neonautotransport.com/sitemap.md
