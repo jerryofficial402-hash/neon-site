@@ -101,3 +101,25 @@ Shazil Ali serves as Director of Operations at Neon Auto Transport, overseeing v
 Last Updated: June 2026
 
 [ LinkedIn Profile ](https://www.linkedin.com/in/shazil-ali/)
+
+## Frequently Asked Questions: Open vs Enclosed Transport
+
+### Is open transport safe for my vehicle?
+
+Yes. Open transport is the standard method used by dealerships nationwide. Vehicles are exposed to weather and road debris, but damage is rare. Carrier insurance covers transit damage.
+
+### How much more does enclosed transport cost?
+
+Enclosed transport typically costs 30-40% more than open transport. For a coast-to-coast shipment, that's roughly $300-$700 extra.
+
+### Should I choose enclosed transport for a standard sedan?
+
+For a standard daily-driver sedan, open transport is usually sufficient. Enclosed transport is recommended for luxury, classic, exotic, or custom vehicles where protecting the finish matters.
+
+### Does enclosed transport take longer?
+
+Enclosed transport can take slightly longer because fewer enclosed carriers are on the road. Expect 1-2 additional days for pickup assignment on enclosed shipments.
+
+### Is my vehicle insured during open transport?
+
+Yes. The assigned carrier carries cargo insurance, and Neon Auto Transport maintains $500,000 in cargo insurance coverage. Verify carrier insurance limits before pickup.
