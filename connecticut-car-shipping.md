@@ -15,8 +15,8 @@ headquarters: "2709 Neabsco Common Pl Suite 101, Woodbridge, VA 22191"
 policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 24/7 Direct Driver Contact"
 ---
 
-FMSCA & US Dot Approved   
-  
+FMSCA & US Dot Approved 
+
 # Connecticut Car Shipping
 
 ##  Quick Answer 
