@@ -106,12 +106,12 @@
   "trailingSlash": true,
   "rewrites": [
     {
-      "source": "/((?!api|_next|robots|sitemap|llms|favicon|css|images).*)",
+      "source": "/((?!api|_next|robots|sitemap|llms|favicon|.*\\.md|.*\\.xml|.*\\.txt|.*\\.ico|.*\\.png|.*\\.jpg|.*\\.svg|.*\\.css|.*\\.js).*)",
       "has": [
         {
           "type": "header",
           "key": "accept",
-          "value": "(.*text/markdown.*)"
+          "value": ".*text/markdown.*"
         }
       ],
       "destination": "/$1.md"
