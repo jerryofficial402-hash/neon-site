@@ -5,64 +5,66 @@ import json
 BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
 
 NAV_HTML = """
-  <nav class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3">
-        <span class="text-2xl font-black tracking-tight text-white">NEON <span class="text-cyan-400">AUTO TRANSPORT</span></span>
-      </a>
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="/cost-calculator/" class="hover:text-cyan-400 transition">Cost Calculator</a>
-        <a href="/car-shipping-cost/" class="hover:text-cyan-400 transition">Cost Guide</a>
-        <a href="/services/" class="hover:text-cyan-400 transition">Services</a>
-        <a href="/best-car-shipping-companies/" class="hover:text-cyan-400 transition">Compare</a>
-        <a href="/reviews/" class="hover:text-cyan-400 transition">Reviews</a>
-        <a href="/contact/" class="hover:text-cyan-400 transition">Contact</a>
+  <header class="fixed top-0 w-full z-50 transition-all duration-300 shadow-md" id="global-header" style="background-color:#0a2540">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+      <div class="flex items-center" style="gap:24px">
+        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap; text-decoration:none;">
+          NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
+        </a>
+        <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" style="white-space:nowrap;gap:24px">
+          <a href="/cost-calculator/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Cost Calculator</a>
+          <a href="/car-shipping-cost/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Cost Guide</a>
+          <a href="/services/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Services</a>
+          <a href="/best-car-shipping-companies/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Compare</a>
+          <a href="/reviews/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Reviews</a>
+          <a href="/contact/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Contact</a>
+        </nav>
       </div>
-      <a href="tel:5715767711" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+      <a href="tel:5715767711" style="background-color:#635bff; color:#ffffff; padding:10px 20px; border-radius:9999px; text-decoration:none; font-weight:700;" class="hover:opacity-90 transition flex items-center gap-2">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         (571) 576-7711
       </a>
     </div>
-  </nav>
+  </header>
 """
 
 FOOTER_HTML = """
-  <footer class="bg-slate-950 border-t border-slate-800 py-12 text-slate-400 text-sm">
+  <footer style="background-color:#0a2540;" class="text-slate-300 text-sm pt-16 pb-12 mt-16 border-t border-[#1a1f36]">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
         <h4 class="text-white font-bold mb-4 text-base">Neon Auto Transport LLC</h4>
-        <p class="leading-relaxed mb-4">FMCSA-licensed & bonded auto transport broker delivering nationwide door-to-door vehicle shipping across all 50 states.</p>
-        <p class="text-xs text-slate-500">USDOT #4355879 | MC #1703787</p>
+        <p class="leading-relaxed mb-4 text-slate-300">FMCSA-licensed & bonded auto transport broker delivering nationwide door-to-door vehicle shipping across all 50 states.</p>
+        <p class="text-xs text-slate-400">USDOT #4355879 | MC #1703787</p>
       </div>
       <div>
         <h4 class="text-white font-bold mb-4 text-base">Popular Services</h4>
-        <ul class="space-y-2">
-          <li><a href="/services/open-auto-transport/" class="hover:text-cyan-400">Open Auto Transport</a></li>
-          <li><a href="/services/enclosed-auto-transport/" class="hover:text-cyan-400">Enclosed Auto Transport</a></li>
-          <li><a href="/services/door-to-door-car-shipping/" class="hover:text-cyan-400">Door to Door Shipping</a></li>
-          <li><a href="/services/expedited-auto-transport/" class="hover:text-cyan-400">Expedited Shipping</a></li>
-          <li><a href="/services/luxury-car-shipping/" class="hover:text-cyan-400">Classic & Luxury Shipping</a></li>
+        <ul class="space-y-2 text-slate-300" style="list-style:none; padding:0;">
+          <li><a href="/services/open-auto-transport/" class="hover:text-[#00D1FF] transition">Open Auto Transport</a></li>
+          <li><a href="/services/enclosed-auto-transport/" class="hover:text-[#00D1FF] transition">Enclosed Auto Transport</a></li>
+          <li><a href="/services/door-to-door-car-shipping/" class="hover:text-[#00D1FF] transition">Door to Door Shipping</a></li>
+          <li><a href="/services/expedited-auto-transport/" class="hover:text-[#00D1FF] transition">Expedited Shipping</a></li>
+          <li><a href="/services/luxury-car-shipping/" class="hover:text-[#00D1FF] transition">Classic & Luxury Shipping</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold mb-4 text-base">Cost & Comparisons</h4>
-        <ul class="space-y-2">
-          <li><a href="/car-shipping-cost/" class="hover:text-cyan-400">Car Shipping Cost Guide 2026</a></li>
-          <li><a href="/cost-calculator/" class="hover:text-cyan-400">Instant Quote Calculator</a></li>
-          <li><a href="/best-car-shipping-companies/" class="hover:text-cyan-400">Best Car Shipping Companies</a></li>
-          <li><a href="/compare/neon-vs-montway/" class="hover:text-cyan-400">Neon vs Montway</a></li>
-          <li><a href="/compare/neon-vs-amerifreight/" class="hover:text-cyan-400">Neon vs AmeriFreight</a></li>
+        <ul class="space-y-2 text-slate-300" style="list-style:none; padding:0;">
+          <li><a href="/car-shipping-cost/" class="hover:text-[#00D1FF] transition">Car Shipping Cost Guide 2026</a></li>
+          <li><a href="/cost-calculator/" class="hover:text-[#00D1FF] transition">Instant Quote Calculator</a></li>
+          <li><a href="/best-car-shipping-companies/" class="hover:text-[#00D1FF] transition">Best Car Shipping Companies</a></li>
+          <li><a href="/compare/neon-vs-montway/" class="hover:text-[#00D1FF] transition">Neon vs Montway</a></li>
+          <li><a href="/compare/neon-vs-amerifreight/" class="hover:text-[#00D1FF] transition">Neon vs AmeriFreight</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold mb-4 text-base">Contact Us</h4>
-        <p class="mb-2">2709 Neabsco Common Pl Suite 101<br>Woodbridge, VA 22191</p>
-        <p class="mb-2">Phone: <a href="tel:5715767711" class="text-cyan-400 hover:underline">(571) 576-7711</a></p>
-        <p>Email: <a href="mailto:info@neonautotransport.com" class="text-cyan-400 hover:underline">info@neonautotransport.com</a></p>
+        <p class="mb-2 text-slate-300">2709 Neabsco Common Pl Suite 101<br>Woodbridge, VA 22191</p>
+        <p class="mb-2">Phone: <a href="tel:5715767711" class="text-[#00D1FF] hover:underline font-semibold">(571) 576-7711</a></p>
+        <p>Email: <a href="mailto:info@neonautotransport.com" class="text-[#00D1FF] hover:underline">info@neonautotransport.com</a></p>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
-      <p>© 2026 Neon Auto Transport LLC. All rights reserved. | <a href="/privacy.html" class="hover:underline">Privacy Policy</a> | <a href="/terms.html" class="hover:underline">Terms of Service</a> | <a href="/sitemap.md" class="hover:underline">AI Sitemap</a></p>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-400">
+      <p>© 2026 Neon Auto Transport LLC. All rights reserved. | <a href="/privacy/" class="hover:underline text-slate-300">Privacy Policy</a> | <a href="/terms/" class="hover:underline text-slate-300">Terms of Service</a> | <a href="/sitemap.md" class="hover:underline text-slate-300">AI Sitemap</a></p>
     </div>
   </footer>
 """
@@ -94,12 +96,17 @@ def create_page(rel_url, title, description, content_html, type_name="article"):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/css/tailwind.css?v=3">
   <link rel="stylesheet" href="/css/styles.css">
+  
+  <style>
+    body {{ background-color: #f6f9fc !important; color: #425466 !important; font-family: 'Inter', sans-serif; }}
+    h1, h2, h3, h4 {{ color: #0a2540 !important; font-weight: 800; }}
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased min-h-screen flex flex-col justify-between pt-24">
   {NAV_HTML}
   
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
-    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6">{title}</h1>
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0a2540] tracking-tight mb-6">{title}</h1>
     {content_html}
   </main>
   
@@ -119,51 +126,51 @@ def create_page(rel_url, title, description, content_html, type_name="article"):
     with open(dir_path, "w", encoding="utf-8") as f:
         f.write(html_code)
 
-    print(f"[CREATED] {rel_clean}/ (flat + dir index)")
+    print(f"[CREATED BEAUTIFUL STRIPE DESIGN] {rel_clean}/ (flat + dir index)")
 
 def build_2a_car_shipping_cost_guide():
     print("=== 2A. BUILDING CAR SHIPPING COST GUIDE (3,500+ WORDS) ===")
     
     cost_content = """
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
-    <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
-      <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <section class="quick-answer bg-white rounded-xl shadow-md border border-[#e6e6e6] p-6 my-6" aria-label="Quick Answer">
+    <h2 class="quick-answer-title text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
+      <svg class="w-5 h-5 text-[#635bff]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer: Car Shipping Cost 2026
     </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+    <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
       <p itemprop="text">Shipping a car in 2026 costs between $500 and $2,000 on average. Open transport ranges from $0.50 to $1.00 per mile ($700–$1,500 coast-to-coast), while enclosed transport costs $0.64 to $2.20 per mile ($1,000–$2,500). Key cost drivers include route distance, vehicle size, operability, seasonality, and transport method. Neon Auto Transport LLC (MC 1703787 | USDOT 4355879) offers $0 upfront deposit, $500,000 cargo insurance, price lock guarantee, and door-to-door delivery across all 50 states. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.</p>
     </div>
   </section>
 
-  <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed text-base">
-    <p class="text-lg text-slate-200 font-medium">Whether you are relocating across state lines, purchasing a vehicle online, or moving south for the winter season, understanding car shipping costs is essential to budgeting effectively. This comprehensive 2026 guide breaks down exact pricing benchmarks, per-mile rates, vehicle surcharges, seasonal fluctuations, and hidden fees across the auto transport industry.</p>
+  <article class="prose max-w-none space-y-8 text-[#425466] leading-relaxed text-base">
+    <p class="text-lg text-[#0a2540] font-medium">Whether you are relocating across state lines, purchasing a vehicle online, or moving south for the winter season, understanding car shipping costs is essential to budgeting effectively. This comprehensive 2026 guide breaks down exact pricing benchmarks, per-mile rates, vehicle surcharges, seasonal fluctuations, and hidden fees across the auto transport industry.</p>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Average Car Shipping Costs in 2026</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Average Car Shipping Costs in 2026</h2>
     <p>Nationwide, the average cost to ship a standard vehicle ranges from <strong>$500 to $2,000</strong>. Short-distance local moves (under 500 miles) average around $250 to $500, while coast-to-coast cross-country shipments (2,500+ miles) range between $1,200 and $2,500 depending on carrier availability and equipment selection.</p>
 
     <div class="overflow-x-auto my-6">
-      <table class="w-full text-left border-collapse border border-slate-800 bg-slate-900/90 rounded-lg overflow-hidden text-sm">
+      <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-xl overflow-hidden shadow-sm text-sm">
         <caption class="sr-only">Average Car Shipping Cost Tiers by Distance Matrix</caption>
         <thead>
-          <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Distance Tier</th>
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Open Transport</th>
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Enclosed Transport</th>
+          <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Distance Tier</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Open Transport</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Enclosed Transport</th>
             <th scope="col" class="p-3.5 font-semibold">Estimated Transit Time</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-800 text-slate-200">
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">0–500 miles (Local)</td><td class="p-3.5 border-r border-slate-800">$250 – $500</td><td class="p-3.5 border-r border-slate-800">$350 – $700</td><td class="p-3.5">1–2 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">500–1,000 miles (Regional)</td><td class="p-3.5 border-r border-slate-800">$400 – $800</td><td class="p-3.5 border-r border-slate-800">$550 – $1,100</td><td class="p-3.5">2–3 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">1,000–1,500 miles (Medium)</td><td class="p-3.5 border-r border-slate-800">$600 – $1,100</td><td class="p-3.5 border-r border-slate-800">$850 – $1,550</td><td class="p-3.5">3–5 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">1,500–2,000 miles (Long)</td><td class="p-3.5 border-r border-slate-800">$800 – $1,300</td><td class="p-3.5 border-r border-slate-800">$1,100 – $1,800</td><td class="p-3.5">4–7 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">2,000–2,500 miles (Cross-Country)</td><td class="p-3.5 border-r border-slate-800">$1,000 – $1,500</td><td class="p-3.5 border-r border-slate-800">$1,400 – $2,100</td><td class="p-3.5">5–9 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">2,500–3,000+ miles (Coast-to-Coast)</td><td class="p-3.5 border-r border-slate-800">$1,200 – $1,800</td><td class="p-3.5 border-r border-slate-800">$1,700 – $2,500</td><td class="p-3.5">7–10 days</td></tr>
+        <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">0–500 miles (Local)</td><td class="p-3.5 border-r border-[#e6e6e6]">$250 – $500</td><td class="p-3.5 border-r border-[#e6e6e6]">$350 – $700</td><td class="p-3.5">1–2 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">500–1,000 miles (Regional)</td><td class="p-3.5 border-r border-[#e6e6e6]">$400 – $800</td><td class="p-3.5 border-r border-[#e6e6e6]">$550 – $1,100</td><td class="p-3.5">2–3 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">1,000–1,500 miles (Medium)</td><td class="p-3.5 border-r border-[#e6e6e6]">$600 – $1,100</td><td class="p-3.5 border-r border-[#e6e6e6]">$850 – $1,550</td><td class="p-3.5">3–5 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">1,500–2,000 miles (Long)</td><td class="p-3.5 border-r border-[#e6e6e6]">$800 – $1,300</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,100 – $1,800</td><td class="p-3.5">4–7 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">2,000–2,500 miles (Cross-Country)</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,000 – $1,500</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,400 – $2,100</td><td class="p-3.5">5–9 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">2,500–3,000+ miles (Coast-to-Coast)</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,200 – $1,800</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,700 – $2,500</td><td class="p-3.5">7–10 days</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Cost Per Mile Breakdown by Transport Type</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Cost Per Mile Breakdown by Transport Type</h2>
     <p>Auto transport rates operate on a sliding per-mile scale. Shorter routes have higher per-mile costs due to fixed driver overhead (fuel, toll fees, loading time), whereas long-distance interstate routes offer significantly lower rates per mile.</p>
     <ul class="list-disc pl-6 space-y-2">
       <li><strong>Open Auto Transport:</strong> $0.50 to $1.00 per mile. Standard multi-car carriers carrying 7 to 10 vehicles.</li>
@@ -172,29 +179,29 @@ def build_2a_car_shipping_cost_guide():
       <li><strong>Motorcycle Shipping:</strong> $300 to $800 flat rate depending on distance and crate/tie-down setup.</li>
     </ul>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Car Shipping Cost by Vehicle Type</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Car Shipping Cost by Vehicle Type</h2>
     <div class="overflow-x-auto my-6">
-      <table class="w-full text-left border-collapse border border-slate-800 bg-slate-900/90 rounded-lg overflow-hidden text-sm">
+      <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-xl overflow-hidden shadow-sm text-sm">
         <caption class="sr-only">Car Shipping Cost by Vehicle Type Table</caption>
         <thead>
-          <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Vehicle Class</th>
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Estimated Surcharge / Rate Impact</th>
+          <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Vehicle Class</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Estimated Surcharge / Rate Impact</th>
             <th scope="col" class="p-3.5 font-semibold">Operational Notes</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-800 text-slate-200">
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Standard Sedan / Coupe</td><td class="p-3.5 border-r border-slate-800">Base Industry Rate</td><td class="p-3.5">Honda Civic, Toyota Camry, Tesla Model 3</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Compact Crossover / Small SUV</td><td class="p-3.5 border-r border-slate-800">+$50 – $100</td><td class="p-3.5">Toyota RAV4, Honda CR-V</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Full-Size SUV / Minivan</td><td class="p-3.5 border-r border-slate-800">+$100 – $200</td><td class="p-3.5">Chevy Tahoe, Ford Expedition, Honda Odyssey</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Pickup Truck / Full-Size Truck</td><td class="p-3.5 border-r border-slate-800">+$150 – $300</td><td class="p-3.5">Ford F-150, Chevy Silverado, Ram 1500</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Inoperable Vehicle (Non-Running)</td><td class="p-3.5 border-r border-slate-800">+$150 – $300</td><td class="p-3.5">Requires winch loading or forklift assistance</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Oversized / Dually / Lifted Truck</td><td class="p-3.5 border-r border-slate-800">+$200 – $500</td><td class="p-3.5">Occupies two spots on carrier trailer</td></tr>
+        <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Standard Sedan / Coupe</td><td class="p-3.5 border-r border-[#e6e6e6]">Base Industry Rate</td><td class="p-3.5">Honda Civic, Toyota Camry, Tesla Model 3</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Compact Crossover / Small SUV</td><td class="p-3.5 border-r border-[#e6e6e6]">+$50 – $100</td><td class="p-3.5">Toyota RAV4, Honda CR-V</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Full-Size SUV / Minivan</td><td class="p-3.5 border-r border-[#e6e6e6]">+$100 – $200</td><td class="p-3.5">Chevy Tahoe, Ford Expedition, Honda Odyssey</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Pickup Truck / Full-Size Truck</td><td class="p-3.5 border-r border-[#e6e6e6]">+$150 – $300</td><td class="p-3.5">Ford F-150, Chevy Silverado, Ram 1500</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Inoperable Vehicle (Non-Running)</td><td class="p-3.5 border-r border-[#e6e6e6]">+$150 – $300</td><td class="p-3.5">Requires winch loading or forklift assistance</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Oversized / Dually / Lifted Truck</td><td class="p-3.5 border-r border-[#e6e6e6]">+$200 – $500</td><td class="p-3.5">Occupies two spots on carrier trailer</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">10 Major Factors That Influence Car Shipping Costs</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">10 Major Factors That Influence Car Shipping Costs</h2>
     <ol class="list-decimal pl-6 space-y-3">
       <li><strong>Total Distance & Route Corridor:</strong> Longer distances cost more overall, but interstate freight corridors (e.g. I-95, I-10) reduce per-mile rates.</li>
       <li><strong>Vehicle Size, Weight & Modifications:</strong> Heavier, taller vehicles consume more fuel and space on multi-car trailers.</li>
@@ -208,32 +215,32 @@ def build_2a_car_shipping_cost_guide():
       <li><strong>Insurance Coverage Levels:</strong> Primary carrier cargo policies plus Neon's $500,000 secondary coverage ensure protection without extra charges.</li>
     </ol>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Car Shipping Cost Examples Across Popular Routes</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Car Shipping Cost Examples Across Popular Routes</h2>
     <div class="overflow-x-auto my-6">
-      <table class="w-full text-left border-collapse border border-slate-800 bg-slate-900/90 rounded-lg overflow-hidden text-sm">
+      <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-xl overflow-hidden shadow-sm text-sm">
         <caption class="sr-only">Popular Route Car Shipping Cost Table</caption>
         <thead>
-          <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
-            <th scope="col" class="p-3 border-r border-slate-800 font-semibold">Route Lane</th>
-            <th scope="col" class="p-3 border-r border-slate-800 font-semibold">Distance</th>
-            <th scope="col" class="p-3 border-r border-slate-800 font-semibold">Open Transport</th>
-            <th scope="col" class="p-3 border-r border-slate-800 font-semibold">Enclosed Transport</th>
+          <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
+            <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Route Lane</th>
+            <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Distance</th>
+            <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Open Transport</th>
+            <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Enclosed Transport</th>
             <th scope="col" class="p-3 font-semibold">Transit Time</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-800 text-slate-200">
-          <tr><td class="p-3 border-r border-slate-800 font-medium">New York, NY to Miami, FL</td><td class="p-3 border-r border-slate-800">~1,090 mi</td><td class="p-3 border-r border-slate-800">$650 – $1,200</td><td class="p-3 border-r border-slate-800">$900 – $1,600</td><td class="p-3">3–5 days</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Los Angeles, CA to Houston, TX</td><td class="p-3 border-r border-slate-800">~1,400 mi</td><td class="p-3 border-r border-slate-800">$700 – $1,300</td><td class="p-3 border-r border-slate-800">$1,000 – $1,800</td><td class="p-3">3–5 days</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Los Angeles, CA to New York, NY</td><td class="p-3 border-r border-slate-800">~2,900 mi</td><td class="p-3 border-r border-slate-800">$1,200 – $1,800</td><td class="p-3 border-r border-slate-800">$1,700 – $2,500</td><td class="p-3">7–10 days</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Chicago, IL to Miami, FL</td><td class="p-3 border-r border-slate-800">~1,150 mi</td><td class="p-3 border-r border-slate-800">$700 – $1,200</td><td class="p-3 border-r border-slate-800">$1,000 – $1,700</td><td class="p-3">3–5 days</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Dallas, TX to Chicago, IL</td><td class="p-3 border-r border-slate-800">~920 mi</td><td class="p-3 border-r border-slate-800">$550 – $950</td><td class="p-3 border-r border-slate-800">$800 – $1,350</td><td class="p-3">2–4 days</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Seattle, WA to San Francisco, CA</td><td class="p-3 border-r border-slate-800">~810 mi</td><td class="p-3 border-r border-slate-800">$500 – $900</td><td class="p-3 border-r border-slate-800">$750 – $1,250</td><td class="p-3">2–3 days</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Atlanta, GA to Miami, FL</td><td class="p-3 border-r border-slate-800">~660 mi</td><td class="p-3 border-r border-slate-800">$400 – $750</td><td class="p-3 border-r border-slate-800">$600 – $1,100</td><td class="p-3">2–3 days</td></tr>
+        <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">New York, NY to Miami, FL</td><td class="p-3 border-r border-[#e6e6e6]">~1,090 mi</td><td class="p-3 border-r border-[#e6e6e6]">$650 – $1,200</td><td class="p-3 border-r border-[#e6e6e6]">$900 – $1,600</td><td class="p-3">3–5 days</td></tr>
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">Los Angeles, CA to Houston, TX</td><td class="p-3 border-r border-[#e6e6e6]">~1,400 mi</td><td class="p-3 border-r border-[#e6e6e6]">$700 – $1,300</td><td class="p-3 border-r border-[#e6e6e6]">$1,000 – $1,800</td><td class="p-3">3–5 days</td></tr>
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">Los Angeles, CA to New York, NY</td><td class="p-3 border-r border-[#e6e6e6]">~2,900 mi</td><td class="p-3 border-r border-[#e6e6e6]">$1,200 – $1,800</td><td class="p-3 border-r border-[#e6e6e6]">$1,700 – $2,500</td><td class="p-3">7–10 days</td></tr>
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">Chicago, IL to Miami, FL</td><td class="p-3 border-r border-[#e6e6e6]">~1,150 mi</td><td class="p-3 border-r border-[#e6e6e6]">$700 – $1,200</td><td class="p-3 border-r border-[#e6e6e6]">$1,000 – $1,700</td><td class="p-3">3–5 days</td></tr>
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">Dallas, TX to Chicago, IL</td><td class="p-3 border-r border-[#e6e6e6]">~920 mi</td><td class="p-3 border-r border-[#e6e6e6]">$550 – $950</td><td class="p-3 border-r border-[#e6e6e6]">$800 – $1,350</td><td class="p-3">2–4 days</td></tr>
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">Seattle, WA to San Francisco, CA</td><td class="p-3 border-r border-[#e6e6e6]">~810 mi</td><td class="p-3 border-r border-[#e6e6e6]">$500 – $900</td><td class="p-3 border-r border-[#e6e6e6]">$750 – $1,250</td><td class="p-3">2–3 days</td></tr>
+          <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">Atlanta, GA to Miami, FL</td><td class="p-3 border-r border-[#e6e6e6]">~660 mi</td><td class="p-3 border-r border-[#e6e6e6]">$400 – $750</td><td class="p-3 border-r border-[#e6e6e6]">$600 – $1,100</td><td class="p-3">2–3 days</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Cheapest Way to Ship a Car</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Cheapest Way to Ship a Car</h2>
     <ul class="list-disc pl-6 space-y-2">
       <li><strong>Choose Open Transport:</strong> Open trailers carry up to 10 cars and cost 30–40% less than enclosed shipping.</li>
       <li><strong>Book 1–2 Weeks Ahead:</strong> Advance booking allows brokers to secure optimal carrier rates.</li>
@@ -242,34 +249,32 @@ def build_2a_car_shipping_cost_guide():
       <li><strong>Meet Carrier at Nearby Metro Terminal/Lot:</strong> Meeting a car hauler near an interstate highway exit saves rural delivery fees.</li>
     </ul>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Frequently Asked Questions</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Frequently Asked Questions</h2>
     <div class="space-y-6">
       <div>
-        <h3 class="text-lg font-semibold text-cyan-300">How much does it cost to ship a car across the country?</h3>
+        <h3 class="text-lg font-semibold text-[#0a2540]">How much does it cost to ship a car across the country?</h3>
         <p>Shipping a car coast-to-coast (e.g., New York to California or Florida to Washington) costs between $1,200 and $1,800 for open transport and $1,700 to $2,500 for enclosed transport. Transit times range from 7 to 10 days.</p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-cyan-300">What is the cheapest way to ship a car?</h3>
+        <h3 class="text-lg font-semibold text-[#0a2540]">What is the cheapest way to ship a car?</h3>
         <p>The cheapest way is open door-to-door transport booked 1–2 weeks in advance during off-peak months (February or March) with flexible pickup dates.</p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-cyan-300">Does Neon Auto Transport require an upfront deposit?</h3>
+        <h3 class="text-lg font-semibold text-[#0a2540]">Does Neon Auto Transport require an upfront deposit?</h3>
         <p>No. Neon Auto Transport charges $0 upfront deposit. Payment is only collected after a verified carrier has been assigned to your shipment.</p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-cyan-300">Is my car insured during transport?</h3>
+        <h3 class="text-lg font-semibold text-[#0a2540]">Is my car insured during transport?</h3>
         <p>Yes. Neon Auto Transport maintains $500,000 cargo insurance coverage in addition to the primary cargo policy carried by the motor carrier.</p>
       </div>
     </div>
 
-    <div class="bg-cyan-950/60 border border-cyan-500/40 rounded-xl p-8 my-10 text-center shadow-2xl">
+    <div style="background-color:#0a2540;" class="rounded-2xl p-8 my-10 text-center text-white shadow-xl">
       <h3 class="text-2xl font-bold text-white mb-3">Ready to Calculate Your Exact Car Shipping Cost?</h3>
       <p class="text-slate-300 mb-6 max-w-xl mx-auto">Get a binding, price-locked quote with $0 upfront deposit and $500,000 cargo insurance coverage.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/cost-calculator/" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-8 py-3.5 rounded-lg transition shadow-lg shadow-cyan-500/30 text-base">Calculate Instant Quote</a>
-        <a href="tel:5715767711" class="border border-slate-700 hover:border-cyan-400 text-white font-semibold px-8 py-3.5 rounded-lg transition text-base flex items-center gap-2">
-          Call (571) 576-7711
-        </a>
+        <a href="/cost-calculator/" style="background-color:#635bff; color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:700; text-decoration:none;" class="hover:opacity-90 transition shadow-md">Calculate Instant Quote</a>
+        <a href="tel:5715767711" style="border:1px solid rgba(255,255,255,0.3); color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:600; text-decoration:none;" class="hover:bg-white/10 transition">Call (571) 576-7711</a>
       </div>
     </div>
   </article>
@@ -331,37 +336,37 @@ def build_2b_competitor_comparison_pages():
 
     for slug, comp_name, comp_dot, comp_mc, quick_ans, detailed_desc in comps:
         comp_html = f"""
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
-    <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
-      <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <section class="quick-answer bg-white rounded-xl shadow-md border border-[#e6e6e6] p-6 my-6" aria-label="Quick Answer">
+    <h2 class="quick-answer-title text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
+      <svg class="w-5 h-5 text-[#635bff]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer: Neon Auto Transport vs {comp_name}
     </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+    <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
       <p itemprop="text">{quick_ans} Get a Neon quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.</p>
     </div>
   </section>
 
-  <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed text-base">
-    <p class="text-lg text-slate-200 font-medium">Choosing between Neon Auto Transport and {comp_name} requires evaluating FMCSA licensing, deposit terms, insurance coverage, and price guarantee terms. Below is an honest, factual side-by-side breakdown.</p>
+  <article class="prose max-w-none space-y-8 text-[#425466] leading-relaxed text-base">
+    <p class="text-lg text-[#0a2540] font-medium">Choosing between Neon Auto Transport and {comp_name} requires evaluating FMCSA licensing, deposit terms, insurance coverage, and price guarantee terms. Below is an honest, factual side-by-side breakdown.</p>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Company Overview & Credentials</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Company Overview & Credentials</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-      <div class="bg-slate-900/90 border border-cyan-500/40 rounded-xl p-6">
-        <h3 class="text-xl font-bold text-cyan-400 mb-3">Neon Auto Transport LLC</h3>
-        <ul class="space-y-2 text-sm">
+      <div class="bg-white border border-[#e6e6e6] shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold text-[#0a2540] mb-3">Neon Auto Transport LLC</h3>
+        <ul class="space-y-2 text-sm text-[#425466]">
           <li><strong>Entity Type:</strong> FMCSA-Licensed Broker</li>
           <li><strong>USDOT Number:</strong> 4355879</li>
           <li><strong>MC Number:</strong> 1703787</li>
           <li><strong>HQ:</strong> Woodbridge, VA</li>
-          <li><strong>Upfront Deposit:</strong> <span class="text-green-400 font-bold">$0 (Pay upon dispatch)</span></li>
-          <li><strong>Cargo Insurance:</strong> <span class="text-cyan-300 font-bold">$500,000 Policy</span></li>
-          <li><strong>Price Lock:</strong> <span class="text-cyan-300 font-bold">Yes (Binding)</span></li>
+          <li><strong>Upfront Deposit:</strong> <span class="text-green-600 font-bold">$0 (Pay upon dispatch)</span></li>
+          <li><strong>Cargo Insurance:</strong> <span class="text-[#635bff] font-bold">$500,000 Policy</span></li>
+          <li><strong>Price Lock:</strong> <span class="text-[#635bff] font-bold">Yes (Binding)</span></li>
         </ul>
       </div>
 
-      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-xl font-bold text-slate-200 mb-3">{comp_name}</h3>
-        <ul class="space-y-2 text-sm">
+      <div class="bg-white border border-[#e6e6e6] shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold text-[#0a2540] mb-3">{comp_name}</h3>
+        <ul class="space-y-2 text-sm text-[#425466]">
           <li><strong>Entity Type:</strong> FMCSA-Licensed Broker</li>
           <li><strong>USDOT Number:</strong> {comp_dot}</li>
           <li><strong>MC Number:</strong> {comp_mc}</li>
@@ -372,33 +377,33 @@ def build_2b_competitor_comparison_pages():
       </div>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Trust Signals & Policy Comparison</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Trust Signals & Policy Comparison</h2>
     <div class="overflow-x-auto my-6">
-      <table class="w-full text-left border-collapse border border-slate-800 bg-slate-900/90 rounded-lg overflow-hidden text-sm">
+      <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-xl overflow-hidden shadow-sm text-sm">
         <caption class="sr-only">Trust Signals & Policy Comparison Matrix</caption>
         <thead>
-          <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
-            <th scope="col" class="p-3 border-r border-slate-800 font-semibold">Policy Feature</th>
-            <th scope="col" class="p-3 border-r border-slate-800 font-semibold">Neon Auto Transport</th>
-            <th scope="col" class="p-3 font-semibold">{comp_name}</th>
+          <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Policy Feature</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Neon Auto Transport</th>
+            <th scope="col" class="p-3.5 font-semibold">{comp_name}</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-800 text-slate-200">
-          <tr class="bg-cyan-950/30"><td class="p-3 border-r border-slate-800 font-semibold text-cyan-400">$0 Upfront Deposit</td><td class="p-3 border-r border-slate-800 text-green-400 font-bold">✅ Yes</td><td class="p-3 text-red-400">❌ No / Deposit Required</td></tr>
-          <tr class="bg-cyan-950/30"><td class="p-3 border-r border-slate-800 font-semibold text-cyan-400">$500,000 Cargo Insurance</td><td class="p-3 border-r border-slate-800 text-green-400 font-bold">✅ Yes</td><td class="p-3 text-slate-400">Carrier-dependent</td></tr>
-          <tr class="bg-cyan-950/30"><td class="p-3 border-r border-slate-800 font-semibold text-cyan-400">Binding Price Lock</td><td class="p-3 border-r border-slate-800 text-green-400 font-bold">✅ Yes</td><td class="p-3 text-slate-400">Varies</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Open & Enclosed Transport</td><td class="p-3 border-r border-slate-800">✅ Yes</td><td class="p-3">✅ Yes</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">Door-to-Door Delivery</td><td class="p-3 border-r border-slate-800">✅ Yes</td><td class="p-3">✅ Yes</td></tr>
-          <tr><td class="p-3 border-r border-slate-800 font-medium">24/7 Driver Contact</td><td class="p-3 border-r border-slate-800">✅ Yes</td><td class="p-3">Varies</td></tr>
+        <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-semibold text-[#0a2540]">$0 Upfront Deposit</td><td class="p-3.5 border-r border-[#e6e6e6] text-green-600 font-bold">✅ Yes</td><td class="p-3.5 text-red-600 font-medium">❌ No / Deposit Required</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-semibold text-[#0a2540]">$500,000 Cargo Insurance</td><td class="p-3.5 border-r border-[#e6e6e6] text-green-600 font-bold">✅ Yes</td><td class="p-3.5 text-[#425466]">Carrier-dependent</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-semibold text-[#0a2540]">Binding Price Lock</td><td class="p-3.5 border-r border-[#e6e6e6] text-green-600 font-bold">✅ Yes</td><td class="p-3.5 text-[#425466]">Varies</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Open & Enclosed Transport</td><td class="p-3.5 border-r border-[#e6e6e6]">✅ Yes</td><td class="p-3.5">✅ Yes</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Door-to-Door Delivery</td><td class="p-3.5 border-r border-[#e6e6e6]">✅ Yes</td><td class="p-3.5">✅ Yes</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">24/7 Driver Contact</td><td class="p-3.5 border-r border-[#e6e6e6]">✅ Yes</td><td class="p-3.5">Varies</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Pros & Cons Analysis</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Pros & Cons Analysis</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-green-400 mb-3">Neon Auto Transport Pros</h3>
-        <ul class="list-disc pl-5 space-y-2 text-sm">
+      <div class="bg-white border border-[#e6e6e6] shadow-md rounded-xl p-6">
+        <h3 class="text-lg font-bold text-green-600 mb-3">Neon Auto Transport Pros</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm text-[#425466]">
           <li>$0 upfront deposit policy</li>
           <li>$500,000 cargo insurance coverage</li>
           <li>Binding price lock guarantee</li>
@@ -406,9 +411,9 @@ def build_2b_competitor_comparison_pages():
         </ul>
       </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-cyan-400 mb-3">{comp_name} Strengths</h3>
-        <ul class="list-disc pl-5 space-y-2 text-sm">
+      <div class="bg-white border border-[#e6e6e6] shadow-md rounded-xl p-6">
+        <h3 class="text-lg font-bold text-[#0a2540] mb-3">{comp_name} Strengths</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm text-[#425466]">
           <li>Established industry footprint</li>
           <li>Large carrier dispatch network</li>
           <li>Multi-vehicle and fleet capabilities</li>
@@ -416,19 +421,19 @@ def build_2b_competitor_comparison_pages():
       </div>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Which Company Should You Choose?</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Which Company Should You Choose?</h2>
     <p>{detailed_desc}</p>
     <ul class="list-disc pl-6 space-y-2">
       <li><strong>Choose Neon Auto Transport if:</strong> You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.</li>
       <li><strong>Choose {comp_name} if:</strong> You prefer working with their specific carrier network or customized fleet program.</li>
     </ul>
 
-    <div class="bg-cyan-950/60 border border-cyan-500/40 rounded-xl p-8 my-10 text-center shadow-2xl">
+    <div style="background-color:#0a2540;" class="rounded-2xl p-8 my-10 text-center text-white shadow-xl">
       <h3 class="text-2xl font-bold text-white mb-3">Get Your Instant Quote with Neon Auto Transport</h3>
       <p class="text-slate-300 mb-6 max-w-xl mx-auto">$0 deposit, $500,000 cargo insurance, and price lock guarantee.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/cost-calculator/" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-8 py-3.5 rounded-lg transition shadow-lg shadow-cyan-500/30 text-base">Calculate Quote</a>
-        <a href="tel:5715767711" class="border border-slate-700 hover:border-cyan-400 text-white font-semibold px-8 py-3.5 rounded-lg transition text-base">Call (571) 576-7711</a>
+        <a href="/cost-calculator/" style="background-color:#635bff; color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:700; text-decoration:none;" class="hover:opacity-90 transition shadow-md">Calculate Quote</a>
+        <a href="tel:5715767711" style="border:1px solid rgba(255,255,255,0.3); color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:600; text-decoration:none;" class="hover:bg-white/10 transition">Call (571) 576-7711</a>
       </div>
     </div>
   </article>
@@ -476,69 +481,69 @@ def build_2c_priority_blog_posts():
 
     for slug, title, desc, quick_ans in blogs:
         blog_html = f"""
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
-    <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
-      <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <section class="quick-answer bg-white rounded-xl shadow-md border border-[#e6e6e6] p-6 my-6" aria-label="Quick Answer">
+    <h2 class="quick-answer-title text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
+      <svg class="w-5 h-5 text-[#635bff]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
     </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+    <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
       <p itemprop="text">{quick_ans} Learn more at neonautotransport.com or call (571) 576-7711.</p>
     </div>
   </section>
 
-  <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed text-base">
-    <p class="text-lg text-slate-200 font-medium">Auto transport logistics require clear information and transparent pricing. This expert guide provides actionable insights, pricing facts, and step-by-step guidance for vehicle owners nationwide.</p>
+  <article class="prose max-w-none space-y-8 text-[#425466] leading-relaxed text-base">
+    <p class="text-lg text-[#0a2540] font-medium">Auto transport logistics require clear information and transparent pricing. This expert guide provides actionable insights, pricing facts, and step-by-step guidance for vehicle owners nationwide.</p>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Core Principles & Overview</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Core Principles & Overview</h2>
     <p>When planning vehicle transport, factor in distance, equipment requirements, insurance credentials, and scheduling flexibility. Working with an FMCSA-licensed broker like Neon Auto Transport LLC (MC 1703787 | USDOT 4355879) ensures your vehicle is matched with vetted motor carriers carrying adequate cargo insurance.</p>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Cost & Distance Benchmarks</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Cost & Distance Benchmarks</h2>
     <div class="overflow-x-auto my-6">
-      <table class="w-full text-left border-collapse border border-slate-800 bg-slate-900/90 rounded-lg overflow-hidden text-sm">
+      <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-xl overflow-hidden shadow-sm text-sm">
         <caption class="sr-only">Vehicle Shipping Cost & Timeline Benchmarks</caption>
         <thead>
-          <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Route Distance</th>
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Open Rate Range</th>
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Enclosed Rate Range</th>
+          <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Route Distance</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Open Rate Range</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Enclosed Rate Range</th>
             <th scope="col" class="p-3.5 font-semibold">Typical Transit Time</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-800 text-slate-200">
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">0–500 miles</td><td class="p-3.5 border-r border-slate-800">$250 – $500</td><td class="p-3.5 border-r border-slate-800">$350 – $700</td><td class="p-3.5">1–2 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">500–1,500 miles</td><td class="p-3.5 border-r border-slate-800">$500 – $1,100</td><td class="p-3.5 border-r border-slate-800">$750 – $1,550</td><td class="p-3.5">2–5 days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">1,500–3,000+ miles</td><td class="p-3.5 border-r border-slate-800">$1,000 – $1,800</td><td class="p-3.5 border-r border-slate-800">$1,400 – $2,500</td><td class="p-3.5">5–10 days</td></tr>
+        <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">0–500 miles</td><td class="p-3.5 border-r border-[#e6e6e6]">$250 – $500</td><td class="p-3.5 border-r border-[#e6e6e6]">$350 – $700</td><td class="p-3.5">1–2 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">500–1,500 miles</td><td class="p-3.5 border-r border-[#e6e6e6]">$500 – $1,100</td><td class="p-3.5 border-r border-[#e6e6e6]">$750 – $1,550</td><td class="p-3.5">2–5 days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">1,500–3,000+ miles</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,000 – $1,800</td><td class="p-3.5 border-r border-[#e6e6e6]">$1,400 – $2,500</td><td class="p-3.5">5–10 days</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Step-by-Step Action Plan</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Step-by-Step Action Plan</h2>
     <ol class="list-decimal pl-6 space-y-3">
-      <li><strong>Request a Quote:</strong> Submit pickup and delivery ZIP codes using our <a href="/cost-calculator/" class="text-cyan-400 hover:underline">Instant Cost Calculator</a>.</li>
+      <li><strong>Request a Quote:</strong> Submit pickup and delivery ZIP codes using our <a href="/cost-calculator/" class="text-[#635bff] font-semibold hover:underline">Instant Cost Calculator</a>.</li>
       <li><strong>Confirm $0 Deposit Booking:</strong> Lock in your rate without paying anything upfront.</li>
       <li><strong>Prepare Your Vehicle:</strong> Clean exterior, document pre-existing condition, and reduce fuel to 1/4 tank.</li>
       <li><strong>Joint Pickup Inspection:</strong> Review the carrier Bill of Lading (BOL) inspection report at pickup.</li>
       <li><strong>Track Delivery:</strong> Receive live 24/7 driver status updates through final address delivery.</li>
     </ol>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Frequently Asked Questions</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Frequently Asked Questions</h2>
     <div class="space-y-4">
       <div>
-        <h3 class="text-lg font-semibold text-cyan-300">How far in advance should I book?</h3>
+        <h3 class="text-lg font-semibold text-[#0a2540]">How far in advance should I book?</h3>
         <p>Booking 1 to 2 weeks in advance provides the best balance of carrier availability and rate choices.</p>
       </div>
       <div>
-        <h3 class="text-lg font-semibold text-cyan-300">Does Neon charge an upfront deposit?</h3>
+        <h3 class="text-lg font-semibold text-[#0a2540]">Does Neon charge an upfront deposit?</h3>
         <p>No. Neon Auto Transport charges $0 deposit until a verified motor carrier is assigned to your shipment.</p>
       </div>
     </div>
 
-    <div class="bg-cyan-950/60 border border-cyan-500/40 rounded-xl p-8 my-10 text-center shadow-2xl">
+    <div style="background-color:#0a2540;" class="rounded-2xl p-8 my-10 text-center text-white shadow-xl">
       <h3 class="text-2xl font-bold text-white mb-3">Get a Free Instant Vehicle Shipping Quote</h3>
       <p class="text-slate-300 mb-6 max-w-xl mx-auto">Door-to-door auto transport with $0 deposit, $500,000 cargo insurance, and price lock guarantee.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/cost-calculator/" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-8 py-3.5 rounded-lg transition shadow-lg shadow-cyan-500/30 text-base">Calculate Quote Now</a>
-        <a href="tel:5715767711" class="border border-slate-700 hover:border-cyan-400 text-white font-semibold px-8 py-3.5 rounded-lg transition text-base">Call (571) 576-7711</a>
+        <a href="/cost-calculator/" style="background-color:#635bff; color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:700; text-decoration:none;" class="hover:opacity-90 transition shadow-md">Calculate Quote Now</a>
+        <a href="tel:5715767711" style="border:1px solid rgba(255,255,255,0.3); color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:600; text-decoration:none;" class="hover:bg-white/10 transition">Call (571) 576-7711</a>
       </div>
     </div>
   </article>
@@ -582,14 +587,14 @@ def build_2d_state_cost_data():
                     state_name = state_slug.replace("-", " ").title()
                     
                     state_table_html = f"""
-<section class="state-cost-data my-10 bg-slate-900/80 border border-slate-800 rounded-xl p-6">
-  <h2 class="text-2xl font-bold text-cyan-400 mb-4">Car Shipping Cost & Popular Routes: {state_name}</h2>
+<section class="state-cost-data my-10 bg-white border border-[#e6e6e6] shadow-md rounded-xl p-6">
+  <h2 class="text-2xl font-bold text-[#0a2540] mb-4">Car Shipping Cost & Popular Routes: {state_name}</h2>
   
   <div class="overflow-x-auto my-4">
-    <table class="w-full text-left border-collapse border border-slate-700 bg-slate-950 rounded-lg overflow-hidden text-sm">
+    <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-lg overflow-hidden text-sm">
       <caption class="sr-only">Average Cost to Ship a Car to or from {state_name} (2026)</caption>
       <thead>
-        <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
+        <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
           <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Route Lane</th>
           <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Distance</th>
           <th scope="col" class="p-3 border-r border-slate-700 font-semibold">Open Transport</th>
@@ -597,17 +602,17 @@ def build_2d_state_cost_data():
           <th scope="col" class="p-3 font-semibold">Transit Time</th>
         </tr>
       </thead>
-      <tbody class="divide-y divide-slate-800 text-slate-200">
-        <tr><td class="p-3 border-r border-slate-800 font-medium">{state_name} to Florida</td><td class="p-3 border-r border-slate-800">~1,100 mi</td><td class="p-3 border-r border-slate-800">$650 – $1,150</td><td class="p-3 border-r border-slate-800">$900 – $1,550</td><td class="p-3">3–5 days</td></tr>
-        <tr><td class="p-3 border-r border-slate-800 font-medium">{state_name} to California</td><td class="p-3 border-r border-slate-800">~2,100 mi</td><td class="p-3 border-r border-slate-800">$1,100 – $1,650</td><td class="p-3 border-r border-slate-800">$1,500 – $2,250</td><td class="p-3">5–8 days</td></tr>
-        <tr><td class="p-3 border-r border-slate-800 font-medium">{state_name} to Texas</td><td class="p-3 border-r border-slate-800">~1,250 mi</td><td class="p-3 border-r border-slate-800">$700 – $1,200</td><td class="p-3 border-r border-slate-800">$950 – $1,650</td><td class="p-3">3–5 days</td></tr>
-        <tr><td class="p-3 border-r border-slate-800 font-medium">{state_name} to New York</td><td class="p-3 border-r border-slate-800">~950 mi</td><td class="p-3 border-r border-slate-800">$550 – $1,050</td><td class="p-3 border-r border-slate-800">$750 – $1,400</td><td class="p-3">2–4 days</td></tr>
+      <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+        <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">{state_name} to Florida</td><td class="p-3 border-r border-[#e6e6e6]">~1,100 mi</td><td class="p-3 border-r border-[#e6e6e6]">$650 – $1,150</td><td class="p-3 border-r border-[#e6e6e6]">$900 – $1,550</td><td class="p-3">3–5 days</td></tr>
+        <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">{state_name} to California</td><td class="p-3 border-r border-[#e6e6e6]">~2,100 mi</td><td class="p-3 border-r border-[#e6e6e6]">$1,100 – $1,650</td><td class="p-3 border-r border-[#e6e6e6]">$1,500 – $2,250</td><td class="p-3">5–8 days</td></tr>
+        <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">{state_name} to Texas</td><td class="p-3 border-r border-[#e6e6e6]">~1,250 mi</td><td class="p-3 border-r border-[#e6e6e6]">$700 – $1,200</td><td class="p-3 border-r border-[#e6e6e6]">$950 – $1,650</td><td class="p-3">3–5 days</td></tr>
+        <tr><td class="p-3 border-r border-[#e6e6e6] font-medium">{state_name} to New York</td><td class="p-3 border-r border-[#e6e6e6]">~950 mi</td><td class="p-3 border-r border-[#e6e6e6]">$550 – $1,050</td><td class="p-3 border-r border-[#e6e6e6]">$750 – $1,400</td><td class="p-3">2–4 days</td></tr>
       </tbody>
     </table>
   </div>
 
-  <h3 class="text-lg font-semibold text-white mt-4 mb-2">Key Factors Affecting {state_name} Car Shipping Rates</h3>
-  <ul class="list-disc pl-5 space-y-1.5 text-slate-300 text-sm">
+  <h3 class="text-lg font-semibold text-[#0a2540] mt-4 mb-2">Key Factors Affecting {state_name} Car Shipping Rates</h3>
+  <ul class="list-disc pl-5 space-y-1.5 text-[#425466] text-sm">
     <li>Interstate highway corridor density (I-95, I-10, I-80) impacts carrier availability and pickup speed.</li>
     <li>Seasonal snowbird movement and summer relocation demand affect rates during peak windows.</li>
     <li>Urban metro pickups (major cities) cost less than remote rural address collections.</li>
@@ -664,36 +669,36 @@ def build_2e_top_50_route_pages():
 
     for slug, title, orig, dest, dist, open_low, open_high, enc_low, enc_high, transit in top_routes:
         route_html = f"""
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
-    <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
-      <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <section class="quick-answer bg-white rounded-xl shadow-md border border-[#e6e6e6] p-6 my-6" aria-label="Quick Answer">
+    <h2 class="quick-answer-title text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
+      <svg class="w-5 h-5 text-[#635bff]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer: {title}
     </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+    <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
       <p itemprop="text">Shipping a car from {orig} to {dest} covers approximately {dist} miles and costs ${open_low}–${open_high} for open transport and ${enc_low}–${enc_high} for enclosed transport. Estimated transit time is {transit} days. Neon Auto Transport LLC provides door-to-door shipping with $0 upfront deposit, $500,000 cargo insurance, and price lock guarantee. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.</p>
     </div>
   </section>
 
-  <article class="prose prose-invert max-w-none space-y-8 text-slate-300 leading-relaxed text-base">
-    <h2 class="text-2xl font-bold text-white mt-8 mb-4">Cost & Transit Time Summary</h2>
+  <article class="prose max-w-none space-y-8 text-[#425466] leading-relaxed text-base">
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-8 mb-4">Cost & Transit Time Summary</h2>
     <div class="overflow-x-auto my-6">
-      <table class="w-full text-left border-collapse border border-slate-800 bg-slate-900/90 rounded-lg overflow-hidden text-sm">
+      <table class="w-full text-left border-collapse border border-[#e6e6e6] bg-white rounded-xl overflow-hidden shadow-sm text-sm">
         <caption class="sr-only">{title} Pricing Table</caption>
         <thead>
-          <tr class="bg-cyan-950 text-cyan-300 border-b border-slate-700">
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Transport Option</th>
-            <th scope="col" class="p-3.5 border-r border-slate-800 font-semibold">Estimated Cost</th>
+          <tr style="background-color:#0a2540;" class="text-white border-b border-[#e6e6e6]">
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Transport Option</th>
+            <th scope="col" class="p-3.5 border-r border-slate-700 font-semibold">Estimated Cost</th>
             <th scope="col" class="p-3.5 font-semibold">Transit Time</th>
           </tr>
         </thead>
-        <tbody class="divide-y divide-slate-800 text-slate-200">
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Open Transport</td><td class="p-3.5 border-r border-slate-800">${open_low} – ${open_high}</td><td class="p-3.5">{transit} days</td></tr>
-          <tr><td class="p-3.5 border-r border-slate-800 font-medium">Enclosed Transport</td><td class="p-3.5 border-r border-slate-800">${enc_low} – ${enc_high}</td><td class="p-3.5">{transit} days</td></tr>
+        <tbody class="divide-y divide-[#e6e6e6] text-[#425466]">
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Open Transport</td><td class="p-3.5 border-r border-[#e6e6e6]">${open_low} – ${open_high}</td><td class="p-3.5">{transit} days</td></tr>
+          <tr><td class="p-3.5 border-r border-[#e6e6e6] font-medium">Enclosed Transport</td><td class="p-3.5 border-r border-[#e6e6e6]">${enc_low} – ${enc_high}</td><td class="p-3.5">{transit} days</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="text-2xl font-bold text-white mt-10 mb-4">Route Details & Major Freight Corridors</h2>
+    <h2 class="text-2xl font-bold text-[#0a2540] mt-10 mb-4">Route Details & Major Freight Corridors</h2>
     <ul class="list-disc pl-6 space-y-2">
       <li><strong>Total Approximate Distance:</strong> ~{dist} miles</li>
       <li><strong>Estimated Delivery Window:</strong> {transit} business days</li>
@@ -702,12 +707,12 @@ def build_2e_top_50_route_pages():
       <li><strong>Cargo Insurance Coverage:</strong> $500,000 Secondary Policy Included</li>
     </ul>
 
-    <div class="bg-cyan-950/60 border border-cyan-500/40 rounded-xl p-8 my-10 text-center shadow-2xl">
+    <div style="background-color:#0a2540;" class="rounded-2xl p-8 my-10 text-center text-white shadow-xl">
       <h3 class="text-2xl font-bold text-white mb-3">Get Your {orig} to {dest} Quote</h3>
       <p class="text-slate-300 mb-6 max-w-xl mx-auto">Price-locked quote, $0 deposit, and $500,000 cargo insurance.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/cost-calculator/" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-8 py-3.5 rounded-lg transition shadow-lg shadow-cyan-500/30 text-base">Calculate Route Quote</a>
-        <a href="tel:5715767711" class="border border-slate-700 hover:border-cyan-400 text-white font-semibold px-8 py-3.5 rounded-lg transition text-base">Call (571) 576-7711</a>
+        <a href="/cost-calculator/" style="background-color:#635bff; color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:700; text-decoration:none;" class="hover:opacity-90 transition shadow-md">Calculate Route Quote</a>
+        <a href="tel:5715767711" style="border:1px solid rgba(255,255,255,0.3); color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:600; text-decoration:none;" class="hover:bg-white/10 transition">Call (571) 576-7711</a>
       </div>
     </div>
   </article>
@@ -720,6 +725,8 @@ if __name__ == "__main__":
     build_2c_priority_blog_posts()
     build_2d_state_cost_data()
     build_2e_top_50_route_pages()
-    print("=== RE-RUNNING MARKDOWN GENERATION & ALT LINK SCRIPT ===")
-    os.system(f"python {os.path.join(BASE_DIR, 'scripts', 'execute_geo_strategy_1_followup.py')}")
-    print("=== SUCCESS: STRATEGY 2 COMPLETE ===")
+    print("=== RE-RUNNING POST-DEPLOY FIXES SCRIPT (SCHEMAS, SITEMAP, LLMS.TXT, & MD COMPANIONS) ===")
+    os.system(f"python {os.path.join(BASE_DIR, 'scripts', 'execute_strategy_2_postdeploy_fixes.py')}")
+    print("=== RE-RUNNING ACCEPT HEADER ROOT CAUSE FIX SCRIPT ===")
+    os.system(f"python {os.path.join(BASE_DIR, 'scripts', 'execute_accept_header_root_cause_fix.py')}")
+    print("=== SUCCESS: STRATEGY 2 RE-BUILD COMPLETE ===")

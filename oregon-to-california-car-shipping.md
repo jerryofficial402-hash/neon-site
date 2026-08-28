@@ -43,3 +43,21 @@ Enclosed Transport| $600 – $1100| 2-3 days
 Price-locked quote, $0 deposit, and $500,000 cargo insurance.
 
 [Calculate Route Quote](/cost-calculator/) [Call (571) 576-7711](tel:5715767711)
+
+## Frequently Asked Questions: Oregon to California Car Shipping
+
+### How much does it cost to ship a car from Oregon to California?
+
+Shipping a car from Oregon to California costs approximately $400–$750 for open transport and $600–$1100 for enclosed transport, depending on vehicle size, seasonality, and carrier availability.
+
+### How long does it take to ship a car from Oregon to California?
+
+Transit time from Oregon to California is approximately 2-3 days for a distance of ~650 miles. Factor in 1–2 days for pickup assignment.
+
+### What is the cheapest way to ship a car from Oregon to California?
+
+Choose open door-to-door transport, book 1–2 weeks in advance, and maintain flexible pickup dates to get the best rate.
+
+### Is my vehicle insured during transport from Oregon to California?
+
+Yes. Neon Auto Transport maintains $500,000 cargo insurance coverage in addition to the motor carrier's primary cargo insurance policy.
