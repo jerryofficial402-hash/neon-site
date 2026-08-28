@@ -106,7 +106,29 @@
   "trailingSlash": true,
   "rewrites": [
     {
-      "source": "/((?!api|_next|robots|sitemap|llms|favicon|.*\\.md|.*\\.xml|.*\\.txt|.*\\.ico|.*\\.png|.*\\.jpg|.*\\.svg|.*\\.css|.*\\.js).*)",
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ],
+      "destination": "/index.md"
+    },
+    {
+      "source": "/((?!api|_next|robots|sitemap|llms|favicon|.*\\.md|.*\\.xml|.*\\.txt|.*\\.ico|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.svg|.*\\.css|.*\\.js).*)/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*text/markdown.*"
+        }
+      ],
+      "destination": "/$1.md"
+    },
+    {
+      "source": "/((?!api|_next|robots|sitemap|llms|favicon|.*\\.md|.*\\.xml|.*\\.txt|.*\\.ico|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.svg|.*\\.css|.*\\.js).*)",
       "has": [
         {
           "type": "header",
