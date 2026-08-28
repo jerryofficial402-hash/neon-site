@@ -1,5 +1,4 @@
 import urllib.request
-import urllib.parse
 
 slugs = [
     "miami-fl", "orlando-fl", "arlington-tx", "austin-tx", "corpus-christi-tx",
@@ -10,22 +9,17 @@ print("=== VERIFYING LIVE PRODUCTION HTTP STATUS CODES ===")
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
-class NoRedirectHandler(urllib.request.HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, newurl):
-        print(f"  --> Redirect [{code}] to: {newurl}")
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
-
-opener = urllib.request.build_opener(NoRedirectHandler)
-
 print("\n1. Testing Canonical /routes/city/{slug}/ URLs:")
 for slug in slugs:
     url = f"https://neonautotransport.com/routes/city/{slug}/"
     req = urllib.request.Request(url, headers=headers)
     try:
-        with opener.open(req) as resp:
-            print(f"  ✅ {slug}: HTTP {resp.status}")
+        with urllib.request.urlopen(req) as resp:
+            print(f"  OK {slug}: HTTP {resp.status}")
+    except urllib.error.HTTPError as e:
+        print(f"  HTTP ERROR {slug}: {e.code}")
     except Exception as e:
-        print(f"  ❌ {slug}: ERROR {e}")
+        print(f"  ERROR {slug}: {e}")
 
 print("\n2. Testing Old Outlier State-Shipping URLs Redirects:")
 old_urls = [
@@ -38,7 +32,9 @@ old_urls = [
 for url in old_urls:
     req = urllib.request.Request(url, headers=headers)
     try:
-        with opener.open(req) as resp:
-            print(f"  ✅ {url} -> final HTTP {resp.status}")
+        with urllib.request.urlopen(req) as resp:
+            print(f"  OK {url} -> final HTTP {resp.status}")
+    except urllib.error.HTTPError as e:
+        print(f"  HTTP ERROR {url}: {e.code}")
     except Exception as e:
-        print(f"  ❌ {url}: ERROR {e}")
+        print(f"  ERROR {url}: {e}")

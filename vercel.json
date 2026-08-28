@@ -319,6 +319,1061 @@
       "source": "/texas-car-shipping/san-antonio/",
       "destination": "/routes/city/san-antonio-tx/",
       "permanent": true
+    },
+    {
+      "source": "/alabama-car-shipping/birmingham/",
+      "destination": "/routes/city/birmingham-al/",
+      "permanent": true
+    },
+    {
+      "source": "/alabama-car-shipping/huntsville/",
+      "destination": "/routes/city/huntsville-al/",
+      "permanent": true
+    },
+    {
+      "source": "/alabama-car-shipping/mobile/",
+      "destination": "/routes/city/mobile-al/",
+      "permanent": true
+    },
+    {
+      "source": "/alabama-car-shipping/montgomery/",
+      "destination": "/routes/city/montgomery-al/",
+      "permanent": true
+    },
+    {
+      "source": "/alaska-car-shipping/anchorage/",
+      "destination": "/routes/city/anchorage-ak/",
+      "permanent": true
+    },
+    {
+      "source": "/alaska-car-shipping/fairbanks/",
+      "destination": "/routes/city/fairbanks-ak/",
+      "permanent": true
+    },
+    {
+      "source": "/alaska-car-shipping/juneau/",
+      "destination": "/routes/city/juneau-ak/",
+      "permanent": true
+    },
+    {
+      "source": "/alaska-car-shipping/sitka/",
+      "destination": "/routes/city/sitka-ak/",
+      "permanent": true
+    },
+    {
+      "source": "/arizona-car-shipping/chandler/",
+      "destination": "/routes/city/chandler-az/",
+      "permanent": true
+    },
+    {
+      "source": "/arizona-car-shipping/mesa/",
+      "destination": "/routes/city/mesa-az/",
+      "permanent": true
+    },
+    {
+      "source": "/arizona-car-shipping/phoenix/",
+      "destination": "/routes/city/phoenix-az/",
+      "permanent": true
+    },
+    {
+      "source": "/arizona-car-shipping/tucson/",
+      "destination": "/routes/city/tucson-az/",
+      "permanent": true
+    },
+    {
+      "source": "/arkansas-car-shipping/fayetteville/",
+      "destination": "/routes/city/fayetteville-ar/",
+      "permanent": true
+    },
+    {
+      "source": "/arkansas-car-shipping/fort-smith/",
+      "destination": "/routes/city/fort-smith-ar/",
+      "permanent": true
+    },
+    {
+      "source": "/arkansas-car-shipping/little-rock/",
+      "destination": "/routes/city/little-rock-ar/",
+      "permanent": true
+    },
+    {
+      "source": "/arkansas-car-shipping/springdale/",
+      "destination": "/routes/city/springdale-ar/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/fresno/",
+      "destination": "/routes/city/fresno-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/houston-tx-to-los-angeles/",
+      "destination": "/routes/city/houston-tx-to-los-angeles-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/los-angeles/",
+      "destination": "/routes/city/los-angeles-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/new-york-city-ny-to-los-angeles/",
+      "destination": "/routes/city/new-york-city-ny-to-los-angeles-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/san-diego/",
+      "destination": "/routes/city/san-diego-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/san-francisco/",
+      "destination": "/routes/city/san-francisco-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/san-francisco-ca-to-los-angeles/",
+      "destination": "/routes/city/san-francisco-ca-to-los-angeles-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/san-jose/",
+      "destination": "/routes/city/san-jose-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/aurora/",
+      "destination": "/routes/city/aurora-co/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/austin-tx-to-denver/",
+      "destination": "/routes/city/austin-tx-to-denver-co/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/colorado-springs/",
+      "destination": "/routes/city/colorado-springs-co/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/denver/",
+      "destination": "/routes/city/denver-co/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/fort-collins/",
+      "destination": "/routes/city/fort-collins-co/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/las-vegas-nv-to-denver/",
+      "destination": "/routes/city/las-vegas-nv-to-denver-co/",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-car-shipping/phoenix-az-to-denver/",
+      "destination": "/routes/city/phoenix-az-to-denver-co/",
+      "permanent": true
+    },
+    {
+      "source": "/connecticut-car-shipping/bridgeport/",
+      "destination": "/routes/city/bridgeport-ct/",
+      "permanent": true
+    },
+    {
+      "source": "/connecticut-car-shipping/hartford/",
+      "destination": "/routes/city/hartford-ct/",
+      "permanent": true
+    },
+    {
+      "source": "/connecticut-car-shipping/new-haven/",
+      "destination": "/routes/city/new-haven-ct/",
+      "permanent": true
+    },
+    {
+      "source": "/connecticut-car-shipping/stamford/",
+      "destination": "/routes/city/stamford-ct/",
+      "permanent": true
+    },
+    {
+      "source": "/delaware-car-shipping/wilmington/",
+      "destination": "/routes/city/wilmington-de/",
+      "permanent": true
+    },
+    {
+      "source": "/delaware-car-shipping/dover/",
+      "destination": "/routes/city/dover-de/",
+      "permanent": true
+    },
+    {
+      "source": "/delaware-car-shipping/middletown/",
+      "destination": "/routes/city/middletown-de/",
+      "permanent": true
+    },
+    {
+      "source": "/delaware-car-shipping/newark/",
+      "destination": "/routes/city/newark-de/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/atlanta-ga-to-miami/",
+      "destination": "/routes/city/atlanta-ga-to-miami-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/boston-ma-to-miami/",
+      "destination": "/routes/city/boston-ma-to-miami-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/jacksonville/",
+      "destination": "/routes/city/jacksonville-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/philadelphia-pa-to-orlando/",
+      "destination": "/routes/city/philadelphia-pa-to-orlando-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/st-petersburg/",
+      "destination": "/routes/city/st-petersburg-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/tampa/",
+      "destination": "/routes/city/tampa-fl/",
+      "permanent": true
+    },
+    {
+      "source": "/georgia-car-shipping/atlanta/",
+      "destination": "/routes/city/atlanta-ga/",
+      "permanent": true
+    },
+    {
+      "source": "/georgia-car-shipping/augusta/",
+      "destination": "/routes/city/augusta-ga/",
+      "permanent": true
+    },
+    {
+      "source": "/georgia-car-shipping/chicago-il-to-atlanta/",
+      "destination": "/routes/city/chicago-il-to-atlanta-ga/",
+      "permanent": true
+    },
+    {
+      "source": "/georgia-car-shipping/columbus/",
+      "destination": "/routes/city/columbus-ga/",
+      "permanent": true
+    },
+    {
+      "source": "/georgia-car-shipping/macon/",
+      "destination": "/routes/city/macon-ga/",
+      "permanent": true
+    },
+    {
+      "source": "/hawaii-car-shipping/hilo/",
+      "destination": "/routes/city/hilo-hi/",
+      "permanent": true
+    },
+    {
+      "source": "/hawaii-car-shipping/honolulu/",
+      "destination": "/routes/city/honolulu-hi/",
+      "permanent": true
+    },
+    {
+      "source": "/hawaii-car-shipping/kailua/",
+      "destination": "/routes/city/kailua-hi/",
+      "permanent": true
+    },
+    {
+      "source": "/hawaii-car-shipping/pearl-city/",
+      "destination": "/routes/city/pearl-city-hi/",
+      "permanent": true
+    },
+    {
+      "source": "/idaho-car-shipping/boise/",
+      "destination": "/routes/city/boise-id/",
+      "permanent": true
+    },
+    {
+      "source": "/idaho-car-shipping/idaho-falls/",
+      "destination": "/routes/city/idaho-falls-id/",
+      "permanent": true
+    },
+    {
+      "source": "/idaho-car-shipping/meridian/",
+      "destination": "/routes/city/meridian-id/",
+      "permanent": true
+    },
+    {
+      "source": "/idaho-car-shipping/nampa/",
+      "destination": "/routes/city/nampa-id/",
+      "permanent": true
+    },
+    {
+      "source": "/illinois-car-shipping/aurora/",
+      "destination": "/routes/city/aurora-il/",
+      "permanent": true
+    },
+    {
+      "source": "/illinois-car-shipping/chicago/",
+      "destination": "/routes/city/chicago-il/",
+      "permanent": true
+    },
+    {
+      "source": "/illinois-car-shipping/joliet/",
+      "destination": "/routes/city/joliet-il/",
+      "permanent": true
+    },
+    {
+      "source": "/illinois-car-shipping/naperville/",
+      "destination": "/routes/city/naperville-il/",
+      "permanent": true
+    },
+    {
+      "source": "/illinois-car-shipping/tampa-fl-to-chicago/",
+      "destination": "/routes/city/tampa-fl-to-chicago-il/",
+      "permanent": true
+    },
+    {
+      "source": "/indiana-car-shipping/evansville/",
+      "destination": "/routes/city/evansville-in/",
+      "permanent": true
+    },
+    {
+      "source": "/indiana-car-shipping/fort-wayne/",
+      "destination": "/routes/city/fort-wayne-in/",
+      "permanent": true
+    },
+    {
+      "source": "/indiana-car-shipping/indianapolis/",
+      "destination": "/routes/city/indianapolis-in/",
+      "permanent": true
+    },
+    {
+      "source": "/indiana-car-shipping/south-bend/",
+      "destination": "/routes/city/south-bend-in/",
+      "permanent": true
+    },
+    {
+      "source": "/iowa-car-shipping/cedar-rapids/",
+      "destination": "/routes/city/cedar-rapids-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/iowa-car-shipping/davenport/",
+      "destination": "/routes/city/davenport-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/iowa-car-shipping/des-moines/",
+      "destination": "/routes/city/des-moines-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/iowa-car-shipping/sioux-city/",
+      "destination": "/routes/city/sioux-city-ia/",
+      "permanent": true
+    },
+    {
+      "source": "/kansas-car-shipping/kansas-city/",
+      "destination": "/routes/city/kansas-city-ks/",
+      "permanent": true
+    },
+    {
+      "source": "/kansas-car-shipping/olathe/",
+      "destination": "/routes/city/olathe-ks/",
+      "permanent": true
+    },
+    {
+      "source": "/kansas-car-shipping/overland-park/",
+      "destination": "/routes/city/overland-park-ks/",
+      "permanent": true
+    },
+    {
+      "source": "/kansas-car-shipping/wichita/",
+      "destination": "/routes/city/wichita-ks/",
+      "permanent": true
+    },
+    {
+      "source": "/kentucky-car-shipping/bowling-green/",
+      "destination": "/routes/city/bowling-green-ky/",
+      "permanent": true
+    },
+    {
+      "source": "/kentucky-car-shipping/lexington/",
+      "destination": "/routes/city/lexington-ky/",
+      "permanent": true
+    },
+    {
+      "source": "/kentucky-car-shipping/louisville/",
+      "destination": "/routes/city/louisville-ky/",
+      "permanent": true
+    },
+    {
+      "source": "/kentucky-car-shipping/owensboro/",
+      "destination": "/routes/city/owensboro-ky/",
+      "permanent": true
+    },
+    {
+      "source": "/louisiana-car-shipping/baton-rouge/",
+      "destination": "/routes/city/baton-rouge-la/",
+      "permanent": true
+    },
+    {
+      "source": "/louisiana-car-shipping/lafayette/",
+      "destination": "/routes/city/lafayette-la/",
+      "permanent": true
+    },
+    {
+      "source": "/louisiana-car-shipping/new-orleans/",
+      "destination": "/routes/city/new-orleans-la/",
+      "permanent": true
+    },
+    {
+      "source": "/louisiana-car-shipping/shreveport/",
+      "destination": "/routes/city/shreveport-la/",
+      "permanent": true
+    },
+    {
+      "source": "/maine-car-shipping/bangor/",
+      "destination": "/routes/city/bangor-me/",
+      "permanent": true
+    },
+    {
+      "source": "/maine-car-shipping/lewiston/",
+      "destination": "/routes/city/lewiston-me/",
+      "permanent": true
+    },
+    {
+      "source": "/maine-car-shipping/portland/",
+      "destination": "/routes/city/portland-me/",
+      "permanent": true
+    },
+    {
+      "source": "/maine-car-shipping/south-portland/",
+      "destination": "/routes/city/south-portland-me/",
+      "permanent": true
+    },
+    {
+      "source": "/maryland-car-shipping/baltimore/",
+      "destination": "/routes/city/baltimore-md/",
+      "permanent": true
+    },
+    {
+      "source": "/maryland-car-shipping/columbia/",
+      "destination": "/routes/city/columbia-md/",
+      "permanent": true
+    },
+    {
+      "source": "/maryland-car-shipping/germantown/",
+      "destination": "/routes/city/germantown-md/",
+      "permanent": true
+    },
+    {
+      "source": "/maryland-car-shipping/silver-spring/",
+      "destination": "/routes/city/silver-spring-md/",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-car-shipping/boston/",
+      "destination": "/routes/city/boston-ma/",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-car-shipping/cambridge/",
+      "destination": "/routes/city/cambridge-ma/",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-car-shipping/springfield/",
+      "destination": "/routes/city/springfield-ma/",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-car-shipping/worcester/",
+      "destination": "/routes/city/worcester-ma/",
+      "permanent": true
+    },
+    {
+      "source": "/michigan-car-shipping/detroit/",
+      "destination": "/routes/city/detroit-mi/",
+      "permanent": true
+    },
+    {
+      "source": "/michigan-car-shipping/grand-rapids/",
+      "destination": "/routes/city/grand-rapids-mi/",
+      "permanent": true
+    },
+    {
+      "source": "/michigan-car-shipping/sterling-heights/",
+      "destination": "/routes/city/sterling-heights-mi/",
+      "permanent": true
+    },
+    {
+      "source": "/michigan-car-shipping/warren/",
+      "destination": "/routes/city/warren-mi/",
+      "permanent": true
+    },
+    {
+      "source": "/minnesota-car-shipping/duluth/",
+      "destination": "/routes/city/duluth-mn/",
+      "permanent": true
+    },
+    {
+      "source": "/minnesota-car-shipping/minneapolis/",
+      "destination": "/routes/city/minneapolis-mn/",
+      "permanent": true
+    },
+    {
+      "source": "/minnesota-car-shipping/rochester/",
+      "destination": "/routes/city/rochester-mn/",
+      "permanent": true
+    },
+    {
+      "source": "/minnesota-car-shipping/st-paul/",
+      "destination": "/routes/city/st-paul-mn/",
+      "permanent": true
+    },
+    {
+      "source": "/mississippi-car-shipping/biloxi/",
+      "destination": "/routes/city/biloxi-ms/",
+      "permanent": true
+    },
+    {
+      "source": "/mississippi-car-shipping/gulfport/",
+      "destination": "/routes/city/gulfport-ms/",
+      "permanent": true
+    },
+    {
+      "source": "/mississippi-car-shipping/jackson/",
+      "destination": "/routes/city/jackson-ms/",
+      "permanent": true
+    },
+    {
+      "source": "/mississippi-car-shipping/southaven/",
+      "destination": "/routes/city/southaven-ms/",
+      "permanent": true
+    },
+    {
+      "source": "/missouri-car-shipping/columbia/",
+      "destination": "/routes/city/columbia-mo/",
+      "permanent": true
+    },
+    {
+      "source": "/missouri-car-shipping/kansas-city/",
+      "destination": "/routes/city/kansas-city-mo/",
+      "permanent": true
+    },
+    {
+      "source": "/missouri-car-shipping/springfield/",
+      "destination": "/routes/city/springfield-mo/",
+      "permanent": true
+    },
+    {
+      "source": "/missouri-car-shipping/st-louis/",
+      "destination": "/routes/city/st-louis-mo/",
+      "permanent": true
+    },
+    {
+      "source": "/montana-car-shipping/billings/",
+      "destination": "/routes/city/billings-mt/",
+      "permanent": true
+    },
+    {
+      "source": "/montana-car-shipping/bozeman/",
+      "destination": "/routes/city/bozeman-mt/",
+      "permanent": true
+    },
+    {
+      "source": "/montana-car-shipping/great-falls/",
+      "destination": "/routes/city/great-falls-mt/",
+      "permanent": true
+    },
+    {
+      "source": "/montana-car-shipping/missoula/",
+      "destination": "/routes/city/missoula-mt/",
+      "permanent": true
+    },
+    {
+      "source": "/nebraska-car-shipping/bellevue/",
+      "destination": "/routes/city/bellevue-ne/",
+      "permanent": true
+    },
+    {
+      "source": "/nebraska-car-shipping/grand-island/",
+      "destination": "/routes/city/grand-island-ne/",
+      "permanent": true
+    },
+    {
+      "source": "/nebraska-car-shipping/lincoln/",
+      "destination": "/routes/city/lincoln-ne/",
+      "permanent": true
+    },
+    {
+      "source": "/nebraska-car-shipping/omaha/",
+      "destination": "/routes/city/omaha-ne/",
+      "permanent": true
+    },
+    {
+      "source": "/nevada-car-shipping/henderson/",
+      "destination": "/routes/city/henderson-nv/",
+      "permanent": true
+    },
+    {
+      "source": "/nevada-car-shipping/las-vegas/",
+      "destination": "/routes/city/las-vegas-nv/",
+      "permanent": true
+    },
+    {
+      "source": "/nevada-car-shipping/los-angeles-ca-to-las-vegas/",
+      "destination": "/routes/city/los-angeles-ca-to-las-vegas-nv/",
+      "permanent": true
+    },
+    {
+      "source": "/nevada-car-shipping/north-las-vegas/",
+      "destination": "/routes/city/north-las-vegas-nv/",
+      "permanent": true
+    },
+    {
+      "source": "/nevada-car-shipping/reno/",
+      "destination": "/routes/city/reno-nv/",
+      "permanent": true
+    },
+    {
+      "source": "/new-hampshire-car-shipping/concord/",
+      "destination": "/routes/city/concord-nh/",
+      "permanent": true
+    },
+    {
+      "source": "/new-hampshire-car-shipping/derry/",
+      "destination": "/routes/city/derry-nh/",
+      "permanent": true
+    },
+    {
+      "source": "/new-hampshire-car-shipping/manchester/",
+      "destination": "/routes/city/manchester-nh/",
+      "permanent": true
+    },
+    {
+      "source": "/new-hampshire-car-shipping/nashua/",
+      "destination": "/routes/city/nashua-nh/",
+      "permanent": true
+    },
+    {
+      "source": "/new-jersey-car-shipping/elizabeth/",
+      "destination": "/routes/city/elizabeth-nj/",
+      "permanent": true
+    },
+    {
+      "source": "/new-jersey-car-shipping/jersey-city/",
+      "destination": "/routes/city/jersey-city-nj/",
+      "permanent": true
+    },
+    {
+      "source": "/new-jersey-car-shipping/newark/",
+      "destination": "/routes/city/newark-nj/",
+      "permanent": true
+    },
+    {
+      "source": "/new-jersey-car-shipping/orlando-fl-to-newark/",
+      "destination": "/routes/city/orlando-fl-to-newark-nj/",
+      "permanent": true
+    },
+    {
+      "source": "/new-jersey-car-shipping/paterson/",
+      "destination": "/routes/city/paterson-nj/",
+      "permanent": true
+    },
+    {
+      "source": "/new-mexico-car-shipping/albuquerque/",
+      "destination": "/routes/city/albuquerque-nm/",
+      "permanent": true
+    },
+    {
+      "source": "/new-mexico-car-shipping/las-cruces/",
+      "destination": "/routes/city/las-cruces-nm/",
+      "permanent": true
+    },
+    {
+      "source": "/new-mexico-car-shipping/rio-rancho/",
+      "destination": "/routes/city/rio-rancho-nm/",
+      "permanent": true
+    },
+    {
+      "source": "/new-mexico-car-shipping/santa-fe/",
+      "destination": "/routes/city/santa-fe-nm/",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-car-shipping/new-york-city/",
+      "destination": "/routes/city/new-york-city-ny/",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-car-shipping/yonkers/",
+      "destination": "/routes/city/yonkers-ny/",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-car-shipping/buffalo/",
+      "destination": "/routes/city/buffalo-ny/",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-car-shipping/rochester/",
+      "destination": "/routes/city/rochester-ny/",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-car-shipping/syracuse/",
+      "destination": "/routes/city/syracuse-ny/",
+      "permanent": true
+    },
+    {
+      "source": "/new-york-car-shipping/miami-fl-to-new-york-city/",
+      "destination": "/routes/city/miami-fl-to-new-york-city-ny/",
+      "permanent": true
+    },
+    {
+      "source": "/north-carolina-car-shipping/charlotte/",
+      "destination": "/routes/city/charlotte-nc/",
+      "permanent": true
+    },
+    {
+      "source": "/north-carolina-car-shipping/durham/",
+      "destination": "/routes/city/durham-nc/",
+      "permanent": true
+    },
+    {
+      "source": "/north-carolina-car-shipping/greensboro/",
+      "destination": "/routes/city/greensboro-nc/",
+      "permanent": true
+    },
+    {
+      "source": "/north-carolina-car-shipping/raleigh/",
+      "destination": "/routes/city/raleigh-nc/",
+      "permanent": true
+    },
+    {
+      "source": "/north-dakota-car-shipping/bismarck/",
+      "destination": "/routes/city/bismarck-nd/",
+      "permanent": true
+    },
+    {
+      "source": "/north-dakota-car-shipping/fargo/",
+      "destination": "/routes/city/fargo-nd/",
+      "permanent": true
+    },
+    {
+      "source": "/north-dakota-car-shipping/grand-forks/",
+      "destination": "/routes/city/grand-forks-nd/",
+      "permanent": true
+    },
+    {
+      "source": "/north-dakota-car-shipping/minot/",
+      "destination": "/routes/city/minot-nd/",
+      "permanent": true
+    },
+    {
+      "source": "/ohio-car-shipping/cincinnati/",
+      "destination": "/routes/city/cincinnati-oh/",
+      "permanent": true
+    },
+    {
+      "source": "/ohio-car-shipping/cleveland/",
+      "destination": "/routes/city/cleveland-oh/",
+      "permanent": true
+    },
+    {
+      "source": "/ohio-car-shipping/columbus/",
+      "destination": "/routes/city/columbus-oh/",
+      "permanent": true
+    },
+    {
+      "source": "/ohio-car-shipping/toledo/",
+      "destination": "/routes/city/toledo-oh/",
+      "permanent": true
+    },
+    {
+      "source": "/oklahoma-car-shipping/broken-arrow/",
+      "destination": "/routes/city/broken-arrow-ok/",
+      "permanent": true
+    },
+    {
+      "source": "/oklahoma-car-shipping/norman/",
+      "destination": "/routes/city/norman-ok/",
+      "permanent": true
+    },
+    {
+      "source": "/oklahoma-car-shipping/oklahoma-city/",
+      "destination": "/routes/city/oklahoma-city-ok/",
+      "permanent": true
+    },
+    {
+      "source": "/oklahoma-car-shipping/tulsa/",
+      "destination": "/routes/city/tulsa-ok/",
+      "permanent": true
+    },
+    {
+      "source": "/oregon-car-shipping/eugene/",
+      "destination": "/routes/city/eugene-or/",
+      "permanent": true
+    },
+    {
+      "source": "/oregon-car-shipping/gresham/",
+      "destination": "/routes/city/gresham-or/",
+      "permanent": true
+    },
+    {
+      "source": "/oregon-car-shipping/portland/",
+      "destination": "/routes/city/portland-or/",
+      "permanent": true
+    },
+    {
+      "source": "/oregon-car-shipping/salem/",
+      "destination": "/routes/city/salem-or/",
+      "permanent": true
+    },
+    {
+      "source": "/pennsylvania-car-shipping/allentown/",
+      "destination": "/routes/city/allentown-pa/",
+      "permanent": true
+    },
+    {
+      "source": "/pennsylvania-car-shipping/erie/",
+      "destination": "/routes/city/erie-pa/",
+      "permanent": true
+    },
+    {
+      "source": "/pennsylvania-car-shipping/philadelphia/",
+      "destination": "/routes/city/philadelphia-pa/",
+      "permanent": true
+    },
+    {
+      "source": "/pennsylvania-car-shipping/pittsburgh/",
+      "destination": "/routes/city/pittsburgh-pa/",
+      "permanent": true
+    },
+    {
+      "source": "/rhode-island-car-shipping/cranston/",
+      "destination": "/routes/city/cranston-ri/",
+      "permanent": true
+    },
+    {
+      "source": "/rhode-island-car-shipping/pawtucket/",
+      "destination": "/routes/city/pawtucket-ri/",
+      "permanent": true
+    },
+    {
+      "source": "/rhode-island-car-shipping/providence/",
+      "destination": "/routes/city/providence-ri/",
+      "permanent": true
+    },
+    {
+      "source": "/rhode-island-car-shipping/warwick/",
+      "destination": "/routes/city/warwick-ri/",
+      "permanent": true
+    },
+    {
+      "source": "/south-carolina-car-shipping/charleston/",
+      "destination": "/routes/city/charleston-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/south-carolina-car-shipping/columbia/",
+      "destination": "/routes/city/columbia-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/south-carolina-car-shipping/mount-pleasant/",
+      "destination": "/routes/city/mount-pleasant-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/south-carolina-car-shipping/north-charleston/",
+      "destination": "/routes/city/north-charleston-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/south-dakota-car-shipping/aberdeen/",
+      "destination": "/routes/city/aberdeen-sd/",
+      "permanent": true
+    },
+    {
+      "source": "/south-dakota-car-shipping/brookings/",
+      "destination": "/routes/city/brookings-sd/",
+      "permanent": true
+    },
+    {
+      "source": "/south-dakota-car-shipping/rapid-city/",
+      "destination": "/routes/city/rapid-city-sd/",
+      "permanent": true
+    },
+    {
+      "source": "/south-dakota-car-shipping/sioux-falls/",
+      "destination": "/routes/city/sioux-falls-sd/",
+      "permanent": true
+    },
+    {
+      "source": "/tennessee-car-shipping/chattanooga/",
+      "destination": "/routes/city/chattanooga-tn/",
+      "permanent": true
+    },
+    {
+      "source": "/tennessee-car-shipping/knoxville/",
+      "destination": "/routes/city/knoxville-tn/",
+      "permanent": true
+    },
+    {
+      "source": "/tennessee-car-shipping/memphis/",
+      "destination": "/routes/city/memphis-tn/",
+      "permanent": true
+    },
+    {
+      "source": "/tennessee-car-shipping/nashville/",
+      "destination": "/routes/city/nashville-tn/",
+      "permanent": true
+    },
+    {
+      "source": "/texas-car-shipping/chicago-il-to-dallas/",
+      "destination": "/routes/city/chicago-il-to-dallas-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/texas-car-shipping/dallas-tx-to-houston/",
+      "destination": "/routes/city/dallas-tx-to-houston-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/texas-car-shipping/detroit-mi-to-dallas/",
+      "destination": "/routes/city/detroit-mi-to-dallas-tx/",
+      "permanent": true
+    },
+    {
+      "source": "/utah-car-shipping/provo/",
+      "destination": "/routes/city/provo-ut/",
+      "permanent": true
+    },
+    {
+      "source": "/utah-car-shipping/salt-lake-city/",
+      "destination": "/routes/city/salt-lake-city-ut/",
+      "permanent": true
+    },
+    {
+      "source": "/utah-car-shipping/west-jordan/",
+      "destination": "/routes/city/west-jordan-ut/",
+      "permanent": true
+    },
+    {
+      "source": "/utah-car-shipping/west-valley-city/",
+      "destination": "/routes/city/west-valley-city-ut/",
+      "permanent": true
+    },
+    {
+      "source": "/vermont-car-shipping/barre/",
+      "destination": "/routes/city/barre-vt/",
+      "permanent": true
+    },
+    {
+      "source": "/vermont-car-shipping/burlington/",
+      "destination": "/routes/city/burlington-vt/",
+      "permanent": true
+    },
+    {
+      "source": "/vermont-car-shipping/rutland/",
+      "destination": "/routes/city/rutland-vt/",
+      "permanent": true
+    },
+    {
+      "source": "/vermont-car-shipping/south-burlington/",
+      "destination": "/routes/city/south-burlington-vt/",
+      "permanent": true
+    },
+    {
+      "source": "/washington-car-shipping/san-diego-ca-to-seattle/",
+      "destination": "/routes/city/san-diego-ca-to-seattle-wa/",
+      "permanent": true
+    },
+    {
+      "source": "/washington-car-shipping/seattle/",
+      "destination": "/routes/city/seattle-wa/",
+      "permanent": true
+    },
+    {
+      "source": "/washington-car-shipping/spokane/",
+      "destination": "/routes/city/spokane-wa/",
+      "permanent": true
+    },
+    {
+      "source": "/washington-car-shipping/tacoma/",
+      "destination": "/routes/city/tacoma-wa/",
+      "permanent": true
+    },
+    {
+      "source": "/washington-car-shipping/vancouver/",
+      "destination": "/routes/city/vancouver-wa/",
+      "permanent": true
+    },
+    {
+      "source": "/west-virginia-car-shipping/charleston/",
+      "destination": "/routes/city/charleston-wv/",
+      "permanent": true
+    },
+    {
+      "source": "/west-virginia-car-shipping/huntington/",
+      "destination": "/routes/city/huntington-wv/",
+      "permanent": true
+    },
+    {
+      "source": "/west-virginia-car-shipping/morgantown/",
+      "destination": "/routes/city/morgantown-wv/",
+      "permanent": true
+    },
+    {
+      "source": "/west-virginia-car-shipping/parkersburg/",
+      "destination": "/routes/city/parkersburg-wv/",
+      "permanent": true
+    },
+    {
+      "source": "/wisconsin-car-shipping/green-bay/",
+      "destination": "/routes/city/green-bay-wi/",
+      "permanent": true
+    },
+    {
+      "source": "/wisconsin-car-shipping/kenosha/",
+      "destination": "/routes/city/kenosha-wi/",
+      "permanent": true
+    },
+    {
+      "source": "/wisconsin-car-shipping/madison/",
+      "destination": "/routes/city/madison-wi/",
+      "permanent": true
+    },
+    {
+      "source": "/wisconsin-car-shipping/milwaukee/",
+      "destination": "/routes/city/milwaukee-wi/",
+      "permanent": true
+    },
+    {
+      "source": "/wyoming-car-shipping/casper/",
+      "destination": "/routes/city/casper-wy/",
+      "permanent": true
+    },
+    {
+      "source": "/wyoming-car-shipping/cheyenne/",
+      "destination": "/routes/city/cheyenne-wy/",
+      "permanent": true
+    },
+    {
+      "source": "/wyoming-car-shipping/gillette/",
+      "destination": "/routes/city/gillette-wy/",
+      "permanent": true
+    },
+    {
+      "source": "/wyoming-car-shipping/laramie/",
+      "destination": "/routes/city/laramie-wy/",
+      "permanent": true
     }
   ]
 }
