@@ -1,6 +1,5 @@
 import os
 import re
-import json
 
 BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
 
@@ -221,7 +220,6 @@ def fix_issue_2_blog_faq_schemas():
             with open(full_path, "r", encoding="utf-8", errors="ignore") as f:
                 c = f.read()
             if "FAQPage" not in c:
-                # Insert before </footer> or </body>
                 if "</article>" in c:
                     c = c.replace("</article>", faq_code + "\n</article>", 1)
                 else:
@@ -235,11 +233,10 @@ def fix_issue_2_blog_faq_schemas():
 def fix_issue_1_create_middleware_js():
     print("=== ISSUE 1: CREATING MIDDLEWARE.JS FOR ACCEPT HEADER REWRITES ===")
     
-    middleware_code = """import { NextResponse } from 'next/server';
-
-export function middleware(request) {
+    middleware_code = """export default function middleware(request) {
+  const url = new URL(request.url);
   const acceptHeader = request.headers.get('accept') || '';
-  const pathname = request.nextUrl ? request.nextUrl.pathname : new URL(request.url).pathname;
+  const pathname = url.pathname;
 
   // Skip non-page requests
   if (
@@ -259,24 +256,24 @@ export function middleware(request) {
     pathname.includes('llms') ||
     pathname.includes('favicon')
   ) {
-    return NextResponse.next();
+    return;
   }
 
   // If client wants Markdown, rewrite to .md version
   if (acceptHeader.includes('text/markdown')) {
     let cleanPath = pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
     if (!cleanPath) cleanPath = '/index';
-    const mdUrl = new URL(cleanPath + '.md', request.url);
-    return NextResponse.rewrite(mdUrl);
+    const mdUrl = new URL(cleanPath + '.md', url.origin);
+    return new Response(null, {
+      headers: {
+        'x-middleware-rewrite': mdUrl.toString(),
+      },
+    });
   }
-
-  return NextResponse.next();
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next|robots|sitemap|llms|favicon|css|images).*)',
-  ],
+  matcher: '/((?!api|_next|robots|sitemap|llms|favicon|css|images).*)',
 };
 """
     mw_path = os.path.join(BASE_DIR, "middleware.js")

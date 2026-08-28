@@ -1,8 +1,7 @@
-import { NextResponse } from 'next/server';
-
-export function middleware(request) {
+export default function middleware(request) {
+  const url = new URL(request.url);
   const acceptHeader = request.headers.get('accept') || '';
-  const pathname = request.nextUrl ? request.nextUrl.pathname : new URL(request.url).pathname;
+  const pathname = url.pathname;
 
   // Skip non-page requests
   if (
@@ -22,22 +21,22 @@ export function middleware(request) {
     pathname.includes('llms') ||
     pathname.includes('favicon')
   ) {
-    return NextResponse.next();
+    return;
   }
 
-  // If client wants Markdown, rewrite to .md version
+  // If client wants Markdown, rewrite to companion .md version
   if (acceptHeader.includes('text/markdown')) {
     let cleanPath = pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
     if (!cleanPath) cleanPath = '/index';
-    const mdUrl = new URL(cleanPath + '.md', request.url);
-    return NextResponse.rewrite(mdUrl);
+    const mdUrl = new URL(cleanPath + '.md', url.origin);
+    return new Response(null, {
+      headers: {
+        'x-middleware-rewrite': mdUrl.toString(),
+      },
+    });
   }
-
-  return NextResponse.next();
 }
 
 export const config = {
-  matcher: [
-    '/((?!api|_next|robots|sitemap|llms|favicon|css|images).*)',
-  ],
+  matcher: '/((?!api|_next|robots|sitemap|llms|favicon|css|images).*)',
 };
