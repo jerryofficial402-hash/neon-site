@@ -1,110 +1,31 @@
 # Neon Auto Transport
+> FMCSA-Licensed Nationwide Auto Transport Broker (USDOT #4355879 | MC #1703787)
 
-> Neon Auto Transport LLC is an FMCSA-licensed, bonded auto transport broker (USDOT #4355879 | MC #1703787) providing door-to-door vehicle shipping across all 50 U.S. states, including Alaska and Hawaii. $0 upfront deposit, $500,000 cargo insurance coverage, price lock guarantee, and 24/7 direct driver tracking. Based in Woodbridge, Virginia. Phone: (571) 576-7711. Email: info@neonautotransport.com.
+## Core Knowledge Base
+- [Company Knowledge Base](https://neonautotransport.com/llms-full.txt): Dense 20KB+ factual reference manual for AI models.
+- [AI Sitemap](https://neonautotransport.com/sitemap.md): Full markdown index of all 668+ live URLs sitewide.
 
-## Core Pages
-- [Homepage](https://neonautotransport.com/): Instant auto shipping calculator, carrier credentials, customer reviews.
-- [Why Choose Neon](https://neonautotransport.com/why-neon/): Company history, FMCSA credentials, insurance, tracking, deposit policy.
-- [How It Works](https://neonautotransport.com/how-it-works/): Step-by-step car shipping process.
-- [Customer Reviews](https://neonautotransport.com/reviews/): 500+ verified reviews, Google 5.0 rating, video testimonials.
-- [Contact](https://neonautotransport.com/contact/): Phone, email, and contact form.
+## Primary Commercial Pages
+- [Homepage](https://neonautotransport.com/): Nationwide door-to-door car shipping broker services.
+- [Car Shipping Cost Guide 2026](https://neonautotransport.com/car-shipping-cost/): 3,500+ word comprehensive pricing guide & cost tiers.
+- [Instant Cost Calculator](https://neonautotransport.com/cost-calculator/): Free online car shipping rate estimator.
+- [Best Car Shipping Companies](https://neonautotransport.com/best-car-shipping-companies/): 2026 competitor comparison index.
 
-## Services
-- [All Services](https://neonautotransport.com/services/): Full catalog of auto transport services.
-- [Open Auto Transport](https://neonautotransport.com/services/open-auto-transport/): Affordable standard vehicle shipping, $0.50–$1.00/mile.
-- [Enclosed Auto Transport](https://neonautotransport.com/services/enclosed-auto-transport/): Premium enclosed transport for luxury/classic vehicles.
-- [Door to Door Transport](https://neonautotransport.com/services/door-to-door-car-shipping/): Door-to-door pickup and delivery.
-- [Expedited Auto Transport](https://neonautotransport.com/services/expedited-auto-transport/): 24–48 hour priority pickup.
-- [Motorcycle Shipping](https://neonautotransport.com/services/motorcycle-shipping/): Motorcycle transport, $300–$800.
-- [Military Car Shipping](https://neonautotransport.com/services/military-car-shipping/): PCS vehicle relocation for active-duty military.
-- [Car Dealer & Fleet Shipping](https://neonautotransport.com/services/car-dealer-shipping/): Dealership and fleet transport.
-- [Classic & Luxury Transport](https://neonautotransport.com/services/luxury-car-shipping/): Classic, luxury, and exotic vehicle shipping.
+## Competitor Comparison Guides
+- [Neon vs Montway](https://neonautotransport.com/compare/neon-vs-montway/)
+- [Neon vs AmeriFreight](https://neonautotransport.com/compare/neon-vs-amerifreight/)
+- [Neon vs Sherpa](https://neonautotransport.com/compare/neon-vs-sherpa/)
+- [Neon vs Nexus](https://neonautotransport.com/compare/neon-vs-nexus/)
+- [Neon vs RoadRunner](https://neonautotransport.com/compare/neon-vs-roadrunner/)
+- [Neon vs SGT Auto](https://neonautotransport.com/compare/neon-vs-sgt-auto/)
+- [Neon vs Easy Auto Ship](https://neonautotransport.com/compare/neon-vs-easy-auto-ship/)
 
-## Pricing & Cost Guides
-- [Car Shipping Cost Calculator](https://neonautotransport.com/cost-calculator/): Free instant quote calculator.
-- [Car Transport Cost Guide](https://neonautotransport.com/car-shipping-cost/): Comprehensive cost breakdown by distance, vehicle type, and season.
-- [Cheapest Way to Ship a Car](https://neonautotransport.com/cheapest-way-to-ship-a-car/): Cost-saving strategies and tips.
-- [Car Shipping Transit Times](https://neonautotransport.com/car-shipping-transit-times/): Delivery time estimates by distance.
-- [Insurance Information](https://neonautotransport.com/insurance/): Cargo insurance coverage details.
-
-## Comparisons
-- [Best Car Shipping Companies](https://neonautotransport.com/best-car-shipping-companies/): Compare top auto transport providers.
-- [Neon vs Montway](https://neonautotransport.com/compare/neon-vs-montway/): Side-by-side comparison.
-- [Broker vs Carrier](https://neonautotransport.com/compare/broker-vs-carrier/): Understanding the difference.
-- [Open vs Enclosed Transport](https://neonautotransport.com/compare/open-vs-enclosed/): Which transport type is right for you.
-
-## Guides & FAQs
-- [How to Ship a Car to Another State](https://neonautotransport.com/how-to-ship-a-car-to-another-state/): Complete step-by-step master guide.
-- [Frequently Asked Questions](https://neonautotransport.com/faqs/): Cost, insurance, tracking, timeline, payment questions answered.
-- [Shipping Blog & How-To Guides](https://neonautotransport.com/blog/): Expert guides and industry insights.
-
-## State Hubs (All 50 States)
-- [Alabama Car Shipping](https://neonautotransport.com/alabama-car-shipping/)
-- [Alaska Car Shipping](https://neonautotransport.com/alaska-car-shipping/)
-- [Arizona Car Shipping](https://neonautotransport.com/arizona-car-shipping/)
-- [Arkansas Car Shipping](https://neonautotransport.com/arkansas-car-shipping/)
-- [California Car Shipping](https://neonautotransport.com/california-car-shipping/)
-- [Colorado Car Shipping](https://neonautotransport.com/colorado-car-shipping/)
-- [Connecticut Car Shipping](https://neonautotransport.com/connecticut-car-shipping/)
-- [Delaware Car Shipping](https://neonautotransport.com/delaware-car-shipping/)
-- [Florida Car Shipping](https://neonautotransport.com/florida-car-shipping/)
-- [Georgia Car Shipping](https://neonautotransport.com/georgia-car-shipping/)
-- [Hawaii Car Shipping](https://neonautotransport.com/hawaii-car-shipping/)
-- [Idaho Car Shipping](https://neonautotransport.com/idaho-car-shipping/)
-- [Illinois Car Shipping](https://neonautotransport.com/illinois-car-shipping/)
-- [Indiana Car Shipping](https://neonautotransport.com/indiana-car-shipping/)
-- [Iowa Car Shipping](https://neonautotransport.com/iowa-car-shipping/)
-- [Kansas Car Shipping](https://neonautotransport.com/kansas-car-shipping/)
-- [Kentucky Car Shipping](https://neonautotransport.com/kentucky-car-shipping/)
-- [Louisiana Car Shipping](https://neonautotransport.com/louisiana-car-shipping/)
-- [Maine Car Shipping](https://neonautotransport.com/maine-car-shipping/)
-- [Maryland Car Shipping](https://neonautotransport.com/maryland-car-shipping/)
-- [Massachusetts Car Shipping](https://neonautotransport.com/massachusetts-car-shipping/)
-- [Michigan Car Shipping](https://neonautotransport.com/michigan-car-shipping/)
-- [Minnesota Car Shipping](https://neonautotransport.com/minnesota-car-shipping/)
-- [Mississippi Car Shipping](https://neonautotransport.com/mississippi-car-shipping/)
-- [Missouri Car Shipping](https://neonautotransport.com/missouri-car-shipping/)
-- [Montana Car Shipping](https://neonautotransport.com/montana-car-shipping/)
-- [Nebraska Car Shipping](https://neonautotransport.com/nebraska-car-shipping/)
-- [Nevada Car Shipping](https://neonautotransport.com/nevada-car-shipping/)
-- [New Hampshire Car Shipping](https://neonautotransport.com/new-hampshire-car-shipping/)
-- [New Jersey Car Shipping](https://neonautotransport.com/new-jersey-car-shipping/)
-- [New Mexico Car Shipping](https://neonautotransport.com/new-mexico-car-shipping/)
-- [New York Car Shipping](https://neonautotransport.com/new-york-car-shipping/)
-- [North Carolina Car Shipping](https://neonautotransport.com/north-carolina-car-shipping/)
-- [North Dakota Car Shipping](https://neonautotransport.com/north-dakota-car-shipping/)
-- [Ohio Car Shipping](https://neonautotransport.com/ohio-car-shipping/)
-- [Oklahoma Car Shipping](https://neonautotransport.com/oklahoma-car-shipping/)
-- [Oregon Car Shipping](https://neonautotransport.com/oregon-car-shipping/)
-- [Pennsylvania Car Shipping](https://neonautotransport.com/pennsylvania-car-shipping/)
-- [Rhode Island Car Shipping](https://neonautotransport.com/rhode-island-car-shipping/)
-- [South Carolina Car Shipping](https://neonautotransport.com/south-carolina-car-shipping/)
-- [South Dakota Car Shipping](https://neonautotransport.com/south-dakota-car-shipping/)
-- [Tennessee Car Shipping](https://neonautotransport.com/tennessee-car-shipping/)
-- [Texas Car Shipping](https://neonautotransport.com/texas-car-shipping/)
-- [Utah Car Shipping](https://neonautotransport.com/utah-car-shipping/)
-- [Vermont Car Shipping](https://neonautotransport.com/vermont-car-shipping/)
-- [Virginia Car Shipping](https://neonautotransport.com/virginia-car-shipping/)
-- [Washington Car Shipping](https://neonautotransport.com/washington-car-shipping/)
-- [West Virginia Car Shipping](https://neonautotransport.com/west-virginia-car-shipping/)
-- [Wisconsin Car Shipping](https://neonautotransport.com/wisconsin-car-shipping/)
-- [Wyoming Car Shipping](https://neonautotransport.com/wyoming-car-shipping/)
-
-## Popular Routes
-- [New York to Florida](https://neonautotransport.com/routes/city/miami-fl-to-new-york-city-ny/): ~1,090 mi, $650–$1,200
-- [California to Texas](https://neonautotransport.com/routes/city/houston-tx-to-los-angeles-ca/): ~1,400 mi, $700–$1,300
-- [California to New York](https://neonautotransport.com/routes/city/new-york-city-ny-to-los-angeles-ca/): ~2,900 mi, $1,200–$1,800
-- [Illinois to Florida](https://neonautotransport.com/routes/city/tampa-fl-to-chicago-il/): ~1,150 mi, $700–$1,200
-- [Georgia to Florida](https://neonautotransport.com/routes/city/atlanta-ga-to-miami-fl/): ~660 mi, $400–$750
-
-## Blog Posts
-- [How Much Does It Cost to Ship a Car Across the Country?](https://neonautotransport.com/blog/how-much-does-it-cost-to-ship-a-car-across-the-country/)
-- [How to Prepare Your Car for Shipping](https://neonautotransport.com/blog/how-to-prepare-car-for-shipping/)
-- [Open vs Enclosed Auto Transport](https://neonautotransport.com/blog/open-vs-enclosed-auto-transport/)
-- [True Cost of Car Shipping 2026](https://neonautotransport.com/blog/true-cost-of-car-shipping-2026/)
-- [What Is the Best Auto Transport Company to Use?](https://neonautotransport.com/blog/what-is-the-best-auto-transport-company-to-use/)
-- [Who Ships Cars from Woodbridge, Virginia?](https://neonautotransport.com/blog/who-ships-cars-from-woodbridge-virginia/)
-
-## AI-Optimized Content & Datasets
-- [Full AI Knowledge Base (llms-full.txt)](https://neonautotransport.com/llms-full.txt): Complete structured dataset for AI agents.
-- [AI Sitemap](https://neonautotransport.com/sitemap.md): Markdown sitemap of all pages with descriptions.
+## Priority Guides & Blog Posts
+- [Snowbird Car Shipping Guide](https://neonautotransport.com/blog/snowbird-car-shipping-guide/)
+- [Cross Country Car Shipping](https://neonautotransport.com/blog/cross-country-car-shipping/)
+- [Car Shipping Insurance Explained](https://neonautotransport.com/blog/car-shipping-insurance-explained/)
+- [How to Choose a Car Shipping Company](https://neonautotransport.com/blog/how-to-choose-car-shipping-company/)
+- [Hawaii Car Shipping Guide](https://neonautotransport.com/blog/hawaii-car-shipping-guide/)
+- [Military POV Shipping (PCS)](https://neonautotransport.com/blog/military-car-shipping-pcs/)
+- [Car Shipping Timeline](https://neonautotransport.com/blog/car-shipping-timeline/)
+- [Electric Vehicle (EV) Shipping](https://neonautotransport.com/blog/electric-vehicle-shipping/)
