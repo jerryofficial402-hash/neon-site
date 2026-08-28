@@ -1374,6 +1374,36 @@
       "source": "/wyoming-car-shipping/laramie/",
       "destination": "/routes/city/laramie-wy/",
       "permanent": true
+    },
+    {
+      "source": "/virginia-car-shipping/chesapeake/",
+      "destination": "/routes/city/chesapeake-va/",
+      "permanent": true
+    },
+    {
+      "source": "/virginia-car-shipping/norfolk/",
+      "destination": "/routes/city/norfolk-va/",
+      "permanent": true
+    },
+    {
+      "source": "/virginia-car-shipping/richmond/",
+      "destination": "/routes/city/richmond-va/",
+      "permanent": true
+    },
+    {
+      "source": "/california-car-shipping/seattle-wa-to-san-francisco/",
+      "destination": "/routes/city/seattle-wa-to-san-francisco-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/virginia-car-shipping/virginia-beach/",
+      "destination": "/routes/city/virginia-beach-va/",
+      "permanent": true
+    },
+    {
+      "source": "/florida-car-shipping/washington-dc-to-miami/",
+      "destination": "/routes/city/washington-dc-to-miami-fl/",
+      "permanent": true
     }
   ]
 }

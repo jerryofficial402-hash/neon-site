@@ -1,0 +1,275 @@
+import os
+import re
+import json
+
+BASE_DIR = r"C:\Users\DYNABOOK\.gemini\antigravity\scratch\neon-site"
+ROUTES_CITY_DIR = os.path.join(BASE_DIR, "routes", "city")
+VERCEL_JSON_PATH = os.path.join(BASE_DIR, "vercel.json")
+
+# List of all pairs from user input
+mismatched_pairs = [
+    ("https://neonautotransport.com/blog/who-ships-cars-from-woodbridge-virginia/", "https://neonautotransport.com/blog/who-ships-cars-from-woodbridge-virginia.html"),
+    ("https://neonautotransport.com/how-it-works/", "https://neonautotransport.com/"),
+    ("https://neonautotransport.com/routes/city/aberdeen-sd/", "https://neonautotransport.com/south-dakota-car-shipping/aberdeen/"),
+    ("https://neonautotransport.com/routes/city/albuquerque-nm/", "https://neonautotransport.com/new-mexico-car-shipping/albuquerque/"),
+    ("https://neonautotransport.com/routes/city/allentown-pa/", "https://neonautotransport.com/pennsylvania-car-shipping/allentown/"),
+    ("https://neonautotransport.com/routes/city/anchorage-ak/", "https://neonautotransport.com/alaska-car-shipping/anchorage/"),
+    ("https://neonautotransport.com/routes/city/atlanta-ga-to-miami-fl/", "https://neonautotransport.com/florida-car-shipping/atlanta-ga-to-miami/"),
+    ("https://neonautotransport.com/routes/city/atlanta-ga/", "https://neonautotransport.com/georgia-car-shipping/atlanta/"),
+    ("https://neonautotransport.com/routes/city/augusta-ga/", "https://neonautotransport.com/georgia-car-shipping/augusta/"),
+    ("https://neonautotransport.com/routes/city/aurora-co/", "https://neonautotransport.com/colorado-car-shipping/aurora/"),
+    ("https://neonautotransport.com/routes/city/aurora-il/", "https://neonautotransport.com/illinois-car-shipping/aurora/"),
+    ("https://neonautotransport.com/routes/city/austin-tx-to-denver-co/", "https://neonautotransport.com/colorado-car-shipping/austin-tx-to-denver/"),
+    ("https://neonautotransport.com/routes/city/baltimore-md/", "https://neonautotransport.com/maryland-car-shipping/baltimore/"),
+    ("https://neonautotransport.com/routes/city/bangor-me/", "https://neonautotransport.com/maine-car-shipping/bangor/"),
+    ("https://neonautotransport.com/routes/city/barre-vt/", "https://neonautotransport.com/vermont-car-shipping/barre/"),
+    ("https://neonautotransport.com/routes/city/baton-rouge-la/", "https://neonautotransport.com/louisiana-car-shipping/baton-rouge/"),
+    ("https://neonautotransport.com/routes/city/bellevue-ne/", "https://neonautotransport.com/nebraska-car-shipping/bellevue/"),
+    ("https://neonautotransport.com/routes/city/billings-mt/", "https://neonautotransport.com/montana-car-shipping/billings/"),
+    ("https://neonautotransport.com/routes/city/biloxi-ms/", "https://neonautotransport.com/mississippi-car-shipping/biloxi/"),
+    ("https://neonautotransport.com/routes/city/birmingham-al/", "https://neonautotransport.com/alabama-car-shipping/birmingham/"),
+    ("https://neonautotransport.com/routes/city/bismarck-nd/", "https://neonautotransport.com/north-dakota-car-shipping/bismarck/"),
+    ("https://neonautotransport.com/routes/city/boise-id/", "https://neonautotransport.com/idaho-car-shipping/boise/"),
+    ("https://neonautotransport.com/routes/city/boston-ma-to-miami-fl/", "https://neonautotransport.com/florida-car-shipping/boston-ma-to-miami/"),
+    ("https://neonautotransport.com/routes/city/boston-ma/", "https://neonautotransport.com/massachusetts-car-shipping/boston/"),
+    ("https://neonautotransport.com/routes/city/bowling-green-ky/", "https://neonautotransport.com/kentucky-car-shipping/bowling-green/"),
+    ("https://neonautotransport.com/routes/city/bozeman-mt/", "https://neonautotransport.com/montana-car-shipping/bozeman/"),
+    ("https://neonautotransport.com/routes/city/bridgeport-ct/", "https://neonautotransport.com/connecticut-car-shipping/bridgeport/"),
+    ("https://neonautotransport.com/routes/city/broken-arrow-ok/", "https://neonautotransport.com/oklahoma-car-shipping/broken-arrow/"),
+    ("https://neonautotransport.com/routes/city/brookings-sd/", "https://neonautotransport.com/south-dakota-car-shipping/brookings/"),
+    ("https://neonautotransport.com/routes/city/buffalo-ny/", "https://neonautotransport.com/new-york-car-shipping/buffalo/"),
+    ("https://neonautotransport.com/routes/city/burlington-vt/", "https://neonautotransport.com/vermont-car-shipping/burlington/"),
+    ("https://neonautotransport.com/routes/city/cambridge-ma/", "https://neonautotransport.com/massachusetts-car-shipping/cambridge/"),
+    ("https://neonautotransport.com/routes/city/casper-wy/", "https://neonautotransport.com/wyoming-car-shipping/casper/"),
+    ("https://neonautotransport.com/routes/city/cedar-rapids-ia/", "https://neonautotransport.com/iowa-car-shipping/cedar-rapids/"),
+    ("https://neonautotransport.com/routes/city/chandler-az/", "https://neonautotransport.com/arizona-car-shipping/chandler/"),
+    ("https://neonautotransport.com/routes/city/charleston-sc/", "https://neonautotransport.com/south-carolina-car-shipping/charleston/"),
+    ("https://neonautotransport.com/routes/city/charleston-wv/", "https://neonautotransport.com/west-virginia-car-shipping/charleston/"),
+    ("https://neonautotransport.com/routes/city/charlotte-nc/", "https://neonautotransport.com/north-carolina-car-shipping/charlotte/"),
+    ("https://neonautotransport.com/routes/city/chattanooga-tn/", "https://neonautotransport.com/tennessee-car-shipping/chattanooga/"),
+    ("https://neonautotransport.com/routes/city/chesapeake-va/", "https://neonautotransport.com/virginia-car-shipping/chesapeake/"),
+    ("https://neonautotransport.com/routes/city/cheyenne-wy/", "https://neonautotransport.com/wyoming-car-shipping/cheyenne/"),
+    ("https://neonautotransport.com/routes/city/chicago-il-to-atlanta-ga/", "https://neonautotransport.com/georgia-car-shipping/chicago-il-to-atlanta/"),
+    ("https://neonautotransport.com/routes/city/chicago-il-to-dallas-tx/", "https://neonautotransport.com/texas-car-shipping/chicago-il-to-dallas/"),
+    ("https://neonautotransport.com/routes/city/chicago-il/", "https://neonautotransport.com/illinois-car-shipping/chicago/"),
+    ("https://neonautotransport.com/routes/city/cincinnati-oh/", "https://neonautotransport.com/ohio-car-shipping/cincinnati/"),
+    ("https://neonautotransport.com/routes/city/cleveland-oh/", "https://neonautotransport.com/ohio-car-shipping/cleveland/"),
+    ("https://neonautotransport.com/routes/city/colorado-springs-co/", "https://neonautotransport.com/colorado-car-shipping/colorado-springs/"),
+    ("https://neonautotransport.com/routes/city/columbia-md/", "https://neonautotransport.com/maryland-car-shipping/columbia/"),
+    ("https://neonautotransport.com/routes/city/columbia-mo/", "https://neonautotransport.com/missouri-car-shipping/columbia/"),
+    ("https://neonautotransport.com/routes/city/columbia-sc/", "https://neonautotransport.com/south-carolina-car-shipping/columbia/"),
+    ("https://neonautotransport.com/routes/city/columbus-ga/", "https://neonautotransport.com/georgia-car-shipping/columbus/"),
+    ("https://neonautotransport.com/routes/city/columbus-oh/", "https://neonautotransport.com/ohio-car-shipping/columbus/"),
+    ("https://neonautotransport.com/routes/city/concord-nh/", "https://neonautotransport.com/new-hampshire-car-shipping/concord/"),
+    ("https://neonautotransport.com/routes/city/cranston-ri/", "https://neonautotransport.com/rhode-island-car-shipping/cranston/"),
+    ("https://neonautotransport.com/routes/city/dallas-tx-to-houston-tx/", "https://neonautotransport.com/texas-car-shipping/dallas-tx-to-houston/"),
+    ("https://neonautotransport.com/routes/city/davenport-ia/", "https://neonautotransport.com/iowa-car-shipping/davenport/"),
+    ("https://neonautotransport.com/routes/city/denver-co/", "https://neonautotransport.com/colorado-car-shipping/denver/"),
+    ("https://neonautotransport.com/routes/city/derry-nh/", "https://neonautotransport.com/new-hampshire-car-shipping/derry/"),
+    ("https://neonautotransport.com/routes/city/des-moines-ia/", "https://neonautotransport.com/iowa-car-shipping/des-moines/"),
+    ("https://neonautotransport.com/routes/city/detroit-mi-to-dallas-tx/", "https://neonautotransport.com/texas-car-shipping/detroit-mi-to-dallas/"),
+    ("https://neonautotransport.com/routes/city/detroit-mi/", "https://neonautotransport.com/michigan-car-shipping/detroit/"),
+    ("https://neonautotransport.com/routes/city/dover-de/", "https://neonautotransport.com/delaware-car-shipping/dover/"),
+    ("https://neonautotransport.com/routes/city/duluth-mn/", "https://neonautotransport.com/minnesota-car-shipping/duluth/"),
+    ("https://neonautotransport.com/routes/city/durham-nc/", "https://neonautotransport.com/north-carolina-car-shipping/durham/"),
+    ("https://neonautotransport.com/routes/city/elizabeth-nj/", "https://neonautotransport.com/new-jersey-car-shipping/elizabeth/"),
+    ("https://neonautotransport.com/routes/city/erie-pa/", "https://neonautotransport.com/pennsylvania-car-shipping/erie/"),
+    ("https://neonautotransport.com/routes/city/eugene-or/", "https://neonautotransport.com/oregon-car-shipping/eugene/"),
+    ("https://neonautotransport.com/routes/city/evansville-in/", "https://neonautotransport.com/indiana-car-shipping/evansville/"),
+    ("https://neonautotransport.com/routes/city/fairbanks-ak/", "https://neonautotransport.com/alaska-car-shipping/fairbanks/"),
+    ("https://neonautotransport.com/routes/city/fargo-nd/", "https://neonautotransport.com/north-dakota-car-shipping/fargo/"),
+    ("https://neonautotransport.com/routes/city/fayetteville-ar/", "https://neonautotransport.com/arkansas-car-shipping/fayetteville/"),
+    ("https://neonautotransport.com/routes/city/fort-collins-co/", "https://neonautotransport.com/colorado-car-shipping/fort-collins/"),
+    ("https://neonautotransport.com/routes/city/fort-smith-ar/", "https://neonautotransport.com/arkansas-car-shipping/fort-smith/"),
+    ("https://neonautotransport.com/routes/city/fort-wayne-in/", "https://neonautotransport.com/indiana-car-shipping/fort-wayne/"),
+    ("https://neonautotransport.com/routes/city/fresno-ca/", "https://neonautotransport.com/california-car-shipping/fresno/"),
+    ("https://neonautotransport.com/routes/city/germantown-md/", "https://neonautotransport.com/maryland-car-shipping/germantown/"),
+    ("https://neonautotransport.com/routes/city/gillette-wy/", "https://neonautotransport.com/wyoming-car-shipping/gillette/"),
+    ("https://neonautotransport.com/routes/city/grand-forks-nd/", "https://neonautotransport.com/north-dakota-car-shipping/grand-forks/"),
+    ("https://neonautotransport.com/routes/city/grand-island-ne/", "https://neonautotransport.com/nebraska-car-shipping/grand-island/"),
+    ("https://neonautotransport.com/routes/city/grand-rapids-mi/", "https://neonautotransport.com/michigan-car-shipping/grand-rapids/"),
+    ("https://neonautotransport.com/routes/city/great-falls-mt/", "https://neonautotransport.com/montana-car-shipping/great-falls/"),
+    ("https://neonautotransport.com/routes/city/green-bay-wi/", "https://neonautotransport.com/wisconsin-car-shipping/green-bay/"),
+    ("https://neonautotransport.com/routes/city/greensboro-nc/", "https://neonautotransport.com/north-carolina-car-shipping/greensboro/"),
+    ("https://neonautotransport.com/routes/city/gresham-or/", "https://neonautotransport.com/oregon-car-shipping/gresham/"),
+    ("https://neonautotransport.com/routes/city/gulfport-ms/", "https://neonautotransport.com/mississippi-car-shipping/gulfport/"),
+    ("https://neonautotransport.com/routes/city/hartford-ct/", "https://neonautotransport.com/connecticut-car-shipping/hartford/"),
+    ("https://neonautotransport.com/routes/city/henderson-nv/", "https://neonautotransport.com/nevada-car-shipping/henderson/"),
+    ("https://neonautotransport.com/routes/city/hilo-hi/", "https://neonautotransport.com/hawaii-car-shipping/hilo/"),
+    ("https://neonautotransport.com/routes/city/honolulu-hi/", "https://neonautotransport.com/hawaii-car-shipping/honolulu/"),
+    ("https://neonautotransport.com/routes/city/houston-tx-to-los-angeles-ca/", "https://neonautotransport.com/california-car-shipping/houston-tx-to-los-angeles/"),
+    ("https://neonautotransport.com/routes/city/huntington-wv/", "https://neonautotransport.com/west-virginia-car-shipping/huntington/"),
+    ("https://neonautotransport.com/routes/city/huntsville-al/", "https://neonautotransport.com/alabama-car-shipping/huntsville/"),
+    ("https://neonautotransport.com/routes/city/idaho-falls-id/", "https://neonautotransport.com/idaho-car-shipping/idaho-falls/"),
+    ("https://neonautotransport.com/routes/city/indianapolis-in/", "https://neonautotransport.com/indiana-car-shipping/indianapolis/"),
+    ("https://neonautotransport.com/routes/city/jackson-ms/", "https://neonautotransport.com/mississippi-car-shipping/jackson/"),
+    ("https://neonautotransport.com/routes/city/jacksonville-fl/", "https://neonautotransport.com/florida-car-shipping/jacksonville/"),
+    ("https://neonautotransport.com/routes/city/jersey-city-nj/", "https://neonautotransport.com/new-jersey-car-shipping/jersey-city/"),
+    ("https://neonautotransport.com/routes/city/joliet-il/", "https://neonautotransport.com/illinois-car-shipping/joliet/"),
+    ("https://neonautotransport.com/routes/city/juneau-ak/", "https://neonautotransport.com/alaska-car-shipping/juneau/"),
+    ("https://neonautotransport.com/routes/city/kailua-hi/", "https://neonautotransport.com/hawaii-car-shipping/kailua/"),
+    ("https://neonautotransport.com/routes/city/kansas-city-ks/", "https://neonautotransport.com/kansas-car-shipping/kansas-city/"),
+    ("https://neonautotransport.com/routes/city/kansas-city-mo/", "https://neonautotransport.com/missouri-car-shipping/kansas-city/"),
+    ("https://neonautotransport.com/routes/city/kenosha-wi/", "https://neonautotransport.com/wisconsin-car-shipping/kenosha/"),
+    ("https://neonautotransport.com/routes/city/knoxville-tn/", "https://neonautotransport.com/tennessee-car-shipping/knoxville/"),
+    ("https://neonautotransport.com/routes/city/lafayette-la/", "https://neonautotransport.com/louisiana-car-shipping/lafayette/"),
+    ("https://neonautotransport.com/routes/city/laramie-wy/", "https://neonautotransport.com/wyoming-car-shipping/laramie/"),
+    ("https://neonautotransport.com/routes/city/las-cruces-nm/", "https://neonautotransport.com/new-mexico-car-shipping/las-cruces/"),
+    ("https://neonautotransport.com/routes/city/las-vegas-nv-to-denver-co/", "https://neonautotransport.com/colorado-car-shipping/las-vegas-nv-to-denver/"),
+    ("https://neonautotransport.com/routes/city/las-vegas-nv/", "https://neonautotransport.com/nevada-car-shipping/las-vegas/"),
+    ("https://neonautotransport.com/routes/city/lewiston-me/", "https://neonautotransport.com/maine-car-shipping/lewiston/"),
+    ("https://neonautotransport.com/routes/city/lexington-ky/", "https://neonautotransport.com/kentucky-car-shipping/lexington/"),
+    ("https://neonautotransport.com/routes/city/lincoln-ne/", "https://neonautotransport.com/nebraska-car-shipping/lincoln/"),
+    ("https://neonautotransport.com/routes/city/little-rock-ar/", "https://neonautotransport.com/arkansas-car-shipping/little-rock/"),
+    ("https://neonautotransport.com/routes/city/los-angeles-ca-to-las-vegas-nv/", "https://neonautotransport.com/nevada-car-shipping/los-angeles-ca-to-las-vegas/"),
+    ("https://neonautotransport.com/routes/city/los-angeles-ca/", "https://neonautotransport.com/california-car-shipping/los-angeles/"),
+    ("https://neonautotransport.com/routes/city/louisville-ky/", "https://neonautotransport.com/kentucky-car-shipping/louisville/"),
+    ("https://neonautotransport.com/routes/city/macon-ga/", "https://neonautotransport.com/georgia-car-shipping/macon/"),
+    ("https://neonautotransport.com/routes/city/madison-wi/", "https://neonautotransport.com/wisconsin-car-shipping/madison/"),
+    ("https://neonautotransport.com/routes/city/manchester-nh/", "https://neonautotransport.com/new-hampshire-car-shipping/manchester/"),
+    ("https://neonautotransport.com/routes/city/memphis-tn/", "https://neonautotransport.com/tennessee-car-shipping/memphis/"),
+    ("https://neonautotransport.com/routes/city/meridian-id/", "https://neonautotransport.com/idaho-car-shipping/meridian/"),
+    ("https://neonautotransport.com/routes/city/mesa-az/", "https://neonautotransport.com/arizona-car-shipping/mesa/"),
+    ("https://neonautotransport.com/routes/city/miami-fl-to-new-york-city-ny/", "https://neonautotransport.com/new-york-car-shipping/miami-fl-to-new-york-city/"),
+    ("https://neonautotransport.com/routes/city/middletown-de/", "https://neonautotransport.com/delaware-car-shipping/middletown/"),
+    ("https://neonautotransport.com/routes/city/milwaukee-wi/", "https://neonautotransport.com/wisconsin-car-shipping/milwaukee/"),
+    ("https://neonautotransport.com/routes/city/minneapolis-mn/", "https://neonautotransport.com/minnesota-car-shipping/minneapolis/"),
+    ("https://neonautotransport.com/routes/city/minot-nd/", "https://neonautotransport.com/north-dakota-car-shipping/minot/"),
+    ("https://neonautotransport.com/routes/city/missoula-mt/", "https://neonautotransport.com/montana-car-shipping/missoula/"),
+    ("https://neonautotransport.com/routes/city/mobile-al/", "https://neonautotransport.com/alabama-car-shipping/mobile/"),
+    ("https://neonautotransport.com/routes/city/montgomery-al/", "https://neonautotransport.com/alabama-car-shipping/montgomery/"),
+    ("https://neonautotransport.com/routes/city/morgantown-wv/", "https://neonautotransport.com/west-virginia-car-shipping/morgantown/"),
+    ("https://neonautotransport.com/routes/city/mount-pleasant-sc/", "https://neonautotransport.com/south-carolina-car-shipping/mount-pleasant/"),
+    ("https://neonautotransport.com/routes/city/nampa-id/", "https://neonautotransport.com/idaho-car-shipping/nampa/"),
+    ("https://neonautotransport.com/routes/city/naperville-il/", "https://neonautotransport.com/illinois-car-shipping/naperville/"),
+    ("https://neonautotransport.com/routes/city/nashua-nh/", "https://neonautotransport.com/new-hampshire-car-shipping/nashua/"),
+    ("https://neonautotransport.com/routes/city/nashville-tn/", "https://neonautotransport.com/tennessee-car-shipping/nashville/"),
+    ("https://neonautotransport.com/routes/city/new-haven-ct/", "https://neonautotransport.com/connecticut-car-shipping/new-haven/"),
+    ("https://neonautotransport.com/routes/city/new-orleans-la/", "https://neonautotransport.com/louisiana-car-shipping/new-orleans/"),
+    ("https://neonautotransport.com/routes/city/new-york-city-ny-to-los-angeles-ca/", "https://neonautotransport.com/california-car-shipping/new-york-city-ny-to-los-angeles/"),
+    ("https://neonautotransport.com/routes/city/new-york-city-ny/", "https://neonautotransport.com/new-york-car-shipping/new-york-city/"),
+    ("https://neonautotransport.com/routes/city/newark-de/", "https://neonautotransport.com/delaware-car-shipping/newark/"),
+    ("https://neonautotransport.com/routes/city/newark-nj/", "https://neonautotransport.com/new-jersey-car-shipping/newark/"),
+    ("https://neonautotransport.com/routes/city/norfolk-va/", "https://neonautotransport.com/virginia-car-shipping/norfolk/"),
+    ("https://neonautotransport.com/routes/city/norman-ok/", "https://neonautotransport.com/oklahoma-car-shipping/norman/"),
+    ("https://neonautotransport.com/routes/city/north-charleston-sc/", "https://neonautotransport.com/south-carolina-car-shipping/north-charleston/"),
+    ("https://neonautotransport.com/routes/city/north-las-vegas-nv/", "https://neonautotransport.com/nevada-car-shipping/north-las-vegas/"),
+    ("https://neonautotransport.com/routes/city/oklahoma-city-ok/", "https://neonautotransport.com/oklahoma-car-shipping/oklahoma-city/"),
+    ("https://neonautotransport.com/routes/city/olathe-ks/", "https://neonautotransport.com/kansas-car-shipping/olathe/"),
+    ("https://neonautotransport.com/routes/city/omaha-ne/", "https://neonautotransport.com/nebraska-car-shipping/omaha/"),
+    ("https://neonautotransport.com/routes/city/orlando-fl-to-newark-nj/", "https://neonautotransport.com/new-jersey-car-shipping/orlando-fl-to-newark/"),
+    ("https://neonautotransport.com/routes/city/overland-park-ks/", "https://neonautotransport.com/kansas-car-shipping/overland-park/"),
+    ("https://neonautotransport.com/routes/city/owensboro-ky/", "https://neonautotransport.com/kentucky-car-shipping/owensboro/"),
+    ("https://neonautotransport.com/routes/city/parkersburg-wv/", "https://neonautotransport.com/west-virginia-car-shipping/parkersburg/"),
+    ("https://neonautotransport.com/routes/city/paterson-nj/", "https://neonautotransport.com/new-jersey-car-shipping/paterson/"),
+    ("https://neonautotransport.com/routes/city/pawtucket-ri/", "https://neonautotransport.com/rhode-island-car-shipping/pawtucket/"),
+    ("https://neonautotransport.com/routes/city/pearl-city-hi/", "https://neonautotransport.com/hawaii-car-shipping/pearl-city/"),
+    ("https://neonautotransport.com/routes/city/philadelphia-pa-to-orlando-fl/", "https://neonautotransport.com/florida-car-shipping/philadelphia-pa-to-orlando/"),
+    ("https://neonautotransport.com/routes/city/philadelphia-pa/", "https://neonautotransport.com/pennsylvania-car-shipping/philadelphia/"),
+    ("https://neonautotransport.com/routes/city/phoenix-az-to-denver-co/", "https://neonautotransport.com/colorado-car-shipping/phoenix-az-to-denver/"),
+    ("https://neonautotransport.com/routes/city/phoenix-az/", "https://neonautotransport.com/arizona-car-shipping/phoenix/"),
+    ("https://neonautotransport.com/routes/city/pittsburgh-pa/", "https://neonautotransport.com/pennsylvania-car-shipping/pittsburgh/"),
+    ("https://neonautotransport.com/routes/city/portland-me/", "https://neonautotransport.com/maine-car-shipping/portland/"),
+    ("https://neonautotransport.com/routes/city/portland-or/", "https://neonautotransport.com/oregon-car-shipping/portland/"),
+    ("https://neonautotransport.com/routes/city/providence-ri/", "https://neonautotransport.com/rhode-island-car-shipping/providence/"),
+    ("https://neonautotransport.com/routes/city/provo-ut/", "https://neonautotransport.com/utah-car-shipping/provo/"),
+    ("https://neonautotransport.com/routes/city/raleigh-nc/", "https://neonautotransport.com/north-carolina-car-shipping/raleigh/"),
+    ("https://neonautotransport.com/routes/city/rapid-city-sd/", "https://neonautotransport.com/south-dakota-car-shipping/rapid-city/"),
+    ("https://neonautotransport.com/routes/city/reno-nv/", "https://neonautotransport.com/nevada-car-shipping/reno/"),
+    ("https://neonautotransport.com/routes/city/richmond-va/", "https://neonautotransport.com/virginia-car-shipping/richmond/"),
+    ("https://neonautotransport.com/routes/city/rio-rancho-nm/", "https://neonautotransport.com/new-mexico-car-shipping/rio-rancho/"),
+    ("https://neonautotransport.com/routes/city/rochester-mn/", "https://neonautotransport.com/minnesota-car-shipping/rochester/"),
+    ("https://neonautotransport.com/routes/city/rochester-ny/", "https://neonautotransport.com/new-york-car-shipping/rochester/"),
+    ("https://neonautotransport.com/routes/city/rutland-vt/", "https://neonautotransport.com/vermont-car-shipping/rutland/"),
+    ("https://neonautotransport.com/routes/city/salem-or/", "https://neonautotransport.com/oregon-car-shipping/salem/"),
+    ("https://neonautotransport.com/routes/city/salt-lake-city-ut/", "https://neonautotransport.com/utah-car-shipping/salt-lake-city/"),
+    ("https://neonautotransport.com/routes/city/san-diego-ca-to-seattle-wa/", "https://neonautotransport.com/washington-car-shipping/san-diego-ca-to-seattle/"),
+    ("https://neonautotransport.com/routes/city/san-diego-ca/", "https://neonautotransport.com/california-car-shipping/san-diego/"),
+    ("https://neonautotransport.com/routes/city/san-francisco-ca-to-los-angeles-ca/", "https://neonautotransport.com/california-car-shipping/san-francisco-ca-to-los-angeles/"),
+    ("https://neonautotransport.com/routes/city/san-francisco-ca/", "https://neonautotransport.com/california-car-shipping/san-francisco/"),
+    ("https://neonautotransport.com/routes/city/san-jose-ca/", "https://neonautotransport.com/california-car-shipping/san-jose/"),
+    ("https://neonautotransport.com/routes/city/santa-fe-nm/", "https://neonautotransport.com/new-mexico-car-shipping/santa-fe/"),
+    ("https://neonautotransport.com/routes/city/seattle-wa-to-san-francisco-ca/", "https://neonautotransport.com/california-car-shipping/seattle-wa-to-san-francisco/"),
+    ("https://neonautotransport.com/routes/city/seattle-wa/", "https://neonautotransport.com/washington-car-shipping/seattle/"),
+    ("https://neonautotransport.com/routes/city/shreveport-la/", "https://neonautotransport.com/louisiana-car-shipping/shreveport/"),
+    ("https://neonautotransport.com/routes/city/silver-spring-md/", "https://neonautotransport.com/maryland-car-shipping/silver-spring/"),
+    ("https://neonautotransport.com/routes/city/sioux-city-ia/", "https://neonautotransport.com/iowa-car-shipping/sioux-city/"),
+    ("https://neonautotransport.com/routes/city/sioux-falls-sd/", "https://neonautotransport.com/south-dakota-car-shipping/sioux-falls/"),
+    ("https://neonautotransport.com/routes/city/sitka-ak/", "https://neonautotransport.com/alaska-car-shipping/sitka/"),
+    ("https://neonautotransport.com/routes/city/south-bend-in/", "https://neonautotransport.com/indiana-car-shipping/south-bend/"),
+    ("https://neonautotransport.com/routes/city/south-burlington-vt/", "https://neonautotransport.com/vermont-car-shipping/south-burlington/"),
+    ("https://neonautotransport.com/routes/city/south-portland-me/", "https://neonautotransport.com/maine-car-shipping/south-portland/"),
+    ("https://neonautotransport.com/routes/city/southaven-ms/", "https://neonautotransport.com/mississippi-car-shipping/southaven/"),
+    ("https://neonautotransport.com/routes/city/spokane-wa/", "https://neonautotransport.com/washington-car-shipping/spokane/"),
+    ("https://neonautotransport.com/routes/city/springdale-ar/", "https://neonautotransport.com/arkansas-car-shipping/springdale/"),
+    ("https://neonautotransport.com/routes/city/springfield-ma/", "https://neonautotransport.com/massachusetts-car-shipping/springfield/"),
+    ("https://neonautotransport.com/routes/city/springfield-mo/", "https://neonautotransport.com/missouri-car-shipping/springfield/"),
+    ("https://neonautotransport.com/routes/city/st-louis-mo/", "https://neonautotransport.com/missouri-car-shipping/st-louis/"),
+    ("https://neonautotransport.com/routes/city/st-paul-mn/", "https://neonautotransport.com/minnesota-car-shipping/st-paul/"),
+    ("https://neonautotransport.com/routes/city/st-petersburg-fl/", "https://neonautotransport.com/florida-car-shipping/st-petersburg/"),
+    ("https://neonautotransport.com/routes/city/stamford-ct/", "https://neonautotransport.com/connecticut-car-shipping/stamford/"),
+    ("https://neonautotransport.com/routes/city/sterling-heights-mi/", "https://neonautotransport.com/michigan-car-shipping/sterling-heights/"),
+    ("https://neonautotransport.com/routes/city/syracuse-ny/", "https://neonautotransport.com/new-york-car-shipping/syracuse/"),
+    ("https://neonautotransport.com/routes/city/tacoma-wa/", "https://neonautotransport.com/washington-car-shipping/tacoma/"),
+    ("https://neonautotransport.com/routes/city/tampa-fl-to-chicago-il/", "https://neonautotransport.com/illinois-car-shipping/tampa-fl-to-chicago/"),
+    ("https://neonautotransport.com/routes/city/tampa-fl/", "https://neonautotransport.com/florida-car-shipping/tampa/"),
+    ("https://neonautotransport.com/routes/city/toledo-oh/", "https://neonautotransport.com/ohio-car-shipping/toledo/"),
+    ("https://neonautotransport.com/routes/city/tucson-az/", "https://neonautotransport.com/arizona-car-shipping/tucson/"),
+    ("https://neonautotransport.com/routes/city/tulsa-ok/", "https://neonautotransport.com/oklahoma-car-shipping/tulsa/"),
+    ("https://neonautotransport.com/routes/city/vancouver-wa/", "https://neonautotransport.com/washington-car-shipping/vancouver/"),
+    ("https://neonautotransport.com/routes/city/virginia-beach-va/", "https://neonautotransport.com/virginia-car-shipping/virginia-beach/"),
+    ("https://neonautotransport.com/routes/city/warren-mi/", "https://neonautotransport.com/michigan-car-shipping/warren/"),
+    ("https://neonautotransport.com/routes/city/warwick-ri/", "https://neonautotransport.com/rhode-island-car-shipping/warwick/"),
+    ("https://neonautotransport.com/routes/city/washington-dc-to-miami-fl/", "https://neonautotransport.com/florida-car-shipping/washington-dc-to-miami/"),
+    ("https://neonautotransport.com/routes/city/west-jordan-ut/", "https://neonautotransport.com/utah-car-shipping/west-jordan/"),
+    ("https://neonautotransport.com/routes/city/west-valley-city-ut/", "https://neonautotransport.com/utah-car-shipping/west-valley-city/"),
+    ("https://neonautotransport.com/routes/city/wichita-ks/", "https://neonautotransport.com/kansas-car-shipping/wichita/"),
+    ("https://neonautotransport.com/routes/city/wilmington-de/", "https://neonautotransport.com/delaware-car-shipping/wilmington/"),
+    ("https://neonautotransport.com/routes/city/worcester-ma/", "https://neonautotransport.com/massachusetts-car-shipping/worcester/"),
+    ("https://neonautotransport.com/routes/city/yonkers-ny/", "https://neonautotransport.com/new-york-car-shipping/yonkers/"),
+]
+
+print(f"=== VERIFYING {len(mismatched_pairs)} MISMATCHED PAIRS ===")
+
+# Verify vercel.json 301 redirects cover all target URLs
+with open(VERCEL_JSON_PATH, "r", encoding="utf-8") as f:
+    vdata = json.load(f)
+
+redirect_sources = {r["source"] for r in vdata.get("redirects", [])}
+
+missing_redirects = []
+for page_url, wrong_canonical in mismatched_pairs:
+    if page_url.startswith("https://neonautotransport.com/routes/city/"):
+        path = wrong_canonical.replace("https://neonautotransport.com", "")
+        if path not in redirect_sources:
+            missing_redirects.append((path, page_url.replace("https://neonautotransport.com", "")))
+
+print(f"Missing 301 redirects in vercel.json: {len(missing_redirects)}")
+
+if missing_redirects:
+    for src, dst in missing_redirects:
+        vdata["redirects"].append({
+            "source": src,
+            "destination": dst,
+            "permanent": True
+        })
+    with open(VERCEL_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(vdata, f, indent=2)
+    print(f"Added remaining {len(missing_redirects)} 301 redirects to vercel.json!")
+
+print("=== VERIFYING LOCAL FILES FOR SELF-REFERENCING CANONICALS ===")
+bad_canonicals_count = 0
+for root, dirs, files in os.walk(ROUTES_CITY_DIR):
+    for file in files:
+        if file == "index.html" or file.endswith(".html"):
+            fpath = os.path.join(root, file)
+            with open(fpath, "r", encoding="utf-8", errors="ignore") as f:
+                c = f.read()
+            m = re.search(r'<link\s+rel=["\']canonical["\']\s+href=["\'](.*?)["\']', c, re.IGNORECASE)
+            if m:
+                canonical_href = m.group(1)
+                if not canonical_href.startswith("https://neonautotransport.com/routes/city/"):
+                    bad_canonicals_count += 1
+                    print(f"BAD CANONICAL FOUND: {file} -> {canonical_href}")
+
+print(f"Verification Complete: Found {bad_canonicals_count} bad canonicals in local files.")
