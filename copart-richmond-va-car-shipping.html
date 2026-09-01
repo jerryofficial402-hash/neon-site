@@ -95,6 +95,14 @@
       transform: translateY(-6px) !important;
       box-shadow: 0 14px 30px rgba(57, 255, 20, 0.2) !important;
     }
+
+    /* Details Accordion resets */
+    summary::-webkit-details-marker {
+      display: none !important;
+    }
+    summary {
+      list-style: none !important;
+    }
   </style>
 
 <script type="application/ld+json">
@@ -327,7 +335,7 @@
 
         <!-- CTA Buttons Box -->
         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
-          <a href="/cost-calculator/" style="background-color: #635bff; color: #ffffff;" class="px-8 py-4 rounded-xl font-bold text-base hover:bg-[#534be8] transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+          <a href="/cost-calculator/" style="background-color: #39FF14; color: #0a2540; font-weight: 900;" class="px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition-all duration-300 shadow-[0_0_15px_rgba(57,255,20,0.3)] hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
             <span>Calculate Instant Rate</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
@@ -360,7 +368,7 @@
       </div>
     </section>
 
-    <!-- Main Content Container -->
+    <!-- Main Content Flow Container -->
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 space-y-24 lg:space-y-32">
       
       <!-- 1. Quick Overview Box -->
@@ -382,7 +390,7 @@
         </div>
       </section>
 
-      <!-- 2. Why Choose Neon Section (Styled Exactly Like Contact Cards) -->
+      <!-- 2. Why Choose Neon Section -->
       <section class="pt-4">
         <div class="mb-10 lg:mb-12">
           <span class="text-[#4338ca] text-xs font-bold uppercase tracking-wider block mb-2">Dedicated Service</span>
@@ -463,7 +471,7 @@
         </div>
       </section>
 
-      <!-- 3. How to Ship (5 Steps Structured Stack) -->
+      <!-- 3. How to Ship (5 Steps Structured Stack with Proper Box Design) -->
       <section class="pt-4">
         <div class="mb-10 lg:mb-12">
           <span class="text-[#4338ca] text-xs font-bold uppercase tracking-wider block mb-2">Step-by-Step Guide</span>
@@ -474,45 +482,70 @@
         </div>
 
         <div class="space-y-6">
-          <div class="bg-white p-7 rounded-2xl card-hover-indigo flex gap-5 sm:gap-6 items-start" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
-            <div class="w-9 h-9 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm mt-0.5">1</div>
-            <div class="flex-1">
-              <h3 class="font-bold text-base sm:text-lg text-[#0a2540] mb-1.5">Win the Auction and Complete Payment</h3>
-              <p class="text-sm text-[#425466] leading-relaxed">Pay your Copart invoice in full using wire transfer, ePay, or debit. Copart will not release any vehicle until funds clear.</p>
+          
+          <!-- Step 1 -->
+          <div class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#e0e7ff] text-[#4338ca] text-xs font-bold rounded-full mb-3">
+              📍 Step 01 &bull; Payment Clearance
+            </div>
+            <h3 class="text-xl sm:text-2xl font-black text-[#0a2540] mb-2">Win the Auction and Complete Payment</h3>
+            <p class="text-sm text-[#425466] leading-relaxed font-medium">
+              Pay your Copart invoice in full using wire transfer, ePay, or debit. Copart will not release any vehicle or issue gate passes until all buyer and auction fees have cleared.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white p-7 sm:p-8 rounded-3xl card-hover-cyan" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#ecfeff] text-[#0891b2] text-xs font-bold rounded-full mb-3">
+              📍 Step 02 &bull; Gate PIN &amp; Yard Confirmation
+            </div>
+            <h3 class="text-xl sm:text-2xl font-black text-[#0a2540] mb-2">Obtain Your Gate Pass &amp; Lot Details</h3>
+            <p class="text-sm text-[#425466] leading-relaxed font-medium">
+              Log into your Copart Member portal. Download the Gate Pass / Buyer Release PIN and verify whether your vehicle is stored at the <strong>Sandston (#42)</strong> or <strong>Charles City (#134)</strong> yard.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white p-7 sm:p-8 rounded-3xl card-hover-green" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#dcfce7] text-[#15803d] text-xs font-bold rounded-full mb-3">
+              📍 Step 03 &bull; Carrier Dispatch Booking
+            </div>
+            <h3 class="text-xl sm:text-2xl font-black text-[#0a2540] mb-2">Book Dispatch with Neon Auto Transport</h3>
+            <p class="text-sm text-[#425466] leading-relaxed font-medium mb-4">
+              Provide your Lot #, Buyer PIN, vehicle operable status (operable, rolls/steers, or heavy salvage), and destination address. We immediately match an FMCSA-authorized carrier.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-[#e6e6e6]">
+              <a href="/cost-calculator/" class="px-5 py-2 bg-[#f0f5fa] hover:bg-[#0a2540] hover:text-white text-[#0a2540] font-bold text-xs rounded-xl transition" style="text-decoration:none;">
+                Book Dispatch Online →
+              </a>
+              <a href="tel:5715767711" class="px-5 py-2 bg-[#ffc72c] hover:bg-[#e0b020] text-[#0a2540] font-black text-xs rounded-xl transition shadow-sm" style="text-decoration:none;">
+                Call (571) 576-7711
+              </a>
             </div>
           </div>
 
-          <div class="bg-white p-7 rounded-2xl card-hover-indigo flex gap-5 sm:gap-6 items-start" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
-            <div class="w-9 h-9 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm mt-0.5">2</div>
-            <div class="flex-1">
-              <h3 class="font-bold text-base sm:text-lg text-[#0a2540] mb-1.5">Obtain Your Gate Pass &amp; Lot Details</h3>
-              <p class="text-sm text-[#425466] leading-relaxed">Log into your Copart Member portal. Download the Gate Pass / Buyer Release PIN and confirm whether your vehicle is at the Sandston or Charles City yard.</p>
+          <!-- Step 4 -->
+          <div class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#e0e7ff] text-[#4338ca] text-xs font-bold rounded-full mb-3">
+              📍 Step 04 &bull; App Gate Check-In &amp; Loading
             </div>
+            <h3 class="text-xl sm:text-2xl font-black text-[#0a2540] mb-2">Carrier Yard Check-In &amp; Safe Loading</h3>
+            <p class="text-sm text-[#425466] leading-relaxed font-medium">
+              The assigned driver books an exact gate arrival appointment using the Copart Transportation App, performs a multi-point inspection (BOL), and securely loads the vehicle via ramp, winch, or forklift.
+            </p>
           </div>
 
-          <div class="bg-white p-7 rounded-2xl card-hover-indigo flex gap-5 sm:gap-6 items-start" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
-            <div class="w-9 h-9 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm mt-0.5">3</div>
-            <div class="flex-1">
-              <h3 class="font-bold text-base sm:text-lg text-[#0a2540] mb-1.5">Book Dispatch with Neon Auto Transport</h3>
-              <p class="text-sm text-[#425466] leading-relaxed">Provide your Lot #, Gate PIN, vehicle condition (operable, rolls/steers, or immobile), and delivery address. We assign an FMCSA-authorized carrier.</p>
+          <!-- Step 5 -->
+          <div class="bg-white p-7 sm:p-8 rounded-3xl card-hover-green" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-[#dcfce7] text-[#15803d] text-xs font-bold rounded-full mb-3">
+              📍 Step 05 &bull; Nationwide Door-to-Door Delivery
             </div>
+            <h3 class="text-xl sm:text-2xl font-black text-[#0a2540] mb-2">Direct Door-to-Door Delivery</h3>
+            <p class="text-sm text-[#425466] leading-relaxed font-medium">
+              Your vehicle is delivered directly to your residence, body shop, dealership, or maritime shipping port with continuous tracking updates and $500,000 cargo insurance protection.
+            </p>
           </div>
 
-          <div class="bg-white p-7 rounded-2xl card-hover-indigo flex gap-5 sm:gap-6 items-start" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
-            <div class="w-9 h-9 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm mt-0.5">4</div>
-            <div class="flex-1">
-              <h3 class="font-bold text-base sm:text-lg text-[#0a2540] mb-1.5">Carrier Yard Check-In &amp; Loading</h3>
-              <p class="text-sm text-[#425466] leading-relaxed">The driver schedules an arrival window via the Copart Transportation App, inspects the vehicle (Bill of Lading), and safely loads it via ramp, winch, or forklift.</p>
-            </div>
-          </div>
-
-          <div class="bg-white p-7 rounded-2xl card-hover-indigo flex gap-5 sm:gap-6 items-start" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;">
-            <div class="w-9 h-9 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-sm mt-0.5">5</div>
-            <div class="flex-1">
-              <h3 class="font-bold text-base sm:text-lg text-[#0a2540] mb-1.5">Direct Door-to-Door Delivery</h3>
-              <p class="text-sm text-[#425466] leading-relaxed">Your vehicle is delivered directly to your home, auto repair shop, dealership, or shipping port with full cargo insurance coverage.</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -601,7 +634,7 @@
         </div>
       </section>
 
-      <!-- 5. Yard Locations Section (EXACT MATCH to Contact Page Location Cards) -->
+      <!-- 5. Yard Locations Section -->
       <section class="pt-4">
         <div class="mb-10 lg:mb-12">
           <span class="text-[#4338ca] text-xs font-bold uppercase tracking-wider block mb-2">Facility Directory</span>
@@ -613,7 +646,7 @@
 
         <div class="grid md:grid-cols-2 gap-8">
           
-          <!-- Yard 1: Sandston (Woodbridge Style) -->
+          <!-- Yard 1: Sandston -->
           <div class="bg-white p-8 rounded-3xl card-hover-indigo flex flex-col justify-between" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
             <div>
               <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#e0e7ff] text-[#4338ca] text-xs font-bold rounded-full mb-4">
@@ -645,7 +678,7 @@
             </div>
           </div>
 
-          <!-- Yard 2: Charles City (Live Oak Style) -->
+          <!-- Yard 2: Charles City -->
           <div class="bg-white p-8 rounded-3xl card-hover-cyan flex flex-col justify-between" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;">
             <div>
               <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#ecfeff] text-[#0891b2] text-xs font-bold rounded-full mb-4">
@@ -680,7 +713,7 @@
         </div>
       </section>
 
-      <!-- 6. Vehicle Conditions Section (Styled Cards) -->
+      <!-- 6. Vehicle Conditions Section -->
       <section class="pt-4">
         <div class="mb-10 lg:mb-12">
           <span class="text-[#4338ca] text-xs font-bold uppercase tracking-wider block mb-2">Equipment Matching</span>
@@ -761,7 +794,7 @@
         </div>
       </section>
 
-      <!-- 7. Delivery Routes Grid (Styled Cards) -->
+      <!-- 7. Delivery Routes Grid -->
       <section class="pt-4">
         <div class="mb-10 lg:mb-12">
           <span class="text-[#4338ca] text-xs font-bold uppercase tracking-wider block mb-2">Route Network</span>
@@ -830,7 +863,7 @@
         </div>
       </section>
 
-      <!-- 8. Clean FAQs with Generous Padding -->
+      <!-- 8. Fully Styled Interactive FAQ Accordion Cards with Clean Separation -->
       <section class="pt-4" itemscope itemtype="https://schema.org/FAQPage">
         <div class="mb-10 lg:mb-12">
           <span class="text-[#4338ca] text-xs font-bold uppercase tracking-wider block mb-2">Common Questions</span>
@@ -840,91 +873,124 @@
           </p>
         </div>
         
-        <div class="space-y-5">
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" open>
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+        <div class="space-y-6">
+          
+          <!-- FAQ 1 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" open>
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">How do I ship a car from Copart Richmond VA?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">To ship a car from Copart Richmond, first pay your invoice in full. Once payment clears, retrieve your gate pass and lot number from your Copart portal. Contact Neon Auto Transport with your vehicle condition and delivery address. Our team assigns an authorized carrier who schedules a pickup via the Copart Transportation App and delivers your vehicle door-to-door.</p>
             </div>
           </details>
 
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+          <!-- FAQ 2 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">How much does it cost to ship a car from Copart Richmond?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">Costs vary based on distance and vehicle condition. Standard open transport ranges from $300 to $1,500 for most continental U.S. routes. Non-running vehicles requiring winch loading add $100–$250, while heavy-duty flatbed or long-haul transport ranges from $800 to $4,000+. Copart also charges a standard $50–$75 gate/loading fee.</p>
             </div>
           </details>
 
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+          <!-- FAQ 3 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">How fast can you pick up from Copart Richmond?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">We prioritize same-day or 24–48 hour dispatch once payment has cleared and the gate pass is generated. Quick pickup prevents you from incurring Copart's daily storage charges ($30–$50+/day) after the free storage window expires.</p>
             </div>
           </details>
 
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+          <!-- FAQ 4 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">Can you ship non-running cars from Copart Richmond?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">Yes. Over 60% of Copart auction vehicles are salvage or inoperable. We dispatch winch-equipped trucks for vehicles that roll and steer, and arrange forklift or yard crane assistance at Copart Richmond for units with broken axles, frame damage, or missing wheels.</p>
             </div>
           </details>
 
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+          <!-- FAQ 5 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">Do I need a broker to ship from Copart Richmond?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">While not legally mandatory, partnering with an experienced auto transport broker like Neon Auto Transport ensures access to Copart-vetted carriers, manages gate clearance paperwork, avoids expensive yard storage penalties, and provides full cargo insurance oversight.</p>
             </div>
           </details>
 
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+          <!-- FAQ 6 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">What documents do I need for Copart Richmond pickup?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">Your assigned carrier requires your Copart Buyer Number, Lot Number, and Gate Pass / Release PIN. The carrier will provide their DOT/MC credentials and driver ID during gate check-in at the Sandston or Charles City yard.</p>
             </div>
           </details>
 
-          <details class="bg-white p-7 rounded-2xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <summary class="font-bold text-[#0a2540] text-base sm:text-lg flex justify-between items-center list-none">
+          <!-- FAQ 7 -->
+          <details class="bg-white p-7 sm:p-8 rounded-3xl card-hover-indigo group cursor-pointer" style="background:#ffffff; border:1px solid #e6e6e6; border-radius:1.5rem;" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary class="font-black text-lg sm:text-xl text-[#0a2540] flex justify-between items-center list-none select-none">
               <span itemprop="name">Can you ship multiple vehicles from Copart Richmond at once?</span>
-              <span class="text-slate-400 group-open:rotate-180 transition-transform text-xs ml-4">&#9660;</span>
+              <span class="w-8 h-8 rounded-full bg-[#f0f5fa] text-[#4338ca] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform shrink-0 ml-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+              </span>
             </summary>
-            <div class="mt-4 text-[#425466] text-sm leading-relaxed" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="mt-4 pt-4 border-t border-[#e6e6e6] text-[#425466] text-sm sm:text-base leading-relaxed font-medium" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
               <p itemprop="text">Yes. We frequently arrange multi-car loads (2 to 9 vehicles) for auto dealers, body shops, and vehicle exporters. Consolidating lots into single-carrier transport reduces total freight costs by 10%–20%.</p>
             </div>
           </details>
+
         </div>
       </section>
 
-      <!-- 9. Pre-Footer Distinct CTA Box -->
-      <section style="background-color: #0a2540;" class="rounded-3xl p-10 sm:p-14 text-center text-white shadow-lg transition-all duration-300 hover:shadow-xl mt-12">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-4">Ready to Ship from Copart Richmond?</h2>
-        <p class="text-slate-300 text-base sm:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+      <!-- 9. Pre-Footer High-Impact CTA Banner (Structured with 3 Proper Buttons) -->
+      <section style="background-color: #0a2540;" class="rounded-3xl p-10 sm:p-14 lg:p-16 text-center text-white shadow-2xl transition-all duration-300 hover:shadow-xl mt-12">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-wider mb-5">
+          Locked-In Rate Guarantee
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 tracking-tight">
+          Ready to Ship from Copart Richmond?
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
           Get a transparent, locked-in rate quote with $0 upfront deposit and $500,000 cargo insurance coverage.
         </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/cost-calculator/" style="background-color: #635bff; color: #ffffff;" class="px-9 py-4 rounded-xl font-bold text-base hover:bg-[#534be8] transition-all duration-300 shadow hover:shadow-md hover:-translate-y-0.5 text-center w-full sm:w-auto">
-            Calculate Instant Rate &rarr;
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="/cost-calculator/" style="background-color: #39FF14; color: #0a2540; font-weight: 900; text-decoration: none;" class="px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition-all duration-300 shadow-[0_0_20px_rgba(57,255,20,0.4)] hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+            <span>Calculate Instant Rate</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </a>
-          <a href="tel:5715767711" class="px-9 py-4 rounded-xl font-semibold text-base text-white border border-white/30 hover:bg-white/10 transition-all duration-300 text-center w-full sm:w-auto">
-            Call (571) 576-7711
+          <a href="tel:5715767711" class="px-8 py-4 rounded-xl font-bold text-base text-[#0a2540] bg-white hover:bg-slate-100 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center flex items-center justify-center gap-2" style="text-decoration: none;">
+            <svg class="w-4 h-4 text-[#0a2540]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            <span>Call (571) 576-7711</span>
+          </a>
+          <a href="https://share.google/HsmqJyEArbWjqBI4v" target="_blank" rel="noopener noreferrer" class="px-6 py-4 rounded-xl font-black text-base bg-[#ffc72c] hover:bg-[#e0b020] text-[#0a2540] transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center flex items-center justify-center gap-1.5" style="text-decoration: none;">
+            <span>Google Reviews ⭐ 4.9</span>
           </a>
         </div>
       </section>
