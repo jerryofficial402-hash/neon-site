@@ -31,16 +31,16 @@
   <header class="fixed top-0 w-full z-50 transition-all duration-300 shadow-md" id="global-header" style="background-color:#0a2540">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
       <div class="flex items-center" style="gap:24px">
-        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap; text-decoration:none;">
+        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap; text-decoration:none; color:#ffffff;">
           NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
         </a>
         <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" style="white-space:nowrap;gap:24px">
-          <a href="/cost-calculator/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Cost Calculator</a>
-          <a href="/car-shipping-cost/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Cost Guide</a>
-          <a href="/services/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Services</a>
-          <a href="/best-car-shipping-companies/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Compare</a>
-          <a href="/reviews/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Reviews</a>
-          <a href="/contact/" class="hover:opacity-80 transition text-white" style="text-decoration:none;">Contact</a>
+          <a href="/cost-calculator/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Cost Calculator</a>
+          <a href="/car-shipping-cost/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Cost Guide</a>
+          <a href="/services/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Services</a>
+          <a href="/best-car-shipping-companies/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Compare</a>
+          <a href="/reviews/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Reviews</a>
+          <a href="/contact/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Contact</a>
         </nav>
       </div>
       <a href="tel:5715767711" style="background-color:#635bff; color:#ffffff; padding:10px 20px; border-radius:9999px; text-decoration:none; font-weight:700;" class="hover:opacity-90 transition flex items-center gap-2">
@@ -245,42 +245,52 @@
   </main>
   
   
-  <footer style="background-color:#0a2540;" class="text-slate-300 text-sm pt-16 pb-12 mt-16 border-t border-[#1a1f36]">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+  <footer style="background-color: #0a2540; color: #cbd5e1; padding-top: 4rem; padding-bottom: 3rem; border-top: 1px solid #1a1f36;" class="text-slate-300 text-sm mt-16">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
-        <h4 class="text-white font-bold mb-4 text-base">Neon Auto Transport LLC</h4>
-        <p class="leading-relaxed mb-4 text-slate-300">FMCSA-licensed & bonded auto transport broker delivering nationwide door-to-door vehicle shipping across all 50 states.</p>
-        <p class="text-xs text-slate-400">USDOT #4355879 | MC #1703787</p>
+        <a href="/" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;" class="tracking-tight text-white block mb-3">
+          NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
+        </a>
+        <p style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;" class="mb-4">
+          FMCSA-licensed & bonded auto transport broker delivering nationwide door-to-door vehicle shipping across all 50 states.
+        </p>
+        <p style="color: #94a3b8; font-size: 0.75rem; font-weight: 700;">USDOT #4355879 | MC #1703787</p>
       </div>
+      
       <div>
-        <h4 class="text-white font-bold mb-4 text-base">Popular Services</h4>
-        <ul class="space-y-2 text-slate-300" style="list-style:none; padding:0;">
-          <li><a href="/services/open-auto-transport/" class="hover:text-[#00D1FF] transition">Open Auto Transport</a></li>
-          <li><a href="/services/enclosed-auto-transport/" class="hover:text-[#00D1FF] transition">Enclosed Auto Transport</a></li>
-          <li><a href="/services/door-to-door-car-shipping/" class="hover:text-[#00D1FF] transition">Door to Door Shipping</a></li>
-          <li><a href="/services/expedited-auto-transport/" class="hover:text-[#00D1FF] transition">Expedited Shipping</a></li>
-          <li><a href="/services/luxury-car-shipping/" class="hover:text-[#00D1FF] transition">Classic & Luxury Shipping</a></li>
+        <h3 style="color: #ffffff; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-4">Popular Services</h3>
+        <ul style="list-style: none; padding: 0;" class="space-y-2.5 text-xs font-medium">
+          <li><a href="/services/open-auto-transport/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Open Auto Transport</a></li>
+          <li><a href="/services/enclosed-auto-transport/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Enclosed Auto Transport</a></li>
+          <li><a href="/services/door-to-door-car-shipping/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Door to Door Shipping</a></li>
+          <li><a href="/services/expedited-auto-transport/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Expedited Shipping</a></li>
+          <li><a href="/services/luxury-car-shipping/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Classic & Luxury Shipping</a></li>
         </ul>
       </div>
+      
       <div>
-        <h4 class="text-white font-bold mb-4 text-base">Cost & Comparisons</h4>
-        <ul class="space-y-2 text-slate-300" style="list-style:none; padding:0;">
-          <li><a href="/car-shipping-cost/" class="hover:text-[#00D1FF] transition">Car Shipping Cost Guide 2026</a></li>
-          <li><a href="/cost-calculator/" class="hover:text-[#00D1FF] transition">Instant Quote Calculator</a></li>
-          <li><a href="/best-car-shipping-companies/" class="hover:text-[#00D1FF] transition">Best Car Shipping Companies</a></li>
-          <li><a href="/compare/neon-vs-montway/" class="hover:text-[#00D1FF] transition">Neon vs Montway</a></li>
-          <li><a href="/compare/neon-vs-amerifreight/" class="hover:text-[#00D1FF] transition">Neon vs AmeriFreight</a></li>
+        <h3 style="color: #ffffff; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-4">Cost & Comparisons</h3>
+        <ul style="list-style: none; padding: 0;" class="space-y-2.5 text-xs font-medium">
+          <li><a href="/car-shipping-cost/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Car Shipping Cost Guide 2026</a></li>
+          <li><a href="/cost-calculator/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Instant Quote Calculator</a></li>
+          <li><a href="/best-car-shipping-companies/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Best Car Shipping Companies</a></li>
+          <li><a href="/compare/neon-vs-montway/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Neon vs Montway</a></li>
+          <li><a href="/compare/neon-vs-amerifreight/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Neon vs AmeriFreight</a></li>
         </ul>
       </div>
+      
       <div>
-        <h4 class="text-white font-bold mb-4 text-base">Contact Us</h4>
-        <p class="mb-2 text-slate-300">2709 Neabsco Common Pl Suite 101<br>Woodbridge, VA 22191</p>
-        <p class="mb-2">Phone: <a href="tel:5715767711" class="text-[#00D1FF] hover:underline font-semibold">(571) 576-7711</a></p>
-        <p>Email: <a href="mailto:info@neonautotransport.com" class="text-[#00D1FF] hover:underline">info@neonautotransport.com</a></p>
+        <h3 style="color: #ffffff; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-4">Contact Support</h3>
+        <p style="color: #cbd5e1; font-size: 0.85rem;" class="mb-2">2709 Neabsco Common Pl Suite 101<br>Woodbridge, VA 22191</p>
+        <p style="color: #cbd5e1; font-size: 0.85rem;" class="mb-2">Phone: <a href="tel:5715767711" style="color: #00D1FF; font-weight: 700; text-decoration: none;">(571) 576-7711</a></p>
+        <p style="color: #cbd5e1; font-size: 0.85rem;">Email: <a href="mailto:info@neonautotransport.com" style="color: #00D1FF; text-decoration: none;">info@neonautotransport.com</a></p>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-400">
-      <p>© 2026 Neon Auto Transport LLC. All rights reserved. | <a href="/privacy/" class="hover:underline text-slate-300">Privacy Policy</a> | <a href="/terms/" class="hover:underline text-slate-300">Terms of Service</a> | <a href="/sitemap.md" class="hover:underline text-slate-300">AI Sitemap</a></p>
+    
+    <div style="padding-top: 1.5rem; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.8rem; color: #94a3b8;">
+      <div class="max-w-7xl mx-auto px-4">
+        © 2026 Neon Auto Transport LLC. All rights reserved. | <a href="/privacy/" style="color: #cbd5e1; text-decoration: underline;">Privacy Policy</a> | <a href="/terms/" style="color: #cbd5e1; text-decoration: underline;">Terms of Service</a> | <a href="/sitemap.md" style="color: #cbd5e1; text-decoration: underline;">AI Sitemap</a>
+      </div>
     </div>
   </footer>
 
