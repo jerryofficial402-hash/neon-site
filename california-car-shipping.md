@@ -1,10 +1,10 @@
 ---
-title: "California Car Shipping | Ship a Car To or From California"
+title: "California Car Shipping | Door-to-Door Auto Transport | Neon"
 url: https://neonautotransport.com/california-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-09-02
 author: "Neon Auto Transport"
-description: "Get a California car shipping quote for door-to-door transport to or from Los Angeles, San Diego, San Francisco, Sacramento, San Jose, and Fresno. Compare open and enclosed auto transport rates and estimated transit times."
+description: "Ship cars to/from California with Neon Auto Transport. FMCSA-licensed, insured carriers, open & enclosed options, and instant quotes. Get your rate now."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
@@ -17,23 +17,37 @@ policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 2
 
 FMCSA Registered • USDOT #4355879 • MC #1703787 
 
-#  California Car Shipping: Costs, Routes & Timelines for LA, San Francisco, San Diego, Sacramento, San Jose & Fresno
+# California Car Shipping
 
-##  Quick Answer 
+## Costs, Routes & Timelines for LA, San Francisco, San Diego, Sacramento, San Jose & Fresno
 
-Neon Auto Transport ships cars to and from California Car Shipping: Costs, Routes & Timelines for LA, San Francisco, San Diego, Sacramento, San Jose & Fresno with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+⚡ Average open-carrier rates from $350 for in-state moves and $1,300+ for cross-country. $0 deposit, FMCSA-licensed.
+
+## Quick Answer: California Car Shipping
+
+Neon Auto Transport ships cars to and from California with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport is available for high-value vehicles. As an FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit, you can get a quote at [neonautotransport.com/cost-calculator/](/cost-calculator/) or call [(571) 576-7711](tel:5715767711).
+
+### California Car Shipping at a Glance
+- **Average open-carrier rate:** ~$0.50–$1.00 per mile
+- **Typical in-state routes:** $350–$650
+- **Cross-country (CA → East Coast):** $1,300–$1,750
+- **Transit time:** 1–4 days regional, 7–10 days cross-country
+- **FMCSA-licensed broker:** MC 1703787 | USDOT 4355879 with $0 upfront deposit
 
 📅 Last updated: August 2026 • ✍️ Reviewed by: [Neon Auto Transport Operations Team](/why-neon/)
 
-Ship a car to or from California with door-to-door open or enclosed auto transport. Neon Auto Transport provides free California car shipping quotes for Los Angeles, San Diego, San Francisco, Sacramento, San Jose, Fresno, and statewide routes. 
+Ship a car to or from California with door-to-door car shipping services. Neon Auto Transport provides free California car shipping quotes for Los Angeles, San Diego, San Francisco, Sacramento, San Jose, Fresno, and statewide routes. 
 
 Estimated open-carrier pricing varies by distance, vehicle type, season, pickup flexibility, and carrier availability. Use our [Car Shipping Cost Calculator](/cost-calculator/) to compare live market pricing for your exact route, or [request a free quote](/car-shipping-quote/) from an auto transport specialist. 
+
+Looking for transport in another state? [See our nationwide car shipping services →](/locations/)
 
 Neon Auto Transport LLC is a licensed auto transport broker operating under MC #1703787 and USDOT #4355879. We arrange shipments through independently owned and insured motor carriers. 
 
 [ Calculate Your Rate Instantly  ](/cost-calculator/)
+★★★★★ 5.0/5 average rating from verified Google reviews.
 
-###  🏛️ Official California Regulatory & Compliance Resources 
+### 🏛️ Official California Regulatory & Compliance Resources 
 
 When relocating a vehicle to California, make sure to review official state regulations regarding vehicle registration, emissions compliance, and carrier licensing: 
 
