@@ -145,8 +145,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Slanted / Angled Sections */
 .slant-bottom {
- clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
- padding-bottom: 120px;
+ clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+ padding-bottom: 50px;
 }
 .slant-top {
  clip-path: polygon(0 35px, 100% 0, 100% 100%, 0 100%);
@@ -694,186 +694,211 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </header>
 
  <main>
-  <!-- Stripe Animated Gradient Hero (Slanted) -->
-  <section class="relative pt-32 pb-48 stripe-gradient-bg slant-bottom overflow-visible" id="hero-section">
+  <!-- Stripe Static Deep Navy Hero (Symmetrical & Proportionate) -->
+  <section class="relative pt-28 pb-20 lg:pt-32 lg:pb-24 stripe-gradient-bg slant-bottom overflow-visible" id="hero-section">
    <canvas id="particleCanvas" class="absolute inset-0 w-full h-full z-0 pointer-events-auto"></canvas>
-   <div class="container mx-auto px-4 lg:px-8 z-10 relative grid lg:grid-cols-12 gap-12 items-center pointer-events-none">
+   <div class="container mx-auto px-4 lg:px-8 z-10 relative grid lg:grid-cols-12 gap-8 lg:gap-12 items-center pointer-events-none">
     
-    <!-- Hero Copy -->
-    <div class="text-white lg:col-span-6 xl:col-span-7 pointer-events-auto relative z-30" style="opacity:1;transform:none;">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.3)] bg-[rgba(255,255,255,0.1)] text-xs font-bold mb-6">
+    <!-- Hero Copy (Left Column: Balanced & Structured) -->
+    <div class="text-white lg:col-span-7 pointer-events-auto relative z-30" style="opacity:1;transform:none;">
+      
+      <!-- Trust Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/20 bg-white/10 text-xs font-bold mb-5 shadow-sm backdrop-blur-sm">
        <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
-       FMCSA Registered • USDOT #4355879 • MC #1703787
+       <span>FMCSA Licensed Broker &bull; MC #1703787 &bull; USDOT #4355879</span>
       </div>
-      <h1 id="hero-heading" class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-6 text-white tracking-tighter">
+
+      <!-- Main Heading (Proportionate Scale) -->
+      <h1 id="hero-heading" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 text-white tracking-tight">
        Nationwide Car Shipping With Fast, Transparent Quotes
       </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
-    <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
-      <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-      Quick Answer
-    </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
-      <p itemprop="text">Neon Auto Transport is an FMCSA-licensed car shipping broker (MC 1703787 | USDOT 4355879) providing door-to-door vehicle shipping across all 50 U.S. states, including Alaska and Hawaii. Open transport averages $0.50–$1.00 per mile. Enclosed transport costs 30–40% more. $0 upfront deposit, $500,000 cargo insurance coverage, price lock guarantee, and 24/7 direct driver tracking. Get an instant quote at neonautotransport.com or call (571) 576-7711.</p>
-    </div>
-  </section>
-
-      <p id="hero-description" class="text-lg text-[rgba(255,255,255,0.9)] mb-4 max-w-lg leading-relaxed font-medium">
-       Arrange door-to-door auto transport for your car, SUV, truck, motorcycle, or specialty vehicle anywhere in the United States. Compare open and enclosed shipping options, use our cost calculator for an estimated rate, or request a free car shipping quote.
-      </p>
-      <p class="text-xs text-slate-300 max-w-lg leading-relaxed mb-6 font-normal">
-       Licensed auto transport broker: MC #1703787 • USDOT #4355879
+      <!-- Lead Value Description -->
+      <p id="hero-description" class="text-base sm:text-lg text-slate-200 leading-relaxed mb-6 max-w-xl font-medium">
+       Door-to-door vehicle transport across all 50 states. We match your route with vetted, insured carriers with <strong>$0 upfront deposit</strong>, <strong>$500,000 cargo insurance</strong>, and clear price-lock quotes.
       </p>
 
-      <div class="flex flex-wrap items-center gap-4 mb-8 font-semibold pointer-events-auto relative z-30">
-       <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] py-3.5 px-6 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)] pointer-events-auto relative z-30" style="text-decoration: none;">Get a Free Car Shipping Quote →</a>
-       <a href="/cost-calculator/" class="px-6 py-3.5 rounded-full font-bold text-base border-2 border-white text-white hover:bg-white hover:text-[#0a2540] transition pointer-events-auto relative z-30" style="text-decoration: none;">Calculate Car Shipping Cost →</a>
+      <!-- Primary Action Row -->
+      <div class="flex flex-wrap items-center gap-3 mb-6 font-semibold pointer-events-auto relative z-30">
+       <a href="/cost-calculator/" style="background-color: #39FF14 !important; color: #0a2540 !important; font-weight: 900 !important; text-decoration: none !important; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;" class="px-6 py-3.5 rounded-xl text-sm sm:text-base hover:opacity-95 transition-all duration-300 shadow-[0_0_15px_rgba(57,255,20,0.35)] hover:-translate-y-0.5 text-center">
+        <span>Calculate Instant Rate</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+       </a>
+       <a href="tel:5715767711" style="background-color: #ffffff !important; color: #0a2540 !important; font-weight: 800 !important; text-decoration: none !important; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;" class="px-6 py-3.5 rounded-xl text-sm sm:text-base hover:bg-slate-100 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+        <svg class="w-4 h-4 text-[#0a2540]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+        <span>(571) 576-7711</span>
+       </a>
       </div>
 
-      <div class="flex flex-col space-y-3 pt-2 max-w-xl pointer-events-auto relative z-30">
-        <!-- Row 1: Verified Google Reviews Link -->
-        <div class="flex items-center">
-         <a href="https://maps.app.goo.gl/8sytHbRV3BsnPBUD6" target="_blank" rel="noopener noreferrer" aria-label="View Neon Auto Transport Google reviews" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 px-4 py-1.5 rounded-full text-white text-xs font-bold transition-all shadow-sm" style="text-decoration: none;">
-          <span class="text-yellow-400 text-sm tracking-wider">★★★★★</span>
-          <span>5.0 / 5 on Google Reviews</span>
-         </a>
+      <!-- Trust Strip & Rating -->
+      <div class="pt-4 border-t border-white/15 max-w-xl pointer-events-auto relative z-30">
+        <div class="flex flex-wrap items-center gap-3 mb-2.5">
+          <a href="https://maps.app.goo.gl/8sytHbRV3BsnPBUD6" target="_blank" rel="noopener noreferrer" aria-label="View Neon Auto Transport Google reviews" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-1 rounded-full text-white text-xs font-bold transition-all shadow-sm" style="text-decoration: none;">
+            <span class="text-yellow-400 text-xs">★★★★★</span>
+            <span>5.0 Google Rating</span>
+          </a>
+          <span class="text-white/40 text-xs">•</span>
+          <span class="text-slate-200 text-xs font-semibold">25+ Verified Reviews</span>
         </div>
 
-        <!-- Row 2: Clean Checkmarked Feature Row -->
-        <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-white/90 text-xs font-semibold">
-         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-[#39FF14] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <span>Nationwide Service</span>
-         </span>
-         <span class="text-white/30 font-normal">•</span>
-         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-[#39FF14] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <span>Open &amp; Enclosed Options</span>
-         </span>
-         <span class="text-white/30 font-normal">•</span>
-         <span class="inline-flex items-center gap-1.5">
-          <svg class="w-4 h-4 text-[#39FF14] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          <span>Door-to-Door Delivery</span>
-         </span>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-slate-300 text-xs font-medium">
+          <span class="inline-flex items-center gap-1.5 text-white">
+            <svg class="w-3.5 h-3.5 text-[#39FF14] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span>$0 Upfront Deposit</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-white">
+            <svg class="w-3.5 h-3.5 text-[#39FF14] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span>$500K Cargo Insurance</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-white">
+            <svg class="w-3.5 h-3.5 text-[#39FF14] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <span>All 50 States</span>
+          </span>
         </div>
-       </div>
+      </div>
      </div>
 
-     <!-- Calculator in Hero Section -->
-     <div class="block lg:col-span-6 xl:col-span-5 reveal relative pointer-events-auto mt-8 lg:mt-0" style="transition-delay: 200ms;">
-     <div class="stripe-card p-6 lg:p-8 w-full shadow-2xl relative z-20 bg-white rounded-2xl">
-      <div class="mb-4">
-       <h2 class="text-xl font-bold mb-1 text-[#0a2540]">Get a Free Quote</h2>
-       <p class="text-[#425466] text-xs leading-relaxed">Enter your shipment details to request a custom route quote.</p>
+     <!-- Calculator in Hero Section (Right Column: Symmetrical & Streamlined) -->
+     <div class="block lg:col-span-5 relative pointer-events-auto mt-6 lg:mt-0">
+      <div class="stripe-card p-6 lg:p-7 w-full shadow-2xl relative z-20 bg-white rounded-2xl border border-slate-200/80">
+       <div class="mb-4 flex items-center justify-between">
+        <div>
+          <h2 class="text-lg sm:text-xl font-black text-[#0a2540]">Get a Free Quote</h2>
+          <p class="text-[#425466] text-xs font-medium">Instant rates with zero hidden fees</p>
+        </div>
+        <span class="px-2.5 py-1 bg-[#dcfce7] text-[#15803d] text-[11px] font-bold rounded-full">
+          ⚡ Live Rates
+        </span>
+       </div>
+
+       <form id="advancedCalcForm" class="space-y-3" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5e86dea9-8ed6-476f-b4db-1ab24c5de766">
+        <input type="hidden" name="subject" value="New Website Lead: Auto Transport Quote">
+        
+        <!-- Step 1: Shipment Details -->
+        <div id="step1">
+         <div class="grid grid-cols-2 gap-3 mb-3">
+          <div class="relative">
+           <label class="block text-[11px] font-bold text-[#425466] mb-1">Pickup ZIP</label>
+           <input type="text" id="pickupZip" name="Pickup ZIP" required="" maxlength="5" autocomplete="off" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="e.g. 22191">
+           <ul id="pickupDropdown" class="absolute w-full mt-1 bg-white border border-[#e6e6e6] rounded-md shadow-lg z-50 hidden max-h-40 overflow-y-auto"></ul>
+          </div>
+          <div class="relative">
+           <label class="block text-[11px] font-bold text-[#425466] mb-1">Delivery ZIP</label>
+           <input type="text" id="deliveryZip" name="Delivery ZIP" required="" maxlength="5" autocomplete="off" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="e.g. 75001">
+           <ul id="deliveryDropdown" class="absolute w-full mt-1 bg-white border border-[#e6e6e6] rounded-md shadow-lg z-50 hidden max-h-40 overflow-y-auto"></ul>
+          </div>
+         </div>
+         
+         <div class="mb-3">
+          <label class="block text-[11px] font-bold text-[#425466] mb-1">Total Distance (Miles)</label>
+          <input type="number" id="distance" name="Distance" required="" min="10" readonly="" class="w-full px-3 py-2 text-sm bg-slate-50 cursor-not-allowed border border-[#e6e6e6] rounded-md" placeholder="Auto-calculated">
+         </div>
+
+         <div class="mb-3">
+          <label class="block text-[11px] font-bold text-[#425466] mb-1" for="pickupDate">Estimated Pickup Date</label>
+          <input type="date" id="pickupDate" name="Pickup Date" required="" onclick="this.showPicker()" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md focus:ring-2 focus:ring-[#635bff] focus:outline-none">
+         </div>
+
+         <div id="vehicleGroupsContainer">
+          <div class="vehicle-group border border-[#e6e6e6] rounded-lg p-3 mb-2">
+           <span id="vehicle1Label" class="block text-[11px] font-bold text-[#4338ca] uppercase tracking-wide mb-2">Vehicle 1</span>
+           <div class="grid grid-cols-3 gap-2 mb-2">
+            <input type="text" class="vehicleYear w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="Year e.g. 2023" aria-label="Vehicle Year" required="">
+            <input type="text" class="vehicleMake w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="Make e.g. Honda" aria-label="Vehicle Make" required="">
+            <input type="text" class="vehicleModel w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="Model e.g. Civic" aria-label="Vehicle Model" required="">
+           </div>
+           <div class="grid grid-cols-2 gap-2">
+            <select class="vehicleType w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white" aria-label="Vehicle Type">
+             <option value="sedan">Sedan</option>
+             <option value="suv">SUV</option>
+             <option value="truck">Truck</option>
+            </select>
+            <select class="vehicleCondition w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white" aria-label="Vehicle Condition">
+             <option value="run">Runs &amp; Drives</option>
+             <option value="inop">Inoperable</option>
+            </select>
+           </div>
+          </div>
+         </div>
+
+         <button aria-label="Interactive Button" type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-md border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#635bff] hover:text-[#4338ca] transition-colors flex items-center justify-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+          Add Another Vehicle
+         </button>
+
+         <div class="mb-3">
+          <label class="block text-[11px] font-bold text-[#425466] mb-1" for="transportType">Transport</label>
+          <select id="transportType" name="Transport Type" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white">
+           <option value="open">Open Carrier</option>
+           <option value="enclosed">Enclosed</option>
+          </select>
+         </div>
+
+         <button aria-label="Next" type="button" id="btnNextStep" class="w-full btn-primary py-2.5 mt-2 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md">Continue →</button>
+        </div>
+
+        <!-- Step 2: Contact Info -->
+        <div id="step2" class="hidden">
+         <button aria-label="Interactive Button" type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded shadow-sm hover:bg-[#c41530] transition-colors">
+          ← Back To Route
+         </button>
+         
+         <h3 class="text-lg font-bold text-[#0a2540] mb-3 flex items-center gap-2">
+          <svg aria-hidden="true" class="w-4 h-4 text-[#425466]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          Contact Info
+         </h3>
+
+         <div class="grid grid-cols-2 gap-3 mb-3">
+          <div>
+           <input type="text" name="First Name" id="firstName" autocomplete="given-name" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="First Name">
+          </div>
+          <div>
+           <input type="text" name="Last Name" id="lastName" autocomplete="family-name" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="Last Name">
+          </div>
+         </div>
+         
+         <div class="mb-3">
+          <input type="email" name="Email" id="email" autocomplete="email" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="Email Address">
+         </div>
+
+         <div class="mb-3">
+          <input type="tel" name="Phone" id="phone" autocomplete="tel" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="Phone Number">
+         </div>
+
+         <p class="text-[10px] text-[#425466] mb-3">By submitting you agree to be contacted by a Neon Auto Transport specialist.</p>
+         
+         <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
+
+         <button aria-label="Interactive Button" type="submit" class="w-full btn-primary py-2.5 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md">Submit Request</button>
+        </div>
+       </form>
       </div>
-
-      <form id="advancedCalcForm" class="space-y-3" action="https://api.web3forms.com/submit" method="POST">
-       <input type="hidden" name="access_key" value="5e86dea9-8ed6-476f-b4db-1ab24c5de766">
-       <input type="hidden" name="subject" value="New Website Lead: Auto Transport Quote">
-       
-       <!-- Step 1: Shipment Details -->
-       <div id="step1">
-        <div class="grid grid-cols-2 gap-3 mb-3">
-         <div class="relative">
-          <label class="block text-[11px] font-bold text-[#425466] mb-1">Pickup ZIP</label>
-          <input type="text" id="pickupZip" name="Pickup ZIP" required="" maxlength="5" autocomplete="off" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="e.g. 22191">
-          <ul id="pickupDropdown" class="absolute w-full mt-1 bg-white border border-[#e6e6e6] rounded-md shadow-lg z-50 hidden max-h-40 overflow-y-auto"></ul>
-         </div>
-         <div class="relative">
-          <label class="block text-[11px] font-bold text-[#425466] mb-1">Delivery ZIP</label>
-          <input type="text" id="deliveryZip" name="Delivery ZIP" required="" maxlength="5" autocomplete="off" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="e.g. 75001">
-          <ul id="deliveryDropdown" class="absolute w-full mt-1 bg-white border border-[#e6e6e6] rounded-md shadow-lg z-50 hidden max-h-40 overflow-y-auto"></ul>
-         </div>
-        </div>
-        
-        <div class="mb-3">
-         <label class="block text-[11px] font-bold text-[#425466] mb-1">Total Distance (Miles)</label>
-         <input type="number" id="distance" name="Distance" required="" min="10" readonly="" class="w-full px-3 py-2 text-sm bg-slate-50 cursor-not-allowed border border-[#e6e6e6] rounded-md" placeholder="Auto-calculated">
-        </div>
-
-        <div class="mb-3">
-         <label class="block text-[11px] font-bold text-[#425466] mb-1" for="pickupDate">Estimated Pickup Date</label>
-         <input type="date" id="pickupDate" name="Pickup Date" required="" onclick="this.showPicker()" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md focus:ring-2 focus:ring-[#635bff] focus:outline-none">
-        </div>
-
-        <div id="vehicleGroupsContainer">
-         <div class="vehicle-group border border-[#e6e6e6] rounded-lg p-3 mb-2">
-          <span id="vehicle1Label" class="block text-[11px] font-bold text-[#4338ca] uppercase tracking-wide mb-2">Vehicle 1</span>
-          <div class="grid grid-cols-3 gap-2 mb-2">
-           <input type="text" class="vehicleYear w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="Year e.g. 2023" aria-label="Vehicle Year" required="">
-           <input type="text" class="vehicleMake w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="Make e.g. Honda" aria-label="Vehicle Make" required="">
-           <input type="text" class="vehicleModel w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md" placeholder="Model e.g. Civic" aria-label="Vehicle Model" required="">
-          </div>
-          <div class="grid grid-cols-2 gap-2">
-           <select class="vehicleType w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white" aria-label="Vehicle Type">
-            <option value="sedan">Sedan</option>
-            <option value="suv">SUV</option>
-            <option value="truck">Truck</option>
-           </select>
-           <select class="vehicleCondition w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white" aria-label="Vehicle Condition">
-            <option value="run">Runs &amp; Drives</option>
-            <option value="inop">Inoperable</option>
-           </select>
-          </div>
-         </div>
-        </div>
-
-        <button aria-label="Interactive Button" type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-md border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#635bff] hover:text-[#4338ca] transition-colors flex items-center justify-center gap-1">
-         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-         Add Another Vehicle
-        </button>
-
-        <div class="mb-3">
-         <label class="block text-[11px] font-bold text-[#425466] mb-1" for="transportType">Transport</label>
-         <select id="transportType" name="Transport Type" class="w-full px-3 py-2 text-sm border border-[#e6e6e6] rounded-md bg-white">
-          <option value="open">Open Carrier</option>
-          <option value="enclosed">Enclosed</option>
-         </select>
-        </div>
-
-        <button aria-label="Next" type="button" id="btnNextStep" class="w-full btn-primary py-2.5 mt-2 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md">Continue →</button>
-       </div>
-
-       <!-- Step 2: Contact Info -->
-       <div id="step2" class="hidden">
-        <button aria-label="Interactive Button" type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded shadow-sm hover:bg-[#c41530] transition-colors">
-         ← Back To Route
-        </button>
-        
-        <h3 class="text-lg font-bold text-[#0a2540] mb-3 flex items-center gap-2">
-         <svg aria-hidden="true" class="w-4 h-4 text-[#425466]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-         Contact Info
-        </h3>
-
-        <div class="grid grid-cols-2 gap-3 mb-3">
-         <div>
-          <input type="text" name="First Name" id="firstName" autocomplete="given-name" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="First Name">
-         </div>
-         <div>
-          <input type="text" name="Last Name" id="lastName" autocomplete="family-name" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="Last Name">
-         </div>
-        </div>
-        
-        <div class="mb-3">
-         <input type="email" name="Email" id="email" autocomplete="email" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="Email Address">
-        </div>
-
-        <div class="mb-3">
-         <input type="tel" name="Phone" id="phone" autocomplete="tel" required="" class="w-full px-3 py-2 text-sm bg-[#f0f5fa] border-none rounded focus:ring-2 focus:ring-[#635bff] focus:outline-none" placeholder="Phone Number">
-        </div>
-
-        <p class="text-[10px] text-[#425466] mb-3">By submitting you agree to be contacted by a Neon Auto Transport specialist.</p>
-        
-        <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
-
-        <button aria-label="Interactive Button" type="submit" class="w-full btn-primary py-2.5 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md">Submit Request</button>
-       </div>
-      </form>
      </div>
     </div>
-   </div>
-  </section>
+   </section>
+
+   <!-- AEO Quick Answer Box (Directly below hero in the content flow) -->
+   <section class="bg-white py-8 border-b border-slate-200" aria-label="Quick Answer Summary">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+      <div class="bg-[#f8fafc] border border-slate-200 border-l-4 border-l-[#635bff] rounded-2xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div class="flex-1" itemscope itemtype="https://schema.org/Question">
+          <h2 class="text-base sm:text-lg font-bold text-[#0a2540] mb-1.5 flex items-center gap-2">
+            <svg class="w-5 h-5 text-[#635bff] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Quick Summary: Nationwide Auto Transport with Neon
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium" itemprop="text">
+            Neon Auto Transport is an FMCSA-licensed car shipping broker (MC #1703787 | USDOT #4355879) offering door-to-door vehicle shipping across all 50 states. Open carrier rates average $0.50–$1.00/mile, with enclosed transport available for exotic/classic models. Every shipment includes <strong>$0 upfront deposit</strong>, <strong>$500,000 cargo insurance</strong>, and price-lock guarantees.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="/cost-calculator/" style="background-color: #635bff; color: #ffffff; font-weight: 800; text-decoration: none;" class="px-5 py-2.5 rounded-xl text-xs font-bold hover:bg-[#534be8] transition shadow-sm whitespace-nowrap">
+            Calculate My Rate &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+   </section>
 
   <!-- Trust & Value Propositions -->
   <section class="py-16 bg-white relative z-10 border-b border-[#e6e6e6]">

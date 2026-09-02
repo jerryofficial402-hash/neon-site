@@ -68,8 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Slanted / Angled Sections */
 .slant-bottom {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  padding-bottom: 120px;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  padding-bottom: 50px;
 }
 .slant-top {
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
