@@ -115,18 +115,17 @@ h1, h2, h3, h4, h5, h6 {
  font-weight: 800;
 }
 
-/* The Animated Stripe Gradient Mesh (GPU-composited) */
+/* Static Premium Deep Navy Gradient */
 .stripe-gradient-bg {
  position: relative;
  overflow: hidden;
+ background-color: #0a2540;
 }
 .stripe-gradient-bg::before {
  content: '';
  position: absolute;
  inset: 0;
-   background: linear-gradient(-45deg, #0a2540 0%, #0a2540 40%, #0284c7 50%, #0a2540 60%, #635bff 85%, #0a2540 100%);
-   background-size: 400% 400%;
- animation: gradientMesh 15s ease infinite;
+ background: linear-gradient(135deg, #0a2540 0%, #0d3156 50%, #0a2540 100%);
  z-index: 0;
 }
 .stripe-gradient-bg > *:not(canvas) {
@@ -134,14 +133,7 @@ h1, h2, h3, h4, h5, h6 {
  z-index: 1;
 }
 
-@keyframes gradientMesh {
-   0% { background-position: 0% 50%; }
-   50% { background-position: 100% 50%; }
-   100% { background-position: 0% 50%; }
-  }
-
 @media (max-width: 768px) {
- .stripe-gradient-bg::before { animation: none !important; }
  #particleCanvas { display: none !important; }
 }
 
