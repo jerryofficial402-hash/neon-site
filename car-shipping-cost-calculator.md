@@ -1,7 +1,7 @@
 # Car Shipping Cost Calculator & Auto Transport Pricing Guide
 
 **Target Keywords:** car shipping cost, car shipping costs, car shipping calculator, car shipping cost calculator, car transport cost, how much does it cost to ship a car  
-**URL:** https://neonautotransport.com/cost-calculator/  
+**URL:** https://neonautotransport.com/car-shipping-cost-calculator/  
 **Publisher:** Neon Auto Transport (USDOT #4355879 | MC #1703787)
 
 ---

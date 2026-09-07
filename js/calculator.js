@@ -440,54 +440,103 @@ function calculateQuote() {
         return;
     }
 
-    const transportType = document.getElementById('transportType').value;
+    const transportType = document.getElementById('transportType') ? document.getElementById('transportType').value : 'open';
+    const pickupFlexibility = document.getElementById('pickupFlexibility') ? document.getElementById('pickupFlexibility').value : 'flexible';
 
-    // Base rates calculation
-    let ratePerMile = 0.85;
-    if (distance < 500) ratePerMile = 1.30;
-    else if (distance < 1000) ratePerMile = 1.05;
-    else if (distance < 1500) ratePerMile = 0.95;
+    // Base rates calculation (Range: Low - High per mile)
+    let rateLow = 0.40;
+    let rateHigh = 0.90;
+    let minFloor = 1100;
+    let maxFloor = 2000;
 
-    let total = 0;
-    let firstVehicleCost = 0;
+    if (distance < 500) {
+        rateLow = 1.00;
+        rateHigh = 2.00;
+        minFloor = 400;
+        maxFloor = 900;
+    } else if (distance < 1500) {
+        rateLow = 0.60;
+        rateHigh = 1.20;
+        minFloor = 700;
+        maxFloor = 1600;
+    }
+
+    let totalLow = 0;
+    let totalHigh = 0;
 
     // Calculate cost for each vehicle
     const vehicleGroups = document.querySelectorAll('.vehicle-group');
-    vehicleGroups.forEach((group, index) => {
+    vehicleGroups.forEach((group) => {
         const vType = group.querySelector('.vehicleType')?.value || 'sedan';
         const vCondition = group.querySelector('.vehicleCondition')?.value || 'run';
 
-        let base = distance * ratePerMile;
+        let vLow = distance * rateLow;
+        let vHigh = distance * rateHigh;
 
-        // Vehicle size/type adjustments
-        if (vType === 'truck') base += 100;
-        else if (vType === 'suv') base += 50;
-        else if (vType === 'motorcycle') base = base * 0.75;
-        else if (vType === 'classic') base += 150;
-
-        // Condition adjustments
-        if (vCondition === 'inop') base += 150;
-
-        // Transport type
-        if (transportType === 'enclosed') base += 250;
-
-        // Enforce minimum price per vehicle
-        base = Math.max(250, base);
-
-        const vehicleCost = Math.round(base);
-        if (index === 0) {
-            firstVehicleCost = vehicleCost;
+        // Vehicle size/type adjustments per Section 6
+        if (vType === 'suv') {
+            vLow += 100;
+            vHigh += 250;
+        } else if (vType === 'truck') {
+            vLow += 150;
+            vHigh += 350;
+        } else if (vType === 'oversized') {
+            vLow += 250;
+            vHigh += 500;
+        } else if (vType === 'motorcycle') {
+            vLow *= 0.75;
+            vHigh *= 0.85;
+        } else if (vType === 'classic') {
+            vLow += 150;
+            vHigh += 300;
         }
-        total += vehicleCost;
+
+        // Inoperable surcharge
+        if (vCondition === 'inop') {
+            vLow += 100;
+            vHigh += 200;
+        }
+
+        // Transport type multiplier (Enclosed: 1.4x - 1.6x)
+        if (transportType === 'enclosed') {
+            vLow *= 1.4;
+            vHigh *= 1.6;
+        }
+
+        // Flexible pickup window discount (-5% to -10% on low end)
+        if (pickupFlexibility === 'flexible') {
+            vLow *= 0.92;
+        }
+
+        // Ensure floor minimums
+        vLow = Math.max(minFloor * 0.75, vLow);
+        vHigh = Math.max(maxFloor * 0.75, vHigh);
+
+        totalLow += Math.round(vLow);
+        totalHigh += Math.round(vHigh);
     });
 
     // Multi-vehicle discount: 10% off for 2nd+ vehicles
     if (vehicleGroups.length > 1) {
-        const additionalVehiclesCost = total - firstVehicleCost;
-        // Apply 10% discount on additional vehicles only
-        total = Math.round(firstVehicleCost + additionalVehiclesCost * 0.9);
+        totalLow = Math.round(totalLow * 0.92);
+        totalHigh = Math.round(totalHigh * 0.92);
+    }
+
+    // Round to nearest $25 for clean display
+    totalLow = Math.round(totalLow / 25) * 25;
+    totalHigh = Math.round(totalHigh / 25) * 25;
+
+    // Format range string
+    const rangeString = `$${totalLow.toLocaleString()} – $${totalHigh.toLocaleString()}`;
+
+    // Update Banner / Display in Step 2 if elements exist
+    const displayedRange = document.getElementById('displayedPriceRange');
+    if (displayedRange) {
+        displayedRange.textContent = rangeString;
     }
 
     const estField = document.getElementById('estimatedPriceField');
-    if (estField) estField.value = total;
+    if (estField) {
+        estField.value = rangeString;
+    }
 }
