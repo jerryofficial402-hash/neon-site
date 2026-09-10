@@ -29,6 +29,7 @@
 - [Best Car Shipping Companies](https://neonautotransport.com/best-car-shipping-companies/) — Compare top auto transport providers by price, services, and trust signals
 - [Car Transport Cost Guide](https://neonautotransport.com/car-shipping-cost/) — Comprehensive cost breakdown by distance, vehicle type, and season
 - [Cheapest Way to Ship a Car](https://neonautotransport.com/cheapest-way-to-ship-a-car/) — Cost-saving strategies and tips
+- [Cheap Car Shipping Without Getting Scammed](https://neonautotransport.com/blog/cheap-car-shipping-without-getting-scammed/) — Practical guide to lowering costs and avoiding bait-and-switch scams
 - [Car Shipping Transit Times](https://neonautotransport.com/car-shipping-transit-times/) — Delivery time estimates by distance
 - [Insurance Information](https://neonautotransport.com/insurance/) — Cargo insurance coverage details
 - [How to Ship a Car to Another State](https://neonautotransport.com/how-to-ship-a-car-to-another-state/) — Complete step-by-step master guide

@@ -93,6 +93,8 @@ Atlanta, GA to Miami, FL| ~660 mi| $400 – $750| $600 – $1,100| 2–3 days
   * **Be Flexible on Dates:** Giving a 2–3 day pickup window lets carriers optimize route scheduling.
   * **Meet Carrier at Nearby Metro Terminal/Lot:** Meeting a car hauler near an interstate highway exit saves rural delivery fees.
 
+💡 **Watch out for lowball quotes:** A rate 20% to 50% below the market average is the single most common sign of a bait-and-switch scam. Read our guide on [how to avoid a lowball scam & get cheap car shipping safely](/blog/cheap-car-shipping-without-getting-scammed/) before booking.
+
 
 
 ## Frequently Asked Questions

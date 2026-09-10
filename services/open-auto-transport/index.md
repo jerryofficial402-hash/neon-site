@@ -124,6 +124,8 @@ Why open car transport costs less per mile the farther it goes: a large share of
 
 Use our [Car Shipping Cost Calculator](/cost-calculator/) for an instant estimate, then [Get a Free Car Shipping Quote](/car-shipping-quote/) for your exact shipment details.
 
+💡 **Evaluating multiple quotes?** Learn what makes a low quote legitimate versus a red flag in our guide: [is cheap car shipping safe & how to avoid bait-and-switch scams](/blog/cheap-car-shipping-without-getting-scammed/).
+
 ## Open vs. Enclosed Auto Transport: Which Should You Choose?
 
 Open transport is generally the practical option for standard daily-driver vehicles. Enclosed transport generally costs more because covered carriers have less capacity and operate as a more specialized service.
