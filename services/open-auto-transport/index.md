@@ -51,7 +51,7 @@ Exposure to normal weather and road conditions does not mean the vehicle is expe
 
 ### Open Transport, Open Carrier, Open-Air — Same Service
 
-Open auto transport goes by several names depending on who you ask: **open carrier transport**, **open trailer transport**, **open-air car shipping**, and **open carrier auto transport** all describe the same method — your vehicle secured on an uncovered, multi-car trailer alongside 6–9 other vehicles. Whichever term you searched, the service, pricing, and process on this page are the same. The trailer itself is sometimes called an **open auto transport carrier**, operated by a licensed motor carrier the way ours are — FMCSA-registered and verified before your vehicle is dispatched.
+Open auto transport goes by several names depending on who you ask: **open carrier transport**, **open trailer transport**, **open-air car shipping**, **open carrier auto transport**, also referred to as **open carrier car shipping** or **open air auto transport** — all describe the same method: your vehicle secured on an uncovered, multi-car trailer alongside 6–9 other vehicles. Whichever term you searched, the service, pricing, and process on this page are the same. The trailer itself is sometimes called an **open auto transport carrier**, operated by a licensed motor carrier the way ours are — FMCSA-registered and verified before your vehicle is dispatched.
 
 Explore our full range of [Vehicle Transport Services](/services/) or compare [Door-to-Door Car Shipping](/services/door-to-door-car-shipping/) options. 
 
