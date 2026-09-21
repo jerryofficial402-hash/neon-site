@@ -227,11 +227,6 @@
       "permanent": true
     },
     {
-      "source": "/how-it-works/",
-      "destination": "/#how-it-works",
-      "permanent": true
-    },
-    {
       "source": "/state/:state/",
       "destination": "/:state-car-shipping/",
       "permanent": true

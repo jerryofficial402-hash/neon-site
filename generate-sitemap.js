@@ -8,6 +8,10 @@ const __dirname = path.dirname(__filename);
 const rootDir = __dirname;
 let htmlFiles = [];
 
+// Load vercel.json redirects to ensure zero redirected URLs in sitemap
+const vercel = JSON.parse(fs.readFileSync(path.join(rootDir, 'vercel.json'), 'utf8'));
+const redirectSources = new Set(vercel.redirects.map(r => r.source));
+
 function findHtmlFiles(dir) {
     const files = fs.readdirSync(dir);
     for (const file of files) {
@@ -27,33 +31,50 @@ findHtmlFiles(rootDir);
 const domain = 'https://neonautotransport.com';
 const urls = new Set();
 
+const excludedFiles = [
+    'routes/route-template.html',
+    'route-template.html'
+];
+
 htmlFiles.forEach(file => {
     let rel = path.relative(rootDir, file).replace(/\\/g, '/');
     
-    // Skip template files or temp files
-    if (rel.startsWith('node_modules') || rel.startsWith('.vercel')) return;
+    // Skip template files, dev folders, or disallows
+    if (rel.startsWith('node_modules') || rel.startsWith('.vercel') || rel.startsWith('scratch') || rel.startsWith('dashboard')) return;
+    if (excludedFiles.includes(rel) || rel.includes('template')) return;
 
     // Convert relative path to URL path
+    let urlPath = '';
     if (rel === 'index.html') {
-        urls.add(domain + '/');
+        urlPath = '/';
     } else if (rel.endsWith('/index.html')) {
-        urls.add(domain + '/' + rel.replace('/index.html', '/'));
+        urlPath = '/' + rel.replace('/index.html', '/');
     } else {
-        urls.add(domain + '/' + rel.replace('.html', '/'));
+        urlPath = '/' + rel.replace('.html', '/');
     }
+
+    // Check if URL matches a redirect
+    if (redirectSources.has(urlPath) || redirectSources.has(urlPath.slice(0, -1))) {
+        return; // Skip redirected URLs
+    }
+
+    urls.add(domain + urlPath);
 });
 
 const sortedUrls = Array.from(urls).sort();
+
+const today = new Date().toISOString().split('T')[0];
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
 
 sortedUrls.forEach(url => {
-    xml += `  <url>\n    <loc>${url}</loc>\n    <lastmod>2026-09-01</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${url === domain + '/' ? '1.0' : '0.8'}</priority>\n  </url>\n`;
+    const priority = url === domain + '/' ? '1.0' : (url.includes('/services/') || url.includes('/car-shipping-cost/') || url.includes('/how-it-works/')) ? '0.9' : '0.8';
+    xml += `  <url>\n    <loc>${url}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
 });
 
 xml += `</urlset>`;
 
 fs.writeFileSync(path.join(rootDir, 'sitemap.xml'), xml, 'utf8');
-console.log(`Successfully generated sitemap with ${sortedUrls.length} URLs.`);
+console.log(`Successfully generated clean sitemap.xml with ${sortedUrls.length} URLs.`);
