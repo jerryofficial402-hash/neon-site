@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -39,26 +39,23 @@
 
   <style>
     @media (min-width: 1024px) {
-      html { font-size: 110%; }
+      html { font-size: 105%; }
     }
-    body { font-family: 'Inter', sans-serif; }
-    .card-hover-cyan {
-      border: 2px solid #e6e6e6 !important;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    body { 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
     }
-    .card-hover-cyan:hover {
-      border-color: #00D1FF !important;
-      transform: translateY(-4px) !important;
-      box-shadow: 0 14px 30px rgba(0, 209, 255, 0.15) !important;
+    .minimal-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.25rem;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .card-hover-indigo {
-      border: 2px solid #e6e6e6 !important;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    }
-    .card-hover-indigo:hover {
-      border-color: #635bff !important;
-      transform: translateY(-4px) !important;
-      box-shadow: 0 14px 30px rgba(99, 91, 255, 0.15) !important;
+    .minimal-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
     }
   </style>
 
@@ -186,349 +183,378 @@
   }
   </script>
 </head>
-<body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased min-h-screen flex flex-col justify-between pt-24">
+<body class="min-h-screen flex flex-col justify-between pt-20">
 
   <!-- Global Header -->
-  <header class="fixed top-0 w-full z-50 transition-all duration-300 shadow-md" id="global-header" style="background-color:#0a2540">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center" style="gap:24px">
+  <header class="fixed top-0 w-full z-50 transition-all duration-300 shadow-sm" id="global-header" style="background-color:#0a2540">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center" style="gap:24px">
       <div class="flex items-center" style="gap:24px">
-        <a href="/" class="text-2xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap; text-decoration:none; color:#ffffff;">
+        <a href="/" class="text-xl font-black tracking-tight flex items-center gap-1 text-white" style="white-space:nowrap; text-decoration:none; color:#ffffff;">
           NEON <span style="color: #00D1FF">AUTO TRANSPORT</span>
         </a>
-        <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-semibold text-[15px] text-white" style="white-space:nowrap;gap:24px">
-          <a href="/cost-calculator/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Cost Calculator</a>
-          <a href="/car-shipping-cost/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Cost Guide</a>
-          <a href="/services/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Services</a>
-          <a href="/best-car-shipping-companies/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Compare</a>
-          <a href="/reviews/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Reviews</a>
-          <a href="/contact/" class="hover:opacity-80 transition text-white" style="text-decoration:none; color:#ffffff;">Contact</a>
+        <nav aria-label="Main Navigation" class="hidden lg:flex items-center font-medium text-sm text-slate-200" style="white-space:nowrap;gap:20px">
+          <a href="/cost-calculator/" class="hover:text-white transition" style="text-decoration:none;">Cost Calculator</a>
+          <a href="/car-shipping-cost/" class="hover:text-white transition" style="text-decoration:none;">Cost Guide</a>
+          <a href="/services/" class="hover:text-white transition" style="text-decoration:none;">Services</a>
+          <a href="/best-car-shipping-companies/" class="hover:text-white transition" style="text-decoration:none;">Compare</a>
+          <a href="/reviews/" class="hover:text-white transition" style="text-decoration:none;">Reviews</a>
+          <a href="/contact/" class="hover:text-white transition" style="text-decoration:none;">Contact</a>
         </nav>
       </div>
-      <div class="hidden sm:flex items-center gap-4">
-        <a href="tel:5715767711" style="background-color:#635bff; color:#ffffff; padding:10px 20px; border-radius:9999px; text-decoration:none; font-weight:700;" class="hover:opacity-90 transition flex items-center gap-2">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <div class="flex items-center gap-3">
+        <a href="tel:5715767711" style="background-color:#635bff; color:#ffffff; padding:8px 18px; border-radius:9999px; text-decoration:none; font-weight:600; font-size:14px;" class="hover:opacity-90 transition flex items-center gap-2">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           (571) 576-7711
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Main Content Area -->
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow">
+  <!-- Editorial Main Container (Clean, Single Column Minimalist Reading Flow) -->
+  <main class="max-w-[760px] mx-auto px-4 sm:px-6 py-10 sm:py-14 flex-grow">
     
-    <!-- Breadcrumb -->
-    <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs font-semibold mb-6 text-[#425466] flex-wrap">
-      <a href="/" class="hover:text-[#635bff] transition">Home</a>
-      <span>/</span>
-      <a href="/blog/" class="hover:text-[#635bff] transition">Blog</a>
-      <span>/</span>
-      <span class="text-[#0a2540] font-bold">Cheap Car Shipping Guide</span>
+    <!-- Minimal Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6">
+      <a href="/" class="hover:text-[#635bff] transition" style="text-decoration:none;">Home</a>
+      <span class="text-slate-300">/</span>
+      <a href="/blog/" class="hover:text-[#635bff] transition" style="text-decoration:none;">Blog</a>
+      <span class="text-slate-300">/</span>
+      <span class="text-slate-800 font-semibold">Cheap Car Shipping</span>
     </nav>
 
-    <!-- Byline / Meta -->
-    <div class="flex items-center gap-3 text-xs text-[#425466] mb-4">
-      <span class="px-2.5 py-1 bg-[#0a2540] text-white rounded-full font-bold uppercase tracking-wider text-[10px]">Consumer Guide</span>
-      <span>•</span>
-      <span>By <a href="/author/shazil-ali/" class="text-[#635bff] font-semibold hover:underline">Shazil Ali</a></span>
-      <span>•</span>
-      <span>Updated September 2026</span>
-    </div>
-
-    <!-- H1 Headline -->
-    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0a2540] tracking-tight mb-6 leading-tight">
-      Cheap Car Shipping: How to Get a Real Low Price (Without Getting Scammed)
-    </h1>
-
-    <!-- Quick Answer Callout Box -->
-    <section class="quick-answer rounded-2xl p-6 my-8 shadow-xl border border-[#00d4ff]/30" style="background-color: #0a2540 !important; color: #ffffff !important;" aria-label="Quick Answer: Is Cheap Car Shipping Safe?">
-      <div class="flex items-center justify-between gap-4 mb-3">
-        <h2 class="quick-answer-title text-xl font-black flex items-center gap-2" style="color: #00D1FF !important;">
-          <svg class="w-5 h-5 shrink-0" style="color: #00D1FF !important;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          Quick Answer: Is Cheap Car Shipping Safe?
-        </h2>
-        <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-xs font-bold" style="background: rgba(0, 209, 255, 0.15); color: #00D1FF !important; border: 1px solid rgba(0, 209, 255, 0.3);">Key Takeaway</span>
+    <!-- Header Block -->
+    <header class="mb-8">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200 mb-4">
+        <span>🛡️</span> Consumer Protection Guide
       </div>
-      <div class="quick-answer-content text-sm sm:text-base leading-relaxed" style="color: #f1f5f9 !important;" itemscope itemtype="https://schema.org/Question">
+
+      <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0a2540] tracking-tight leading-[1.18] mb-5">
+        Cheap Car Shipping: How to Get a Real Low Price (Without Getting Scammed)
+      </h1>
+
+      <!-- Minimal Byline Strip -->
+      <div class="flex items-center gap-3 text-xs sm:text-sm text-slate-500 pb-6 border-b border-slate-200">
+        <img src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-8 h-8 rounded-full object-cover border border-slate-300" width="32" height="32">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="font-medium text-slate-900">By <a href="/author/shazil-ali/" class="text-[#635bff] hover:underline">Shazil Ali</a></span>
+          <span class="text-slate-300">•</span>
+          <span>Updated September 2026</span>
+          <span class="text-slate-300">•</span>
+          <span>5 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box (Minimal Dark Navy) -->
+    <section class="rounded-2xl p-6 sm:p-7 mb-10 shadow-lg border border-[#00d4ff]/20" style="background-color: #0a2540 !important; color: #ffffff !important;" aria-label="Quick Answer: Is Cheap Car Shipping Safe?">
+      <div class="flex items-center justify-between gap-4 mb-3">
+        <h2 class="text-lg sm:text-xl font-bold flex items-center gap-2" style="color: #00D1FF !important;">
+          <svg class="w-5 h-5 shrink-0" style="color: #00D1FF !important;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          Quick Answer
+        </h2>
+        <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold" style="background: rgba(0, 209, 255, 0.15); color: #00D1FF !important;">Direct Answer</span>
+      </div>
+      <div class="text-sm sm:text-[15px] leading-relaxed space-y-2.5" style="color: #f1f5f9 !important;" itemscope itemtype="https://schema.org/Question">
         <p itemprop="text" style="color: #f1f5f9 !important;">
-          <strong style="color: #ffffff !important; font-weight: 800;">Cheap car shipping is safe when the lower price comes from real, controllable factors</strong> — booking open transport, offering a 2–5 day pickup window, and shipping during off-season months. It becomes a major warning sign when a quote sits <strong style="color: #ffffff !important; font-weight: 800;">20% to 50% below the market average</strong>, which is the hallmark of a bait-and-switch scam where the price is hiked after your car is committed.
+          <strong style="color: #ffffff !important; font-weight: 700;">Cheap car shipping is safe when the low price comes from real operational factors</strong> — open transport, a flexible 2–5 day pickup window, and off-season booking.
+        </p>
+        <p style="color: #cbd5e1 !important;">
+          It becomes a major warning sign when a quote sits <strong style="color: #ffffff !important; font-weight: 700;">20% to 50% below the market average</strong>, which is the hallmark of a bait-and-switch scam where the price is hiked after your vehicle is committed.
         </p>
       </div>
     </section>
 
-    <!-- Article Content -->
-    <article class="prose max-w-none space-y-8 text-[#425466] leading-relaxed text-base">
+    <!-- Article Content Flow -->
+    <article class="space-y-10 text-[16px] sm:text-[17px] text-slate-700 leading-[1.75]">
       
-      <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm">
-        <h2 class="text-2xl font-bold text-[#0a2540] mb-4 tracking-tight">Is Cheap Car Shipping Safe?</h2>
-        <p class="mb-4">
+      <!-- Section 1 -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-black text-[#0a2540] tracking-tight">Is Cheap Car Shipping Safe?</h2>
+        <p>
           Cheap car shipping is safe when the low price comes from real, controllable factors — open transport, a flexible pickup window, and off-season timing. It becomes a warning sign when a quote sits far below every other quote you've gotten for the same route, because that's the single most common pattern behind car shipping's most damaging scam: <strong>bait-and-switch</strong>, where a lowball number is used to win your booking and then quietly replaced with a much higher price once your vehicle is scheduled or already picked up.
         </p>
-        <p class="font-medium text-[#0a2540]">
+        <p class="font-medium text-slate-900">
           The short version: there's a real "cheap," and there's a fake "cheap." This guide covers both — how to legitimately lower your price, and exactly how to tell the difference before you book.
         </p>
-      </div>
+      </section>
 
-      <!-- What Actually Makes Car Shipping Cheaper -->
-      <div class="p-8 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm card-hover-cyan">
-        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">
-          What Actually Makes Car Shipping Cheaper
-        </h2>
+      <hr class="border-slate-200">
+
+      <!-- Section 2 -->
+      <section class="space-y-6">
+        <h2 class="text-2xl font-black text-[#0a2540] tracking-tight">What Actually Makes Car Shipping Cheaper</h2>
         
         <div class="space-y-6">
-          <div>
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <span class="text-[#00D1FF] font-black">1.</span> Distance and Route
-            </h3>
-            <p class="text-base text-[#425466]">
-              Longer routes cost less per mile than short ones, because fixed costs — positioning the truck, driver loading time, and interstate access — are spread over more miles. You can't shorten your route, but understanding this helps set a realistic expectation: a 300-mile shipment often costs more per mile ($1.00–$1.50/mi) than a 2,000-mile one ($0.50–$0.60/mi), which is normal economic efficiency, not a sign you're being overcharged. Check our <a href="/car-shipping-cost/" class="text-[#635bff] font-bold hover:underline">Car Shipping Cost Guide</a> for full distance breakdowns.
+          <div class="minimal-card p-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Distance and Route Mechanics</h3>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Longer routes cost less per mile than short ones, because fixed costs — positioning the truck, driver time, loading and unloading — are spread over more miles. You can't shorten your route, but understanding this helps set a realistic expectation: a 300-mile shipment often costs more per mile than a 2,000-mile one, which is normal economic efficiency, not a sign you're being overcharged. For full distance breakdowns, review our <a href="/car-shipping-cost/" class="text-[#635bff] font-semibold hover:underline">Car Shipping Cost Guide</a>.
             </p>
           </div>
 
-          <div class="pt-4 border-t border-[#e6e6e6]">
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <span class="text-[#00D1FF] font-black">2.</span> Open Transport vs. Enclosed
-            </h3>
-            <p class="text-base text-[#425466]">
-              <a href="/services/open-auto-transport/" class="text-[#635bff] font-bold hover:underline">Open auto transport</a> is the standard, cost-effective choice for the vast majority of vehicles and typically costs <strong>40–60% less than enclosed transport</strong>. Multi-car open carriers transport 7 to 10 vehicles at a time, splitting fuel and driver overhead among multiple vehicle owners. Unless your car has exceptional classic, exotic, or collector value requiring climate-sealed protection, choosing open transport is the single biggest legitimate lever you control.
+          <div class="minimal-card p-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Open Transport vs. Enclosed</h3>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+              <a href="/services/open-auto-transport/" class="text-[#635bff] font-semibold hover:underline">Open auto transport</a> is the standard, cost-effective choice for the vast majority of shipments and typically costs <strong>40–60% less than enclosed</strong>. Multi-car trailers carry 7–10 vehicles at once, distributing fuel and driver costs. Unless your vehicle's value specifically calls for enclosed protection, open transport is the single biggest legitimate lever you control.
             </p>
           </div>
 
-          <div class="pt-4 border-t border-[#e6e6e6]">
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <span class="text-[#00D1FF] font-black">3.</span> Flexible Pickup Timing
-            </h3>
-            <p class="text-base text-[#425466]">
-              A fixed, non-negotiable pickup date narrows which carriers can take your load, requiring expedited scheduling fees. Offering a flexible <strong>2–5 day pickup window</strong> gives your broker more carriers to choose from — and more competition among carriers for your shipment tends to produce a better rate without sacrificing safety or service.
+          <div class="minimal-card p-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Flexible Pickup Timing</h3>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+              A fixed, non-negotiable pickup date narrows which carriers can take your load, which pushes price up. A flexible 2–5 day pickup window gives your broker more carriers to choose from — and more competition among carriers for your shipment tends to mean a better rate.
             </p>
           </div>
 
-          <div class="pt-4 border-t border-[#e6e6e6]">
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <span class="text-[#00D1FF] font-black">4.</span> Off-Season Booking
-            </h3>
-            <p class="text-base text-[#425466]">
-              Auto transport prices fluctuate with seasonal demand just like airline tickets. Routes heading south into Florida, Arizona, and Texas get more expensive in the fall during peak snowbird migration; the reverse occurs in spring. Shipping during off-peak demand windows (like late winter in February and March), where your timeline allows, is a reliable way to secure discount car shipping rates safely.
+          <div class="minimal-card p-6">
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Off-Season Booking</h3>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Prices move with demand the way flight prices do. Routes into Florida and the Southwest get more expensive in fall as snowbird season ramps up; the reverse happens in spring. Shipping outside your route's peak weeks (such as late winter in February and March), where your timeline allows it, is a legitimate and reliable way to lower cost.
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- The Cheapest Way to Ship a Car (Checklist) -->
-      <div class="p-8 bg-[#f8fafc] rounded-3xl border-2 border-[#635bff]/20 shadow-sm card-hover-indigo">
-        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-4 tracking-tight">
-          The Cheapest Way to Ship a Car (Practical Checklist)
-        </h2>
-        <p class="mb-6 text-base text-[#425466]">
-          If you want to minimize your auto transport expense legitimately, follow these tactical steps before booking:
-        </p>
-        <ul class="space-y-3.5 text-base text-[#425466]">
-          <li class="flex items-start gap-3">
-            <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center shrink-0 text-xs">✓</span>
-            <span><strong>Choose open transport</strong> unless your vehicle specifically requires enclosed protection.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center shrink-0 text-xs">✓</span>
-            <span><strong>Offer a flexible 2–5 day pickup window</strong> instead of demanding a guaranteed same-day pickup.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center shrink-0 text-xs">✓</span>
-            <span><strong>Ship outside your route's peak season</strong> (avoid late June–August and peak snowbird corridors when possible).</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center shrink-0 text-xs">✓</span>
-            <span><strong>Get quotes from 2–3 reputable brokers</strong> and compare them against market averages — not just against the lowest standalone number you see.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="w-6 h-6 rounded-full bg-[#39FF14]/20 text-[#0a2540] font-black flex items-center justify-center shrink-0 text-xs">✓</span>
-            <span><strong>Ensure clear street access</strong> at pickup and delivery; meeting a driver near a wide highway access point or parking lot prevents difficult-access accessorial fees.</span>
-          </li>
-        </ul>
-      </div>
+      <hr class="border-slate-200">
 
-      <!-- When Cheap Becomes a Red Flag -->
-      <div class="p-8 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm card-hover-cyan">
-        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">
-          When "Cheap" Becomes a Red Flag: Recognizing Scams
-        </h2>
+      <!-- Section 3: Practical Checklist -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-black text-[#0a2540] tracking-tight">The Cheapest Way to Ship a Car (Practical Checklist)</h2>
+        <div class="minimal-card p-6 sm:p-7 space-y-3.5">
+          <div class="flex items-start gap-3 text-sm sm:text-base">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs mt-0.5">✓</span>
+            <span><strong>Choose open transport</strong> unless your vehicle specifically needs enclosed protection.</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm sm:text-base">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs mt-0.5">✓</span>
+            <span><strong>Offer a flexible pickup window</strong> (2–5 days) instead of demanding a fixed date.</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm sm:text-base">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs mt-0.5">✓</span>
+            <span><strong>Ship outside your route's peak season</strong> where your timeline allows.</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm sm:text-base">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs mt-0.5">✓</span>
+            <span><strong>Get quotes from more than one source</strong> and compare them against market averages — not just against the lowest number you see.</span>
+          </div>
+          <div class="flex items-start gap-3 text-sm sm:text-base">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs mt-0.5">✓</span>
+            <span><strong>Have your vehicle accessible at pickup</strong>; meeting near a wide road or commercial lot prevents difficult-access terminal fees.</span>
+          </div>
+        </div>
+      </section>
 
-        <div class="space-y-6">
+      <hr class="border-slate-200">
+
+      <!-- Section 4: Red Flags -->
+      <section class="space-y-6">
+        <h2 class="text-2xl font-black text-[#0a2540] tracking-tight">When "Cheap" Becomes a Red Flag</h2>
+
+        <div class="space-y-5">
           <div>
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 text-red-600 flex items-center gap-2">
-              <span>⚠️</span> The Bait-and-Switch Pattern
-            </h3>
-            <p class="text-base text-[#425466]">
-              This is the single most common car shipping scam in the industry. An unscrupulous broker quotes a price well below market averages (e.g. $400 on a $900 lane) to lock in your booking. Once you've committed — often after paying an upfront "reservation fee" or waiting days past your pickup date — the broker informs you that no driver will take the load at that price. The rate suddenly jumps to $1,100, blamed on "unexpected fuel surcharges," a "vehicle weight correction," or "carrier shortages." The original low price was never real; it was simply bait.
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">The Bait-and-Switch Pattern</h3>
+            <p class="text-slate-600">
+              This is the single most common car shipping scam, and it works the same way almost every time: a broker quotes a price well below the market average for your route to win your booking. Once you've committed — sometimes after a deposit, sometimes right at pickup — the price increases, often blamed on "fuel surcharges," a "vehicle size correction," or a vague "route change." The original low number was never real; it existed to get your commitment.
             </p>
           </div>
 
-          <div class="pt-4 border-t border-[#e6e6e6]">
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <span class="text-[#635bff]">🔍</span> How to Tell a Real Low Quote from a Lowball Scam
-            </h3>
-            <p class="text-base text-[#425466] mb-3">
-              A genuinely competitive quote usually falls within 10–15% of other verified quotes for the same route, vehicle size, and schedule. A quote that sits <strong>20% to 50% below every other company</strong> isn't a bargain — it is the opening move of a bait-and-switch.
+          <!-- Comparison Table -->
+          <div class="overflow-x-auto my-4">
+            <table class="w-full text-left border-collapse border border-slate-200 bg-white rounded-xl overflow-hidden text-xs sm:text-sm">
+              <thead>
+                <tr style="background-color:#0a2540;" class="text-white">
+                  <th class="p-3 border-r border-slate-700 font-semibold">Feature</th>
+                  <th class="p-3 border-r border-slate-700 font-semibold text-emerald-300">Legitimate Quote</th>
+                  <th class="p-3 font-semibold text-rose-300">Bait-and-Switch Lowball</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 text-slate-700">
+                <tr>
+                  <td class="p-3 font-semibold text-slate-900 border-r border-slate-200">Deposit</td>
+                  <td class="p-3 border-r border-slate-200 text-emerald-700 font-medium">Charged only on carrier dispatch</td>
+                  <td class="p-3 text-rose-700 font-medium">Upfront deposit before assignment</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-semibold text-slate-900 border-r border-slate-200">Pricing Variance</td>
+                  <td class="p-3 border-r border-slate-200 text-emerald-700 font-medium">Within 10–15% of market rate</td>
+                  <td class="p-3 text-rose-700 font-medium">20% to 50% below all competitors</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-semibold text-slate-900 border-r border-slate-200">License Verification</td>
+                  <td class="p-3 border-r border-slate-200 text-emerald-700 font-medium">Active USDOT &amp; MC numbers</td>
+                  <td class="p-3 text-rose-700 font-medium">Unverified or missing credentials</td>
+                </tr>
+                <tr>
+                  <td class="p-3 font-semibold text-slate-900 border-r border-slate-200">Final Payment</td>
+                  <td class="p-3 border-r border-slate-200 text-emerald-700 font-medium">Paid to carrier upon delivery</td>
+                  <td class="p-3 text-rose-700 font-medium">Demands full wire/Zelle payment upfront</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">How to Tell a Real Low Quote from a Lowball Scam</h3>
+            <p class="text-slate-600">
+              A genuinely competitive quote usually falls within a reasonable range of other quotes for the same route and vehicle — not identical, but in the same neighborhood. A quote that sits 20–50% below everything else you've been offered isn't a bargain; it's the opening move of a bait-and-switch. Before you book, get more than one quote for the same route so you actually have something to compare against — a single quote in isolation gives you no way to tell the difference.
             </p>
-            <div class="p-4 bg-[#f0f7ff] border-l-4 border-[#635bff] rounded-r-xl text-sm text-[#0a2540]">
-              <strong>Rule of Thumb:</strong> If three licensed brokers quote between $1,100 and $1,300 for your coast-to-coast route, and a fourth quotes $650, that $650 quote is practically guaranteed to result in a price hike, missed pickup dates, or cancellation.
+          </div>
+
+          <div>
+            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What a Legitimate Deposit Structure Looks Like</h3>
+            <p class="text-slate-600">
+              A legitimate broker charges nothing for a quote, takes a deposit only once a specific carrier has actually been assigned to your shipment, and collects the remaining balance at delivery — not before pickup. Full payment requested up front, or a deposit requested before any carrier has been named, is one of the clearest signs something is wrong.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border-slate-200">
+
+      <!-- Section 5: Verification -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-black text-[#0a2540] tracking-tight">How to Verify a Car Shipping Company Before You Book</h2>
+        <div class="space-y-3 text-sm sm:text-base text-slate-700">
+          <div class="minimal-card p-5 flex items-start gap-3.5">
+            <span class="w-6 h-6 rounded-full bg-[#0a2540] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+            <div>
+              <strong class="text-slate-900 block mb-1">Check the FMCSA SAFER System</strong>
+              <p class="text-slate-600 text-sm">Every legitimate broker and carrier has an active USDOT and MC number you can verify directly through FMCSA's public database before you send any money.</p>
             </div>
           </div>
 
-          <div class="pt-4 border-t border-[#e6e6e6]">
-            <h3 class="text-xl font-bold text-[#0a2540] mb-2 flex items-center gap-2">
-              <span class="text-[#39FF14] bg-[#0a2540] p-1 rounded">🛡️</span> What a Legitimate Deposit Structure Looks Like
-            </h3>
-            <p class="text-base text-[#425466]">
-              A legitimate auto transport broker charges <strong>$0 upfront to book</strong> and will never ask for full payment before your vehicle is picked up. A deposit is only processed after a specific, FMCSA-verified motor carrier has been assigned to your shipment with confirmed dispatch details. The remaining balance is paid directly to the carrier upon safe delivery.
-            </p>
+          <div class="minimal-card p-5 flex items-start gap-3.5">
+            <span class="w-6 h-6 rounded-full bg-[#0a2540] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+            <div>
+              <strong class="text-slate-900 block mb-1">Ask who the assigned carrier is, and check them separately</strong>
+              <p class="text-slate-600 text-sm">The broker and the carrier are two different entities with two different sets of credentials — both should check out.</p>
+            </div>
+          </div>
+
+          <div class="minimal-card p-5 flex items-start gap-3.5">
+            <span class="w-6 h-6 rounded-full bg-[#0a2540] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+            <div>
+              <strong class="text-slate-900 block mb-1">Get the price in writing</strong>
+              <p class="text-slate-600 text-sm">A verbal quote with no written confirmation gives you nothing to hold anyone to if the number changes later.</p>
+            </div>
+          </div>
+
+          <div class="minimal-card p-5 flex items-start gap-3.5">
+            <span class="w-6 h-6 rounded-full bg-[#0a2540] text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
+            <div>
+              <strong class="text-slate-900 block mb-1">Be wary of pressure</strong>
+              <p class="text-slate-600 text-sm">"Book now or lose this rate" is a sales tactic, not a real scheduling constraint — legitimate carrier availability doesn't disappear in the next ten minutes.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- How to Verify a Car Shipping Company -->
-      <div class="p-8 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm card-hover-indigo">
-        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">
-          How to Verify a Car Shipping Company Before You Book
-        </h2>
-        
-        <div class="grid md:grid-cols-2 gap-6 text-sm">
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <strong class="text-base text-[#0a2540] block mb-2 font-bold">1. Check the FMCSA SAFER Database</strong>
-            <p class="text-[#425466]">
-              Every legitimate broker and motor carrier has an active USDOT and MC number. You can verify licensing, active operating authority, and bond status on the public <a href="https://safer.fmcsa.dot.gov/" target="_blank" rel="noopener noreferrer" class="text-[#635bff] font-semibold hover:underline">FMCSA SAFER system</a> before paying any money.
-            </p>
-          </div>
-          
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <strong class="text-base text-[#0a2540] block mb-2 font-bold">2. Check the Assigned Carrier Separately</strong>
-            <p class="text-[#425466]">
-              The broker arranging your move and the motor carrier hauling your car are two separate entities. A transparent broker will provide the assigned carrier's USDOT number and insurance certificate before dispatch.
-            </p>
-          </div>
-
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <strong class="text-base text-[#0a2540] block mb-2 font-bold">3. Get Your Price in Writing</strong>
-            <p class="text-[#425466]">
-              Never rely on a verbal phone quote. Demand an itemized written quote detailing pickup/delivery locations, transport type, and confirmation that there are no hidden terminal or fuel surcharges.
-            </p>
-          </div>
-
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <strong class="text-base text-[#0a2540] block mb-2 font-bold">4. Be Wary of Artificial Urgency</strong>
-            <p class="text-[#425466]">
-              "Book in the next 10 minutes or this rate expires" is a high-pressure sales tactic. Legitimate carrier availability is determined by real-time dispatch capacity, not artificial countdown timers.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mid-Page Callout / CTA -->
-      <div style="background-color:#0a2540;" class="rounded-3xl p-8 my-12 text-center text-white shadow-2xl border border-[#00d4ff]/20">
-        <h2 class="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight">Ready to Check a Real, Legitimate Quote?</h2>
-        <p class="text-slate-300 mb-8 max-w-2xl mx-auto text-base">
-          Use our online calculator to see accurate market pricing for your route, or speak directly with an auto transport specialist with $0 upfront deposit required.
+      <!-- Conversion Box (Clean Minimal Navy) -->
+      <section class="rounded-2xl p-7 sm:p-8 text-center text-white my-10" style="background-color: #0a2540;">
+        <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Ready to Get a Real Quote?</h3>
+        <p class="text-slate-300 text-sm sm:text-base max-w-lg mx-auto mb-6 leading-relaxed">
+          Use the Car Shipping Cost Calculator to see what your route typically costs, then request a free quote to see how a legitimate price compares — no obligation, no payment due until a carrier is confirmed.
         </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/cost-calculator/" style="background-color:#39FF14; color:#0a2540; padding:14px 32px; border-radius:9999px; font-weight:900; text-decoration:none;" class="hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)] flex items-center gap-2">
-            Calculate Your Shipping Rate →
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+          <a href="/cost-calculator/" style="background-color: #39FF14; color: #0a2540; padding: 11px 26px; border-radius: 9999px; font-weight: 800; font-size: 14px; text-decoration: none;" class="hover:bg-[#32e011] transition shadow-md">
+            Calculate Rate Online →
           </a>
-          <a href="tel:5715767711" style="border:2px solid rgba(255,255,255,0.4); color:#ffffff; padding:12px 28px; border-radius:9999px; font-weight:700; text-decoration:none;" class="hover:bg-white/10 transition flex items-center gap-2">
-            📞 (571) 576-7711
+          <a href="tel:5715767711" style="border: 1px solid rgba(255,255,255,0.3); color: #ffffff; padding: 10px 24px; border-radius: 9999px; font-weight: 600; font-size: 14px; text-decoration: none;" class="hover:bg-white/10 transition">
+            Call (571) 576-7711
           </a>
         </div>
-      </div>
+      </section>
 
-      <!-- FAQs Section -->
-      <div class="p-8 bg-white rounded-3xl border border-[#e6e6e6] shadow-sm mb-12">
-        <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-8 tracking-tight flex items-center gap-2">
-          <span>❓</span> Cheap Car Shipping Frequently Asked Questions
-        </h2>
-        
-        <div class="space-y-6">
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Is cheap car shipping safe?</h3>
-            <p class="text-[#425466] text-sm sm:text-base leading-relaxed">
+      <hr class="border-slate-200">
+
+      <!-- FAQs -->
+      <section class="space-y-5">
+        <h2 class="text-2xl font-black text-[#0a2540] tracking-tight">Cheap Car Shipping FAQs</h2>
+
+        <div class="space-y-4">
+          <div class="minimal-card p-5">
+            <h3 class="text-base font-bold text-[#0a2540] mb-2">Is cheap car shipping safe?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
               It can be — when the lower price comes from real factors like open transport, flexible timing, or off-season booking. It becomes risky when a quote is far below every other quote you've received for the same route, which is the classic setup for a bait-and-switch scam.
             </p>
           </div>
 
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <h3 class="text-lg font-bold text-[#0a2540] mb-2">Why is my car shipping quote so cheap compared to others?</h3>
-            <p class="text-[#425466] text-sm sm:text-base leading-relaxed">
+          <div class="minimal-card p-5">
+            <h3 class="text-base font-bold text-[#0a2540] mb-2">Why is my car shipping quote so cheap compared to others?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
               It could be a genuinely good rate from flexible timing or open transport — or it could be a lowball number designed to win your booking before the price increases later. Compare it against at least one other quote for the same route before deciding which one it is.
             </p>
           </div>
 
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What's the cheapest way to ship a car?</h3>
-            <p class="text-[#425466] text-sm sm:text-base leading-relaxed">
+          <div class="minimal-card p-5">
+            <h3 class="text-base font-bold text-[#0a2540] mb-2">What's the cheapest way to ship a car?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
               Open transport, a flexible pickup window, and off-season timing are the three biggest levers you control. Chasing the single lowest number you can find isn't on this list — it's the most common way people end up with a delayed or bait-and-switched shipment.
             </p>
           </div>
 
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <h3 class="text-lg font-bold text-[#0a2540] mb-2">How do I know if a car shipping company is legitimate?</h3>
-            <p class="text-[#425466] text-sm sm:text-base leading-relaxed">
+          <div class="minimal-card p-5">
+            <h3 class="text-base font-bold text-[#0a2540] mb-2">How do I know if a car shipping company is legitimate?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
               Verify their USDOT and MC number through the FMCSA SAFER database, get your price in writing, and be cautious of anyone asking for full payment before pickup or applying pressure to book immediately.
             </p>
           </div>
 
-          <div class="p-5 bg-[#f8fafc] rounded-2xl border border-[#e6e6e6]">
-            <h3 class="text-lg font-bold text-[#0a2540] mb-2">What's a normal deposit for car shipping?</h3>
-            <p class="text-[#425466] text-sm sm:text-base leading-relaxed">
+          <div class="minimal-card p-5">
+            <h3 class="text-base font-bold text-[#0a2540] mb-2">What's a normal deposit for car shipping?</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
               A legitimate broker takes a deposit — typically a few hundred dollars — only after a specific carrier has been assigned to your shipment, with the remaining balance due to the driver at delivery. Full payment requested up front is a red flag, not standard practice.
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
     </article>
   </main>
 
   <!-- Global Footer -->
-  <footer style="background-color: #0a2540; color: #cbd5e1; padding-top: 4rem; padding-bottom: 3rem; border-top: 1px solid #1a1f36;" class="text-slate-300 text-sm mt-16">
-    <div class="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+  <footer style="background-color: #0a2540; color: #cbd5e1; padding-top: 3.5rem; padding-bottom: 2.5rem; border-top: 1px solid #1a1f36;" class="text-slate-300 text-sm mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
-        <a href="/" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;" class="tracking-tight text-white block mb-3">
+        <a href="/" style="text-decoration: none; color: #ffffff; font-size: 1.35rem; font-weight: 900; text-transform: uppercase;" class="tracking-tight text-white block mb-3">
           NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
         </a>
-        <p style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;" class="mb-4">
-          FMCSA-licensed & bonded auto transport broker delivering nationwide door-to-door vehicle shipping across all 50 states.
+        <p style="color: #94a3b8; font-size: 0.825rem; line-height: 1.6;" class="mb-4">
+          FMCSA-licensed &amp; bonded auto transport broker delivering nationwide door-to-door vehicle shipping across all 50 states.
         </p>
         <p style="color: #94a3b8; font-size: 0.75rem; font-weight: 700;">USDOT #4355879 | MC #1703787</p>
       </div>
       
       <div>
-        <h3 style="color: #ffffff; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-4">Popular Services</h3>
-        <ul style="list-style: none; padding: 0;" class="space-y-2.5 text-xs font-medium">
+        <h3 style="color: #ffffff; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-3">Popular Services</h3>
+        <ul style="list-style: none; padding: 0;" class="space-y-2 text-xs font-medium">
           <li><a href="/services/open-auto-transport/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Open Auto Transport</a></li>
           <li><a href="/services/enclosed-auto-transport/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Enclosed Auto Transport</a></li>
           <li><a href="/services/door-to-door-car-shipping/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Door to Door Shipping</a></li>
           <li><a href="/services/expedited-auto-transport/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Expedited Shipping</a></li>
-          <li><a href="/services/luxury-car-shipping/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Classic & Luxury Shipping</a></li>
         </ul>
       </div>
       
       <div>
-        <h3 style="color: #ffffff; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-4">Cost & Comparisons</h3>
-        <ul style="list-style: none; padding: 0;" class="space-y-2.5 text-xs font-medium">
+        <h3 style="color: #ffffff; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-3">Cost &amp; Guides</h3>
+        <ul style="list-style: none; padding: 0;" class="space-y-2 text-xs font-medium">
           <li><a href="/car-shipping-cost/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Car Shipping Cost Guide 2026</a></li>
           <li><a href="/cost-calculator/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Instant Quote Calculator</a></li>
           <li><a href="/best-car-shipping-companies/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Best Car Shipping Companies</a></li>
-          <li><a href="/blog/cheap-car-shipping-without-getting-scammed/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition font-bold">Cheap Car Shipping Guide</a></li>
-          <li><a href="/compare/neon-vs-montway/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition">Neon vs Montway</a></li>
+          <li><a href="/blog/cheap-car-shipping-without-getting-scammed/" style="color: #cbd5e1; text-decoration: none;" class="hover:text-[#00D1FF] transition font-semibold">Cheap Car Shipping Guide</a></li>
         </ul>
       </div>
       
       <div>
-        <h3 style="color: #ffffff; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-4">Contact Support</h3>
-        <p style="color: #cbd5e1; font-size: 0.85rem;" class="mb-2">2709 Neabsco Common Pl Suite 101<br>Woodbridge, VA 22191</p>
-        <p style="color: #cbd5e1; font-size: 0.85rem;" class="mb-2">Phone: <a href="tel:5715767711" style="color: #00D1FF; font-weight: 700; text-decoration: none;">(571) 576-7711</a></p>
-        <p style="color: #cbd5e1; font-size: 0.85rem;">Email: <a href="mailto:info@neonautotransport.com" style="color: #00D1FF; text-decoration: none;">info@neonautotransport.com</a></p>
+        <h3 style="color: #ffffff; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;" class="mb-3">Contact</h3>
+        <p style="color: #cbd5e1; font-size: 0.825rem;" class="mb-2">2709 Neabsco Common Pl Suite 101<br>Woodbridge, VA 22191</p>
+        <p style="color: #cbd5e1; font-size: 0.825rem;" class="mb-2">Phone: <a href="tel:5715767711" style="color: #00D1FF; font-weight: 700; text-decoration: none;">(571) 576-7711</a></p>
+        <p style="color: #cbd5e1; font-size: 0.825rem;">Email: <a href="mailto:info@neonautotransport.com" style="color: #00D1FF; text-decoration: none;">info@neonautotransport.com</a></p>
       </div>
     </div>
     
-    <div style="padding-top: 1.5rem; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.8rem; color: #94a3b8;">
-      <div class="max-w-7xl mx-auto px-4">
+    <div style="padding-top: 1.5rem; margin-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.75rem; color: #94a3b8;">
+      <div class="max-w-6xl mx-auto px-4">
         © 2026 Neon Auto Transport LLC. All rights reserved. | <a href="/privacy/" style="color: #cbd5e1; text-decoration: underline;">Privacy Policy</a> | <a href="/terms/" style="color: #cbd5e1; text-decoration: underline;">Terms of Service</a> | <a href="/sitemap.md" style="color: #cbd5e1; text-decoration: underline;">AI Sitemap</a>
       </div>
     </div>
