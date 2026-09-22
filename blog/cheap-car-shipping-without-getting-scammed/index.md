@@ -9,6 +9,9 @@ canonical: "https://neonautotransport.com/blog/cheap-car-shipping-without-gettin
 
 # Cheap Car Shipping: How to Get a Real Low Price (Without Getting Scammed)
 
+![Legitimate cheap car shipping on an open multi-car carrier transport truck on highway at sunset](https://neonautotransport.com/images/cheap-car-shipping-open-transport-carrier.jpg)
+*Figure: Multi-car open auto transport carriers distribute operating costs across multiple vehicles, making open transport the single most effective way to lower car shipping costs safely.*
+
 ## Quick Answer: Is Cheap Car Shipping Safe?
 
 Cheap car shipping is safe when the low price comes from real, controllable factors — booking [open auto transport](/services/open-auto-transport/), offering a 2–5 day pickup window, and shipping during off-season months. It becomes a major warning sign when a quote sits 20% to 50% below the market average, which is the hallmark of a bait-and-switch scam where the price is hiked after your car is committed.
