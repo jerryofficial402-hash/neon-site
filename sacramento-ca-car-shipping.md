@@ -25,7 +25,7 @@ California Service Area
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Car Shipping in Sacramento, CA with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Sacramento, CA with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides reliable nationwide auto transport services for vehicles shipping to or from Sacramento, California (Sacramento County). Served directly through our regional Northern California logistics hub along the Highway 99 corridor. 
 

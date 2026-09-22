@@ -162,13 +162,15 @@ def get_quick_answer_text(filepath, content):
         city_match = re.search(r'<h1[^>]*>(.*?)</h1>', content, re.IGNORECASE | re.DOTALL)
         city_title = city_match.group(1).strip() if city_match else "this city"
         city_title = re.sub(r'<[^>]+>', '', city_title)
-        return f"Neon Auto Transport provides door-to-door car shipping for {city_title} and all surrounding areas. Open transport averages $0.50–$1.00 per mile depending on route. Enclosed shipping is available for luxury and classic cars. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) offering $0 deposit and $500k insurance. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711."
+        clean_city = re.sub(r'^Car Shipping in\s+', '', city_title, flags=re.IGNORECASE)
+        return f"Neon Auto Transport provides door-to-door car shipping in {clean_city} and all surrounding areas. Open transport averages $0.50–$1.00 per mile depending on route. Enclosed shipping is available for luxury and classic cars. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) offering $0 deposit and $500k insurance. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711."
 
     if "car-shipping" in rel:
         state_match = re.search(r'<h1[^>]*>(.*?)</h1>', content, re.IGNORECASE | re.DOTALL)
         state_title = state_match.group(1).strip() if state_match else "this state"
         state_title = re.sub(r'<[^>]+>', '', state_title)
-        return f"Neon Auto Transport ships cars to and from {state_title} with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711."
+        clean_state = re.sub(r'^Car Shipping in\s+', '', state_title, flags=re.IGNORECASE)
+        return f"Neon Auto Transport ships cars to and from {clean_state} with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711."
 
     if "services/" in rel:
         return "Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711."

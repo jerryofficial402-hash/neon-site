@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport provides door-to-door car shipping for Car Shipping in San Diego, CA and all surrounding areas. Open transport averages $0.50–$1.00 per mile depending on route. Enclosed shipping is available for luxury and classic cars. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) offering $0 deposit and $500k insurance. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport provides door-to-door car shipping in San Diego, CA and all surrounding areas. Open transport averages $0.50–$1.00 per mile depending on route. Enclosed shipping is available for luxury and classic cars. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) offering $0 deposit and $500k insurance. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Planning to ship a car to or from California? Whether you're relocating to the Golden State or sending a vehicle across the country, Neon Auto Transport ensures a stress-free experience with upfront pricing and our highly vetted carrier network.
 
