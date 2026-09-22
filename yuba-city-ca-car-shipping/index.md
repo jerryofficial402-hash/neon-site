@@ -74,7 +74,7 @@ Because vehicle type, exact locations, dates, and carrier availability can chang
 
 **Note on Short Regional Routes:** On short routes (such as Yuba City to Sacramento), carriers still incur fixed dispatch, loading, and minimum trip costs. Consequently, very short hauls are priced based on trip economics rather than a linear per-mile calculation. 
 
-[Read our complete Car Transport Cost Guide →](/car-transport-cost-guide/)
+[Read our complete Car Transport Cost Guide →](/car-shipping-cost/)
 
 ##  How Long Does Yuba City Auto Transport Take? 
 

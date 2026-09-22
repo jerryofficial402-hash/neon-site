@@ -141,7 +141,7 @@ If shipping costs equal or exceed the car's market value, driving it (if roadwor
 
 Only on Amtrak's Auto Train (Lorton, VA to Sanford, FL). Train shipping does not exist for cross-country routes like FL to CA. 
 
-[Read Full Train Shipping Breakdown →](/car-transport-cost-guide/)
+[Read Full Train Shipping Breakdown →](/car-shipping-cost/)
 
 * * *
 

@@ -82,7 +82,7 @@ Because rates depend on the vehicle, exact pickup and delivery locations, transp
 
 **Note on Short Regional Moves:** Very short-distance vehicle moves are not priced simply by multiplying mileage by a long-haul per-mile rate. Carrier dispatch, loading, equipment, and minimum-trip costs make short shipments price based on trip economics rather than distance alone. 
 
-[Read our complete Car Transport Cost Guide →](/car-transport-cost-guide/)
+[Read our complete Car Transport Cost Guide →](/car-shipping-cost/)
 
 ##  How Long Does Marysville Auto Transport Take? 
 

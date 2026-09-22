@@ -1445,6 +1445,46 @@
       "source": "/florida-car-shipping/washington-dc-to-miami/",
       "destination": "/routes/city/washington-dc-to-miami-fl/",
       "permanent": true
+    },
+    {
+      "source": "/car-transport-cost-guide/",
+      "destination": "/car-shipping-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/car-transport-cost-guide",
+      "destination": "/car-shipping-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/car-shipping-cost-calculator/",
+      "destination": "/cost-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/car-shipping-cost-calculator",
+      "destination": "/cost-calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/true-cost-of-car-shipping-2026/",
+      "destination": "/car-shipping-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/true-cost-of-car-shipping-2026",
+      "destination": "/car-shipping-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-much-does-it-cost-to-ship-a-car-across-the-country/",
+      "destination": "/car-shipping-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-much-does-it-cost-to-ship-a-car-across-the-country",
+      "destination": "/car-shipping-cost/",
+      "permanent": true
     }
   ]
 }

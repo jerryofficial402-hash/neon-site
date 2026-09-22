@@ -50,7 +50,7 @@ Rather than spending 20 to 40 exhausting hours behind the wheel on congested int
 | [Minnesota → California](/minnesota-to-california-car-shipping/) | 1,920 mi | $950 – $1,500 | 4–6 days |
 | Massachusetts → South Carolina | 900 mi | $600 – $1,050 | 3–4 days |
 
-*Open-carrier estimates for standard operable vehicles. Southbound demand peaks October–December; northbound peaks March–April. Ship against the shoulder weeks for the best rates. [Get an exact rate for your route.](/car-shipping-cost-calculator/)*
+*Open-carrier estimates for standard operable vehicles. Southbound demand peaks October–December; northbound peaks March–April. Ship against the shoulder weeks for the best rates. [Get an exact rate for your route.](/cost-calculator/)*
 
 ## When Should Snowbirds Ship Their Cars?
 
