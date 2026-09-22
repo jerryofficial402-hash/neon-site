@@ -21,7 +21,7 @@ Direct I-95 Freight Corridor • 2–4 Day Transit
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Maryland to Florida Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Maryland to Florida with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Ship your car from Maryland to Florida for **$700–$1,150** on open transport, with delivery in **2–4 days**. Neon Auto Transport runs this I-95 corridor year-round — $0 upfront deposit, $500K cargo insurance, and a carrier typically assigned within 24–48 hours. 
 

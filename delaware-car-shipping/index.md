@@ -15,13 +15,13 @@ headquarters: "2709 Neabsco Common Pl Suite 101, Woodbridge, VA 22191"
 policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 24/7 Direct Driver Contact"
 ---
 
-FMSCA & US Dot Approved 
+FMCSA & US Dot Approved 
 
 # Delaware Car Shipping
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Delaware Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Delaware with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Planning to ship a car to or from Delaware? Whether you're relocating to the First State or sending a vehicle across the country, navigating Route 1 and dealing with moderate coastal weather can be challenging. Neon Auto Transport ensures a stress-free experience tailored for flat coastal plains, with upfront pricing and a highly vetted carrier network ready to handle coastal flooding and busy toll roads.
 

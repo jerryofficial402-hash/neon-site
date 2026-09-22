@@ -1,5 +1,5 @@
 ---
-title: "New York Car Shipping & Auto Transport | Free Quote"
+title: "New York Car Shipping To & From NYC | Get a Quote | Neon"
 url: https://neonautotransport.com/new-york-car-shipping/
 date: 2026-08-27
 modified: 2026-08-27
@@ -17,7 +17,7 @@ policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 2
 
 ipt>
 
-FMSCA & US Dot Approved 
+FMCSA & US Dot Approved 
 
 [ Back to All Locations ](/locations/)
 
@@ -25,7 +25,7 @@ FMSCA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from New York Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from New York with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Shipping a car in or out of New York means dealing with a market unlike almost anywhere else in the country. It’s not just about distance — it’s about navigating one of the densest urban environments in the world, a state where parkways ban commercial trucks outright, and a metro area that runs on terminal pickups and staging areas rather than a driver simply pulling up to your door. Neon Auto Transport ships vehicles in and out of New York City and the surrounding metro every week, and this guide covers what actually drives your price, [how the city’s geography changes the process](/how-to-ship-a-car-to-another-state/), and how to avoid the mistakes that cost people time and money.
 

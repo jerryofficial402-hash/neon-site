@@ -21,7 +21,7 @@ FMCSA Approved · No Upfront Deposit
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from New York to California Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from New York to California with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Ship your vehicle from New York to California with a fully vetted, FMCSA-licensed carrier. 2,794 miles of coverage, door-to-door delivery, and a locked-in price with no deposit required. 
 

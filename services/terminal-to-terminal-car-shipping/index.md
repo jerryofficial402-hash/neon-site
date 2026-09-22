@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Terminal to Terminal Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Terminal to Terminal with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Terminal-to-terminal car shipping is an auto transport method where you drop off and pick up your vehicle at a secure regional hub instead of your home address, typically saving $100 to $300 compared to door-to-door service. It's the most cost-effective way to ship a car for shippers who have flexibility on pickup and delivery location. Neon Auto Transport operates terminal-to-terminal service through fully insured, FMCSA-approved carriers, with terminals available in major metro areas nationwide.
 

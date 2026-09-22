@@ -21,7 +21,7 @@ Direct I-95 Coastal Corridor • 1–3 Day Transit
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from South Carolina to Florida Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from South Carolina to Florida with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Ship your car from South Carolina to Florida for **$400–$750** on open transport, with delivery in **1–3 days**. This is one of the most cost-efficient Southeast lanes we run — no upfront deposit, $500K cargo insurance, and a carrier typically assigned within 24 hours. 
 

@@ -15,13 +15,13 @@ headquarters: "2709 Neabsco Common Pl Suite 101, Woodbridge, VA 22191"
 policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 24/7 Direct Driver Contact"
 ---
 
-FMSCA & US Dot Approved 
+FMCSA & US Dot Approved 
 
 # Missouri Car Shipping
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Missouri Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Missouri with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Planning to ship a car to or from Missouri? Whether you're relocating to the Show-Me State or sending a vehicle across the country, navigating I-70 and dealing with humid continental weather can be challenging. Neon Auto Transport ensures a stress-free experience tailored for the Ozark mountains and river plains, with upfront pricing and a highly vetted carrier network ready to handle midwestern storms and central hub traffic.
 

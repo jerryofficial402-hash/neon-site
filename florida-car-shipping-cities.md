@@ -21,7 +21,7 @@ policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 2
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Top Cities in Florida for Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Top Cities in Florida for with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 The Complete 2026 Route, Cost & Auto Transport Guide. A Neon Auto Transport city-by-city guide to shipping a car to or from Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg, West Palm Beach, Naples, Sarasota & Fort Myers. 
 
