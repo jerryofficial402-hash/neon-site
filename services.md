@@ -23,7 +23,9 @@ Open and enclosed auto transport are available nationwide through Neon Auto Tran
 
 Neon Auto Transport helps customers arrange vehicle transportation across the United States. Compare open, enclosed, door-to-door, and expedited auto shipping options for cars, SUVs, trucks, motorcycles, classic vehicles, dealer inventory, and fleet moves. 
 
-Choose the service that fits your vehicle, route, preferred pickup timeframe, and budget. Get a free quote or use our car shipping cost calculator to review estimated pricing for your shipment. 
+Choose the service that fits your vehicle, route, preferred pickup timeframe, and budget. Get a free quote or use our car shipping cost calculator to review estimated pricing for your shipment.
+
+Our car shipping services cover every common vehicle transport scenario: open carrier moves for daily vehicles, enclosed shipping for high-value cars, door-to-door pickup and delivery, expedited transport for tight timelines, and specialized car transport services for motorcycles, military PCS moves, dealers, and fleets. 
 
 [ Get a Free Car Shipping Quote → ](/car-shipping-quote/) [ Calculate Car Shipping Cost ](/cost-calculator/)
 
@@ -35,7 +37,19 @@ Neon Auto Transport LLC is a licensed auto transport broker operating under **MC
 
 Carrier availability, pricing, pickup timing, and insurance details are confirmed for your specific shipment before dispatch. 
 
-## Choose the Right Vehicle Transport Service
+## Compare Our Car Shipping Services
+
+| Service | Typical Cost | Transit / Timing | Best For |
+|---|---|---|---|
+| [Open Auto Transport](/services/open-auto-transport/) | $0.50 – $1.00/mile | 1–10 days by distance | Standard cars, SUVs, trucks |
+| [Enclosed Car Shipping](/services/enclosed-auto-transport/) | 30–50% above open rates | Same corridors as open | Classic, luxury, exotic, collector vehicles |
+| [Door-to-Door Car Shipping](/services/door-to-door-car-shipping/) | Included standard | Per route distance | Convenience — pickup at your address |
+| [Expedited Auto Transport](/services/expedited-auto-transport/) | 20–40% premium | 24–48 hr dispatch | Time-sensitive moves |
+| [Motorcycle Shipping](/services/motorcycle-shipping/) | $300 – $800 flat | By distance | Bikes, ATVs, powersports |
+
+*Estimates for standard operable vehicles. Final pricing depends on route, vehicle size, season, and carrier availability — get an exact rate with our [car shipping cost calculator](/cost-calculator/).*
+
+## Choose the Right Car Shipping Service
 
 Every shipment is different. Compare the transport options below based on your vehicle, route, pickup dates, budget, and protection needs. 
 
@@ -43,7 +57,9 @@ Every shipment is different. Compare the transport options below based on your v
 
 ### Open Auto Transport
 
-The most common and typically more economical option for standard cars, SUVs, and trucks. Vehicles are transported on an open multi-car trailer. 
+The most common and typically more economical option for standard cars, SUVs, and trucks. Vehicles are transported on an open multi-car trailer.
+
+**From $0.50/mile — the most economical option.** 
 
 [Explore Open Auto Transport →](/services/open-auto-transport/)
 
@@ -51,7 +67,9 @@ The most common and typically more economical option for standard cars, SUVs, an
 
 ### Enclosed Car Shipping
 
-Covered transport for classic, luxury, exotic, collector, and other high-value vehicles that may benefit from added protection from weather and road exposure. 
+Covered transport for classic, luxury, exotic, collector, and other high-value vehicles that may benefit from added protection from weather and road exposure.
+
+**From 30–50% above open rates for full weather protection.** 
 
 [Explore Enclosed Car Shipping →](/services/enclosed-auto-transport/)
 
@@ -59,7 +77,9 @@ Covered transport for classic, luxury, exotic, collector, and other high-value v
 
 ### Door-to-Door Car Shipping
 
-The assigned carrier aims to pick up and deliver as close to your addresses as safely and legally possible. Truck-access restrictions may require a nearby meeting location. 
+The assigned carrier aims to pick up and deliver as close to your addresses as safely and legally possible. Truck-access restrictions may require a nearby meeting location.
+
+**Standard on every shipment — no terminal fees.** 
 
 [Learn About Door-to-Door Shipping →](/services/door-to-door-car-shipping/)
 
@@ -67,7 +87,9 @@ The assigned carrier aims to pick up and deliver as close to your addresses as s
 
 ### Expedited Auto Transport
 
-Priority scheduling options for time-sensitive shipments. Availability and timing depend on your route, vehicle, requested dates, and available equipment. 
+Priority scheduling options for time-sensitive shipments. Availability and timing depend on your route, vehicle, requested dates, and available equipment.
+
+**20–40% premium for 24–48 hour dispatch.** 
 
 [Explore Expedited Transport →](/expedited-auto-transport/)
 
@@ -75,7 +97,9 @@ Priority scheduling options for time-sensitive shipments. Availability and timin
 
 ### Motorcycle Shipping
 
-Request transport options for eligible motorcycles. Share your bike’s make, model, condition, dimensions, modifications, and route so suitable carrier options can be reviewed. 
+Request transport options for eligible motorcycles. Share your bike’s make, model, condition, dimensions, modifications, and route so suitable carrier options can be reviewed.
+
+**Flat rates from $300–$800 by distance.** 
 
 [Learn About Motorcycle Shipping →](/services/motorcycle-shipping/)
 
@@ -83,7 +107,9 @@ Request transport options for eligible motorcycles. Share your bike’s make, mo
 
 ### Military Car Shipping
 
-Request vehicle shipping support for PCS moves, new assignments, and other military relocations. Tell us your route and timing so available transport options can be reviewed. 
+Request vehicle shipping support for PCS moves, new assignments, and other military relocations. Tell us your route and timing so available transport options can be reviewed.
+
+**PCS-focused scheduling with flexible pickup windows.** 
 
 [Explore Military Car Shipping →](/services/military-car-shipping/)
 
@@ -91,7 +117,9 @@ Request vehicle shipping support for PCS moves, new assignments, and other milit
 
 ### Classic & Luxury Car Shipping
 
-Plan transport for classic, luxury, exotic, collector, and specialty vehicles. Enclosed carrier availability may be discussed based on your vehicle and route. 
+Plan transport for classic, luxury, exotic, collector, and specialty vehicles. Enclosed carrier availability may be discussed based on your vehicle and route.
+
+**Enclosed carriers rated for high-value vehicles.** 
 
 [Explore Classic & Luxury Transport →](/services/luxury-car-shipping/)
 
@@ -99,7 +127,9 @@ Plan transport for classic, luxury, exotic, collector, and specialty vehicles. E
 
 ### Dealer & Fleet Vehicle Transport
 
-Request transport planning for dealer inventory, auction purchases, business vehicles, or multiple-unit moves. Share vehicle count, locations, timing, and preferences. 
+Request transport planning for dealer inventory, auction purchases, business vehicles, or multiple-unit moves. Share vehicle count, locations, timing, and preferences.
+
+**Multi-unit pricing for inventory and business moves.** 
 
 [Explore Dealer & Fleet Transport →](/services/car-dealer-shipping/)
 
@@ -118,6 +148,10 @@ Neon Auto Transport can review transport requests for seasonal moves, college re
 [ Request a Specialized Transport Quote → ](/car-shipping-quote/)
 
 ## Vehicle Transport Services FAQs
+
+### What car transport services do you offer?
+
+We arrange open auto transport, enclosed car shipping, door-to-door pickup and delivery, expedited transport, motorcycle shipping, military PCS vehicle shipping, classic and luxury car transport, and dealer and fleet vehicle moves — all coordinated nationwide as a licensed broker (MC 1703787, USDOT 4355879).
 
 ### What types of vehicles can be shipped?
 
