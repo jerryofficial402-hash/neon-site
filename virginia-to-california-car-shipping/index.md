@@ -23,7 +23,7 @@ TOP-RATED INTERSTATE ROUTE
 
 Neon Auto Transport ships cars to and from Virginia to California Car Shipping with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
-Fast, fully insured door-to-door auto transport from Virginia to California. Get a transparent quote instantly. 
+Fast, fully insured door-to-door auto transport from Virginia to California. Connect directly to our statewide [California car shipping](/california-car-shipping/) network and get a transparent quote instantly. 
 
 [ Get an Instant Quote ](/cost-calculator/) [ (571) 576-7711 ](tel:5715767711)
 

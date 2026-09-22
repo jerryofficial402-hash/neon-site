@@ -92,7 +92,7 @@ Open transport is generally suitable for the vast majority of personal and comme
 
 ### Open Transport for Snowbird Car Shipping
 
-Open transport is the standard method for **snowbird car shipping** — seasonal moves between northern states and winter destinations like Florida, Arizona, and Texas. Demand on these routes rises predictably: southbound in fall, northbound again in spring. Booking 3–4 weeks ahead of your travel dates and staying flexible on pickup timing is the most effective way to avoid the tightest capacity weeks on these corridors.
+Open transport is the standard method for **snowbird car shipping** — seasonal moves between northern states and winter destinations like Florida, Arizona, Texas, and [California car shipping](/california-car-shipping/) routes. Demand on these routes rises predictably: southbound in fall, northbound again in spring. Booking 3–4 weeks ahead of your travel dates and staying flexible on pickup timing is the most effective way to avoid the tightest capacity weeks on these corridors.
 
 **When to consider enclosed?** [Enclosed Car Shipping](/services/enclosed-auto-transport/) may be more appropriate when protection from weather and road debris is a higher priority, such as classic, luxury, exotic, or collector vehicles. 
 
