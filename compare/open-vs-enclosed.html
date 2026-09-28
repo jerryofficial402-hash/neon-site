@@ -635,28 +635,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header>
 
   <!-- Hero Section -->
-  
-  <section class="relative bg-[#0a2540] pt-32 pb-16">
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px); background-size: 50px 50px;"></div>
+  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 pb-16 lg:pt-36 lg:pb-20">
     <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center relative z-10">
-      <nav class="mb-6 text-sm text-white/50">
-        <a href="/" class="hover:text-white/80 transition">Home</a>
-        <span class="mx-2">/</span>
-        <span class="text-[#00d4ff]">Open vs Enclosed</span>
+      
+      <!-- Breadcrumbs -->
+      <nav aria-label="Breadcrumbs" class="flex items-center justify-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
+        <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
+        <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
+        <span class="text-[#0a2540] font-bold">Open vs Enclosed Auto Transport</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-black text-white mb-4" style="text-shadow: 0 0 30px rgba(0,212,255,0.3);">
-        Open <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-[#635bff]">vs Enclosed</span> Transport
+
+      <!-- License Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+        FMCSA Registered • USDOT #4355879 • MC #1703787
+      </div>
+
+      <!-- H1 Heading -->
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight leading-tight">
+        Open vs Enclosed: <span class="text-[#2563eb]">Auto Transport Comparison</span>
       </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
-    <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
-      <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-      Quick Answer
-    </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
-      <p itemprop="text">Open auto transport averages $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) and carries 90% of vehicles nationwide. Enclosed auto transport costs $1.00–$2.50 per mile ($1,200–$2,800 coast-to-coast) — a 30–60% premium providing 100% weather, rock chip, and road debris protection with hydraulic lift gates and up to $500,000 cargo insurance. Choose open for daily drivers; choose enclosed for classic, luxury, exotic, and low-clearance vehicles.</p>
-    </div>
-  </section>
+      <!-- Quick Answer Direct Box -->
+      <section class="quick-answer rounded-2xl p-6 my-6 shadow-sm border border-[#e6e6e6] bg-white text-left" aria-label="Quick Answer: Open vs Enclosed Transport">
+        <div class="flex items-center justify-between gap-4 mb-3">
+          <h2 class="quick-answer-title text-xl font-bold text-[#0a2540] flex items-center gap-2">
+            <svg class="w-5 h-5 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Quick Answer
+          </h2>
+          <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#e0f2fe] text-[#0369a1] border border-[#bae6fd]">Direct Answer</span>
+        </div>
+        <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+          <p itemprop="text">Open auto transport averages $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) and carries 90% of vehicles nationwide. Enclosed auto transport costs $1.00–$2.50 per mile ($1,200–$2,800 coast-to-coast) — a 30–60% premium providing 100% weather, rock chip, and road debris protection with hydraulic lift gates and up to $500,000 cargo insurance. Choose open for daily drivers; choose enclosed for classic, luxury, exotic, and low-clearance vehicles.</p>
+        </div>
+      </section>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+        <a href="/cost-calculator/" class="btn-primary flex items-center justify-center gap-2 text-center" style="background-color: #635bff; color: #ffffff; padding: 0.875rem 1.75rem; border-radius: 9999px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(99,91,255,0.3);">
+          Calculate Your Shipping Rate
+          <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+        <a href="tel:5715767711" class="px-6 py-3.5 rounded-full font-bold text-base transition-all duration-300 flex items-center justify-center gap-2 border border-[#e6e6e6] bg-white text-[#0a2540] hover:bg-slate-50 shadow-sm" style="text-decoration: none;">
+          <svg class="w-4 h-4 text-[#2563eb]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          (571) 576-7711
+        </a>
+      </div>
 
     </div>
   </section>
