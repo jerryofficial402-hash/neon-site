@@ -1,6 +1,6 @@
 ---
 title: "Car Shipping from Houston, TX to Los | Neon Auto Transport"
-url: https://neonautotransport.com/routes/city/houston-tx-to-los-angeles-ca/
+url: https://neonautotransport.com/texas-to-california-car-shipping/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"

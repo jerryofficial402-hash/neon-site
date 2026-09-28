@@ -1,6 +1,6 @@
 ---
 title: "Car Shipping from San Francisco, CA to | Neon Auto Transport"
-url: https://neonautotransport.com/routes/city/san-francisco-ca-to-los-angeles-ca/
+url: https://neonautotransport.com/california-car-shipping/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
@@ -228,7 +228,7 @@ Talk to an auto transport expert now or get an instant quote online.
 
   * • Main State Hub: [California Car Shipping Services](/california-car-shipping/)
   * [Fresno Car Shipping](/routes/city/fresno-ca/)
-  * [Houston Tx To Los Angeles Car Shipping](/routes/city/houston-tx-to-los-angeles-ca/)
+  * [Houston Tx To Los Angeles Car Shipping](/texas-to-california-car-shipping/)
 
 
 

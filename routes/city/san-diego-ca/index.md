@@ -193,7 +193,7 @@ Neon Auto Transport can ship your car to or from San Diego or any surrounding ar
 
   * • Main State Hub: [California Car Shipping Services](/california-car-shipping/)
   * [Fresno Car Shipping](/routes/city/fresno-ca/)
-  * [Houston Tx To Los Angeles Car Shipping](/routes/city/houston-tx-to-los-angeles-ca/)
+  * [Houston Tx To Los Angeles Car Shipping](/texas-to-california-car-shipping/)
 
 
 

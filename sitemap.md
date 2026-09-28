@@ -219,7 +219,7 @@
 - [Honolulu Hi Car Shipping](https://neonautotransport.com/routes/city/honolulu-hi/)
 - [Hoover Al Car Shipping](https://neonautotransport.com/routes/city/hoover-al/)
 - [Houston Tx Car Shipping](https://neonautotransport.com/routes/city/houston-tx/)
-- [Houston Tx To Los Angeles Ca Car Shipping](https://neonautotransport.com/routes/city/houston-tx-to-los-angeles-ca/)
+
 - [Huntington Wv Car Shipping](https://neonautotransport.com/routes/city/huntington-wv/)
 - [Huntsville Al Car Shipping](https://neonautotransport.com/routes/city/huntsville-al/)
 - [Idaho Falls Id Car Shipping](https://neonautotransport.com/routes/city/idaho-falls-id/)
@@ -354,7 +354,7 @@
 - [San Diego Ca Car Shipping](https://neonautotransport.com/routes/city/san-diego-ca/)
 - [San Diego Ca To Seattle Wa Car Shipping](https://neonautotransport.com/routes/city/san-diego-ca-to-seattle-wa/)
 - [San Francisco Ca Car Shipping](https://neonautotransport.com/routes/city/san-francisco-ca/)
-- [San Francisco Ca To Los Angeles Ca Car Shipping](https://neonautotransport.com/routes/city/san-francisco-ca-to-los-angeles-ca/)
+
 - [San Jose Ca Car Shipping](https://neonautotransport.com/routes/city/san-jose-ca/)
 - [Sanford Me Car Shipping](https://neonautotransport.com/routes/city/sanford-me/)
 - [Santa Fe Nm Car Shipping](https://neonautotransport.com/routes/city/santa-fe-nm/)

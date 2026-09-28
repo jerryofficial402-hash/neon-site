@@ -1495,6 +1495,26 @@
       "source": "/blog/how-much-does-it-cost-to-ship-a-car-across-the-country",
       "destination": "/car-shipping-cost/",
       "statusCode": 301
+    },
+    {
+      "source": "/routes/city/houston-tx-to-los-angeles-ca",
+      "destination": "/texas-to-california-car-shipping/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/houston-tx-to-los-angeles-ca/",
+      "destination": "/texas-to-california-car-shipping/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/san-francisco-ca-to-los-angeles-ca",
+      "destination": "/california-car-shipping/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/san-francisco-ca-to-los-angeles-ca/",
+      "destination": "/california-car-shipping/",
+      "permanent": true
     }
   ]
 }

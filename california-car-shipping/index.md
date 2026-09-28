@@ -303,7 +303,7 @@ Talk to an auto transport expert now or get an instant quote for shipping to/fro
 
 Popular local pickup & delivery hubs across California
 
-[ Fresno Car Shipping → ](/routes/city/fresno-ca/) [ Houston Tx To Los Angeles Car Shipping → ](/routes/city/houston-tx-to-los-angeles-ca/) [ Los Angeles Car Shipping → ](/routes/city/los-angeles-ca/) [ New York City Ny To Los Angeles Car Shipping → ](/routes/city/new-york-city-ny-to-los-angeles-ca/) [ San Diego Car Shipping → ](/routes/city/san-diego-ca/) [ San Francisco Car Shipping → ](/routes/city/san-francisco-ca/) [ San Francisco Ca To Los Angeles Car Shipping → ](/routes/city/san-francisco-ca-to-los-angeles-ca/) [ San Jose Car Shipping → ](/routes/city/san-jose-ca/)
+[ Fresno Car Shipping → ](/routes/city/fresno-ca/) [ Houston Tx To Los Angeles Car Shipping → ](/texas-to-california-car-shipping/) [ Los Angeles Car Shipping → ](/routes/city/los-angeles-ca/) [ New York City Ny To Los Angeles Car Shipping → ](/routes/city/new-york-city-ny-to-los-angeles-ca/) [ San Diego Car Shipping → ](/routes/city/san-diego-ca/) [ San Francisco Car Shipping → ](/routes/city/san-francisco-ca/) [ San Francisco Ca To Los Angeles Car Shipping → ](/california-car-shipping/) [ San Jose Car Shipping → ](/routes/city/san-jose-ca/)
 
 ### Popular State-to-State Shipping Corridors from California
 
