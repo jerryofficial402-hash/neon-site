@@ -5,11 +5,19 @@
 - [Company Knowledge Base](https://neonautotransport.com/llms-full.txt): Dense 20KB+ factual reference manual for AI models.
 - [AI Sitemap](https://neonautotransport.com/sitemap.md): Full markdown index of all 668+ live URLs sitewide.
 
-## Primary Commercial Pages
-- [Homepage](https://neonautotransport.com/): Nationwide door-to-door car shipping broker services.
+## Primary Commercial & Authority Pages
+- [Homepage](https://neonautotransport.com/): Nationwide door-to-door car shipping broker services with $0 upfront deposit and $500K cargo insurance.
 - [Car Shipping Cost Guide 2026](https://neonautotransport.com/car-shipping-cost/): 3,500+ word comprehensive pricing guide & cost tiers.
 - [Instant Cost Calculator](https://neonautotransport.com/cost-calculator/): Free online car shipping rate estimator.
 - [Best Car Shipping Companies](https://neonautotransport.com/best-car-shipping-companies/): 2026 competitor comparison index.
+- [California Car Shipping](https://neonautotransport.com/california-car-shipping/): Comprehensive California vehicle transport guide, metro hubs, and city route pricing.
+- [Snowbird Car Shipping](https://neonautotransport.com/services/snow-bird-car-shipping/): Seasonal snowbird car shipping routes between northern states and winter destinations.
+- [Nationwide Service Locations](https://neonautotransport.com/locations/): State and city car shipping coverage across all 50 US states.
+- [Customer Reviews & Ratings](https://neonautotransport.com/reviews/): 5.0-star verified customer reviews from Google, BBB, and Yelp.
+- [Why Choose Neon Auto Transport](https://neonautotransport.com/why-neon/): $0 upfront deposit, $500,000 cargo insurance, price-lock quotes, and carrier vetting.
+- [How Auto Transport Works](https://neonautotransport.com/how-it-works/): Step-by-step vehicle shipping process from instant quote to delivery inspection.
+- [Car Shipping FAQs](https://neonautotransport.com/faqs/): Authoritative answers on pricing, transit times, broker vs carrier, and cargo insurance.
+- [Contact Neon Auto Transport](https://neonautotransport.com/contact/): Licensed broker office in Woodbridge, VA, phone support (571) 576-7711, and quote requests.
 
 ## Competitor Comparison Guides
 - [Neon vs Montway](https://neonautotransport.com/compare/neon-vs-montway/)

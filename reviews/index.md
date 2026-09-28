@@ -4,7 +4,7 @@ url: https://neonautotransport.com/reviews/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Read authentic customer reviews of Neon Auto Transport. Verified 5.0-star rating on Google Maps. Licensed, insured, zero-deposit nationwide vehicle."
+description: "Neon Auto Transport holds a 5.0-star rating from verified customers on Google, BBB, and Yelp. Read real car shipping reviews from nationwide routes."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

@@ -4,7 +4,7 @@ url: https://neonautotransport.com/contact/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Contact Neon Auto Transport for car shipping quotes and support. Call (571) 576-7711 or email info@neonautotransport.com. Business locations in Woodbridge, VA and Live Oak, CA."
+description: "Contact Neon Auto Transport LLC — licensed auto transport broker in Woodbridge, VA. Call (571) 576-7711 or email for a free car shipping quote."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

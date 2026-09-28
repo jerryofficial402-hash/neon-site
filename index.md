@@ -4,7 +4,7 @@ url: https://neonautotransport.com/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Get a free nationwide car shipping quote from Neon Auto Transport. Compare open and enclosed auto transport, door-to-door delivery, and estimated pricing for your route."
+description: "Neon Auto Transport LLC is an FMCSA-licensed auto transport broker (MC #1703787, USDOT #4355879) offering door-to-door car shipping in all 50 states with $0 upfront deposit, $500,000 cargo insurance, and 5.0-star rated service. Call (571) 576-7711 for a free quote."
 type: "homepage"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

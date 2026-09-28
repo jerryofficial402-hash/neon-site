@@ -4,7 +4,7 @@ url: https://neonautotransport.com/locations/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Explore Neon Auto Transport nationwide service areas across all 50 states, major cities, and popular auto transport corridors."
+description: "Neon Auto Transport ships cars to and from all 50 US states as an FMCSA-licensed broker. Browse state and city routes. Call (571) 576-7711."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

@@ -4,7 +4,7 @@ url: https://neonautotransport.com/how-it-works/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Learn how car shipping works with Neon Auto Transport. Step-by-step guide from getting a quote and carrier dispatch to vehicle inspection and door-to-door delivery."
+description: "How car shipping works: get an instant quote, book with $0 deposit, get a vetted carrier assigned, inspect and sign the Bill of Lading at delivery."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

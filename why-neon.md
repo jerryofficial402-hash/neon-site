@@ -4,7 +4,7 @@ url: https://neonautotransport.com/why-neon/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Learn why customers choose Neon Auto Transport for nationwide vehicle shipping. Understand our licensed broker role, carrier assignment process, Bill of Lading inspections, and open or enclosed transport options."
+description: "Why choose Neon Auto Transport: $0 upfront deposit, $500,000 cargo insurance, vetted FMCSA-registered carriers, price-lock quotes. MC #1703787."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

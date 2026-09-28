@@ -4,7 +4,7 @@ url: https://neonautotransport.com/faqs/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Find answers to your auto transport questions. Learn about pricing, insurance, vehicle prep, and the car shipping process."
+description: "Car shipping FAQs answered: costs, transit times, insurance, and broker vs carrier. Neon Auto Transport is an FMCSA-licensed broker, MC #1703787."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
