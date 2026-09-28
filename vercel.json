@@ -217,6 +217,16 @@
   ],
   "redirects": [
     {
+      "source": "/blog/open-vs-enclosed-auto-transport",
+      "destination": "/compare/open-vs-enclosed/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/open-vs-enclosed-auto-transport/",
+      "destination": "/compare/open-vs-enclosed/",
+      "permanent": true
+    },
+    {
       "source": "/expedited-auto-transport/",
       "destination": "/services/expedited-auto-transport/",
       "statusCode": 301

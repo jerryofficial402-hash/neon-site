@@ -1,6 +1,6 @@
 ---
 title: "Open vs. Enclosed Auto Transport | Neon Auto Transport"
-url: https://neonautotransport.com/blog/open-vs-enclosed-auto-transport/
+url: https://neonautotransport.com/compare/open-vs-enclosed/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"

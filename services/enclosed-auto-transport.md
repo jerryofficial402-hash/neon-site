@@ -21,7 +21,7 @@ Premium Enclosed Carrier Service
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Enclosed auto transport costs $1.00–$2.50 per mile — roughly $900–$1,200 for under 500 miles and $2,000–$2,800 coast-to-coast, a 30–60% premium over open transport. Neon Auto Transport is an FMCSA-licensed broker (MC #1703787) arranging soft-sided, hard-sided, and single-car enclosed trailers with lift gates for low-clearance vehicles, $0 upfront deposit, and up to $500,000 cargo insurance. Call (571) 576-7711 for an enclosed quote.
 
 The gold standard for shipping high-value, classic, exotic, and low-clearance vehicles across the United States. Sealed trailers shield your investment from weather, road debris, dust, and salt spray with $500,000 active insurance. 
 
@@ -97,14 +97,14 @@ For owners of exotic cars with low ground clearance, a lift gate is mandatory. I
   * Classic and vintage vehicles — pre-1980 American muscle, European classics, original unrestored vehicles
   * Recently restored show cars — any vehicle where paint or mechanical originality is critical
   * Low-clearance vehicles — ground clearance under 4 inches requires lift gate equipped enclosed carrier
-  * Vehicles valued over $thousands of — insurance peace of mind alone justifies the premium
+  * Vehicles valued over $100,000 — insurance peace of mind alone justifies the premium
   * Electric vehicles on certain routes — most EVs are heavier than equivalent gas vehicles due to battery weight and may exceed open trailer per-vehicle weight limits
 
 
 
 ### Consider enclosed:
 
-  * Luxury daily drivers valued $80,000–$thousands of — Mercedes S-Class, BMW 7 Series, Audi A8, Lexus LS
+  * Luxury daily drivers valued $80,000–$150,000 — Mercedes S-Class, BMW 7 Series, Audi A8, Lexus LS
   * Any vehicle shipping through salt-belt states November–March (see salt belt section below)
   * Recently painted vehicles — fresh paintwork is vulnerable to rock chips on open carriers
   * Collector vehicles regardless of value — sentimental and historical value exceeds replacement cost
@@ -180,7 +180,7 @@ Inspect in daylight before signing the delivery BOL. Check paint under direct li
 
 ### No upfront deposit — not even for enclosed.
 
-Most competitors require $200–$500 deposits to book enclosed transport. Neon charges nothing until a vetted carrier is assigned. For a $thousands of Ferrari, you should not be handing money to a broker before your vehicle is actively dispatched.
+Most competitors require $200–$500 deposits to book enclosed transport. Neon charges nothing until a vetted carrier is assigned. For a six-figure Ferrari, you should not be handing money to a broker before your vehicle is actively dispatched.
 
 ### Direct driver contact.
 
