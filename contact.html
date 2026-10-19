@@ -259,7 +259,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <h3 class="text-2xl font-black text-[#0a2540] tracking-tight mb-2">Send Us a Message</h3>
      <p class="text-xs text-[#425466] mb-8">Share your route, vehicle details, preferred pickup dates, or question. A member of our team will review your request and respond as soon as possible.</p>
      
-     <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+     <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
       <input type="hidden" name="access_key" value="5e86dea9-8ed6-476f-b4db-1ab24c5de766">
       <input type="hidden" name="subject" value="Contact Us Message: Neon Auto Transport">
 
@@ -301,6 +301,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        Submit Message →
       </button>
      </form>
+     <script>
+      // Also save the message as a lead in the Neon CRM (the email still goes out as before)
+      document.getElementById('contactForm').addEventListener('submit', function () {
+        try {
+          var name = (document.getElementById('name').value || '').trim().split(/\s+/);
+          fetch('/api/leads/', {
+            method: 'POST',
+            keepalive: true,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ fields: {
+              firstName: name.shift() || '',
+              lastName: name.join(' '),
+              email: document.getElementById('email_address').value,
+              phone: document.getElementById('phone_number').value,
+              message: document.getElementById('message').value,
+              source: 'Website'
+            } })
+          });
+        } catch (e) {}
+      });
+     </script>
     </div>
    </div>
 
