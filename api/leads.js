@@ -47,7 +47,7 @@ export default async function handler(req, res) {
       firstName, lastName, email, phone,
       vehicleYear, vehicleMake, vehicleModel, vehicleType, vehicleCondition,
       pickupZip, deliveryZip, desiredPickupDate, transportType, source,
-      pickupLocation, dropoffLocation, additionalVehicles
+      pickupLocation, dropoffLocation, additionalVehicles, estimatedPrice, message
     } = fields;
 
     const customerName = [firstName, lastName].filter(Boolean).join(' ') || 'Unknown (AI Lead)';
@@ -60,6 +60,8 @@ export default async function handler(req, res) {
       transportType ? `Transport: ${transportType} Transport` : null,
       vehicleType ? `Vehicle Type: ${vehicleType}` : null,
       desiredPickupDate ? `Desired Pickup Date: ${desiredPickupDate}` : null,
+      estimatedPrice ? `Website Estimate: ${estimatedPrice}` : null,
+      message ? `Message: ${String(message).slice(0, 1500)}` : null,
       `Source: ${leadSource} (neonautotransport.com)`
     ].filter(Boolean).join(' | ');
 

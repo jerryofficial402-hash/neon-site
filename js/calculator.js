@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 desiredPickupDate: pickupDate,
                 transportType: transportType === 'enclosed' ? 'Enclosed' : 'Open',
                 source: 'Quote Calculator',
+                estimatedPrice,
                 vehicleCount: vehicles.length,
                 additionalVehicles: vehicles.length > 1 ? vehicleSummary : ''
             }
