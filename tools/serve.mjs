@@ -6,7 +6,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const PORT = +(process.argv[2] || 4173);
-const ROOT = process.cwd();
+// Serve the site folder (parent of tools/) whatever directory this is started from
+const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..');
+process.chdir(ROOT);
 const vercel = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.xml': 'application/xml', '.txt': 'text/plain', '.md': 'text/markdown', '.mp4': 'video/mp4', '.avif': 'image/avif', '.woff2': 'font/woff2' };
 

@@ -10,8 +10,8 @@
   --nx-navy-hover: #042f6b;
   --nx-blue: #0a5fb4;          /* logo blue: links, highlights */
   --nx-sky: #0096dc;           /* logo sky: focus rings, small accents */
-  --nx-line: #ededed;
-  --nx-line-2: #f2f2f2;
+  --nx-line: #e3e7ed;
+  --nx-line-2: #eceff3;
   --nx-soft: #fafafa;
   --nx-radius: 12px;
   --nx-card-radius: 16px;
@@ -292,3 +292,38 @@ a.border-2, button.border-2 { border-width: 1px !important; border-color: var(--
 }
 :is([class*="from-[#635bff]"], [class*="from-[#4338ca]"], [class*="from-indigo-"], [class*="from-purple-"], [class*="from-violet-"]) :is(.text-white, [class*="text-white/"], .text-indigo-100, .text-indigo-200, .text-purple-100) { color: var(--nx-text) !important; }
 :is([class*="from-[#635bff]"], [class*="from-[#4338ca]"], [class*="from-indigo-"]) :is(h2, h3, h4, .text-3xl, .text-4xl, .text-5xl) { color: var(--nx-blue) !important; }
+
+/* ================= Refinements ================= */
+/* Logo: vector, sized by height */
+.nx-logo img { height: 40px; }
+.nx-footer-brand .nx-logo img { height: 36px; }
+@media (max-width: 420px) { .nx-logo img { height: 32px; } }
+
+/* First hero sat ~110px below the old dark header; trim to the 76px white header */
+main > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*="lg:pt-32"], [class*="lg:pt-40"]), #hero-section {
+  padding-top: calc(var(--nx-header-h) + 48px) !important; padding-bottom: 72px !important;
+}
+@media (max-width: 767px) {
+  main > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*="lg:pt-32"], [class*="lg:pt-40"]), #hero-section {
+    padding-top: calc(var(--nx-header-h) + 28px) !important; padding-bottom: 48px !important;
+  }
+}
+
+/* Quote calculator card: lifted off the white page */
+:is(.stripe-card, div[class*="rounded"]):has(> #advancedCalcForm, > div > #advancedCalcForm) {
+  background: #fff !important; border: 1px solid #dde3eb !important; border-radius: 18px !important;
+  box-shadow: 0 1px 2px rgba(10, 25, 50, .05), 0 24px 48px -24px rgba(5, 60, 135, .28) !important;
+}
+#advancedCalcForm input:not([type="checkbox"]):not([type="radio"]), #advancedCalcForm select { background: #f8f9fb !important; border-color: #e3e7ed !important; }
+#advancedCalcForm input:focus, #advancedCalcForm select:focus { background: #fff !important; }
+#advancedCalcForm .vehicle-group { border-color: #e3e7ed !important; background: #fff; }
+
+/* Cards on white get a touch more definition; cards on soft sections stay white */
+.bg-\[\#f6f9fc\] .stripe-card, .bg-\[\#f0f5fa\] .stripe-card, .bg-\[\#f8fafc\] .stripe-card,
+.bg-\[\#f6f9fc\] [class*="rounded-2xl"][class*="border"], .bg-\[\#f0f5fa\] [class*="rounded-2xl"][class*="border"] { background: #fff !important; }
+.stripe-card:hover, [class*="card-hover-"]:hover, a[class*="rounded-2xl"][class*="border"]:hover { border-color: #c9d2de !important; }
+
+/* One content width for header and page (Tailwind .container grows to 1536px on very wide screens) */
+.nx-header-in { max-width: 1280px; padding-left: 32px; padding-right: 32px; }
+@media (min-width: 1536px) { .container { max-width: 1280px !important; } }
+@media (max-width: 1023px) { .nx-header-in { padding-left: 16px; padding-right: 16px; } }

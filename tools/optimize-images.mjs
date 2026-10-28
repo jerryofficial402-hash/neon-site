@@ -8,7 +8,7 @@ let before = 0, after = 0, n = 0;
 for (const f of fs.readdirSync('images')) {
   const p = path.join('images', f);
   const ext = path.extname(f).toLowerCase();
-  if (!['.jpg', '.jpeg', '.png'].includes(ext) || f.startsWith('neon-logo') || f === 'logo.png') continue;
+  if (!['.jpg', '.jpeg', '.png'].includes(ext) || f.startsWith('neon-logo') || f.startsWith('logo.')) continue;
   const size = fs.statSync(p).size;
   if (size < MIN) continue;
   const img = sharp(fs.readFileSync(p)).rotate().resize({ width: 1600, withoutEnlargement: true });
