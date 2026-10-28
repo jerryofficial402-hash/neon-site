@@ -61,10 +61,10 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" href="/css/tailwind.css?v=3" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=3"></noscript>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="/css/tailwind.css?v=20261028" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=20261028"></noscript>
+  <link rel="stylesheet" href="/css/styles.css?v=20261028">
 
   <!-- JSON-LD: WebPage, BreadcrumbList, Service, FAQPage -->
   <script type="application/ld+json">
@@ -207,7 +207,7 @@
     #mobile-sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 50; padding: 12px; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid #e6e6e6; box-shadow: 0 -4px 10px -1px rgba(0,0,0,0.1); display: flex; gap: 12px; align-items: center; justify-content: space-between; box-sizing: border-box; }
     @media (min-width: 1024px) { #mobile-sticky-cta { display: none !important; } }
     .mobile-cta-btn { flex: 1; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; border-radius: 8px; font-weight: 900; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-family: 'Inter', sans-serif; font-size: 15px; box-sizing: border-box; }
-    .mobile-cta-btn.call { background-color: #39FF14; color: #0a2540; }
+    .mobile-cta-btn.call { background-color: #0a5fb4; color: #ffffff; }
     .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
     .mobile-cta-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
     
@@ -221,6 +221,7 @@
       width: 100%;
     }
   </style>
+  <link rel="stylesheet" href="/css/theme.css?v=20261028">
 </head>
 
 <body class="antialiased bg-[#f6f9fc] text-[#425466]">
@@ -230,49 +231,93 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Global Header -->
-  <header class="fixed top-0 w-full z-50 transition-all duration-300 shadow-md" id="global-header" style="background-color:#0a2540">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl flex items-center justify-between h-20">
-      
-      <!-- Left: Logo -->
-      <a href="/" class="text-xl lg:text-2xl font-black tracking-tight uppercase text-white hover:opacity-90 transition flex items-center gap-1 shrink-0" style="text-decoration: none;">
-        <span>NEON</span> <span class="text-[#00D1FF]">AUTO TRANSPORT</span>
-      </a>
-
-      <!-- Center: Desktop Nav -->
-      <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-bold text-white">
-        <a href="/how-it-works/" class="hover:text-[#00D1FF] transition">How it works</a>
-        <a href="/services/" class="hover:text-[#00D1FF] transition">Transport Services</a>
-        <a href="/why-neon/" class="hover:text-[#00D1FF] transition">Why Neon</a>
-        <a href="/contact/" class="hover:text-[#00D1FF] transition">Contact Us</a>
-      </nav>
-
-      <!-- Right: CTA Actions -->
-      <div class="hidden lg:flex items-center gap-3.5 shrink-0">
-        <!-- Language Switcher -->
-        <a href="/es/cotizador-envio-de-autos/" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition" style="text-decoration: none;">
-          <span>🇪🇸</span> Español
-        </a>
-        <a href="tel:5715767711" class="inline-flex items-center gap-2 font-black text-sm transition shadow-md hover:bg-[#32e011]" style="background-color: #39FF14 !important; color: #0a2540 !important; padding: 10px 22px !important; border-radius: 9999px !important; text-decoration: none !important; white-space: nowrap !important;">
-          <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-          (571) 576-7711
-        </a>
+  <header id="global-header" class="nx-header">
+  <div class="nx-wrap nx-header-in">
+    <a href="/" class="nx-logo" aria-label="Neon Auto Transport home">
+      <img src="/images/neon-logo-horizontal.webp" alt="Neon Auto Transport" width="168" height="40" fetchpriority="high">
+    </a>
+    <nav class="nx-nav" aria-label="Main">
+      <div class="nx-dd">
+        <a href="/services/" class="nx-dd-btn" aria-haspopup="true">Services <svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <div class="nx-dd-panel">
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Transport type</p>
+            <a href="/services/open-auto-transport/">Open Auto Transport</a>
+            <a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a>
+            <a href="/services/door-to-door-car-shipping/">Door-to-Door Shipping</a>
+            <a href="/services/terminal-to-terminal-car-shipping/">Terminal-to-Terminal</a>
+            <a href="/services/expedited-auto-transport/">Expedited Transport</a>
+            <a href="/services/car-shipping-to-another-state/">Shipping to Another State</a>
+          </div>
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Vehicle</p>
+            <a href="/services/luxury-car-shipping/">Luxury &amp; Exotic Cars</a>
+            <a href="/services/motorcycle-shipping/">Motorcycle Shipping</a>
+            <a href="/services/truck-shipping-services/">Truck Shipping</a>
+            <a href="/services/heavy-haul-transport/">Heavy Haul Transport</a>
+            <a href="/services/rental-car-shipping/">Rental Car Shipping</a>
+            <a href="/services/fleet-management-transportation-services/">Fleet Transport</a>
+          </div>
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Customer</p>
+            <a href="/services/military-car-shipping/">Military Car Shipping</a>
+            <a href="/services/college-car-shipping/">College Car Shipping</a>
+            <a href="/services/snow-bird-car-shipping/">Snowbird Car Shipping</a>
+            <a href="/services/corporate-relocation/">Corporate Relocation</a>
+            <a href="/services/car-dealer-shipping/">Car Dealer Shipping</a>
+            <a href="/services/auto-auction-shipping/">Auto Auction Shipping</a>
+          </div>
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Long distance</p>
+            <a href="/services/hawaii-auto-transport/">Hawaii Auto Transport</a>
+            <a href="/services/alaska-auto-transport/">Alaska Auto Transport</a>
+            <a href="/services/international-overseas-car-shipping-services/">International Shipping</a>
+            <a href="/services/" class="nx-dd-all">All services &rarr;</a>
+          </div>
+        </div>
       </div>
-
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" aria-label="Toggle mobile menu" class="lg:hidden text-white focus:outline-none">
-        <svg aria-hidden="true" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-      </button>
+      <a href="/locations/">Locations</a>
+      <a href="/how-it-works/">How It Works</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nx-actions">
+      <a href="tel:+15715767711" class="nx-btn nx-btn-ghost">(571) 576-7711</a>
+      <a href="/cost-calculator/" class="nx-btn">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <button type="button" class="nx-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nx-mobile"><span></span><span></span><span></span></button>
     </div>
-    
-    <!-- Mobile Nav -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-[#0a2540] border-t border-white/10 flex flex-col p-5 space-y-4 text-center font-semibold text-slate-200 shadow-2xl">
-      <a href="/how-it-works/" class="py-2 hover:text-[#00D1FF] transition">How it works</a>
-      <a href="/services/" class="py-2 hover:text-[#00D1FF] transition">Transport Services</a>
-      <a href="/why-neon/" class="py-2 hover:text-[#00D1FF] transition">Why Neon</a>
-      <a href="/reviews/" class="py-2 hover:text-[#00D1FF] transition">Customer Reviews</a>
-      <a href="/contact/" class="py-2 hover:text-[#00D1FF] transition">Contact Us</a>
-    </div>
-  </header>
+  </div>
+  <div id="nx-mobile" class="nx-mobile" hidden>
+    <nav class="nx-wrap" aria-label="Mobile">
+      <a href="/services/">Services</a>
+      <a href="/services/open-auto-transport/" class="nx-sub">Open Auto Transport</a>
+      <a href="/services/enclosed-auto-transport/" class="nx-sub">Enclosed Auto Transport</a>
+      <a href="/services/door-to-door-car-shipping/" class="nx-sub">Door-to-Door Shipping</a>
+      <a href="/services/motorcycle-shipping/" class="nx-sub">Motorcycle Shipping</a>
+      <a href="/locations/">Locations</a>
+      <a href="/how-it-works/">How It Works</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/blog/">Blog</a>
+      <a href="/faqs/">FAQs</a>
+      <a href="/contact/">Contact</a>
+      <a href="/cost-calculator/" class="nx-btn nx-btn-block">Get a Free Quote</a>
+      <a href="tel:+15715767711" class="nx-btn nx-btn-ghost nx-btn-block">Call (571) 576-7711</a>
+    </nav>
+  </div>
+  <script>
+    (function () {
+      var b = document.querySelector('.nx-burger'), m = document.getElementById('nx-mobile');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var open = b.getAttribute('aria-expanded') === 'true';
+        b.setAttribute('aria-expanded', String(!open));
+        m.hidden = open;
+        document.documentElement.classList.toggle('nx-menu-open', !open);
+      });
+    })();
+  </script>
+</header>
 
   <main>
     <!-- HERO SECTION WITH INTERACTIVE CALCULATOR -->
@@ -301,13 +346,13 @@
             </h1>
 
             <!-- Quick Answer Featured Snippet Box (Explicit Deep Navy Background & Bright White Text) -->
-            <div class="rounded-2xl p-6 my-5 shadow-xl border border-[#00d4ff]/30" style="background-color: #0a2540 !important; color: #ffffff !important;" aria-label="Quick Answer: How Much Does It Cost to Ship a Car?">
+            <div class="rounded-2xl p-6 my-5 shadow-xl border border-[#00d4ff]/30"  aria-label="Quick Answer: How Much Does It Cost to Ship a Car?">
               <div class="flex items-center justify-between gap-4 mb-3">
-                <div class="flex items-center gap-2 text-base sm:text-lg font-black" style="color: #00D1FF !important;">
-                  <svg class="w-5 h-5 shrink-0" style="color: #00D1FF !important;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <div class="flex items-center gap-2 text-base sm:text-lg font-black" style="color: #0a5fb4 !important;">
+                  <svg class="w-5 h-5 shrink-0" style="color: #0a5fb4 !important;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                   <span>Quick Answer: How Much Does It Cost to Ship a Car?</span>
                 </div>
-                <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-xs font-bold" style="background: rgba(0, 209, 255, 0.15); color: #00D1FF !important; border: 1px solid rgba(0, 209, 255, 0.3);">Direct Answer</span>
+                <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-xs font-bold" style="background: rgba(10, 95, 180, 0.15); color: #0a5fb4 !important; border: 1px solid rgba(10, 95, 180, 0.3);">Direct Answer</span>
               </div>
               <div class="text-sm md:text-base leading-relaxed" style="color: #f1f5f9 !important;" itemscope itemtype="https://schema.org/Question">
                 <p itemprop="text" style="color: #f1f5f9 !important;">
@@ -455,9 +500,9 @@
                   </button>
                   
                   <!-- Dynamic Estimated Range Banner (Explicit Deep Navy Background) -->
-                  <div class="p-4 rounded-2xl mb-4 text-center border border-cyan-500/30" style="background-color: #0a2540 !important; color: #ffffff !important;">
-                    <span class="text-xs uppercase tracking-wider font-bold block mb-1" style="color: #00D1FF !important;">Estimated Market Price Range</span>
-                    <div id="displayedPriceRange" class="text-3xl font-black my-1" style="color: #39FF14 !important;">$0 – $0</div>
+                  <div class="p-4 rounded-2xl mb-4 text-center border border-cyan-500/30" >
+                    <span class="text-xs uppercase tracking-wider font-bold block mb-1" style="color: #0a5fb4 !important;">Estimated Market Price Range</span>
+                    <div id="displayedPriceRange" class="text-3xl font-black my-1" style="color: #22c55e !important;">$0 – $0</div>
                     <p class="text-[11px]" style="color: #cbd5e1 !important;">Based on live nationwide carrier rates. Lock in your exact carrier rate below.</p>
                   </div>
 
@@ -481,7 +526,7 @@
                   </div>
 
                   <p class="text-[10px] text-[#425466] mb-4 leading-relaxed">
-                    🔒 Zero spam guarantee. We use your details strictly to dispatch your carrier rate and send tracking confirmation.
+                    Zero spam guarantee. We use your details strictly to dispatch your carrier rate and send tracking confirmation.
                   </p>
                   
                   <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
@@ -566,7 +611,7 @@
 
         <div class="grid md:grid-cols-2 gap-8 mb-8">
           <div class="bg-white p-6 md:p-8 rounded-2xl border border-[#e6e6e6] shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-blue-100 text-[#468de6] flex items-center justify-center font-black text-xl mb-4">📊</div>
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-[#468de6] flex items-center justify-center font-black text-xl mb-4"></div>
             <h3 class="text-xl font-bold text-[#0a2540] mb-3">1. Algorithmic Price Range (Calculator)</h3>
             <p class="text-sm text-[#425466] leading-relaxed mb-4">
               An online auto transport calculator evaluates historic lane averages, mileage formulas, and baseline vehicle weight adjustments. It gives you an accurate budgetary bracket so you know what realistic market pricing looks like before committing.
@@ -574,12 +619,12 @@
             <ul class="text-xs text-[#425466] space-y-2 font-medium">
               <li class="flex items-center gap-2"><span class="text-green-500 font-bold">✓</span> Useful for budgeting and financial planning</li>
               <li class="flex items-center gap-2"><span class="text-green-500 font-bold">✓</span> Instant calculation with zero personal pressure</li>
-              <li class="flex items-center gap-2"><span class="text-amber-500 font-bold">⚠</span> Does not account for sudden weather spikes or local truck bottlenecks</li>
+              <li class="flex items-center gap-2"><span class="text-amber-500 font-bold"></span> Does not account for sudden weather spikes or local truck bottlenecks</li>
             </ul>
           </div>
 
           <div class="bg-white p-6 md:p-8 rounded-2xl border border-[#e6e6e6] shadow-sm">
-            <div class="w-10 h-10 rounded-xl bg-green-100 text-[#16a34a] flex items-center justify-center font-black text-xl mb-4">🔒</div>
+            <div class="w-10 h-10 rounded-xl bg-green-100 text-[#16a34a] flex items-center justify-center font-black text-xl mb-4"></div>
             <h3 class="text-xl font-bold text-[#0a2540] mb-3">2. Dispatched Locked Quote (Carrier Confirmation)</h3>
             <p class="text-sm text-[#425466] leading-relaxed mb-4">
               A locked quote occurs when a freight coordinator matches your specific pickup dates, exact vehicle specifications, and physical address access against live FMCSA-licensed carrier schedules. This is the firm price agreed upon before your car is loaded.
@@ -595,7 +640,7 @@
         <!-- Warning Callout on Lowball Quotes -->
         <div class="p-6 bg-amber-50 border-l-4 border-amber-500 rounded-r-2xl text-amber-900 text-sm leading-relaxed">
           <div class="font-black text-base flex items-center gap-2 mb-1">
-            <span>⚠️ Beware of "Bait-and-Switch" Lowball Quotes</span>
+            <span>Beware of "Bait-and-Switch" Lowball Quotes</span>
           </div>
           <p>
             Some unscrupulous brokers generate automated quotes hundreds of dollars below market reality just to collect an upfront deposit. When independent truck drivers refuse to accept the unprofitable load, the broker demands additional funds days before your move. At Neon Auto Transport, we only publish realistic market pricing and never charge a deposit upfront.
@@ -617,7 +662,7 @@
           
           <!-- Factor 1 -->
           <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3">📍</div>
+            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3"></div>
             <h3 class="font-bold text-[#0a2540] text-base mb-2">1. Distance & Lane Density</h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               Shipping between major metro hubs connected by major interstates (like I-95, I-10, or I-80) costs less than shipping to rural areas or mountain towns that require carrier detours and deadhead miles.
@@ -626,7 +671,7 @@
 
           <!-- Factor 2 -->
           <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3">🚙</div>
+            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3"></div>
             <h3 class="font-bold text-[#0a2540] text-base mb-2">2. Vehicle Size & Weight</h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               Car haulers operate under strict 80,000 lb federal highway weight caps. Heavy SUVs, full-size trucks, roof racks, and lifted tires occupy more physical footprint and fuel capacity than compact sedans.
@@ -635,7 +680,7 @@
 
           <!-- Factor 3 -->
           <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3">🛡️</div>
+            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3"></div>
             <h3 class="font-bold text-[#0a2540] text-base mb-2">3. Open vs. Enclosed Trailer</h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               <a href="/services/door-to-door-car-shipping/" class="text-[#468de6] font-bold underline">Open transport</a> accommodates 7–10 cars per trailer, lowering cost. <a href="/services/enclosed-auto-transport/" class="text-[#468de6] font-bold underline">Enclosed transport</a> carries 2–6 cars with total weather/debris shielding, costing 40%–60% more.
@@ -644,7 +689,7 @@
 
           <!-- Factor 4 -->
           <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3">⚙️</div>
+            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3"></div>
             <h3 class="font-bold text-[#0a2540] text-base mb-2">4. Operable vs. Inoperable</h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               Vehicles that cannot start, steer, or brake require a specialized winch, auxiliary power, and additional carrier labor during loading and unloading, typically adding $100 to $200.
@@ -653,7 +698,7 @@
 
           <!-- Factor 5 -->
           <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3">☀️</div>
+            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3"></div>
             <h3 class="font-bold text-[#0a2540] text-base mb-2">5. Seasonality & Weather</h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               Auto shipping follows seasonal migration patterns. High summer relocation demand and the autumn/spring "snowbird" season (Northeast to Florida/Arizona) cause temporary rate surges on specific corridors.
@@ -662,7 +707,7 @@
 
           <!-- Factor 6 -->
           <div class="p-6 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6] shadow-sm hover:shadow-md transition">
-            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3">⏱️</div>
+            <div class="w-10 h-10 rounded-xl bg-[#468de6]/10 text-[#468de6] font-black text-lg flex items-center justify-center mb-3"></div>
             <h3 class="font-bold text-[#0a2540] text-base mb-2">6. Pickup Timing & Flexibility</h3>
             <p class="text-xs text-[#425466] leading-relaxed">
               Allowing a standard 3–5 day pickup window allows dispatchers to match your vehicle with the most cost-efficient carrier. Requiring guaranteed exact-day or <a href="/services/expedited-auto-transport/" class="text-[#468de6] font-bold underline">expedited transport</a> commands premium carrier spot rates.
@@ -887,14 +932,14 @@
     </section>
 
     <!-- CONTENT SECTION 8: READY FOR A REAL NUMBER CTA -->
-    <section class="py-16 text-center" style="background-color: #0a2540 !important; color: #ffffff !important;">
+    <section class="py-16 text-center" >
       <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
         <h2 class="text-3xl md:text-4xl font-black mb-4 text-white" style="color: #ffffff !important;">Ready for a Real, Locked Auto Transport Quote?</h2>
         <p class="text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style="color: #cbd5e1 !important;">
           Skip the guesswork. Speak directly with our dispatch team or use our interactive calculator to lock in your carrier rate today with zero deposit upfront.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#quote-form" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e011] transition shadow-lg text-base w-full sm:w-auto" style="text-decoration: none; color: #0a2540 !important; background-color: #39FF14 !important;">
+          <a href="#quote-form" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e011] transition shadow-lg text-base w-full sm:w-auto" style="text-decoration: none; color: #ffffff !important; background-color: #0a5fb4 !important;">
             Calculate Your Shipping Cost
           </a>
           <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none; color: #ffffff !important;">
@@ -979,48 +1024,67 @@
   </main>
 
   <!-- Global Footer -->
-  <footer class="bg-[#0a2540] text-slate-300 py-12 lg:py-16 border-t border-slate-800 relative overflow-hidden" style="width: 100%; background-color: #0a2540;">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10" style="max-width: 1280px; margin: 0 auto;">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 mb-12 items-start">
-        <div class="lg:col-span-4 space-y-4">
-          <div>
-            <a href="/" class="text-2xl font-black tracking-tight text-white uppercase block leading-tight hover:opacity-90 transition" style="text-decoration: none; color: #ffffff; font-size: 1.5rem; font-weight: 900; text-transform: uppercase;">
-              NEON <span style="color: #00D1FF;">AUTO TRANSPORT</span>
-            </a>
-          </div>
-          <p class="text-xs leading-relaxed text-slate-300 max-w-sm" style="color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">
-            Fast, secure, and reliable nationwide auto transport. We connect you with a highly vetted carrier network to ensure your vehicle arrives safely and on time. Your Journey, Our Priority!
-          </p>
-        </div>
-        <div class="lg:col-span-2 space-y-3">
-          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-1" style="color: #ffffff; font-weight: 800; font-size: 0.75rem;">QUICK LINKS</h3>
-          <ul class="space-y-2 text-xs font-medium" style="list-style: none; padding: 0;">
-            <li><a href="/#how-it-works" style="color: #cbd5e1; text-decoration: none;">How it Works</a></li>
-            <li><a href="/cost-calculator/" style="color: #cbd5e1; text-decoration: none;">Cost Calculator</a></li>
-            <li><a href="/why-neon/" style="color: #cbd5e1; text-decoration: none;">Why Neon</a></li>
-            <li><a href="/contact/" style="color: #cbd5e1; text-decoration: none;">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="lg:col-span-3 space-y-3">
-          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-1" style="color: #ffffff; font-weight: 800; font-size: 0.75rem;">POPULAR ROUTES</h3>
-          <ul class="space-y-2 text-xs font-medium" style="list-style: none; padding: 0;">
-            <li><a href="/california-car-shipping/" style="color: #cbd5e1; text-decoration: none;">California Car Shipping</a></li>
-            <li><a href="/texas-car-shipping/" style="color: #cbd5e1; text-decoration: none;">Texas Car Shipping</a></li>
-            <li><a href="/florida-car-shipping/" style="color: #cbd5e1; text-decoration: none;">Florida Car Shipping</a></li>
-          </ul>
-        </div>
-        <div class="lg:col-span-3 space-y-4">
-          <h3 class="text-white font-extrabold text-xs uppercase tracking-wider mb-1" style="color: #ffffff; font-weight: 800; font-size: 0.75rem;">CONTACT SUPPORT</h3>
-          <a href="tel:5715767711" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; background-color: #ffc72c; color: #0a2540; font-weight: 900; font-size: 0.95rem; padding: 0.85rem 1rem; border-radius: 0.75rem; text-decoration: none;">
-            (571) 576-7711
-          </a>
+  <footer class="nx-footer">
+  <div class="nx-wrap">
+    <div class="nx-footer-grid">
+      <div class="nx-footer-brand">
+        <a href="/" class="nx-logo" aria-label="Neon Auto Transport home"><img src="/images/neon-logo-horizontal.webp" alt="Neon Auto Transport" width="168" height="40" loading="lazy"></a>
+        <p>Licensed auto transport broker arranging door-to-door car shipping in all 50 states.</p>
+        <p class="nx-footer-meta">USDOT #4355879 &middot; MC #1703787</p>
+        <p class="nx-footer-contact"><a href="tel:+15715767711">(571) 576-7711</a><br><a href="mailto:info@neonautotransport.com">info@neonautotransport.com</a></p>
+        <div class="nx-social">
+          <a href="https://www.facebook.com/profile.php?id=61577115704216" aria-label="Facebook" rel="noopener" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 9h3V5h-3c-2.8 0-4 1.7-4 4.3V11H7v4h3v8h4v-8h3l1-4h-4V9.6c0-.4.3-.6.6-.6z"/></svg></a>
+          <a href="https://www.instagram.com/neonautotransport" aria-label="Instagram" rel="noopener" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm5 5a4 4 0 100 8 4 4 0 000-8zm5.5-1.5h.01"/></svg></a>
+          <a href="https://www.linkedin.com/company/neon-auto-transport" aria-label="LinkedIn" rel="noopener" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 9h4v12H4zM6 3a2 2 0 110 4 2 2 0 010-4zm4 6h4v1.7c.6-1 1.9-2 3.9-2 4.1 0 4.1 2.7 4.1 6.2V21h-4v-5.4c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></a>
+          <a href="https://www.youtube.com/@neonautotransport" aria-label="YouTube" rel="noopener" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 8.2a3 3 0 00-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 002 8.2 31 31 0 001.6 12 31 31 0 002 15.8a3 3 0 002.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 002.1-2.1 31 31 0 00.4-3.8 31 31 0 00-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="https://www.tiktok.com/@neonautotransport" aria-label="TikTok" rel="noopener" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.5 3a5 5 0 004 4.3v3.3a8.2 8.2 0 01-4-1.2v6.3A5.8 5.8 0 1110.7 10v3.4a2.5 2.5 0 102.5 2.5V3z"/></svg></a>
         </div>
       </div>
-      <div style="padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; font-size: 0.8rem; color: #94a3b8; gap: 1rem;">
-        <div>© 2026 Neon Auto Transport LLC. All rights reserved. MC #1703787 • USDOT #4355879</div>
+      <div>
+        <p class="nx-footer-h">Services</p>
+        <a href="/services/open-auto-transport/">Open Auto Transport</a>
+        <a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a>
+        <a href="/services/door-to-door-car-shipping/">Door-to-Door Shipping</a>
+        <a href="/services/expedited-auto-transport/">Expedited Transport</a>
+        <a href="/services/motorcycle-shipping/">Motorcycle Shipping</a>
+        <a href="/services/military-car-shipping/">Military Car Shipping</a>
+        <a href="/services/">All Services</a>
+      </div>
+      <div>
+        <p class="nx-footer-h">Popular Routes</p>
+        <a href="/california-to-texas-car-shipping/">California to Texas</a>
+        <a href="/texas-to-california-car-shipping/">Texas to California</a>
+        <a href="/new-york-to-florida-car-shipping/">New York to Florida</a>
+        <a href="/florida-to-new-york-car-shipping/">Florida to New York</a>
+        <a href="/california-to-new-york-car-shipping/">California to New York</a>
+        <a href="/illinois-to-florida-car-shipping/">Illinois to Florida</a>
+        <a href="/locations/">All States &amp; Cities</a>
+      </div>
+      <div>
+        <p class="nx-footer-h">Resources</p>
+        <a href="/cost-calculator/">Shipping Cost Calculator</a>
+        <a href="/car-shipping-cost/">Car Shipping Cost</a>
+        <a href="/car-shipping-transit-times/">Transit Times</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/faqs/">FAQs</a>
+        <a href="/blog/">Blog</a>
+      </div>
+      <div>
+        <p class="nx-footer-h">Company</p>
+        <a href="/why-neon/">Why Neon</a>
+        <a href="/reviews/">Customer Reviews</a>
+        <a href="/insurance/">Insurance</a>
+        <a href="/compare/">Compare</a>
+        <a href="/contact/">Contact Us</a>
+        <a href="/es/">Español</a>
       </div>
     </div>
-  </footer>
+    <div class="nx-footer-bottom">
+      <p>&copy; 2026 Neon Auto Transport LLC. All rights reserved.</p>
+      <p><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="/sitemap.xml">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
 
   <!-- Mobile Sticky CTA Bar -->
   <div id="mobile-sticky-cta">
@@ -1033,7 +1097,7 @@
     </a>
   </div>
 
-  <script src="/js/calculator.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="/js/calculator.js?v=20261028"></script>
+  <script src="/js/main.js?v=20261028"></script>
 </body>
 </html>

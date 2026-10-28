@@ -1,0 +1,21 @@
+# Keep build scripts, screenshots and working files out of the public site.
+# Deployed: *.html, *.md (AI-agent copies), api/, css/, js/, images/, favicons, robots.txt, llms*.txt, sitemap.xml
+
+/*.js
+/*.py
+/*.txt
+!/robots.txt
+!/llms.txt
+!/llms-full.txt
+/screenshot-*.png
+/scripts/
+/scratch/
+/tools/
+/.agents/
+/.claude/
+/services/*.js
+/services/*.json
+/routes/*.js
+/routes/*.json
+/routes/route-template.html
+/routes/route-template.md

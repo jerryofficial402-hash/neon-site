@@ -43,14 +43,14 @@
         width: 64px !important;
         height: 64px !important;
         border-radius: 50% !important;
-        background: linear-gradient(135deg, #635bff, #7c3aed) !important;
+        background: #0a5fb4 !important;
         color: #ffffff !important;
         border: none !important;
         cursor: pointer !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        box-shadow: 0 4px 20px rgba(99, 91, 255, 0.5), 0 0 30px rgba(99, 91, 255, 0.2) !important;
+        box-shadow: 0 6px 20px rgba(11, 27, 51, 0.22) !important;
         transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
       }
       #neon-chat-window {

@@ -1,0 +1,20 @@
+// node tools/shot.mjs <url> <out.png> [width]
+import puppeteer from 'puppeteer';
+const [url, out, w = '1366'] = process.argv.slice(2);
+const b = await puppeteer.launch({ headless: true });
+const p = await b.newPage();
+await p.setViewport({ width: +w, height: 900 });
+const errs = [];
+await p.setRequestInterception(true);
+p.on('request', r => /googletagmanager|google-analytics|web3forms|doubleclick|facebook.net|clarity.ms/.test(r.url()) ? r.abort() : r.continue());
+p.on('pageerror', e => errs.push('pageerror: ' + e.message));
+p.on('console', m => m.type() === 'error' && errs.push('console: ' + m.text()));
+p.on('requestfailed', r => !/googletagmanager|google-analytics|web3forms|doubleclick|facebook|clarity/.test(r.url()) && errs.push('failed: ' + r.url()));
+p.on('response', r => r.status() >= 400 && errs.push(r.status() + ' ' + r.url()));
+await p.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+await p.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 80)); } window.scrollTo(0, 0); });
+await new Promise(r => setTimeout(r, 800));
+await p.screenshot({ path: out, fullPage: true });
+const m = await p.evaluate(() => ({ h: document.body.scrollHeight, sw: document.documentElement.scrollWidth, cw: document.documentElement.clientWidth }));
+console.log(JSON.stringify(m)); errs.forEach(e => console.log(e));
+await b.close();

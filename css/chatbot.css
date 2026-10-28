@@ -5,10 +5,10 @@
 
 /* ---- CSS Variables (inherit from site) ---- */
 :root {
-  --chat-primary: #635bff;
-  --chat-primary-dark: #534be8;
-  --chat-accent-cyan: #00d4ff;
-  --chat-accent-green: #39FF14;
+  --chat-primary: #0a5fb4;
+  --chat-primary-dark: #084c91;
+  --chat-accent-cyan: #0096dc;
+  --chat-accent-green: #22c55e;
   --chat-dark: #0a2540;
   --chat-dark-mid: #1a385a;
   --chat-slate: #425466;
@@ -31,7 +31,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--chat-primary), #7c3aed);
+  background: var(--chat-primary);
   color: var(--chat-white);
   border: none;
   cursor: pointer;
@@ -137,7 +137,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(99, 91, 255, 0.15), rgba(0, 212, 255, 0.1));
+  background: linear-gradient(135deg, rgba(10, 95, 180, 0.08), rgba(10, 95, 180, 0.08));
   pointer-events: none;
 }
 
@@ -145,7 +145,7 @@
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--chat-primary), var(--chat-accent-cyan));
+  background: var(--chat-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,7 +281,7 @@
 /* User message — right aligned */
 .neon-msg.user {
   align-self: flex-end;
-  background: linear-gradient(135deg, var(--chat-primary), #7c3aed);
+  background: var(--chat-primary);
   color: var(--chat-white);
   border-bottom-right-radius: 4px;
   box-shadow: 0 2px 8px rgba(99, 91, 255, 0.3);

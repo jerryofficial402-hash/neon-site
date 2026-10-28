@@ -1,0 +1,87 @@
+<header id="global-header" class="nx-header">
+  <div class="nx-wrap nx-header-in">
+    <a href="/" class="nx-logo" aria-label="Neon Auto Transport home">
+      <img src="/images/neon-logo-horizontal.webp" alt="Neon Auto Transport" width="168" height="40" fetchpriority="high">
+    </a>
+    <nav class="nx-nav" aria-label="Main">
+      <div class="nx-dd">
+        <a href="/services/" class="nx-dd-btn" aria-haspopup="true">Services <svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <div class="nx-dd-panel">
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Transport type</p>
+            <a href="/services/open-auto-transport/">Open Auto Transport</a>
+            <a href="/services/enclosed-auto-transport/">Enclosed Auto Transport</a>
+            <a href="/services/door-to-door-car-shipping/">Door-to-Door Shipping</a>
+            <a href="/services/terminal-to-terminal-car-shipping/">Terminal-to-Terminal</a>
+            <a href="/services/expedited-auto-transport/">Expedited Transport</a>
+            <a href="/services/car-shipping-to-another-state/">Shipping to Another State</a>
+          </div>
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Vehicle</p>
+            <a href="/services/luxury-car-shipping/">Luxury &amp; Exotic Cars</a>
+            <a href="/services/motorcycle-shipping/">Motorcycle Shipping</a>
+            <a href="/services/truck-shipping-services/">Truck Shipping</a>
+            <a href="/services/heavy-haul-transport/">Heavy Haul Transport</a>
+            <a href="/services/rental-car-shipping/">Rental Car Shipping</a>
+            <a href="/services/fleet-management-transportation-services/">Fleet Transport</a>
+          </div>
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Customer</p>
+            <a href="/services/military-car-shipping/">Military Car Shipping</a>
+            <a href="/services/college-car-shipping/">College Car Shipping</a>
+            <a href="/services/snow-bird-car-shipping/">Snowbird Car Shipping</a>
+            <a href="/services/corporate-relocation/">Corporate Relocation</a>
+            <a href="/services/car-dealer-shipping/">Car Dealer Shipping</a>
+            <a href="/services/auto-auction-shipping/">Auto Auction Shipping</a>
+          </div>
+          <div class="nx-dd-col">
+            <p class="nx-dd-h">Long distance</p>
+            <a href="/services/hawaii-auto-transport/">Hawaii Auto Transport</a>
+            <a href="/services/alaska-auto-transport/">Alaska Auto Transport</a>
+            <a href="/services/international-overseas-car-shipping-services/">International Shipping</a>
+            <a href="/services/" class="nx-dd-all">All services &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <a href="/locations/">Locations</a>
+      <a href="/how-it-works/">How It Works</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nx-actions">
+      <a href="tel:+15715767711" class="nx-btn nx-btn-ghost">(571) 576-7711</a>
+      <a href="/cost-calculator/" class="nx-btn">Get a Quote <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      <button type="button" class="nx-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nx-mobile"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div id="nx-mobile" class="nx-mobile" hidden>
+    <nav class="nx-wrap" aria-label="Mobile">
+      <a href="/services/">Services</a>
+      <a href="/services/open-auto-transport/" class="nx-sub">Open Auto Transport</a>
+      <a href="/services/enclosed-auto-transport/" class="nx-sub">Enclosed Auto Transport</a>
+      <a href="/services/door-to-door-car-shipping/" class="nx-sub">Door-to-Door Shipping</a>
+      <a href="/services/motorcycle-shipping/" class="nx-sub">Motorcycle Shipping</a>
+      <a href="/locations/">Locations</a>
+      <a href="/how-it-works/">How It Works</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/blog/">Blog</a>
+      <a href="/faqs/">FAQs</a>
+      <a href="/contact/">Contact</a>
+      <a href="/cost-calculator/" class="nx-btn nx-btn-block">Get a Free Quote</a>
+      <a href="tel:+15715767711" class="nx-btn nx-btn-ghost nx-btn-block">Call (571) 576-7711</a>
+    </nav>
+  </div>
+  <script>
+    (function () {
+      var b = document.querySelector('.nx-burger'), m = document.getElementById('nx-mobile');
+      if (!b || !m) return;
+      b.addEventListener('click', function () {
+        var open = b.getAttribute('aria-expanded') === 'true';
+        b.setAttribute('aria-expanded', String(!open));
+        m.hidden = open;
+        document.documentElement.classList.toggle('nx-menu-open', !open);
+      });
+    })();
+  </script>
+</header>
