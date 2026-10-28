@@ -19,3 +19,4 @@
 /routes/*.json
 /routes/route-template.html
 /routes/route-template.md
+/routes/route-template/
