@@ -1,0 +1,14 @@
+import puppeteer from 'puppeteer';
+const b = await puppeteer.launch({ headless: true });
+const p = await b.newPage();
+await p.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
+await p.setRequestInterception(true);
+p.on('request', r => /googletagmanager|google-analytics|web3forms/.test(r.url()) ? r.abort() : r.continue());
+const errs = []; p.on('pageerror', e => errs.push(e.message));
+await p.goto(process.argv[2], { waitUntil: 'networkidle2' });
+await p.screenshot({ path: 'tools/out/m-top.png' });
+await p.click('.nx-burger');
+await new Promise(r => setTimeout(r, 300));
+await p.screenshot({ path: 'tools/out/m-menu.png' });
+console.log(JSON.stringify(await p.evaluate(() => ({ sw: document.documentElement.scrollWidth, open: !document.getElementById('nx-mobile').hidden }))), errs);
+await b.close();

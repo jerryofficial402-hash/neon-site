@@ -365,21 +365,20 @@ function setupZipAutocomplete(inputId, dropdownId, type) {
                         </li>
                     `;
 
-                    // Handle selection
+                    // Ignore a late response if the visitor has already changed the ZIP
+                    if (input.value.trim() !== zip) return;
+
+                    // Select the location right away so visitors don't have to click the suggestion
+                    coordinates[type] = { lat, lng };
+                    resolvedLocations[type] = `${city}, ${state} ${zip}`;
+                    attemptDistanceCalculation();
+
                     const option = dropdown.querySelector('li');
                     option.addEventListener('click', () => {
                         input.value = zip; // keep the zip
                         dropdown.classList.add('hidden');
-                        
-                        // Store coordinates
-                        coordinates[type] = { lat, lng };
-
-                        // Store resolved city, state, zip
-                        resolvedLocations[type] = `${city}, ${state} ${zip}`;
-
-                        // Try to auto-calculate distance
-                        attemptDistanceCalculation();
                     });
+                    setTimeout(() => dropdown.classList.add('hidden'), 2500);
 
                 } else {
                     dropdown.innerHTML = '<li class="px-4 py-3 text-sm text-red-500">Invalid ZIP Code</li>';

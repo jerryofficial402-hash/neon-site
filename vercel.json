@@ -217,6 +217,26 @@
   ],
   "redirects": [
     {
+      "source": "/author",
+      "destination": "/author/shazil-ali/",
+      "permanent": true
+    },
+    {
+      "source": "/author/",
+      "destination": "/author/shazil-ali/",
+      "permanent": true
+    },
+    {
+      "source": "/routes",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
       "source": "/blog/open-vs-enclosed-auto-transport",
       "destination": "/compare/open-vs-enclosed/",
       "permanent": true
