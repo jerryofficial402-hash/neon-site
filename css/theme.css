@@ -300,11 +300,11 @@ a.border-2, button.border-2 { border-width: 1px !important; border-color: var(--
 @media (max-width: 420px) { .nx-logo img { height: 32px; } }
 
 /* First hero sat ~110px below the old dark header; trim to the 76px white header */
-main > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*="lg:pt-32"], [class*="lg:pt-40"]), #hero-section {
+:is(main, body) > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*="lg:pt-32"], [class*="lg:pt-40"]), #hero-section {
   padding-top: calc(var(--nx-header-h) + 48px) !important; padding-bottom: 72px !important;
 }
 @media (max-width: 767px) {
-  main > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*="lg:pt-32"], [class*="lg:pt-40"]), #hero-section {
+  :is(main, body) > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*="lg:pt-32"], [class*="lg:pt-40"]), #hero-section {
     padding-top: calc(var(--nx-header-h) + 28px) !important; padding-bottom: 48px !important;
   }
 }
@@ -347,8 +347,8 @@ main > section:first-of-type:is(.pt-24, .pt-28, .pt-32, .pt-36, .pt-40, [class*=
 
 /* ================= Polished SaaS details ================= */
 /* Hero: faint dot grid that fades out downward */
-#hero-section, main > section:first-of-type { position: relative; isolation: isolate; }
-#hero-section::after, main > section:first-of-type::after {
+#hero-section, :is(main, body) > section:first-of-type { position: relative; isolation: isolate; }
+#hero-section::after, :is(main, body) > section:first-of-type::after {
   content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background-image: radial-gradient(#d9e2ee 1px, transparent 1px); background-size: 22px 22px;
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.6) 45%, transparent 90%); mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.6) 45%, transparent 90%);
@@ -405,3 +405,71 @@ main > section + section { border-top: 1px solid var(--nx-line-2); }
   main section:is(.pt-32, .pt-24):not(:first-of-type) { padding-top: 4rem !important; }
   main section:is(.pb-32, .pb-24) { padding-bottom: 4rem !important; }
 }
+
+/* ================= Contrast safety net (from tools/contrast.mjs) ================= */
+/* Translucent dark boxes (bg-slate-900/80 etc.) -> light card */
+:is(section, div, aside, article):is([class*="bg-slate-900/"], [class*="bg-slate-800/"], [class*="bg-gray-900/"], [class*="bg-[#0a2540]/"]):not(.absolute):not(.fixed) {
+  background: var(--nx-soft) !important; border-color: var(--nx-line) !important; color: var(--nx-ink) !important;
+}
+/* White text is dark by default; it stays white only on real dark/brand surfaces (below) */
+:is(.text-white, [class*="text-white/"], .text-slate-100, .text-slate-200, .text-gray-100, .text-gray-200, .text-cyan-400, .text-cyan-300):not([class*="bg-"]):not(a[class*="px-"]):not(button) { color: var(--nx-ink) !important; }
+.text-\[\#8ba3ba\], .text-\[\#cdd5df\], .text-\[\#c9d6e3\], .text-\[\#a1b0c0\], .text-\[\#94a3b8\], .text-slate-300, .text-slate-400, .text-gray-300, .text-gray-400, .hover\:text-\[\#00d4ff\] { color: var(--nx-muted) !important; }
+
+/* Brand surfaces that are meant to be dark: navy CTA bands/panels, image overlays, filled buttons */
+:is(div, section, aside, article, span, p):is(.bg-\[\#468de6\], .bg-\[\#468DE6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#39ff14\], .bg-\[\#3273c5\], .bg-\[\#0a5fb4\], .bg-\[\#053c87\], .bg-blue-600, .bg-blue-700, .bg-indigo-600, .bg-indigo-700) {
+  background-color: var(--nx-navy) !important; color: #fff !important;
+}
+:is(.bg-\[\#468de6\], .bg-\[\#468DE6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#39ff14\], .bg-\[\#3273c5\], .bg-\[\#0a5fb4\], .bg-\[\#053c87\], .bg-blue-600, .bg-blue-700, .bg-indigo-600, .bg-indigo-700, [class*="bg-black/"], [class*="from-black"], :is(a, button):is(.bg-\[\#0a2540\], .bg-\[\#39FF14\], .bg-\[\#39ff14\], .bg-\[\#635bff\], .bg-\[\#468de6\], .bg-\[\#0a5fb4\], .bg-\[\#053c87\], .bg-slate-900, .bg-gray-900, .bg-black, .bg-blue-600, .bg-blue-700), .nx-btn:not(.nx-btn-ghost), .btn-primary)
+  :is(h1, h2, h3, h4, p, span, li, div, strong, b, .text-white, [class*="text-white/"], .text-slate-200, .text-slate-300, .text-\[\#8ba3ba\], .text-\[\#cdd5df\]):not(#nx-a):not(#nx-b) { color: #fff !important; }
+:is(.bg-\[\#468de6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#0a5fb4\], .bg-blue-600) :is(.text-white\/80, .text-white\/70, .text-slate-300, .text-\[\#8ba3ba\], .text-\[\#cdd5df\], p):not(#nx-a):not(#nx-b) { color: rgba(255, 255, 255, .82) !important; }
+/* White buttons inside navy panels keep dark text */
+:is(.bg-\[\#468de6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#0a5fb4\], .bg-blue-600) a.bg-white, :is(.bg-\[\#468de6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#0a5fb4\], .bg-blue-600) a.bg-white * { color: var(--nx-navy) !important; }
+
+/* Rating stars: one warm gold that reads on white */
+.text-yellow-400, .text-yellow-500, .text-amber-400, .text-amber-500, .text-\[\#f59e0b\], .text-\[\#FFD700\], .text-\[\#ffd700\], .text-\[\#ffc72c\], .text-\[\#fbbf24\], .platform-stars { color: #e09a00 !important; }
+.text-green-500, .text-\[\#22c55e\], .text-\[\#16a34a\] { color: #15803d !important; }
+.text-orange-500 { color: #c2410c !important; }
+
+/* Inner-page heroes: H1 sized for a half-width column; the homepage hero keeps the larger size */
+h1 { font-size: clamp(2rem, 3.3vw, 3rem) !important; line-height: 1.12 !important; }
+#hero-section h1 { font-size: clamp(2.25rem, 4.4vw, 3.5rem) !important; line-height: 1.08 !important; }
+:is(main, body) > section:first-of-type :is(.lg\:w-1\/2, [class*="lg:col-span"]) > h1, :is(main, body) > section:first-of-type .lg\:w-1\/2 h1 { max-width: 16ch; }
+:is(main, body) > section:first-of-type img { border-radius: 14px; }
+
+/* Dark tables and rows -> light */
+:is(table, thead, tbody, tr, td, th):is([class*="bg-slate-9"], [class*="bg-slate-8"], [class*="bg-gray-9"], [class*="bg-[#0a2540]"], [class*="bg-[#1a385a]"]) { background: #fff !important; color: var(--nx-ink) !important; }
+:is(thead, tr):is([class*="bg-[#0a2540]"], [class*="bg-slate-9"]) { background: var(--nx-soft) !important; }
+:is(table, tbody, tr)[class*="bg-slate"] :is(td, th), tbody.text-slate-200 td, tbody.text-slate-300 td { color: var(--nx-ink) !important; }
+[class*="divide-slate-7"] > *, [class*="divide-slate-8"] > * { border-color: var(--nx-line) !important; }
+.border-slate-700, .border-slate-800 { border-color: var(--nx-line) !important; }
+/* Translucent white text classes written for dark heroes */
+[class*="text-[rgba(255,255,255"]:not([class*="bg-"]), .text-\[\#dbeafe\], .text-blue-100, .text-blue-200 { color: var(--nx-text) !important; }
+:is(.bg-\[\#468de6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#0a5fb4\], .bg-blue-600) :is([class*="text-[rgba(255,255,255"], .text-\[\#dbeafe\], .text-blue-100):not(#nx-a):not(#nx-b) { color: rgba(255, 255, 255, .85) !important; }
+
+/* Inner-page heroes: columns start at the top so a tall text column doesn't push the image down */
+@media (min-width: 1024px) {
+  :is(main, body) > section:first-of-type:not(#hero-section) :is(.lg\:flex-row, [class*="lg:grid-cols"]).items-center { align-items: flex-start !important; }
+  :is(main, body) > section:first-of-type:not(#hero-section) :is(.lg\:flex-row, [class*="lg:grid-cols"]).items-center > :not(:first-child) { position: sticky; top: calc(var(--nx-header-h) + 24px); }
+}
+/* Highlighted table row (our own company) */
+tr:is([class*="bg-cyan"], [class*="bg-[#00d4ff]"], [class*="bg-[#0a2540]/"], [class*="bg-slate-800/"], [class*="bg-slate-700"]) { background: var(--nx-blue-tint) !important; }
+tr:is([class*="bg-cyan"], [class*="bg-[#00d4ff]"], [class*="bg-slate-700"]) td { color: var(--nx-ink) !important; }
+
+/* Ghost buttons that were white-on-navy */
+a:is([class*="hover:bg-white"], [class*="bg-white/"], [class*="hover:bg-[rgba(255"]):not([class*="bg-[#"]):not([class*="bg-blue"]) {
+  color: var(--nx-ink) !important; background: #fff !important; border: 1px solid var(--nx-line) !important;
+}
+a:is([class*="hover:bg-white"], [class*="bg-white/"], [class*="hover:bg-[rgba(255"]):not([class*="bg-[#"]) * { color: var(--nx-ink) !important; }
+/* Dark translucent pills that sat on hero photos */
+[class*="bg-black/"]:is(.rounded-full, [class*="rounded-"]):not(.absolute):not(.fixed) { background: var(--nx-blue-tint) !important; color: var(--nx-blue) !important; border-color: var(--nx-blue-line) !important; }
+[class*="bg-black/"]:is(.rounded-full, [class*="rounded-"]):not(.absolute):not(.fixed) * { color: var(--nx-blue) !important; }
+/* Gold paragraph text -> regular text (gold is kept for stars) */
+p.text-\[\#ffc72c\], p.text-yellow-400 { color: var(--nx-text) !important; }
+.platform-stars[style*="#1565c0"] { color: #1565c0 !important; }
+/* ...except inside navy panels, where an outline button stays white-on-navy */
+:is(.bg-\[\#468de6\], .bg-\[\#468DE6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#39ff14\], .bg-\[\#0a5fb4\], .bg-\[\#053c87\], .bg-blue-600, .bg-blue-700) a:is([class*="hover:bg-white"], [class*="border-white"], [class*="bg-white/"]):not(#nx-a):not(#nx-b) {
+  background: transparent !important; color: #fff !important; border: 1px solid rgba(255, 255, 255, .55) !important;
+}
+:is(.bg-\[\#468de6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#0a5fb4\], .bg-blue-600) a:is([class*="hover:bg-white"], [class*="border-white"]):hover:not(#nx-a):not(#nx-b) { background: rgba(255, 255, 255, .12) !important; }
+/* <main> wrappers that carried the old navy background */
+main:is(.bg-\[\#0a2540\], .bg-\[\#1a385a\], .bg-slate-900, .bg-gray-900, [class*="bg-[#0a2540]/"]) { background: #fff !important; color: var(--nx-ink) !important; }
