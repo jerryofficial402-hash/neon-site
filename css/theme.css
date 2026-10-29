@@ -323,10 +323,11 @@ a.border-2, button.border-2 { border-width: 1px !important; border-color: var(--
 .bg-\[\#f6f9fc\] [class*="rounded-2xl"][class*="border"], .bg-\[\#f0f5fa\] [class*="rounded-2xl"][class*="border"] { background: #fff !important; }
 .stripe-card:hover, [class*="card-hover-"]:hover, a[class*="rounded-2xl"][class*="border"]:hover { border-color: #c9d2de !important; }
 
-/* One content width for header and page (Tailwind .container grows to 1536px on very wide screens) */
-.nx-header-in { max-width: 1280px; padding-left: 32px; padding-right: 32px; }
-@media (min-width: 1536px) { .container { max-width: 1280px !important; } }
-@media (max-width: 1023px) { .nx-header-in { padding-left: 16px; padding-right: 16px; } }
+/* One page width for header, footer and full-width containers: up to 1720px, side padding scales with the screen.
+   Containers that set their own max-w-* (text sections) keep their readable width. */
+:root { --nx-page: 1720px; --nx-gutter: clamp(16px, 3.5vw, 56px); }
+.nx-header-in, .nx-footer .nx-wrap { max-width: var(--nx-page); padding-left: var(--nx-gutter); padding-right: var(--nx-gutter); }
+.container:not([class*="max-w-"]) { max-width: var(--nx-page) !important; padding-left: var(--nx-gutter) !important; padding-right: var(--nx-gutter) !important; }
 
 /* Section labels in the logo blue: blue text on a light blue tint (headings stay black) */
 :root { --nx-blue-tint: #eef4fb; --nx-blue-line: #d5e3f3; }
@@ -473,3 +474,9 @@ p.text-\[\#ffc72c\], p.text-yellow-400 { color: var(--nx-text) !important; }
 :is(.bg-\[\#468de6\], .bg-\[\#635bff\], .bg-\[\#39FF14\], .bg-\[\#0a5fb4\], .bg-blue-600) a:is([class*="hover:bg-white"], [class*="border-white"]):hover:not(#nx-a):not(#nx-b) { background: rgba(255, 255, 255, .12) !important; }
 /* <main> wrappers that carried the old navy background */
 main:is(.bg-\[\#0a2540\], .bg-\[\#1a385a\], .bg-slate-900, .bg-gray-900, [class*="bg-[#0a2540]/"]) { background: #fff !important; color: var(--nx-ink) !important; }
+/* Stars stay gold inside outline/ghost links and pills */
+:is(.text-yellow-400, .text-yellow-500, .text-amber-400, .text-\[\#f59e0b\], .text-\[\#FFD700\], .text-\[\#ffc72c\]):not(p):not(#nx-a):not(#nx-b) { color: #e09a00 !important; }
+/* Hero containers line up with the header on every page */
+:is(main, body) > section:first-of-type > :is(.container, [class*="max-w-7xl"], [class*="max-w-6xl"], [class*="max-w-screen"]) {
+  max-width: var(--nx-page) !important; padding-left: var(--nx-gutter) !important; padding-right: var(--nx-gutter) !important; margin-left: auto !important; margin-right: auto !important;
+}

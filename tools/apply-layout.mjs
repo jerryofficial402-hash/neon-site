@@ -9,7 +9,7 @@ const SKIP = new Set(['node_modules', '.git', 'scratch', 'scripts', 'tools', '.a
 const header = fs.readFileSync('tools/partials/header.html', 'utf8').trim();
 const footer = fs.readFileSync('tools/partials/footer.html', 'utf8').trim();
 // Bump when any /css or /js file changes: Vercel serves those with a 1-year immutable cache
-const ASSET_VERSION = '20261029c';
+const ASSET_VERSION = '20261029d';
 const FONTS = 'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap';
 const THEME = `<link rel="stylesheet" href="/css/theme.css?v=${ASSET_VERSION}">`;
 
