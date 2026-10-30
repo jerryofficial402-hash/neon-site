@@ -73,7 +73,6 @@ The cost to ship a car to another state depends on your exact route, vehicle, tr
   * Carrier availability at the time of dispatch
 
 
-
 Use our [Car Shipping Cost Calculator](/cost-calculator/) for a planning estimate, then [Get a Free Interstate Car Shipping Quote](/car-shipping-quote/) for current route-specific options. 
 
 ## How Long Does It Take to Ship a Car to Another State?
@@ -152,7 +151,6 @@ Interstate car shipping is available across all major U.S. corridors. Popular ro
   * [Texas Car Shipping](/texas-car-shipping/)
 
 
-
 View all nationwide hubs on [All Car Shipping Locations](/locations/). 
 
 ## Prepare Your Car for Interstate Shipping
@@ -165,7 +163,6 @@ View all nationwide hubs on [All Car Shipping Locations](/locations/).
   * Tell your coordinator about oversized dimensions, roof racks, modifications, low clearance, or special loading needs.
   * Keep enough fuel for loading and unloading; ask for the carrier’s preferred fuel level.
   * Ensure you or an authorized representative can inspect and sign the Bill of Lading.
-
 
 
 ## Interstate Car Shipping FAQs

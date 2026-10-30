@@ -71,7 +71,6 @@ Our Live Oak office coordinates shipments for sedans, trucks, SUVs, motorcycles,
   * ✅ Free instant route-specific quotes, no obligation
 
 
-
 ##  What Vehicles Can We Ship From Live Oak? 
 
 Our Live Oak office coordinates specialized transport for a wide range of vehicle types: 
@@ -125,7 +124,6 @@ Customers shipping from Live Oak can request transport throughout California and
   3. **Pickup and inspection:** The driver documents your vehicle's condition on the Bill of Lading (BOL) before loading. Be present or have an authorized representative there to sign.
   4. **Transit:** Your vehicle travels safely to its destination. That carrier carries cargo insurance during transport; ask for current documentation for higher-value vehicles.
   5. **Delivery:** Inspect the vehicle against the pickup Bill of Lading before signing final delivery paperwork.
-
 
 
 ##  Car Shipping Near Live Oak, CA 

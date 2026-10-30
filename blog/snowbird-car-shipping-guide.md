@@ -44,7 +44,6 @@ Vehicle Shipping Cost & Timeline Benchmarks Route Distance | Open Rate Range | E
   5. **Track Delivery:** Receive live 24/7 driver status updates through final address delivery.
 
 
-
 ## Frequently Asked Questions
 
 ### How far in advance should I book?

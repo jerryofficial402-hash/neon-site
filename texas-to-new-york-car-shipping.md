@@ -37,7 +37,6 @@ Enclosed Transport| $1200 – $1900| 4-6 days
   * **Cargo Insurance Coverage:** $500,000 Secondary Policy Included
 
 
-
 ### Get Your Texas to New York Quote
 
 Price-locked quote, $0 deposit, and $500,000 cargo insurance.

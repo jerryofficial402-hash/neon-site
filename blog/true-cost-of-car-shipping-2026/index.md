@@ -43,7 +43,6 @@ Car shipping costs are primarily calculated per mile, but the cost per mile drop
   * **Enclosed Auto Transport:** Costs about **30% to 40% more** than open transport. Coast-to-coast rates range from **$1,000 to $2,200** depending on the route and season.
 
 
-
 ## 5 Factors That Impact Your Quote
 
 No two auto transport quotes are identical because pricing is highly dynamic. The five main factors affecting your rate include:
@@ -53,7 +52,6 @@ No two auto transport quotes are identical because pricing is highly dynamic. Th
   3. **Seasonality:** Car shipping rates peak during the summer months due to moving season and in the winter along "Snowbird routes" (e.g., New York to Florida).
   4. **Transport Type:** Open carriers are highly cost-effective; enclosed carriers offer premium protection at a higher rate.
   5. **Pickup & Delivery Locations:** Shipping between major metro areas close to major interstate highways (like I-95, I-10, or I-80) is cheaper than shipping to remote or rural areas, which require the carrier to detour.
-
 
 
 ## Hidden Fees to Watch Out For
@@ -66,7 +64,6 @@ Many auto transport brokers use aggressive pricing models to secure bookings. Th
   * **Insurance Surcharges:** Cargo insurance should always be included in your base quote. Never pay extra to ensure your vehicle is covered.
 
 
-
 ## How Neon Auto Transport is Different
 
 At Neon Auto Transport, we believe in complete transparency. We have structured our service to eliminate the common pain points of the car shipping industry:
@@ -74,7 +71,6 @@ At Neon Auto Transport, we believe in complete transparency. We have structured 
   * **Price Lock Guarantee:** The price we quote is the price you pay. No bait-and-switch.
   * **No Upfront Deposit:** We do not charge anything until your carrier is assigned and dispatch is confirmed.
   * **Direct Driver Contact:** You will have the direct phone number of the carrier hauling your vehicle.
-
 
 
 ## Auto Transport Broker Comparison

@@ -136,8 +136,6 @@ New Jersey sits at the crossroads of some of the busiest transport corridors in 
   * **Local Logistics Expertise** – From Newark ports to suburban driveways, our local network ensures smooth transitions.
 
 
-
-
 ## How Car Shipping Works: Step by Step
 
 Follow these simple steps for a smooth and hassle-free vehicle shipping experience.
@@ -369,13 +367,8 @@ Direct interstate transport routes connecting New Jersey nationwide
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

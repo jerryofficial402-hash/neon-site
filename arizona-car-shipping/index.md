@@ -118,7 +118,6 @@ Arizona auto transport demand comes from a few consistent sources:
   * **Online vehicle purchases** shipped from dealerships or private sellers out of state
 
 
-
 ## How Much Does Arizona Car Shipping Cost?
 
 Car shipping cost is based primarily on distance, vehicle size, transport type (open vs. enclosed), time of year, and current carrier availability along your route. As a general rule, longer routes cost less per mile than shorter ones, because carriers can fill more of their trailer capacity efficiently.
@@ -187,7 +186,6 @@ Most Arizona car shipping companies, including Neon Auto Transport, default to [
   * **Florida to Arizona** and **New York to Arizona** — longer routes common among snowbirds and military relocations.
 
 
-
 ### [Top Arizona Cities for Car Shipping](/arizona-car-shipping-cities/)
 
 City | Notes  
@@ -214,7 +212,6 @@ Yuma| Key winter destination for snowbirds; close to CA and Mexico borders
   * **Pickup/delivery flexibility** — flexible dates typically lower cost.
 
 
-
 ## How to Choose a Licensed Arizona Auto Transport Company
 
 Before booking any Arizona vehicle shipping service, verify:
@@ -224,7 +221,6 @@ Before booking any Arizona vehicle shipping service, verify:
   3. **Transparent pricing** — Be cautious of quotes far below the market range; they often lead to price increases after booking.
   4. **Real customer feedback** — Look for reviews across multiple platforms, not just the company’s own site.
   5. **Broker vs. carrier** — Understand whether you’re booking directly with a carrier or through a licensed broker who dispatches to a network of vetted carriers.
-
 
 
 Neon Auto Transport operates as a licensed brokerage (USDOT 4355879, MC 1703787) with a vetted carrier network covering all Arizona routes, from Phoenix and Tucson to smaller cities like Flagstaff and Yuma.
@@ -237,7 +233,6 @@ Neon Auto Transport operates as a licensed brokerage (USDOT 4355879, MC 1703787)
   * **Classic and luxury car shipping Arizona** — enclosed transport recommended for high-value vehicles
 
 
-
 ## How to Get an Arizona Car Shipping Quote
 
 Getting an accurate Arizona auto transport quote takes just a few details:
@@ -247,7 +242,6 @@ Getting an accurate Arizona auto transport quote takes just a few details:
   3. Desired pickup window
   4. Open or enclosed transport preference
   5. Vehicle operability
-
 
 
 Neon Auto Transport provides free online quotes with no obligation to book.
@@ -330,13 +324,8 @@ Direct interstate transport routes connecting Arizona nationwide
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

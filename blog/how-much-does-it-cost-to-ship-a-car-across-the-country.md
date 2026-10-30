@@ -60,7 +60,6 @@ Understanding what drives your auto transport quote helps you budget accurately 
   7. **Expedited Shipping Requirements:** Standard auto transport allows carriers to plan efficient multi-stop routes. If you need [expedited or guaranteed pickup](/services/expedited-auto-transport/) within 2448 hours, expect a $200$500 premium for the priority scheduling and dedicated routing.
 
 
-
 ## Real Cross-Country Route Pricing Examples
 
 To give you a concrete idea of what cross-country car shipping actually costs, here are approximate rates for popular routes based on current market pricing for a standard sedan using open auto transport:
@@ -89,7 +88,6 @@ Choosing between [open auto transport](/services/open-auto-transport/) and [encl
   * Exposed to weather and road debris
 
 
-
 Best for: Daily drivers, standard vehicles, budget-conscious shipping
 
 ### Enclosed Auto Transport
@@ -99,7 +97,6 @@ Best for: Daily drivers, standard vehicles, budget-conscious shipping
   * ? Hydraulic lift gates for low-clearance vehicles
   * ? Higher insurance coverage limits
   * 3040% higher cost
-
 
 
 Best for: [Luxury](/services/luxury-car-shipping/), classic, exotic, and high-value vehicles
@@ -116,7 +113,6 @@ Here are proven strategies to reduce your auto transport cost without sacrificin
   * **Prepare your vehicle properly:** Follow our [vehicle preparation checklist](/blog/how-to-prepare-car-for-shipping/) to ensure smooth loading and avoid delays that could add fees.
 
 
-
 ## How Long Does Cross-Country Car Shipping Take?
 
 Transit time for cross-country car shipping depends on distance, carrier routing, and DOT hours-of-service regulations. Here are general guidelines:
@@ -125,7 +121,6 @@ Transit time for cross-country car shipping depends on distance, carrier routing
   * **Medium distance (5001,500 miles):** 37 days
   * **Cross-country (1,5002,500 miles):** 59 days
   * **Coast-to-coast (2,500+ miles):** 714 days
-
 
 
 These are estimates. Actual transit times depend on weather conditions, road construction, number of stops on the carrier's route, and whether you choose standard or [expedited auto transport](/services/expedited-auto-transport/).
@@ -140,7 +135,6 @@ These are estimates. Actual transit times depend on weather conditions, road con
   * **Full Cargo Insurance:** Every shipment is fully insured at no additional cost
   * **BBB Accredited** with a 4.9/5 customer rating
   * **Ships all 50 states** including [Hawaii](/services/hawaii-auto-transport/) and [Alaska](/services/alaska-auto-transport/)
-
 
 
 ## Get a Free Cross-Country Shipping Quote

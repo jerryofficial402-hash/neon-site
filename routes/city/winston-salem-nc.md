@@ -38,7 +38,6 @@ We handle every detail from pickup to delivery. Your quote is fully transparent 
   * Open & Enclosed carrier options 
 
 
-
 ### Calculate Your Winston Salem Shipping Cost
 
 Use our transparent calculator to find out exactly how much it costs to ship your car to or from Winston Salem.

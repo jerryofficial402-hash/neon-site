@@ -113,7 +113,6 @@ Alabama sits at a genuine interstate crossroads, which matters more for car ship
   * **I-10** runs through Mobile along the Gulf Coast, linking New Orleans to the Florida Panhandle.
 
 
-
 Because carriers already run these corridors daily for freight and other auto-hauls, Alabama shippers typically get faster pickup windows and more competitive per-mile rates than drivers in less-connected states.
 
 ## What Determines Your Alabama Car Shipping Cost
@@ -126,7 +125,6 @@ Every legitimate auto transport quote is built from the same core inputs, in eve
   * **Pickup/delivery flexibility** — a flexible date range typically costs less than a hard, fixed date.
   * **Season** — summer, university move-in/out windows, and PCS season all raise demand and can push pricing up slightly.
   * **Route density** — direct interstate corridors cost less per mile than rural or off-corridor addresses.
-
 
 
 ## Birmingham, AL Car Shipping
@@ -264,7 +262,6 @@ This applies whether you’re shipping from Birmingham, Huntsville, Montgomery, 
   * Compare more than one quote — a bid far below every other quote you receive is a common sign of an unlicensed reseller.
 
 
-
 Neon Auto Transport works with fully vetted, FMCSA-compliant carriers across every route listed above, with door-to-door pickup and delivery and full condition documentation at both ends.
 
 [Get Your Free Quote Now](/cost-calculator/)
@@ -339,13 +336,8 @@ Popular local pickup & delivery hubs across Alabama
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

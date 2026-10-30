@@ -161,7 +161,6 @@ Open trailers cost less than enclosed trailers and work well for most standard v
   * **Service Type:** Door-to-Door, Open or Enclosed
 
 
-
 Neon Auto Transport provides top-tier vehicle shipping from Dallas, TX directly to Houston, TX. This is one of our most popular high-volume routes, allowing us to dispatch verified carriers quickly and keep costs highly competitive. 
 
 ## Virginia Vehicle Transport FAQs
@@ -231,7 +230,6 @@ Talk to an auto transport expert now or get an instant quote online.
   * [Chicago Il To Dallas Car Shipping](/routes/city/chicago-il-to-dallas-tx/)
 
 
-
 ### Dallas Tx To Houston Auto Shipping Corridors & Local Logistics
 
 Vehicles traveling to or from **Dallas Tx To Houston** utilize primary commercial freight routes including **I-35, I-10, and I-45**. Our licensed carriers schedule regular door-to-door pickups across residential neighborhoods, dealership lots, and commercial hubs in the greater Dallas Tx To Houston area.
@@ -246,13 +244,8 @@ Calculate Dallas Tx To Houston Rate →
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

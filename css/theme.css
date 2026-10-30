@@ -599,3 +599,14 @@ main p a:not(.nx-btn):not([class*="px-"]), main td a:not(.nx-btn), main li p a, 
 /* Render work for sections far below the fold is deferred until they come close to the viewport.
    'auto' in contain-intrinsic-size remembers each section's real height after it has rendered once. */
 main > section:nth-of-type(n+3), body > section:nth-of-type(n+3) { content-visibility: auto; contain-intrinsic-size: auto 700px; }
+
+/* Verified Google review cards (tools/partials/real-reviews.html) */
+.nx-reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 900px) { .nx-reviews { grid-template-columns: 1fr; } }
+.nx-review { display: flex; flex-direction: column; gap: 10px; padding: 24px; background: #fff; border: 1px solid var(--nx-line); border-radius: var(--nx-card-radius); text-decoration: none !important; color: var(--nx-ink); transition: border-color .2s, box-shadow .2s, transform .2s; }
+.nx-review:hover { transform: translateY(-2px); border-color: #cfd8e4; box-shadow: 0 16px 32px -20px rgba(5, 60, 135, .3); }
+.nx-review-stars { color: #e09a00; letter-spacing: 2px; font-size: 15px; }
+.nx-review-text { margin: 0; flex: 1; color: var(--nx-text); font-size: 15px; line-height: 1.6; text-decoration: none; }
+.nx-review-name { font-weight: 500; color: var(--nx-ink); }
+.nx-review-src { color: var(--nx-muted); font: 400 12px/1.4 var(--nx-mono); text-transform: uppercase; letter-spacing: .02em; }
+.nx-review-src::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: #34a853; vertical-align: 1px; }

@@ -47,7 +47,6 @@ Our compliance team actively monitors and verifies the insurance certificates of
   * ✓ Theft of the vehicle while in the carrier's custody.
 
 
-
 ### What is NOT covered?
 
   * ✕ Damage caused by "Acts of God" (e.g., hail, floods, earthquakes) - unless you opt for enclosed transport which protects against weather.

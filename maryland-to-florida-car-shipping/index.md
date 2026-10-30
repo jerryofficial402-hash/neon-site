@@ -87,7 +87,6 @@ This section answers the general "how do I actually do this" question, whether y
   5. **Delivery:** The carrier delivers to your Florida address, you inspect the vehicle together, and sign the Proof of Delivery to complete the shipment.
 
 
-
 If your delivery address is a Florida location the carrier can't physically reach — a gated community, a downtown area with truck restrictions — your driver will coordinate a nearby meeting point in advance rather than surprise you with it on delivery day. For a complete deep-dive into interstate shipping preparation, read our master guide on [How to Ship a Car to Another State →](/how-to-ship-a-car-to-another-state/)
 
 ### Open Transport (Standard)
@@ -154,21 +153,21 @@ Rated 5.0/5 Stars based on Verified Google Reviews
 
 ★★★★★
 
-"Smooth auto transport from Baltimore to Jacksonville. Driver called ahead before pickup and delivered right on schedule."
+"Thank you for responding always on time. Friendly service and will be working in future again."
 
-— Semih Akay
-
-★★★★★
-
-"Shipped my vehicle from Bethesda to Orlando. Zero upfront deposit and great communication throughout."
-
-— Mike Hainsworth
+— Semih Akay, Google review
 
 ★★★★★
 
-"Very professional service from Annapolis to Tampa. Fair pricing and car delivered in perfect condition."
+"They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike."
 
-— Viola Willoughby
+— Mike Hainsworth, Google review
+
+★★★★★
+
+"The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company."
+
+— Viola Willoughby, Google review
 
 [Shazil Ali](/author/shazil-ali/)
 
@@ -187,7 +186,6 @@ Shazil Ali serves as Director of Operations at Neon Auto Transport, overseeing v
   * • [Florida to Maryland Car Shipping (Reverse Route)](/florida-to-maryland-car-shipping/)
   * • [Maryland Car Shipping Services](/maryland-car-shipping/)
   * • [Florida Car Shipping Services](/florida-car-shipping/)
-
 
 
 #### Specialized Transport & Sibling Corridors:

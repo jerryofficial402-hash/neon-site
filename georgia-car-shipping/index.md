@@ -136,8 +136,6 @@ Georgia consistently ranks among the busiest Southeastern states for inbound and
 **College towns:** Athens (University of Georgia) sees predictable seasonal shipping spikes at the start and end of each academic year. 
 
 
-
-
 ###  How We Wrote This Guide 
 
 This guide was built from Neon Auto Transport's own dispatch and lane-pricing data across our Georgia carrier network, cross-referenced with publicly available interstate mileage data. Distances listed are typical driving-route miles (not straight-line) and are meant for cost-planning purposes; your carrier's exact routing may vary by a small margin. Rates cited are ranges based on 2026 market conditions and fluctuate with fuel prices, seasonality, and carrier capacity. This page is reviewed periodically by our logistics team to keep pricing guidance current. 
@@ -329,7 +327,6 @@ Cross-country (1,500+ mi)| Los Angeles → Atlanta| $1,000 – $1,600| 5–7 day
   6. **Vehicle condition** — shipping non-running cars requires winch-equipped trailers and typically adds a fee.
 
 
-
 Looking for the cheapest option? Budget transport is almost always open-carrier, terminal-to-terminal, with a flexible pickup date. For a hands-off experience, door-to-door shipping remains the most popular choice among Georgia customers.
 
 [ Get your exact quote in under a minute → ](/cost-calculator/)
@@ -356,7 +353,6 @@ Neon Auto Transport runs regular carrier lanes on the following high-demand rout
   * **International:** Port of Brunswick and Port of Savannah handle significant vehicle import/export volume for manufacturers and dealers. 
 
 
-
 ##  How to Choose a Trustworthy Georgia Auto Transport Company 
 
 Georgia's high shipping volume unfortunately also attracts scams — low-ball quotes that balloon after booking, brokers with no real carrier network, or unlicensed haulers. Verify these five things before you book with anyone: 
@@ -366,7 +362,6 @@ Georgia's high shipping volume unfortunately also attracts scams — low-ball qu
   3. **Vetted, background-checked haulers** — Neon Auto Transport works exclusively with vetted carriers meeting minimum safety-rating and insurance thresholds.
   4. **Verified reviews** — check Google, BBB, and Transport Reviews, not just testimonials on the company's own site.
   5. **Transparent, binding quotes** — a trustworthy quote process locks your price at booking, with no last-minute increases.
-
 
 
 #### What is a Bill of Lading, and why does it matter?
@@ -504,7 +499,6 @@ Neon Auto Transport connects you with licensed, insured, and vetted carriers on 
   * [Florida Shipping Guide →](/florida-car-shipping/)
 
 
-
 $ 
 
 #### Need an Exact Price?
@@ -533,23 +527,13 @@ Last Updated: 2026
 
 ## What Our Customers Say About Georgia Shipping
 
-[ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
 ★★★★★
 
-"As a military family moving to Fort Moore in Columbus, we needed tight timing. Neon coordinated our pickup around our report date perfectly."
-
-— Capt. Daniel K. (Fort Moore)
-
-Verified Customer • Trustpilot
 
 ★★★★★
 
-"Shipped our Porsche enclosed from Savannah to New York. Zero scratches, delivered on time. The no-upfront deposit policy gave us great peace of mind."
-
-— Elena R. (Savannah, GA)
-
-Verified Customer • BBB Accredited
 
 ### Car Shipping Near You in Georgia
 

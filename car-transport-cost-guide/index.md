@@ -118,8 +118,6 @@ Shoulder-season months (spring and autumn, outside of peak summer relocation sur
 **Door-to-Door Delivery:** Inspect your vehicle upon arrival against the Bill of Lading and sign off. 
 
 
-
-
 * * *
 
 ##  What to Look For in a Car Shipping Company 

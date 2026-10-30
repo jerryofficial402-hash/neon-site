@@ -126,7 +126,6 @@ The two complaints that come up most in customer forums and review threads about
   * **Deposits taken before a carrier is confirmed:** Be cautious of any company asking for full or large payment before a specific carrier is assigned to your shipment.
 
 
-
 Neon Auto Transport requires $0 upfront deposit, and the price you're quoted is the price you pay — no calls asking for "just a little more" near pickup. 
 
 ## Frequently Asked Questions
@@ -171,21 +170,21 @@ Rated 5.0/5 Stars based on Verified Google Reviews
 
 ★★★★★
 
-"Flawless car shipping from Charleston to Jacksonville. The driver met me right outside our gated community entrance as planned."
+"Thank you for responding always on time. Friendly service and will be working in future again."
 
-— Semih Akay
-
-★★★★★
-
-"Shipped my vehicle from Columbia to Orlando during PCS move from Fort Jackson. Quick turnaround and zero deposit."
-
-— Mike Hainsworth
+— Semih Akay, Google review
 
 ★★★★★
 
-"Great snowbird shipping experience from Hilton Head to Naples. Honest price and direct driver updates."
+"They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike."
 
-— Viola Willoughby
+— Mike Hainsworth, Google review
+
+★★★★★
+
+"The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company."
+
+— Viola Willoughby, Google review
 
 [Shazil Ali](/author/shazil-ali/)
 
@@ -204,7 +203,6 @@ Shazil Ali serves as Director of Operations at Neon Auto Transport, overseeing v
   * • [Florida to South Carolina Car Shipping (Reverse Route)](/florida-to-south-carolina-car-shipping/)
   * • [South Carolina Car Shipping Services](/south-carolina-car-shipping/)
   * • [Florida Car Shipping Services](/florida-car-shipping/)
-
 
 
 #### Specialized Transport & Sibling Corridors:

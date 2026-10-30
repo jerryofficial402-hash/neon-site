@@ -44,7 +44,6 @@ Before the transport truck arrives, give your car a thorough wash. It's not just
   * **Time-stamp:** Ensure your camera or phone records the date and time of the photos. These serve as a crucial record of your vehicle's pre-travel condition.
 
 
-
 ## 2\. Remove All Personal Items
 
 Under FMCSA regulations, auto transport carriers are not licensed to transport household goods. Furthermore, personal items left in the car are not covered by the carrier's cargo insurance.
@@ -55,7 +54,6 @@ At Neon Auto Transport, we allow a maximum of **100 lbs of personal items** , bu
   * **Check all compartments:** Empty the glovebox, center console, door pockets, and under the seats.
 
 
-
 ## 3\. Perform a Quick Mechanical Check
 
 Your vehicle will be driven on and off the transport trailer, so it must be in operable condition unless you specifically booked a non-running vehicle shipment. Verify the following:
@@ -63,7 +61,6 @@ Your vehicle will be driven on and off the transport trailer, so it must be in o
   * **Tire pressure:** Ensure tires are properly inflated to prevent damage during loading and unloading.
   * **Battery:** Check that the battery is secure and fully charged. A dead battery at pickup or delivery can result in an "inoperable vehicle" fee from the carrier.
   * **Fluids:** Top off fluids, and let your coordinator know if the vehicle has any active fluid leaks so the carrier can position it accordingly on the bottom deck.
-
 
 
 ## 4\. Keep Gas to 1/4 Tank
@@ -85,7 +82,6 @@ Loose parts or aftermarket modifications are susceptible to wind damage or comin
   * **Fold in side mirrors:** Reduce the vehicle's width and protect the mirror housings.
   * **Retract or remove antennas:** Unscrew or push down physical antennas.
   * **Remove custom racks:** Take off bike racks, ski racks, or temporary luggage boxes.
-
 
 
 ## 7\. Note Existing Damage on the Bill of Lading

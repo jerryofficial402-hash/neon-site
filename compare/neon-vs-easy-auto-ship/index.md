@@ -36,7 +36,6 @@ Choosing between Neon Auto Transport and Easy Auto Ship requires evaluating FMCS
   * **Price Lock:** Yes (Binding)
 
 
-
 ### Easy Auto Ship
 
   * **Entity Type:** FMCSA-Licensed Broker
@@ -45,7 +44,6 @@ Choosing between Neon Auto Transport and Easy Auto Ship requires evaluating FMCS
   * **Upfront Deposit:** Varies / Deposit Required
   * **Cargo Insurance:** Carrier-Dependent
   * **Price Lock:** Varies by policy
-
 
 
 ## Trust Signals & Policy Comparison
@@ -69,13 +67,11 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
   * 24/7 direct driver tracking
 
 
-
 ### Easy Auto Ship Strengths
 
   * Established industry footprint
   * Large carrier dispatch network
   * Multi-vehicle and fleet capabilities
-
 
 
 ## Which Company Should You Choose?
@@ -84,7 +80,6 @@ Easy Auto Ship and Neon Auto Transport both serve all 50 states. Neon provides a
 
   * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
   * **Choose Easy Auto Ship if:** You prefer working with their specific carrier network or customized fleet program.
-
 
 
 ### Get Your Instant Quote with Neon Auto Transport

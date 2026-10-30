@@ -37,7 +37,6 @@ Enclosed Transport| $1000 – $1700| 3-5 days
   * **Cargo Insurance Coverage:** $500,000 Secondary Policy Included
 
 
-
 ### Get Your Michigan to Florida Quote
 
 Price-locked quote, $0 deposit, and $500,000 cargo insurance.

@@ -130,7 +130,6 @@ The part most competitor pages leave out: per-mile rate is only half the picture
   * **Arkansas → Florida (long-haul):** roughly $1,600–$1,900, open transport
 
 
-
 ### Shipping Methods We Offer
 
   * **[Open car carrier (Arkansas)](/services/open-auto-transport/):** the standard, most cost-effective option — your vehicle rides on a multi-car open trailer.
@@ -138,7 +137,6 @@ The part most competitor pages leave out: per-mile rate is only half the picture
   * **[Door-to-door car shipping (Arkansas)](/services/door-to-door-car-shipping/):** pickup and delivery as close to your exact addresses as legally and safely possible.
   * **[Arkansas exotic car shipping](/services/luxury-car-shipping/):** enclosed transport with soft-tie systems and liftgate loading for exotic and high-performance vehicles.
   * **Arkansas classic car transport:** specialized handling and enclosed transport recommended to protect original paint, trim, and parts on vintage vehicles.
-
 
 
 ### Regional Routes: Arkansas to Texas, Florida, and Beyond
@@ -154,7 +152,6 @@ Little Rock auto transport and Fayetteville car shipping remain our two busiest 
   * **Electric vehicle transport (Arkansas):** carriers experienced with EV weight distribution and battery-safe loading procedures.
   * **[Arkansas motorcycle shipping](/services/motorcycle-shipping/):** enclosed and crated options for motorcycles, ATVs, and other powersports vehicles.
   * **[Heavy equipment hauling (Arkansas)](/services/heavy-haul-transport/):** flatbed and lowboy trailer options for construction and agricultural equipment.
-
 
 
 Ready to see your actual Arkansas car shipping quote? Get a free, no-obligation instant quote from Neon Auto Transport — licensed, insured, and built around getting your vehicle where it needs to go without the runaround.
@@ -213,13 +210,8 @@ Direct interstate transport routes connecting Arkansas nationwide
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

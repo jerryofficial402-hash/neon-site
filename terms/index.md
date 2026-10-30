@@ -39,14 +39,12 @@ Neon Auto Transport acts as a licensed auto transport broker (MC# 1703787, DOT# 
   * All quoted prices are estimates and may vary based on route conditions, vehicle size, transport type, and seasonal demand.
 
 
-
 ## 3\. Cancellation Policy
 
   * Orders may be cancelled with a full deposit refund if cancelled before a carrier has been dispatched to your pickup location.
   * Once a carrier has been dispatched, a cancellation fee of up to $200 may apply to cover the carrier's deadhead mileage.
   * After the vehicle has been picked up, no refunds will be issued for the transport portion of the service.
   * Cancellation requests must be made in writing via email to [info@neonautotransport.com](mailto:info@neonautotransport.com).
-
 
 
 ## 4\. Vehicle Condition & Inspection
@@ -57,14 +55,12 @@ Neon Auto Transport acts as a licensed auto transport broker (MC# 1703787, DOT# 
   * Vehicles must be in drivable condition unless inoperable transport has been specifically arranged and quoted.
 
 
-
 ## 5\. Insurance & Liability
 
   * All carriers in our network carry active cargo insurance that covers your vehicle during loading, transit, and unloading.
   * In the event of damage during transport, claims must be filed within 48 hours of delivery and documented on the Bill of Lading at the time of delivery.
   * Neon Auto Transport's liability as a broker is limited to arranging transport with insured carriers. The carrier's cargo insurance is the primary coverage for your vehicle.
   * We recommend maintaining your own comprehensive auto insurance policy for additional coverage.
-
 
 
 ## 6\. Delivery Timeframes

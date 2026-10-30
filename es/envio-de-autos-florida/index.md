@@ -32,7 +32,6 @@ Florida es uno de los destinos con mayor demanda de transporte de autos en Estad
   * **Tampa y la Costa del Golfo:** Conexión directa por la I-75 para traslados desde Georgia, Tennessee y Ohio.
 
 
-
 ### ¿Listo para cotizar su auto a Florida?
 
 Sin depósitos por adelantado. Su tarifa queda congelada desde la reserva.

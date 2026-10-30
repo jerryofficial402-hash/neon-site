@@ -37,7 +37,6 @@ Enclosed Transport| $750 – $1300| 2-4 days
   * **Cargo Insurance Coverage:** $500,000 Secondary Policy Included
 
 
-
 ### Get Your Washington to California Quote
 
 Price-locked quote, $0 deposit, and $500,000 cargo insurance.

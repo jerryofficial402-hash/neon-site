@@ -38,7 +38,6 @@ Open multi-car carrier transport on a U.S. interstate. Illustrative vehicle-ship
   * ✓ **2,500+ Miles:** 7–14 days in transit after carrier pickup.
 
 
-
 [ Get a Free Car Shipping Quote → ](/car-shipping-quote/) [ Calculate Car Shipping Cost → ](/cost-calculator/)
 
 ##  Understanding Pickup Windows vs. In-Transit Delivery Time 

@@ -135,7 +135,6 @@ $950 – $1,300
   * – Vehicle exposed to weather and road elements
 
 
-
 Best for: Standard sedans, SUVs, trucks, and any vehicle under $80,000 in value. 
 
 PREMIUM PROTECTION
@@ -149,7 +148,6 @@ $1,400 – $1,850
   * ✓ Soft-tie restraints protect suspension and paintwork
   * ✓ Ideal for luxury, exotic, classic, and modified vehicles
   * – Costs 30–40% more than open transport
-
 
 
 Best for: Luxury cars, classic vehicles, exotics, and high-value vehicles over $80,000. 
@@ -198,24 +196,23 @@ Our nationwide carrier network means faster pickup windows and more route option
 
 ★★★★★
 
-"Shipped my car from Los Angeles to Houston without a single issue. The driver called ahead of time, arrived on schedule, and delivered in perfect condition. No deposit required sealed the deal for me." 
+"Thank you for responding always on time. Friendly service and will be working in future again."
 
-— Marcus T.  
-Verified Customer · Google Reviews 
+— Semih Akay, Google review
+
+"They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike."
+
+— Mike Hainsworth, Google review
+
+"The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company."
+
+— Viola Willoughby, Google review
 
 ★★★★★
 
-"I was nervous about shipping my car cross-country for the first time. Neon made it completely painless. The price they quoted was exactly what I paid — nothing added at delivery. Vehicle arrived in 3 days." 
-
-— Jennifer R.  
-Verified Customer · Trustpilot 
 
 ★★★★★
 
-"Used enclosed transport for my classic car from California to Texas. Zero scratches, delivered exactly as promised. Being able to text the driver directly for updates made all the difference." 
-
-— David K.  
-Verified Customer · BBB 
 
 ★★★★★
 
@@ -260,12 +257,10 @@ Before your carrier arrives: wash the exterior and document any pre-existing dam
   * [California to New York](/california-to-new-york-car-shipping/)
 
 
-
 ###  More Texas Routes 
 
   * [Texas Car Shipping Hub](/texas-car-shipping/)
   * [Texas to California ↩](/texas-to-california-car-shipping/)
-
 
 
 ###  Resources 
@@ -275,7 +270,6 @@ Before your carrier arrives: wash the exterior and document any pre-existing dam
   * [Expedited Shipping](/services/expedited-auto-transport/)
   * [Auto Transport FAQs](/faqs/)
   * [Shipping Cost Calculator](/cost-calculator/)
-
 
 
 ##  Ready to Ship Your Car from California to Texas? 

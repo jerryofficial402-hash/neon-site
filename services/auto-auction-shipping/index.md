@@ -89,14 +89,12 @@ We pick up from virtually every licensed auction facility in the U.S.
   * America’s Auto Auction
 
 
-
 ### Salvage & Insurance
 
   * Copart
   * IAA
   * SCA Auctions
   * AutoBidMaster
-
 
 
 ### Digital Marketplaces
@@ -107,14 +105,12 @@ We pick up from virtually every licensed auction facility in the U.S.
   * SmartAuction
 
 
-
 ### Collector & Enthusiast
 
   * Bring a Trailer
   * Cars & Bids
   * Mecum
   * Barrett-Jackson
-
 
 
 ### Retail & Online
@@ -125,14 +121,12 @@ We pick up from virtually every licensed auction facility in the U.S.
   * EchoPark
 
 
-
 ### Fleet & Remarketing
 
   * AutoNation
   * Lithia Motors
   * Enterprise Fleet
   * Hertz
-
 
 
 ## What Affects Your Cost
@@ -175,13 +169,8 @@ Yes. We recommend enclosed transport for collector purchases (Mecum, Bring a Tra
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

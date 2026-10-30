@@ -98,13 +98,11 @@ Yes. This is a routine, federally-regulated industry — every legitimate auto t
   5. **Delivery and inspection:** The carrier delivers to your address, you inspect together, and sign Proof of Delivery.
 
 
-
 ### Buying a Car Sight-Unseen Out of State?
 
   * **Get an independent pre-purchase inspection:** Hire a local mobile mechanic in the seller's city to inspect the car in person before paying.
   * **Confirm title transfer process:** Ensure titles are signed and mailed or handed off at pickup.
   * **Beware "pay in full before pickup" seller shipper demands:** Arranging your own shipping keeps you in control.
-
 
 
 ## Ship It vs. Drive It vs. Fly & Drive It Yourself
@@ -122,7 +120,6 @@ This depends more on sales tax than sticker price, and the rule that surprises m
 
   * **Virginia's motor vehicle sales and use tax** is a flat **4.15%** (minimum $75), regardless of locality.
   * **Florida's state sales tax on vehicles** is **6%** , plus a county discretionary surtax that can push the total higher.
-
 
 
 So if you're a Virginia resident buying a car in Florida and bringing it home to register, you'll generally pay Virginia's lower 4.15% rate, not Florida's — the purchase location doesn't determine your tax rate, your registration state does. This makes Virginia buyers shopping in Florida a genuinely common and tax-neutral move. 
@@ -175,21 +172,21 @@ Rated 5.0/5 Stars based on Verified Google Reviews
 
 ★★★★★
 
-"Flawless car delivery from Woodbridge, VA to Tampa. Driver picked up right at our house and delivered in 3 days."
+"Thank you for responding always on time. Friendly service and will be working in future again."
 
-— Semih Akay
-
-★★★★★
-
-"Bought an Audi out of state from a Florida dealer and had Neon deliver it to Norfolk. Seamless title handoff and zero upfront deposit."
-
-— Mike Hainsworth
+— Semih Akay, Google review
 
 ★★★★★
 
-"Excellent snowbird shipping experience from Richmond to Miami. Clear communication and fair rates."
+"They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike."
 
-— Viola Willoughby
+— Mike Hainsworth, Google review
+
+★★★★★
+
+"The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company."
+
+— Viola Willoughby, Google review
 
 [Shazil Ali](/author/shazil-ali/)
 
@@ -209,7 +206,6 @@ Shazil Ali serves as Director of Operations at Neon Auto Transport, overseeing v
   * • [Virginia Car Shipping Services](/virginia-car-shipping/)
   * • [Florida Car Shipping Services](/florida-car-shipping/)
   * • [Woodbridge VA Auto Transport (Neon HQ City)](/car-shipping-woodbridge-va/)
-
 
 
 #### Specialized Transport & Sibling Corridors:

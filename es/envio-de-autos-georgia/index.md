@@ -32,7 +32,6 @@ Georgia es el núcleo logístico del sureste de Estados Unidos gracias a la inte
   * **Columbus y Augusta:** Alta demanda por traslados militares (PCS) durante todo el año.
 
 
-
 ### Obtenga su precio exacto a Georgia
 
 Cotizaciones sin compromiso y servicio puerta a puerta.

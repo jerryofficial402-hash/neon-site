@@ -47,7 +47,6 @@ If you need to ship car from Manhattan, expect to meet your driver at a nearby s
   * Direct interstate access to the entire Northeast corridor and beyond via I-95, I-87, and I-78
 
 
-
 ### Popular Routes from New York City
 
 Destination | Distance | Estimated Price (Open) | Estimated Transit  
@@ -89,7 +88,6 @@ Winter weather is the defining seasonal factor for Buffalo. Lake-effect snow off
   * Buffalo NY car shipping rates are generally competitive given the city’s position on two major thruways
 
 
-
 ### Popular Routes from Buffalo
 
 Destination | Distance | Estimated Price (Open) | Estimated Transit  
@@ -127,7 +125,6 @@ Rochester’s economy — long anchored by imaging and optics companies and now 
   * Home to the University of Rochester and Rochester Institute of Technology — steady student and academic relocation demand
   * Finger Lakes region proximity drives seasonal vehicle shipping tied to vacation properties
   * Rochester vehicle hauling covers the full metro with reliable regional connections
-
 
 
 ### Popular Routes from Rochester
@@ -169,7 +166,6 @@ Auto transport Syracuse demand is driven heavily by Syracuse University and the 
   * Central NY car hauling connects efficiently to Rochester, Albany, and the Southern Tier
 
 
-
 ### Popular Routes from Syracuse
 
 Destination | Distance | Estimated Price (Open) | Estimated Transit  
@@ -207,7 +203,6 @@ Albany NY car shipping quotes also reflect a growing share of tech-sector reloca
   * State capital status drives predictable relocation demand tied to the legislative and budget calendar
   * Growing tech and semiconductor sector relocation into the Capital Region
   * Vehicle hauling Albany NY covers the full Capital Region, including Schenectady and Troy
-
 
 
 ### Popular Routes from Albany
@@ -249,7 +244,6 @@ Being immediately adjacent to the Bronx means Yonkers car shipping shares a lot 
   * Yonkers auto transport typically sees more true door-to-door service than deep into Manhattan
 
 
-
 ### Popular Routes from Yonkers
 
 Destination | Distance | Estimated Price (Open) | Estimated Transit  
@@ -288,7 +282,6 @@ Westchester County auto hauling in general benefits from this well-connected hig
   * Westchester County auto hauling here typically supports true door-to-door service
 
 
-
 ### Popular Routes from White Plains
 
 Destination | Distance | Estimated Price (Open) | Estimated Transit  
@@ -325,7 +318,6 @@ Hempstead’s location also puts it within easy reach of JFK Airport, which keep
   * Southern State Parkway restricts commercial vehicles, so carriers route via the LIE instead — same pattern as NYC’s parkway system
   * Nassau County car shipping benefits from Hempstead’s central Long Island location
   * Home to Hofstra University, adding steady student relocation demand alongside typical household moves
-
 
 
 ### Popular Routes from Hempstead
@@ -392,13 +384,8 @@ Popular local pickup & delivery hubs across New York
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

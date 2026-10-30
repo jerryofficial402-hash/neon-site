@@ -55,7 +55,6 @@ For most Yuba City addresses — standard residential streets, dealerships, busi
   * **HOA communities** that restrict heavy commercial vehicle entry
 
 
-
 If your address has accessibility constraints, the driver will call ahead and arrange a nearby open meeting point — such as a retail shopping center parking lot — to complete loading or unloading safely. 
 
 [Learn more about Door-to-Door Car Shipping →](/services/door-to-door-car-shipping/)
@@ -83,7 +82,6 @@ Delivery timing depends on the route, carrier availability, pickup dates, traffi
   1. **Carrier Assignment:** Matching your shipment with an available carrier on your route.
   2. **Pickup Window:** A 1–2 day window agreed upon with the driver once assigned.
   3. **Transit Time:** Driving time from pickup to delivery. Short regional shipments (e.g., Yuba City to Sacramento or the Bay Area) often move within 1–2 days after pickup, while statewide and cross-country routes require more time.
-
 
 
 ##  Open vs. Enclosed Auto Transport 
@@ -118,7 +116,6 @@ Need a different destination? We quote shipments to and from locations throughou
   * Disclose non-running status in advance.
   * Remove or turn off toll transponders.
   * Follow fuel-level instructions provided by your carrier (typically ~1/4 tank).
-
 
 
 ### Broker & Carrier Transparency

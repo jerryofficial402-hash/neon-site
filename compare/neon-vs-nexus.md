@@ -36,7 +36,6 @@ Choosing between Neon Auto Transport and Nexus Auto Transport requires evaluatin
   * **Price Lock:** Yes (Binding)
 
 
-
 ### Nexus Auto Transport
 
   * **Entity Type:** FMCSA-Licensed Broker
@@ -45,7 +44,6 @@ Choosing between Neon Auto Transport and Nexus Auto Transport requires evaluatin
   * **Upfront Deposit:** Varies / Deposit Required
   * **Cargo Insurance:** Carrier-Dependent
   * **Price Lock:** Varies by policy
-
 
 
 ## Trust Signals & Policy Comparison
@@ -69,13 +67,11 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
   * 24/7 direct driver tracking
 
 
-
 ### Nexus Auto Transport Strengths
 
   * Established industry footprint
   * Large carrier dispatch network
   * Multi-vehicle and fleet capabilities
-
 
 
 ## Which Company Should You Choose?
@@ -84,7 +80,6 @@ Nexus Auto Transport charges an upfront 25% deposit at booking, whereas Neon Aut
 
   * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
   * **Choose Nexus Auto Transport if:** You prefer working with their specific carrier network or customized fleet program.
-
 
 
 ### Get Your Instant Quote with Neon Auto Transport

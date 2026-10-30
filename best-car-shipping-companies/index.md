@@ -75,7 +75,6 @@ Reliable car shipping companies generally provide:
   * A clear claims process.
 
 
-
 FMCSA’s glossary defines a broker as a person or company that arranges transportation through an authorized carrier. A broker does not provide the actual truck transportation. The motor carrier is the company that operates the commercial vehicle and physically transports the vehicle. That distinction is essential when comparing the most reliable auto transport companies because the company that provides your quote may not be the company that sends the driver. Refer to the [FMCSA Glossary](https://www.fmcsa.dot.gov/protect-your-move/glossary). 
 
 ## Neon Auto Transport Disclosure
@@ -93,7 +92,6 @@ Before pickup, customers should confirm:
   * Payment and cancellation terms.
   * Vehicle inspection procedures.
   * Claims instructions.
-
 
 
 Use the official [FMCSA Licensing & Insurance System](https://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist) to research authority and insurance filings. You can also use the [FMCSA SAFER Company Snapshot](https://safer.fmcsa.dot.gov/CompanySnapshot.aspx) to review available company identification and safety information. SAFER provides public company snapshots that may include identification, safety ratings where available, inspection summaries, and crash information. 
@@ -125,7 +123,6 @@ The page does not assign a permanent number-one ranking because:
   * Brokers, carriers, and marketplaces perform different roles.
   * A provider suitable for one shipment may not suit another.
   * Customer reviews do not guarantee a particular outcome.
-
 
 
 Company-specific services, prices, ratings, policies, and operating status should be verified before booking.
@@ -162,7 +159,6 @@ Car shipping prices vary by route and shipment conditions. The main pricing fact
   * **Expedited service:** Urgent dispatch or a narrow pickup window generally increases the cost.
   * **Access restrictions:** Narrow roads, low bridges, gated communities, and auction lots may require alternate pickup or delivery locations.
   * **Fuel and market conditions:** Carrier costs and available trailer space can affect pricing.
-
 
 
 A quote should explain its assumptions and identify circumstances that could change the price. Learn more through the [car shipping cost calculator](/cost-calculator/) or [request an auto transport quote](/car-shipping-quote/). 
@@ -224,7 +220,6 @@ Use this checklist before signing a contract:
   * Avoid companies that refuse to explain their role or terms.
 
 
-
 FMCSA also warns about broker and carrier identity fraud, including situations where an entity uses another company’s USDOT number or acts as a broker without proper registration. Learn more at [FMCSA Broker & Carrier Fraud Guidance](https://www.fmcsa.dot.gov/mission/help/broker-and-carrier-fraud-and-identity-theft). 
 
 ## Questions to Ask Before Booking
@@ -249,7 +244,6 @@ Ask the provider:
   16. Who handles damage claims?
   17. What document records vehicle condition?
   18. What payment is due at pickup or delivery?
-
 
 
 ## Best Transport Option by Situation
@@ -333,7 +327,6 @@ Before booking:
   5. Understand the pickup window and transit estimate.
   6. Document the vehicle at pickup and delivery.
   7. Keep written records of the quote and contract.
-
 
 
 Neon Auto Transport coordinates nationwide auto transport through independent motor carriers, including open, enclosed, door-to-door, expedited, military, dealership, auction, and other specialty arrangements where available. 

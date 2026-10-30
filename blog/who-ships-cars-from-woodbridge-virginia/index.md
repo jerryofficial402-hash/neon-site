@@ -46,7 +46,6 @@ For car shipping customers, this translates into real savings:
   * **Flexible pickup windows** — Because so many carriers pass through daily, we can often offer 1–3 day pickup windows instead of the industry-standard 3–7 days.
 
 
-
 **💡 Local Insight:** Carriers prefer pickups near major highway interchanges. If you're located near the Route 1 / I-95 interchange, the Potomac Mills area, or Dale City, your pickup location is considered highly desirable by drivers — which often results in faster dispatch and lower rates. 
 
 ## Your Local Auto Transport Company in Woodbridge
@@ -87,7 +86,6 @@ Our military-friendly service includes:
   * Zero upfront deposit — you only pay when a carrier is dispatched
 
 
-
 ## Snowbird Routes: Woodbridge to Florida
 
 Every fall, thousands of Northern Virginia residents make the seasonal migration down I-95 to Florida. Instead of putting 1,000+ miles on your car, many snowbirds choose to **ship their vehicle from Woodbridge to Florida** and fly down instead.
@@ -99,7 +97,6 @@ Our most popular snowbird routes from Woodbridge include:
   * Woodbridge, VA → Orlando, FL
   * Woodbridge, VA → Naples / Fort Myers, FL
   * Woodbridge, VA → The Villages, FL
-
 
 
 Because Woodbridge-to-Florida is one of the highest-volume auto transport lanes in the country, rates on this route are typically **15–25% lower** than shipping to less common destinations.
@@ -160,7 +157,6 @@ Our student-friendly service offers flexible scheduling around move-in and move-
   3. **Carrier Assignment:** A vetted, FMCSA-licensed carrier is dispatched to your Woodbridge location. You'll receive driver details, pickup window, and real-time tracking.
   4. **Vehicle Inspection & Pickup:** The driver conducts a thorough condition inspection (Bill of Lading) at pickup. You'll receive a signed copy documenting the vehicle's pre-transport condition.
   5. **Transit & Delivery:** Your vehicle is transported safely. Standard delivery times from Woodbridge range from 1–3 days (East Coast) to 5–8 days (West Coast). Upon delivery, a final inspection confirms the vehicle arrived in the same condition.
-
 
 
 ## Frequently Asked Questions

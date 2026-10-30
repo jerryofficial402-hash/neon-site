@@ -69,7 +69,6 @@ A standard multi-car trailer may be more than 70 feet long and require room to t
   * Construction, road closures, or seasonal conditions
 
 
-
 When this happens, the carrier typically coordinates a nearby accessible meeting point, such as a large shopping-center parking lot, a truck stop, a public lot, or a wide nearby street where commercial vehicles may safely stop. 
 
 A nearby meeting point is still part of the door-to-door process because it is chosen to make pickup or delivery practical and safe—not because you are being sent to a remote terminal. 
@@ -116,7 +115,6 @@ Door-to-door car shipping costs are based on the actual shipment—not a flat na
   * **[Expedited Auto Transport](/expedited-auto-transport/):** A time-sensitive pickup request may require different carrier options and pricing.
 
 
-
 Use our [Car Shipping Cost Calculator](/cost-calculator/) for an estimated rate, then [Get a Free Door-to-Door Shipping Quote](/car-shipping-quote/) for current route-specific options. 
 
 ## Open vs. Enclosed Door-to-Door Transport
@@ -153,7 +151,6 @@ A little preparation helps prevent delays and makes the inspection process easie
   * Make sure you or an authorized representative can inspect the vehicle and sign the Bill of Lading.
 
 
-
 ## Door-to-Door Shipping for Common Moves
 
 ### Relocating to another state
@@ -180,7 +177,6 @@ Door-to-door transport is available on interstate and regional routes nationwide
   * [New York to Florida Car Shipping](/new-york-to-florida-car-shipping/)
   * [California to New York Car Shipping](/california-to-new-york-car-shipping/)
   * [Texas to California Car Shipping](/texas-to-california-car-shipping/)
-
 
 
 Use the [Car Shipping Cost Calculator](/cost-calculator/) to estimate your specific route, or [request a free quote](/car-shipping-quote/) for current carrier options. 

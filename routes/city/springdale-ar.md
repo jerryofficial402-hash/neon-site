@@ -117,8 +117,6 @@ Neon Auto Transport provides door-to-door car shipping for Springdale Auto Trans
   * Coverage across Plano, Irving, Frisco, Richardson, and the full metroplex
 
 
-
-
 ## Popular Springdale Routes
 
 Destination | Distance | Estimated Price (Open) | Estimated Transit  
@@ -180,7 +178,6 @@ Talk to an auto transport expert now or get an instant quote for shipping to/fro
   * [Fort Smith Car Shipping](/routes/city/fort-smith-ar/)
 
 
-
 ### Springdale Auto Shipping Corridors & Local Logistics
 
 Vehicles traveling to or from **Springdale** utilize primary commercial freight routes including **Interstate Commercial Corridors**. Our licensed carriers schedule regular door-to-door pickups across residential neighborhoods, dealership lots, and commercial hubs in the greater Springdale area.
@@ -195,13 +192,8 @@ Calculate Springdale Rate →
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

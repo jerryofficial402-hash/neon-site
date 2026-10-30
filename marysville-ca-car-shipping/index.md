@@ -52,7 +52,6 @@ Marysville serves as a key gateway for personnel stationed at or relocating to *
   * **PCS Planning:** Disclose base-adjacent logistics when requesting your quote so we can flag timing and driver access requirements in advance.
 
 
-
 ##  Marysville Pickup & Delivery: What "Door-to-Door" Really Means 
 
 A full-size auto carrier is a large commercial truck — it can only go where it can safely and legally drive. For most Marysville addresses, pickup or delivery takes place right at your door. For a smaller number of locations, physical accessibility requires an alternative: 
@@ -61,7 +60,6 @@ A full-size auto carrier is a large commercial truck — it can only go where it
   * **Rural roads** outside the city core without sufficient turnaround space
   * **Apartment or condo properties** with restricted gate clearance
   * **Cul-de-sacs** too tight for a multi-car trailer to maneuver
-
 
 
 If your address has access constraints, the driver will call ahead to arrange a nearby meeting point — such as a commercial parking lot — to load or unload safely. 
@@ -91,7 +89,6 @@ Short regional routes may involve only a day or two of driving after pickup, whi
   1. **Carrier Assignment:** Matching your shipment with an available carrier on your route.
   2. **Pickup Window:** A 1–2 day window agreed upon with the driver once assigned.
   3. **Transit Time:** Actual driving time. Regional moves (e.g. Marysville to Sacramento or Yuba City) take ~1–2 days in transit; interstate moves take longer.
-
 
 
 ##  Open vs. Enclosed Auto Transport 
@@ -128,7 +125,6 @@ Neon can also arrange transportation to and from destinations throughout Califor
   * Remove or turn off toll transponders.
   * Follow fuel-level instructions provided by your assigned carrier.
   * Confirm gate access requirements if shipping near Beale AFB.
-
 
 
 ### Broker & Carrier Transparency

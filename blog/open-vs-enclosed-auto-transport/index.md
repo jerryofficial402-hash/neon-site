@@ -68,14 +68,12 @@ Transit Time| Standard| Standard to slightly longer
   * Your vehicle is under $50,000 in value
 
 
-
 ## When Should You Choose Enclosed Transport?
 
   * You're shipping a luxury, exotic, or classic/collector car
   * Your vehicle is a low-clearance sports car or has custom modifications
   * You're shipping in harsh weather conditions (winter routes through mountain states)
   * You need maximum peace of mind and higher insurance limits
-
 
 
 ## The Bottom Line

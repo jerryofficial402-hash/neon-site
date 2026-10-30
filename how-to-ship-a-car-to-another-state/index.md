@@ -50,7 +50,6 @@ Shipping a vehicle may be practical when:
   * You need to arrive before the vehicle is available to drive.
 
 
-
 Driving may still be appropriate for shorter relocations or when you need the vehicle immediately during the journey. Compare fuel, hotels, meals, tolls, lost time, mileage, and vehicle wear with the cost of professional transport. 
 
 ### How Interstate Car Shipping Works
@@ -65,7 +64,6 @@ Driving may still be appropriate for shorter relocations or when you need the ve
   8. Complete the pickup inspection and bill of lading.
   9. Follow shipment updates during transit.
   10. Inspect and document the vehicle at delivery.
-
 
 
 The company that provides the quote may not be the company operating the truck. FMCSA defines a property broker as an entity that arranges interstate transportation through for-hire motor carriers; the carrier provides the actual transportation ([FMCSA URS Glossary](https://www.fmcsa.dot.gov/registration/urs-glossary-of-terms)). 
@@ -85,7 +83,6 @@ Before pickup, customers should confirm:
   * Payment and cancellation terms.
   * Vehicle inspection procedures.
   * Claims instructions.
-
 
 
 You can research public company and safety information through the [FMCSA SAFER Company Snapshot](https://safer.fmcsa.dot.gov/CompanySnapshot.aspx). FMCSA says the Company Snapshot can provide company identification, inspection and out-of-service summaries, crash data, and safety-rating information where available. 
@@ -108,7 +105,6 @@ There is no single price for interstate car shipping. The quote depends on your 
   * **Location access:** Narrow roads, private roads, gated areas, low bridges, or facility restrictions may require an alternate meeting point.
   * **Expedited service:** A short pickup window generally increases the cost.
   * **Fuel and market conditions:** Carrier costs and available trailer space can change.
-
 
 
 ### How to receive a more accurate quote
@@ -179,7 +175,6 @@ Neither option is automatically better. A broker may be useful when you want rou
   * Ensure vehicle is accessible at agreed time.
 
 
-
 **🚚 Pickup: What to Expect** Meet the driver, inspect vehicle together, compare condition with photos, record existing damage on bill of lading, confirm mileage/fuel, verify tie-down security, and retain a copy of paperwork. 
 
 **🛣️ Transit: What to Expect** Transit depends on distance, traffic, weather, scheduling, and stops. Understand that pickup window spans multiple days; transit begins only after vehicle collection. 
@@ -224,7 +219,6 @@ Explore [door-to-door vehicle shipping](/services/door-to-door-car-shipping/) op
   20. How are delays communicated?
 
 
-
 ### Common Mistakes to Avoid
 
   * **Choosing lowest quote automatically:** May reflect unachievable carrier rates.
@@ -235,7 +229,6 @@ Explore [door-to-door vehicle shipping](/services/door-to-door-car-shipping/) op
   * **Failing to document condition:** Photos and completed bill of lading are required.
   * **Booking too late:** Last-minute moves have limited equipment options.
   * **Relying on one review platform:** Combine reviews with FMCSA regulatory checks.
-
 
 
 ## Frequently Asked Questions

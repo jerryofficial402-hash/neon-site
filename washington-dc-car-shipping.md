@@ -185,7 +185,7 @@ Congressional staff turnover, campaign cycles, and administration transitions cr
 
 We offer comprehensive auto transport options designed to meet the unique schedule and vehicle requirements of Washington D.C. customers: 
 
-[ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
 ## What Affects the Cost of Car Shipping in Washington D.C.
 
@@ -328,7 +328,6 @@ Understanding D.C.'s road network and restrictions helps set realistic expectati
   * **US Route 1** — a historic north-south route running directly through the District
 
 
-
 ### Airports & Transit Hubs
 
 Ronald Reagan Washington National Airport, Washington Dulles International Airport, and Union Station all see heavy relocation-related traffic, and carriers are experienced coordinating pickups near travelers' arrival/departure schedules.
@@ -469,7 +468,6 @@ Per federal motor carrier guidance, personal items should not be shipped inside 
   * No loose valuables (electronics, jewelry, cash)
   * No perishable food items
   * Avoid packing the trunk or cabin with boxes — a small personal bag is typically the only exception carriers allow, and even that isn't guaranteed to be covered
-
 
 
 ## Why Customers Choose Neon Auto Transport
@@ -650,13 +648,6 @@ Direct interstate transport routes connecting Washington D.C. nationwide
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
-
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

@@ -60,7 +60,6 @@ Under 500 miles| VA to FL, NY to OH| $900 – $1,200| $550 – $750| ~40% more
   * **Cost per mile:** Enclosed car transport costs between $1.00 and $2.50 per mile depending on distance and vehicle type. Longer routes cost less per mile. Short regional routes under 300 miles are the most expensive on a per-mile basis.
 
 
-
 ### What drives the premium over open transport:
 
 Enclosed transport typically costs 30–60% more than open shipping due to three structural reasons: fewer carriers in the fleet, lower vehicle capacity per trailer (2–6 vehicles vs. 8–10), and higher insurance requirements per shipment.
@@ -101,7 +100,6 @@ For owners of exotic cars with low ground clearance, a lift gate is mandatory. I
   * Electric vehicles on certain routes — most EVs are heavier than equivalent gas vehicles due to battery weight and may exceed open trailer per-vehicle weight limits
 
 
-
 ### Consider enclosed:
 
   * Luxury daily drivers valued $80,000–$150,000 — Mercedes S-Class, BMW 7 Series, Audi A8, Lexus LS
@@ -110,13 +108,11 @@ For owners of exotic cars with low ground clearance, a lift gate is mandatory. I
   * Collector vehicles regardless of value — sentimental and historical value exceeds replacement cost
 
 
-
 ### Open transport is fine for:
 
   * Standard luxury vehicles under $80,000 in daily driver condition
   * Any vehicle you would drive through rain without concern
   * Vehicles where minor cosmetic wear is acceptable
-
 
 
 ## The Salt Belt Warning — Why Winter Route Matters
@@ -129,7 +125,6 @@ If you are shipping any of the following between November and April through stat
   * Aluminum-bodied vehicles (many modern luxury cars)
   * Recently restored vehicles
   * Any vehicle you plan to show or sell
-
 
 
 **The enclosed premium on a winter route is functioning as corrosion insurance — not just weather protection.**
@@ -165,7 +160,6 @@ Enclosed transport customers typically have higher-value vehicles. These prepara
   * For vehicles with aftermarket exhausts — notify the carrier so they can plan loading positioning
   * Retract or remove aftermarket spoilers if they affect trailer clearance
   * Have your title or registration available at pickup for identity verification
-
 
 
 ### At pickup:
@@ -233,7 +227,6 @@ Soft-tie restraints| Standard| Not always
   * Local to Arlington VA?[ View Arlington Services](/car-shipping-arlington-va/)
 
 
-
 Reviewed by Shazil Ali
 
 Director of Operations, Neon Auto Transport — Last Updated June 2026
@@ -276,13 +269,8 @@ Any vehicle with ground clearance under 4 inches requires a lift gate. This incl
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

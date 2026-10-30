@@ -317,7 +317,7 @@ Multi-Car Open Carrier Transport in Florida: Commercial double-deck car haulers 
 
 🛡️ Verified Commercial Fleet Operations  • Capacity: Multi-Vehicle Trailer
 
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
 ##  Popular Florida Car Shipping Routes 
 
@@ -441,7 +441,6 @@ Compare your vehicle against the pickup report before signing off.
   * ✓Confirm tire pressure and battery charge (especially EVs)
 
 
-
 ### On Pickup Day
 
   * ✓Be present or have an authorized representative available
@@ -450,14 +449,12 @@ Compare your vehicle against the pickup report before signing off.
   * ✓Hand over only one key; keep a spare with you
 
 
-
 ### On Delivery Day
 
   * ✓Inspect the vehicle in daylight if possible, before signing
   * ✓Compare condition directly against the pickup Bill of Lading
   * ✓Note any new damage on the delivery paperwork immediately — not after the driver leaves
   * ✓Confirm the vehicle starts and runs normally before the carrier departs
-
 
 
 ##  Common Florida Car Shipping Mistakes (And How to Avoid Them) 
@@ -688,13 +685,6 @@ Florida → California
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
-
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

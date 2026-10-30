@@ -42,7 +42,6 @@ We evaluated each company on five criteria that consistently matter most to car 
   * **Customer experience** — verified review scores across Trustpilot, Google, and BBB.
 
 
-
 Ratings below reflect publicly available company information current as of 2026\. As with any service industry, individual experiences vary by route, season, and carrier availability. 
 
 ## Top 5 Auto Transport Companies at a Glance
@@ -86,7 +85,6 @@ AmeriFreight consistently returns some of the lowest quotes for both short and l
   * **Always verify FMCSA/USDOT registration** before booking with any provider.
 
 
-
 ## FAQs: Choosing an Auto Transport Company
 
 ### What is the best auto transport company in the USA?
@@ -118,7 +116,6 @@ Booking 1-2 weeks ahead of your target pickup date is ideal for most routes, and
   * [Why Choose Neon Auto Transport](/why-neon/)
   * [Florida Car Shipping](/florida-car-shipping/)
   * [Get a Free Quote](/cost-calculator/)
-
 
 
 ### Ready to ship your vehicle with the best?

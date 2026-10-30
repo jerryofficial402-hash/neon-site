@@ -46,8 +46,6 @@ Shipping a car in or out of New York means dealing with a market unlike almost a
   * **Price-match guarantee** — if you find a lower legitimate quote, we'll match it.
 
 
-
-
 ## How New York Auto Shipping Works
 
 Shipping a car to or from New York with Neon Auto Transport takes three simple steps: 
@@ -55,7 +53,6 @@ Shipping a car to or from New York with Neon Auto Transport takes three simple s
   1. **Get an instant quote.** Enter your pickup and delivery details on our [cost calculator](/cost-calculator/) for a transparent, no-obligation price.
   2. **Book your pickup.** Choose a convenient pickup date and location — home, office, or dealership.
   3. **Track delivery.** Your carrier picks up, transports, and delivers your vehicle, with real-time updates along the way.
-
 
 
 ## Understanding New York Car Shipping Costs
@@ -87,7 +84,6 @@ Prices and transit times are estimates and vary by season, vehicle type, and car
   * **Pickup flexibility** — a flexible multi-day window is typically cheaper than a fixed hard date, and it's one of the easiest ways to lower your New York car shipping quote.
 
 
-
 ### Ballpark Averages by Corridor
 
 Corridor | Typical Price Range (Open) | Typical Transit  
@@ -108,7 +104,6 @@ New York → West Coast (California)| $1,150 – $1,600| 7–10 days
   * **Ship in the off-season.** Late fall through early spring typically sees lower demand and better pricing than peak summer months.
   * **Stay flexible on pickup dates.** A 3–5 day pickup window often lowers your quote compared to a fixed date.
   * **Consider terminal-to-terminal.** If you're near a hub, this can save $100–$300 over door-to-door.
-
 
 
 ## Shipping Methods & Services
@@ -138,7 +133,6 @@ Save $100–$300 by dropping off and picking up at a secure regional terminal in
   * **Expedited car shipping** — available for tighter timelines at a premium over standard scheduling, useful for last-minute corporate relocations or lease-deadline moves.
 
 
-
 ### Route-Specific Shipping From New York
 
   * **New York to California** — one of the longest, most established coast-to-coast routes in the industry; expect 7–10 days and steady carrier availability given the volume of traffic on this corridor.
@@ -149,7 +143,6 @@ Save $100–$300 by dropping off and picking up at a secure regional terminal in
   * **Shipping cars from NYC to Canada** — cross-border shipments to Toronto or Montreal are common, running north via I-87 (the New York Thruway); expect additional paperwork for customs and be prepared to provide title, registration, and proof of ownership documents in advance.
 
 
-
 ### Specialty & Niche Vehicle Shipping
 
   * **Motorcycle shipping** — motorcycles ship on dedicated motorcycle trailers or as part of a mixed load, secured with wheel chocks and tie-downs; typically more affordable than car shipping given the vehicle's smaller footprint.
@@ -158,7 +151,6 @@ Save $100–$300 by dropping off and picking up at a secure regional terminal in
   * **Non-running car shipping** — a vehicle that doesn't start or drive needs to be winched onto the trailer instead of driven on, which typically adds $100–$250 to the quote; always disclose this before pickup.
   * **Military car shipping** — Neon Auto Transport coordinates around PCS timelines for personnel moving through the New York area, including West Point and Fort Drum, with the same base-access awareness we bring to installations nationwide.
   * **Corporate auto transport** — fleet and executive relocation shipments, often booked with tighter timelines and higher-value vehicles, are a routine part of the New York market given the concentration of corporate headquarters in Manhattan.
-
 
 
 ## Shipping To and From New York City
@@ -226,7 +218,6 @@ New York is home to over 19 million residents, with roughly 40% concentrated in 
   * [New York DMV County Office Locator](https://dmv.ny.gov/offices/county-offices)
 
 
-
 ## Before and After Your Shipment
 
 ### Preparing Your Vehicle for Transport
@@ -236,7 +227,6 @@ New York is home to over 19 million residents, with roughly 40% concentrated in 
   3. Keep the fuel tank to about a quarter full to reduce weight.
   4. Take timestamped photos from all angles before pickup.
   5. Disable any aftermarket alarm systems to prevent them from triggering in transit.
-
 
 
 ### Receiving Your Vehicle
@@ -253,7 +243,6 @@ If you're relocating to New York, a few state-specific rules kick in once your v
   * **Non-running vehicles** — same as anywhere else: tell your transporter before pickup, not at the curb.
 
 
-
 ### Choosing a Reliable New York Auto Transporter
 
   * Verify the company's USDOT and MC number through the [FMCSA's public SAFER System](https://safer.fmcsa.dot.gov/) before booking.
@@ -261,7 +250,6 @@ If you're relocating to New York, a few state-specific rules kick in once your v
   * Insist on a signed condition inspection (Bill of Lading) at both pickup and delivery — this matters even more in New York, where a staging-area handoff means you and your driver may be meeting somewhere other than your home.
   * Understand broker vs. carrier — many companies quoting you are brokers who dispatch to a vetted carrier network, which is a legitimate and common model.
   * Compare more than one quote, and be skeptical of a bid dramatically below everything else you've received.
-
 
 
 Neon Auto Transport works only with fully vetted, FMCSA-compliant carriers on every New York route in this guide, with clear staging-point communication up front so there are no surprises on pickup day.
@@ -306,7 +294,6 @@ Yes. Cross-border shipments to cities like Toronto or Montreal typically run nor
   * [Get a Free Quote](/cost-calculator/)
 
 
-
 [ Back to All US Locations ](/locations/)
 
 ### Car Shipping Near You in New York
@@ -325,13 +312,8 @@ Direct interstate transport routes connecting New York nationwide
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Sarah Jenkins ★★★★★ "Enclosed transport for my classic Mustang was top notch. Driver was super careful and arrived exactly on time." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

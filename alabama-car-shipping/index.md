@@ -114,7 +114,6 @@ From new hires relocating to Alabama’s booming auto manufacturing corridor to 
   * **Online vehicle purchases** shipped from dealerships or private sellers out of state
 
 
-
 ## How Much Does Alabama Car Shipping Cost?
 
 Pricing depends primarily on distance, vehicle size, transport type (open vs. enclosed), time of year, and carrier availability on your route. Longer routes generally cost less per mile than shorter ones.
@@ -174,7 +173,6 @@ Popularity| Most common choice| Less common
   * **Texas to Alabama** and **New York to Alabama** — longer routes tied to corporate relocation and military moves
 
 
-
 ### Alabama Car Shipping by City
 
 City | Notes  
@@ -200,7 +198,6 @@ Florence| Northwest Alabama hub with growing residential relocation activity
   * **Vehicle condition** — inoperable vehicles typically cost more to ship
 
 
-
 ## How to Choose a Licensed Alabama Auto Transport Company
 
   1. **FMCSA licensing** — confirm active USDOT and MC numbers on the FMCSA SAFER database
@@ -208,7 +205,6 @@ Florence| Northwest Alabama hub with growing residential relocation activity
   3. **Transparent pricing** — be cautious of quotes far below market range
   4. **Real customer feedback** — check reviews across multiple platforms
   5. **Broker vs. carrier** — understand whether you’re booking with a broker (who dispatches to a vetted carrier network) or a direct carrier
-
 
 
 Neon Auto Transport operates as a licensed brokerage (USDOT 4355879, MC 1703787) with carrier coverage across all major Alabama cities and routes.
@@ -221,7 +217,6 @@ Neon Auto Transport operates as a licensed brokerage (USDOT 4355879, MC 1703787)
   * **Manufacturing/corporate relocation shipping** — common for employees moving for jobs at Mercedes-Benz, Hyundai, or Honda plants
 
 
-
 ## How to Get an Alabama Car Shipping Quote
 
   1. Vehicle make, model, and year
@@ -229,7 +224,6 @@ Neon Auto Transport operates as a licensed brokerage (USDOT 4355879, MC 1703787)
   3. Desired pickup window
   4. Open or enclosed transport preference
   5. Vehicle operability
-
 
 
 Neon Auto Transport provides free online quotes with no obligation to book.
@@ -318,13 +312,8 @@ Direct interstate transport routes connecting Alabama nationwide
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 

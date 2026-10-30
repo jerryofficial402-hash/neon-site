@@ -37,7 +37,6 @@ Enclosed Transport| $1400 – $2500| 7-10 days
   * **Cargo Insurance Coverage:** $500,000 Secondary Policy Included
 
 
-
 ### Get Your Florida to California Quote
 
 Price-locked quote, $0 deposit, and $500,000 cargo insurance.

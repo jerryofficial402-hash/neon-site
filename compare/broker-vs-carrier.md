@@ -34,7 +34,6 @@ A broker acts as your logistics manager. They do not own the trucks. Instead, th
   * **Speed:** Can find a driver for your specific route in 1-3 days.
 
 
-
 ### What is a Carrier?
 
 A carrier is the actual owner-operator of the truck that moves your vehicle. They manage the physical driving, loading, and unloading.

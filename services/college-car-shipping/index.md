@@ -37,7 +37,6 @@ For a first-year student — or a parent already juggling move-in logistics, dor
   * **Two-driver problem, solved.** Shipping removes the headache of bringing the second vehicle back.
 
 
-
 ### Expert Tip
 
 Book your shipment at least **2–3 weeks** before your target move date. Late July through early September are the busiest seasons. 
@@ -99,7 +98,6 @@ _Note: SUVs and trucks generally cost $100–$300 more due to their size and wei
   * **Booking Too Late** If you need the car picked up on exactly August 15th, don't wait until August 12th to book. Give the broker at least 2 weeks' notice to secure a top-rated carrier.
 
 
-
 ## Safety, Licensing & Insurance
 
 Handing the keys to your student's car requires absolute trust. At Neon Auto Transport:
@@ -107,7 +105,6 @@ Handing the keys to your student's car requires absolute trust. At Neon Auto Tra
   * **Fully Vetted Carriers:** We monitor FMCSA safety scores and only dispatch reliable carriers.
   * **Cargo Insurance Included:** Every carrier in our network holds an active cargo insurance policy.
   * **No Hidden Fees:** The price we quote is the exact price you pay.
-
 
 
 ## Frequently Asked Questions
@@ -136,13 +133,8 @@ The motor carrier's cargo insurance is primary. Any damage that occurs during tr
 
 Authentic 5.0-star reviews from verified customers on Google Maps.
 
-[ David Miller ★★★★★ "Neon Auto Transport shipped my F-150 across the country. Outstanding communication from pickup to final delivery!" Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Carlos Rodriguez ★★★★★ "Fast quote, transparent pricing, zero hidden charges. Will definitely use Neon for all future relocations." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7)
+[ Semih Akay ★★★★★ "Thank you for responding always on time. Friendly service and will be working in future again." Google review ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6) [ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Google review ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "The pickup driver and the transport driver were both respectful. Vehicle was delivered as promised. Definitely recommend this company." Google review ](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 
-"Thank you for responding always on time. Friendly service and will be working in future again."
-
-Verified Google Review View on Google →
-
-[ Mike Hainsworth ★★★★★ "They were all over it. Great price. On time. Wouldn't want to use anybody else. Mike." Verified Google Review View on Google → ](https://maps.app.goo.gl/Pvcguq4mwYxWEsqs7) [ Viola Willoughby ★★★★★ "Prompt and professional door-to-door auto shipping. My vehicle arrived ahead of schedule without a scratch." Verified Google Review View on Google → ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
 [ ★★★★★ 5.0 / 5.0 Rating based on verified Google Reviews ](https://maps.app.goo.gl/8sytHbRV3BsnPBUD6)
 
