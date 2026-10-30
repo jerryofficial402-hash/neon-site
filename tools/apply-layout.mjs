@@ -9,7 +9,7 @@ const SKIP = new Set(['node_modules', '.git', 'scratch', 'scripts', 'tools', '.a
 const header = fs.readFileSync('tools/partials/header.html', 'utf8').trim();
 const footer = fs.readFileSync('tools/partials/footer.html', 'utf8').trim();
 // Bump when any /css or /js file changes: Vercel serves those with a 1-year immutable cache
-const ASSET_VERSION = '20261031';
+const ASSET_VERSION = '20261031b';
 // Only the text face is preloaded; Geist Mono (small labels) loads on demand
 const FONT_PRELOAD = '<link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>';
 // Pages load the minified build of css/theme.css (tools/build-css.mjs)

@@ -15,7 +15,7 @@ async function visit(url) {
   await p.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
   await p.setRequestInterception(true);
   const errs = [];
-  p.on('request', r => (/googletagmanager|google-analytics|doubleclick|web3forms|youtube|ytimg|wikimedia|unsplash/.test(r.url()) ? r.abort() : r.continue()));
+  p.on('request', r => (/googletagmanager|google-analytics|doubleclick|web3forms|youtube|ytimg/.test(r.url()) ? r.abort() : r.continue()));
   p.on('pageerror', e => errs.push('js: ' + e.message.split('\n')[0]));
   p.on('dialog', d => { errs.push('dialog: ' + d.message()); d.dismiss(); });
   p.on('response', r => { if (r.url().startsWith(base) && r.status() >= 400) errs.push(r.status() + ' ' + r.url().slice(base.length)); });
