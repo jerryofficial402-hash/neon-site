@@ -4,7 +4,7 @@ url: https://neonautotransport.com/alabama-car-shipping/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Ship your car to or from Alabama with licensed, insured carriers. Open & <a href="
+description: "Ship your car to or from Alabama with licensed, insured carriers. Open & enclosed transport, door-to-door service, and fast quotes from Neon Auto Transport."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
