@@ -22,7 +22,9 @@ async function audit(url) {
   p.on('request', r => (/googletagmanager|google-analytics|doubleclick|youtube|ytimg|unsplash|wikimedia|maps\.google|google\.com\/maps/.test(r.url()) ? r.abort() : r.continue()));
   try {
     await p.goto(base + url, { waitUntil: 'domcontentloaded', timeout: 45000 });
-    await new Promise(r => setTimeout(r, 700));
+    // scroll through once so scroll-in animations (js/nx-motion.js) have revealed everything
+    await p.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 500) { scrollTo(0, y); await new Promise(r => setTimeout(r, 40)); } scrollTo(0, 0); });
+    await new Promise(r => setTimeout(r, 900));
     const found = await p.evaluate(() => {
       const parse = c => { const m = c.match(/rgba?\(([^)]+)\)/); if (!m) return null; const [r, g, b, a = 1] = m[1].split(/[ ,/]+/).filter(Boolean).map(Number); return { r, g, b, a }; };
       const lum = ({ r, g, b }) => { const f = v => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b); };
@@ -74,7 +76,9 @@ async function audit(url) {
 }
 
 const q = [...urls];
-await Promise.all(Array.from({ length: conc }, async () => { while (q.length) await audit(q.shift()); }));
+// a single hung page must not stall the run
+const guarded = url => Promise.race([audit(url), new Promise(r => setTimeout(r, 90000))]);
+await Promise.all(Array.from({ length: conc }, async () => { while (q.length) await guarded(q.shift()); }));
 await b.close();
 fs.writeFileSync(`tools/out/contrast-${width}.json`, JSON.stringify(results, null, 1));
 const bad = results.filter(r => r.low && r.low.length);

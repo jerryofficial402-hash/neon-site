@@ -31,11 +31,8 @@
   <meta property="og:site_name" content="Neon Auto Transport">
 
   <!-- Fonts & Tailwind CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
 
   <style>
     @media (min-width: 1024px) {
@@ -240,10 +237,8 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased">
   <!-- Global Header -->
@@ -336,8 +331,8 @@
 </header>
 
   <!-- Hero Section (Arkansas Layout Clone + Commercially Targeted H1 & Natural Keyword Integration) -->
-  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24 nx-hero">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         
         <!-- Left Column (50% Width) -->
@@ -351,7 +346,7 @@
 
           <!-- License Badge -->
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+            <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
             FMCSA Registered • USDOT #4355879 • MC #1703787
           </div>
           
@@ -382,7 +377,7 @@
           </p>
           
           <div class="flex">
-            <a class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2" href="/car-shipping-quote/" style="text-decoration:none;">
+            <a class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2 nx-fill" href="/car-shipping-quote/" style="text-decoration:none;">
               Calculate Your Rate Instantly 
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
             </a>
@@ -534,7 +529,7 @@
           <div class="overflow-x-auto">
             <table class="w-full text-left text-sm border-collapse mb-3 min-w-[500px]">
               <thead>
-                <tr class="bg-[#0a2540] text-white">
+                <tr class="bg-[#0a2540] text-white nx-flip">
                   <th class="p-3.5 rounded-tl-xl font-bold">Distance</th>
                   <th class="p-3.5 font-bold">Open Transport Cost</th>
                   <th class="p-3.5 rounded-tr-xl font-bold">Per-Mile Rate</th>
@@ -598,7 +593,7 @@
         
         <table class="w-full text-left text-sm border-collapse mb-6 min-w-[500px]">
           <thead>
-            <tr class="bg-[#0a2540] text-white">
+            <tr class="bg-[#0a2540] text-white nx-flip">
               <th class="p-4 rounded-tl-xl font-bold">Feature</th>
               <th class="p-4 font-bold">Open Auto Transport</th>
               <th class="p-4 rounded-tr-xl font-bold">Enclosed Car Shipping</th>
@@ -645,28 +640,28 @@
         <h2 class="text-2xl md:text-3xl font-black text-[#0a2540] mb-6 tracking-tight">How Open Car Shipping Works</h2>
         <div class="space-y-6 text-base text-[#425466]">
           <div class="flex items-start gap-4">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0">1</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0 nx-flip nx-flip-card">1</div>
             <div>
               <strong class="text-[#0a2540] block mb-1">Request a quote</strong>
               Share your pickup and delivery locations, vehicle details, preferred dates, and open-transport preference.
             </div>
           </div>
           <div class="flex items-start gap-4">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0">2</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0 nx-flip nx-flip-card">2</div>
             <div>
               <strong class="text-[#0a2540] block mb-1">Review available options</strong>
               Your transport specialist explains available pricing, pickup windows, and booking terms based on the route and carrier availability. Learn more on <a href="/how-it-works/" class="text-[#635bff] font-bold hover:underline">How Car Shipping Works</a>.
             </div>
           </div>
           <div class="flex items-start gap-4">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0">3</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0 nx-flip nx-flip-card">3</div>
             <div>
               <strong class="text-[#0a2540] block mb-1">Confirm carrier match</strong>
               Once you book, we work to match your shipment with an available, qualified motor carrier for the route. The carrier contacts you to confirm pickup logistics.
             </div>
           </div>
           <div class="flex items-start gap-4">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0">4</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white flex items-center justify-center font-bold shrink-0 nx-flip nx-flip-card">4</div>
             <div>
               <strong class="text-[#0a2540] block mb-1">Inspect at pickup and delivery</strong>
               Review the vehicle’s condition with the driver at pickup and delivery. Note existing or new concerns on the Bill of Lading and retain a signed copy.
@@ -819,7 +814,7 @@
 
         <table class="w-full text-left text-xs border-collapse mb-4 min-w-[500px]">
           <thead>
-            <tr class="bg-[#0a2540] text-white">
+            <tr class="bg-[#0a2540] text-white nx-flip">
               <th class="p-3 rounded-tl-xl font-bold">Popular Route Corridor</th>
               <th class="p-3 font-bold">Transport Service</th>
               <th class="p-3 rounded-tr-xl font-bold">Route Link</th>
@@ -861,7 +856,7 @@
       </div>
 
       <!-- CTA Box -->
-      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white">
+      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white nx-flip nx-flip-card">
         <h3 class="text-2xl md:text-3xl font-black mb-4 text-white" style="color: #0a0a0a;">
           Ready to Ship Your Vehicle on an Open Carrier?
         </h3>
@@ -869,10 +864,10 @@
           Get a free open auto transport quote tailored to your route and vehicle, or call our team for direct route assistance.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/car-shipping-quote/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e011] transition shadow-md text-base w-full sm:w-auto" style="text-decoration: none;">
+          <a href="/car-shipping-quote/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e011] transition shadow-md text-base w-full sm:w-auto nx-fill" style="text-decoration: none;">
             Get Your Free Open Auto Transport Quote
           </a>
-          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none;">
+          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto nx-ghost" style="text-decoration: none;">
             Call (571) 576-7711
           </a>
         </div>

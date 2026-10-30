@@ -31,23 +31,23 @@ function initUsMap() {
         // Add styles dynamically for hover effects and labels
         const style = document.createElement("style");
         style.innerHTML = `
-            #us-map-container svg { width: 100%; height: auto; max-height: 500px; overflow: visible; font-family: 'Inter', sans-serif; }
+            #us-map-container svg { width: 100%; height: auto; max-height: 500px; overflow: visible; font-family: 'Geist', sans-serif; }
             #us-map-container path, #us-map-container circle { 
-                fill: #0284c7;
+                fill: #dbe7f5;
                 stroke: #ffffff; 
                 stroke-width: 1.5; 
                 cursor: pointer;
             }
             #us-map-container path:hover, #us-map-container circle:hover { 
-                fill: #00d4ff; 
-                stroke-width: 2.5; 
+                fill: #9ec2ea;
+                stroke-width: 1.5; 
             }
             #us-map-container .separator1 { fill: none !important; stroke: #e6e6e6 !important; stroke-width: 2 !important; cursor: default; pointer-events: none; }
             #us-map-container .borders, #us-map-container .borders path { fill: none !important; pointer-events: none !important; cursor: default !important; }
             .state-label {
-                fill: #ffffff;
-                font-size: 13px;
-                font-weight: 600;
+                fill: #053c87;
+                font-size: 11px;
+                font-weight: 500;
                 pointer-events: none;
                 text-anchor: middle;
                 dominant-baseline: central;

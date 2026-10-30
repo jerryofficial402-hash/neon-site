@@ -46,9 +46,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
 
   <!-- JSON-LD: Service + BreadcrumbList -->
   <script type="application/ld+json">
@@ -170,7 +169,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
     .mobile-cta-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="antialiased bg-[#f6f9fc]">
@@ -270,21 +270,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <main>
     <!-- HERO SECTION WITH WORKING CALCULATOR -->
-    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16" id="cotizador-hero">
-      <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16 nx-hero" id="cotizador-hero">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
         <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-16">
           
           <!-- Left Column Text -->
           <div class="lg:w-1/2 flex flex-col justify-center pt-2">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-              <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+              <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
               Empresa Licenciada y Aprobada por la FMCSA
             </div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">
               Transporte de Autos en Estados Unidos
             </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
+  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
@@ -299,10 +299,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="#advancedCalcForm" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center justify-center gap-2">
+              <a href="#advancedCalcForm" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center justify-center gap-2 nx-fill">
                 Calcular Tarifa Gratis &rarr;
               </a>
-              <a href="tel:5715767711" class="bg-[#0a2540] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1a385c] transition text-center">
+              <a href="tel:5715767711" class="bg-[#0a2540] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1a385c] transition text-center nx-fill">
                 Llamar (571) 576-7711
               </a>
             </div>
@@ -327,7 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!-- Right Column: Interactive Working Quote Calculator Card -->
           <div class="lg:w-1/2 relative w-full mt-8 lg:mt-0">
-            <div class="stripe-card p-6 lg:p-8 w-full shadow-2xl relative z-20 bg-white rounded-2xl border border-[#e6e6e6]">
+            <div class="stripe-card p-6 lg:p-8 w-full shadow-2xl relative z-20 bg-white rounded-2xl border border-[#e6e6e6] nx-quote-card">
               <div class="mb-4">
                 <h2 class="text-xl font-bold mb-1 text-[#0a2540]">Cotización Gratis de Envío</h2>
                 <p class="text-[#425466] text-xs leading-relaxed">Ingrese los detalles de su traslado para obtener su tarifa personalizada.</p>
@@ -384,7 +384,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                   </div>
 
-                  <button aria-label="Interactive Button" type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-md border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#635bff] hover:text-[#4338ca] transition-colors flex items-center justify-center gap-1">
+                  <button type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-md border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#635bff] hover:text-[#4338ca] transition-colors flex items-center justify-center gap-1">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                     + Agregar Otro Vehículo
                   </button>
@@ -397,12 +397,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </select>
                   </div>
 
-                  <button aria-label="Next" type="button" id="btnNextStep" class="w-full btn-primary py-2.5 mt-2 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md">Continuar →</button>
+                  <button type="button" id="btnNextStep" class="w-full btn-primary py-2.5 mt-2 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md nx-fill">Continuar →</button>
                 </div>
 
                 <!-- Paso 2: Información de Contacto -->
                 <div id="step2" class="hidden">
-                  <button aria-label="Interactive Button" type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded shadow-sm hover:bg-[#c41530] transition-colors">
+                  <button type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded shadow-sm hover:bg-[#c41530] transition-colors">
                     ← Volver a la Ruta
                   </button>
                   
@@ -432,7 +432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   
                   <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
 
-                  <button aria-label="Interactive Button" type="submit" class="w-full btn-primary py-2.5 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md">Enviar Solicitud</button>
+                  <button type="submit" class="w-full btn-primary py-2.5 rounded-lg font-bold text-white bg-[#635bff] hover:bg-[#4b45cc] transition-colors shadow-md nx-fill">Enviar Solicitud</button>
                 </div>
               </form>
             </div>
@@ -452,19 +452,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="grid md:grid-cols-3 gap-8">
           <div class="p-8 rounded-3xl bg-[#f6f9fc] border border-[#e6e6e6] relative">
-            <div class="w-12 h-12 rounded-2xl bg-[#468de6] text-white font-black text-xl flex items-center justify-center mb-6">1</div>
+            <div class="w-12 h-12 rounded-2xl bg-[#468de6] text-white font-black text-xl flex items-center justify-center mb-6 nx-navy">1</div>
             <h3 class="text-xl font-bold text-[#0a2540] mb-3">Solicite su Cotización</h3>
             <p class="text-sm text-[#425466] leading-relaxed">Ingrese la ciudad de origen, destino y modelo de su vehículo en nuestro cotizador para recibir un precio garantizado en segundos.</p>
           </div>
 
           <div class="p-8 rounded-3xl bg-[#f6f9fc] border border-[#e6e6e6] relative">
-            <div class="w-12 h-12 rounded-2xl bg-[#468de6] text-white font-black text-xl flex items-center justify-center mb-6">2</div>
+            <div class="w-12 h-12 rounded-2xl bg-[#468de6] text-white font-black text-xl flex items-center justify-center mb-6 nx-navy">2</div>
             <h3 class="text-xl font-bold text-[#0a2540] mb-3">Recolección Puerta a Puerta</h3>
             <p class="text-sm text-[#425466] leading-relaxed">Un camionero certificado inspecciona y carga su auto directamente en la dirección que indique en la fecha acordada.</p>
           </div>
 
           <div class="p-8 rounded-3xl bg-[#f6f9fc] border border-[#e6e6e6] relative">
-            <div class="w-12 h-12 rounded-2xl bg-[#468de6] text-white font-black text-xl flex items-center justify-center mb-6">3</div>
+            <div class="w-12 h-12 rounded-2xl bg-[#468de6] text-white font-black text-xl flex items-center justify-center mb-6 nx-navy">3</div>
             <h3 class="text-xl font-bold text-[#0a2540] mb-3">Entrega Segura</h3>
             <p class="text-sm text-[#425466] leading-relaxed">Su vehículo se entrega en la puerta de su destino final. Usted inspecciona el auto y firma la entrega sin complicaciones.</p>
           </div>
@@ -549,18 +549,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <!-- BANNER FINAL CTA -->
-    <section class="py-16 bg-[#0a2540] text-white">
+    <section class="py-16 bg-[#0a2540] text-white nx-flip">
       <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
-        <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4">GARANTÍA DE TARIFA</span>
+        <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4 nx-navy">GARANTÍA DE TARIFA</span>
         <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Cotice el Envío de su Vehículo Hoy Mismo</h2>
         <p class="text-slate-300 text-base max-w-xl mx-auto mb-8">
           Sin compromisos ni cargos ocultos. Obtenga su cotización gratuita y asegure el transporte de su carro con los mejores profesionales.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#advancedCalcForm" class="w-full sm:w-auto bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-lg">
+          <a href="#advancedCalcForm" class="w-full sm:w-auto bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-lg nx-fill">
             Obtener Cotización Gratis &rarr;
           </a>
-          <a href="tel:5715767711" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-base transition">
+          <a href="tel:5715767711" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-base transition nx-ghost">
             Llamar: (571) 576-7711
           </a>
         </div>
@@ -633,11 +633,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <!-- Calculator JS script powering instant distance auto-complete and multi-step form -->
-  <script src="/js/calculator.js?v=20261030" defer=""></script>
+  <script src="/js/calculator.js?v=20261030c" defer=""></script>
 
   <!-- Neon AI Chat Widget -->
-  <link rel="stylesheet" href="/css/chatbot.css?v=20261030">
-  <script src="/js/chatbot.js?v=20261030" defer=""></script>
+  <link rel="stylesheet" href="/css/chatbot.css?v=20261030c">
+  <script src="/js/chatbot.js?v=20261030c" defer=""></script>
 
   <!-- Mobile Menu Toggle -->
   <!-- Header Scroll Shadow -->

@@ -13,6 +13,7 @@ async function run(url) {
     p = await b.newPage(); await p.setViewport({ width: 1366, height: 900 });
     await p.setRequestInterception(true); p.on('request', r => (/google|youtube|ytimg|unsplash|wikimedia/.test(r.url()) ? r.abort() : r.continue()));
     await p.goto(base + url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+    await new Promise(r => setTimeout(r, 300));
     const r = await p.evaluate(() => [...document.querySelectorAll('body *')].filter(e => {
       if (e.closest('.nx-header,.nx-footer,#neon-chat-window,#neon-chat-bubble')) return false;
       const rc = e.getBoundingClientRect(); if (rc.width < 600 || rc.height < 120) return false;
@@ -23,7 +24,7 @@ async function run(url) {
     if (r.length) found.push({ url, r });
   } catch (e) { found.push({ url, error: e.message.split('\n')[0] }); }
   if (p) await p.close().catch(() => {});
-  if (++done % 100 === 0) console.log(done);
+  if (++done % 25 === 0) console.log(done);
 }
 const q = [...urls];
 await Promise.all(Array.from({ length: conc }, async () => { while (q.length) await run(q.shift()); }));

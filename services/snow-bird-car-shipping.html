@@ -39,10 +39,7 @@
   <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
 
   <!-- Fonts & Tailwind CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
 
   <style>
     @media (min-width: 1024px) {
@@ -212,7 +209,8 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased">
   <!-- Google Tag Manager (noscript) -->
@@ -310,8 +308,8 @@
 </header>
 
   <!-- Hero Section (Modern 2-Column Split Layout) -->
-  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 pb-16 lg:pt-36 lg:pb-24">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 pb-16 lg:pt-36 lg:pb-24 nx-hero">
+    <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         
         <!-- Left Column (50% Width) -->
@@ -325,7 +323,7 @@
 
           <!-- License Badge -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-            <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+            <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
             FMCSA Registered • USDOT #4355879 • MC #1703787
           </div>
           
@@ -356,7 +354,7 @@
           </p>
           
           <div class="flex flex-wrap gap-4 items-center">
-            <a class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2" href="/cost-calculator/" style="text-decoration:none;">
+            <a class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2 nx-fill" href="/cost-calculator/" style="text-decoration:none;">
               Calculate Your Rate Instantly 
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
             </a>
@@ -437,7 +435,7 @@
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse min-w-[620px]">
             <thead>
-              <tr class="bg-[#0a2540] text-white text-[12px] font-bold uppercase tracking-wider">
+              <tr class="bg-[#0a2540] text-white text-[12px] font-bold uppercase tracking-wider nx-flip">
                 <th class="py-3.5 px-4 rounded-tl-xl">Route</th>
                 <th class="py-3.5 px-4 text-center">Distance</th>
                 <th class="py-3.5 px-4 text-center">Avg. Cost (Open)</th>
@@ -762,7 +760,7 @@
       </section>
 
       <!-- Bottom High-Impact CTA Box -->
-      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white">
+      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white nx-flip nx-flip-card">
         <h2 class="text-2xl md:text-3xl font-black mb-4 text-white" style="color: #0a0a0a;">
           Ready to Ship Your Car South for the Winter?
         </h2>
@@ -770,10 +768,10 @@
           Lock in your preferred pickup dates with zero upfront deposit. Get an instant online quote or call our snowbird transport specialists today.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/cost-calculator/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition shadow-md text-base w-full sm:w-auto" style="text-decoration: none;">
+          <a href="/cost-calculator/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition shadow-md text-base w-full sm:w-auto nx-fill" style="text-decoration: none;">
             Calculate Your Rate Instantly
           </a>
-          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none;">
+          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto nx-ghost" style="text-decoration: none;">
             Call (571) 576-7711
           </a>
         </div>

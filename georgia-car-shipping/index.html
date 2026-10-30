@@ -46,9 +46,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
 
   <!-- JSON-LD: Service + BreadcrumbList -->
   <script type="application/ld+json">
@@ -254,7 +253,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
     .mobile-cta-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
   </style>
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="antialiased bg-[#f6f9fc]">
@@ -354,17 +354,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <main>
     <!-- HERO SECTION (FIXED TOP SPACING) -->
-    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16">
-      <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16 nx-hero">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div class="lg:w-1/2 flex flex-col justify-center">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-              <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+              <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
               FMCSA & US Dot Approved
             </div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight">Georgia Car Shipping</h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
+  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
@@ -376,7 +376,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <p class="text-lg text-[#425466] mb-10 leading-relaxed">Planning to ship a car to or from Georgia? Whether you're relocating to the Peach State or sending a vehicle across the country, navigating I-75 and dealing with hot, humid summers and mild winters can be challenging. Neon Auto Transport ensures a stress-free experience tailored for red clay hills and coastal plains, with upfront pricing and a highly vetted carrier network ready to handle navigating major logistics bottlenecks around Atlanta.</p>
             <div class="flex">
-              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
+              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2 nx-fill">
                 Calculate Your Rate Instantly 
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
@@ -404,7 +404,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="space-y-4 mb-8">
           <!-- Route 1 -->
           <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
-            <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">1</div>
+            <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0 nx-flip nx-flip-card">1</div>
             <div class="flex-1 text-center md:text-left min-w-[150px]">
               <h4 class="font-bold text-[#0a2540] text-xl">Georgia</h4>
               <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">California</span></p>
@@ -422,12 +422,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="font-bold text-[#0a2540] text-sm">5 to 8 days</div>
             </div>
             <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm nx-fill">Get Quote</a>
             </div>
           </div>
           <!-- Route 2 -->
           <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
-            <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">2</div>
+            <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0 nx-flip nx-flip-card">2</div>
             <div class="flex-1 text-center md:text-left min-w-[150px]">
               <h4 class="font-bold text-[#0a2540] text-xl">Georgia</h4>
               <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Texas</span></p>
@@ -445,12 +445,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="font-bold text-[#0a2540] text-sm">3 to 6 days</div>
             </div>
             <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm nx-fill">Get Quote</a>
             </div>
           </div>
           <!-- Route 3 -->
           <div class="bg-white rounded-2xl shadow-sm border border-[#e6e6e6] p-4 flex flex-col md:flex-row items-center gap-6 transition hover:shadow-md">
-            <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0">3</div>
+            <div class="bg-black text-white text-3xl font-black rounded-xl w-[70px] h-[70px] flex items-center justify-center shrink-0 nx-flip nx-flip-card">3</div>
             <div class="flex-1 text-center md:text-left min-w-[150px]">
               <h4 class="font-bold text-[#0a2540] text-xl">Georgia</h4>
               <p class="text-[#468de6] italic text-[15px] font-semibold">to <span class="text-[#0a2540] not-italic">Florida</span></p>
@@ -468,7 +468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="font-bold text-[#0a2540] text-sm">2 to 4 days</div>
             </div>
             <div class="shrink-0 w-full md:w-auto mt-4 md:mt-0 px-4">
-              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm">Get Quote</a>
+              <a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white font-bold py-2.5 px-8 rounded-lg w-full md:w-auto block text-center transition shadow-sm text-sm nx-fill">Get Quote</a>
             </div>
           </div>
         </div>
@@ -494,7 +494,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2,281 mi</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$1000 - $1375</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">5 to 8 days</td>
-                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
               </tr>
               <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
                 <td class="py-6 px-6">
@@ -504,7 +504,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">827 mi</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$775 - $1050</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">3 to 6 days</td>
-                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
               </tr>
               <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
                 <td class="py-6 px-6">
@@ -514,7 +514,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">716 mi</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">$675 - $900</td>
                 <td class="py-6 px-6 font-bold text-[#0a2540] text-center">2 to 4 days</td>
-                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm">Get Quote</a></td>
+                <td class="py-6 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-3 px-6 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
               </tr>
             </tbody>
           </table>
@@ -551,7 +551,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-[#e6e6e6] mb-8">
         <table class="w-full text-left border-collapse min-w-[700px]">
           <thead>
-            <tr class="bg-[#0a2540] text-white text-[12px] font-bold uppercase tracking-wider">
+            <tr class="bg-[#0a2540] text-white text-[12px] font-bold uppercase tracking-wider nx-flip">
               <th class="py-4 px-6">Inbound Route</th>
               <th class="py-4 px-6 text-center">Distance</th>
               <th class="py-4 px-6 text-center">Avg. Cost (Open)</th>
@@ -565,42 +565,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <td class="py-4 px-6 text-[#425466] text-center font-medium">350 mi</td>
               <td class="py-4 px-6 text-[#0a2540] font-bold text-center">$425 – $650</td>
               <td class="py-4 px-6 text-[#425466] text-center">1 to 3 days</td>
-              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm">Get Quote</a></td>
+              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
             </tr>
             <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
               <td class="py-4 px-6 font-bold text-[#0a2540]"><a href="/new-york-car-shipping/" class="hover:text-[#2563eb]">New York &rarr; Georgia</a></td>
               <td class="py-4 px-6 text-[#425466] text-center font-medium">870 mi</td>
               <td class="py-4 px-6 text-[#0a2540] font-bold text-center">$800 – $1,100</td>
               <td class="py-4 px-6 text-[#425466] text-center">2 to 4 days</td>
-              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm">Get Quote</a></td>
+              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
             </tr>
             <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
               <td class="py-4 px-6 font-bold text-[#0a2540]"><a href="/texas-car-shipping/" class="hover:text-[#2563eb]">Texas &rarr; Georgia</a></td>
               <td class="py-4 px-6 text-[#425466] text-center font-medium">800 mi</td>
               <td class="py-4 px-6 text-[#0a2540] font-bold text-center">$750 – $1,050</td>
               <td class="py-4 px-6 text-[#425466] text-center">2 to 4 days</td>
-              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm">Get Quote</a></td>
+              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
             </tr>
             <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
               <td class="py-4 px-6 font-bold text-[#0a2540]"><a href="/california-car-shipping/" class="hover:text-[#2563eb]">California &rarr; Georgia</a></td>
               <td class="py-4 px-6 text-[#425466] text-center font-medium">2,280 mi</td>
               <td class="py-4 px-6 text-[#0a2540] font-bold text-center">$1,250 – $1,650</td>
               <td class="py-4 px-6 text-[#425466] text-center">5 to 8 days</td>
-              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm">Get Quote</a></td>
+              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
             </tr>
             <tr class="border-b border-[#e6e6e6] hover:bg-[#f8fafc] transition">
               <td class="py-4 px-6 font-bold text-[#0a2540]"><a href="/illinois-car-shipping/" class="hover:text-[#2563eb]">Illinois &rarr; Georgia</a></td>
               <td class="py-4 px-6 text-[#425466] text-center font-medium">720 mi</td>
               <td class="py-4 px-6 text-[#0a2540] font-bold text-center">$700 – $950</td>
               <td class="py-4 px-6 text-[#425466] text-center">2 to 3 days</td>
-              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm">Get Quote</a></td>
+              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
             </tr>
             <tr class="hover:bg-[#f8fafc] transition">
               <td class="py-4 px-6 font-bold text-[#0a2540]"><a href="/ohio-car-shipping/" class="hover:text-[#2563eb]">Ohio &rarr; Georgia</a></td>
               <td class="py-4 px-6 text-[#425466] text-center font-medium">560 mi</td>
               <td class="py-4 px-6 text-[#0a2540] font-bold text-center">$600 – $850</td>
               <td class="py-4 px-6 text-[#425466] text-center">2 to 3 days</td>
-              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm">Get Quote</a></td>
+              <td class="py-4 px-6 text-center"><a href="/cost-calculator/" class="bg-[#468de6] hover:bg-[#3273c5] text-white text-xs font-bold py-2 px-4 rounded-lg transition shadow-sm nx-fill">Get Quote</a></td>
             </tr>
           </tbody>
         </table>
@@ -621,7 +621,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="pt-6 border-t border-[#e6e6e6] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <a href="/cost-calculator/" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-md">
+          <a href="/cost-calculator/" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-md nx-fill">
             <span>Get a Free Georgia Car Shipping Quote &rarr;</span>
           </a>
           <span class="text-xs text-[#425466] font-medium">No deposit required &bull; Instant rate lock</span>
@@ -994,11 +994,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Military Relocation Callout Box -->
-            <div class="bg-[#0a2540] text-white rounded-3xl p-8 shadow-lg">
-              <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4">MILITARY PCS MOVES</span>
+            <div class="bg-[#0a2540] text-white rounded-3xl p-8 shadow-lg nx-flip nx-flip-card">
+              <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4 nx-navy">MILITARY PCS MOVES</span>
               <h3 class="text-2xl font-black text-white mb-3">Shipping a vehicle for a PCS move in Georgia?</h3>
               <p class="text-slate-300 text-sm leading-relaxed mb-6">Fort Moore, Fort Eisenhower, Robins AFB, Marine Corps Logistics Base Albany, and Fort Stewart all fall within this guide's coverage area. Tell your coordinator your report date and we'll build pickup timing around it.</p>
-              <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#39FF14] text-[#0a2540] px-6 py-3 rounded-xl font-black text-sm hover:bg-[#32e011] transition shadow-md">
+              <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#39FF14] text-[#0a2540] px-6 py-3 rounded-xl font-black text-sm hover:bg-[#32e011] transition shadow-md nx-fill">
                 <span>Get a military relocation quote &rarr;</span>
               </a>
             </div>
@@ -1047,7 +1047,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="overflow-x-auto rounded-xl border border-[#e6e6e6]">
               <table class="w-full text-xs text-left border-collapse">
                 <thead>
-                  <tr class="bg-[#0a2540] text-white font-bold uppercase tracking-wider">
+                  <tr class="bg-[#0a2540] text-white font-bold uppercase tracking-wider nx-flip">
                     <th class="py-3 px-4">City</th>
                     <th class="py-3 px-4 text-center">Distance to Atlanta</th>
                     <th class="py-3 px-4 text-center">Distance to Savannah</th>
@@ -1111,7 +1111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="bg-[#f0f5fa] rounded-2xl p-6 border border-[#468de6]/20 text-center">
               <p class="text-sm font-semibold text-[#0a2540] mb-3">Looking for the cheapest option? Budget transport is almost always open-carrier, terminal-to-terminal, with a flexible pickup date. For a hands-off experience, door-to-door shipping remains the most popular choice among Georgia customers.</p>
-              <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#468de6] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#3273c5] transition shadow-sm">
+              <a href="/cost-calculator/" class="inline-flex items-center gap-2 bg-[#468de6] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#3273c5] transition shadow-sm nx-fill">
                 Get your exact quote in under a minute &rarr;
               </a>
             </div>
@@ -1125,7 +1125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="overflow-x-auto rounded-xl border border-[#e6e6e6]">
               <table class="w-full text-xs text-left border-collapse min-w-[500px]">
                 <thead>
-                  <tr class="bg-[#0a2540] text-white font-bold uppercase tracking-wider">
+                  <tr class="bg-[#0a2540] text-white font-bold uppercase tracking-wider nx-flip">
                     <th class="py-3 px-4">Method</th>
                     <th class="py-3 px-4">Best For</th>
                     <th class="py-3 px-4">Notes</th>
@@ -1188,7 +1188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li><strong class="text-[#0a2540]">Transparent, binding quotes</strong> &mdash; a trustworthy quote process locks your price at booking, with no last-minute increases.</li>
             </ol>
 
-            <div class="p-6 rounded-2xl bg-[#0a2540] text-white">
+            <div class="p-6 rounded-2xl bg-[#0a2540] text-white nx-flip nx-flip-card">
               <h4 class="font-bold text-base text-[#39FF14] mb-2">What is a Bill of Lading, and why does it matter?</h4>
               <p class="text-xs text-slate-300 leading-relaxed">It's the legal document that records your vehicle's condition at pickup and delivery, signed by both you and the driver. It's the single most important piece of paper if a damage dispute ever comes up, so read it before signing &mdash; both times.</p>
             </div>
@@ -1231,42 +1231,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </p>
             <div class="space-y-4">
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">1</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0 nx-navy">1</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Get an instant quote</h4>
                   <p class="text-xs text-[#425466]">Enter your pickup and delivery ZIP codes, vehicle details, and preferred dates for a binding estimate.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">2</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0 nx-navy">2</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Book and confirm carrier assignment</h4>
                   <p class="text-xs text-[#425466]">Neon Auto Transport matches your shipment with a vetted, licensed, and insured carrier from our network.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">3</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0 nx-navy">3</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Prepare your car for transport</h4>
                   <p class="text-xs text-[#425466]">Wash the vehicle so scratches are visible, remove personal items, document existing damage with photos, and leave a quarter tank of gas.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">4</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0 nx-navy">4</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Pickup and Bill of Lading</h4>
                   <p class="text-xs text-[#425466]">The driver inspects and documents the vehicle's condition on the bill of lading, which you and the driver both sign.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">5</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0 nx-navy">5</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Track your shipment</h4>
                   <p class="text-xs text-[#425466]">Get progress updates as the carrier moves through its route.</p>
                 </div>
               </div>
               <div class="flex gap-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e6e6e6]">
-                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0">6</div>
+                <div class="w-8 h-8 rounded-full bg-[#468de6] text-white font-bold text-xs flex items-center justify-center shrink-0 nx-navy">6</div>
                 <div>
                   <h4 class="font-bold text-[#0a2540] text-sm mb-1">Delivery and final inspection</h4>
                   <p class="text-xs text-[#425466]">Compare the vehicle's condition against the original bill of lading before signing for delivery.</p>
@@ -1450,17 +1450,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <!-- Get Your Free Georgia Car Shipping Quote -->
-          <div class="bg-[#0a2540] text-white rounded-3xl p-8 lg:p-12 text-center shadow-xl">
-            <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4">INSTANT RATE LOCK</span>
+          <div class="bg-[#0a2540] text-white rounded-3xl p-8 lg:p-12 text-center shadow-xl nx-flip nx-flip-card">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-xs uppercase tracking-wider mb-4 nx-navy">INSTANT RATE LOCK</span>
             <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Get Your Free Georgia Car Shipping Quote</h2>
             <p class="text-slate-300 text-base max-w-xl mx-auto mb-8">
               Neon Auto Transport connects you with licensed, insured, and vetted carriers on every major Georgia route &mdash; from Atlanta to Savannah and everywhere in between.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="/cost-calculator/" class="w-full sm:w-auto bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)]">
+              <a href="/cost-calculator/" class="w-full sm:w-auto bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)] nx-fill">
                 Get an Instant, No-Obligation Quote &rarr;
               </a>
-              <a href="tel:5715767711" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-base transition">
+              <a href="tel:5715767711" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-base transition nx-ghost">
                 Call (571) 576-7711
               </a>
             </div>
@@ -1485,13 +1485,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Instant Quote Widget Callout -->
-            <div class="bg-[#0a2540] text-white rounded-2xl p-6 text-center shadow-md">
-              <div class="w-10 h-10 bg-[#39FF14] text-[#0a2540] rounded-full flex items-center justify-center mx-auto mb-3 font-black text-lg">
+            <div class="bg-[#0a2540] text-white rounded-2xl p-6 text-center shadow-md nx-flip nx-flip-card">
+              <div class="w-10 h-10 bg-[#39FF14] text-[#0a2540] rounded-full flex items-center justify-center mx-auto mb-3 font-black text-lg nx-navy">
                 &dollar;
               </div>
               <h4 class="font-bold text-base text-white mb-2">Need an Exact Price?</h4>
               <p class="text-xs text-slate-300 mb-4">Calculate real-time rates for open &amp; enclosed shipping on any Georgia route.</p>
-              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] hover:bg-[#32e011] w-full py-3 rounded-xl block text-center text-xs font-black transition shadow-md">
+              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] hover:bg-[#32e011] w-full py-3 rounded-xl block text-center text-xs font-black transition shadow-md nx-fill">
                 Calculate Rate Now &rarr;
               </a>
             </div>
@@ -1706,8 +1706,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <!-- Neon AI Chat Widget -->
-  <link rel="stylesheet" href="/css/chatbot.css?v=20261030">
-  <script src="/js/chatbot.js?v=20261030" defer=""></script>
+  <link rel="stylesheet" href="/css/chatbot.css?v=20261030c">
+  <script src="/js/chatbot.js?v=20261030c" defer=""></script>
 
   <!-- Mobile Menu Toggle -->
   <!-- Header Scroll Shadow -->

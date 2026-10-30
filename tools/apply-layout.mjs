@@ -9,9 +9,11 @@ const SKIP = new Set(['node_modules', '.git', 'scratch', 'scripts', 'tools', '.a
 const header = fs.readFileSync('tools/partials/header.html', 'utf8').trim();
 const footer = fs.readFileSync('tools/partials/footer.html', 'utf8').trim();
 // Bump when any /css or /js file changes: Vercel serves those with a 1-year immutable cache
-const ASSET_VERSION = '20261030';
-const FONTS = 'https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap';
-const THEME = `<link rel="stylesheet" href="/css/theme.css?v=${ASSET_VERSION}">`;
+const ASSET_VERSION = '20261030c';
+// Only the text face is preloaded; Geist Mono (small labels) loads on demand
+const FONT_PRELOAD = '<link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>';
+// Pages load the minified build of css/theme.css (tools/build-css.mjs)
+const THEME = `<link rel="stylesheet" href="/css/theme.min.css?v=${ASSET_VERSION}">`;
 
 // Inline scripts that only drove the old dark header / old mobile menu (md5 of whitespace-collapsed body)
 const OLD_HEADER_SCRIPTS = new Set(['adcb8d', '0461cd', 'ee1941', '727756', '0f0f9d']);
@@ -73,13 +75,14 @@ for (const f of files('.')) {
   html = html.replace(/<script[^>]*src="\/js\/mobile-menu\.js"[^>]*><\/script>\s*/g, '');
   html = html.replace(/((?:src|href)=")(\/(?:js|css)\/[\w.-]+\.(?:js|css))(?:\?v=[^"]*)?"/g, (m, a, p) => `${a}${p}?v=${ASSET_VERSION}"`);
 
-  // Typeface: Geist for text, Geist Mono for small labels
-  html = html.replace(/https:\/\/fonts\.googleapis\.com\/css2\?family=Inter[^"']*/g, FONTS);
-  if (!html.includes('family=Geist')) {
-    html = html.replace(/<\/head>/i, `  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link rel="stylesheet" href="${FONTS}">\n</head>`);
-  }
+  // Typeface: self-hosted Geist / Geist Mono (css/theme.css @font-face). Drop every Google Fonts tag and preload ours.
+  html = html.replace(/<noscript>\s*(<link[^>]*fonts\.(?:googleapis|gstatic)\.com[^>]*>\s*)+<\/noscript>\s*/g, '');
+  html = html.replace(/[ \t]*<link[^>]*fonts\.(?:googleapis|gstatic)\.com[^>]*>[ \t]*\r?\n?/g, '');
+  if (!html.includes('/fonts/geist-latin.woff2')) html = html.replace(/<\/head>/i, `  ${FONT_PRELOAD}\n</head>`);
 
-  if (!html.includes('/css/theme.css')) html = html.replace(/<\/head>/i, `  ${THEME}\n</head>`);
+  html = html.replace(/<link rel="preload" href="\/fonts\/geist-mono-latin\.woff2"[^>]*>/, '');
+  html = html.replace(/<link rel="stylesheet" href="\/css\/theme(?:\.min)?\.css(?:\?v=[^"]*)?">/, THEME);
+  if (!html.includes('/css/theme.min.css')) html = html.replace(/<\/head>/i, `  ${THEME}\n</head>`);
 
   if (html !== before) {
     stats.changed++;

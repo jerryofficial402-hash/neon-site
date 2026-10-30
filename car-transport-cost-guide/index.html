@@ -36,9 +36,8 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -180,7 +179,8 @@
     .mobile-cta-btn.call { background-color: #0a5fb4; color: #ffffff; }
     .mobile-cta-btn.quote { background-color: #0a2540; color: #ffffff; }
   </style>
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="antialiased bg-[#f6f9fc]">
@@ -280,8 +280,8 @@
   <main class="pt-24 pb-16">
     
     <!-- Hero Article Banner -->
-    <section class="bg-white border-b border-[#e6e6e6] py-12 lg:py-16">
-      <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+    <section class="bg-white border-b border-[#e6e6e6] py-12 lg:py-16 nx-hero">
+      <div class="container mx-auto px-4 lg:px-8 max-w-4xl nx-hero-wrap">
         <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold mb-6 flex-wrap">
           <a href="/" class="text-[#468de6] hover:underline">Home</a>
           <span class="text-[#8ba3ba]">/</span>
@@ -298,7 +298,7 @@
           Car Transport: How Much It Costs and the Cheapest Way to Ship a Car
         </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
+  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
@@ -328,7 +328,7 @@
         </div>
 
         <!-- High-Impact Hero Cover Photo with EEAT & AEO Optimization -->
-        <div class="mt-6 overflow-hidden rounded-3xl border border-[#e6e6e6] shadow-lg relative bg-[#0a2540]">
+        <div class="mt-6 overflow-hidden rounded-3xl border border-[#e6e6e6] shadow-lg relative bg-[#0a2540] nx-flip nx-flip-card">
           <img src="/images/car-transport-cost-guide-hero.jpg" alt="Neon Auto Transport logistics specialist conducting pre-transport vehicle condition inspection with customer in front of auto transport carrier trucks - licensed FMCSA broker USDOT 4355879" class="w-full h-auto max-h-[500px] object-cover" width="1200" height="800" loading="eager" decoding="async">
           <div class="p-4 bg-white/95 backdrop-blur-md border-t border-[#e6e6e6] flex flex-col md:flex-row md:items-center justify-between gap-2 text-xs text-[#425466]">
             <span class="font-bold text-[#0a2540] flex items-center gap-1.5">
@@ -463,31 +463,31 @@
             </h2>
             <ol class="space-y-4 text-sm font-medium text-[#0a2540]">
               <li class="flex items-start gap-3 p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0">1</span>
+                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 nx-navy">1</span>
                 <div>
                   <strong>Get a Quote:</strong> Request an instant route quote based on your pickup/delivery ZIP codes, vehicle size, and preferred transport type (open vs enclosed).
                 </div>
               </li>
               <li class="flex items-start gap-3 p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0">2</span>
+                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 nx-navy">2</span>
                 <div>
                   <strong>Book &amp; Confirm Pickup:</strong> Confirm your flexible pickup window with zero upfront deposit required.
                 </div>
               </li>
               <li class="flex items-start gap-3 p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0">3</span>
+                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 nx-navy">3</span>
                 <div>
                   <strong>Vehicle Pickup &amp; Inspection:</strong> A licensed, insured carrier arrives at your door to inspect and document your car's condition on the official Bill of Lading (BOL).
                 </div>
               </li>
               <li class="flex items-start gap-3 p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0">4</span>
+                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 nx-navy">4</span>
                 <div>
                   <strong>Transit &amp; Driver Updates:</strong> Your vehicle travels safely across the interstate network with direct driver communication available.
                 </div>
               </li>
               <li class="flex items-start gap-3 p-4 bg-[#f6f9fc] rounded-2xl border border-[#e6e6e6]">
-                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0">5</span>
+                <span class="w-7 h-7 rounded-full bg-[#468de6] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 nx-navy">5</span>
                 <div>
                   <strong>Door-to-Door Delivery:</strong> Inspect your vehicle upon arrival against the Bill of Lading and sign off.
                 </div>
@@ -543,7 +543,7 @@
           <p class="text-sm text-[#425466] mt-2">Zero upfront deposit &bull; Real-time market analytics &bull; 100% insured</p>
         </div>
 
-        <div class="bg-[#f6f9fc] rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-xl">
+        <div class="bg-[#f6f9fc] rounded-3xl p-6 lg:p-8 border border-[#e6e6e6] shadow-xl nx-quote-card">
           <form id="advancedCalcForm" class="space-y-3" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="5e86dea9-8ed6-476f-b4db-1ab24c5de766">
             <input type="hidden" name="subject" value="New Lead: Car Transport Cost Guide">
@@ -596,7 +596,7 @@
                 </div>
               </div>
 
-              <button aria-label="Interactive Button" type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-xl border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#468de6] hover:text-[#468de6] transition-colors flex items-center justify-center gap-1 bg-white">
+              <button type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-xl border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#468de6] hover:text-[#468de6] transition-colors flex items-center justify-center gap-1 bg-white">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                 Add Another Vehicle
               </button>
@@ -609,13 +609,13 @@
                 </select>
               </div>
 
-              <button aria-label="Next" type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition-colors shadow-lg text-base">
+              <button type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition-colors shadow-lg text-base nx-fill">
                 Continue to View Rate &rarr;
               </button>
             </div>
 
             <div id="step2" class="hidden">
-              <button aria-label="Interactive Button" type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded-lg shadow-sm hover:bg-[#c41530] transition-colors">
+              <button type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded-lg shadow-sm hover:bg-[#c41530] transition-colors">
                 ← Back to Route Details
               </button>
               
@@ -642,7 +642,7 @@
 
               <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
 
-              <button aria-label="Interactive Button" type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition-all shadow-lg text-base">
+              <button type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition-all shadow-lg text-base nx-fill">
                 Submit &amp; View Guaranteed Rate &rarr;
               </button>
             </div>
@@ -785,12 +785,12 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=20261030" defer=""></script>
-  <script src="/js/calculator.js?v=20261030" defer=""></script>
+<script src="/js/main.js?v=20261030c" defer=""></script>
+  <script src="/js/calculator.js?v=20261030c" defer=""></script>
 
   <!-- Neon AI Chat Widget -->
-  <link rel="stylesheet" href="/css/chatbot.css?v=20261030">
-  <script src="/js/chatbot.js?v=20261030" defer=""></script>
+  <link rel="stylesheet" href="/css/chatbot.css?v=20261030c">
+  <script src="/js/chatbot.js?v=20261030c" defer=""></script>
 
   
 </body>

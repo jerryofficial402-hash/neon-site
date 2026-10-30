@@ -61,11 +61,10 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="preload" href="/css/tailwind.css?v=20261030" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=20261030"></noscript>
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
-  <script src="/js/realtime-date.js?v=20261030" defer></script>
+  <link rel="preload" href="/css/tailwind.css?v=20261030c" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=20261030c"></noscript>
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
+  <script src="/js/realtime-date.js?v=20261030c" defer></script>
 
   <!-- JSON-LD Schema (WebPage + FAQPage + LocalBusiness + Organization Graph) -->
   <!-- GSC Enhancement 1: BreadcrumbList Schema -->
@@ -206,7 +205,8 @@
     }
   }
   </script>
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="antialiased bg-[#f6f9fc]">
@@ -307,8 +307,8 @@
   <main>
 
     <!-- HERO SECTION -->
-    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16" id="hero-quote">
-      <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-24 pb-12 lg:pt-28 lg:pb-16 nx-hero" id="hero-quote">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           <!-- Left Column Content (Col-7 / 58% Width) -->
@@ -321,7 +321,7 @@
             </nav>
 
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold self-start">
-              <span class="w-2.5 h-2.5 rounded-full bg-[#39FF14] animate-pulse"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#39FF14] animate-pulse nx-navy"></span>
               2026 Live Market Auto Transport Pricing
             </div>
 
@@ -329,7 +329,7 @@
               Free Car Shipping Quote – Instant Auto Transport Pricing
             </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
+  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
@@ -397,7 +397,7 @@
 
           <!-- Right Column: Interactive Calculator Form Card (Col-5 / 42% Width) -->
           <div class="lg:col-span-5 relative w-full">
-            <div class="stripe-card p-6 lg:p-7 w-full shadow-2xl relative z-20 bg-white rounded-3xl border border-[#e6e6e6]">
+            <div class="stripe-card p-6 lg:p-7 w-full shadow-2xl relative z-20 bg-white rounded-3xl border border-[#e6e6e6] nx-quote-card">
               
               <div class="flex items-center justify-between mb-4 border-b border-[#e6e6e6] pb-3.5">
                 <div>
@@ -460,7 +460,7 @@
                     </div>
                   </div>
 
-                  <button aria-label="Interactive Button" type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-xl border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#468de6] hover:text-[#468de6] transition-colors flex items-center justify-center gap-1">
+                  <button type="button" id="btnAddVehicle" class="w-full py-2 mb-2 rounded-xl border-2 border-dashed border-[#e6e6e6] text-[#425466] text-xs font-bold hover:border-[#468de6] hover:text-[#468de6] transition-colors flex items-center justify-center gap-1">
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
                     Add Another Vehicle
                   </button>
@@ -473,14 +473,14 @@
                     </select>
                   </div>
 
-                  <button aria-label="Next" type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition-colors shadow-lg text-base">
+                  <button type="button" id="btnNextStep" class="w-full py-3.5 rounded-xl font-black text-white bg-[#635bff] hover:bg-[#0a2540] transition-colors shadow-lg text-base nx-fill">
                     Continue to Get Quote Rate &rarr;
                   </button>
                 </div>
 
                 <!-- Step 2: Contact Info -->
                 <div id="step2" class="hidden">
-                  <button aria-label="Interactive Button" type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded-lg shadow-sm hover:bg-[#c41530] transition-colors">
+                  <button type="button" id="btnBackStep" class="mb-4 inline-flex items-center text-xs font-bold text-white bg-[#e31837] px-3 py-1.5 rounded-lg shadow-sm hover:bg-[#c41530] transition-colors">
                     &larr; Back to Route Details
                   </button>
                   
@@ -512,7 +512,7 @@
                   
                   <input type="hidden" name="Estimated Price" id="estimatedPriceField" value="">
 
-                  <button aria-label="Interactive Button" type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition-all shadow-lg text-base">
+                  <button type="submit" class="w-full py-3.5 rounded-xl font-black text-[#0a2540] bg-[#39FF14] hover:bg-[#32e011] transition-all shadow-lg text-base nx-fill">
                     Submit &amp; View Guaranteed Rate &rarr;
                   </button>
                 </div>
@@ -576,44 +576,44 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-[#468de6]/40 transition-all duration-300 space-y-3">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center">1</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center nx-flip nx-flip-card">1</div>
             <h3 class="font-bold text-[#0a2540] text-lg">Route Details</h3>
             <p class="text-xs text-[#425466] leading-relaxed">Enter pickup and delivery ZIP codes or cities (for example, Miami, FL to Los Angeles, CA).</p>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-[#468de6]/40 transition-all duration-300 space-y-3">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center">2</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center nx-flip nx-flip-card">2</div>
             <h3 class="font-bold text-[#0a2540] text-lg">Describe Vehicle</h3>
             <p class="text-xs text-[#425466] leading-relaxed">Select year, make, model, body type (sedan, SUV, truck, van, motorcycle), and whether it runs and drives.</p>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-[#468de6]/40 transition-all duration-300 space-y-3">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center">3</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center nx-flip nx-flip-card">3</div>
             <h3 class="font-bold text-[#0a2540] text-lg">Choose Carrier Type</h3>
             <p class="text-xs text-[#425466] leading-relaxed"><strong>Open carrier:</strong> most popular &amp; affordable for daily drivers. <strong>Enclosed carrier:</strong> premium protection for exotics.</p>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-[#468de6]/40 transition-all duration-300 space-y-3">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center">4</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center nx-flip nx-flip-card">4</div>
             <h3 class="font-bold text-[#0a2540] text-lg">Pickup Timeframe</h3>
             <p class="text-xs text-[#425466] leading-relaxed">Choose a target date window. Flexible pickup dates can often help reduce your overall shipping rate.</p>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-[#468de6]/40 transition-all duration-300 space-y-3">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center">5</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center nx-flip nx-flip-card">5</div>
             <h3 class="font-bold text-[#0a2540] text-lg">Instant Quote Calculation</h3>
             <p class="text-xs text-[#425466] leading-relaxed">Our system calculates your car shipping cost range using the same engine as our <a href="/cost-calculator/" class="text-[#468de6] font-bold hover:underline">instant auto transport cost calculator</a>. For a detailed walkthrough, see <a href="/how-it-works/" class="text-[#468de6] font-bold hover:underline">how our car shipping process works step-by-step</a>.</p>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1 hover:shadow-md hover:border-[#468de6]/40 transition-all duration-300 space-y-3">
-            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center">6</div>
+            <div class="w-8 h-8 rounded-full bg-[#0a2540] text-white font-black text-sm flex items-center justify-center nx-flip nx-flip-card">6</div>
             <h3 class="font-bold text-[#0a2540] text-lg">Confirm and Schedule</h3>
             <p class="text-xs text-[#425466] leading-relaxed">If you like the price, a shipping specialist verifies details, assigns a vetted carrier, and confirms your pickup window.</p>
           </div>
         </div>
 
         <div class="text-center pt-4">
-          <a href="/cost-calculator/" class="inline-block bg-[#0a2540] hover:bg-[#468de6] text-white px-8 py-4 rounded-xl font-black text-base transition shadow-md" style="text-decoration: none;">
+          <a href="/cost-calculator/" class="inline-block bg-[#0a2540] hover:bg-[#468de6] text-white px-8 py-4 rounded-xl font-black text-base transition shadow-md nx-fill" style="text-decoration: none;">
             Start My Quote in 30 Seconds &rarr;
           </a>
         </div>
@@ -689,7 +689,7 @@
               <div class="flex justify-between"><span>Open Carrier Range:</span> <strong class="text-[#0a2540]">$750 – $1,050</strong></div>
               <div class="flex justify-between"><span>Transit Time:</span> <strong class="text-[#0a2540]">3 – 5 Days</strong></div>
             </div>
-            <a href="/cost-calculator/" class="block w-full text-center py-2.5 bg-[#0a2540] hover:bg-[#468de6] text-white font-bold rounded-xl text-xs transition" style="text-decoration: none;">Calculate Exact Rate</a>
+            <a href="/cost-calculator/" class="block w-full text-center py-2.5 bg-[#0a2540] hover:bg-[#468de6] text-white font-bold rounded-xl text-xs transition nx-fill" style="text-decoration: none;">Calculate Exact Rate</a>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1.5 hover:shadow-xl hover:border-[#468de6]/40 transition-all duration-300 space-y-4">
@@ -701,7 +701,7 @@
               <div class="flex justify-between"><span>Open Carrier Range:</span> <strong class="text-[#0a2540]">$800 – $1,150</strong></div>
               <div class="flex justify-between"><span>Transit Time:</span> <strong class="text-[#0a2540]">4 – 6 Days</strong></div>
             </div>
-            <a href="/cost-calculator/" class="block w-full text-center py-2.5 bg-[#0a2540] hover:bg-[#468de6] text-white font-bold rounded-xl text-xs transition" style="text-decoration: none;">Calculate Exact Rate</a>
+            <a href="/cost-calculator/" class="block w-full text-center py-2.5 bg-[#0a2540] hover:bg-[#468de6] text-white font-bold rounded-xl text-xs transition nx-fill" style="text-decoration: none;">Calculate Exact Rate</a>
           </div>
 
           <div class="p-6 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm hover:-translate-y-1.5 hover:shadow-xl hover:border-[#468de6]/40 transition-all duration-300 space-y-4">
@@ -713,12 +713,12 @@
               <div class="flex justify-between"><span>Open Carrier Range:</span> <strong class="text-[#0a2540]">$950 – $1,350</strong></div>
               <div class="flex justify-between"><span>Transit Time:</span> <strong class="text-[#0a2540]">5 – 8 Days</strong></div>
             </div>
-            <a href="/cost-calculator/" class="block w-full text-center py-2.5 bg-[#0a2540] hover:bg-[#468de6] text-white font-bold rounded-xl text-xs transition" style="text-decoration: none;">Calculate Exact Rate</a>
+            <a href="/cost-calculator/" class="block w-full text-center py-2.5 bg-[#0a2540] hover:bg-[#468de6] text-white font-bold rounded-xl text-xs transition nx-fill" style="text-decoration: none;">Calculate Exact Rate</a>
           </div>
         </div>
 
         <div class="text-center pt-4">
-          <a href="/cost-calculator/" class="inline-block bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-lg" style="text-decoration: none;">
+          <a href="/cost-calculator/" class="inline-block bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-lg nx-fill" style="text-decoration: none;">
             See My Route’s Exact Quote &rarr;
           </a>
         </div>
@@ -846,7 +846,7 @@
         </div>
 
         <div class="text-center pt-4">
-          <a href="/cost-calculator/" class="inline-block bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-lg" style="text-decoration: none;">
+          <a href="/cost-calculator/" class="inline-block bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-xl font-black text-base hover:bg-[#32e011] transition shadow-lg nx-fill" style="text-decoration: none;">
             Request My Expert Car Shipping Quote &rarr;
           </a>
         </div>
@@ -944,7 +944,7 @@
 
   <!-- Mobile Menu Script -->
   <!-- Calculator JS script -->
-  <script src="/js/calculator.js?v=20261030" defer=""></script>
+  <script src="/js/calculator.js?v=20261030c" defer=""></script>
 <!-- Internal Link to Transit Guide -->
 <div class="hidden"><a href="/car-shipping-transit-times/" class="text-[#4338ca] font-bold underline hover:no-underline">Typical pickup and delivery timeframes</a></div>
 </body>

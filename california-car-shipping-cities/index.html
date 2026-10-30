@@ -36,9 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:description" content="Ship your car to or from California with Neon Auto Transport. Door-to-door delivery serving Los Angeles. Instant quote available.">
   <meta name="twitter:image" content="https://neonautotransport.com/images/og-cover.jpg">
 
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
 
   <!-- JSON-LD: Service + BreadcrumbList -->
   <script type="application/ld+json">
@@ -177,7 +176,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 
 
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class=" lg:pb-0 antialiased bg-[#f6f9fc]">
   <!-- Google Tag Manager (noscript) -->
@@ -276,12 +276,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <main>
     <!-- Hero Section -->
-    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24">
-      <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] py-16 lg:py-24 nx-hero">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div class="lg:w-1/2 flex flex-col justify-center">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-              <span class="w-2 h-2 rounded-full bg-[#39FF14]"></span>
+              <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
               FMCSA Registered • USDOT #4355879 • MC #1703787
             </div>
             <h1 class="font-black text-[#0a2540] mb-6 tracking-tight leading-tight">
@@ -289,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="block text-2xl lg:text-3xl text-[#468de6] font-bold">Costs, Routes & Local Guides</span>
             </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
+  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
@@ -310,11 +310,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               Neon Auto Transport LLC is a licensed auto transport broker operating under MC #1703787 and USDOT #4355879. We arrange shipments through independently owned and insured motor carriers.
             </p>
             <div class="flex flex-wrap items-center gap-4">
-              <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2">
+              <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center gap-2 nx-fill">
                 Get Free Quote
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
-              <a href="/cost-calculator/" class="bg-[#0a2540] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#1a3a5a] transition shadow-md">
+              <a href="/cost-calculator/" class="bg-[#0a2540] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#1a3a5a] transition shadow-md nx-fill">
                 Cost Calculator
               </a>
             </div>
@@ -405,7 +405,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <div>
             <div class="mb-6">
-              <a href="/california-car-shipping/" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full transition-all shadow-md group text-sm" style="background-color: #0a2540; color: #ffffff !important; font-weight: 800; text-decoration: none;">
+              <a href="/california-car-shipping/" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full transition-all shadow-md group text-sm nx-fill" style="background-color: #0a2540; color: #ffffff !important; font-weight: 800; text-decoration: none;">
                 <svg class="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
                 View California Statewide Routes & Hub
               </a>
@@ -421,7 +421,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-[#e6e6e6] mb-8">
               <table class="w-full text-left border-collapse">
                 <thead>
-                  <tr class="bg-[#0a2540] text-white text-sm font-bold tracking-wider">
+                  <tr class="bg-[#0a2540] text-white text-sm font-bold tracking-wider nx-flip">
                     <th class="py-5 px-6">Factor</th>
                     <th class="py-5 px-6">Open Carrier</th>
                     <th class="py-5 px-6">Enclosed Carrier</th>
@@ -454,15 +454,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="my-8 p-8 bg-white rounded-2xl border border-[#e6e6e6] shadow-sm text-center">
             <h3 class="text-2xl font-bold text-[#0a2540] mb-3">Explore California Interstate Routes</h3>
             <p class="text-sm text-[#425466] mb-6 max-w-xl mx-auto">Planning a move beyond California? Visit our California Car Shipping hub for statewide route information, estimated transit times, and links to popular interstate corridors.</p>
-            <a href="/california-car-shipping/" class="inline-block px-8 py-3.5 rounded-full font-black text-base transition shadow-md" style="background-color: #0a2540; color: #ffffff !important; text-decoration: none;">View California Statewide Routes &rarr;</a>
+            <a href="/california-car-shipping/" class="inline-block px-8 py-3.5 rounded-full font-black text-base transition shadow-md nx-fill" style="background-color: #0a2540; color: #ffffff !important; text-decoration: none;">View California Statewide Routes &rarr;</a>
           </div>
 
-          <div class="p-8 bg-[#0a2540] rounded-2xl shadow-xl text-white text-center">
+          <div class="p-8 bg-[#0a2540] rounded-2xl shadow-xl text-white text-center nx-flip nx-flip-card">
             <h3 class="text-2xl lg:text-3xl font-bold mb-3 text-white">Get a Free California Car Shipping Quote</h3>
             <p class="text-[#cdd5df] mb-6 text-sm max-w-xl mx-auto">Compare open and enclosed transport options for your route. Pricing and pickup windows depend on your vehicle, dates, pickup/delivery access, and carrier availability.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-md w-full sm:w-auto">Get My Free Quote</a>
-              <a href="/cost-calculator/" class="bg-white/10 text-white border border-white/20 px-8 py-3.5 rounded-full font-bold text-base hover:bg-white/20 transition w-full sm:w-auto">Use the Cost Calculator</a>
+              <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-md w-full sm:w-auto nx-fill">Get My Free Quote</a>
+              <a href="/cost-calculator/" class="bg-white/10 text-white border border-white/20 px-8 py-3.5 rounded-full font-bold text-base hover:bg-white/20 transition w-full sm:w-auto nx-ghost">Use the Cost Calculator</a>
             </div>
           </div>
 
@@ -524,13 +524,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="/cost-calculator/" class="btn-primary w-full mt-6 py-3 block text-center font-bold text-sm">Start Your Quote &rarr;</a>
             </div>
 
-            <div class="bg-[#0a2540] rounded-2xl p-6 text-white text-center shadow-lg">
-              <div class="w-12 h-12 bg-[#39FF14] rounded-full mx-auto flex items-center justify-center mb-4 text-[#0a2540]">
+            <div class="bg-[#0a2540] rounded-2xl p-6 text-white text-center shadow-lg nx-flip nx-flip-card">
+              <div class="w-12 h-12 bg-[#39FF14] rounded-full mx-auto flex items-center justify-center mb-4 text-[#0a2540] nx-navy">
                 <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               </div>
               <h3 class="font-bold text-xl mb-2">Speak to a Specialist</h3>
               <p class="text-xs text-[#cdd5df] mb-6">Have custom vehicle transport questions? Talk to an auto transport expert now.</p>
-              <a href="tel:5715767711" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)] text-lg w-full">
+              <a href="tel:5715767711" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)] text-lg w-full nx-fill">
                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
                 (571) 576-7711
               </a>
@@ -796,7 +796,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </script>
 
 <!-- Neon AI Chat Widget -->
-  <link rel="stylesheet" href="/css/chatbot.css?v=20261030">
-  <script src="/js/chatbot.js?v=20261030" defer=""></script>
+  <link rel="stylesheet" href="/css/chatbot.css?v=20261030c">
+  <script src="/js/chatbot.js?v=20261030c" defer=""></script>
   </body>
 </html>

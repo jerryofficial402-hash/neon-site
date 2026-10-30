@@ -218,14 +218,9 @@
   </script>
 
   <!-- Fonts & Tailwind CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased">
   <!-- Global Header -->
@@ -318,8 +313,8 @@
 </header>
 
   <!-- Slanted Hero Header -->
-  <section class="relative stripe-gradient-bg overflow-hidden bg-[#0a2540] text-white" style="padding-top:140px;padding-bottom:120px;">
-    <div class="container mx-auto px-4 lg:px-8 z-10 relative text-center max-w-4xl">
+  <section class="relative stripe-gradient-bg overflow-hidden bg-[#0a2540] text-white nx-flip nx-hero" style="padding-top:140px;padding-bottom:120px;">
+    <div class="container mx-auto px-4 lg:px-8 z-10 relative text-center max-w-4xl nx-hero-wrap">
       <nav aria-label="Breadcrumbs" class="flex justify-center items-center gap-2 text-xs font-semibold mb-4 flex-wrap text-slate-300">
         <a href="/" class="hover:underline text-slate-300" style="text-decoration:none;">Home</a><span>/</span> <span class="text-white font-bold">Vehicle Transport Services</span>
       </nav>
@@ -327,7 +322,7 @@
         Nationwide Vehicle <span style="color: #0a5fb4">Transport Services</span>
       </h1>
 
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl" aria-label="Quick Answer">
+  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
@@ -347,10 +342,10 @@
         Our car shipping services cover every common vehicle transport scenario: open carrier moves for daily vehicles, enclosed shipping for high-value cars, door-to-door pickup and delivery, expedited transport for tight timelines, and specialized car transport services for motorcycles, military PCS moves, dealers, and fleets.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)]" style="text-decoration: none;">
+        <a href="/car-shipping-quote/" class="bg-[#39FF14] text-[#0a2540] px-8 py-3.5 rounded-full font-black text-base hover:bg-[#32e011] transition shadow-[0_0_20px_rgba(57,255,20,0.4)] nx-fill" style="text-decoration: none;">
           Get a Free Car Shipping Quote →
         </a>
-        <a href="/cost-calculator/" class="px-8 py-3.5 rounded-full font-black text-base border-2 border-white text-white hover:bg-white hover:text-[#0a2540] transition" style="text-decoration: none;">
+        <a href="/cost-calculator/" class="px-8 py-3.5 rounded-full font-black text-base border-2 border-white text-white hover:bg-white hover:text-[#0a2540] transition nx-ghost" style="text-decoration: none;">
           Calculate Car Shipping Cost
         </a>
       </div>
@@ -365,7 +360,7 @@
 
       <!-- Licensed Broker Disclosure Strip -->
       <div class="p-6 mb-12 bg-white rounded-2xl border border-[#e6e6e6] shadow-lg flex items-start gap-4 text-left">
-        <div class="w-10 h-10 rounded-full bg-[#0a2540] text-[#39FF14] flex items-center justify-center shrink-0 font-bold text-lg"></div>
+        <div class="w-10 h-10 rounded-full bg-[#0a2540] text-[#39FF14] flex items-center justify-center shrink-0 font-bold text-lg nx-flip nx-flip-card"></div>
         <div>
           <h2 class="text-base font-bold text-[#0a2540] mb-1">Licensed Broker Transparency</h2>
           <p class="text-xs text-[#425466] leading-relaxed mb-1">
@@ -391,7 +386,7 @@
         <div class="overflow-x-auto">
           <table class="w-full text-left border-collapse min-w-[600px]">
             <thead>
-              <tr class="bg-[#0a2540] text-white text-[12px] font-bold uppercase tracking-wider">
+              <tr class="bg-[#0a2540] text-white text-[12px] font-bold uppercase tracking-wider nx-flip">
                 <th class="py-3.5 px-4 rounded-tl-lg">Service</th>
                 <th class="py-3.5 px-4 text-center">Typical Cost</th>
                 <th class="py-3.5 px-4 text-center">Transit / Timing</th>
@@ -551,7 +546,7 @@
           Neon Auto Transport can review transport requests for seasonal moves, college relocations, online vehicle purchases, auction vehicles, interstate truck transport, and Alaska or Hawaii moves. Availability, equipment, timing, and applicable terms depend on the shipment details.
         </p>
         <div>
-          <a href="/car-shipping-quote/" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0a2540] text-white font-bold text-sm hover:bg-[#103056] transition shadow-md" style="text-decoration: none;">
+          <a href="/car-shipping-quote/" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0a2540] text-white font-bold text-sm hover:bg-[#103056] transition shadow-md nx-fill" style="text-decoration: none;">
             Request a Specialized Transport Quote →
           </a>
         </div>
@@ -608,7 +603,7 @@
       </div>
 
       <!-- Improved Corporate & Fleet CTA Box -->
-      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white">
+      <div class="p-10 md:p-12 text-center bg-[#0a2540] rounded-3xl shadow-xl text-white nx-flip nx-flip-card">
         <h3 class="text-2xl md:text-3xl font-black mb-4 text-white" style="color: #0a0a0a;">
           Need to move multiple vehicles or coordinate a business relocation?
         </h3>
@@ -616,10 +611,10 @@
           Tell us the vehicle count, pickup and delivery locations, preferred dates, and transport requirements. We will review available carrier options and provide a written quote for your shipment.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/car-shipping-quote/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition shadow-md text-base w-full sm:w-auto" style="text-decoration: none;">
+          <a href="/car-shipping-quote/" class="px-8 py-3.5 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition shadow-md text-base w-full sm:w-auto nx-fill" style="text-decoration: none;">
             Request a Fleet or Dealer Quote
           </a>
-          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto" style="text-decoration: none;">
+          <a href="tel:5715767711" class="px-8 py-3.5 rounded-full border-2 border-white text-white font-bold hover:bg-white hover:text-[#0a2540] transition text-base w-full sm:w-auto nx-ghost" style="text-decoration: none;">
             Call (571) 576-7711
           </a>
         </div>

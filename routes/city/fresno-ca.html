@@ -36,9 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:description" content="Ship a car to or from Fresno, CA with door-to-door open and enclosed auto transport. $0 deposit, FMCSA-licensed, $500k insured carriers. Get an instant quote.">
   <meta name="twitter:image" content="https://neonautotransport.com/images/fresno-car-shipping-carrier.jpg">
 
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261030">
-  <link rel="stylesheet" href="/css/styles.css?v=20261030">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261030c">
+  <link rel="stylesheet" href="/css/styles.css?v=20261030c">
 
   <!-- JSON-LD: Service + BreadcrumbList + FAQPage + ImageObject -->
   <script type="application/ld+json">
@@ -222,7 +221,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   </script>
 
-  <link rel="stylesheet" href="/css/theme.css?v=20261030">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261030c">
+  <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="lg:pb-0 antialiased bg-[#f6f9fc]">
   <!-- Google Tag Manager (noscript) -->
@@ -321,8 +321,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <main>
     <!-- Section 1: Hero Section -->
-    <section class="hero-section bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 sm:pt-32 lg:pt-36 pb-16 lg:pb-20" aria-label="Fresno Car Shipping Overview">
-      <div class="container mx-auto px-4 lg:px-8 max-w-7xl">
+    <section class="hero-section bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 sm:pt-32 lg:pt-36 pb-16 lg:pb-20 nx-hero" aria-label="Fresno Car Shipping Overview">
+      <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           <!-- Hero Left Column (7 Cols) -->
@@ -354,7 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </nav>
 
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-              <span class="w-2.5 h-2.5 rounded-full bg-[#39FF14]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#39FF14] nx-navy"></span>
               FMCSA Registered • USDOT #4355879 • MC #1703787
             </div>
             
@@ -380,7 +380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </p>
 
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6">
-              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center justify-center gap-2 text-center" style="text-decoration: none;">
+              <a href="/cost-calculator/" class="bg-[#39FF14] text-[#0a2540] px-8 py-4 rounded-full font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] flex items-center justify-center gap-2 text-center nx-fill" style="text-decoration: none;">
                 Calculate Your Rate Instantly 
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
@@ -610,7 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="text-center">
-          <a href="/cost-calculator/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0a2540] text-white font-bold hover:bg-[#1a365d] transition shadow-md text-base">
+          <a href="/cost-calculator/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#0a2540] text-white font-bold hover:bg-[#1a365d] transition shadow-md text-base nx-fill">
             Get Instant Custom Quote &rarr;
           </a>
         </div>
@@ -788,7 +788,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <!-- Trust Box: Choosing a Reliable Transporter -->
-        <div class="bg-[#0a2540] rounded-3xl p-8 text-white">
+        <div class="bg-[#0a2540] rounded-3xl p-8 text-white nx-flip nx-flip-card">
           <h3 class="text-2xl font-black text-[#00D1FF] mb-6">Choosing a Reliable Fresno Auto Transporter</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-200 mb-8">
             <div class="flex items-start gap-3">
@@ -810,7 +810,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/10 text-xs text-slate-300">
             <span>Neon Auto Transport LLC • MC #1703787 • USDOT #4355879</span>
-            <a href="/cost-calculator/" class="px-6 py-3 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition shadow-md">
+            <a href="/cost-calculator/" class="px-6 py-3 rounded-full bg-[#39FF14] text-[#0a2540] font-black hover:bg-[#32e612] transition shadow-md nx-fill">
               Get Protected Quote &rarr;
             </a>
           </div>
@@ -922,24 +922,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           <div class="bg-white p-6 rounded-2xl border border-[#e6e6e6] text-center shadow-sm">
-            <div class="w-12 h-12 rounded-full bg-[#0a2540] text-[#00D1FF] font-black text-xl flex items-center justify-center mx-auto mb-4">1</div>
+            <div class="w-12 h-12 rounded-full bg-[#0a2540] text-[#00D1FF] font-black text-xl flex items-center justify-center mx-auto mb-4 nx-flip nx-flip-card">1</div>
             <h3 class="font-bold text-lg text-[#0a2540] mb-2">Get an Instant Quote</h3>
             <p class="text-sm text-[#425466]">Use our calculator for a transparent rate with $0 deposit required.</p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-[#e6e6e6] text-center shadow-sm">
-            <div class="w-12 h-12 rounded-full bg-[#0a2540] text-[#00D1FF] font-black text-xl flex items-center justify-center mx-auto mb-4">2</div>
+            <div class="w-12 h-12 rounded-full bg-[#0a2540] text-[#00D1FF] font-black text-xl flex items-center justify-center mx-auto mb-4 nx-flip nx-flip-card">2</div>
             <h3 class="font-bold text-lg text-[#0a2540] mb-2">Carrier Match</h3>
             <p class="text-sm text-[#425466]">A fully vetted, insured carrier is scheduled for pickup, typically within 1–5 business days.</p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-[#e6e6e6] text-center shadow-sm">
-            <div class="w-12 h-12 rounded-full bg-[#0a2540] text-[#00D1FF] font-black text-xl flex items-center justify-center mx-auto mb-4">3</div>
+            <div class="w-12 h-12 rounded-full bg-[#0a2540] text-[#00D1FF] font-black text-xl flex items-center justify-center mx-auto mb-4 nx-flip nx-flip-card">3</div>
             <h3 class="font-bold text-lg text-[#0a2540] mb-2">Door-to-Door Delivery</h3>
             <p class="text-sm text-[#425466]">Your vehicle arrives safely. Sign the Bill of Lading and complete payment at delivery.</p>
           </div>
         </div>
 
         <div class="text-center">
-          <a href="/cost-calculator/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-lg hover:bg-[#32e011] transition shadow-md">
+          <a href="/cost-calculator/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-lg hover:bg-[#32e011] transition shadow-md nx-fill">
             Start Your Quote &rarr;
           </a>
         </div>
@@ -947,7 +947,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <!-- Section 10: Lock In Rate CTA Section -->
-    <section class="py-16 bg-[#0a2540] text-white" aria-label="Lock In Your Fresno Rate">
+    <section class="py-16 bg-[#0a2540] text-white nx-flip" aria-label="Lock In Your Fresno Rate">
       <div class="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
         <h2 class="text-3xl sm:text-4xl font-black mb-4 tracking-tight">Lock In Your Fresno Route Rate</h2>
         <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
@@ -955,11 +955,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <a href="tel:5715767711" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)]">
+          <a href="tel:5715767711" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#39FF14] text-[#0a2540] font-black text-lg hover:bg-[#32e011] transition shadow-[0_0_15px_rgba(57,255,20,0.4)] nx-fill">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
             (571) 576-7711
           </a>
-          <a href="/cost-calculator/" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold border border-white/20 transition text-lg">
+          <a href="/cost-calculator/" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold border border-white/20 transition text-lg nx-ghost">
             Calculate Online &rarr;
           </a>
         </div>
@@ -997,7 +997,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="mb-10">
           <h3 class="text-xl font-black text-[#0a2540] mb-4">State &amp; Regional Transport Hubs</h3>
           <div class="flex flex-wrap gap-3">
-            <a href="/california-car-shipping/" class="px-4 py-2 rounded-xl bg-[#0a2540] text-white text-xs font-bold hover:bg-[#1a365d] transition">Main State Hub: California Car Shipping Services &rarr;</a>
+            <a href="/california-car-shipping/" class="px-4 py-2 rounded-xl bg-[#0a2540] text-white text-xs font-bold hover:bg-[#1a365d] transition nx-fill">Main State Hub: California Car Shipping Services &rarr;</a>
             <a href="/routes/city/los-angeles-ca/" class="px-4 py-2 rounded-xl bg-slate-100 text-[#0a2540] text-xs font-bold hover:bg-[#468de6] hover:text-white transition">Los Angeles Car Shipping</a>
             <a href="/routes/city/san-francisco-ca/" class="px-4 py-2 rounded-xl bg-slate-100 text-[#0a2540] text-xs font-bold hover:bg-[#468de6] hover:text-white transition">San Francisco Car Shipping</a>
             <a href="/routes/city/san-diego-ca/" class="px-4 py-2 rounded-xl bg-slate-100 text-[#0a2540] text-xs font-bold hover:bg-[#468de6] hover:text-white transition">San Diego Car Shipping</a>
@@ -1091,7 +1091,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
       Call Dispatch
     </a>
-    <a href="/cost-calculator/" class="flex-1 bg-[#39FF14] text-[#0a2540] py-3 rounded-xl font-black text-center text-sm flex items-center justify-center gap-1 shadow-md">
+    <a href="/cost-calculator/" class="flex-1 bg-[#39FF14] text-[#0a2540] py-3 rounded-xl font-black text-center text-sm flex items-center justify-center gap-1 shadow-md nx-fill">
       Instant Quote &rarr;
     </a>
   </div>
