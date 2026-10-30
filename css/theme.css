@@ -583,6 +583,10 @@ main p a:not(.nx-btn):not([class*="px-"]), main td a:not(.nx-btn), main li p a, 
 @media (prefers-reduced-motion: no-preference) {
   .nx-will { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s cubic-bezier(.2, .7, .2, 1); }
   .nx-will.nx-in { opacity: 1; transform: none; }
+  /* small stagger within a row of cards */
+  .nx-grid > .nx-will:nth-child(4n+2), .grid > .nx-will:nth-child(4n+2) { transition-delay: 60ms; }
+  .nx-grid > .nx-will:nth-child(4n+3), .grid > .nx-will:nth-child(4n+3) { transition-delay: 120ms; }
+  .nx-grid > .nx-will:nth-child(4n), .grid > .nx-will:nth-child(4n) { transition-delay: 180ms; }
   /* example shipment: the in-transit step breathes */
   .nx-steps li.is-now::before { animation: nx-pulse 2s ease-out infinite; }
   @keyframes nx-pulse { 0% { box-shadow: 0 0 0 0 rgba(10, 95, 180, .35); } 70% { box-shadow: 0 0 0 8px rgba(10, 95, 180, 0); } 100% { box-shadow: 0 0 0 0 rgba(10, 95, 180, 0); } }
@@ -591,3 +595,7 @@ main p a:not(.nx-btn):not([class*="px-"]), main td a:not(.nx-btn), main li p a, 
   .nx-track.nx-in .nx-steps li.is-done:nth-child(2)::after { animation-delay: .25s; }
   @keyframes nx-draw { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 }
+
+/* Render work for sections far below the fold is deferred until they come close to the viewport.
+   'auto' in contain-intrinsic-size remembers each section's real height after it has rendered once. */
+main > section:nth-of-type(n+3), body > section:nth-of-type(n+3) { content-visibility: auto; contain-intrinsic-size: auto 700px; }

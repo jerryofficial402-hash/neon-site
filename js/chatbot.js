@@ -476,11 +476,12 @@
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   }
 
-  // Run initialisation
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  // Run initialisation after the page has loaded, in idle time, so the widget doesn't compete with first paint
+  function initWhenIdle() { (window.requestIdleCallback || function (f) { setTimeout(f, 300); })(init, { timeout: 3000 }); }
+  if (document.readyState === 'complete') {
+    initWhenIdle();
   } else {
-    init();
+    window.addEventListener('load', initWhenIdle, { once: true });
   }
 
 })();
