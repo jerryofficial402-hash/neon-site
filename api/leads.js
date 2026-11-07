@@ -47,7 +47,7 @@ export default async function handler(req, res) {
       firstName, lastName, email, phone,
       vehicleYear, vehicleMake, vehicleModel, vehicleType, vehicleCondition,
       pickupZip, deliveryZip, desiredPickupDate, transportType, source,
-      pickupLocation, dropoffLocation, additionalVehicles, estimatedPrice, message
+      pickupLocation, dropoffLocation, additionalVehicles, estimatedPrice, message, honeypot
     } = fields;
 
     const customerName = [firstName, lastName].filter(Boolean).join(' ') || 'Unknown (AI Lead)';
@@ -88,6 +88,9 @@ export default async function handler(req, res) {
       notes,
       trailer_type: trailerType,
       vehicles,
+      // Anti-spam signal from the Contact Us form (hidden box ticked / sent too fast).
+      // The CRM files these straight into its Spam folder.
+      honeypot: honeypot ? String(honeypot).slice(0, 100) : undefined,
     };
 
     const headers = { 'Content-Type': 'application/json' };

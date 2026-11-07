@@ -293,6 +293,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <input type="hidden" name="access_key" value="5e86dea9-8ed6-476f-b4db-1ab24c5de766">
       <input type="hidden" name="subject" value="Contact Us Message: Neon Auto Transport">
        <input type="hidden" name="redirect" value="https://neonautotransport.com/thank-you/">
+      <!-- Anti-spam: hidden box people never see; bots tick it. Web3Forms drops messages with "botcheck" ticked, and the CRM puts them in its Spam folder. -->
+      <input type="checkbox" name="botcheck" id="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
       <div class="grid md:grid-cols-2 gap-6">
        <div>
@@ -333,8 +335,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </form>
      <script>
       // Also save the message as a lead in the Neon CRM (the email still goes out as before)
-      document.getElementById('contactForm').addEventListener('submit', function () {
+      var contactFormOpenedAt = Date.now();
+      var contactFormSent = false;
+      // Coming back with the browser Back button: let them send again
+      window.addEventListener('pageshow', function (ev) {
+        if (!ev.persisted) return;
+        contactFormSent = false;
+        var b = document.querySelector('#contactForm button[type="submit"]');
+        if (b) { b.disabled = false; b.textContent = 'Submit Message →'; }
+      });
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        // One message per click: stop double/quadruple submits
+        if (contactFormSent) { e.preventDefault(); return; }
+        contactFormSent = true;
+        var btn = this.querySelector('button[type="submit"]');
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
         try {
+          // Bots fill the hidden box or submit within a couple of seconds of the page opening
+          var bot = document.getElementById('botcheck').checked ? 'botcheck ticked'
+            : (Date.now() - contactFormOpenedAt < 3000 ? 'sent too fast' : '');
           var name = (document.getElementById('name').value || '').trim().split(/\s+/);
           fetch('/api/leads/', {
             method: 'POST',
@@ -346,7 +365,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               email: document.getElementById('email_address').value,
               phone: document.getElementById('phone_number').value,
               message: document.getElementById('message').value,
-              source: 'Website'
+              source: 'Website',
+              honeypot: bot
             } })
           });
         } catch (e) {}
