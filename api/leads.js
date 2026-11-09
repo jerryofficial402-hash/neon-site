@@ -22,6 +22,22 @@ function parseVehicleSummary(summary, fallbackTrailer) {
   }).filter(Boolean);
 }
 
+// Made-up emails that fake-lead bots use (example.com / example.org / example.net, .test, .invalid)
+const FAKE_EMAIL = /@(?:[a-z0-9-]+\.)*(example\.(com|org|net)|[a-z0-9-]+\.(example|test|invalid|localhost))$/i;
+
+// Real visitors send the request from the website itself, so the browser adds Origin/Referer.
+// Scripts posting straight to /api/leads usually send neither, or another site's address.
+function fromOurSite(req) {
+  const origin = String(req.headers.origin || req.headers.referer || '');
+  if (!origin) return false;
+  try {
+    const host = new URL(origin).hostname;
+    return host === 'neonautotransport.com' || host.endsWith('.neonautotransport.com') || host.endsWith('.vercel.app') || host === 'localhost';
+  } catch {
+    return false;
+  }
+}
+
 export default async function handler(req, res) {
   // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -41,6 +57,12 @@ export default async function handler(req, res) {
 
     if (!fields) {
       return res.status(400).json({ error: 'Missing fields in request body' });
+    }
+
+    // Bots: answer "ok" so they move on, but send nothing to the CRM
+    if (!fromOurSite(req) || (fields.email && FAKE_EMAIL.test(String(fields.email).trim()))) {
+      console.warn('Blocked bot lead:', req.headers.origin || req.headers.referer || 'no origin', fields.email || '');
+      return res.status(200).json({ success: true, message: 'Received' });
     }
 
     const {
