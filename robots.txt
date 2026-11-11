@@ -1,38 +1,20 @@
+# All crawlers, including AI search and answer engines, may read the site.
+# Records with several User-agent lines share the rules below them (RFC 9309).
 User-agent: *
-Allow: /
-
-# Explicit AI crawler access
+User-agent: Googlebot
+User-agent: Bingbot
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: anthropic-ai
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Perplexity-User
-Allow: /
-
 User-agent: Google-Extended
-Allow: /
-
 User-agent: CCBot
 Allow: /
-
-# Block junk / non-indexable templates / author archives
+# Non-indexable page template
 Disallow: /routes/route-template.html
-Disallow: /author/
 
 Sitemap: https://neonautotransport.com/sitemap.xml
-
 Sitemap: https://neonautotransport.com/sitemap.md
