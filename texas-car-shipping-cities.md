@@ -134,7 +134,7 @@ Do I need to be present for pickup and delivery in Texas? +
 
 Yes. You or someone you authorize needs to be present at both pickup and delivery to walk through the vehicle’s condition with the driver and sign the Bill of Lading — this document is what protects you if any damage dispute comes up later. 
 
-Does Neon Auto Transport handle military PCS moves to Fort Cavazos, Fort Bliss, or Joint Base San Antonio? +
+Does Neon Auto Transport handle military PCS moves to Fort Hood, Fort Bliss, or Joint Base San Antonio? +
 
 Yes. These installations drive a significant share of Texas auto transport demand, especially during PCS season from May through August, and our carrier network is experienced with base-access requirements and PCS report-date scheduling. Book as early as your orders allow — this is the busiest stretch of the year for these routes. 
 

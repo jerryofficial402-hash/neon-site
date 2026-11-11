@@ -120,7 +120,7 @@ Texas auto transport has its own logic, and it comes down to three things: size,
 
   * **Texas weather is a real scheduling factor.** North Texas gets serious hail storms almost every spring, and the Gulf Coast — Houston in particular — sits squarely in hurricane season from June through November. Both can delay pickups and are good reasons to consider enclosed transport for anything you can’t afford to have sitting exposed on an open trailer during a storm system.
 
-  * **Military relocation traffic shapes the calendar.** Fort Cavazos near Killeen, Fort Bliss in El Paso, and Joint Base San Antonio all move a steady stream of vehicles tied to PCS orders, and demand spikes hard from May through August. If you’re shipping around a PCS date, book earlier than you think you need to.
+  * **Military relocation traffic shapes the calendar.** Fort Hood near Killeen, Fort Bliss in El Paso, and Joint Base San Antonio all move a steady stream of vehicles tied to PCS orders, and demand spikes hard from May through August. If you’re shipping around a PCS date, book earlier than you think you need to.
 
 
 ## What Actually Goes Into Your Texas Car Shipping Quote
@@ -200,7 +200,7 @@ A huge share of Texas auto transport never crosses state lines — it’s Texans
   * Get more than one quote. A bid dramatically below everything else is usually a sign of an unlicensed reseller lowballing to win the booking, not a legitimate discount.
 
 
-Neon Auto Transport works only with fully vetted, FMCSA-compliant carriers across every route in this guide, and our team has direct experience coordinating pickups and deliveries around PCS timelines for Fort Cavazos, Fort Bliss, and Joint Base San Antonio moves.
+Neon Auto Transport works only with fully vetted, FMCSA-compliant carriers across every route in this guide, and our team has direct experience coordinating pickups and deliveries around PCS timelines for Fort Hood, Fort Bliss, and Joint Base San Antonio moves.
 
 ## Texas-to-State Ballpark Averages
 
@@ -241,7 +241,7 @@ Do I need to be present for pickup and delivery in Texas? +
 
 Yes. You or someone you authorize needs to be present at both pickup and delivery to walk through the vehicle’s condition with the driver and sign the Bill of Lading — this document is what protects you if any damage dispute comes up later. 
 
-Does Neon Auto Transport handle military PCS moves to Fort Cavazos, Fort Bliss, or Joint Base San Antonio? +
+Does Neon Auto Transport handle military PCS moves to Fort Hood, Fort Bliss, or Joint Base San Antonio? +
 
 Yes. These installations drive a significant share of Texas auto transport demand, especially during PCS season from May through August, and our carrier network is experienced with base-access requirements and PCS report-date scheduling. Book as early as your orders allow — this is the busiest stretch of the year for these routes. 
 
