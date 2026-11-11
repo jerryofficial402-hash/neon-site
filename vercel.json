@@ -226,6 +226,16 @@
   ],
   "redirects": [
     {
+      "source": "/routes/city/arlington-va",
+      "destination": "/car-shipping-arlington-va/",
+      "permanent": true
+    },
+    {
+      "source": "/routes/city/arlington-va/",
+      "destination": "/car-shipping-arlington-va/",
+      "permanent": true
+    },
+    {
       "source": "/author",
       "destination": "/author/shazil-ali/",
       "permanent": true

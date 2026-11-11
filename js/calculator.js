@@ -28,6 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Pre-fill ZIPs from the mini quote card on other pages (?from=22191&to=75001); the lookup runs as if typed
+    [['from', 'pickupZip'], ['to', 'deliveryZip']].forEach(([param, id]) => {
+        const zip = (urlParams.get(param) || '').replace(/\D/g, '').slice(0, 5);
+        const input = document.getElementById(id);
+        if (zip.length === 5 && input) {
+            input.value = zip;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+    });
+    if (urlParams.get('from') || urlParams.get('to')) {
+        calcForm.scrollIntoView({ block: 'start' });
+    }
+
     const btnNextStep = document.getElementById('btnNextStep');
     const btnBackStep = document.getElementById('btnBackStep');
     const step1 = document.getElementById('step1');

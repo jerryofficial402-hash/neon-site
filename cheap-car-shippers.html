@@ -26,8 +26,8 @@
   <meta property="og:image:height" content="675">
   <meta property="og:site_name" content="Neon Auto Transport">
 
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261031b">
-  <link rel="stylesheet" href="/css/styles.css?v=20261031b">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261112">
+  <link rel="stylesheet" href="/css/styles.css?v=20261112">
 
   <style>
     @media (min-width: 1024px) {
@@ -249,7 +249,7 @@
   ]
 }
 </script>
-  <link rel="stylesheet" href="/css/theme.min.css?v=20261031b">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261112">
   <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="bg-[#f6f9fc] text-[#425466] font-sans antialiased">
@@ -342,60 +342,60 @@
 </header>
 <main class="bg-white min-h-screen text-[#0a2540]">
     
-    <section class="border-b border-slate-200 bg-[#f8fafc] pt-32 pb-20 lg:pt-36 lg:pb-24 nx-hero">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <section class="nx-ihero nx-hero">
+    <div class="nx-wrap nx-ihero-in">
+      <div class="nx-ihero-copy">
         <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-8 flex-wrap">
           <a href="https://neonautotransport.com/" class="hover:text-[#635bff] transition-colors">Home</a>
           <span class="text-slate-300">/</span>
           <span class="text-slate-900 font-semibold">Cheap Car Shippers</span>
         </nav>
-
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold mb-8 shadow-sm transition-all duration-300 hover:border-slate-300 hover:shadow">
-          <span class="w-2 h-2 rounded-full bg-[#16a34a]"></span>
-          Affordable Auto Transport &bull; Live Carrier Rates &bull; All 50 States
-        </div>
-
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0a2540] tracking-tight leading-tight mb-8">
+        <p class="nx-eyebrow">Affordable Auto Transport • Live Carrier Rates • All 50 States</p>
+        <h1 class="nx-ihero-title">
           Cheap Car Shippers
         </h1>
-
-        <p class="text-base sm:text-lg text-[#425466] leading-relaxed mb-10 max-w-3xl font-medium">
-          Neon Auto Transport helps you find cheap car shippers that are safe, insured, and reliable. We compare live carrier rates, leverage backhaul lanes, and match you with FMCSA-licensed haulers so you can move your vehicle for less—without risky "too cheap" scams.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
-          <a href="/cost-calculator/" style="background-color: #0a5fb4 !important; color: #ffffff !important; font-weight: 900 !important; text-decoration: none !important; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;" class="px-8 py-4 rounded-xl text-base hover:opacity-95 transition-all duration-300 shadow-[0_0_15px_rgba(57,255,20,0.3)] hover:-translate-y-0.5 text-center">
-            <span>Get a Cheap Quote Now</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </a>
-          <a href="tel:5715767711" style="background-color: #ffffff !important; color: #0a2540 !important; font-weight: 800 !important; text-decoration: none !important; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;" class="px-8 py-4 rounded-xl text-base border border-slate-300 hover:bg-slate-50 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
-            <svg class="w-4 h-4 text-slate-700" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-            <span>Call (571) 576-7711</span>
-          </a>
+        <p class="nx-ihero-lead">Neon Auto Transport helps you find cheap car shippers that are safe, insured, and reliable. We compare live carrier rates, leverage backhaul lanes, and match you with FMCSA-licensed haulers so you can move your vehicle for less—without risky "too cheap" scams.</p>
+        <div class="nx-actions-row"><a href="/cost-calculator/" class="nx-btn">Get a free quote</a><a href="tel:+15715767711" class="nx-btn nx-btn-ghost">Call (571) 576-7711</a></div>
+        <ul class="nx-ihero-facts">
+          <li>FMCSA-licensed broker</li><li>$0 upfront deposit</li><li>$500,000 cargo insurance</li><li>5.0 on Google</li>
+        </ul>
+      </div>
+      <form class="nx-mini-quote" action="/cost-calculator/" method="get">
+        <p class="nx-mini-quote-h">Get your price in a minute</p>
+        <p class="nx-mini-quote-p">Instant estimate. No deposit, no obligation.</p>
+        <div class="nx-mini-quote-row">
+          <label>Pickup ZIP<input name="from" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 22191" autocomplete="postal-code" required></label>
+          <label>Delivery ZIP<input name="to" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 75001" required></label>
         </div>
-
+        <label>Vehicle<select name="vehicle"><option value="sedan">Car / sedan</option><option value="suv">SUV</option><option value="truck">Pickup truck</option><option value="motorcycle">Motorcycle</option><option value="classic">Classic / exotic</option></select></label>
+        <button type="submit" class="nx-btn nx-btn-block">See my estimate</button>
+      </form>
+    </div>
+  </section>
+  <section class="nx-intro">
+    <div class="nx-wrap nx-intro-in nx-intro-solo">
+      <div class="nx-intro-text">
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-200">
           <div class="flex items-center gap-2.5 p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 font-semibold transition-all duration-300 hover:shadow-sm hover:border-slate-300">
-            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
             <span>$0 Upfront Deposit</span>
           </div>
           <div class="flex items-center gap-2.5 p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 font-semibold transition-all duration-300 hover:shadow-sm hover:border-slate-300">
-            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
             <span>$500K Cargo Insurance</span>
           </div>
           <div class="flex items-center gap-2.5 p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 font-semibold transition-all duration-300 hover:shadow-sm hover:border-slate-300">
-            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
             <span>Discounted Backhauls</span>
           </div>
           <div class="flex items-center gap-2.5 p-3.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 font-semibold transition-all duration-300 hover:shadow-sm hover:border-slate-300">
-            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
             <span>FMCSA MC #1703787</span>
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
+  </section>
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 space-y-24 lg:space-y-32">
       

@@ -186,13 +186,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   </script>
 
-    <link rel="stylesheet" href="/css/tailwind.css?v=20261031b">
-    <link rel="stylesheet" href="/css/styles.css?v=20261031b">
+    <link rel="stylesheet" href="/css/tailwind.css?v=20261112">
+    <link rel="stylesheet" href="/css/styles.css?v=20261112">
 
 
 
 
-  <link rel="stylesheet" href="/css/theme.min.css?v=20261031b">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261112">
   <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
@@ -292,10 +292,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main class="pt-28 bg-[#0a2540] nx-flip">
 
 
-  <section class="hero-section bg-[#0a2540] py-16 px-6 nx-flip nx-hero">
-    <div class="max-w-5xl mx-auto">
-
-      <nav class="text-sm text-[#468de6] mb-6" aria-label="Breadcrumb">
+  <section class="nx-ihero nx-hero">
+    <div class="nx-wrap nx-ihero-in">
+      <div class="nx-ihero-copy">
+        <nav class="text-sm text-[#468de6] mb-6" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white">Home</a>
         <span class="mx-2 text-gray-500">/</span>
         <a href="/locations/" class="hover:text-white">Locations</a>
@@ -304,32 +304,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="mx-2 text-gray-500">/</span>
         <span class="text-white">Illinois to Florida</span>
       </nav>
-
-      <div class="inline-block bg-[#635bff] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider nx-navy">
-        FMCSA Approved · No Upfront Deposit
-      </div>
-
-      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+        <h1 class="nx-ihero-title">
         Illinois to Florida Car Shipping
       </h1>
-
-  <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
+        <p class="nx-ihero-lead">Ship your vehicle from Illinois to Florida with a fully vetted, FMCSA-licensed carrier. 
+        1,377 miles of coverage, door-to-door delivery, and a locked-in price with no deposit required.</p>
+        <div class="nx-actions-row"><a href="/cost-calculator/" class="nx-btn">Get a free quote</a><a href="tel:+15715767711" class="nx-btn nx-btn-ghost">Call (571) 576-7711</a></div>
+        <ul class="nx-ihero-facts">
+          <li>FMCSA-licensed broker</li><li>$0 upfront deposit</li><li>$500,000 cargo insurance</li><li>5.0 on Google</li>
+        </ul>
+      </div>
+      <form class="nx-mini-quote" action="/cost-calculator/" method="get">
+        <p class="nx-mini-quote-h">Get your price in a minute</p>
+        <p class="nx-mini-quote-p">Instant estimate. No deposit, no obligation.</p>
+        <div class="nx-mini-quote-row">
+          <label>Pickup ZIP<input name="from" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 22191" autocomplete="postal-code" required></label>
+          <label>Delivery ZIP<input name="to" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 75001" required></label>
+        </div>
+        <label>Vehicle<select name="vehicle"><option value="sedan">Car / sedan</option><option value="suv">SUV</option><option value="truck">Pickup truck</option><option value="motorcycle">Motorcycle</option><option value="classic">Classic / exotic</option></select></label>
+        <button type="submit" class="nx-btn nx-btn-block">See my estimate</button>
+      </form>
+    </div>
+  </section>
+  <section class="nx-intro">
+    <div class="nx-wrap nx-intro-in nx-intro-solo">
+      <div class="nx-intro-text">
+        <section class="quick-answer bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 border border-cyan-500/30 rounded-xl p-6 my-6 shadow-xl nx-flip nx-flip-card" aria-label="Quick Answer">
     <h2 class="quick-answer-title text-xl font-bold text-cyan-400 mb-2 flex items-center gap-2">
       <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       Quick Answer
     </h2>
-    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+    <div class="quick-answer-content text-slate-200 text-base leading-relaxed" itemscope="" itemtype="https://schema.org/Question">
       <p itemprop="text">Neon Auto Transport ships cars to and from Illinois to Florida with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.</p>
     </div>
   </section>
-
-
-      <p class="text-lg text-[#c9d6e3] mb-8 max-w-2xl">
-        Ship your vehicle from Illinois to Florida with a fully vetted, FMCSA-licensed carrier. 
-        1,377 miles of coverage, door-to-door delivery, and a locked-in price with no deposit required.
-      </p>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+        <div class="inline-block bg-[#635bff] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider nx-navy">
+        FMCSA Approved · No Upfront Deposit
+      </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
         <div class="bg-white/10 rounded-xl p-4 text-center">
           <div class="text-2xl font-bold text-[#4338ca]">$875–$1,175</div>
           <div class="text-xs text-[#c9d6e3] mt-1">Open Transport</div>
@@ -347,16 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="text-xs text-[#c9d6e3] mt-1">Upfront Deposit</div>
         </div>
       </div>
-
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="/cost-calculator/" class="bg-[#635bff] text-white font-bold px-8 py-4 rounded-xl text-center hover:bg-[#4f46e5] transition text-lg nx-fill">
-          Get My Locked-In Price →
-        </a>
-        <a href="tel:5715767711" class="border-2 border-white text-white font-bold px-8 py-4 rounded-xl text-center hover:bg-white hover:text-[#0a2540] transition text-lg nx-ghost">
-          Call (571) 576-7711
-        </a>
       </div>
-
     </div>
   </section>
 
@@ -952,6 +955,6 @@ xt-[#0a2540] transition text-lg nx-ghost">
   </div>
 </footer>
 
-<script src="/js/chatbot.js?v=20261031b" defer></script>
+<script src="/js/chatbot.js?v=20261112" defer></script>
 </body>
 </html>

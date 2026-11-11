@@ -237,8 +237,8 @@ input:focus, select:focus {
 
   
 
- <link rel="preload" href="/css/tailwind.css?v=20261031b" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=20261031b"></noscript>
+ <link rel="preload" href="/css/tailwind.css?v=20261112" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/tailwind.css?v=20261112"></noscript>
   <style>
    @media (min-width: 1024px) {
     html { font-size: 110%; }
@@ -409,8 +409,8 @@ input:focus, select:focus {
 
 
 
-  <script src="/js/realtime-date.js?v=20261031b" defer></script>
-  <link rel="stylesheet" href="/css/theme.min.css?v=20261031b">
+  <script src="/js/realtime-date.js?v=20261112" defer></script>
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261112">
   <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class=" lg:pb-0 antialiased bg-[#f6f9fc] overflow-x-hidden w-full">
@@ -505,27 +505,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </script>
 </header>
 
-  <section class="bg-[#f6f9fc] border-b border-[#e6e6e6] pt-28 pb-16 lg:pt-36 lg:pb-24 nx-hero">
-    <div class="container mx-auto px-4 lg:px-8 max-w-7xl nx-hero-wrap">
-      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-        
-        <div class="lg:w-1/2 flex flex-col justify-center">
-          <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
+  <section class="nx-ihero nx-hero">
+    <div class="nx-wrap nx-ihero-in">
+      <div class="nx-ihero-copy">
+        <nav aria-label="Breadcrumbs" class="flex items-center gap-2 text-xs font-semibold flex-wrap text-[#425466] mb-4">
             <a href="/" class="hover:underline text-[#425466]" style="text-decoration:none;">Home</a><span>/</span>
             <a href="/services/" class="hover:underline text-[#425466]" style="text-decoration:none;">Vehicle Transport Services</a><span>/</span>
             <span class="text-[#0a2540] font-bold">Enclosed Auto Transport</span>
           </nav>
-
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#e6e6e6] bg-white shadow-sm text-[#0a2540] text-xs font-bold mb-6 self-start">
-            <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
-            FMCSA Registered • USDOT #4355879 • MC #1703787
-          </div>
-          
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-[#0a2540] mb-6 tracking-tight leading-tight">
+        <h1 class="nx-ihero-title">
             Enclosed Auto Transport: <span class="text-[#2563eb]">Premium Car Shipping</span>
           </h1>
-
-          <section class="quick-answer rounded-2xl p-6 my-6 shadow-sm border border-[#e6e6e6] bg-white" aria-label="Quick Answer: Enclosed Auto Transport">
+        <div class="nx-actions-row"><a href="/cost-calculator/" class="nx-btn">Get a free quote</a><a href="tel:+15715767711" class="nx-btn nx-btn-ghost">Call (571) 576-7711</a></div>
+        <ul class="nx-ihero-facts">
+          <li>FMCSA-licensed broker</li><li>$0 upfront deposit</li><li>$500,000 cargo insurance</li><li>5.0 on Google</li>
+        </ul>
+      </div>
+      <form class="nx-mini-quote" action="/cost-calculator/" method="get">
+        <p class="nx-mini-quote-h">Get your price in a minute</p>
+        <p class="nx-mini-quote-p">Instant estimate. No deposit, no obligation.</p>
+        <div class="nx-mini-quote-row">
+          <label>Pickup ZIP<input name="from" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 22191" autocomplete="postal-code" required></label>
+          <label>Delivery ZIP<input name="to" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 75001" required></label>
+        </div>
+        <label>Vehicle<select name="vehicle"><option value="sedan">Car / sedan</option><option value="suv">SUV</option><option value="truck">Pickup truck</option><option value="motorcycle">Motorcycle</option><option value="classic">Classic / exotic</option></select></label>
+        <button type="submit" class="nx-btn nx-btn-block">See my estimate</button>
+      </form>
+    </div>
+  </section>
+  <section class="nx-intro">
+    <div class="nx-wrap nx-intro-in">
+      <div class="nx-intro-text">
+        <section class="quick-answer rounded-2xl p-6 my-6 shadow-sm border border-[#e6e6e6] bg-white" aria-label="Quick Answer: Enclosed Auto Transport">
             <div class="flex items-center justify-between gap-4 mb-3">
               <h2 class="quick-answer-title text-xl font-bold text-[#0a2540] flex items-center gap-2">
                 <svg class="w-5 h-5 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -533,71 +544,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </h2>
               <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#e0f2fe] text-[#0369a1] border border-[#bae6fd]">Direct Answer</span>
             </div>
-            <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope itemtype="https://schema.org/Question">
+            <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope="" itemtype="https://schema.org/Question">
               <p itemprop="text">Enclosed auto transport costs $1.00–$2.50 per mile — roughly $900–$1,200 for under 500 miles and $2,000–$2,800 coast-to-coast, a 30–60% premium over open transport. Neon Auto Transport is an FMCSA-licensed broker (MC #1703787) arranging soft-sided, hard-sided, and single-car enclosed trailers with lift gates for low-clearance vehicles, $0 upfront deposit, and up to $500,000 cargo insurance. Call (571) 576-7711 for an enclosed quote.</p>
             </div>
           </section>
-
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="/cost-calculator/" class="btn-primary flex items-center justify-center gap-2 text-center" style="background-color: #0a5fb4; color: #ffffff; padding: 0.875rem 1.75rem; border-radius: 9999px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(10, 95, 180,0.3);">
+        <a href="/cost-calculator/" class="btn-primary flex items-center justify-center gap-2 text-center" style="background-color: #0a5fb4; color: #ffffff; padding: 0.875rem 1.75rem; border-radius: 9999px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(10, 95, 180,0.3);">
               Calculate Your Rate Instantly 
               <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="tel:5715767711" class="px-6 py-3.5 rounded-full font-bold text-base transition-all duration-300 flex items-center justify-center gap-2 border border-[#e6e6e6] bg-white text-[#0a2540] hover:bg-slate-50 shadow-sm" style="text-decoration: none;">
-              <svg class="w-4 h-4 text-[#2563eb]" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-              (571) 576-7711
-            </a>
-          </div>
-
-          <div class="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-[#e6e6e6] text-xs text-[#425466] font-semibold">
+        <div class="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-[#e6e6e6] text-xs text-[#425466] font-semibold">
             <div class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
               <span>$500K Insurance</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <svg class="w-4 h-4 text-[#16a34a] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               <span>$0 Deposit</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <svg class="w-4 h-4 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
               <span>Hydraulic Lift Gates</span>
             </div>
           </div>
-
-        </div>
-
-        <div class="lg:w-1/2 relative z-10 w-full">
-          <figure class="relative rounded-2xl overflow-hidden shadow-xl border border-[#e6e6e6] bg-white p-2 group" itemscope itemtype="https://schema.org/ImageObject">
+        <figure class="relative rounded-2xl overflow-hidden shadow-xl border border-[#e6e6e6] bg-white p-2 group" itemscope="" itemtype="https://schema.org/ImageObject">
             <meta itemprop="contentUrl" content="https://neonautotransport.com/images/enclosed-auto-transport-hydraulic-lift-gate-supercar.webp">
             <meta itemprop="name" content="Enclosed Auto Transport with Hydraulic Lift Gate Carrier Loading Supercar">
             <meta itemprop="description" content="Neon Auto Transport enclosed carrier loading a blue Lamborghini exotic sports car using a hydraulic lift gate for low-clearance luxury vehicle transport.">
             <meta itemprop="width" content="1024">
             <meta itemprop="height" content="576">
             <div class="overflow-hidden rounded-xl bg-slate-100 relative">
-              <img 
-                src="/images/enclosed-auto-transport-hydraulic-lift-gate-supercar.webp" 
-                alt="Neon Auto Transport enclosed carrier loading a blue Lamborghini exotic sports car using a hydraulic lift gate for low-clearance luxury vehicle transport" 
-                title="Enclosed Auto Transport with Hydraulic Lift Gate — Neon Auto Transport"
-                width="1024" 
-                height="576" 
-                loading="eager" 
-                fetchpriority="high"
-                decoding="async"
-                itemprop="thumbnail"
-                class="w-full h-auto object-cover rounded-xl transition duration-500 group-hover:scale-[1.02]">
-              <div class="absolute bottom-3 left-3 bg-[#0a2540]/85 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1.5 rounded-lg border border-white/20 flex items-center gap-1.5 shadow-md nx-deco">
-                <span class="w-2 h-2 rounded-full bg-[#39FF14] nx-navy"></span>
-                Hydraulic Lift Gate • Zero Ground Clearance Angle
-              </div>
             </div>
             <figcaption class="text-[12px] text-[#425466] mt-2.5 px-1 font-medium flex items-center justify-between">
               <span><strong>Neon Auto Transport:</strong> Enclosed Carrier &amp; Hydraulic Lift Gate</span>
               <span class="text-[#0369a1] font-semibold text-[11px] bg-[#e0f2fe] px-2 py-0.5 rounded">FMCSA MC #1703787</span>
             </figcaption>
           </figure>
-        </div>
-
       </div>
+      <figure class="nx-intro-fig"><img src="/images/enclosed-auto-transport-hydraulic-lift-gate-supercar.webp" alt="Neon Auto Transport enclosed carrier loading a blue Lamborghini exotic sports car using a hydraulic lift gate for low-clearance luxury vehicle transport" title="Enclosed Auto Transport with Hydraulic Lift Gate — Neon Auto Transport" width="1024" height="576" loading="lazy" fetchpriority="high" decoding="async" itemprop="thumbnail" class="nx-intro-img"></figure>
     </div>
   </section>
 
@@ -1076,9 +1059,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-  <link rel="preload" href="/css/chatbot.css?v=20261031b" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/chatbot.css?v=20261031b"></noscript>
-  <script src="/js/chatbot.js?v=20261031b" defer=""></script>
-  <script src="/js/main.js?v=20261031b" defer></script>
+  <link rel="preload" href="/css/chatbot.css?v=20261112" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/chatbot.css?v=20261112"></noscript>
+  <script src="/js/chatbot.js?v=20261112" defer=""></script>
+  <script src="/js/main.js?v=20261112" defer></script>
 </body>
 </html>

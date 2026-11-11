@@ -1,10 +1,9 @@
 ---
-title: "Alexandria, VA Car Shipping | Neon Auto Transport"
+title: "Alexandria, VA Car Shipping: Routes & Local Tips | Neon"
 url: https://neonautotransport.com/routes/city/alexandria-va/
-date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-11
 author: "Neon Auto Transport"
-description: "Ship your car to or from Alexandria, VA with Neon Auto Transport. Fully insured door-to-door vehicle transport. Get a free instant quote."
+description: "Ship a car to or from Alexandria, VA: local pickup tips, common routes with distances and transit times, and when to book. $0 deposit, insured door-to-door transport."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
@@ -12,64 +11,47 @@ usdot_number: "4355879"
 phone: "(571) 576-7711"
 email: "info@neonautotransport.com"
 headquarters: "2709 Neabsco Common Pl Suite 101, Woodbridge, VA 22191"
-policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 24/7 Direct Driver Contact"
 ---
 
-TOP-RATED IN ALEXANDRIA 
+# Alexandria, VA Car Shipping
 
-#  Alexandria Car Shipping Made Simple
+## Shipping a car to or from Alexandria, VA
 
-##  Quick Answer 
+Alexandria is close to home for us: our office is in Woodbridge, about 20 miles south on I-95. We ship cars here for federal workers, diplomats, contractors and military families from the Pentagon and Fort Belvoir.
 
-Neon Auto Transport provides door-to-door car shipping for Alexandria Car Shipping Made Simple and all surrounding areas. Open transport averages $0.50–$1.00 per mile depending on route. Enclosed shipping is available for luxury and classic cars. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) offering $0 deposit and $500k insurance. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+The Capital Beltway (I-495) and I-95 meet at the Woodrow Wilson Bridge on the south side of the city, and Route 1 runs through it. That gives carriers fast access to most of Alexandria.
 
-Fast, fully insured door-to-door auto transport in and around Alexandria, VA. Get a transparent quote instantly. 
+## Pickup and delivery in Alexandria
 
-[ Get an Instant Quote  ](/cost-calculator/) [ (571) 576-7711 ](tel:5715767711)
+- Old Town has narrow, partly cobblestone streets and tight parking. A full car hauler cannot get through, so we meet on a wider road or in a lot nearby.
+- Many condo and apartment buildings have garages a carrier cannot enter. The handoff happens out front or around the corner.
+- PCS move to or from Fort Belvoir? Tell us your report date and we will plan around it.
 
-## Trusted Auto Transport in Alexandria
+## Common Alexandria car shipping routes
 
-Whether you're relocating to Alexandria, buying a car out of state, or sending a vehicle to a loved one, Neon Auto Transport provides reliable, seamless car shipping services. We connect you with a vast network of vetted, FMCSA-licensed carriers operating throughout VA and across the country. 
+Approximate road distance and time in transit after pickup. Get an exact quote at https://neonautotransport.com/cost-calculator/.
 
-We handle every detail from pickup to delivery. Your quote is fully transparent with no hidden fees, and every shipment comes with up to $500,000 in cargo insurance for total peace of mind. 
+| Route | Distance | Transit |
+|---|---|---|
+| Alexandria to Orlando, FL | ~900 miles | 3–5 days |
+| Alexandria to New York, NY | ~250 miles | 1–2 days |
+| Alexandria to Boston, MA | ~480 miles | 2–3 days |
+| Alexandria to Atlanta, GA | ~640 miles | 2–3 days |
+| Alexandria to Dallas, TX | ~1,400 miles | 4–6 days |
+| Alexandria to Los Angeles, CA | ~2,750 miles | 7–10 days |
 
-  * Door-to-Door Delivery anywhere in Alexandria 
-  * Zero upfront deposit required 
-  * Open & Enclosed carrier options 
+## When to book in Alexandria
 
+Summer is PCS season for military families, so June to August books up fast. The Beltway is slow at rush hour, and pickups usually happen mid-morning or early afternoon.
 
-### Calculate Your Alexandria Shipping Cost
+## Alexandria car shipping questions
 
-Use our transparent calculator to find out exactly how much it costs to ship your car to or from Alexandria.
+### Do you have a local office near Alexandria?
 
-[Start Calculator](/cost-calculator/)
+Yes. Neon Auto Transport is based at 2709 Neabsco Common Pl, Woodbridge, VA, about 20 miles south of Alexandria.
 
-SIMPLE 4-STEP PROCESS 
+### Can you pick up a car in Old Town?
 
-## How It Works in Alexandria
+Yes, but usually at a nearby wider street or lot rather than at your door. The driver calls ahead to agree on a spot.
 
-Getting your vehicle picked up or delivered in Alexandria is fast and hassle-free.
-
-1
-
-### Get an Instant Quote
-
-Enter your Alexandria location and delivery address for a transparent rate.
-
-2
-
-### We Coordinate Pickup
-
-We schedule a vetted, local carrier to pick up your vehicle from your door.
-
-3
-
-### Vehicle Ships Safely
-
-Your car hits the road via open or enclosed transport with $500K cargo insurance.
-
-4
-
-### Delivered to Door
-
-Inspect your vehicle, sign off, and you're done. No hassle required.
+Get a free quote: https://neonautotransport.com/cost-calculator/ or call (571) 576-7711.
