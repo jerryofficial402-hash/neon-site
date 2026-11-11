@@ -226,6 +226,16 @@
   ],
   "redirects": [
     {
+      "source": "/sacramento-ca-car-shipping",
+      "destination": "/routes/city/sacramento-ca/",
+      "permanent": true
+    },
+    {
+      "source": "/sacramento-ca-car-shipping/",
+      "destination": "/routes/city/sacramento-ca/",
+      "permanent": true
+    },
+    {
       "source": "/routes/city/arlington-va",
       "destination": "/car-shipping-arlington-va/",
       "permanent": true
