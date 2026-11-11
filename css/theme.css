@@ -684,3 +684,90 @@ main > section:nth-of-type(n+3), body > section:nth-of-type(n+3) { content-visib
 .nx-city-links a:hover { border-color: var(--nx-blue-line); background: var(--nx-blue-tint); color: var(--nx-blue); }
 .nx-city-note { margin: 20px 0 0; color: var(--nx-muted) !important; font-size: 14px !important; line-height: 1.6; }
 .nx-city-note a { color: var(--nx-blue); }
+
+/* ================= Inner-page layout system (main.nx-inner, set by tools/fix-layout-html.mjs) =================
+   One left edge for every section (the header's), one vertical rhythm, readable line length, consistent headings.
+   The homepage has no .nx-inner and keeps its own layout. */
+main.nx-inner { --nx-sec-y: 64px; --nx-read: 78ch; }
+@media (max-width: 767px) { main.nx-inner { --nx-sec-y: 44px; } }
+
+/* 1. Width: every section wrapper uses the site wrap (same as header and hero) */
+main.nx-inner > section:is(.container, .mx-auto):not(.nx-ihero):not(.nx-intro),
+main.nx-inner > section > :is(.container, .mx-auto):not([class*="max-w-3xl"]):not([class*="max-w-2xl"]):not([class*="max-w-xl"]),
+main.nx-inner > section > div:not([class*="max-w-"]) > :is(.container, .mx-auto):not([class*="max-w-3xl"]):not([class*="max-w-2xl"]):not([class*="max-w-xl"]),
+main.nx-inner .nx-wrap,
+main.nx-inner .nx-intro-in.nx-intro-solo {
+  max-width: var(--nx-page) !important; width: 100% !important; box-sizing: border-box;
+  margin-left: auto !important; margin-right: auto !important;
+  padding-left: var(--nx-gutter) !important; padding-right: var(--nx-gutter) !important;
+}
+/* narrow reading columns stay narrow but start at the same left edge (articles keep their centred column) */
+main.nx-inner:not(:has(article)) > section > :is(.container, .mx-auto):is([class*="max-w-3xl"], [class*="max-w-2xl"]):not(.text-center) {
+  margin-left: max(var(--nx-gutter), calc((100% - var(--nx-page)) / 2 + var(--nx-gutter))) !important; margin-right: auto !important;
+  padding-left: 0 !important; padding-right: 0 !important;
+}
+.nx-intro-solo .nx-intro-text { max-width: 900px; }
+main.nx-inner .nx-city-narrow > :not(.nx-city-links) { max-width: 860px; }
+
+/* 2. Readable line length for running text that is not centred */
+main.nx-inner p:not(.text-center):not(.text-center *):not(.nx-ihero *):not(.nx-cta-band *) { max-width: var(--nx-read); }
+
+/* 3. Vertical rhythm: the same padding on every section, no stray outer margins */
+main.nx-inner > section:not(.nx-hero):not(.nx-intro):not(:first-child) { padding-top: var(--nx-sec-y) !important; padding-bottom: var(--nx-sec-y) !important; margin-top: 0 !important; margin-bottom: 0 !important; }
+main.nx-inner > section:not(.nx-ihero):not(.nx-intro) > :is(div, section):is(.py-24, .py-20, .py-16, .py-12, .py-10, .py-8):not([class*="bg-"]):not([class*="border"]) { padding-top: 0 !important; padding-bottom: 0 !important; }
+main.nx-inner :is(.mb-24, .mb-20, .mb-16) { margin-bottom: 40px !important; }
+main.nx-inner :is(.mt-24, .mt-20, .mt-16):not(:first-child) { margin-top: 40px !important; }
+main.nx-inner :is(.mt-24, .mt-20, .mt-16):first-child { margin-top: 0 !important; }
+main.nx-inner > section > :last-child, main.nx-inner > section > :is(.container, .mx-auto, .nx-wrap) > :last-child { margin-bottom: 0 !important; }
+main.nx-inner div.text-center.pb-12:last-child { padding-bottom: 0 !important; }
+main.nx-inner .overlap-up { margin-top: 0 !important; }
+main.nx-inner > section.nx-intro { padding-bottom: var(--nx-sec-y); }
+
+/* 4. Headings: list modules line up left like every other section; one size scale for section titles */
+main.nx-inner :is(.nearby-cities, .state-corridors-module, .related-city-routes, .local-highway-corridors) :is(h2, h3, p).text-center { text-align: left !important; }
+main.nx-inner > section :is(h2):not(.quick-answer-title):not(.nx-cta-band h2) { font-size: clamp(1.55rem, 2.3vw, 2.05rem) !important; line-height: 1.2 !important; letter-spacing: -0.01em; }
+main.nx-inner :is(.nearby-cities, .state-corridors-module) h3 { font-size: clamp(1.35rem, 1.9vw, 1.6rem) !important; }
+/* Reviews strip and author byline sit after <main>: same wrap and rhythm as the sections above */
+:is(#customer-reviews-section, #author-byline).container {
+  max-width: var(--nx-page) !important; width: 100% !important; box-sizing: border-box;
+  padding-left: var(--nx-gutter) !important; padding-right: var(--nx-gutter) !important;
+}
+#customer-reviews-section { padding-top: 0 !important; padding-bottom: 40px !important; }
+#author-byline { padding-bottom: 64px !important; }
+#author-byline > .stripe-card { border-left-width: 1px !important; border-left-color: var(--nx-line) !important; }
+@media (max-width: 767px) { #author-byline { padding-bottom: 44px !important; } }
+/* More wrapper patterns: div wrappers, nested containers, sections that add their own side padding */
+main.nx-inner > div:is(.container, .mx-auto):not([class*="max-w-3xl"]):not([class*="max-w-2xl"]),
+main.nx-inner > div:not([class*="max-w-"]) > :is(.container, .mx-auto):not([class*="max-w-3xl"]):not([class*="max-w-2xl"]),
+main.nx-inner > section > div:is([class*="max-w-4xl"], [class*="max-w-5xl"], [class*="max-w-6xl"], [class*="max-w-7xl"]).mx-auto,
+main.nx-inner .section > .container {
+  max-width: var(--nx-page) !important; width: 100% !important; box-sizing: border-box;
+  margin-left: auto !important; margin-right: auto !important;
+  padding-left: var(--nx-gutter) !important; padding-right: var(--nx-gutter) !important;
+}
+main.nx-inner :is(section, div):is(.container, .mx-auto) > :is(.container, .mx-auto):not(.text-center):not([class*="max-w-3xl"]):not([class*="max-w-2xl"]) { max-width: none !important; padding-left: 0 !important; padding-right: 0 !important; }
+main.nx-inner > section:not(.nx-ihero):not(.nx-intro):has(> :is(.container, .mx-auto, .nx-wrap)) { padding-left: 0 !important; padding-right: 0 !important; }
+main.nx-inner > :is(div, section):is(.container, .mx-auto):is(.mt-24, .mt-20, .mt-16) { margin-top: 0 !important; }
+main.nx-inner > div:is(.container, .mx-auto) + div:is(.container, .mx-auto) { padding-top: var(--nx-sec-y); }
+main.nx-inner > section.section { padding-top: var(--nx-sec-y) !important; padding-bottom: var(--nx-sec-y) !important; }
+/* article-style pages (guides, blog): the Quick Answer box lines up with the article column */
+main.nx-inner:has(> article) > section.quick-answer { margin-left: 0 !important; margin-right: 0 !important; }
+/* Route/distance cards: as many columns as there are cards (one card never sits alone in a 3-column grid) */
+.nx-city-routes { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; }
+/* Long guide pages stack their blocks with space-y-20/24/32 (80-128px): bring them to the site rhythm */
+main.nx-inner :is(.space-y-32, .space-y-24, .space-y-20, .lg\:space-y-32, .lg\:space-y-24) > :not([hidden]) ~ :not([hidden]) { margin-top: 56px !important; }
+main.nx-inner > div:is(.py-20, .py-24, .lg\:py-24, .lg\:py-32) { padding-top: var(--nx-sec-y) !important; padding-bottom: var(--nx-sec-y) !important; }
+@media (max-width: 767px) { main.nx-inner :is(.space-y-32, .space-y-24, .space-y-20, .lg\:space-y-32, .lg\:space-y-24) > :not([hidden]) ~ :not([hidden]) { margin-top: 40px !important; } }
+/* Reviews hero is centred: breadcrumb and Quick Answer follow the same centred column */
+.reviews-hero > nav[aria-label^="Bread"] { justify-content: center; }
+.reviews-hero > :is(nav, .quick-answer, p, .star-row, .platform-badges) { max-width: 900px; margin-left: auto !important; margin-right: auto !important; }
+.reviews-hero > .quick-answer { text-align: left; }
+.reviews-hero > .quick-answer p { max-width: none; }
+/* Leftover neon-cyan accents (resources, blog index, a few guides): brand navy instead */
+main .bg-\[\#00D1FF\]:is(a, span, div) { background: var(--nx-navy) !important; color: #fff !important; box-shadow: none !important; font-weight: 500 !important; }
+main a.bg-\[\#00D1FF\]:hover { background: var(--nx-blue) !important; }
+main .bg-\[\#00D1FF\]\/20 { background: var(--nx-blue-tint) !important; color: var(--nx-blue) !important; }
+main .text-\[\#00D1FF\]:not(.bg-\[\#00D1FF\]\/20) { color: var(--nx-blue) !important; }
+/* Centred page heroes (blog, resources, compare): breadcrumb centred with the title; Quick Answer text always reads left */
+main.nx-inner .nx-hero:has(h1.text-center, .text-center > h1, .text-center h1) nav[aria-label^="Bread"] { justify-content: center; }
+.quick-answer .quick-answer-content, .quick-answer .quick-answer-content p { text-align: left !important; }
