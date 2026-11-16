@@ -27,8 +27,8 @@
   <meta property="og:image:height" content="675">
   <meta property="og:site_name" content="Neon Auto Transport">
   
-  <link rel="stylesheet" href="/css/tailwind.css?v=20261114">
-  <link rel="stylesheet" href="/css/styles.css?v=20261114">
+  <link rel="stylesheet" href="/css/tailwind.css?v=20261117">
+  <link rel="stylesheet" href="/css/styles.css?v=20261117">
   
   <style>
     body { font-family: 'Inter', sans-serif; }
@@ -220,7 +220,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="/css/theme.min.css?v=20261114">
+  <link rel="stylesheet" href="/css/theme.min.css?v=20261117">
   <link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="bg-[#f6f9fc] text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between pt-24">
@@ -336,6 +336,16 @@
         <p itemprop="text">Shipping a car in 2026 costs between <strong>$500 and $2,000</strong> on average. Open transport ranges from <strong>$0.50 to $1.00 per mile</strong> ($1,200–$1,800 coast to coast), while enclosed transport costs <strong>$0.64 to $2.20 per mile</strong> ($1,000–$2,500). Key cost drivers include route distance, vehicle size, operability, seasonality, and transport method. Neon Auto Transport LLC (MC 1703787 | USDOT 4355879) offers $0 upfront deposit, $500,000 cargo insurance, price lock guarantee, and door-to-door delivery across all 50 states. Use our <a href="/cost-calculator/" class="text-[#635bff] font-semibold hover:underline">car shipping cost calculator</a> for instant real-time quotes or call (571) 576-7711.</p>
       </div>
     </section>
+    <form class="nx-mini-quote nx-mini-quote-wide" action="/cost-calculator/" method="get" aria-label="Get a car shipping price">
+      <p class="nx-mini-quote-h">Get your exact price</p>
+      <p class="nx-mini-quote-p">Enter both ZIP codes for an instant estimate. No deposit, no obligation.</p>
+      <div class="nx-mini-quote-row">
+        <label>Pickup ZIP<input name="from" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 22191" autocomplete="postal-code" required></label>
+        <label>Delivery ZIP<input name="to" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 75001" required></label>
+      </div>
+      <label>Vehicle<select name="vehicle"><option value="sedan">Car / sedan</option><option value="suv">SUV</option><option value="truck">Pickup truck</option><option value="motorcycle">Motorcycle</option><option value="classic">Classic / exotic</option></select></label>
+      <button type="submit" class="nx-btn nx-btn-block">See my price</button>
+    </form>
 
     <article class="space-y-8 text-slate-700 leading-relaxed text-base">
       <p class="text-lg text-slate-800 font-normal leading-relaxed">Whether you are relocating across state lines, purchasing a vehicle online, or moving south for the winter season, understanding car shipping costs is essential to budgeting effectively. This comprehensive 2026 guide breaks down exact pricing benchmarks, per-mile rates, vehicle surcharges, seasonal fluctuations, and hidden fees across the auto transport industry.</p>

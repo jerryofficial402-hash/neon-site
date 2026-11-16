@@ -771,3 +771,12 @@ main .text-\[\#00D1FF\]:not(.bg-\[\#00D1FF\]\/20) { color: var(--nx-blue) !impor
 /* Centred page heroes (blog, resources, compare): breadcrumb centred with the title; Quick Answer text always reads left */
 main.nx-inner .nx-hero:has(h1.text-center, .text-center > h1, .text-center h1) nav[aria-label^="Bread"] { justify-content: center; }
 .quick-answer .quick-answer-content, .quick-answer .quick-answer-content p { text-align: left !important; }
+
+/* Quote form inside an article page (/car-shipping-cost/): one row on desktop */
+.nx-mini-quote-wide { margin: 8px 0 32px; }
+@media (min-width: 768px) {
+  .nx-mini-quote-wide { grid-template-columns: 1fr 1fr 1fr auto; align-items: end; column-gap: 12px; }
+  .nx-mini-quote-wide > p { grid-column: 1 / -1; }
+  .nx-mini-quote-wide .nx-mini-quote-row { display: contents; }
+  .nx-mini-quote-wide .nx-btn { margin-top: 0; padding: 0 28px; white-space: nowrap; }
+}
