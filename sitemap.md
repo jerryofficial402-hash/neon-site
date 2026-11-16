@@ -8,7 +8,7 @@
 - [Homepage](https://neonautotransport.com/) — Neon Auto Transport homepage with instant quote calculator, services overview, and customer reviews
 - [Why Neon](https://neonautotransport.com/why-neon/) — Company credentials, FMCSA license, insurance details, and differentiators
 - [How It Works](https://neonautotransport.com/how-it-works/) — Step-by-step car shipping process from quote to delivery
-- [Reviews](https://neonautotransport.com/reviews/) — 500+ verified customer reviews and video testimonials
+- [Reviews](https://neonautotransport.com/reviews/) — 5.0 rating on Google from 47 customer reviews, plus video testimonials
 - [FAQs](https://neonautotransport.com/faqs/) — Answers about cost, insurance, transit times, payment, and vehicle prep
 - [Contact](https://neonautotransport.com/contact/) — Phone, email, and contact form
 - [Cost Calculator](https://neonautotransport.com/cost-calculator/) — Free instant car shipping quote calculator

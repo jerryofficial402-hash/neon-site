@@ -15,7 +15,7 @@ headquarters: "2709 Neabsco Common Pl Suite 101, Woodbridge, VA 22191"
 policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 24/7 Direct Driver Contact"
 ---
 
-TRUSTED NATIONWIDE SINCE 2015 
+FMCSA-LICENSED BROKER 
 
 #  Why Choose   
 Neon Auto Transport

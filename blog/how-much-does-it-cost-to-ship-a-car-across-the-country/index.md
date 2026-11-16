@@ -133,7 +133,7 @@ These are estimates. Actual transit times depend on weather conditions, road con
   * **Zero Upfront Deposit:** You pay nothing until your carrier is assigned and dispatched
   * **Direct Carrier Contact:** You receive the driver's direct phone number for real-time updates
   * **Full Cargo Insurance:** Every shipment is fully insured at no additional cost
-  * **BBB Accredited** with a 4.9/5 customer rating
+  * **5.0 on Google** from 47 customer reviews
   * **Ships all 50 states** including [Hawaii](/services/hawaii-auto-transport/) and [Alaska](/services/alaska-auto-transport/)
 
 

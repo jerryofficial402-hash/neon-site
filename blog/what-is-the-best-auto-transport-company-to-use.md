@@ -48,17 +48,17 @@ Ratings below reflect publicly available company information current as of 2026\
 
 Company | Best For | Insurance Coverage | Avg. Rating | Service Area  
 ---|---|---|---|---  
-Neon Auto Transport | Transparent pricing, door-to-door service | Up to $500K | 4.9★ | All 50 states  
+Neon Auto Transport | Transparent pricing, door-to-door service | Up to $500K | 5.0★ (47 Google) | All 50 states  
 Montway Auto Transport | Long-distance moves, large carrier network | Varies by carrier | 4.9★ | All 50 states + AK/HI  
 Sherpa Auto Transport | Price-lock guarantee | Included, disclosed at quote | 4.3–4.9★ | 48 states + AK/HI (via partners)  
 SGT Auto Transport | Guaranteed pickup dates | Full coverage included | 4.3★ | 49 states (excl. Alaska)  
 AmeriFreight | Budget-friendly quotes, military/student discounts | Included + optional deductible coverage | 4.16–4.8★ | All 50 states  
   
-Ratings and figures compiled from company-published information and third-party review platforms as of 2026. Always confirm current details directly with each provider before booking.
+Ratings and figures compiled from company-published information and third-party review platforms as of 2026. Disclosure: this guide is published by Neon Auto Transport, so we are not a neutral reviewer. Always confirm current details directly with each provider before booking.
 
 ## 1\. Neon Auto Transport — Best for Transparent Pricing
 
-Neon Auto Transport has shipped more than 150,000 vehicles over 9+ years in business, and is fully licensed by the FMCSA and U.S. Department of Transportation. What stands out is upfront pricing with no hidden fees, door-to-door delivery as standard, and cargo insurance coverage up to $500,000 depending on service type. Neon holds a 4.9-star rating from verified customer reviews, with especially strong marks for communication and honoring quoted prices. 
+Neon Auto Transport is an FMCSA-licensed broker (MC 1703787) founded in 2025 in Woodbridge, Virginia. It arranges shipments with vetted, insured carriers rather than running its own trucks. What stands out is upfront pricing with no hidden fees, door-to-door delivery as standard, and cargo insurance coverage up to $500,000 depending on service type. Neon holds a 5.0-star rating on Google from 47 customer reviews, with reviewers often mentioning communication and honoring quoted prices. As a newer company, it has a shorter track record than the companies below. 
 
 ## 2\. Montway Auto Transport — Best for Long-Distance Moves
 

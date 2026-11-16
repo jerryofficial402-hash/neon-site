@@ -4,7 +4,7 @@ url: https://neonautotransport.com/reviews/
 date: 2026-08-27
 modified: 2026-10-30
 author: "Neon Auto Transport"
-description: "Neon Auto Transport is rated 5.0 out of 5 on Google from 46 customer reviews. Read what customers say about shipping their vehicles with us."
+description: "Neon Auto Transport is rated 5.0 out of 5 on Google from 47 customer reviews. Read what customers say about shipping their vehicles with us."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
@@ -16,9 +16,9 @@ policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 2
 ---
 # Real Customers. Real Results.
 
-Neon Auto Transport is rated 5.0 out of 5 on Google from 46 customer reviews. Here is what customers say, in their own words.
+Neon Auto Transport is rated 5.0 out of 5 on Google from 47 customer reviews. Here is what customers say, in their own words.
 
-★★★★★ 5.0 / 5 • 46 Google reviews
+★★★★★ 5.0 / 5 • 47 Google reviews
 
 [Read all reviews on Google](https://maps.app.goo.gl/CNxD6E86hxsjz1Pz9)
 

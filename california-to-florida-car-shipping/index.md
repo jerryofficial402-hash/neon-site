@@ -216,7 +216,7 @@ Our nationwide carrier network means faster pickup windows and more route option
 
 ★★★★★
 
-4.9 out of 5 based on verified Google Reviews across Google, Trustpilot, and BBB
+5.0 out of 5 on Google from 47 customer reviews
 
 ##  California to Florida Car Shipping FAQs 
 
