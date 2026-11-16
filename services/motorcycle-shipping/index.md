@@ -127,7 +127,7 @@ We know that your motorcycle isn't just a ride; it is also your pride, passion, 
 
 ###  Quality Motorbike Transport in the United States 
 
-Over the many years of experience in the industry, we have developed a network of reliable carriers that are specialized in offering motorcycle transport at competitive rates. Our team is prepared to ship your motorcycle to its destination in the safest possible way, whether it's an individual order or part of a multi-bike commercial shipment. 
+We work with a network of vetted carriers that specialize in motorcycle transport at competitive rates. Our team is prepared to ship your motorcycle to its destination in the safest possible way, whether it's an individual order or part of a multi-bike commercial shipment. 
 
 ### Motorcycle Brands We Ship
 

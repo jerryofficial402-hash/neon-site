@@ -179,4 +179,4 @@ Shazil Ali
 
 Director of Operations at Neon Auto Transport
 
-Shazil Ali is a Director of Operations at Neon Auto Transport with over a decade of experience coordinating cross-country freight and specialized vehicle transport for individual, military, and corporate clients across all 50 states.
+Shazil Ali is a Director of Operations at Neon Auto Transport with three to four years of experience coordinating cross-country freight and specialized vehicle transport for individual, military, and corporate clients across all 50 states.
