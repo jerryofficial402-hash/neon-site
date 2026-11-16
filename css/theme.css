@@ -124,6 +124,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .nx-footer-brand p { margin: 0; color: var(--nx-text); line-height: 1.6; max-width: 300px; font-size: 14px; }
 .nx-footer-brand .nx-logo img { height: 32px; margin-bottom: 8px; }
 .nx-footer-meta { font-family: var(--nx-mono); font-size: 12px !important; color: var(--nx-muted) !important; }
+.nx-footer-addr { display: grid; gap: 12px; font-style: normal; color: var(--nx-text); font-size: 13.5px; line-height: 1.55; max-width: 300px; }
+.nx-footer-addr strong { color: var(--nx-ink); font-weight: 500; }
 .nx-social { display: flex; gap: 14px; margin-top: 6px; }
 .nx-social a { color: var(--nx-ink); display: inline-flex; }
 .nx-footer-bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 64px; padding-top: 22px; border-top: 1px solid var(--nx-line); color: var(--nx-muted); font-size: 13px; }
