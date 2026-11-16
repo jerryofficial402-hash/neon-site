@@ -21,7 +21,7 @@ Premium Motorcycle Shipping
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($1,200–$1,800 coast to coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Whether you're relocating, buying a bike out of state, or heading to a rally or track event, shipping a motorcycle requires different handling than shipping a car. Neon Auto Transport uses carriers equipped with wheel chocks, soft-tie tie-downs, and motorcycle-specific loading ramps to move your bike securely — with open, enclosed, and door-to-door options available nationwide.
 

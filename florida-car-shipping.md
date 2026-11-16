@@ -2,9 +2,9 @@
 title: "Florida Car Shipping: Costs, Routes | Neon Auto Transport"
 url: https://neonautotransport.com/florida-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
-description: "Florida car shipping costs range from $500–$1,700. Connect with FMCSA-licensed carriers for door-to-door auto transport across Miami, Orlando, Tampa,."
+description: "Florida car shipping costs $500–$1,700 for most trips. Door-to-door auto transport across Miami, Orlando, Tampa, Jacksonville and the rest of Florida."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

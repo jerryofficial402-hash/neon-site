@@ -2,7 +2,7 @@
 title: "Ship a Car to Another State | Interstate Auto Transport | Neon"
 url: https://neonautotransport.com/services/car-shipping-to-another-state/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Ship a car to another state with nationwide door-to-door auto transport. Compare open and enclosed options, understand pricing and transit factors, and request a free interstate car shipping quote."
 type: "service"
@@ -21,7 +21,7 @@ FMCSA Registered • USDOT #4355879 • MC #1703787
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Ship a Car to Another State With Nationwide Auto Transport with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Shipping a car to another state usually costs $400–$800 for 500–1,000 miles and $1,200–$1,800 coast to coast on an open carrier, and takes 2–10 days on the truck depending on distance. You book a pickup window, the car is inspected and loaded at your address, and delivered door to door. Neon Auto Transport (MC 1703787, USDOT 4355879) arranges interstate transport in all 50 states with $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Need to ship a car to another state? Neon Auto Transport helps customers arrange interstate vehicle shipping for cars, SUVs, trucks, motorcycles, classic vehicles, and other eligible vehicles across the United States. 
 

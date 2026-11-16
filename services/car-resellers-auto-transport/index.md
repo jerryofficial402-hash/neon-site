@@ -1,8 +1,8 @@
 ---
-title: "Auto Transport for Car Resellers | | Neon Auto Transport"
+title: "Car Reseller & Flipper Auto Transport | Neon Auto Transport"
 url: https://neonautotransport.com/services/car-resellers-auto-transport/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Car resellers and flippers trust Neon Auto Transport for fast, reliable vehicle shipping. Competitive rates, priority scheduling, and nationwide carrier network."
 type: "service"
@@ -21,7 +21,7 @@ Premium Car Resellers Auto Transport
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Car resellers and flippers ship vehicles bought at auctions, dealers and private sales to their lot or to the buyer, usually on open multi-car carriers. Price depends on distance, whether the car runs and how many vehicles move together, from about $250–$500 for short hauls to $1,200–$1,800 coast to coast. Neon Auto Transport (MC 1703787, USDOT 4355879) offers priority scheduling for repeat resellers with $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides professional, secure, and reliable Car Resellers Auto Transport. Designed specifically for independent auto brokers and flippers, our logistics team ensures a smooth experience by focusing on maintaining your profit margins with reliable, low-cost transport. With volume-based pricing and B2B support, you can trust us to handle your vehicle with the utmost care.
 

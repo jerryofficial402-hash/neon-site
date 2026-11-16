@@ -2,7 +2,7 @@
 title: "Marysville, CA Car Shipping | Auto Transport"
 url: https://neonautotransport.com/marysville-ca-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Ship a car to or from Marysville, CA with open or enclosed door-to-door auto transport. Get a route-specific quote with clear timing, inspection, and carrier guidance."
 type: "service"
@@ -25,7 +25,7 @@ Licensed Auto Transport Broker • MC #1703787 • USDOT #4355879
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Marysville, CA Car Shipping & Auto Transport with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Marysville, CA and the rest of Yuba County, with door-to-door pickup or a nearby meeting point when a large carrier can't reach your street. Most long-distance trips leave through Sacramento and Interstate 5 or 80. Neon Auto Transport (MC 1703787, USDOT 4355879) requires $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport arranges open and enclosed vehicle transport to and from Marysville, CA, coordinating with FMCSA-registered motor carriers along the SR 20 and SR 70 corridors in Yuba County. Whether you're relocating, shipping for a permanent change of station (PCS), or buying a vehicle out of state, get a route-specific quote in minutes. 
 

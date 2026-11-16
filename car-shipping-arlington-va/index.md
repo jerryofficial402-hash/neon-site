@@ -2,7 +2,7 @@
 title: "Car Shipping Arlington VA | Auto Transport | Neon Auto Transport"
 url: https://neonautotransport.com/car-shipping-arlington-va/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Local car shipping company in Arlington, VA. Open & enclosed auto transport, zero deposit, FMCSA licensed. Serving Northern Virginia. Free instant quote."
 type: "service"
@@ -21,7 +21,7 @@ Arlington, VA
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Arlington, VA — Your Local Auto Transport Company with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from Arlington, VA and the rest of Northern Virginia, with door-to-door pickup in neighborhoods, apartment buildings and military housing. Our office is in Woodbridge, about 20 miles south, and we ship Arlington cars to every state on open or enclosed carriers. Neon Auto Transport (MC 1703787, USDOT 4355879) requires $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides premium car shipping services for residents of Arlington, Virginia. Operating throughout the Northern Virginia region, we provide door-to-door vehicle transport to any of the 50 states. Open transport, enclosed transport, military PCS shipping, and luxury vehicle transport — all with zero upfront deposit and a locked-in price guarantee. FMCSA licensed (DOT: 4355879, MC: 1703787) and locally headquartered along the I-95 corridor to serve all of Northern Virginia. 
 

@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($1,200–$1,800 coast to coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Shipping a vehicle to Hawaii requires ocean freight transport via Roll-on/Roll-off (RoRo) or container shipping. Neon Auto Transport coordinates Hawaii vehicle transport through major ocean carriers including Matson Navigation and Pasha Hawaii, departing from the Port of Los Angeles or Long Beach. Vehicles are delivered to Honolulu on Oahu, with interisland transport available to Maui, Kauai, and the Big Island.
 

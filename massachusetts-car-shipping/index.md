@@ -2,9 +2,9 @@
 title: "Massachusetts Car Shipping | Neon Auto Transport"
 url: https://neonautotransport.com/massachusetts-car-shipping/
 date: 2026-08-27
-modified: 2026-11-11
+modified: 2026-11-16
 author: "Neon Auto Transport"
-description: "Ship your car to or from Massachusetts with Neon Auto Transport. Fully insured door-to-door vehicle transport serving Boston and all of."
+description: "Ship your car to or from Massachusetts with Neon Auto Transport. Insured door-to-door transport from Boston, Worcester, Springfield and the rest of the state."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

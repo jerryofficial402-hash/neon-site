@@ -2,7 +2,7 @@
 title: "Car Shipping Woodbridge VA | Auto Transport | Neon Auto Transport"
 url: https://neonautotransport.com/car-shipping-woodbridge-va/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Local car shipping company in Woodbridge, VA. Open & enclosed auto transport, no deposit, FMCSA licensed. Serving Prince William County. Free instant quote."
 type: "service"
@@ -21,7 +21,7 @@ Woodbridge, VA
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Woodbridge, VA — Your Local Auto Transport Company with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport is based in Woodbridge, VA (2709 Neabsco Common Pl, Suite 101) and ships cars to and from Woodbridge, Prince William County and all of Northern Virginia. We arrange door-to-door transport to every state on open or enclosed carriers. Neon Auto Transport (MC 1703787, USDOT 4355879) requires $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport is a car shipping company based right here in Woodbridge, Virginia — not a national call center pretending to be local. Located in Prince William County along the I-95 corridor, we provide door-to-door vehicle transport for Woodbridge residents shipping to any of the 50 states. Open transport, enclosed transport, military PCS shipping, and luxury vehicle transport — all with zero upfront deposit and a locked-in price guarantee. FMCSA licensed (DOT: 4355879, MC: 1703787) and based locally at 2709 Neabsco Common Pl, Woodbridge, VA 22191. 
 

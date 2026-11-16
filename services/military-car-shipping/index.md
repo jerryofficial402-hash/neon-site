@@ -1,8 +1,8 @@
 ---
-title: "Military Car Shipping | Discounted Auto Transport for Service Members | Neon Auto Transport"
+title: "Military Car Shipping | Auto Transport for Service Members | Neon"
 url: https://neonautotransport.com/services/military-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Neon Auto Transport proudly offers discounted car shipping for active military, veterans, and their families. PCS moves covered. FMCSA approved, nationwide service."
 type: "state"
@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Military with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Military members can ship a personally owned vehicle for a PCS move either through the government program (one car, to or from approved processing centers) or privately with door-to-door service when they need a second car moved or a different timeline. Private shipping usually costs $400–$1,800 on an open carrier depending on distance. Neon Auto Transport (MC 1703787, USDOT 4355879) offers a military discount and $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides professional, secure, and reliable Military Car Shipping. Designed specifically for active-duty military personnel and veterans, our logistics team ensures a smooth experience by focusing on stress-free PCS moves so you can focus on your new assignment. With exclusive military discounts, you can trust us to handle your vehicle with the utmost care.
 

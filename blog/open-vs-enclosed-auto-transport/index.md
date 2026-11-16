@@ -4,7 +4,7 @@ url: https://neonautotransport.com/compare/open-vs-enclosed/
 date: 2026-08-27
 modified: 2026-08-27
 author: "Neon Auto Transport"
-description: "Open vs enclosed car transport: compare costs, protection, and use cases. Open averages $700–$1,500 coast-to-coast; enclosed 30–40% more. Expert."
+description: "Open vs enclosed car transport: compare costs, protection, and use cases. Open averages $1,200–$1,800 coast to coast; enclosed 30–40% more. Expert."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

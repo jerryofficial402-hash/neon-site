@@ -21,7 +21,7 @@ Heavy Equipment Transport
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($1,200–$1,800 coast to coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Moving heavy equipment isn't like shipping a sedan. Oversized loads come with their own rules, their own trailers, and their own risks. Neon Auto Transport handles heavy haul transport across all 50 states, pairing your equipment with the right trailer, the right permits, and a dispatch team that stays on the job from pickup to delivery. 
 

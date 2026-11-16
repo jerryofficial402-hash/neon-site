@@ -21,7 +21,7 @@ Premium Car Dealer Shipping
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($1,200–$1,800 coast to coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides professional, secure, and reliable Car Dealer Shipping. Designed specifically for dealerships managing inventory and lot transfers, our logistics team ensures a smooth experience by focusing on streamlining inventory logistics across state lines. With multi-vehicle bulk discounts, you can trust us to handle your vehicle with the utmost care.
 

@@ -2,9 +2,9 @@
 title: "Arizona Car Shipping | Real Cost & Routes | Neon Auto Transport"
 url: https://neonautotransport.com/arizona-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
-description: "Ship your car to or from Arizona safely with Neon Auto Transport. Learn real costs, view popular routes, and get a free instant quote for enclosed or."
+description: "Ship your car to or from Arizona with Neon Auto Transport. See real costs and popular routes, and get a free instant quote for open or enclosed transport."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

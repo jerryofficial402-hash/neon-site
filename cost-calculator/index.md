@@ -21,7 +21,7 @@ policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 2
 
 ##  Quick Answer 
 
-The average cost to ship a car in 2026 ranges from $500 to $2,000. Open transport costs $0.50–$1.00 per mile ($700–$1,500 coast-to-coast). Enclosed transport costs $0.64–$2.20 per mile ($1,000–$2,200). Factors: distance, vehicle size, transport type, seasonality, route demand. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+The average cost to ship a car in 2026 ranges from $500 to $2,000. Open transport costs $0.50–$1.00 per mile ($1,200–$1,800 coast to coast). Enclosed transport costs $0.64–$2.20 per mile ($1,000–$2,200). Factors: distance, vehicle size, transport type, seasonality, route demand. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 ##  Instant Auto Shipping Quote Calculator – 2026 Live Market Pricing 
 

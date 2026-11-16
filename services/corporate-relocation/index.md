@@ -1,10 +1,10 @@
 ---
-title: "Corporate Relocation Car Shipping | | Neon Auto Transport"
+title: "Corporate Relocation Car Shipping | Neon Auto Transport"
 url: https://neonautotransport.com/services/corporate-relocation/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
-description: "Simplify corporate relocations with Neon Auto Transport. We ship employee vehicles safely during company moves. Volume pricing, coordinated."
+description: "Corporate relocation car shipping: we move employee vehicles during company moves with one point of contact, employer invoicing and volume pricing."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Open and enclosed auto transport are available nationwide through Neon Auto Transport. Average cost ranges from $0.50–$1.00 per mile ($700–$1,500 coast-to-coast) with transit times of 1–10 days depending on distance. All shipments include $0 deposit, $500,000 cargo insurance, and door-to-door delivery. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Corporate relocation car shipping moves employees' vehicles as part of a company-paid move, with one point of contact, invoicing to the employer and pickup timed to the move. Each car is priced by distance and vehicle type, about $400–$800 for 500–1,000 miles and $1,200–$1,800 coast to coast on an open carrier. Neon Auto Transport (MC 1703787, USDOT 4355879) coordinates single and multi-employee relocations nationwide. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides professional, secure, and reliable Corporate Relocation. Designed specifically for HR departments and transferring executives, our logistics team ensures a smooth experience by focusing on a seamless transition for employees moving for work. With direct billing and dedicated account managers, you can trust us to handle your vehicle with the utmost care.
 

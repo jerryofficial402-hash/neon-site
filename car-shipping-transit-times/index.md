@@ -2,7 +2,7 @@
 title: "Car Shipping Transit Times | How Long Does Auto Transport Take?"
 url: https://neonautotransport.com/car-shipping-transit-times/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Learn how long car shipping takes by distance, route, and transport type. See typical transit estimates, pickup-window guidance, common delay factors, and get a free auto transport quote."
 type: "service"
@@ -23,7 +23,7 @@ FMCSA Registered Broker • USDOT #4355879 • MC #1703787
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from How Long Does Car Shipping Take? Auto Transport Transit Times with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Car shipping usually takes 1–4 days for under 500 miles, 3–7 days for 1,000–1,500 miles and 7–14 days coast to coast, counted from pickup. Pickup itself is usually scheduled within a 1–5 day window, and weather, rural addresses and peak seasons can add time. Neon Auto Transport (MC 1703787, USDOT 4355879) gives you the carrier's estimate and direct driver contact for every shipment. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Learn how long car shipping takes by distance, route, and transport type. See typical transit estimates, pickup-window guidance, common delay factors, and get a [free car shipping quote](/car-shipping-quote/). 
 

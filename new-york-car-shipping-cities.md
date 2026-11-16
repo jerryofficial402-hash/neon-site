@@ -2,7 +2,7 @@
 title: "New York State Auto Transport | Car Shipping Costs"
 url: https://neonautotransport.com/new-york-car-shipping-cities/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "New York state auto transport for NYC, Buffalo, Rochester, Syracuse, Albany, Yonkers, White Plains & Hempstead. Compare NY car shipping costs. Free quote."
 type: "service"
@@ -23,7 +23,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from New York State Auto Transport: City Guides, Routes & Costs with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from every city in New York State, including New York City, Buffalo, Rochester, Syracuse and Albany, with door-to-door service. In Manhattan and dense parts of the boroughs, pickup is often at a nearby street a large carrier can reach. Neon Auto Transport (MC 1703787, USDOT 4355879) requires $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 New York state auto transport covers more ground — and more logistical variety — than almost any other state in the country. Dense, parkway-restricted New York City sits at one end of the spectrum; wide-open, Thruway-connected Upstate cities sit at the other.
 

@@ -1,10 +1,10 @@
 ---
-title: "Open Auto Transport: Nationwide Car Shipping Services | Neon"
+title: "Open Car Transport: Cost, Pros & Cons, How It Works | Neon"
 url: https://neonautotransport.com/services/open-auto-transport/
 date: 2026-08-27
 modified: 2026-09-09
 author: "Neon Auto Transport"
-description: "Ship your car nationwide with open auto transport. Compare carrier options, learn costs and timing, and get a free quote from Neon Auto Transport."
+description: "Open car transport costs about $250–$500 for short trips and $1,200–$1,800 coast to coast. See prices by distance, pros and cons, and get a free quote."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
@@ -21,7 +21,7 @@ FMCSA Registered • USDOT #4355879 • MC #1703787
 
 ## Quick Answer
 
-Average cost ranges from **$0.50–$1.00 per mile ($700–$1,500 coast-to-coast)** with transit times of **1–10 days** depending on distance. Shipments are coordinated with FMCSA-registered, insured carriers, with cargo insurance details confirmed for your specific carrier before dispatch. Zero upfront deposit required to book. Get a quote at [neonautotransport.com/cost-calculator/](/cost-calculator/) or call [(571) 576-7711](tel:5715767711).
+Average cost ranges from **$0.50–$1.00 per mile ($1,200–$1,800 coast to coast)** with transit times of **1–10 days** depending on distance. Shipments are coordinated with FMCSA-registered, insured carriers, with cargo insurance details confirmed for your specific carrier before dispatch. Zero upfront deposit required to book. Get a quote at [neonautotransport.com/cost-calculator/](/cost-calculator/) or call [(571) 576-7711](tel:5715767711).
 
 When you ship your car with open auto transport, an FMCSA-registered motor carrier transports your vehicle on an uncovered multi-car trailer. It is the standard, cost-effective choice to move cars, SUVs, and pickup trucks nationwide, picking up and delivering as close to your addresses as truck access safely permits. 
 
@@ -104,9 +104,11 @@ Open transport pricing is based on the specific shipment rather than a fixed nat
 
 | Distance | Open Transport Cost | Per-Mile Rate |
 |---|---|---|
-| **Under 500 miles** | $400 – $900 | $1.00 – $2.00 |
-| **500 – 1,500 miles** | $700 – $1,600 | $0.60 – $1.20 |
-| **1,500+ miles (coast-to-coast)** | $700 – $1,500 | $0.40 – $0.90 |
+| **Under 500 miles** | $250 – $500 | $1.00 – $2.00 |
+| **500 – 1,000 miles** | $400 – $800 | $0.60 – $1.10 |
+| **1,000 – 1,500 miles** | $600 – $1,100 | $0.50 – $0.90 |
+| **1,500 – 2,500 miles** | $800 – $1,500 | $0.45 – $0.70 |
+| **2,500+ miles (coast to coast)** | $1,200 – $1,800 | $0.40 – $0.65 |
 
 ### Why Per-Mile Rate Drops on Longer Routes
 
@@ -200,7 +202,7 @@ You can verify any carrier’s active operating authority, safety records, and c
 Open auto transport is widely used for everyday vehicle shipments. Exposure to normal weather and road conditions does not mean the vehicle is expected to experience damage; carriers use standard loading and securement procedures to transport vehicles safely. Document vehicle condition at pickup and delivery on the Bill of Lading.
 
 ### How much does open auto transport cost?
-Open transport typically costs $0.50–$1.00 per mile, or roughly $400–$1,600 depending on distance — see the table above for your route length. Pricing depends on shipment distance, route demand, vehicle size and weight, vehicle condition, pickup/delivery accessibility, transport type, pickup-date flexibility, seasonality, carrier availability, and expedited service requirements.
+Open transport typically costs $0.50–$1.00 per mile, or roughly $250–$500 for short trips and $1,200–$1,800 coast to coast — see the table above for your route length. Pricing depends on shipment distance, route demand, vehicle size and weight, vehicle condition, pickup/delivery accessibility, transport type, pickup-date flexibility, seasonality, carrier availability, and expedited service requirements.
 
 ### How long does open transport take?
 Most shipments take 1–10 days depending on distance — regional routes are faster (1–3 days), while cross-country routes take longer (5–10 days). Actual transit depends on route mileage, carrier scheduling, driver hours-of-service regulations, traffic, weather conditions, and accessibility.

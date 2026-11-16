@@ -2,9 +2,9 @@
 title: "Pennsylvania Car Shipping | Neon Auto Transport"
 url: https://neonautotransport.com/pennsylvania-car-shipping/
 date: 2026-08-27
-modified: 2026-11-11
+modified: 2026-11-16
 author: "Neon Auto Transport"
-description: "Ship your car to or from Pennsylvania with Neon Auto Transport. Fully insured door-to-door vehicle transport serving Philadelphia and all of."
+description: "Ship your car to or from Pennsylvania with Neon Auto Transport. Insured door-to-door transport from Philadelphia, Pittsburgh, Harrisburg and across the state."
 type: "service"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"

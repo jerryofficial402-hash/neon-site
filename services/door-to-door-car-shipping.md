@@ -2,7 +2,7 @@
 title: "Door-to-Door Car Shipping | Nationwide Auto Transport | Neon"
 url: https://neonautotransport.com/services/door-to-door-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Arrange door-to-door car shipping nationwide with Neon Auto Transport. Learn how pickup and delivery work, when a nearby meeting point is needed, what affects pricing, and request a free quote."
 type: "service"
@@ -21,7 +21,7 @@ FMCSA Registered • USDOT #4355879 • MC #1703787
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Door-to-Door Car Shipping: Convenient Nationwide Auto Transport with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Door-to-door car shipping means the carrier picks your car up at your address and delivers it to the address you choose, or the nearest safe spot a large truck can reach. It is the standard way cars are shipped in the US and costs about $250–$500 for local moves and $1,200–$1,800 coast to coast on an open carrier. Neon Auto Transport (MC 1703787, USDOT 4355879) books it with $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Door-to-door car shipping is a convenient way to arrange vehicle transport between your pickup and delivery locations. The assigned motor carrier aims to collect and deliver your car as close to your selected addresses as safely and legally possible. 
 

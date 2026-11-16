@@ -2,9 +2,9 @@
 title: "International Car Shipping | Overseas | Neon Auto Transport"
 url: https://neonautotransport.com/services/international-overseas-car-shipping-services/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
-description: "Ship your vehicle internationally with Neon Auto Transport. We handle customs, ocean freight, and overseas logistics for car shipping to 150+."
+description: "Ship a car overseas with Neon Auto Transport: truck transport to a US port, ocean freight and customs coordination. Get a quote for your destination."
 type: "state"
 company: "Neon Auto Transport LLC"
 mc_number: "1703787"
@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from International Overseas Car Shipping Services with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+International car shipping combines a truck leg to a US port, ocean freight (roll-on/roll-off or container) and customs clearance at the destination. Cost depends mostly on the destination country, port and shipping method, and the ocean leg typically takes several weeks. Neon Auto Transport (MC 1703787, USDOT 4355879) coordinates the US truck leg and works with ocean carriers for overseas moves. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Neon Auto Transport provides professional, secure, and reliable International Overseas Car Shipping Services. Designed specifically for expats and international buyers, our logistics team ensures a smooth experience by focusing on handling complex customs, tariffs, and maritime shipping. With RoRo (Roll-on/Roll-off) and container shipping options, you can trust us to handle your vehicle with the utmost care.
 

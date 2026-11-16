@@ -2,7 +2,7 @@
 title: "Arkansas Car Shipping Cities | Auto Transport Quotes & Routes"
 url: https://neonautotransport.com/arkansas-car-shipping-cities/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Arkansas auto transport for Little Rock, Fayetteville, Fort Smith, Springdale, and Jonesboro. Compare AR car shipping costs and get a free quote."
 type: "service"
@@ -23,7 +23,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Arkansas Car Shipping by City: Local Guides & Routes with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Neon Auto Transport ships cars to and from every city in Arkansas, including Little Rock, Fayetteville, Springdale, Jonesboro and Fort Smith, with door-to-door service. Interstates 40 and 30 carry most Arkansas car shipments, so cities near them usually get faster pickups. Neon Auto Transport (MC 1703787, USDOT 4355879) requires $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Arkansas auto transport connects the fast-growing Northwest Arkansas corridor, the central hub of Little Rock, and key regional cities like Fort Smith and Jonesboro. From interstate highways to local routes, our carrier network covers every corner of the Natural State.
 

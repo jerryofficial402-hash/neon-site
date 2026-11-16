@@ -1,8 +1,8 @@
 ---
-title: "Terminal to Terminal Car Shipping | | Neon Auto Transport"
+title: "Terminal to Terminal Car Shipping: Cost, Pros & Cons | Neon"
 url: https://neonautotransport.com/services/terminal-to-terminal-car-shipping/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Save $100-$300 on car shipping with terminal-to-terminal transport. Drop off and pick up at secure nationwide hubs. FMCSA approved, fully insured. Free quote."
 type: "state"
@@ -21,7 +21,7 @@ FMCSA & US Dot Approved
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Terminal to Terminal with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+Terminal-to-terminal car shipping means you drop your car at a storage hub near you and collect it from a hub near your destination, instead of having it picked up and delivered at your address. It usually costs $100–$300 less than door-to-door, but you need a ride to and from each terminal and may pay daily storage if you collect late. Neon Auto Transport (MC 1703787, USDOT 4355879) arranges both options with $0 upfront deposit. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Terminal-to-terminal car shipping is an auto transport method where you drop off and pick up your vehicle at a secure regional hub instead of your home address, typically saving $100 to $300 compared to door-to-door service. It's the most cost-effective way to ship a car for shippers who have flexibility on pickup and delivery location. Neon Auto Transport operates terminal-to-terminal service through fully insured, FMCSA-approved carriers, with terminals available in major metro areas nationwide.
 
@@ -55,6 +55,41 @@ Neither option compromises on safety — both use the same insured, FMCSA-approv
 
 
 If you need your vehicle delivered to a specific address on a tighter timeline, [door-to-door service](/services/door-to-door-car-shipping/) may be the better fit.
+
+## Terminal-to-Terminal Cost on Popular Routes
+
+These are typical open-carrier prices for a standard sedan. The terminal column assumes the usual $100–$300 saving; your quote depends on the exact terminals, the season and your vehicle.
+
+| Route | Approx. road miles | Door-to-door | Terminal-to-terminal |
+| --- | --- | --- | --- |
+| New York to Miami | 1,300 | $600–$1,100 | about $450–$950 |
+| Los Angeles to Houston | 1,550 | $800–$1,300 | about $650–$1,150 |
+| Chicago to Phoenix | 1,750 | $800–$1,300 | about $650–$1,150 |
+| New Jersey to Los Angeles | 2,800 | $1,200–$1,800 | about $1,000–$1,600 |
+
+See the full [car shipping cost guide](/car-shipping-cost/) for prices by distance and vehicle type.
+
+## The Downsides Most Companies Don't Mention
+
+Terminal shipping saves money, but it is not the right choice for everyone. Check these before you pick it:
+
+- **Fewer terminals than you'd expect.** Most are near large metro areas, ports and interstate hubs. If the nearest one is 60+ miles away, the drive and a ride back can cancel out the saving.
+- **It is not always faster.** Your car may wait at the terminal until a truck on that lane is full, which can add a few days compared with a direct door-to-door pickup.
+- **Storage fees if you're late.** Most terminals give a few free days, then charge a daily fee. Plan your pickup date before you book.
+- **Business hours.** Terminals keep set hours, often weekdays only. Weekend drop-off or pickup may not be possible.
+- **You need two rides.** One home from the origin terminal and one to the destination terminal.
+
+## Is Terminal-to-Terminal Worth It? A 30-Second Check
+
+Add up what the terminal option costs you on top of the shipping price: rides or rideshare to and from both terminals, your time, and any storage days. If that total is less than the $100–$300 saving, the terminal is worth it. If not, door-to-door is the better deal.
+
+Door-to-door also works on most streets: when a large carrier can't reach your address, the driver meets you at a nearby open lot, which gives you most of the convenience without a terminal. Tell us both addresses and we'll quote both options so you can compare.
+
+## How to Find a Car Shipping Terminal Near You
+
+Terminals are not listed in one public directory, and they change as carriers open and close lots. The reliable way is to ask for one when you request a quote: give us your pickup and delivery ZIP codes and we'll tell you whether there is a terminal within a reasonable distance at each end, its hours, and how many free storage days it allows.
+
+Areas that usually have terminal options include Los Angeles and Long Beach, the San Francisco Bay Area, Houston, Dallas–Fort Worth, Miami, Orlando, Jacksonville, Atlanta, Chicago, the New York and New Jersey port area, and the Washington, DC region.
 
 ## Terminal-to-Terminal Shipping FAQs
 

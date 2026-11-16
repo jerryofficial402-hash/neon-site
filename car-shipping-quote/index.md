@@ -2,7 +2,7 @@
 title: "Free Car Shipping Quote | Instant Auto Transport Pricing | Neon"
 url: https://neonautotransport.com/car-shipping-quote/
 date: 2026-08-27
-modified: 2026-08-27
+modified: 2026-11-16
 author: "Neon Auto Transport"
 description: "Get a free car shipping quote in seconds from Neon Auto Transport. Instant auto transport pricing for open and enclosed carriers, door-to-door nationwide with zero deposit."
 type: "service"
@@ -21,7 +21,7 @@ policies: "$0 Upfront Deposit, $500,000 Cargo Insurance, Price Lock Guarantee, 2
 
 ##  Quick Answer 
 
-Neon Auto Transport ships cars to and from Free Car Shipping Quote – Instant Auto Transport Pricing with door-to-door service covering all major cities and rural routes. Open transport averages $0.50–$1.00 per mile. Enclosed transport available for high-value vehicles. FMCSA-licensed broker (MC 1703787 | USDOT 4355879) with $0 deposit. Get a quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
+A car shipping quote is based on the pickup and delivery ZIP codes, the vehicle, whether it runs, open or enclosed transport, and your dates. Typical open-carrier prices run $250–$500 for under 500 miles and $1,200–$1,800 coast to coast. Neon Auto Transport (MC 1703787, USDOT 4355879) gives instant online estimates with no deposit or obligation. Get an instant quote at neonautotransport.com/cost-calculator/ or call (571) 576-7711.
 
 Get a free car shipping quote in seconds from Neon Auto Transport. Whether you’re moving to another state, buying a vehicle online, or relocating a fleet, our live market system gives you instant auto transport pricing with no hidden fees and no upfront deposit required. 
 
