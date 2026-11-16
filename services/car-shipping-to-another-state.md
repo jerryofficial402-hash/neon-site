@@ -75,6 +75,20 @@ The cost to ship a car to another state depends on your exact route, vehicle, tr
 
 Use our [Car Shipping Cost Calculator](/cost-calculator/) for a planning estimate, then [Get a Free Interstate Car Shipping Quote](/car-shipping-quote/) for current route-specific options. 
 
+## Interstate Car Shipping Prices and Times by Distance
+
+Typical open-carrier prices for a standard sedan, door to door. Enclosed transport costs roughly 30–60% more.
+
+| Distance | Example move | Open carrier | Time on the truck |
+| --- | --- | --- | --- |
+| Under 500 miles | Virginia to North Carolina | $250–$500 | 1–2 days |
+| 500–1,000 miles | New York to Georgia | $400–$800 | 2–3 days |
+| 1,000–1,500 miles | New York to Florida | $600–$1,100 | 3–5 days |
+| 1,500–2,500 miles | Illinois to California | $800–$1,500 | 4–8 days |
+| 2,500+ miles | New York to California | $1,200–$1,800 | 7–10 days |
+
+Times are counted from pickup. Most pickups happen within 1–5 days of your first available date. See the [car shipping cost guide](/car-shipping-cost/) for prices by vehicle type and season.
+
 ## How Long Does It Take to Ship a Car to Another State?
 
 Transit time depends on the route, total distance, carrier schedule, traffic, weather, required loading and unloading stops, and federal Hours-of-Service rules. Transit begins after pickup; the carrier-assignment and pickup window are separate from driving time. 
@@ -152,6 +166,23 @@ Interstate car shipping is available across all major U.S. corridors. Popular ro
 
 
 View all nationwide hubs on [All Car Shipping Locations](/locations/). 
+
+## After Your Car Arrives: Registering It in Your New State
+
+Shipping a car doesn't change its registration. Once you become a resident of the new state, you have a limited time to get a new title, plates and insurance there. Common deadlines:
+
+| New state | Register within |
+| --- | --- |
+| Florida | 10 days |
+| California | 20 days |
+| Pennsylvania | 20 days |
+| Texas, Virginia, New York, Georgia, Illinois | 30 days |
+| North Carolina | 60 days |
+
+- Keep your current registration and insurance active while the car is in transit.
+- Have your title ready. If you have a loan, the new state's DMV contacts your lender for it.
+- Some states also require a safety or emissions inspection or a VIN check before registering.
+- Deadlines can change and some have exceptions (students, military), so confirm with the new state's DMV.
 
 ## Prepare Your Car for Interstate Shipping
 

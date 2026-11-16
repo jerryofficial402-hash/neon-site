@@ -58,6 +58,30 @@ Rather than spending 20 to 40 exhausting hours behind the wheel on congested int
 * **Northbound (March–April):** The return rush mirrors the fall migration. The weeks right after Easter are typically the quietest and most cost-effective window for northbound moves.
 * **Year-Round Continuity:** Recurring snowbird customers who coordinate both legs with Neon benefit from seamless carrier coordination and reliable seasonal scheduling year after year.
 
+## Snowbird Shipping Calendar: When Prices Peak
+
+Snowbird season moves in two waves. Booking before each wave peaks gets you a better price and an earlier pickup.
+
+| Direction | Season | Busiest weeks | Book by |
+| --- | --- | --- | --- |
+| South (to Florida, Arizona, Texas) | October – January | Early November to mid-December | Mid-September to early October |
+| North (home for the summer) | March – May | Late March to early May | February |
+
+Trucks heading south in fall fill up while trucks heading north run partly empty, and the reverse happens in spring. That's why the same route can cost noticeably more in one direction than the other.
+
+## Shipping vs. Driving vs. the Amtrak Auto Train
+
+- **Shipping your car:** door-to-door from your northern home to your winter address. You fly and the car arrives a few days later, with no miles, hotels or wear on the car.
+- **Driving:** New York to South Florida is about 1,250 miles, usually two long days plus a hotel, fuel, meals and tolls. It's cheaper only if you enjoy the drive and don't count your time.
+- **Amtrak Auto Train:** runs only between Lorton, Virginia and Sanford, Florida (near Orlando), and you ride the train with your car. It works well if you live near Washington, DC and winter in central Florida. From anywhere else you still drive to Lorton and from Sanford, which is where door-to-door shipping saves the most.
+
+## Round-Trip Snowbird Shipping: How to Save
+
+- **Book both legs together.** Tell us your fall and spring dates when you book, so the return trip is planned before the spring rush.
+- **Ship against the crowd when you can.** Leaving in late October instead of December, or heading home in late May instead of April, usually costs less.
+- **Give a pickup window of a few days.** A flexible window lets us match your car to a truck already on your route.
+- **Check your car insurance and registration** stay active in both states, and keep a spare key at your winter address.
+
 ## Factors that Affect Snowbird Car Shipping Costs
 
 1. **Route Distance:** Longer journeys cost more overall in fuel and driver hours, though per-mile rates drop on routes over 1,500 miles.

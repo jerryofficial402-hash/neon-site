@@ -29,6 +29,45 @@ Neon Auto Transport provides professional, secure, and reliable Military Car Shi
 
 TIPS & TRICKS
 
+## Does the Military Pay to Ship Your Car on a PCS Move?
+
+It depends on where you're going. Ask your installation's transportation office (PPPO) to confirm what your orders cover, but in most cases:
+
+- **PCS within the continental US (CONUS):** the military usually expects you to drive your car and reimburses mileage and per diem for the trip. It generally does not pay to ship a car between two US bases, so if you can't or don't want to drive it, you pay for shipping yourself. Many families drive one car and ship the second.
+- **PCS overseas (OCONUS):** the government ships one privately owned vehicle (POV) for authorized moves, but only from a Vehicle Processing Center (VPC). Getting the car to the VPC, or home from the VPC when you return, is up to you. We can truck it to or from the VPC for you.
+- **Moving to Alaska or Hawaii:** check your orders first. If your car isn't covered, we arrange the truck leg to the port and the ocean shipment. See [Hawaii](/services/hawaii-auto-transport/) and [Alaska](/services/alaska-auto-transport/) car shipping.
+
+## PCS Car Shipping Cost from Northern Virginia
+
+Our office is in Woodbridge, minutes from Marine Corps Base Quantico and Fort Belvoir. These are typical open-carrier prices for a standard car from Northern Virginia to common duty stations. The same ranges apply in the other direction.
+
+| Northern Virginia to | Approx. road miles | Open carrier | Time on the truck |
+| --- | --- | --- | --- |
+| Fort Bragg, NC | 300 | $250–$500 | 1–2 days |
+| Fort Campbell, KY | 680 | $400–$800 | 2–3 days |
+| Fort Hood, TX | 1,380 | $600–$1,100 | 3–5 days |
+| Joint Base San Antonio, TX | 1,560 | $800–$1,300 | 4–7 days |
+| Fort Carson, CO | 1,700 | $800–$1,300 | 4–7 days |
+| Camp Pendleton, CA | 2,650 | $1,200–$1,800 | 7–10 days |
+| Joint Base Lewis-McChord, WA | 2,800 | $1,200–$1,800 | 7–10 days |
+
+Summer is peak PCS season, so May through August prices sit at the top of these ranges. Your exact price depends on the addresses, the vehicle and your dates. [Get an instant quote](/cost-calculator/).
+
+## Bases We Serve in Virginia, Maryland and DC
+
+We ship cars to and from every installation in the country. Close to our office we regularly handle moves from Marine Corps Base Quantico, Fort Belvoir, Joint Base Myer-Henderson Hall and the Pentagon area, Joint Base Andrews, Fort Meade, Fort Lee, Naval Station Norfolk and Joint Base Langley-Eustis.
+
+**Base access:** most car haulers can't bring a large truck through the gate. The usual plan is to meet the driver at a lot near the main gate or at your off-base housing. Tell us your installation and we'll plan the meeting point before pickup day.
+
+## PCS Car Shipping Checklist
+
+- **Book when your orders arrive.** Two to three weeks ahead is enough most of the year; give yourself more time in summer.
+- **Plan around your report date.** Ship the car early enough that it arrives when you do, or pick a delivery date after you've moved into housing.
+- **Name someone to release or receive the car** if you'll already be gone. They need to be 18 or older and sign the inspection report.
+- **Keep registration and insurance active** during transport, and bring your ID and keys to pickup.
+- **Empty the car** of personal items, base decals you no longer need, and toll transponders, and leave about a quarter tank of fuel.
+- **Going overseas?** VPCs have their own rules for cleaning, fuel level and paperwork. Check them before we deliver the car to the VPC.
+
 ## Tips & Tricks for Saving on Vehicle Shipping
 
 ### Pro Tip for Military Car Shipping

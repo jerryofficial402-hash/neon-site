@@ -179,6 +179,22 @@ Your vehicle travels via open or enclosed carrier along major corridors — I-95
 
 A second joint inspection happens at drop-off, and you sign the Proof of Delivery to close out the shipment cleanly.
 
+## Shipping a Car in Virginia's Three Main Regions
+
+Neon Auto Transport is based in Woodbridge, in Prince William County, so Virginia is our home state. Each part of the state has its own pickup and timing details.
+
+### Northern Virginia
+
+Fairfax, Arlington, Alexandria, Loudoun and Prince William counties sit on Interstate 95 and Interstate 66, so carriers pass through every week and pickups are usually quick. Many homes are in townhouse communities and apartment complexes where a large truck can't turn around, so drivers often meet you at a nearby shopping center lot. Military families at Fort Belvoir, Quantico and the Pentagon make up a large share of moves here; see [military car shipping](/services/military-car-shipping/). The Amtrak Auto Train to Florida also leaves from Lorton.
+
+### Richmond and Central Virginia
+
+Richmond sits where Interstate 95 meets Interstate 64, which makes it an easy pickup point for both north-south and east-west trucks. The area's auto auction yards send a steady stream of cars to buyers across the country; see [shipping a car from Copart Richmond](/blog/how-to-ship-a-car-from-copart-richmond-va/). Fort Lee is about 30 miles south.
+
+### Hampton Roads
+
+Norfolk, Virginia Beach, Chesapeake, Newport News and Hampton are home to Naval Station Norfolk and Joint Base Langley-Eustis, so Navy and Air Force PCS moves are common. The bridge-tunnels across the harbor can add time to pickups and deliveries, so allow a flexible window. The Port of Virginia in Norfolk also handles cars going overseas.
+
 ## Key Virginia Cities We Serve
 
 ###  📍 Richmond & Central Virginia 
