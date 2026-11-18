@@ -89,7 +89,7 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 **Baseline (pehle):**
 - 90 din: 3 clicks / 8,990 impressions / position 58.5
 - 28 din: 3,660 → 3,529 impressions, position 53 → 69.3
-- Google ne aakhri baar parha: (deploy ke din check)
+- Google ne aakhri baar parha: 9 Nov 2026 (indexed, "URL is on Google")
 
 **Log kya search kar rahe thay (929 searches, 90 din):**
 - ~4,650 impressions generic ("car shipping cost", "car shipping") — yeh asal mein cost page ke liye hain, California page ke nahi
@@ -108,13 +108,14 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 - Title: "California Car Shipping Cost, Routes & Times | Neon Auto Transport"; nayi description (Hawaii + Live Oak)
 - URL, quote form, design: koi badlav nahi
 
-**Status:** local par test ✅ → deploy ka intezar
+**Status:** ✅ Live 19 Nov 2026 (commit 036b1b5) · Google "Request indexing" ✅ 19 Nov · IndexNow (Bing) ✅ 19 Nov
+**Check:** pehla **3 Dec 2026**, faisla **17 Dec 2026**
 
 | Check | Clicks | Impressions | Position | Hawaii→CA searches | Note |
 |---|---|---|---|---|---|
 | Baseline (90 din) | 3 | 8,990 | 58.5 | 451 impr, pos ~58 | |
-| 2 hafte | | | | | |
-| 4 hafte | | | | | |
+| 3 Dec | | | | | |
+| 17 Dec | | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -184,6 +185,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 19 Nov 2026 | Lead tracking (har lead ka source/page), GTM 39 pages par, GA4 key event | 71370a8 |
 | 19 Nov 2026 | 7 worked pages ke liye Google "Request indexing" | — |
 | 19 Nov 2026 | Page #1 transit times: guarantee/FMCSA section, timeline + routes, seasons, din ki ranges theek; live + index request | b8759d7 |
+| 19 Nov 2026 | Page #2 California: in-state routes, Live Oak office, Hawaii→CA, qeematein route pages ke mutabiq, smog claim theek; live + index request | 036b1b5 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
