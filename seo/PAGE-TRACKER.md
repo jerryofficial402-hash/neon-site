@@ -58,7 +58,7 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 **Baseline (pehle):**
 - 90 din: 1 click / 951 impressions / position 16.3
 - 28 din (22 Sep–19 Oct → 20 Oct–16 Nov): 371 → 131 impressions, position 12.2 → 35.1
-- Google ne aakhri baar parha: (check on deploy day)
+- Google ne aakhri baar parha: 25 Oct 2026 (indexed, "URL is on Google")
 
 **Log kya search kar rahe thay (90 din):**
 - "fmcsa auto transport delivery dates estimate(s) not guaranteed" aur milte-julte: ~85 impressions, position ~9 (page 1!), 0 clicks — page par is ka jawab hi nahi tha
@@ -75,8 +75,14 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 - URL, quote form, design: koi badlav nahi
 - Content ~1,130 → ~1,900 words
 
-**Status:** local par test ✅ → deploy ka intezar → phir Request indexing + IndexNow
-**Check:** deploy + 14 din, deploy + 28 din
+**Status:** ✅ Live 19 Nov 2026 (commit b8759d7) · Google "Request indexing" ✅ 19 Nov · IndexNow (Bing) ✅ 19 Nov
+**Check:** pehla **3 Dec 2026**, faisla **17 Dec 2026**
+
+| Check | Clicks | Impressions | Position | "FMCSA… not guaranteed" position | Note |
+|---|---|---|---|---|---|
+| Baseline (90 din) | 1 | 951 | 16.3 | ~9 | |
+| 3 Dec | | | | | |
+| 17 Dec | | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -142,6 +148,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 17 Nov 2026 | Quick wins (42 pages), cost page form, trust fixes, military/snowbird/another-state/Virginia content, footer addresses, hours | d4c46b0 … c4143ff |
 | 19 Nov 2026 | Lead tracking (har lead ka source/page), GTM 39 pages par, GA4 key event | 71370a8 |
 | 19 Nov 2026 | 7 worked pages ke liye Google "Request indexing" | — |
+| 19 Nov 2026 | Page #1 transit times: guarantee/FMCSA section, timeline + routes, seasons, din ki ranges theek; live + index request | b8759d7 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
