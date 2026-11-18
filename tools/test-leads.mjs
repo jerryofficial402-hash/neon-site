@@ -64,7 +64,10 @@ for (const path of calcPages) {
     const need = ['firstName', 'lastName', 'email', 'phone', 'vehicleYear', 'vehicleMake', 'vehicleModel', 'pickupZip', 'deliveryZip', 'desiredPickupDate', 'transportType', 'source', 'estimatedPrice'];
     const missing = need.filter(k => !lead[k]);
     check(`${path} lead fields complete`, missing.length === 0, missing.length ? 'missing ' + missing : `${lead.firstName} ${lead.lastName}, ${lead.vehicleYear} ${lead.vehicleMake} ${lead.vehicleModel}, ${lead.pickupLocation} -> ${lead.dropoffLocation}, ${lead.estimatedPrice}`);
+    check(`${path} lead origin attached`, /Lead origin: .+ \| First page: \/.* \| Sent from: \//.test(lead.message || ''), lead.message || '');
   }
+  const ga = await p.evaluate(() => (window.dataLayer || []).filter(e => e.event === 'generate_lead').map(e => `${e.lead_form} / ${e.traffic_source} / ${e.landing_page}`));
+  check(`${path} one generate_lead event`, ga.length === 1, ga.join(' ; '));
   check(`${path} Web3Forms email sent`, sent.web3.length === 1);
   const success = await p.evaluate(() => document.body.innerText.includes('Quote Request Submitted'));
   check(`${path} success message`, success);
@@ -85,7 +88,9 @@ for (const path of calcPages) {
   await new Promise(r => setTimeout(r, 800));
   const lead = sent.leads[0] ? JSON.parse(sent.leads[0]).fields : null;
   check('/contact/ POST /api/leads', !!lead && lead.email === 'test@example.com' && !!lead.message, lead ? `${lead.firstName} ${lead.lastName}, source=${lead.source}` : '');
+  check('/contact/ lead origin attached', !!lead && /Lead origin: .+ \| First page: \/.* \| Sent from: \/contact\//.test(lead.message), lead ? lead.message.split('\n').pop() : '');
   check('/contact/ Web3Forms submit', sent.web3.length >= 1);
+  check('/contact/ email has Lead Origin', sent.web3.some(d => /Lead(\+|%20| )Origin/.test(d || '')));
   check('/contact/ no JS errors', errs.length === 0, errs.join(' | '));
   await p.close();
 }

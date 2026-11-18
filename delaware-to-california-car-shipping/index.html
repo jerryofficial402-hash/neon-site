@@ -134,6 +134,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     })();
   </script>
+  <script>
+    // Lead attribution: remembers where a visitor came from (Google, Bing, ChatGPT, an ad...) and the
+    // first page they landed on, for 30 days. The quote, contact and chat forms attach it to each lead
+    // and send a generate_lead event to Google Analytics through GTM.
+    (function () {
+      var KEY = 'nx_attr', DAY = 864e5, now = Date.now(), saved = null;
+      try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
+      var q = new URLSearchParams(location.search), refHost = '';
+      try { refHost = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, '') : ''; } catch (e) {}
+      var site = location.hostname.replace(/^www\./, '');
+      if (refHost === site) refHost = '';
+      var us = (q.get('utm_source') || '').toLowerCase(), um = (q.get('utm_medium') || '').toLowerCase();
+      function name(h) {
+        var list = [['chatgpt', 'ChatGPT'], ['openai', 'ChatGPT'], ['perplexity', 'Perplexity'], ['gemini.google', 'Gemini'],
+          ['claude.ai', 'Claude'], ['copilot', 'Copilot'], ['google', 'Google search'], ['bing', 'Bing search'],
+          ['duckduckgo', 'DuckDuckGo search'], ['yahoo', 'Yahoo search'], ['ecosia', 'Ecosia search'], ['facebook', 'Facebook'],
+          ['instagram', 'Instagram'], ['youtube', 'YouTube'], ['tiktok', 'TikTok'], ['linkedin', 'LinkedIn']];
+        for (var i = 0; i < list.length; i++) if (h.indexOf(list[i][0]) > -1) return list[i][1];
+        return '';
+      }
+      var src = '';
+      if (q.get('gclid') || q.get('gbraid') || q.get('wbraid') || (us === 'google' && /cpc|ppc|paid/.test(um))) src = 'Google Ads';
+      else if (q.get('msclkid') || (us === 'bing' && /cpc|ppc|paid/.test(um))) src = 'Bing Ads';
+      else if (us) src = (name(us) || us) + (um ? ' (' + um + ')' : '');
+      else if (refHost) src = name(refHost) || ('Referral: ' + refHost);
+      // A new outside visit replaces the old one; a direct or internal visit keeps it.
+      if (src || !saved || now - saved.t > 30 * DAY) {
+        saved = { s: src || 'Direct / unknown', l: location.pathname, t: now };
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+      }
+      window.nxAttribution = function () {
+        var a = saved || { s: 'Direct / unknown', l: location.pathname };
+        return { source: a.s, landing: a.l, page: location.pathname,
+          text: 'Lead origin: ' + a.s + ' | First page: ' + a.l + ' | Sent from: ' + location.pathname };
+      };
+      window.nxTrackLead = function (form, extra) {
+        var a = window.nxAttribution(), ev = { event: 'generate_lead', lead_form: form, traffic_source: a.source, landing_page: a.landing, lead_page: a.page };
+        for (var k in (extra || {})) ev[k] = extra[k];
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(ev);
+        return a;
+      };
+    })();
+  </script>
 </header>
   
   <main class="nx-inner">

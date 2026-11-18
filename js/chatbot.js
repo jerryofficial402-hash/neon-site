@@ -319,6 +319,9 @@
     // Render Shipment Summary Card in-chat
     renderSummaryCard();
 
+    // Where this visitor came from (set by the shared header script) + GA4 lead event via GTM
+    const origin = window.nxTrackLead ? window.nxTrackLead('AI Chatbot') : null;
+
     // Submit to Web3Forms
     try {
       const formData = new FormData();
@@ -330,6 +333,7 @@
       Object.entries(extractedFields).forEach(([key, val]) => {
         formData.append(key, val !== null ? val : 'N/A');
       });
+      if (origin) formData.append('Lead Origin', origin.text);
 
       await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -343,6 +347,7 @@
     // Submit directly to custom CRM endpoint
     try {
       const fieldsToSend = { ...extractedFields, source: 'AI Chatbot' };
+      if (origin) fieldsToSend.message = [extractedFields.message, origin.text].filter(Boolean).join('\n\n');
       await fetch('/api/leads/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

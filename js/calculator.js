@@ -141,6 +141,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Build vehicle summary string for email
         const vehicleSummary = vehicles.map(v => `Vehicle ${v.number}: ${v.year} ${v.make} ${v.model} (${v.type}, ${v.condition})`).join('\n');
 
+        // Where this visitor came from (set by the shared header script)
+        const origin = window.nxAttribution ? window.nxAttribution() : null;
+
         // Build Web3Forms payload
         const web3Payload = {
             access_key: calcForm.querySelector('[name="access_key"]').value,
@@ -159,7 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
             'Transport Type': transportType === 'enclosed' ? 'Enclosed' : 'Open',
             'Vehicles': vehicleSummary,
             'Vehicle Count': vehicles.length,
-            'Estimated Price': estimatedPrice
+            'Estimated Price': estimatedPrice,
+            'Lead Origin': origin ? origin.text : ''
         };
 
         // Build CRM payload (first vehicle as primary)
@@ -184,7 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 source: 'Quote Calculator',
                 estimatedPrice,
                 vehicleCount: vehicles.length,
-                additionalVehicles: vehicles.length > 1 ? vehicleSummary : ''
+                additionalVehicles: vehicles.length > 1 ? vehicleSummary : '',
+                message: origin ? origin.text : ''
             }
         };
 
@@ -241,15 +246,13 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerHTML = originalText;
         }
 
-        // Fire GTM DataLayer Event: Lead Conversion
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            event: 'generate_lead',
-            event_category: 'Quote Calculator',
-            event_action: 'Form Submitted',
-            lead_source: 'Website Quote Calculator',
-            estimated_price: estimatedPrice
-        });
+        // Fire GTM DataLayer Event: Lead Conversion (with page and traffic source)
+        if (window.nxTrackLead) {
+            window.nxTrackLead('Quote Calculator', { estimated_price: estimatedPrice });
+        } else {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'generate_lead', lead_form: 'Quote Calculator', estimated_price: estimatedPrice });
+        }
 
         // Show inline success message
         showSuccessMessage(calcForm);
