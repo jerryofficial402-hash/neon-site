@@ -1,6 +1,7 @@
 # Keep build tooling and working files out of the public site.
 # Deployed: *.html, *.md (AI-agent copies), api/, css/, js/, fonts/, images/, favicons, robots.txt, llms*.txt, sitemap.xml
 /tools/
+/seo/
 /.agents/
 /.claude/
 /css/theme.css
