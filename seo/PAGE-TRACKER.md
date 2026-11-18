@@ -37,6 +37,14 @@ Position 1–10 = Google ka page 1, 11–20 = page 2, 50 = page 5.
 
 Rule: in pages ka URL, form aur design nahi badlega. Sirf maloomat barhegi, woh bhi ek ek kar ke.
 
+**Mehfooz pages par kiye gaye badlav (nazar rakhni hai):**
+
+| Tareekh | Page | Badlav | Kya dekhna hai | Wapas kaise |
+|---|---|---|---|---|
+| 19 Nov 2026 | `/` homepage | Hero ke peeche car-carrier photo + white fade (owner ki farmaish). Text, form, buttons same. Photo 147KB desktop / 60KB mobile | Homepage se leads (CRM "Lead origin" / GA4 generate_lead by landing page) aur homepage clicks — pehle 2 hafte | Commit a2a55f5 revert, ya `nx-hero-photo` class `index.html` se hatana |
+
+Note: photo abhi site ki purani 1024px "illustrative" tasveer se bani hai. Owner ki asli high-quality photo mile to `node tools/make-hero-bg.mjs <photo>` se badal dein.
+
 ---
 
 ## 3. Jin pages par kaam ho chuka hai → nateeje ka intezar
@@ -186,6 +194,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 19 Nov 2026 | 7 worked pages ke liye Google "Request indexing" | — |
 | 19 Nov 2026 | Page #1 transit times: guarantee/FMCSA section, timeline + routes, seasons, din ki ranges theek; live + index request | b8759d7 |
 | 19 Nov 2026 | Page #2 California: in-state routes, Live Oak office, Hawaii→CA, qeematein route pages ke mutabiq, smog claim theek; live + index request | 036b1b5 |
+| 19 Nov 2026 | Homepage hero: car-carrier photo background (protected page — nazar) | a2a55f5 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
