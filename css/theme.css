@@ -782,3 +782,23 @@ main.nx-inner .nx-hero:has(h1.text-center, .text-center > h1, .text-center h1) n
   .nx-mini-quote-wide .nx-mini-quote-row { display: contents; }
   .nx-mini-quote-wide .nx-btn { margin-top: 0; padding: 0 28px; white-space: nowrap; }
 }
+
+/* ================= Homepage hero: car carrier photo behind the hero (index.html #hero-section.nx-hero-photo) =================
+   White fade on the left keeps the dark headline readable; the truck shows on the right, around the quote card. */
+#hero-section.nx-hero-photo::before {
+  content: ''; display: block !important; position: absolute; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.94) 34%, rgba(255,255,255,.55) 62%, rgba(255,255,255,.18) 100%),
+    url('/images/hero-car-carrier.jpg') right center / cover no-repeat;
+  background:
+    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.94) 34%, rgba(255,255,255,.55) 62%, rgba(255,255,255,.18) 100%),
+    image-set(url('/images/hero-car-carrier.webp') type('image/webp'), url('/images/hero-car-carrier.jpg') type('image/jpeg')) right center / cover no-repeat;
+}
+#hero-section.nx-hero-photo::after { display: none; }
+@media (max-width: 1023px) {
+  #hero-section.nx-hero-photo::before {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.58) 0px, rgba(255,255,255,.74) 230px, rgba(255,255,255,.92) 380px, #fff 440px),
+      url('/images/hero-car-carrier-m.webp') center top / 118% auto no-repeat;
+  }
+}
