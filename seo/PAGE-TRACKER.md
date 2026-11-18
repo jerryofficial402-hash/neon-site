@@ -53,6 +53,31 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | `/services/car-shipping-to-another-state/` | Distance price/time table, registration deadlines (17 Nov) | — (Google mein nahi) | **Kabhi nahi** | ❌ "Discovered – currently not indexed" → request bheji | | |
 | `/virginia-car-shipping/` | NoVA, Richmond, Hampton Roads section (17 Nov) | 0 / 792 / 49.6 | **23 Sep** | Indexed → request bheji | | |
 
+### 3a. `/car-shipping-transit-times/` — page #1 (detail)
+
+**Baseline (pehle):**
+- 90 din: 1 click / 951 impressions / position 16.3
+- 28 din (22 Sep–19 Oct → 20 Oct–16 Nov): 371 → 131 impressions, position 12.2 → 35.1
+- Google ne aakhri baar parha: (check on deploy day)
+
+**Log kya search kar rahe thay (90 din):**
+- "fmcsa auto transport delivery dates estimate(s) not guaranteed" aur milte-julte: ~85 impressions, position ~9 (page 1!), 0 clicks — page par is ka jawab hi nahi tha
+- "how long does car transport/shipping take": ~90 impressions, position 38–85
+- "car shipping timeframes / time estimate / timeline": ~65 impressions, position 22–26
+
+**Kya badla (19 Nov, commit neeche):**
+- Naya section: **"Are Car Shipping Delivery Dates Guaranteed? What FMCSA Rules Say"** — FMCSA kya karta hai aur kya nahi, Neon ke terms, guaranteed date wali company se kya poochhein, estimate ke hisaab se planning
+- Naya section: **booking se delivery tak timeline** (4 steps) + **9 popular routes** ki table (3 Northern Virginia routes)
+- Naya section: **saal ke kaunse mahine shipping slow hoti hai** + **car jaldi kaise pohnche**
+- Din ki ranges site ke baaqi 100+ pages (cost page) ke mutabiq: 1–2 / 2–3 / 3–5 / 4–7 / 5–9 / 7–10 din (pehle 1–4 … 7–14 likha tha — contradiction tha)
+- Nayi FAQ: "Are car shipping delivery dates guaranteed?" (FAQ schema mein bhi)
+- Title: "How Long Does Car Shipping Take? Transit Times & Delivery Dates | Neon"; nayi description; "Last updated" Nov 2026
+- URL, quote form, design: koi badlav nahi
+- Content ~1,130 → ~1,900 words
+
+**Status:** local par test ✅ → deploy ka intezar → phir Request indexing + IndexNow
+**Check:** deploy + 14 din, deploy + 28 din
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
@@ -63,7 +88,7 @@ Site-wide (har page): naya layout, footer mein dono offices, sahi founding year 
 
 | # | Page | 90 din | Kyun | Kya add karna hai |
 |---|---|---|---|---|
-| **1** | `/car-shipping-transit-times/` | 1 / 951 / **16.3** | Page 2 par hai — page 1 ke sab se qareeb. Pichle mahine 12 → 35 gira | Route ke hisaab se din (table), pickup window, season delay, "jaldi chahiye to?" |
+| ~~1~~ | `/car-shipping-transit-times/` | 1 / 951 / 16.3 | **Kaam ho gaya 19 Nov — neeche section 3a dekhein** | |
 | **2** | `/california-car-shipping/` | 3 / **8,990** / 58.5 | Sab se zyada impressions, Live Oak office California mein | CA routes ki qeematein, Live Oak / Sacramento Valley, CA registration, ports, season |
 | **3** | `/how-to-ship-a-car-to-another-state/` + `/services/car-shipping-to-another-state/` | 0 / 1,929 / 49.2 | Do pages ek hi topic par — Google confuse. Services wala index hi nahi | Dono ko ek mazboot page banana (faisla us waqt) |
 | **4** | `/car-shipping-quote/` | 1 / 1,264 / 53.2 | Quote search karne wale = leads | Quote mein kya hota hai, qeemat kaise banti hai, jaldi quote |
