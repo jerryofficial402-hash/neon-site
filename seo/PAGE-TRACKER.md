@@ -84,6 +84,38 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 3 Dec | | | | | |
 | 17 Dec | | | | | |
 
+### 3b. `/california-car-shipping/` — page #2 (detail)
+
+**Baseline (pehle):**
+- 90 din: 3 clicks / 8,990 impressions / position 58.5
+- 28 din: 3,660 → 3,529 impressions, position 53 → 69.3
+- Google ne aakhri baar parha: (deploy ke din check)
+
+**Log kya search kar rahe thay (929 searches, 90 din):**
+- ~4,650 impressions generic ("car shipping cost", "car shipping") — yeh asal mein cost page ke liye hain, California page ke nahi
+- ~2,900 impressions California wali ("california car shipping", "auto transport california", "car shipping to and from california") — position ~57
+- **Hawaii → California: 451 impressions** ("cost/how long to ship car from hawaii to california") — page par is ka koi section nahi tha
+- Cities ~600 (San Francisco, Los Angeles, Napa, San Diego, Bay Area, Fresno); "best car shipping companies in california" ~200
+
+**Kya badla (19 Nov):**
+- Naya section: **Shipping a Car Within California** — 6 in-state routes (LA–SD, LA–Fresno, SF–LA, Sacramento–LA, SD–Sacramento, SD–Redding) qeemat + din
+- Naya section: **Our Northern California Office in Live Oak** — address, phone, Sutter/Yuba/Butte counties, rural pickup, CA-99/I-5/I-80 routes (pehle page par Live Oak office ka zikr hi nahi tha)
+- Naya section: **Shipping a Car from Hawaii to California** — Matson/Pasha, ports, $1,200–$2,500, 2–3 hafte, port drop-off checklist
+- 3 nayi FAQs (Hawaii cost, Hawaii time, California office) — schema + page par dikhti hain
+- **Qeematein theek:** CA↔TX $950–1,300 / 3–6 din, CA↔FL $1,200–1,650, CA↔NY $1,250–1,700, CA↔WA $700–1,100, CA↔AZ $300–550 / 1–2 din, in-state $250–500 — ab dedicated route pages se milti hain (pehle CA→TX $1,075–1,450 tha, route page par $950–1,300)
+- City cost table: har city ke liye $25–50 ka farq hata diya (asal data par mabni nahi tha)
+- **Smog claim theek:** "4 saal se nayi cars exempt" hataya (yeh rule California ke andar transfer ka hai, doosri state se aane wali car ka nahi)
+- Title: "California Car Shipping Cost, Routes & Times | Neon Auto Transport"; nayi description (Hawaii + Live Oak)
+- URL, quote form, design: koi badlav nahi
+
+**Status:** local par test ✅ → deploy ka intezar
+
+| Check | Clicks | Impressions | Position | Hawaii→CA searches | Note |
+|---|---|---|---|---|---|
+| Baseline (90 din) | 3 | 8,990 | 58.5 | 451 impr, pos ~58 | |
+| 2 hafte | | | | | |
+| 4 hafte | | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
@@ -95,7 +127,7 @@ Site-wide (har page): naya layout, footer mein dono offices, sahi founding year 
 | # | Page | 90 din | Kyun | Kya add karna hai |
 |---|---|---|---|---|
 | ~~1~~ | `/car-shipping-transit-times/` | 1 / 951 / 16.3 | **Kaam ho gaya 19 Nov — neeche section 3a dekhein** | |
-| **2** | `/california-car-shipping/` | 3 / **8,990** / 58.5 | Sab se zyada impressions, Live Oak office California mein | CA routes ki qeematein, Live Oak / Sacramento Valley, CA registration, ports, season |
+| ~~2~~ | `/california-car-shipping/` | 3 / 8,990 / 58.5 | **Kaam ho gaya 19 Nov — section 3b** | |
 | **3** | `/how-to-ship-a-car-to-another-state/` + `/services/car-shipping-to-another-state/` | 0 / 1,929 / 49.2 | Do pages ek hi topic par — Google confuse. Services wala index hi nahi | Dono ko ek mazboot page banana (faisla us waqt) |
 | **4** | `/car-shipping-quote/` | 1 / 1,264 / 53.2 | Quote search karne wale = leads | Quote mein kya hota hai, qeemat kaise banti hai, jaldi quote |
 | **5** | `/best-car-shipping-companies/` | 0 / 368 / **17.9** | Page 2; AI tools "best company" lists se jawab dete hain | Sach-mutch comparison, criteria, Neon ki jagah imaandari se |
@@ -137,6 +169,9 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | Google kai URLs `//` aur `.html` ke saath bhi dikhata hai (redirect 308 hota hai) | Halka — redirect sahi hai | Nazar |
 | `/routes/route-template/` Google mein (1 impression) | Template page — ab 404 deta hai, Google khud hata dega | ✅ Theek (deploy se bahar) |
 | `?rwg_token=…` URLs | Google Business Profile ke links — normal | Kuch nahi karna |
+| **Qeematein site par ek jaisi nahi** — e.g. WA→CA page $550–950 / 2–4 din, CA→WA page $750–1,300 / 3–6 din; `/hawaii-car-shipping/` Hawaii→CA "6–10 din" (asal 2–3 hafte) | Google/AI ko contradiction dikhta hai | Alag "price consistency" kaam — route pages ek ek kar ke |
+| Route pages par har city pair ki distance same (e.g. CA→TX table: LA–Houston aur SF–Houston dono "~1,618 mi") | Ghalat lagta hai | Route pages ke kaam ke saath |
+| "4 saal se nayi cars smog se exempt" wala claim `/routes/city/los-angeles-ca/` aur `/routes/city/fresno-ca/` par bhi | Ghalat maloomat | Un pages ke kaam ke saath theek karna |
 
 ---
 
