@@ -42,8 +42,9 @@ Rule: in pages ka URL, form aur design nahi badlega. Sirf maloomat barhegi, woh 
 | Tareekh | Page | Badlav | Kya dekhna hai | Wapas kaise |
 |---|---|---|---|---|
 | 19 Nov 2026 | `/` homepage | Hero ke peeche car-carrier photo + white fade (owner ki farmaish). Text, form, buttons same. Photo 147KB desktop / 60KB mobile | Homepage se leads (CRM "Lead origin" / GA4 generate_lead by landing page) aur homepage clicks — pehle 2 hafte | Commit a2a55f5 revert, ya `nx-hero-photo` class `index.html` se hatana |
+| 20 Nov 2026 | `/` homepage | Dhundli photo ki jagah HD photo (Unsplash, Cooper White, 3912px original; truck par doosri company ka naam/USDOT/MC mitaya). 130KB desktop / 46KB mobile; Image Credits par credit | Wahi — homepage leads aur clicks | Commit 9bc2a39 revert (purani photo wapas) |
 
-Note: photo abhi site ki purani 1024px "illustrative" tasveer se bani hai. Owner ki asli high-quality photo mile to `node tools/make-hero-bg.mjs <photo>` se badal dein.
+Note: 20 Nov se hero photo HD hai (`tools/make-hero-bg2.mjs`, original file `C:/Users/DYNABOOK/neon-downloads/unsplash-q36Yp9RpHa0/`). Owner ki apni asli photo mile to usi script se badal sakte hain.
 
 ---
 
@@ -195,6 +196,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 19 Nov 2026 | Page #1 transit times: guarantee/FMCSA section, timeline + routes, seasons, din ki ranges theek; live + index request | b8759d7 |
 | 19 Nov 2026 | Page #2 California: in-state routes, Live Oak office, Hawaii→CA, qeematein route pages ke mutabiq, smog claim theek; live + index request | 036b1b5 |
 | 19 Nov 2026 | Homepage hero: car-carrier photo background (protected page — nazar) | a2a55f5 |
+| 20 Nov 2026 | Homepage hero: HD Unsplash photo (lettering removed), asset version 20261120 | 9bc2a39, 6d08ac4 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
