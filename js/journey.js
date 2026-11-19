@@ -1,93 +1,98 @@
 // Homepage: "how it works" journey animation, hero quick-quote hand-off to the full calculator,
 // and arrows for the service photo cards. No dependencies.
 (function () {
-  // ---------- Journey animation ----------
-  var stage = document.querySelector('.nx-jr-stage');
-  if (stage) {
-    var truck = stage.querySelector('.nx-jr-truck');
-    var bubble = stage.querySelector('.nx-jr-bubble');
-    var stops = [].slice.call(stage.querySelectorAll('.nx-jr-stops li'));
+  // ---------- 3D journey fly-through ----------
+  var root = document.querySelector('.nx-j3');
+  if (root) {
+    var cam = root.querySelector('.nx-j3-cam');
+    var devs = [].slice.call(root.querySelectorAll('.nx-j3-dev'));
+    var truck = root.querySelector('.nx-j3-truck');
+    var hud = root.querySelector('.nx-j3-hud');
+    var bars = [].slice.call(root.querySelectorAll('.nx-j3-progress i'));
     var items = [].slice.call(document.querySelectorAll('.nx-jr-steps li'));
-    var playBtn = stage.querySelector('.nx-jr-play');
-    var X = [10, 30, 50, 70, 90];
+    var playBtn = root.querySelector('.nx-j3-play');
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var step = 0, playing = !reduce, visible = false, timer = null;
-    var DRIVE = 2000, DWELL = 2600;
+    var X = devs.map(function (d) { return parseFloat(d.style.getPropertyValue('--x')) || 0; });
+    var TY = -215, TZ = -260, DIST = 470, TILT = -9, YAW = -13;
+    var DRIVE = 2300, DWELL = 5200;
+    var step = 0, playing = !reduce, visible = false, started = false, timer = null;
+    var camX = X[0] - 900, tween = null, t0 = performance.now();
 
-    function setText(i) {
-      var li = items[i];
-      bubble.querySelector('.nx-jr-num').textContent = i + 1;
-      bubble.querySelector('b').textContent = li.querySelector('b').textContent;
-      bubble.querySelector('p').textContent = li.querySelector('.nx-jr-t').textContent;
+    function ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    function frame(now) {
+      var sway = 0, k = 0;
+      if (tween) {
+        k = Math.min(1, (now - tween.start) / tween.dur);
+        camX = tween.from + (tween.to - tween.from) * ease(k);
+        sway = Math.sin(Math.PI * k) * (tween.to > tween.from ? 9 : -9);
+        if (k >= 1) { var cb = tween.done; tween = null; root.classList.remove('is-moving'); if (cb) cb(); }
+      }
+      var idle = reduce ? 0 : Math.sin((now - t0) / 2600) * 1.6;
+      cam.style.transform = 'translateZ(' + (-DIST) + 'px) rotateX(' + TILT + 'deg) rotateY(' + (YAW + sway + idle) + 'deg) translate3d(' + (-camX) + 'px,' + (-TY) + 'px,' + (-TZ) + 'px)';
+      truck.style.setProperty('--x', (camX + (window.innerWidth < 900 ? 140 : 330)) + 'px');
+      if (visible || tween) raf = requestAnimationFrame(frame); else raf = null;
     }
-    function mark(i) {
-      stops.forEach(function (s, k) { s.classList.toggle('is-on', k === i); s.classList.toggle('is-done', k < i); });
+    var raf = null;
+    function loop() { if (!raf) raf = requestAnimationFrame(frame); }
+    function fly(to, dur, done) {
+      if (reduce) { camX = to; loop(); if (done) done(); return; }
+      tween = { from: camX, to: to, start: performance.now(), dur: dur, done: done };
+      root.classList.add('is-moving'); loop();
+    }
+    function show(i) {
+      devs.forEach(function (d, k) { d.classList.remove('is-active'); });
+      void root.offsetWidth;
+      devs[i].classList.add('is-active');
+      var li = items[i];
+      hud.querySelector('.nx-j3-num').textContent = i + 1;
+      hud.querySelector('b').textContent = li.querySelector('b').textContent;
+      hud.querySelector('p').textContent = li.querySelector('.nx-jr-t').textContent;
+      hud.classList.remove('is-out');
+      bars.forEach(function (b, k) { b.classList.toggle('is-done', k < i); b.classList.remove('is-on'); });
+      void root.offsetWidth;
+      root.style.setProperty('--dwell', DWELL + 'ms');
+      if (playing) bars[i].classList.add('is-on'); else bars[i].classList.add('is-done');
       items.forEach(function (s, k) { s.classList.toggle('is-on', k === i); });
-      stage.setAttribute('data-step', i);
+      root.setAttribute('data-step', i);
     }
     function clear() { clearTimeout(timer); timer = null; }
-    function go(i, instant) {
-      clear();
-      step = i;
-      bubble.classList.add('is-out');
-      if (instant || reduce) {
-        truck.style.transition = 'none'; truck.style.left = X[i] + '%';
-        void truck.offsetWidth; truck.style.transition = '';
-        setText(i); mark(i); bubble.classList.remove('is-out');
-        if (playing && visible) timer = setTimeout(next, DWELL);
-        return;
-      }
-      stage.classList.add('is-moving');
-      truck.style.left = X[i] + '%';
-      timer = setTimeout(function () {
-        stage.classList.remove('is-moving');
-        setText(i); mark(i); bubble.classList.remove('is-out');
-        if (playing && visible) timer = setTimeout(next, DWELL);
-      }, DRIVE);
+    function go(i) {
+      clear(); step = i;
+      fly(X[i], DRIVE, function () { show(i); if (playing && visible) timer = setTimeout(next, DWELL); });
     }
     function next() {
-      if (step < 4) return go(step + 1);
-      // drive off the right edge, then come back in from the left
-      clear(); bubble.classList.add('is-out'); stage.classList.add('is-moving');
-      truck.style.left = '118%';
-      timer = setTimeout(function () {
-        truck.style.transition = 'none'; truck.style.left = '-20%';
-        void truck.offsetWidth; truck.style.transition = '';
-        stops.forEach(function (s) { s.classList.remove('is-on', 'is-done'); });
-        go(0);
-      }, DRIVE);
+      if (step < devs.length - 1) return go(step + 1);
+      clear(); hud.classList.add('is-out');
+      devs.forEach(function (d) { d.classList.remove('is-active'); });
+      fly(X[0] - 700, 2600, function () { go(0); });
     }
     function setPlaying(p) {
       playing = p;
-      stage.classList.toggle('is-paused', !p);
+      root.classList.toggle('is-paused', !p);
       playBtn.setAttribute('aria-label', p ? 'Pause animation' : 'Play animation');
       clear();
-      if (p && visible) timer = setTimeout(next, 900);
+      if (p && visible && !tween) timer = setTimeout(next, 1500);
     }
     playBtn.addEventListener('click', function () { setPlaying(!playing); });
     items.forEach(function (li, k) {
       li.querySelector('button').addEventListener('click', function () { setPlaying(false); go(k); });
     });
-    // start at the left edge, drive to step 1 when the stage scrolls into view
-    truck.style.transition = 'none'; truck.style.left = '-20%'; void truck.offsetWidth; truck.style.transition = '';
-    if (reduce) { stage.classList.add('is-paused'); go(0, true); }
-    var started = false;
+    function start() { if (started) return; started = true; visible = true; loop(); go(0); }
     var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
       visible = es[0].isIntersecting;
-      if (visible && !started) { started = true; go(0); }
-      else if (visible && playing && !timer) timer = setTimeout(next, 900);
-      else if (!visible) clear();
-    }, { threshold: 0.35 }) : null;
-    if (io) io.observe(stage);
-    // fallback (no IntersectionObserver, or it never reports): check on scroll
+      if (visible && !started) start();
+      else if (visible) { loop(); if (playing && !timer && !tween) timer = setTimeout(next, 1200); }
+      else clear();
+    }, { threshold: 0.3 }) : null;
+    if (io) io.observe(root);
     var check = function () {
-      var r = stage.getBoundingClientRect(), h = window.innerHeight || document.documentElement.clientHeight;
+      var r = root.getBoundingClientRect(), h = window.innerHeight || document.documentElement.clientHeight;
       var inView = r.top < h * 0.8 && r.bottom > h * 0.2;
-      if (inView && !started) { visible = true; started = true; go(0); }
-      else if (!io) { visible = inView; if (!inView) clear(); else if (playing && !timer) timer = setTimeout(next, 900); }
+      if (inView && !started) start();
     };
     window.addEventListener('scroll', check, { passive: true });
-    check();
+    if (reduce) root.classList.add('is-paused');
+    loop(); check();
   }
 
   // ---------- Hero quick quote -> full calculator on this page ----------
