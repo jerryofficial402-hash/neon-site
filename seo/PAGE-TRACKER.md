@@ -43,6 +43,7 @@ Rule: in pages ka URL, form aur design nahi badlega. Sirf maloomat barhegi, woh 
 |---|---|---|---|---|
 | 19 Nov 2026 | `/` homepage | Hero ke peeche car-carrier photo + white fade (owner ki farmaish). Text, form, buttons same. Photo 147KB desktop / 60KB mobile | Homepage se leads (CRM "Lead origin" / GA4 generate_lead by landing page) aur homepage clicks — pehle 2 hafte | Commit a2a55f5 revert, ya `nx-hero-photo` class `index.html` se hatana |
 | 20 Nov 2026 | `/` homepage | Dhundli photo ki jagah HD photo (Unsplash, Cooper White, 3912px original; truck par doosri company ka naam/USDOT/MC mitaya). 130KB desktop / 46KB mobile; Image Credits par credit | Wahi — homepage leads aur clicks | Commit 9bc2a39 revert (purani photo wapas) |
+| 20 Nov 2026 | `/` homepage | **Tesla-style redesign** (owner ki farmaish): full-screen HD hero + 3-field quick quote (H1/text same); apni original "how it works" animation (truck 5 steps); 6 bare HD photo service cards (Unsplash, credits); poora quote form ab `#quote` section mein (same form/IDs, lead tests pass). Purana 8-card services grid hataya (links neeche "Also" line mein) | Homepage leads (hero quick quote ab neeche form bharta hai), clicks, page speed | Local commit revert |
 
 Note: 20 Nov se hero photo HD hai (`tools/make-hero-bg2.mjs`, original file `C:/Users/DYNABOOK/neon-downloads/unsplash-q36Yp9RpHa0/`). Owner ki apni asli photo mile to usi script se badal sakte hain.
 

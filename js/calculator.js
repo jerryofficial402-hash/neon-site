@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const vehicleTypeParam = urlParams.get('vehicle');
     if (vehicleTypeParam) {
         const firstVehicleTypeSelect = document.querySelector('.vehicle-group .vehicleType');
-        if (firstVehicleTypeSelect) {
+        // only if the full form has that option (the mini forms also offer motorcycle/classic)
+        if (firstVehicleTypeSelect && [...firstVehicleTypeSelect.options].some(o => o.value === vehicleTypeParam)) {
             firstVehicleTypeSelect.value = vehicleTypeParam;
         }
     }
