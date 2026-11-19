@@ -784,21 +784,22 @@ main.nx-inner .nx-hero:has(h1.text-center, .text-center > h1, .text-center h1) n
 }
 
 /* ================= Homepage hero: car carrier photo behind the hero (index.html #hero-section.nx-hero-photo) =================
-   White fade on the left keeps the dark headline readable; the truck shows on the right, around the quote card. */
+   Photo: Unsplash, Cooper White (lettering removed). Fitted to the hero height and anchored low so the whole truck shows;
+   a white fade on the left keeps the dark headline readable. */
 #hero-section.nx-hero-photo::before {
   content: ''; display: block !important; position: absolute; inset: 0; z-index: -2; pointer-events: none;
   background:
-    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.94) 34%, rgba(255,255,255,.55) 62%, rgba(255,255,255,.18) 100%),
-    url('/images/hero-car-carrier.jpg') right center / cover no-repeat;
+    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.9) 28%, rgba(255,255,255,.45) 50%, rgba(255,255,255,.12) 72%, rgba(255,255,255,.05) 100%),
+    url('/images/hero-car-carrier-hd.jpg') 100% 100% / auto 92% no-repeat, #fff;
   background:
-    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.94) 34%, rgba(255,255,255,.55) 62%, rgba(255,255,255,.18) 100%),
-    image-set(url('/images/hero-car-carrier.webp') type('image/webp'), url('/images/hero-car-carrier.jpg') type('image/jpeg')) right center / cover no-repeat;
+    linear-gradient(90deg, #fff 0%, rgba(255,255,255,.9) 28%, rgba(255,255,255,.45) 50%, rgba(255,255,255,.12) 72%, rgba(255,255,255,.05) 100%),
+    image-set(url('/images/hero-car-carrier-hd.webp') type('image/webp'), url('/images/hero-car-carrier-hd.jpg') type('image/jpeg')) 100% 100% / auto 92% no-repeat, #fff;
 }
 #hero-section.nx-hero-photo::after { display: none; }
 @media (max-width: 1023px) {
   #hero-section.nx-hero-photo::before {
     background:
-      linear-gradient(180deg, rgba(255,255,255,.58) 0px, rgba(255,255,255,.74) 230px, rgba(255,255,255,.92) 380px, #fff 440px),
-      url('/images/hero-car-carrier-m.webp') center top / 118% auto no-repeat;
+      linear-gradient(180deg, rgba(255,255,255,.5) 0px, rgba(255,255,255,.72) 140px, rgba(255,255,255,.93) 230px, #fff 272px),
+      url('/images/hero-car-carrier-hd-m.webp') center top / 100% auto no-repeat, #fff;
   }
 }
