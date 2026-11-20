@@ -902,7 +902,15 @@ main.nx-inner .nx-hero:has(h1.text-center, .text-center > h1, .text-center h1) n
     url('/images/hero-car-carrier-hd.jpg') 100% 100% / auto 92% no-repeat, #fff;
   background:
     linear-gradient(90deg, #fff 0%, rgba(255,255,255,.9) 28%, rgba(255,255,255,.45) 50%, rgba(255,255,255,.12) 72%, rgba(255,255,255,.05) 100%),
-    image-set(url('/images/hero-car-carrier-hd.webp') type('image/webp'), url('/images/hero-car-carrier-hd.jpg') type('image/jpeg')) 100% 100% / auto 92% no-repeat, #fff;
+    image-set(url('/images/hero-car-carrier-1280.webp') type('image/webp'), url('/images/hero-car-carrier-hd.jpg') type('image/jpeg')) 100% 100% / auto 92% no-repeat, #fff;
+}
+/* big or high-density screens get the full 1920px photo */
+@media (min-width: 1600px), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  #hero-section.nx-hero-photo::before {
+    background:
+      linear-gradient(90deg, #fff 0%, rgba(255,255,255,.9) 28%, rgba(255,255,255,.45) 50%, rgba(255,255,255,.12) 72%, rgba(255,255,255,.05) 100%),
+      image-set(url('/images/hero-car-carrier-hd.webp') type('image/webp'), url('/images/hero-car-carrier-hd.jpg') type('image/jpeg')) 100% 100% / auto 92% no-repeat, #fff;
+  }
 }
 #hero-section.nx-hero-photo::after { display: none; }
 @media (max-width: 1023px) {
