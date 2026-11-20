@@ -1097,3 +1097,11 @@ main.nx-inner .nx-hero:has(h1.text-center, .text-center > h1, .text-center h1) n
 .nx-th-form { color: var(--nx-ink); scroll-margin-top: calc(var(--nx-header-h) + 12px); }
 .nx-th-form .nx-quote-card { box-shadow: 0 30px 60px -20px rgba(0,0,0,.5) !important; }
 #hero-section.nx-th { padding-bottom: 64px !important; }
+
+/* ---------- Homepage journey: WebGL stage (js/journey3d.js) ---------- */
+.nx-j3 { background: #eef2f7; }
+.nx-j3-gl { position: absolute; inset: 0; background: #eef2f7 url("/images/3d/poster.webp") center / cover no-repeat; }
+.nx-j3-gl canvas { display: block; width: 100%; height: 100%; opacity: 0; transition: opacity .7s ease; }
+.nx-j3.is-ready .nx-j3-gl canvas { opacity: 1; }
+.nx-j3.is-failed .nx-j3-play { display: none; }
+@media (max-width: 759px) { .nx-j3 { height: 480px; } }

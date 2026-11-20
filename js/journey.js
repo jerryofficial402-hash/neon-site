@@ -1,98 +1,25 @@
-// Homepage: "how it works" journey animation, hero quick-quote hand-off to the full calculator,
+// Homepage: lazy loader for the WebGL "how it works" journey, hero quick-quote hand-off to the full calculator,
 // and arrows for the service photo cards. No dependencies.
 (function () {
-  // ---------- 3D journey fly-through ----------
+  // ---------- 3D journey (WebGL, /js/journey3d.js) ----------
+  // Loads three.js + the truck models only when the section gets close to the viewport.
   var root = document.querySelector('.nx-j3');
   if (root) {
-    var cam = root.querySelector('.nx-j3-cam');
-    var devs = [].slice.call(root.querySelectorAll('.nx-j3-dev'));
-    var truck = root.querySelector('.nx-j3-truck');
-    var hud = root.querySelector('.nx-j3-hud');
-    var bars = [].slice.call(root.querySelectorAll('.nx-j3-progress i'));
-    var items = [].slice.call(document.querySelectorAll('.nx-jr-steps li'));
-    var playBtn = root.querySelector('.nx-j3-play');
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var X = devs.map(function (d) { return parseFloat(d.style.getPropertyValue('--x')) || 0; });
-    var TY = -215, TZ = -260, DIST = 470, TILT = -9, YAW = -13;
-    var DRIVE = 2300, DWELL = 5200;
-    var step = 0, playing = !reduce, visible = false, started = false, timer = null;
-    var camX = X[0] - 900, tween = null, t0 = performance.now();
-
-    function ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
-    function frame(now) {
-      var sway = 0, k = 0;
-      if (tween) {
-        k = Math.min(1, (now - tween.start) / tween.dur);
-        camX = tween.from + (tween.to - tween.from) * ease(k);
-        sway = Math.sin(Math.PI * k) * (tween.to > tween.from ? 9 : -9);
-        if (k >= 1) { var cb = tween.done; tween = null; root.classList.remove('is-moving'); if (cb) cb(); }
-      }
-      var idle = reduce ? 0 : Math.sin((now - t0) / 2600) * 1.6;
-      cam.style.transform = 'translateZ(' + (-DIST) + 'px) rotateX(' + TILT + 'deg) rotateY(' + (YAW + sway + idle) + 'deg) translate3d(' + (-camX) + 'px,' + (-TY) + 'px,' + (-TZ) + 'px)';
-      truck.style.setProperty('--x', (camX + (window.innerWidth < 900 ? 140 : 330)) + 'px');
-      if (visible || tween) raf = requestAnimationFrame(frame); else raf = null;
-    }
-    var raf = null;
-    function loop() { if (!raf) raf = requestAnimationFrame(frame); }
-    function fly(to, dur, done) {
-      if (reduce) { camX = to; loop(); if (done) done(); return; }
-      tween = { from: camX, to: to, start: performance.now(), dur: dur, done: done };
-      root.classList.add('is-moving'); loop();
-    }
-    function show(i) {
-      devs.forEach(function (d, k) { d.classList.remove('is-active'); });
-      void root.offsetWidth;
-      devs[i].classList.add('is-active');
-      var li = items[i];
-      hud.querySelector('.nx-j3-num').textContent = i + 1;
-      hud.querySelector('b').textContent = li.querySelector('b').textContent;
-      hud.querySelector('p').textContent = li.querySelector('.nx-jr-t').textContent;
-      hud.classList.remove('is-out');
-      bars.forEach(function (b, k) { b.classList.toggle('is-done', k < i); b.classList.remove('is-on'); });
-      void root.offsetWidth;
-      root.style.setProperty('--dwell', DWELL + 'ms');
-      if (playing) bars[i].classList.add('is-on'); else bars[i].classList.add('is-done');
-      items.forEach(function (s, k) { s.classList.toggle('is-on', k === i); });
-      root.setAttribute('data-step', i);
-    }
-    function clear() { clearTimeout(timer); timer = null; }
-    function go(i) {
-      clear(); step = i;
-      fly(X[i], DRIVE, function () { show(i); if (playing && visible) timer = setTimeout(next, DWELL); });
-    }
-    function next() {
-      if (step < devs.length - 1) return go(step + 1);
-      clear(); hud.classList.add('is-out');
-      devs.forEach(function (d) { d.classList.remove('is-active'); });
-      fly(X[0] - 700, 2600, function () { go(0); });
-    }
-    function setPlaying(p) {
-      playing = p;
-      root.classList.toggle('is-paused', !p);
-      playBtn.setAttribute('aria-label', p ? 'Pause animation' : 'Play animation');
-      clear();
-      if (p && visible && !tween) timer = setTimeout(next, 1500);
-    }
-    playBtn.addEventListener('click', function () { setPlaying(!playing); });
-    items.forEach(function (li, k) {
-      li.querySelector('button').addEventListener('click', function () { setPlaying(false); go(k); });
-    });
-    function start() { if (started) return; started = true; visible = true; loop(); go(0); }
-    var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
-      visible = es[0].isIntersecting;
-      if (visible && !started) start();
-      else if (visible) { loop(); if (playing && !timer && !tween) timer = setTimeout(next, 1200); }
-      else clear();
-    }, { threshold: 0.3 }) : null;
-    if (io) io.observe(root);
-    var check = function () {
-      var r = root.getBoundingClientRect(), h = window.innerHeight || document.documentElement.clientHeight;
-      var inView = r.top < h * 0.8 && r.bottom > h * 0.2;
-      if (inView && !started) start();
+    var V = (document.currentScript && /[?&]v=([^&]+)/.exec(document.currentScript.src) || [])[1] || '';
+    var gl = (function () { try { var c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } })();
+    var loaded = false;
+    var boot = function () {
+      if (loaded) return; loaded = true;
+      import('/js/journey3d.js?v=' + V).then(function (m) { m.initJourney3D(root, { v: V }); })
+        .catch(function () { root.classList.add('is-failed'); });
     };
-    window.addEventListener('scroll', check, { passive: true });
-    if (reduce) root.classList.add('is-paused');
-    loop(); check();
+    if (!gl) root.classList.add('is-failed');
+    else if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { io.disconnect(); boot(); } }, { rootMargin: '600px 0px' });
+      io.observe(root);
+      var near = function () { var r = root.getBoundingClientRect(); if (r.top < (window.innerHeight || 800) + 600) { window.removeEventListener('scroll', near); boot(); } };
+      window.addEventListener('scroll', near, { passive: true }); near();
+    } else boot();
   }
 
   // ---------- Hero quick quote -> full calculator on this page ----------
