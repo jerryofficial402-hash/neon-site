@@ -144,14 +144,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 - Title: "Florida to California Car Shipping: Cost & Transit | Neon" (57); nayi description (148); .md copies aur sitemap lastmod update
 - Content 298 → ~1,430 words. URL same
 
-**Status:** ⏳ Local (live ka OK baaqi)
-**Check:** live ke 14 aur 28 din baad
+**Status:** ✅ Live 21 Nov 2026 (commit c19639d) · Google "Request indexing" ✅ 21 Nov · IndexNow (Bing) ✅ 21 Nov
+**Index status (21 Nov):** ❌ "Discovered – currently not indexed", Google ne **kabhi crawl nahi kiya**, referring page "None detected" (jabke ab 8 pages link karte hain: homepage, California, Florida, CA→FL waghera). Baqi 14 thin `.html` route pages ka bhi shayad yahi haal hai — un par kaam karte waqt check karna.
+**Check:** 5 Dec 2026 (+14 din), 19 Dec 2026 (+28 din)
 
 | Check | Clicks | Impressions | Position | Note |
 |---|---|---|---|---|
 | Baseline (90 din) | 0 | 0 | — | |
-| +14 din | | | | |
-| +28 din | | | | |
+| 5 Dec | | | | |
+| 19 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -228,6 +229,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 20 Nov 2026 | Homepage: service photo cards + 5 step cards live; asset version 20261121; IndexNow / and /image-credits/ | aad6499..f6b9513 |
 | 20 Nov 2026 | Site-wide hover effects (buttons lift/glow/shine, cards lift + blue top line) + homepage scroll reveal; asset version 20261122. Content/URLs unchanged | de8cdf8 |
 | 21 Nov 2026 | SEO audit (OpenSEO + full scan, `seo/AUDIT-2026-11-21.md`). Quick fixes live: descriptive "Learn more" links on homepage, blog/author WebP thumbnails + lazy loading, 1280px hero for 1x desktops, h4→h3 on Woodbridge, Arlington, cheapest-way, Woodbridge blog; asset version 20261123; IndexNow 7 URLs | 5102575 |
+| 21 Nov 2026 | `/florida-to-california-car-shipping/` thin page rebuild live (298 → ~1,430 words); request indexing + IndexNow | c19639d |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
