@@ -43,7 +43,7 @@ Rule: in pages ka URL, form aur design nahi badlega. Sirf maloomat barhegi, woh 
 |---|---|---|---|---|
 | 19 Nov 2026 | `/` homepage | Hero ke peeche car-carrier photo + white fade (owner ki farmaish). Text, form, buttons same. Photo 147KB desktop / 60KB mobile | Homepage se leads (CRM "Lead origin" / GA4 generate_lead by landing page) aur homepage clicks — pehle 2 hafte | Commit a2a55f5 revert, ya `nx-hero-photo` class `index.html` se hatana |
 | 20 Nov 2026 | `/` homepage | Dhundli photo ki jagah HD photo (Unsplash, Cooper White, 3912px original; truck par doosri company ka naam/USDOT/MC mitaya). 130KB desktop / 46KB mobile; Image Credits par credit | Wahi — homepage leads aur clicks | Commit 9bc2a39 revert (purani photo wapas) |
-| 20 Nov 2026 | `/` homepage | **Tesla-style redesign** (owner ki farmaish): full-screen HD hero + 3-field quick quote (H1/text same); apni original "how it works" 3D fly-through animation (camera sadak par 5 devices ke paas se guzarta hai, har screen par us step ka UI chalta hai); 6 bare HD photo service cards (Unsplash, credits); poora quote form ab `#quote` section mein (same form/IDs, lead tests pass). Purana 8-card services grid hataya (links neeche "Also" line mein) | Homepage leads (hero quick quote ab neeche form bharta hai), clicks, page speed | Local commit revert |
+| 20 Nov 2026 | `/` homepage | **LIVE (f6b9513)**: hero waisa hi (light photo + poora quote form, owner ki pasand). Naya: 6 bare HD photo service cards (Unsplash, credits) aur "How it works" 5 saade step cards. Tesla dark hero, 3D/WebGL animation aur Flow AI videos owner ne reject kiye, hata diye. Purana 8-card services grid hataya (links neeche "Also" line mein) | Homepage leads (CRM "Lead origin" / GA4 generate_lead), clicks, page speed — 4 Dec aur 18 Dec ko dekhna | `git revert` f6b9513..aad6499 range |
 
 Note: 20 Nov se hero photo HD hai (`tools/make-hero-bg2.mjs`, original file `C:/Users/DYNABOOK/neon-downloads/unsplash-q36Yp9RpHa0/`). Owner ki apni asli photo mile to usi script se badal sakte hain.
 
@@ -198,6 +198,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 19 Nov 2026 | Page #2 California: in-state routes, Live Oak office, Hawaii→CA, qeematein route pages ke mutabiq, smog claim theek; live + index request | 036b1b5 |
 | 19 Nov 2026 | Homepage hero: car-carrier photo background (protected page — nazar) | a2a55f5 |
 | 20 Nov 2026 | Homepage hero: HD Unsplash photo (lettering removed), asset version 20261120 | 9bc2a39, 6d08ac4 |
+| 20 Nov 2026 | Homepage: service photo cards + 5 step cards live; asset version 20261121; IndexNow / and /image-credits/ | aad6499..f6b9513 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
