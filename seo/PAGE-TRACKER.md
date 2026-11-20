@@ -199,6 +199,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 19 Nov 2026 | Homepage hero: car-carrier photo background (protected page — nazar) | a2a55f5 |
 | 20 Nov 2026 | Homepage hero: HD Unsplash photo (lettering removed), asset version 20261120 | 9bc2a39, 6d08ac4 |
 | 20 Nov 2026 | Homepage: service photo cards + 5 step cards live; asset version 20261121; IndexNow / and /image-credits/ | aad6499..f6b9513 |
+| 20 Nov 2026 | Site-wide hover effects (buttons lift/glow/shine, cards lift + blue top line) + homepage scroll reveal; asset version 20261122. Content/URLs unchanged | de8cdf8 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
