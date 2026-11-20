@@ -1,27 +1,6 @@
-// Homepage: lazy loader for the WebGL "how it works" journey, hero quick-quote hand-off to the full calculator,
+// Homepage: hero quick-quote hand-off to the full calculator,
 // and arrows for the service photo cards. No dependencies.
 (function () {
-  // ---------- 3D journey (WebGL, /js/journey3d.js) ----------
-  // Loads three.js + the truck models only when the section gets close to the viewport.
-  var root = document.querySelector('.nx-j3');
-  if (root) {
-    var V = (document.currentScript && /[?&]v=([^&]+)/.exec(document.currentScript.src) || [])[1] || '';
-    var gl = (function () { try { var c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } })();
-    var loaded = false;
-    var boot = function () {
-      if (loaded) return; loaded = true;
-      import('/js/journey3d.js?v=' + V).then(function (m) { m.initJourney3D(root, { v: V }); })
-        .catch(function () { root.classList.add('is-failed'); });
-    };
-    if (!gl) root.classList.add('is-failed');
-    else if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { io.disconnect(); boot(); } }, { rootMargin: '600px 0px' });
-      io.observe(root);
-      var near = function () { var r = root.getBoundingClientRect(); if (r.top < (window.innerHeight || 800) + 600) { window.removeEventListener('scroll', near); boot(); } };
-      window.addEventListener('scroll', near, { passive: true }); near();
-    } else boot();
-  }
-
   // ---------- Hero quick quote -> full calculator on this page ----------
   var quick = document.querySelector('.nx-th-quote');
   var full = document.getElementById('advancedCalcForm');
