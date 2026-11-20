@@ -23,6 +23,34 @@
   }
   function reduceMotion() { return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
 
+  // ---------- Scroll-in reveal for section heads and cards (homepage) ----------
+  (function () {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var groups = ['.nx-jr .nx-sec-head', '.nx-jr-steps li', '.nx-svc .nx-sec-head', '.nx-svc-card'];
+    var els = [];
+    groups.forEach(function (sel) {
+      [].forEach.call(document.querySelectorAll(sel), function (el, k) {
+        var r = el.getBoundingClientRect();
+        if (r.top < (window.innerHeight || 800)) return;          // already on screen: leave as is
+        el.style.setProperty('--rv-d', (Math.min(k, 5) * 0.09) + 's');
+        el.classList.add('nx-rv'); els.push(el);
+      });
+    });
+    if (!els.length) return;
+    var show = function (el) { el.classList.add('is-in'); };
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (el) { io.observe(el); });
+    // fallback for browsers that throttle the observer (and a safety net so nothing stays hidden)
+    var check = function () {
+      var h = window.innerHeight || 800;
+      els.forEach(function (el) { if (!el.classList.contains('is-in') && el.getBoundingClientRect().top < h * 0.95) show(el); });
+    };
+    window.addEventListener('scroll', check, { passive: true });
+  })();
+
   // ---------- Service cards arrows ----------
   var track = document.querySelector('.nx-svc-track');
   if (track) {
