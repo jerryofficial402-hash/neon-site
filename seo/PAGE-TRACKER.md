@@ -127,6 +127,32 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 3 Dec | | | | | |
 | 17 Dec | | | | | |
 
+### 3c. `/florida-to-california-car-shipping/` — page #3, audit ka pehla thin page (detail)
+
+**Kyun yeh page:** 21 Nov audit mein 27 thin pages. Keyword data (OpenSEO): "florida to california car shipping" **320 searches/mahina, KD 0, commercial** — thin route pages mein sab se zyada demand. Page sirf 298 words ka template tha.
+
+**Baseline (pehle):**
+- 90 din (GSC 16 Nov export): **0 impressions** — page Google mein dikh hi nahi raha tha
+- Content: 298 words; qeemat $1,000–1,800 / 7–10 din (site ke baaqi pages se alag); table aur CTA box mein safed text safed background par
+
+**Kya badla (21 Nov):**
+- Naya layout: hero + mini quote form (California page jaisa), breadcrumb
+- City-pair table: Miami/Orlando/Jacksonville → LA, Tampa → San Diego ($1,200–1,650 / 6–10 din), Fort Lauderdale → Bay Area aur Miami → Sacramento ($1,250–1,700 / 7–10 din) — **qeematein California page ke mutabiq**
+- Naye sections: I-10 route kaise chalta hai (hours-of-service, 400–500 mi/din), saal ka behtar waqt (spring snowbird mehnga, Oct–Jan sasta, hurricane season), Florida pickup checklist (SunPass, HOA/75 ft truck), California arrival (20 din registration, VIN verification, smog — CA page jaisa), open vs enclosed, 3 steps
+- Sam ka asli Florida → California video review (VideoObject schema)
+- 6 FAQs (schema ke saath), related routes/guides links, chatbot + video script add
+- Title: "Florida to California Car Shipping: Cost & Transit | Neon" (57); nayi description (148); .md copies aur sitemap lastmod update
+- Content 298 → ~1,430 words. URL same
+
+**Status:** ⏳ Local (live ka OK baaqi)
+**Check:** live ke 14 aur 28 din baad
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 0 | — | |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
@@ -182,6 +208,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | `?rwg_token=…` URLs | Google Business Profile ke links — normal | Kuch nahi karna |
 | **Qeematein site par ek jaisi nahi** — e.g. WA→CA page $550–950 / 2–4 din, CA→WA page $750–1,300 / 3–6 din; `/hawaii-car-shipping/` Hawaii→CA "6–10 din" (asal 2–3 hafte) | Google/AI ko contradiction dikhta hai | Alag "price consistency" kaam — route pages ek ek kar ke |
 | Route pages par har city pair ki distance same (e.g. CA→TX table: LA–Houston aur SF–Houston dono "~1,618 mi") | Ghalat lagta hai | Route pages ke kaam ke saath |
+| `/florida-car-shipping/` par Florida → California ke do alag ranges ($1,225–1,650 / 6–10 din aur $1,175–1,700 / 4–9 din, distance 2,550–2,735) jabke CA page aur naya FL→CA page $1,200–1,650 / 6–10 din | Contradiction | Florida page ke kaam ke saath |
 | "4 saal se nayi cars smog se exempt" wala claim `/routes/city/los-angeles-ca/` aur `/routes/city/fresno-ca/` par bhi | Ghalat maloomat | Un pages ke kaam ke saath theek karna |
 
 ---
