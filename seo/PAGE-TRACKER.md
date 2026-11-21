@@ -281,6 +281,9 @@ Site-wide (har page): naya layout, footer mein dono offices, sahi founding year 
 
 ## 4. Agla kaam — priority list (ek ek kar ke)
 
+**Route pages (owner ka faisla 22 Nov — leads ke liye pehle):** har page = GSC baseline + keyword research + Google top 10 competitor analysis → detailed content → OK → live → indexing. Ho chuke: NY→CA, TX→CA, FL→NY, FL→CA. **Agla (23 Nov):** `/new-york-to-florida-car-shipping/` (140) + snowbird page ki qeematein ek karna; phir Michigan→CA (140), California→Texas (140+20), California→Florida (110+10). Baaqi ~150 route keywords ki demand <10/mahina — un par kaam nahi. Comparison pages (RoadRunner 2,400, SGT 2,400 reviews) baad mein.
+
+
 | # | Page | 90 din | Kyun | Kya add karna hai |
 |---|---|---|---|---|
 | ~~1~~ | `/car-shipping-transit-times/` | 1 / 951 / 16.3 | **Kaam ho gaya 19 Nov — neeche section 3a dekhein** | |
