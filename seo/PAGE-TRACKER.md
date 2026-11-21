@@ -254,6 +254,24 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 6 Dec | | | | |
 | 20 Dec | | | | |
 
+### 3i. `/florida-to-new-york-car-shipping/` — page #9, route page (thin template tha)
+
+**Keywords:** "florida to new york car shipping" **480**, "ship car from florida to new york" 110 (KD 0). GSC queries: "car transport from florida to ny", "transporting a car…", "auto transport", "fl to ny" variants.
+
+**Baseline (90 din):** 0 clicks / **685 impressions / position 77.9** (52 queries). Page 313 words thin template ($650–1,200 / 3–5 din). Site par is route ki 5 alag qeematein ($650–1,200, $800–1,100, $850–1,150, $780–1,300, snowbird page $650–1,200).
+
+**Competitors (22 Nov):** LongDistanceTowing (266 moves: typical $1,150, beech ke 50% $900–1,370), Montway (~$1,148, 4–6 din), Sherpa ($900–1,600; Miami→NY $1,075–1,550), MoveBuddha/FreightWaves Orlando→NYC ($789–1,327), Cross Auto ("northbound $749 vs southbound $1,049" — season ka asar). Yelp/Facebook/TikTok bhi.
+
+**Kya badla (22 Nov):** ~1,620 words — 8 city pairs (Miami, Ft Lauderdale, WPB, Naples, Tampa, Orlando, Jacksonville → NYC/LI/Westchester, Miami→Buffalo/Rochester), **season price table** (Oct–Jan sasta $800–1,000, Mar–May peak $1,000–1,450), I-95 / I-75 route, Florida pickup (condo garage, HOA, SunPass, storage battery), NYC/LI/upstate delivery, **New York registration** (30 din, NY insurance, 10 din inspection; snowbirds Florida registration rakhte hain), **drive vs ship vs Auto Train** (Sanford–Lorton), 7 FAQs. Headline $800–1,150 / 2–5 din. NY page "New York ← Florida" row ab is page se linked.
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 685 | 77.9 | |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
@@ -310,6 +328,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | **Qeematein site par ek jaisi nahi** — e.g. WA→CA page $550–950 / 2–4 din, CA→WA page $750–1,300 / 3–6 din; `/hawaii-car-shipping/` Hawaii→CA "6–10 din" (asal 2–3 hafte) | Google/AI ko contradiction dikhta hai | Alag "price consistency" kaam — route pages ek ek kar ke |
 | Route pages par har city pair ki distance same (e.g. CA→TX table: LA–Houston aur SF–Houston dono "~1,618 mi") | Ghalat lagta hai | Route pages ke kaam ke saath |
 | `/florida-car-shipping/` par Florida → California ke do alag ranges ($1,225–1,650 / 6–10 din aur $1,175–1,700 / 4–9 din, distance 2,550–2,735) jabke CA page aur naya FL→CA page $1,200–1,650 / 6–10 din | Contradiction | Florida page ke kaam ke saath |
+| Florida ↔ New York ki qeematein: `/services/snow-bird-car-shipping/` ($650–1,200, 1,090 mi), `/florida-car-shipping/` ($780–1,300), `/new-york-to-florida-car-shipping/` ($850–1,150) — naya FL→NY page $800–1,150 + spring peak $1,000–1,450 | Contradiction | NY→FL aur snowbird page ke kaam ke saath |
 | "4 saal se nayi cars smog se exempt" wala claim `/routes/city/los-angeles-ca/` aur `/routes/city/fresno-ca/` par bhi | Ghalat maloomat | Un pages ke kaam ke saath theek karna |
 
 ---
