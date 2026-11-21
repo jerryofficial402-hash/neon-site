@@ -167,13 +167,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 - Blog post `/blog/car-shipping-insurance-explained/` → **301 redirect** `/insurance/` (vercel.json), files hataye, sitemap + llms.txt update
 - **Site-wide sach:** 63 files / 144 jagah "Neon maintains $500,000 … in addition to the carrier policy" aur "$500,000 Secondary Policy" likha tha — ghalat (Neon ki apni policy nahi). Sab jagah: "Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance…"
 
-**Status:** ⏳ Local (live ka OK baaqi)
+**Status:** ✅ Live 22 Nov 2026 (commit 1993053) · Google "Request indexing" ✅ 22 Nov · IndexNow ✅ 22 Nov · blog URL 308 → /insurance/ live
+**Index status (22 Nov, pehle):** ❌ "Crawled – currently not indexed" (aakhri crawl 31 Aug — Google ne patla page parh kar chhod diya tha)
+**Check:** 6 Dec 2026 (+14 din), 20 Dec 2026 (+28 din)
 
 | Check | Clicks | Impressions | Position | Note |
 |---|---|---|---|---|
 | Baseline (90 din) | 0 | 0 | — | dono insurance pages |
-| +14 din | | | | |
-| +28 din | | | | |
+| 6 Dec | | | | |
+| 20 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -251,6 +253,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 20 Nov 2026 | Site-wide hover effects (buttons lift/glow/shine, cards lift + blue top line) + homepage scroll reveal; asset version 20261122. Content/URLs unchanged | de8cdf8 |
 | 21 Nov 2026 | SEO audit (OpenSEO + full scan, `seo/AUDIT-2026-11-21.md`). Quick fixes live: descriptive "Learn more" links on homepage, blog/author WebP thumbnails + lazy loading, 1280px hero for 1x desktops, h4→h3 on Woodbridge, Arlington, cheapest-way, Woodbridge blog; asset version 20261123; IndexNow 7 URLs | 5102575 |
 | 21 Nov 2026 | `/florida-to-california-car-shipping/` thin page rebuild live (298 → ~1,430 words); request indexing + IndexNow | c19639d |
+| 22 Nov 2026 | `/insurance/` rebuild live (246 → ~1,250 words), insurance blog 301 → /insurance/, site-wide "$500K secondary policy" claim theek (63 files); request indexing + IndexNow | 1993053 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
