@@ -154,6 +154,27 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 5 Dec | | | | |
 | 19 Dec | | | | |
 
+### 3d. `/insurance/` — page #4, thin page (detail)
+
+**Kyun:** "car shipping insurance" 210 searches/mahina, KD 10, commercial. `/insurance/` (246 words) aur `/blog/car-shipping-insurance-explained/` (304 words) dono ek hi topic par — dono ke 90 din mein **0 impressions**.
+
+**Owner se confirm kiye facts (22 Nov):** $500,000 **carrier ki** cargo insurance hai (Neon ki apni policy nahi); damage par deductible **carrier** deta hai; claim = delivery par BOL par damage likhna + photos + info@neonautotransport.com email, Neon carrier ke saath claim file karta hai.
+
+**Kya badla (22 Nov):**
+- `/insurance/` naya: hero + quote form, insurance kaise kaam karti hai (broker vs carrier, federal $750K liability vs cargo ki koi federal minimum nahi), covered / not covered, deductible kaun deta hai, apni insurance rakhein ya nahi, pickup se pehle claim kaise mehfooz karein, damage par 5 steps, open vs enclosed, 6 FAQs
+- Purana galat FAQ schema (menu text paste hua tha) aur "Locations" breadcrumb hataya; nayi BreadcrumbList + FAQPage
+- Title: "Car Shipping Insurance: What's Covered & Claims | Neon" (54); description (152). 246 → ~1,250 words
+- Blog post `/blog/car-shipping-insurance-explained/` → **301 redirect** `/insurance/` (vercel.json), files hataye, sitemap + llms.txt update
+- **Site-wide sach:** 63 files / 144 jagah "Neon maintains $500,000 … in addition to the carrier policy" aur "$500,000 Secondary Policy" likha tha — ghalat (Neon ki apni policy nahi). Sab jagah: "Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance…"
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 0 | — | dono insurance pages |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).

@@ -34,7 +34,7 @@ Enclosed Transport| $750 – $1300| 2-4 days
   * **Estimated Delivery Window:** 2-4 business days
   * **Service Type:** 100% Door-to-Door Pickup and Delivery
   * **Deposit Requirement:** $0 Upfront Deposit until carrier dispatch
-  * **Cargo Insurance Coverage:** $500,000 Secondary Policy Included
+  * **Cargo Insurance Coverage:** $500,000 Carrier Cargo Insurance Required
 
 
 ### Get Your Washington to California Quote
@@ -59,4 +59,4 @@ Choose open door-to-door transport, book 1–2 weeks in advance, and maintain fl
 
 ### Is my vehicle insured during transport from Washington to California?
 
-Yes. Neon Auto Transport maintains $500,000 cargo insurance coverage in addition to the motor carrier's primary cargo insurance policy.
+Yes. Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance, which covers your vehicle from pickup to delivery.

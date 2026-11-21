@@ -159,7 +159,7 @@ For classic, exotic, or high-value vehicles, yes — it protects against weather
 No. Neon Auto Transport charges $0 upfront deposit. Payment is only collected after a verified carrier has been assigned to your shipment.
 
 ### Is my car insured during transport?
-Yes. Neon Auto Transport maintains $500,000 cargo insurance coverage in addition to the primary cargo policy carried by the motor carrier.
+Yes. Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance, which covers your vehicle from pickup to delivery.
 
 ### Ready to Calculate Your Exact Car Shipping Cost?
 Get a binding, price-locked quote with $0 upfront deposit and $500,000 cargo insurance coverage.

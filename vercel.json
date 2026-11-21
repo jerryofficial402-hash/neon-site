@@ -226,6 +226,21 @@
   ],
   "redirects": [
     {
+      "source": "/blog/car-shipping-insurance-explained.html",
+      "destination": "/insurance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/car-shipping-insurance-explained/",
+      "destination": "/insurance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/car-shipping-insurance-explained",
+      "destination": "/insurance/",
+      "permanent": true
+    },
+    {
       "source": "/sacramento-ca-car-shipping",
       "destination": "/routes/city/sacramento-ca/",
       "permanent": true
