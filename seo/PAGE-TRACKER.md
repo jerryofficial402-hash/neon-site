@@ -187,13 +187,14 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Dhyan:** baaqi compare pages (AmeriFreight, Easy Auto Ship, Nexus, RoadRunner, SGT, Sherpa) mein bhi shayad yahi unverified claims hain — ek ek kar ke isi tarah sourced banana.
 
-**Status:** ⏳ Local (live ka OK baaqi)
+**Status:** ✅ Live 22 Nov 2026 (commit 2d89d51) · Google "Request indexing" ✅ 22 Nov (page pehle se indexed thi — recrawl) · IndexNow ✅ 22 Nov
+**Check:** 6 Dec 2026 (+14 din), 20 Dec 2026 (+28 din)
 
 | Check | Clicks | Impressions | Position | Note |
 |---|---|---|---|---|
 | Baseline (90 din) | 0 | 15 | 38.3 | |
-| +14 din | | | | |
-| +28 din | | | | |
+| 6 Dec | | | | |
+| 20 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -272,6 +273,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 21 Nov 2026 | SEO audit (OpenSEO + full scan, `seo/AUDIT-2026-11-21.md`). Quick fixes live: descriptive "Learn more" links on homepage, blog/author WebP thumbnails + lazy loading, 1280px hero for 1x desktops, h4→h3 on Woodbridge, Arlington, cheapest-way, Woodbridge blog; asset version 20261123; IndexNow 7 URLs | 5102575 |
 | 21 Nov 2026 | `/florida-to-california-car-shipping/` thin page rebuild live (298 → ~1,430 words); request indexing + IndexNow | c19639d |
 | 22 Nov 2026 | `/insurance/` rebuild live (246 → ~1,250 words), insurance blog 301 → /insurance/, site-wide "$500K secondary policy" claim theek (63 files); request indexing + IndexNow | 1993053 |
+| 22 Nov 2026 | `/compare/neon-vs-montway/` honest sourced comparison live (~150 → ~1,160 words); request indexing + IndexNow | 2d89d51 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
