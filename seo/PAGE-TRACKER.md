@@ -177,6 +177,24 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 6 Dec | | | | |
 | 20 Dec | | | | |
 
+### 3e. `/compare/neon-vs-montway/` — page #5, thin page (detail)
+
+**Kyun:** "montway auto transport reviews" **5,400 searches/mahina, KD 4** (OpenSEO). Page sirf ~150 words; 90 din: 0 clicks / 15 impressions / position 38.
+
+**Purane page ke masle:** Montway ke baare mein bina saboot ke claims — "driver contact nahi, dispatch ke through", "booking fee leta hai", "price carrier bidding par" (teeno ghalat: Montway bhi carrier assign hone par charge karta hai, 30-din TruePrice Guarantee hai, carrier ka contact deta hai); Neon "top 10% carriers" (saboot nahi). og/twitter title "About Neon…" aur AboutPage schema copy-paste; do H1.
+
+**Kya badla (22 Nov):** imaandar, sourced comparison — table (since, offices, payment, guarantee, insurance, driver contact, BBB, reviews), "Montway reviews" section (BBB A+ accredited 2007, 893 reviews, 288 complaints/3 saal; Trustpilot 3.2/5, 2,132 reviews — Nov 2026), payment/cancellation ($249 broker fee — U.S. News), price guarantees, kaun Montway chune / kaun Neon, quotes compare karne ka tareeqa, 5 FAQs, sources section. Neon facts: 2025, Google 5.0 (47), BBB A- not accredited, 2 offices. ~1,160 words; title "Neon vs Montway Auto Transport: Reviews & Comparison (2026)".
+
+**Dhyan:** baaqi compare pages (AmeriFreight, Easy Auto Ship, Nexus, RoadRunner, SGT, Sherpa) mein bhi shayad yahi unverified claims hain — ek ek kar ke isi tarah sourced banana.
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 15 | 38.3 | |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
