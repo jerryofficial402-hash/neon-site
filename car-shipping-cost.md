@@ -67,7 +67,7 @@ Oversized / Dually / Lifted Truck| +$200 – $500| Occupies two spots on carrier
 7. **Fuel Price Fluctuations:** Diesel fuel surcharges adjust proportionally with national fuel index averages.
 8. **Lead Time & Flexibility:** Booking 1–2 weeks in advance yields optimal carrier rates compared to last-minute rush orders.
 9. **Expedited Priority Scheduling:** Guaranteed 24–48 hour dispatch adds priority dispatch fees.
-10. **Insurance Coverage Levels:** Primary carrier cargo policies plus Neon's $500,000 secondary coverage ensure protection without extra charges.
+10. **Insurance Coverage Levels:** Every carrier Neon books must carry $500,000 in cargo insurance, at no extra charge to you.
 
 ## Car Shipping Cost Examples Across Popular Routes
 

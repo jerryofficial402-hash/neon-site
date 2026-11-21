@@ -196,6 +196,24 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 6 Dec | | | | |
 | 20 Dec | | | | |
 
+### 3f. `/compare/neon-vs-nexus/` — page #6, thin page (detail)
+
+**Kyun:** "nexus auto transport reviews" **3,600 searches/mahina, KD 10** (OpenSEO) — baaqi compare pages mein sab se zyada (RoadRunner/SGT reviews 2,400 agle).
+
+**Purane page ke masle:** "Nexus booking par 25% deposit leta hai" (ghalat — deposit driver assign hone par), Nexus ke USDOT/MC numbers doosre sources se nahi milte, "secondary $500,000 insurance" (ghalat).
+
+**Kya badla (22 Nov):** sourced comparison — table (2015, Schaumburg IL, BBB A accredited 2016, Trustpilot 4.2 / 2,355, BBB 1,270 reviews, 163 complaints/3 saal; deposit driver assign par, customers ~20–30% batate hain), reviews section, deposits, kaun Nexus / kaun Neon, broker se poochhne wale 5 sawal, 5 FAQs, sources. Nexus ke USDOT/MC hataye (confirm nahi). ~1,030 words.
+
+**Saath mein:** 21 files / 27 jagah aur "secondary $500,000" wording variants theek (compare pages + `/car-shipping-cost/`).
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | — | — | — | GSC export mein nahi |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).

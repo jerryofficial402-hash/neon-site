@@ -76,9 +76,9 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
 
 ## Which Company Should You Choose?
 
-RoadRunner Auto Transport and Neon Auto Transport both offer $0 upfront deposits. Neon differentiates by offering a binding price lock guarantee and $500,000 secondary cargo insurance coverage.
+RoadRunner Auto Transport and Neon Auto Transport both offer $0 upfront deposits. Neon differentiates by offering a binding price lock guarantee and a $500,000 cargo insurance requirement for every carrier.
 
-  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
+  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and carriers that must carry $500,000 in cargo insurance.
   * **Choose RoadRunner Auto Transport if:** You prefer working with their specific carrier network or customized fleet program.
 
 

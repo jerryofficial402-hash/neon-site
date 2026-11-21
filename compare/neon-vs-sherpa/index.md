@@ -76,9 +76,9 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
 
 ## Which Company Should You Choose?
 
-Both Neon Auto Transport and Sherpa Auto Transport offer binding price locks. However, Neon provides $500,000 secondary cargo insurance and ships motorcycles and powersports, which Sherpa does not cover.
+Both Neon Auto Transport and Sherpa Auto Transport offer binding price locks. However, Neon requires every carrier to carry $500,000 in cargo insurance and ships motorcycles and powersports, which Sherpa does not cover.
 
-  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
+  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and carriers that must carry $500,000 in cargo insurance.
   * **Choose Sherpa Auto Transport if:** You prefer working with their specific carrier network or customized fleet program.
 
 

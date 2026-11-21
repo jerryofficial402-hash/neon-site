@@ -78,7 +78,7 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
 
 SGT Auto Transport and Neon Auto Transport are both top-rated brokers. Neon provides a binding price lock guarantee so quoted prices never change, along with $500,000 cargo insurance coverage.
 
-  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
+  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and carriers that must carry $500,000 in cargo insurance.
   * **Choose SGT Auto Transport if:** You prefer working with their specific carrier network or customized fleet program.
 
 

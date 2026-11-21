@@ -78,7 +78,7 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
 
 AmeriFreight requires deposit upfront before carrier assignment, whereas Neon charges $0 deposit until a verified carrier is dispatched. Neon also backs all dispatches with a $500,000 cargo insurance coverage policy.
 
-  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
+  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and carriers that must carry $500,000 in cargo insurance.
   * **Choose AmeriFreight if:** You prefer working with their specific carrier network or customized fleet program.
 
 

@@ -78,7 +78,7 @@ Door-to-Door Delivery| ✅ Yes| ✅ Yes
 
 Easy Auto Ship and Neon Auto Transport both serve all 50 states. Neon provides a strict $0 upfront deposit policy, binding price lock guarantees, and $500,000 cargo insurance coverage on all vehicle dispatches.
 
-  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and secondary $500,000 cargo insurance protection.
+  * **Choose Neon Auto Transport if:** You prioritize $0 deposit upfront, a binding price lock guarantee, and carriers that must carry $500,000 in cargo insurance.
   * **Choose Easy Auto Ship if:** You prefer working with their specific carrier network or customized fleet program.
 
 
