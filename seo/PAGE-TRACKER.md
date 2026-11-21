@@ -216,6 +216,24 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 6 Dec | | | | |
 | 20 Dec | | | | |
 
+### 3g. `/new-york-to-california-car-shipping/` — page #7, route page (pehla "route priority" page)
+
+**Kyun:** owner ka faisla (22 Nov): leads ke liye route pages. 164 route keywords mein sab se zyada demand — "new york to california car shipping" **1,300/mahina** + "ship car from new york to california" **1,300**, transactional, **KD 0**, CPC $14. Saath: "how much to ship…" 140, "cost to ship…" 70, "driving from nyc/ny to la" **590 + 590**.
+
+**Baseline:** 90 din **0 impressions**; Google: ❌ "Discovered – currently not indexed" (kabhi crawl nahi). Page 1,550 words lekin template (har route jaisa), 4 cities sab "~2,794 mi". NY state page par NY→CA $1,350–1,850 / 6–8 din (contradiction).
+
+**Competitors (Google top 10, 22 Nov):** MoveBuddha & FreightWaves (city-pair price pages, e.g. NYC→Long Beach $1,683–2,615), Montway, AmeriFreight ($1,300–1,500 open), Nexus, uShip (avg $1,900), Corsia, Execuship, Reddit/Facebook threads (California emissions worry). Jeetne wali cheezein: city pairs + miles + din, ship vs drive, NYC pickup, emissions.
+
+**Kya badla (22 Nov):** naya page ~1,700 words — 6 city pairs alag distance (NYC→LA 2,790, →SD 2,770, Long Island→OC 2,820, NYC→Bay Area 2,900, Albany→Sacramento 2,830, Buffalo→LA 2,550), vehicle/option price table, transit + I-80 / I-70-I-15 / I-40 routes + winter Donner Pass, **NYC pickup** (75 ft truck, parkways ban, alternate-side, E-ZPass), **ship vs drive table** (590+590 searches), best time, California arrival (20 din, VIN, smog, NY = California emission standards, 10 din license), open vs enclosed, 3 steps, 7 FAQs (schema), related links. Title "New York to California Car Shipping: Cost & Time | Neon"; nayi description. Qeemat $1,250–1,700 (CA page jaisi); NY state page ki row bhi $1,250–1,700 / 6–10 din / 2,790 mi + link.
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 0 | — | crawl hi nahi hua |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).

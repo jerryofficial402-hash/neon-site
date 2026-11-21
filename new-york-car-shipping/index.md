@@ -61,7 +61,7 @@ Shipping a car to or from New York with Neon Auto Transport takes three simple s
 
 Route | Distance | Est. Cost | Transit Time  
 ---|---|---|---  
-New York to California| 2,845 mi| $1,350 – $1,850| 6–8 days  
+[New York to California](/new-york-to-california-car-shipping/)| 2,790 mi| $1,250 – $1,700| 6–10 days  
 New York to Florida| 1,238 mi| $850 – $1,150| 3–5 days  
 New York to Texas| 1,841 mi| $975 – $1,350| 4–6 days  
 New York to Washington| 2,919 mi| $1,375 – $1,875| 6–8 days  
