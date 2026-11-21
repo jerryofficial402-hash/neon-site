@@ -206,13 +206,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Saath mein:** 21 files / 27 jagah aur "secondary $500,000" wording variants theek (compare pages + `/car-shipping-cost/`).
 
-**Status:** ⏳ Local (live ka OK baaqi)
+**Status:** ✅ Live 22 Nov 2026 (commit 9824dab) · Google "Request indexing" ✅ 22 Nov · IndexNow ✅ 22 Nov (Nexus + cost page + 5 compare pages)
+**Index status (22 Nov, pehle):** ❌ "Discovered – currently not indexed" — Google ne kabhi crawl nahi kiya
+**Check:** 6 Dec 2026 (+14 din), 20 Dec 2026 (+28 din)
 
 | Check | Clicks | Impressions | Position | Note |
 |---|---|---|---|---|
 | Baseline (90 din) | — | — | — | GSC export mein nahi |
-| +14 din | | | | |
-| +28 din | | | | |
+| 6 Dec | | | | |
+| 20 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -292,6 +294,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 21 Nov 2026 | `/florida-to-california-car-shipping/` thin page rebuild live (298 → ~1,430 words); request indexing + IndexNow | c19639d |
 | 22 Nov 2026 | `/insurance/` rebuild live (246 → ~1,250 words), insurance blog 301 → /insurance/, site-wide "$500K secondary policy" claim theek (63 files); request indexing + IndexNow | 1993053 |
 | 22 Nov 2026 | `/compare/neon-vs-montway/` honest sourced comparison live (~150 → ~1,160 words); request indexing + IndexNow | 2d89d51 |
+| 22 Nov 2026 | `/compare/neon-vs-nexus/` sourced comparison live (~1,030 words) + 21 files "secondary $500K" wording theek; request indexing + IndexNow 7 URLs | 9824dab |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
