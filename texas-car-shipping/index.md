@@ -210,7 +210,7 @@ Texas → New Mexico / Oklahoma | $350 - $580 | 1 - 2 days
 Texas → Arizona | $630 - $920 | 3 - 4 days  
 Texas → Colorado | $610 - $820 | 2 - 4 days  
 Texas → Louisiana / Gulf Coast | $380 - $620 | 1 - 3 days  
-Texas → California | $740 - $1,000 | 4 - 6 days  
+[Texas → California](/texas-to-california-car-shipping/) | $950 - $1,300 | 3 - 6 days  
 Texas → Illinois / Midwest | $650 - $930 | 3 - 4 days  
 Texas → Florida | $700 - $1,050 | 2 - 5 days  
 Texas → New York / Northeast | $800 - $1,200 | 5 - 8 days  

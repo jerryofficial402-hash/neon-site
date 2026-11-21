@@ -235,6 +235,24 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 6 Dec | | | | |
 | 20 Dec | | | | |
 
+### 3h. `/texas-to-california-car-shipping/` — page #8, route page
+
+**Keywords:** "ship car from texas to california" **720**, "texas to california car shipping" **590**, "how much to ship a car from texas to california" 140, "cost to…" 20 — sab KD 0.
+
+**Baseline (90 din):** 0 clicks / **255 impressions / position 57.5** (indexed). Queries: "texas to california car shipping" 52 (64), "auto transport" 22, "ship car from texas…" 18, "ship car from houston to los angeles" 11, **"buy a new car from texas to california" 8**. Page template, 4 cities sab "~1,618 mi". Texas state page par TX↔CA ki teen alag qeematein ($1,100–1,500, $1,050–1,425, $740–1,000).
+
+**Competitors (22 Nov):** kamzor SERP — Reddit/Facebook 5–6 jagah; MileAutoTransport, Wave, FreightWaves (Dallas→LA $1,082–1,642, Houston→Sacramento $1,308–2,006), MoveBuddha (Houston→SF $1,346–2,127), HomeMovingNow ($850–1,250).
+
+**Kya badla (22 Nov):** ~1,720 words — 7 city pairs asli distance (Houston→LA 1,550, DFW→LA 1,440, San Antonio→SD 1,280, Austin→OC 1,380, Houston→Bay Area 1,930, DFW→Sacramento 1,750, El Paso→LA 800), price factors, I-10 / I-20 / I-40 routes, **Texas car California mein register — emissions (Texas CARB state nahi, 7,500 miles rule, 50-state label)**, Texas pickup (toll tags, hail season, Houston hurricanes), **imaandar ship vs drive (yahan drive sasta)**, best time, California arrival, open vs enclosed, 6 FAQs. Texas state page ki teeno qeematein $950–1,300 / 3–6 din + link.
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 255 | 57.5 | indexed |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
