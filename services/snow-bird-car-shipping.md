@@ -44,7 +44,7 @@ Rather than spending 20 to 40 exhausting hours behind the wheel on congested int
 
 | Route | Distance | Avg. Cost (Open) | Transit Time |
 |---|---|---|---|
-| [New York → Florida](/new-york-to-florida-car-shipping/) | 1,090 mi | $650 – $1,200 | 3–5 days |
+| [New York → Florida](/new-york-to-florida-car-shipping/) | ~1,250 mi | $850 – $1,450 | 3–5 days |
 | [Illinois → Florida](/illinois-to-florida-car-shipping/) | 1,180 mi | $700 – $1,200 | 3–4 days |
 | [Michigan → Arizona](/michigan-to-arizona-car-shipping/) | 2,000 mi | $950 – $1,500 | 4–6 days |
 | [Minnesota → California](/minnesota-to-california-car-shipping/) | 1,920 mi | $950 – $1,500 | 4–6 days |

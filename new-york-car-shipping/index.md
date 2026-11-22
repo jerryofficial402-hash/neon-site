@@ -91,7 +91,7 @@ Corridor | Typical Price Range (Open) | Typical Transit
 New York → New England (Boston, Providence)| $300 – $460| 1 day  
 New York → Mid-Atlantic (Philadelphia, DC)| $300 – $470| Same day–1 day  
 New York → Southeast (Atlanta, Carolinas)| $500 – $760| 2–3 days  
-New York → Florida| $650 – $900| 3–5 days  
+[New York → Florida](/new-york-to-florida-car-shipping/)| $850 – $1,150| 3–5 days  
 New York → Midwest (Chicago, Detroit)| $500 – $720| 2–3 days  
 New York → Texas| $750 – $1,050| 5–6 days  
 New York → Mountain West (Denver)| $850 – $1,150| 5–6 days  

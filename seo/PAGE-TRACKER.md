@@ -273,6 +273,24 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 6 Dec | | | | |
 | 20 Dec | | | | |
 
+### 3j. `/new-york-to-florida-car-shipping/` — page #10, route page
+
+**Keywords (23 Nov):** "auto/car transport new york to florida" **320**, "new york to florida car shipping" 140, "car shipping ny to fl" 140, "ship car from ny to florida" 90 (KD 0); saath **"drive from new york to florida" 880** aur **"auto train new york to florida" 720**.
+
+**Baseline (90 din):** **0 impressions** (template page 1,555 words, 4 cities sab "~1,281 mi").
+
+**Competitors:** Reddit/Facebook upar; Montway ($1,100, 4–6 din), Cross Auto ("$1,049 today, $1,150–1,500 by December"), RoadRunner avg $904, TransportVibe $750–1,200, TransportReviews avg $902. Auto Train SERP: Lorton VA ↔ Sanford FL, ~4 PM–9 AM, check-in 11:30–2:30, "$800+".
+
+**Kya badla:** ~1,600 words — 7 city pairs, **season table (Oct–Jan peak $1,050–1,450, Mar–May sasta $750–1,000)** — FL→NY page ka ulta, NYC/LI/upstate pickup, **driving vs Auto Train vs shipping** (1,600 searches ke liye), **Florida registration** (10 din, VIN verification, PIP insurance, 30 din license), open vs enclosed, 7 FAQs. Headline $850–1,150 / 2–5 din. Snowbird page NY→FL row $650–1,200 / 1,090 mi → $850–1,450 / ~1,250 mi; NY page regional row $650–900 → $850–1,150 + link.
+
+**Status:** ⏳ Local (live ka OK baaqi)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 0 | — | |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
