@@ -283,13 +283,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Kya badla:** ~1,600 words — 7 city pairs, **season table (Oct–Jan peak $1,050–1,450, Mar–May sasta $750–1,000)** — FL→NY page ka ulta, NYC/LI/upstate pickup, **driving vs Auto Train vs shipping** (1,600 searches ke liye), **Florida registration** (10 din, VIN verification, PIP insurance, 30 din license), open vs enclosed, 7 FAQs. Headline $850–1,150 / 2–5 din. Snowbird page NY→FL row $650–1,200 / 1,090 mi → $850–1,450 / ~1,250 mi; NY page regional row $650–900 → $850–1,150 + link.
 
-**Status:** ⏳ Local (live ka OK baaqi)
+**Status:** ✅ Live 23 Nov 2026 (commit 75a30d6) · Google "Request indexing" ✅ 23 Nov · IndexNow ✅ 23 Nov (+ NY page, snowbird page)
+**Index status (23 Nov, pehle):** ❌ "URL is unknown to Google" (sitemap 22 Nov ko parha gaya, 434 pages — Google crawl budget kam de raha hai; naya domain, kam backlinks)
+**Check:** 7 Dec 2026 (+14 din), 21 Dec 2026 (+28 din)
 
 | Check | Clicks | Impressions | Position | Note |
 |---|---|---|---|---|
 | Baseline (90 din) | 0 | 0 | — | |
-| +14 din | | | | |
-| +28 din | | | | |
+| 7 Dec | | | | |
+| 21 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -377,6 +379,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 22 Nov 2026 | `/new-york-to-california-car-shipping/` research-based rebuild live (~1,700 words) + NY state page row aligned/linked; request indexing + IndexNow | 424e4e3 |
 | 22 Nov 2026 | `/texas-to-california-car-shipping/` research-based rebuild live (~1,720 words) + Texas state page prices aligned/linked; recrawl request + IndexNow | d66b0ba |
 | 22 Nov 2026 | `/florida-to-new-york-car-shipping/` thin → research-based rebuild live (~1,620 words, season price table) + NY page link; recrawl + IndexNow | 3393683 |
+| 23 Nov 2026 | `/new-york-to-florida-car-shipping/` research-based rebuild live (~1,600 words) + snowbird & NY page prices aligned; request indexing + IndexNow 3 URLs | 75a30d6 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
