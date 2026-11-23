@@ -318,6 +318,19 @@ Baad mein: `/services/enclosed-auto-transport/` (206 / 36), `/washington-dc-car-
 
 ---
 
+## 4b. GSC snapshot — 23 Nov 2026 (data ~21 Nov tak)
+
+| Period | Clicks | Impressions | Avg position |
+|---|---|---|---|
+| 7 din vs pichle 7 | 10 → 10 | **3.14K → 7.78K (+148%)** | **54.9 → 29.1** |
+| 28 din vs pichle 28 | 32 → 30 | 12.3K → 16.1K (+31%) | 42.1 → 43.3 |
+
+Pages (7 din): `/california-car-shipping/` 927 → 3,126 impr, **pos 72.8 → 27.4**; homepage 371 → 1,708, pos 42.3 → 21.8; `/car-shipping-quote/` 213 → 504, pos 59 → 31; `/virginia-car-shipping/` 95 → 304; `/delaware-car-shipping/` 86 → 214, pos 30 → 21.5; `/washington-dc-car-shipping/` 26 → 173; `/new-york-car-shipping/` pos 55 → 27; `/car-shipping-cost/` pos 69 → 47. Neeche: `/services/open-auto-transport/` pos 39.5 → 60; `/services/snow-bird-car-shipping/` 85 → 30 impr; `/services/terminal-to-terminal-car-shipping/` pos 23 → 34.
+
+**Masla:** impressions barhe lekin clicks flat (CTR 0.1%) — zyada pages abhi position 20–35 (page 2–4) par; clicks page 1 (top 10) par aate hain.
+
+**Indexing:** 406 indexed. Not indexed 208K — zyada tar purane domain/spam URLs (`/products/…`, `/detail/…`, gambling) jo July se **410 Gone** dete hain (`api/gone.js`; Aug 25 tak bug ki wajah se 17K "5xx"). Google dheere dheere hata dega — kuch nahi karna. Asli pages bhi "Crawled – currently not indexed" mein (Vermont, Iowa, Alaska, Oregon state pages) — content/authority ka masla.
+
 ## 5. Girne wale pages (watch list) — 28 din vs pichle 28 din
 
 (22 Sep–19 Oct vs 20 Oct–16 Nov. Poori site: 38 → 29 clicks, 13.8K → 12.2K impressions.)
