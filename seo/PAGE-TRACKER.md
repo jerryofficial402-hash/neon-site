@@ -293,6 +293,25 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 7 Dec | | | | |
 | 21 Dec | | | | |
 
+### 3k. `/michigan-to-california-car-shipping/` — page #11, route page
+
+**Keywords (24 Nov):** **"ship car from michigan to california" 590** (KD 0, CPC $11.48), "michigan to california car shipping" 140; saath "detroit to california" 590, "driving from michigan to california" 110, "michigan to california drive" 110, "detroit to los angeles drive" 40.
+
+**Baseline (90 din):** **0 impressions** (purana page 412 words, koi qeemat nahi).
+
+**Competitors:** MoveBuddha $1,664–2,781 (Ann Arbor→SF), RoadRunner avg $1,205 ($800–1,900), Sherpa $1,175–1,650, TransportVibe $1,175–1,625, Montway $1,486 (6–8 din), Rapid $1,150–1,800, Baier Detroit→LA $1,600–2,275, Whipshipper Detroit→Sacramento $1,307. Reddit bhi top 3 mein.
+
+**Kya badla:** ~1,600 words — 6 city pairs (Detroit/Grand Rapids/Ann Arbor/Lansing → LA/SD/OC/Bay Area/Sacramento), headline **$1,150–1,600 open / $1,650–2,300 enclosed, 5–9 din**, 3 routes (I-80, I-70/I-15, I-40) + winter delays, **Michigan mein car khareed kar California le jana (7,500-mile emissions rule)**, road salt / snow / classic cars, driving vs shipping table, best time, California arrival (20 din registration, VIN, smog, 10 din license), open vs enclosed, 7 FAQs, related links. Michigan state page ki California row $1025–1400 / 2,336 mi → $1,150–1,600 / ~2,300 mi / 5–9 din + link.
+
+**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+**Check:** live hone ke +14 aur +28 din baad
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline (90 din) | 0 | 0 | — | |
+| +14 din | | | | |
+| +28 din | | | | |
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
@@ -301,7 +320,7 @@ Site-wide (har page): naya layout, footer mein dono offices, sahi founding year 
 
 ## 4. Agla kaam — priority list (ek ek kar ke)
 
-**Route pages (owner ka faisla 22 Nov — leads ke liye pehle):** har page = GSC baseline + keyword research + Google top 10 competitor analysis → detailed content → OK → live → indexing. Ho chuke: NY→CA, TX→CA, FL→NY, FL→CA. **Agla (23 Nov):** `/new-york-to-florida-car-shipping/` (140) + snowbird page ki qeematein ek karna; phir Michigan→CA (140), California→Texas (140+20), California→Florida (110+10). Baaqi ~150 route keywords ki demand <10/mahina — un par kaam nahi. Comparison pages (RoadRunner 2,400, SGT 2,400 reviews) baad mein.
+**Route pages (owner ka faisla 22 Nov — leads ke liye pehle):** har page = GSC baseline + keyword research + Google top 10 competitor analysis → detailed content → OK → live → indexing. Ho chuke: NY→CA, TX→CA, FL→NY, FL→CA, NY→FL, Michigan→CA (25 Nov). **Agla:** California→Texas (140+20), California→Florida (110+10). Baaqi ~150 route keywords ki demand <10/mahina — un par kaam nahi. Comparison pages (RoadRunner 2,400, SGT 2,400 reviews) baad mein.
 
 
 | # | Page | 90 din | Kyun | Kya add karna hai |

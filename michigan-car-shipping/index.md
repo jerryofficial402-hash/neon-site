@@ -46,7 +46,7 @@ to Florida
 
 | ROUTE | DISTANCE | AVG COST | TRANSIT TIME | QUOTE |
 | --- | --- | --- | --- | --- |
-| Michigan to California | 2,336 mi | $1025 - $1400 | 5 to 8 days | [Get Quote](/cost-calculator/) |
+| [Michigan to California](/michigan-to-california-car-shipping/) | ~2,300 mi | $1,150 - $1,600 | 5 to 9 days | [Get Quote](/cost-calculator/) |
 | Michigan to Texas | 1,305 mi | $875 - $1175 | 3 to 6 days | [Get Quote](/cost-calculator/) |
 | Michigan to Florida | 1,364 mi | $900 - $1225 | 3 to 6 days | [Get Quote](/cost-calculator/) |
 | Michigan to Washington | 2,281 mi | $1000 - $1375 | 5 to 8 days | [Get Quote](/cost-calculator/) |
