@@ -303,14 +303,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Kya badla:** ~1,600 words — 6 city pairs (Detroit/Grand Rapids/Ann Arbor/Lansing → LA/SD/OC/Bay Area/Sacramento), headline **$1,150–1,600 open / $1,650–2,300 enclosed, 5–9 din**, 3 routes (I-80, I-70/I-15, I-40) + winter delays, **Michigan mein car khareed kar California le jana (7,500-mile emissions rule)**, road salt / snow / classic cars, driving vs shipping table, best time, California arrival (20 din registration, VIN, smog, 10 din license), open vs enclosed, 7 FAQs, related links. Michigan state page ki California row $1025–1400 / 2,336 mi → $1,150–1,600 / ~2,300 mi / 5–9 din + link.
 
-**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
-**Check:** live hone ke +14 aur +28 din baad
+**Status:** ✅ Live 25 Nov 2026 (commit ac995b1) · Google "Request indexing" ✅ 25 Nov · IndexNow ✅ 25 Nov (+ Michigan page)
+**Index status (25 Nov, pehle):** ✅ Indexed, lekin aakhri crawl 31 Aug (purana content) — recrawl request kiya
+**Check:** 9 Dec 2026 (+14 din), 23 Dec 2026 (+28 din)
 
 | Check | Clicks | Impressions | Position | Note |
 |---|---|---|---|---|
 | Baseline (90 din) | 0 | 0 | — | |
-| +14 din | | | | |
-| +28 din | | | | |
+| 9 Dec | | | | |
+| 23 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -416,3 +417,4 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
 Tools: `node tools/page-status.mjs <gsc.tsv>` (har page ka noindex/sitemap/aakhri change), `node tools/gsc-save.mjs` (Search Console table ko TSV banana).
+| 25 Nov 2026 | Page #11 Michigan→California route page (~1,600 words, prices, emissions, drive vs ship); Michigan page row aligned; live + index request + IndexNow | ac995b1 |
