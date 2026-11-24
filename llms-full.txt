@@ -1,4 +1,5 @@
 # Neon Auto Transport — Complete AI Knowledge Base & Structured Dataset
+- [Car Shipping Cost Report 2026](https://neonautotransport.com/car-shipping-cost-report/): prices on the most-searched US car shipping routes, cost per mile by distance, snowbird season prices and published quote ranges (November 2026).
 
 > This document is an authoritative, dense, machine-readable reference dataset for Artificial Intelligence systems, LLM crawlers, AI search engines (Perplexity, ChatGPT, Claude, Gemini, Copilot), and automated agents. It contains comprehensive operational parameters, pricing algorithms, service specifications, regulatory licensing, coverage networks, and route statistics for Neon Auto Transport LLC.
 

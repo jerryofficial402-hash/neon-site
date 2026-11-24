@@ -2,7 +2,7 @@
 title: "How Much Does It Cost to Ship a Car in 2026? (Complete Guide)"
 url: https://neonautotransport.com/car-shipping-cost/
 date: 2026-08-27
-modified: 2026-09-22
+modified: 2026-11-25
 author: "Neon Auto Transport"
 description: "Complete 2026 car shipping cost guide. Breakdown by distance, vehicle type, open vs enclosed transport, seasonality, route tables, and train shipping analysis."
 type: "service"
@@ -41,7 +41,7 @@ Distance Tier | Open Transport | Enclosed Transport | Estimated Transit Time
 Auto transport rates operate on a sliding per-mile scale. Shorter routes have higher per-mile costs due to fixed driver overhead (fuel, toll fees, loading time), whereas long-distance interstate routes offer significantly lower rates per mile.
 
 * **Open Auto Transport:** $0.50 to $1.00 per mile. Standard multi-car carriers carrying 7 to 10 vehicles.
-* **Enclosed Auto Transport:** $0.64 to $2.20 per mile. 30% to 40% premium over open transport for climate and weather protection.
+* **Enclosed Auto Transport:** $0.64 to $2.20 per mile. 40% to 50% premium over open transport for climate and weather protection.
 * **Expedited Priority Pickup:** 20% to 40% premium over standard rates for guaranteed 24–48 hour pickup dispatch.
 * **Motorcycle Shipping:** $300 to $800 flat rate depending on distance and crate/tie-down setup.
 
@@ -73,13 +73,15 @@ Oversized / Dually / Lifted Truck| +$200 – $500| Occupies two spots on carrier
 
 Route Lane | Distance | Open Transport | Enclosed Transport | Transit Time
 ---|---|---|---|---
-New York, NY to Miami, FL| ~1,280 mi| $650 – $1,200| $900 – $1,600| 3–5 days
-Los Angeles, CA to Houston, TX| ~1,550 mi| $700 – $1,300| $1,000 – $1,800| 3–5 days
-Los Angeles, CA to New York, NY| ~2,900 mi| $1,200 – $1,800| $1,700 – $2,500| 7–10 days
+New York, NY to Miami, FL| ~1,280 mi| $850 – $1,150| $1,250 – $1,700| 3–5 days
+Los Angeles, CA to Houston, TX| ~1,550 mi| $950 – $1,300| $1,400 – $1,850| 3–5 days
+Los Angeles, CA to New York, NY| ~2,900 mi| $1,250 – $1,800| $1,800 – $2,500| 7–10 days
 Chicago, IL to Miami, FL| ~1,380 mi| $700 – $1,200| $1,000 – $1,700| 3–5 days
 Dallas, TX to Chicago, IL| ~920 mi| $550 – $950| $800 – $1,350| 2–4 days
 Seattle, WA to San Francisco, CA| ~810 mi| $500 – $900| $750 – $1,250| 2–3 days
 Atlanta, GA to Miami, FL| ~660 mi| $400 – $750| $600 – $1,100| 2–3 days
+
+See our [Car Shipping Cost Report 2026](https://neonautotransport.com/car-shipping-cost-report/) for the most-searched routes, cost per mile by distance and how quotes compare.
 
 ## Florida to Michigan Car Shipping Cost (Worked Example)
 

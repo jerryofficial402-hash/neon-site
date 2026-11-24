@@ -313,6 +313,16 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 9 Dec | | | | |
 | 23 Dec | | | | |
 
+### 3l. `/car-shipping-cost-report/` — page #12, naya page (backlinks ke liye)
+
+**Kyun:** backlinks sirf 17 domains se (BACKLINK-PLAN.md). Data wala report journalists/bloggers ke cite karne ke liye — links route pages tak bhi jaate hain.
+
+**Kya hai:** ~1,450 words — 8 most-searched routes (search volume), 6 routes ki qeematein (route pages se), cost per mile by distance ($1.30 → $0.53), 5 routes par doosri companies ki published qeematein (sab se kam / zyada), NY↔FL season, open vs enclosed (1.4–1.5x), methodology, "Use this data" (credit + link). Article + FAQ schema.
+
+**Saath mein:** `/car-shipping-cost/` ki purani qeematein route pages ke mutabiq (NY→Miami $650–1,200 → $850–1,150, LA→Houston, LA→NY; enclosed premium 30–40% → 40–50%) + report ka link. Michigan→CA page ka og/twitter description theek (script bug: "$1" regex placeholder ban gaya tha).
+
+**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).

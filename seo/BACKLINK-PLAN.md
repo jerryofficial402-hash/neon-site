@@ -48,7 +48,7 @@ Asaan, mehfooz, NAP (naam, address, phone) har jagah ek jaisa.
 
 ### B. Content se link kamana ("linkable assets")
 MSN ne `/compare/open-vs-enclosed/` ko link diya — yaani achha guide khud link laata hai.
-- [ ] **"2026 Car Shipping Cost Report"** — hamare route pages ka data (top 20 routes ke prices, transit, season). Journalists, bloggers, moving sites isay cite karte hain.
+- [x] **"2026 Car Shipping Cost Report"** → `/car-shipping-cost-report/` bana (25 Nov, live ka intezar). Agla: journalists/bloggers ko outreach — owner ke email se, owner ki manzoori ke baad. — hamare route pages ka data (top 20 routes ke prices, transit, season). Journalists, bloggers, moving sites isay cite karte hain.
 - [ ] Snowbird season guide (Oct–Jan) — Florida/Arizona local news aur retiree blogs ke liye
 - [ ] Military PCS car shipping guide — base relocation pages aur military spouse blogs
 
