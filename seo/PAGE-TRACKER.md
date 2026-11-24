@@ -377,6 +377,20 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 9 Dec | | | | |
 | 23 Dec | | | | |
 
+### 3o. `/california-to-texas-car-shipping/` — page #14, route page
+
+**Keywords:** "ship car from california to texas" ~140 + 20 (22 Nov research; OpenSEO credits 25 Nov ko khatam). GSC queries: "ship car from california to texas", "california to texas car shipping", "auto transport california to texas", "cost to ship a car from california to texas" (pos 32–49).
+
+**Baseline (90 din):** **0 clicks · 388 impressions · position 63.1** (purana template: har city pair "~1,618 mi", generic text).
+
+**Competitors (25 Nov):** Nexus #1 (city table $1,095–1,255, 3–4 din), Reddit, Montway (~$1,339, 5–7 din), Orange ($695–1,195 open LA→Dallas/Houston), Premium Auto ($840–1,090 LA→Houston, 3–5 din), State 2 State, RoadRunner calculator, Safeeds LinkedIn ($800–1,300).
+
+**Kya badla:** ~1,590 words — 6 city pairs (asli distances: LA→Houston 1,550, LA→Dallas 1,440, OC→Austin 1,380, SD→San Antonio 1,280, Bay Area→Dallas 1,730, Sacramento→Houston 1,930), headline $950–1,300 / 3–6 din (NorCal $1,050–1,400), I-10/I-20/I-40, **Texas registration 2026** (30 din, safety inspection Jan 2025 se khatam, $7.50 fee, metro counties mein emissions, 30/60/25, license 90 din — Texas DPS), FasTrak tip, EV, drive vs ship (imaandari: drive sasta), best time, 7 FAQs. Naya template + og tags.
+
+**Saath mein:** California page — CA→TX card/tables "1,618 mi" → "~1,550 mi", SF aur Sacramento "To Texas" $1,050–1,400; dono CA md copies HTML se dobara (purani .md mein $1075–1450 jaisi purani qeematein thin).
+
+**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
@@ -385,7 +399,7 @@ Site-wide (har page): naya layout, footer mein dono offices, sahi founding year 
 
 ## 4. Agla kaam — priority list (ek ek kar ke)
 
-**Route pages (owner ka faisla 22 Nov — leads ke liye pehle):** har page = GSC baseline + keyword research + Google top 10 competitor analysis → detailed content → OK → live → indexing. Ho chuke: NY→CA, TX→CA, FL→NY, FL→CA, NY→FL, Michigan→CA (25 Nov). **Agla:** California→Texas (140+20), California→Florida (110+10). Baaqi ~150 route keywords ki demand <10/mahina — un par kaam nahi. Comparison pages (RoadRunner 2,400, SGT 2,400 reviews) baad mein.
+**Route pages (owner ka faisla 22 Nov — leads ke liye pehle):** har page = GSC baseline + keyword research + Google top 10 competitor analysis → detailed content → OK → live → indexing. Ho chuke: NY→CA, TX→CA, FL→NY, FL→CA, NY→FL, Michigan→CA (25 Nov). **Agla:** California→Florida (110+10). Baaqi ~150 route keywords ki demand <10/mahina — un par kaam nahi. Comparison pages (RoadRunner 2,400, SGT 2,400 reviews) baad mein.
 
 
 | # | Page | 90 din | Kyun | Kya add karna hai |
