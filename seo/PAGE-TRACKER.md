@@ -357,6 +357,18 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 **Status:** ✅ Live 25 Nov 2026 (commit 1dce660) · Google "Request indexing" ✅ 25 Nov · IndexNow ✅ 25 Nov
 **Check:** 9 Dec 2026 (+14 din), 23 Dec 2026 (+28 din) — "auto transport" position + homepage clicks. Agar position/clicks gire to purana title wapas.
 
+### 3n. `/roadrunner-auto-transport-reviews/` — page #13, competitor reviews page (naya)
+
+**Kyun:** Ship A1 analysis — "X reviews" format. Keywords (25 Nov, OpenSEO): **"roadrunner auto transport reviews" 1,900** (KD 15), "is roadrunner auto transport legit" 140, "roadrunner auto transport bbb" 70. Purana `/compare/neon-vs-roadrunner/` 344 words, **90 din mein 0 impressions** → 301 redirect naye page par, purani files hata di.
+
+**SERP (25 Nov):** Reddit, Trustpilot, BBB, U.S. News, Move.org, Yelp, ConsumerAffairs, opelgt forum, RoadRunner ka apna page. BBB, Trustpilot, RoadRunner site aur FMCSA SAFER ne automated visits block kiye — facts U.S. News aur Move.org se, BBB par dono sources ka ikhtilaf likha.
+
+**Kya hai:** ~1,500 words — Quick Answer, competitor note (hum competitor hain), at-a-glance table, customers ki pasand/shikayatein, sample quotes table (U.S. News + Move.org), legit? + 4 checks, RoadRunner vs Neon table (imaandari: Houston→LA RoadRunner $925 vs Neon $950–1,300), kis ko RoadRunner chunna chahiye, doosre comparisons, 6 FAQs, sources. WebPage + Breadcrumb + FAQ schema.
+
+**Saath mein:** `/compare/` hub par sab 9 comparison pages ki list (pehle sirf 3 link the).
+
+**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).

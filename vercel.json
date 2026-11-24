@@ -226,6 +226,21 @@
   ],
   "redirects": [
     {
+      "source": "/compare/neon-vs-roadrunner.html",
+      "destination": "/roadrunner-auto-transport-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/compare/neon-vs-roadrunner/",
+      "destination": "/roadrunner-auto-transport-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/compare/neon-vs-roadrunner",
+      "destination": "/roadrunner-auto-transport-reviews/",
+      "permanent": true
+    },
+    {
       "source": "/blog/car-shipping-insurance-explained.html",
       "destination": "/insurance/",
       "permanent": true
