@@ -331,6 +331,32 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 | 9 Dec | | | | | |
 | 23 Dec | | | | | |
 
+### 3m. `/` homepage — title / H1 / H2 tuning (protected page — chhota change)
+
+**Kyun:** Ship A1 analysis (seo/COMPETITOR-SHIPA1.md) — unke homepage headings mein seedhe search terms. GSC (28 din) mein hamara homepage **"auto transport" 805 impressions, position 12.5** (page 1 ke kinare), "nationwide car shipping company" 16.2, "car shipping companies" 17.2, "auto transport company" 23.7.
+
+**Baseline (28 din, ~21 Nov tak):** 20 clicks · 2.77K impressions · CTR 0.7% · avg position 26.6
+
+| Query | Impr. | Position |
+|---|---|---|
+| auto transport | 805 | 12.5 |
+| enclosed auto transport | 84 | 31.7 |
+| nationwide car shipping | 65 | 21.7 |
+| nationwide car shipping company | 63 | 16.2 |
+| car shipping companies | 62 | 17.2 |
+| auto transport company | 31 | 23.7 |
+| neon auto transport | 73 | 1.6 |
+
+**Kya badla:**
+- Title: "Car Shipping Company | Nationwide Auto Transport Quotes | Neon" → **"Nationwide Auto Transport & Car Shipping Company | Neon"**
+- Meta description: 270 chars → 155 chars, "auto transport", "car shipping", "all 50 states" pehle
+- H1: "Nationwide Car Shipping With Fast, Transparent Quotes" → **"Nationwide Auto Transport & Car Shipping With Fast, Transparent Quotes"**
+- 5 H2: "How car shipping works: from quote to driveway", "Auto transport services for every vehicle and route", "Why choose Neon as your auto transport company", "Popular Car Shipping Routes Across the USA", "Auto transport FAQs"
+- Design, content, form, schema — koi aur badlav nahi.
+
+**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+**Check:** live ke +14 aur +28 din baad. Agar position/clicks gire to purana title wapas.
+
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
 Site-wide (har page): naya layout, footer mein dono offices, sahi founding year / reviews / BBB, business hours, lead tracking + GTM (19 Nov).
