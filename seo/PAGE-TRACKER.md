@@ -321,7 +321,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Saath mein:** `/car-shipping-cost/` ki purani qeematein route pages ke mutabiq (NY→Miami $650–1,200 → $850–1,150, LA→Houston, LA→NY; enclosed premium 30–40% → 40–50%) + report ka link. Michigan→CA page ka og/twitter description theek (script bug: "$1" regex placeholder ban gaya tha).
 
-**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+**Status:** ✅ Live 25 Nov 2026 (commit 5b8ac05) · Google "Request indexing" ✅ 25 Nov (report + cost page) · IndexNow ✅ 25 Nov (3 URLs)
+**Index status (25 Nov, pehle):** report ❌ "URL is unknown to Google" (naya page); cost page ✅ indexed
+**Check:** 9 Dec 2026 (+14 din), 23 Dec 2026 (+28 din) — impressions ke saath **backlinks** bhi dekhna (GSC → Links → report page)
+
+| Check | Clicks | Impressions | Position | Links | Note |
+|---|---|---|---|---|---|
+| Baseline | 0 | 0 | — | 0 | naya page |
+| 9 Dec | | | | | |
+| 23 Dec | | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -424,6 +432,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 22 Nov 2026 | `/florida-to-new-york-car-shipping/` thin → research-based rebuild live (~1,620 words, season price table) + NY page link; recrawl + IndexNow | 3393683 |
 | 23 Nov 2026 | `/new-york-to-florida-car-shipping/` research-based rebuild live (~1,600 words) + snowbird & NY page prices aligned; request indexing + IndexNow 3 URLs | 75a30d6 |
 | 25 Nov 2026 | Page #11 Michigan→California route page (~1,600 words, prices, emissions, drive vs ship); Michigan page row aligned; live + index request + IndexNow | ac995b1 |
+| 25 Nov 2026 | Page #12 Car Shipping Cost Report 2026 (naya, backlinks ke liye); cost page qeematein route pages ke mutabiq + report link; MI→CA og description fix; live + index request + IndexNow | 5b8ac05 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
