@@ -354,8 +354,8 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 - 5 H2: "How car shipping works: from quote to driveway", "Auto transport services for every vehicle and route", "Why choose Neon as your auto transport company", "Popular Car Shipping Routes Across the USA", "Auto transport FAQs"
 - Design, content, form, schema — koi aur badlav nahi.
 
-**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
-**Check:** live ke +14 aur +28 din baad. Agar position/clicks gire to purana title wapas.
+**Status:** ✅ Live 25 Nov 2026 (commit 1dce660) · Google "Request indexing" ✅ 25 Nov · IndexNow ✅ 25 Nov
+**Check:** 9 Dec 2026 (+14 din), 23 Dec 2026 (+28 din) — "auto transport" position + homepage clicks. Agar position/clicks gire to purana title wapas.
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -459,6 +459,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 23 Nov 2026 | `/new-york-to-florida-car-shipping/` research-based rebuild live (~1,600 words) + snowbird & NY page prices aligned; request indexing + IndexNow 3 URLs | 75a30d6 |
 | 25 Nov 2026 | Page #11 Michigan→California route page (~1,600 words, prices, emissions, drive vs ship); Michigan page row aligned; live + index request + IndexNow | ac995b1 |
 | 25 Nov 2026 | Page #12 Car Shipping Cost Report 2026 (naya, backlinks ke liye); cost page qeematein route pages ke mutabiq + report link; MI→CA og description fix; live + index request + IndexNow | 5b8ac05 |
+| 25 Nov 2026 | Homepage title/meta/H1/5 H2 tuning ("auto transport" pos 12.5 → page 1 target); live + index request + IndexNow | 1dce660 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
