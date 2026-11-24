@@ -413,8 +413,8 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 22 Nov 2026 | `/texas-to-california-car-shipping/` research-based rebuild live (~1,720 words) + Texas state page prices aligned/linked; recrawl request + IndexNow | d66b0ba |
 | 22 Nov 2026 | `/florida-to-new-york-car-shipping/` thin → research-based rebuild live (~1,620 words, season price table) + NY page link; recrawl + IndexNow | 3393683 |
 | 23 Nov 2026 | `/new-york-to-florida-car-shipping/` research-based rebuild live (~1,600 words) + snowbird & NY page prices aligned; request indexing + IndexNow 3 URLs | 75a30d6 |
+| 25 Nov 2026 | Page #11 Michigan→California route page (~1,600 words, prices, emissions, drive vs ship); Michigan page row aligned; live + index request + IndexNow | ac995b1 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
 Tools: `node tools/page-status.mjs <gsc.tsv>` (har page ka noindex/sitemap/aakhri change), `node tools/gsc-save.mjs` (Search Console table ko TSV banana).
-| 25 Nov 2026 | Page #11 Michigan→California route page (~1,600 words, prices, emissions, drive vs ship); Michigan page row aligned; live + index request + IndexNow | ac995b1 |
