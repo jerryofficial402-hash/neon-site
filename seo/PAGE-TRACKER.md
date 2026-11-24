@@ -367,7 +367,15 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Saath mein:** `/compare/` hub par sab 9 comparison pages ki list (pehle sirf 3 link the).
 
-**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+**Status:** ✅ Live 25 Nov 2026 (commit 5a5f659) · Google "Request indexing" ✅ 25 Nov · IndexNow ✅ 25 Nov (page, /compare/, purana URL) · purane URLs 308 → naya page
+**Index status (25 Nov, pehle):** ❌ "URL is unknown to Google" (naya page)
+**Check:** 9 Dec 2026 (+14 din), 23 Dec 2026 (+28 din)
+
+| Check | Clicks | Impressions | Position | Note |
+|---|---|---|---|---|
+| Baseline | 0 | 0 | — | naya page |
+| 9 Dec | | | | |
+| 23 Dec | | | | |
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -472,6 +480,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 25 Nov 2026 | Page #11 Michigan→California route page (~1,600 words, prices, emissions, drive vs ship); Michigan page row aligned; live + index request + IndexNow | ac995b1 |
 | 25 Nov 2026 | Page #12 Car Shipping Cost Report 2026 (naya, backlinks ke liye); cost page qeematein route pages ke mutabiq + report link; MI→CA og description fix; live + index request + IndexNow | 5b8ac05 |
 | 25 Nov 2026 | Homepage title/meta/H1/5 H2 tuning ("auto transport" pos 12.5 → page 1 target); live + index request + IndexNow | 1dce660 |
+| 25 Nov 2026 | Page #13 RoadRunner Auto Transport reviews (naya, 1,900 searches); neon-vs-roadrunner 301; compare hub par 9 comparisons; live + index request + IndexNow | 5a5f659 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
