@@ -234,7 +234,7 @@ Do I need to pay a deposit to ship my car? ▼
 
 Is my car insured during transport? ▼
 
-Yes. Every carrier in our network carries active FMCSA-required cargo insurance. Open transport provides coverage up to **$250,000**. Enclosed transport provides coverage up to **$500,000**. You receive a certificate of insurance before your vehicle is dispatched. 
+Yes. Every carrier in our network carries active FMCSA-required cargo insurance. Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance, for open and enclosed transport. You receive a certificate of insurance before your vehicle is dispatched. 
 
 What is the best time of year to ship a car on this route? ▼
 

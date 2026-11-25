@@ -226,6 +226,11 @@
   ],
   "redirects": [
     {
+      "source": "/sacramento-ca-car-shipping.html",
+      "destination": "/routes/city/sacramento-ca/",
+      "permanent": true
+    },
+    {
       "source": "/compare/neon-vs-roadrunner.html",
       "destination": "/roadrunner-auto-transport-reviews/",
       "permanent": true

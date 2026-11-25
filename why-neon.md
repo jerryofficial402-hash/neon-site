@@ -36,9 +36,9 @@ Neon Auto Transport provides nationwide vehicle relocation services and door-to-
 
 Neon Auto Transport is a customer-centric company operating in the vehicle shipping industry. We specialize in door-to-door transportation, delivering a safe, sound, secure, and stress-free solution for vehicle transport across the United States. 
 
-It has been **nine (9) years** since we entered this competitive landscape with thousands of satisfied and consistent customers. We have earned a premier name in the market for our sheer efficiency, effectiveness, and utility provided directly to clients. 
+Neon Auto Transport was founded in 2025 by a team with years of hands-on experience in auto transport. Every shipment is handled by the same small team from quote to delivery, and our customers rate us 5.0 on Google. 
 
-"Our strategies are completely customer-centric. We do not compromise on any factor that negatively affects our customers. It took us years to design the best online pricing calculator, segmenting costs based on all outlying factors to achieve a peaceful experience." 
+"Our strategies are completely customer-centric. We do not compromise on any factor that negatively affects our customers. We built our online pricing calculator, segmenting costs based on all outlying factors to achieve a peaceful experience." 
 
 Verified
 

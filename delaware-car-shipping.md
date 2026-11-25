@@ -328,7 +328,7 @@ Delaware's concentration of corporate headquarters (particularly around Wilmingt
 
 Classic and collector vehicles are best shipped enclosed, with soft tie-downs and, where needed, a **lift-gate-equipped carrier** for low-clearance vehicles.
 
-Enclosed Luxury & Collector Vehicle Transport in Delaware: While open transport serves 90% of daily drivers, **enclosed car shipping** provides 100% weather and road debris protection for luxury, exotic, and classic automobiles across [Wilmington](/routes/city/wilmington-de/), Greenville, and Coastal Delaware. Enclosed carriers utilize hydraulic liftgates to load low-clearance sports cars horizontally without scraping, backed by up to $250,000+ in specialized enclosed cargo insurance coverage. 
+Enclosed Luxury & Collector Vehicle Transport in Delaware: While open transport serves 90% of daily drivers, **enclosed car shipping** provides 100% weather and road debris protection for luxury, exotic, and classic automobiles across [Wilmington](/routes/city/wilmington-de/), Greenville, and Coastal Delaware. Enclosed carriers utilize hydraulic liftgates to load low-clearance sports cars horizontally without scraping, backed by the carrier's $500,000 cargo insurance. 
 
 ##  How Delaware Car Shipping Actually Works (Behind the Scenes) 
 

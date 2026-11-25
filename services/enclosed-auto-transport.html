@@ -298,7 +298,7 @@ input:focus, select:focus {
       }
     },
     {
-      "@type": ["Service", "Product"],
+      "@type": "Service",
       "@id": "https://neonautotransport.com/services/enclosed-auto-transport/#service",
       "name": "Enclosed Auto Transport",
       "description": "Premium enclosed car shipping for luxury, classic, and exotic vehicles. FMCSA approved (MC #1703787, USDOT #4355879), $500K cargo insurance, hydraulic lift gates, and $0 upfront deposit. Door-to-door nationwide delivery.",
@@ -314,20 +314,7 @@ input:focus, select:focus {
         "@type": "Country",
         "name": "United States"
       },
-      "url": "https://neonautotransport.com/services/enclosed-auto-transport/",
-      "offers": {
-        "@type": "AggregateOffer",
-        "offerCount": "1",
-        "lowPrice": "900",
-        "highPrice": "2800",
-        "price": "900.00",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "47"
-      }
+      "url": "https://neonautotransport.com/services/enclosed-auto-transport/"
     },
     {
       "@type": "FAQPage",
@@ -337,7 +324,7 @@ input:focus, select:focus {
           "name": "What is enclosed auto transport?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Enclosed auto transport ships your vehicle inside a fully covered trailer, protecting it from weather, road debris, dust, and salt spray. It is the premium method used for luxury, classic, exotic, and high-value vehicles. Enclosed trailers carry 2-6 vehicles and provide cargo insurance up to $500,000."
+            "text": "Enclosed auto transport ships your vehicle inside a fully covered trailer, protecting it from weather, road debris, dust, and salt spray during transit. It is the premium method used for luxury, classic, exotic, and high-value vehicles that require maximum protection. Enclosed trailers carry 2–6 vehicles and provide cargo insurance coverage up to $500,000."
           }
         },
         {
@@ -345,7 +332,7 @@ input:focus, select:focus {
           "name": "How much does enclosed auto transport cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Enclosed auto transport costs between $900 and $2,800 depending on distance, vehicle size, and route. Short regional routes under 500 miles cost $900-$1,200. Cross-country shipments over 2,000 miles average $2,000-$2,800. Enclosed transport costs 30-60% more than open transport."
+            "text": "Enclosed auto transport costs between $900 and $2,800 depending on the distance, vehicle size, and route. Short regional routes under 500 miles typically cost $900–$1,200. Cross-country shipments over 2,000 miles average $2,000–$2,800. Enclosed transport costs 30–60% more than open transport due to limited carrier availability and higher per-vehicle insurance requirements."
           }
         },
         {
@@ -353,15 +340,7 @@ input:focus, select:focus {
           "name": "Is enclosed auto transport worth it?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, for vehicles valued over $80,000, low-clearance vehicles, classic or restored cars, and any vehicle shipping through salt-belt states in winter. The cost difference between open and enclosed is typically $600-$1,000 — far less than repairing paint, rust, or suspension damage on a high-value vehicle."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to pay a deposit for enclosed auto transport?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not with Neon Auto Transport. We charge no upfront deposit for any shipment including enclosed transport. You pay nothing until a carrier is assigned. Most competitors charge $200-$500 just to book enclosed transport."
+            "text": "Yes, for the right vehicle. If your car is valued over $80,000, has low ground clearance, is a classic or restored vehicle, or is shipping through salt-belt states in winter, enclosed transport is worth every dollar of the premium. The cost difference between open and enclosed on a cross-country shipment is typically $600–$1,000 — a fraction of the cost of repairing paint damage, rust, or suspension damage on a high-value vehicle."
           }
         },
         {
@@ -369,7 +348,39 @@ input:focus, select:focus {
           "name": "What is the difference between soft-sided and hard-sided enclosed trailers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Soft-sided trailers use heavy-duty vinyl curtains — lighter, more available, adequate for most luxury vehicles. Hard-sided trailers use rigid aluminum or steel walls with air-ride suspension — highest protection level, recommended for irreplaceable classics and seven-figure exotics."
+            "text": "Soft-sided trailers use heavy-duty vinyl curtains to protect vehicles — lighter, more fuel-efficient, and more widely available. Hard-sided trailers use rigid aluminum or steel walls — the highest level of protection, often with air-ride suspension, preferred for seven-figure exotics and museum-quality classics. For most luxury vehicles, soft-sided enclosed transport is adequate. For irreplaceable classics, hard-sided is recommended."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to pay a deposit for enclosed transport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not with Neon Auto Transport. We charge no upfront deposit for any shipment — including enclosed. You pay nothing until a carrier is assigned. Most competitors charge $200–$500 just to book enclosed transport. We don't."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does enclosed auto transport take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Transit time depends on distance. Regional routes under 500 miles take 1–3 days. Mid-range routes of 500–1,500 miles take 3–6 days. Cross-country routes over 2,000 miles take 6–10 days. Enclosed carriers may have slightly longer pickup windows than open — plan for 3–7 days from booking to pickup, especially in rural areas or during peak season."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you ship a non-running vehicle in an enclosed trailer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Enclosed carriers can transport inoperable vehicles using winches and hydraulic lift gates. Non-running vehicles may incur an additional fee of $100–$250 depending on the equipment needed to load the vehicle safely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What vehicles require a hydraulic lift gate for enclosed transport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any vehicle with ground clearance under 4 inches requires a lift gate. This includes most modern supercars (Lamborghini Huracán, Ferrari 488, McLaren 720S, Porsche 911 GT3), extensively lowered vehicles, and vehicles with aftermarket front splitters or lips that would contact a standard loading ramp. Always notify us of your vehicle's ground clearance at booking so we confirm lift gate availability before dispatch."
           }
         }
       ]
@@ -588,8 +599,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </h2>
               <span class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#e0f2fe] text-[#0369a1] border border-[#bae6fd]">Direct Answer</span>
             </div>
-            <div class="quick-answer-content text-[#425466] text-base leading-relaxed" itemscope="" itemtype="https://schema.org/Question">
-              <p itemprop="text">Enclosed auto transport costs $1.00–$2.50 per mile — roughly $900–$1,200 for under 500 miles and $2,000–$2,800 coast-to-coast, a 30–60% premium over open transport. Neon Auto Transport is an FMCSA-licensed broker (MC #1703787) arranging soft-sided, hard-sided, and single-car enclosed trailers with lift gates for low-clearance vehicles, $0 upfront deposit, and up to $500,000 cargo insurance. Call (571) 576-7711 for an enclosed quote.</p>
+            <div class="quick-answer-content text-[#425466] text-base leading-relaxed">
+              <p>Enclosed auto transport costs $1.00–$2.50 per mile — roughly $900–$1,200 for under 500 miles and $2,000–$2,800 coast-to-coast, a 30–60% premium over open transport. Neon Auto Transport is an FMCSA-licensed broker (MC #1703787) arranging soft-sided, hard-sided, and single-car enclosed trailers with lift gates for low-clearance vehicles, $0 upfront deposit, and up to $500,000 cargo insurance. Call (571) 576-7711 for an enclosed quote.</p>
             </div>
           </section>
         <a href="/cost-calculator/" class="btn-primary flex items-center justify-center gap-2 text-center" style="background-color: #0a5fb4; color: #ffffff; padding: 0.875rem 1.75rem; border-radius: 9999px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(10, 95, 180,0.3);">
@@ -800,7 +811,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-[#e6e6e6] bg-white text-base">
-                  <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Standard cargo coverage</td><td class="p-4">Up to $250,000</td><td class="p-4 font-bold text-[#4338ca]">Up to $500,000</td></tr>
+                  <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Standard cargo coverage</td><td class="p-4">$500,000 (every carrier Neon books)</td><td class="p-4 font-bold text-[#4338ca]">$500,000 (every carrier Neon books)</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Per-vehicle coverage</td><td class="p-4">Shared across 8–10 vehicles</td><td class="p-4 font-bold text-[#4338ca]">Dedicated per vehicle</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Weather damage</td><td class="p-4 text-red-500 font-bold">Standard</td><td class="p-4 font-bold text-[#4338ca]">Premium</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">COI provided before dispatch</td><td class="p-4 text-green-500 font-bold">✓ Yes</td><td class="p-4 text-green-500 font-bold">✓ Yes</td></tr>
@@ -871,7 +882,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Vehicle exposure</td><td class="p-4 text-green-500 font-bold">Fully protected</td><td class="p-4 text-red-500 font-bold">Open to elements</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Weather protection</td><td class="p-4 text-green-500 font-bold">Complete</td><td class="p-4 text-red-500 font-bold">None</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Salt spray protection</td><td class="p-4 text-green-500 font-bold">Complete</td><td class="p-4 text-red-500 font-bold">None</td></tr>
-                  <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Insurance coverage</td><td class="p-4 font-bold text-[#4338ca]">Up to $500,000</td><td class="p-4">Up to $250,000</td></tr>
+                  <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Insurance coverage</td><td class="p-4 font-bold text-[#4338ca]">$500,000 (every carrier Neon books)</td><td class="p-4">$500,000 (every carrier Neon books)</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Carrier availability</td><td class="p-4 text-orange-500 font-bold">Limited</td><td class="p-4 text-green-500 font-bold">Very high</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Vehicles per trailer</td><td class="p-4 text-[#4338ca]">2–6</td><td class="p-4">8–10</td></tr>
                   <tr class="hover:bg-[#f6f9fc] transition-colors"><td class="p-4 font-semibold text-[#0a2540]">Pickup window</td><td class="p-4">3–7 days typical</td><td class="p-4 text-green-500 font-bold">1–3 days typical</td></tr>
@@ -930,7 +941,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="flex items-center gap-4 py-8 border-y border-[#e6e6e6] mt-12 mb-12">
-              <img src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover shadow-inner flex-shrink-0 border-2 border-[#e0e7ff]" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+              <img height="400" width="400" src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover shadow-inner flex-shrink-0 border-2 border-[#e0e7ff]" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
               <div>
                 <div class="font-bold text-[#0a2540]">Reviewed by Shazil Ali</div>
                 <div class="text-sm text-[#425466]">Director of Operations, Neon Auto Transport — Last Updated June 2026</div>
@@ -1020,7 +1031,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <section class="mb-12" id="author-byline">
         <div class="stripe-card p-8 flex flex-col md:flex-row items-start gap-6 border-l-4 border-l-[#2563eb]">
-          <img loading="lazy" src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover shadow-inner flex-shrink-0 border-2 border-[#e0f2fe]" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
+          <img height="400" width="400" loading="lazy" src="/images/shazil-ali.jpg" alt="Shazil Ali" class="w-16 h-16 rounded-full object-cover shadow-inner flex-shrink-0 border-2 border-[#e0f2fe]" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
           <div class="flex-1">
             <div class="flex flex-wrap items-center gap-2 mb-1">
               <div class="font-bold text-[#0a2540] text-lg"><a href="/author/shazil-ali/" class="hover:text-[#4338ca] transition hover:underline">Shazil Ali</a></div>

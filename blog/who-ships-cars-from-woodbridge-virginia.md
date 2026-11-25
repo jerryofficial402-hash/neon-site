@@ -130,7 +130,7 @@ You don't pay a single dollar until a verified carrier is secured and dispatched
 
 #### Fully Insured Carrier Network
 
-Every carrier in our network is required to carry a minimum of $250,000 to $500,000 in **cargo insurance** , verified through the [FMCSA SAFER system](https://safer.fmcsa.dot.gov/).
+Every carrier in our network is required to carry $500,000 in **cargo insurance** , verified through the [FMCSA SAFER system](https://safer.fmcsa.dot.gov/).
 
 📞
 
@@ -171,7 +171,7 @@ Yes. Woodbridge to California is one of our most frequently booked cross-country
 
 ### Is car shipping from Woodbridge safe?
 
-Absolutely. Every carrier in our network is **FMCSA-licensed** and carries a minimum of $250,000 in cargo insurance. A detailed Bill of Lading inspection is performed at both pickup and delivery, documenting the vehicle's condition before and after transport.
+Absolutely. Every carrier in our network is **FMCSA-licensed** and carries $500,000 in cargo insurance. A detailed Bill of Lading inspection is performed at both pickup and delivery, documenting the vehicle's condition before and after transport.
 
 ### Do I need to be present for pickup and delivery?
 

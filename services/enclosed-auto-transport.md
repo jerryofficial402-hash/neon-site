@@ -135,7 +135,7 @@ Insurance is where enclosed transport provides its clearest financial advantage 
 
 Coverage Type | Open Transport | Enclosed Transport  
 ---|---|---  
-Standard cargo coverage| Up to $250,000| Up to $500,000  
+Standard cargo coverage| $500,000 (every carrier Neon books)| $500,000 (every carrier Neon books)  
 Per-vehicle coverage| Shared across 8–10 vehicles| Dedicated per vehicle  
 Weather damage| Standard| Premium  
 COI provided before dispatch| ✅ Yes| ✅ Yes  
@@ -205,7 +205,7 @@ Cost per mile| $1.00 – $2.50| $0.70 – $0.90
 Vehicle exposure| Fully protected| Open to elements  
 Weather protection| Complete| None  
 Salt spray protection| Complete| None  
-Insurance coverage| Up to $500,000| Up to $250,000  
+Insurance coverage| $500,000 (every carrier Neon books)| $500,000 (every carrier Neon books)  
 Carrier availability| Limited| Very high  
 Vehicles per trailer| 2–6| 8–10  
 Pickup window| 3–7 days typical| 1–3 days typical  

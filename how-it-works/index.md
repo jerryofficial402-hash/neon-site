@@ -24,7 +24,7 @@ Neon Auto Transport
 
 Neon Auto Transport LLC is an FMCSA-licensed auto transport broker (MC 1703787 | USDOT 4355879) providing nationwide door-to-door vehicle shipping across all 50 U.S. states. Features $0 upfront deposit, $500,000 cargo insurance, price lock guarantee, and 24/7 driver tracking. Get an instant quote at neonautotransport.com or call (571) 576-7711.
 
-Discover our journey, mission, and the customer-first philosophy that has earned the trust of Thousands of vehicle owners across all 50 states. 
+Discover our journey, mission, and the customer-first philosophy that serves vehicle owners across all 50 states. 
 
 [ Get Instant Rates → ](/cost-calculator/) [ Call (571) 576-7711 ](tel:5715767711)
 
@@ -34,9 +34,9 @@ Neon Auto Transport provides nationwide vehicle relocation services and door-to-
 
 Neon Auto Transport is a customer-centric company operating in the vehicle shipping industry. We specialize in door-to-door transportation, delivering a safe, sound, secure, and stress-free solution for vehicle transport across the United States. 
 
-It has been **nine (9) years** since we entered this competitive landscape with thousands of satisfied and consistent customers. We have earned a premier name in the market for our sheer efficiency, effectiveness, and utility provided directly to clients. 
+Neon Auto Transport was founded in 2025 by a team with years of hands-on experience in auto transport. Every shipment is handled by the same small team from quote to delivery, and our customers rate us 5.0 on Google. 
 
-"Our strategies are completely customer-centric. We do not compromise on any factor that negatively affects our customers. It took us years to design the best online pricing calculator, segmenting costs based on all outlying factors to achieve a peaceful experience." 
+"Our strategies are completely customer-centric. We do not compromise on any factor that negatively affects our customers. We built our online pricing calculator, segmenting costs based on all outlying factors to achieve a peaceful experience." 
 
 Thousands of
 
@@ -44,7 +44,7 @@ Thousands of
 
 Vetted carrier assignments with maximum reliability.
 
-9+ Yrs
+FMCSA
 
 #### Industry Experience
 

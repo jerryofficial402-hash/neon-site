@@ -468,6 +468,25 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 
 ---
 
+### 6b. Technical SEO audit — 26 Nov 2026 (`node tools/tech-audit.mjs`, data: seo/data/tech-audit-2026-11-26.json)
+
+**Pehle se theek tha:** robots.txt (Google, GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Perplexity sab Allow), http→https aur www→apex ek domain par, 435 sitemap pages sab 200, koi internal link 404 nahi, galat URLs 404 / spam URLs 410, content raw HTML mein, hero image lazy nahi, Vercel deployment URLs login + noindex se protected, mobile par route data tables mein maujood.
+
+**Theek kiya (local commit, live ka intezar):**
+- Sitemap se /privacy/ aur /terms/ (noindex) nikale → 433 URLs; badle hue pages ka lastmod 2026-11-26
+- 4 Arkansas city pages par 2 canonical → 1
+- 136 files mein links `/routes/` aur `/author/` (redirect) → seedha `/locations/`, `/author/shazil-ali/`
+- Author page ka markdown alternate link (404) theek
+- `/sacramento-ca-car-shipping/` (`/routes/city/sacramento-ca/` ki copy) → 301, files hata di
+- 18 orphan pages ko links: blog index par "More Car Shipping Guides" (7 posts), state/city hubs par route links, services hub, cheapest-way page
+- 348 images par width/height (322 pages; author photo 400×400)
+- Schema: 652 files se bina naam ka microdata Question hata; 16 pages ka FAQ schema dikhne wale FAQ se dobara bana; 12 pages se FAQ schema hata (page par FAQ nahi); 291 pages se nakli "$500.00" offer, 20 pages se "Product" type, 292 Service nodes se aggregateRating hata; schema address 2700 → **2709** Neabsco (294 pages)
+- Content: "$250,000 cargo insurance" (34+ jagah) → owner-confirmed $500,000; "9 years / thousands of customers / 9+ Yrs" (why-neon, how-it-works, author, compare) → founded 2025, 5.0 on Google
+
+**Platform ki hadd:** `http://www.` → 2 hops (Vercel pehle https, phir apex). Code se nahi badal sakta; Google isay theek follow karta hai.
+
+**Google verification (live ke baad):** URL Inspection live test + Rich Results Test (key pages), sitemap dobara submit, phir GSC Pages / Enhancements reports ka update (dino/hafton mein).
+
 ## 7. Change log
 
 | Tareekh | Kya hua | Commit |

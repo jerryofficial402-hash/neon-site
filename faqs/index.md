@@ -27,7 +27,7 @@ Browse our comprehensive FAQ to get immediate answers about the shipping process
 
 Is my vehicle insured during transit? +
 
-Yes. Every carrier in the Neon Auto Transport network is required to carry active cargo insurance (minimum $250,000 for open, up to $250,000+ for enclosed). Your vehicle is fully covered from pickup to delivery. 
+Yes. Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance. Your vehicle is fully covered from pickup to delivery. 
 
 How do I prepare my car for shipping? +
 

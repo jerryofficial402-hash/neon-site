@@ -97,7 +97,7 @@ Yes, we offer single-car dedicated enclosed transport for maximum security. Your
 
 What insurance coverage is provided for high-value vehicles? +
 
-All carriers carry a minimum of $250,000 in cargo insurance. For vehicles valued over $250,000, we can arrange supplemental insurance to cover the full declared value. Discuss coverage options with your shipping coordinator before booking. 
+Every carrier Neon Auto Transport books must carry $500,000 in cargo insurance. For vehicles valued over $500,000, we can arrange supplemental insurance to cover the full declared value. Discuss coverage options with your shipping coordinator before booking. 
 
 How far in advance should I book luxury car shipping? +
 

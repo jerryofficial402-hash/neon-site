@@ -158,7 +158,7 @@ Feature | Enclosed Transport | Open Transport
 Cost (CA→TX)| $1,400 – $2,200| $900 – $1,300  
 Weather protection| Complete| None  
 Dust/debris protection| Complete| Minimal  
-Cargo Insurance| Up to $500,000| Up to $250,000  
+Cargo Insurance| $500,000 (every carrier Neon books)| $500,000 (every carrier Neon books)  
 Best for| Luxury, classic, exotic| Standard daily drivers  
   
 ## Required Documents for Interstate Transport
