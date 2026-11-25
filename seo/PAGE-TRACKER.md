@@ -389,7 +389,8 @@ Index request: **19 Nov 2026**. Pehla check: **3 Dec 2026**. Faisla: **17 Dec 20
 
 **Saath mein:** California page — CA→TX card/tables "1,618 mi" → "~1,550 mi", SF aur Sacramento "To Texas" $1,050–1,400; dono CA md copies HTML se dobara (purani .md mein $1075–1450 jaisi purani qeematein thin).
 
-**Status:** ⏳ Local commit — "Haan, live karo" ka intezar
+**Status:** ✅ Live 26 Nov 2026 (commit 5f6a314) · Google live test pass + indexing requested ✅ 26 Nov · IndexNow ✅
+**Check:** 10 Dec 2026 (+14 din), 24 Dec 2026 (+28 din)
 
 Pehle ke kaam (12 Nov): 38 state pages ka copy-paste text hata kar har state ka apna content; 20 city pages aur 20 route pages par local content; 226 patle (thin) city/route pages `noindex`. In mein se jin pages ko impressions mil rahe thay unhein check kiya: noindex wale pages ko sirf 20–60 impressions aur 0 clicks milte thay, is liye koi nuqsan nahi.
 
@@ -485,7 +486,14 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 
 **Platform ki hadd:** `http://www.` → 2 hops (Vercel pehle https, phir apex). Code se nahi badal sakta; Google isay theek follow karta hai.
 
-**Google verification (live ke baad):** URL Inspection live test + Rich Results Test (key pages), sitemap dobara submit, phir GSC Pages / Enhancements reports ka update (dino/hafton mein).
+**Live:** 26 Nov 2026 (commit 291bf50, saath CA→TX 5f6a314). Live audit (seo/data/tech-audit-2026-11-26-after.json): 433/433 pages 200, 0 broken links, 0 redirect links, 0 orphans, 0 canonical masle, 0 FAQ schema mismatch, 0 images bina size. IndexNow 420 URLs ✅. Sitemap GSC mein dobara submit ✅ (26 Nov).
+
+**Google ne kya kaha (26 Nov, URL Inspection live test):**
+- /california-to-texas-car-shipping/ — "URL is available to Google", page can be indexed, Breadcrumbs valid, 0 errors · indexing requested ✅
+- /michigan-car-shipping/ — live test pass (Breadcrumbs valid, Product/Merchant schema ab nahi) · **Google index: "Crawled – currently not indexed"** → technical nahi, content/authority masla; indexing requested ✅
+
+**Abhi Google ki taraf se baaqi (hafton mein):** GSC Enhancements — Product snippets (13) aur Merchant listings (21) 0 par aane chahiye; Review snippets kam honge (sirf homepage/reviews); Pages report mein naye pages index. **Check: 3 Dec, 9 Dec.** Tab tak "done" nahi.
+**Agla content kaam:** state pages "Crawled – currently not indexed" — kitne state pages is haal mein hain, sample check karke unka content behtar karna.
 
 ## 7. Change log
 
@@ -514,6 +522,7 @@ Barhne wale: homepage (698 → 1,510 impressions), `/car-shipping-quote/` (227 �
 | 25 Nov 2026 | Page #12 Car Shipping Cost Report 2026 (naya, backlinks ke liye); cost page qeematein route pages ke mutabiq + report link; MI→CA og description fix; live + index request + IndexNow | 5b8ac05 |
 | 25 Nov 2026 | Homepage title/meta/H1/5 H2 tuning ("auto transport" pos 12.5 → page 1 target); live + index request + IndexNow | 1dce660 |
 | 25 Nov 2026 | Page #13 RoadRunner Auto Transport reviews (naya, 1,900 searches); neon-vs-roadrunner 301; compare hub par 9 comparisons; live + index request + IndexNow | 5a5f659 |
+| 26 Nov 2026 | Technical SEO audit + fixes (sitemap, canonicals, redirect links, orphans, image sizes, schema accuracy, $500k insurance, founded 2025, Sacramento 301) + CA→TX page; live, IndexNow 420, sitemap resubmit, live tests | 291bf50, 5f6a314 |
 
 Data files: `seo/data/` (Search Console exports). Har check par nayi file add hogi.
 Yeh poora `seo/` folder sirf hamare liye hai — `.vercelignore` ki wajah se website par public nahi hota.
